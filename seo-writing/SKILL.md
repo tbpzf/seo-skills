@@ -136,6 +136,10 @@ After the first draft, run both reviews and silently revise.
 - Check that headings, title, meta description, and opening match one clear promise.
 - Check that the draft does not imitate or copy a competitor's wording or structure beyond common page conventions.
 
+### C. Humanization pass
+
+Before delivery, apply the [Humalizer](../humalizer/SKILL.md) review to the finished SEO draft. Preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
+
 ## Deliverable
 
 Unless the user asks for a narrower output, return:
