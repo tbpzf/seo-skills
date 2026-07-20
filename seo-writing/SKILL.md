@@ -85,7 +85,7 @@ Use for information-led queries. Answer the question in the opening, then teach 
 
 #### SaaS landing page
 
-Use for commercial or transactional queries. Make one audience/use-case promise and support it with proof.
+Use for commercial or transactional queries. Make one audience/use-case promise and support it with proof. Keep this architecture aligned with `seo-prompt-skill` landing prompts.
 
 1. Hero: audience + outcome + product mechanism + primary CTA
 2. Problem context and why common alternatives fall short
@@ -93,7 +93,7 @@ Use for commercial or transactional queries. Make one audience/use-case promise 
 4. Benefit sections tied to specific capabilities
 5. Proof: approved customer evidence, integrations, security, or product demonstration
 6. Objections or FAQ using only supportable answers
-7. Repeated primary CTA
+7. Repeat the same primary CTA at natural decision points only (not on every card or step)
 
 Do not use a generic feature dump. Every section must advance the page promise.
 
@@ -138,7 +138,11 @@ After the first draft, run both reviews and silently revise.
 
 ### C. Humanization pass
 
-Before delivery, apply the [Humalizer](../humalizer/SKILL.md) review to the finished SEO draft. Preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
+Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or the user asked for publishable copy without a later humanization step).
+
+Skip the full Humalizer pass when a parent workflow will run `humalizer` next. In that case, keep audit A/B only: remove obvious filler and repetitive CTAs, but do not run a second scored rewrite.
+
+When Humalizer does run here, preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
 
 ## Deliverable
 

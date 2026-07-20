@@ -38,13 +38,16 @@ an outline, or a rewrite of a SaaS landing page or educational article.
 - Establish intent, audience, verified product facts, evidence, internal links,
   and one primary CTA before drafting.
 - Preserve the prompt's keyword policy if the user provided one; otherwise use
-  natural, intent-led keyword placement.
+  natural, intent-led keyword placement. Do not invent numeric keyword targets.
 - Flag unsupported claims instead of making them more persuasive.
+- In this end-to-end workflow, tell `seo-writing` to skip its standalone
+  Humalizer pass; humanization happens once in the next stage.
 
 ### 3. Humanization
 
-Use `humalizer` as the final writing-quality stage for a completed SEO draft,
-or as the only stage when the user supplies an existing draft for polishing.
+Use `humalizer` as the **only** full writing-quality pass for a completed SEO
+draft in this workflow, or as the only stage when the user supplies an existing
+draft for polishing.
 
 Protect the SEO contract throughout: verified claims, source citations,
 keywords, metadata, headings, internal links, and the primary CTA. Never invent
@@ -59,10 +62,12 @@ For a request such as “create an SEO page from this keyword,” follow this or
    keyword policy, evidence, internal links, brand voice, and CTA.
 2. Prompt: apply `seo-prompt-skill` to create or validate the content
    specification. Skip this output only when the user wants copy directly.
+   Generated prompts should use natural keyword mode unless the user gave
+   count targets, and should not embed a full Humalizer pass.
 3. Draft: apply `seo-writing` to produce the page or article from verified
-   facts.
-4. Humanization: apply `humalizer` to remove generic patterns without changing
-   facts or SEO requirements.
+   facts. Skip the standalone Humalizer subsection; keep the clarity audit.
+4. Humanization: apply `humalizer` once to remove generic patterns without
+   changing facts or SEO requirements.
 5. Final check: report outstanding evidence gaps, exact keyword counts only if
    the user requested a count policy, and any claims that require approval.
 
