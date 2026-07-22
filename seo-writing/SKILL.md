@@ -1,13 +1,20 @@
 ---
 name: seo-writing
-description: Write and improve English SaaS landing pages and educational blog posts for organic search and conversion. Use when creating SEO content, SaaS feature/use-case/industry pages, product-led blog articles, SEO titles or meta descriptions, or when auditing a SaaS draft for search intent, evidence, and CTA alignment. In the root seo-content-workflow, write from the user-approved saved prompt and save markdown to seo-content/<keyword-slug>/content.md.
+description: >-
+  Write and improve English SaaS landing pages and educational blog posts for
+  organic search and conversion. Use when creating SEO content, SaaS
+  feature/use-case/industry pages, product-led blog articles, SEO titles or
+  meta descriptions, or when auditing a SaaS draft for search intent,
+  evidence, and CTA alignment. In the root seo-content-workflow, write from
+  the user-approved saved prompt and save markdown to
+  seo-content/<keyword-slug>/content.md.
 ---
 
 # SaaS SEO Writing
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
-When this skill runs inside [seo-content-workflow](../SKILL.md) after prompt confirmation, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
+When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after prompt confirmation, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
 
 This skill covers:
 - SaaS landing pages: feature, use case, audience, or industry pages

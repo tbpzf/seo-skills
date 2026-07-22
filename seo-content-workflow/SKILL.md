@@ -1,6 +1,12 @@
 ---
 name: seo-content-workflow
-description: Orchestrate an evidence-led SEO content workflow for English SaaS pages. Use when the user provides SEO keywords and wants a prompt-first workflow: generate a prompt for confirmation, save the approved prompt in the project, then generate and save markdown SEO content. Also use when creating or improving SaaS SEO content, or humanizing an SEO draft while preserving search intent, factual accuracy, and conversion paths.
+description: >-
+  Orchestrate an evidence-led SEO content workflow for English SaaS pages.
+  Use when the user provides SEO keywords and wants a prompt-first workflow
+  that generates a prompt for confirmation, saves the approved prompt in the
+  project, then generates and saves markdown SEO content. Also use when
+  creating or improving SaaS SEO content, or humanizing an SEO draft while
+  preserving search intent, factual accuracy, and conversion paths.
 ---
 
 # SEO Content Workflow
@@ -13,9 +19,9 @@ request.
 
 | Skill | Use independently when | Role in this workflow |
 | --- | --- | --- |
-| [seo-prompt-skill](seo-prompt-skill/SKILL.md) | The user gives a keyword and wants a reusable prompt or template. | Converts a keyword and brief into a complete SEO content prompt. |
-| [seo-writing](seo-writing/SKILL.md) | The user wants a publishable SaaS landing page or educational blog post. | Researches, structures, writes, and audits evidence-led SEO content. |
-| [humalizer](humalizer/SKILL.md) | The user already has a draft that sounds generic, templated, or AI-written. | Removes generic AI-writing patterns without changing the SEO contract. |
+| [seo-prompt-skill](../seo-prompt-skill/SKILL.md) | The user gives a keyword and wants a reusable prompt or template. | Converts a keyword and brief into a complete SEO content prompt. |
+| [seo-writing](../seo-writing/SKILL.md) | The user wants a publishable SaaS landing page or educational blog post. | Researches, structures, writes, and audits evidence-led SEO content. |
+| [humalizer](../humalizer/SKILL.md) | The user already has a draft that sounds generic, templated, or AI-written. | Removes generic AI-writing patterns without changing the SEO contract. |
 
 ## Default keyword → content sequence
 
