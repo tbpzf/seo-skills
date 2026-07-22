@@ -34,7 +34,8 @@ if workflow_file.file?
       expected_contract = {
         "execution_mode" => "autonomous",
         "approval_required" => false,
-        "intermediate_turns" => false
+        "intermediate_turns" => false,
+        "humanization_required" => true
       }
       unless contract == expected_contract
         errors << "seo-content-workflow/SKILL.md: execution contract must be #{expected_contract.inspect}"
@@ -49,6 +50,64 @@ if workflow_file.file?
     if workflow.include?(marker)
       errors << "seo-content-workflow/SKILL.md: legacy approval gate found: #{marker.inspect}"
     end
+  end
+
+  forbidden_incomplete_workflow_markers = [
+    "Stage 6: Optional humanization",
+    "Run `humalizer` only when the user asks to humanize or polish"
+  ]
+  forbidden_incomplete_workflow_markers.each do |marker|
+    if workflow.include?(marker)
+      errors << "seo-content-workflow/SKILL.md: optional humanization gate found: #{marker.inspect}"
+    end
+  end
+end
+
+prompt_skill_file = ROOT.join("seo-prompt-skill/SKILL.md")
+if prompt_skill_file.file?
+  prompt_skill = prompt_skill_file.read
+  contract_match = prompt_skill.match(/## Keyword portfolio contract\s+```yaml\s+(.*?)```/m)
+  if contract_match
+    begin
+      contract = YAML.safe_load(contract_match[1])
+      expected_contract = {
+        "selection_mode" => "adaptive",
+        "typical_core_keyword_count" => 3,
+        "typical_long_tail_keyword_range" => "10-12",
+        "fill_missing_keywords" => false,
+        "require_every_keyword" => false
+      }
+      unless contract == expected_contract
+        errors << "seo-prompt-skill/SKILL.md: keyword portfolio contract must be #{expected_contract.inspect}"
+      end
+    rescue Psych::SyntaxError => e
+      errors << "seo-prompt-skill/SKILL.md: invalid keyword portfolio YAML: #{e.message.lines.first.strip}"
+    end
+  else
+    errors << "seo-prompt-skill/SKILL.md: missing YAML keyword portfolio contract"
+  end
+end
+
+humalizer_file = ROOT.join("humalizer/SKILL.md")
+if humalizer_file.file?
+  humalizer = humalizer_file.read
+  contract_match = humalizer.match(/## Parent workflow contract\s+```yaml\s+(.*?)```/m)
+  if contract_match
+    begin
+      contract = YAML.safe_load(contract_match[1])
+      expected_contract = {
+        "automatic_final_stage" => true,
+        "requires_separate_request" => false,
+        "merge_into_parent_content" => true
+      }
+      unless contract == expected_contract
+        errors << "humalizer/SKILL.md: parent workflow contract must be #{expected_contract.inspect}"
+      end
+    rescue Psych::SyntaxError => e
+      errors << "humalizer/SKILL.md: invalid parent workflow YAML: #{e.message.lines.first.strip}"
+    end
+  else
+    errors << "humalizer/SKILL.md: missing YAML parent workflow contract"
   end
 end
 

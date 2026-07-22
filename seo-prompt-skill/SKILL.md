@@ -5,10 +5,11 @@ description: >-
   brief. Use when the user provides SEO keywords and wants a prompt,
   landing-page template, blog prompt, module outline, keyword plan, metadata
   requirements, or requirements for a final SEO verification report inside a
-  generated prompt. In the root seo-content-workflow, hand the generated prompt
-  back immediately so it can be saved and used for drafting in the same run,
-  without a user approval checkpoint. Do not use for auditing finished page
-  copy; use seo-writing instead.
+  generated prompt, including adapting keyword placement to sparse, typical,
+  or large keyword sets. In the root seo-content-workflow, hand the generated
+  prompt back immediately so it can be saved and used for drafting in the same
+  run, without a user approval checkpoint. Do not use for auditing finished
+  page copy; use seo-writing instead.
 ---
 
 # SEO Prompt Builder
@@ -41,13 +42,28 @@ When the user supplies a keyword plus context, use the supplied facts to fill th
 
 Collect when available:
 
-- Primary keyword, secondary keywords, and terms that must or must not appear
+- Core keyword candidates, long-tail keywords, and terms that must or must not appear
 - Page type: SaaS landing page, feature, use case, industry, product, or educational blog
 - Market, page-copy language, instruction/report language, audience, reader task, and brand voice
 - Product capabilities, limits, pricing/free-trial policy, compliance or legal restrictions
 - Approved proof: citations, customer stories, statistics, screenshots, and internal links
 - Primary CTA, optional same-path secondary CTA destinations, required modules, and word-count constraints
 - Keyword frequency policy: natural use (default), or explicit per-keyword targets
+
+## Keyword portfolio contract
+
+```yaml
+selection_mode: adaptive
+typical_core_keyword_count: 3
+typical_long_tail_keyword_range: 10-12
+fill_missing_keywords: false
+require_every_keyword: false
+```
+
+Treat the typical counts as a common brief shape, not required counts or hard
+caps. A smaller set must produce a narrower keyword plan. A larger or
+mixed-intent set must be clustered, with only the cluster relevant to the page
+used in visible copy.
 
 ## Non-negotiable prompt requirements
 
@@ -63,6 +79,13 @@ Every generated prompt must:
 8. Exclude planning and reporting text from any exact keyword counts.
 9. Require the writer to flag an impossible or unnatural keyword rather than force it into user-facing copy.
 10. Include product-accuracy, conversion, and anti-stuffing/clarity checks. Do not require a full [Humalizer](../humalizer/SKILL.md) pass inside the generated prompt when a later humanization stage will run; a light clarity check is enough.
+11. Preserve the user's keyword inventory without filling it to three core
+    keywords or ten to twelve long-tail keywords, unless the user explicitly
+    asks for keyword research or expansion. Keep new suggestions optional until
+    selected.
+12. Select one focus keyword, classify other core keywords as supporting, and
+    allow irrelevant, redundant, or overly dense terms to be omitted with a
+    reason in the final report.
 
 ## Building the prompt
 
@@ -79,11 +102,37 @@ If the supplied keyword does not clearly match the product or page type, write a
 
 ### 2. Configure keyword policy
 
-- When a user specifies targets, use **count mode**: preserve each exact target range, explain overlap counting, and require an honest Actual/Target report.
+- Normalize the supplied inventory before choosing a mode: remove exact
+  duplicates, identify phrases contained inside longer phrases, select one
+  focus keyword, and classify the rest as supporting core, long-tail, or
+  restricted terms. Preserve the user's wording in the report.
+- Scale the plan to the actual inventory:
+  - **Sparse example: one core keyword and zero to three long-tail terms.** Keep
+    the page tightly focused. Do not manufacture related exact-match phrases or
+    repeat the small set across every module. Still cover the reader's topic
+    completely with natural language; fewer keywords do not require thinner
+    content.
+  - **Typical example: up to three core keywords and up to twelve long-tail
+    terms.** Give each relevant term a distinct intent or section role. Do not
+    put every core term in the title/H1 or force every long-tail phrase into
+    visible copy.
+  - **Large or mixed-intent set.** Cluster by search intent. Use only the
+    coherent cluster for this page and mark the rest as restricted or suggest
+    separate pages.
+- Treat these ranges as planning guidance, never as quotas or density targets.
+- Populate `[[SECONDARY_KEYWORD_TABLE]]` with keyword, role (supporting core or
+  long-tail), intended reader intent/section, and use policy. In natural mode,
+  do not add a numeric target column.
+- Fill `[[SUPPORTING_PRIMARY_KEYWORDS]]` and `[[LONG_TAIL_KEYWORDS]]` with only
+  the supplied terms selected for this page. Write `None supplied` for an empty
+  group instead of inventing replacements.
+- When a user specifies targets, use **count mode**: preserve each exact target
+  range in the plan and report, explain overlap counting, and require an honest
+  Actual/Target result. Do not promise that every target will be met.
 - When no targets are supplied, use **natural mode**: intent-led placement only. Do not invent numeric targets, planned exact-match totals, or per-module keyword count tables.
 - Define a `restricted keyword` area for awkward or weakly relevant terms. Allow zero uses and require an explanation in the report if omission improves clarity.
 - In count mode only, tell the writer to count visible page copy in the specified modules and exclude `<keyword_plan>` and the final report.
-- If the writer cannot verify a count reliably, it must say so rather than invent a total.
+- If the writer cannot verify a count reliably, it must say so rather than invent a total. If a supplied target would cause stuffing, report it as unmet instead of degrading the copy.
 
 ### 3. Configure factual boundaries
 
@@ -135,6 +184,9 @@ Before delivering the generated prompt, verify:
 - Every product statement comes from the user or remains a variable.
 - Page type, audience, market, intent, modules, and CTA are explicit.
 - Keyword policy is natural mode unless the user supplied targets; count instructions explain scope and overlap only in count mode.
+- The keyword plan scales to the supplied inventory, names one focus keyword,
+  does not fill missing keyword slots, and does not require every phrase to
+  appear.
 - Reports and planning notes use `[[INSTRUCTION_LANGUAGE]]`, not a hardcoded language.
 - Metadata guidance does not require Meta Keywords.
 - Product-accuracy, conversion, and anti-stuffing/clarity checks exist.

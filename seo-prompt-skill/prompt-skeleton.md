@@ -47,14 +47,26 @@ claims.
 
 [[KEYWORD_POLICY_BLOCK]]
 
-### Primary keyword
+### Keyword inventory and scale
+
+- Focus keyword: `[[PRIMARY_KEYWORD]]`
+- Supporting core keywords: [[SUPPORTING_PRIMARY_KEYWORDS]]
+- Long-tail keywords: [[LONG_TAIL_KEYWORDS]]
+
+If either supporting list is empty, write `None supplied`; do not generate
+replacement exact-match phrases unless keyword research was explicitly
+requested.
+
+### Focus keyword
 
 Use `[[PRIMARY_KEYWORD]]` [[PRIMARY_KEYWORD_GUIDANCE]]. Place it only where it
 clarifies the topic. Do not repeat it mechanically.
 
-### Secondary and long-tail keywords
+### Supporting core and long-tail keywords
 
 [[SECONDARY_KEYWORD_TABLE]]
+
+Include only supplied terms selected for this page. The table may be empty.
 
 ### Restricted or low-relevance keywords
 
@@ -62,6 +74,14 @@ clarifies the topic. Do not repeat it mechanically.
 
 Shared rules:
 
+- Treat the supplied inventory as the complete input, not a quota to expand.
+  Do not create extra required keywords to reach three core terms or ten to
+  twelve long-tail terms. When keyword research was explicitly requested, keep
+  new suggestions optional until the user or workflow selects them.
+- Do not require every supplied phrase to appear. Select only terms that add a
+  distinct meaning or answer a relevant sub-intent on this page.
+- Do not give every keyword its own heading, paragraph, or module. Do not place
+  multiple exact phrases together when a natural sentence would use one.
 - Do not place several exact keywords in one sentence or paragraph solely to
   satisfy a count or density goal.
 - Use natural semantic variants when useful; they do not count as exact matches.
@@ -75,6 +95,8 @@ Before writing visible page copy, output a short `<keyword_plan>` that lists:
 
 - Where the primary keyword and any required terms will appear (title, H1,
   opening, relevant headings or body)
+- Which supporting core and long-tail terms were selected for this page, and
+  the distinct reader intent or section purpose each serves
 - Any restricted keyword that will be omitted
 - Exact planned counts **only if** the keyword policy includes numeric targets
 
@@ -234,6 +256,21 @@ Use natural, intent-led placement for the primary keyword and any secondary
 terms. Do not invent numeric frequency targets. Do not produce per-module
 keyword count tables. Exact-match counting is not required unless the user later
 adds targets.
+
+Scale use to the supplied inventory:
+
+- For a sparse set, keep the page focused and use fewer keyword-bearing
+  placements; do not repeat the same small set across every module. Keep the
+  content complete by using natural vocabulary rather than manufactured exact
+  phrases.
+- For a typical set of up to three core and up to twelve long-tail keywords,
+  select and distribute only the terms that have a distinct role.
+- For a larger or mixed-intent set, use only the coherent cluster for this page
+  and omit or separate the rest.
+
+These ranges describe common input sizes, not quotas. It is acceptable for a
+relevant supplied keyword to appear zero times when including it would be
+redundant, misleading, or unnatural.
 ```
 
 `[[PRIMARY_KEYWORD_GUIDANCE]]`: `naturally where it clarifies the topic`
@@ -245,7 +282,11 @@ Briefly confirm:
 
 - Where the primary keyword appears (title, H1, opening, and any other natural
   placements)
+- Which supplied supporting and long-tail keywords were used or omitted, with
+  a brief intent-based reason
 - That no numeric density target was forced
+- That no missing keyword slots were filled and the plan was scaled to the
+  supplied inventory
 - Any restricted keyword omitted and why
 ```
 
@@ -266,6 +307,10 @@ Preserve these targets exactly:
 
 Recalculate counts after the final rewrite. If you cannot verify a count,
 report it as unverified rather than inventing a number.
+
+Targets do not override readability. If meeting a supplied target would cause
+keyword stuffing or distort the page intent, leave it unmet and explain the
+decision in the report.
 ```
 
 `[[PRIMARY_KEYWORD_GUIDANCE]]`: the user-supplied target range, for example

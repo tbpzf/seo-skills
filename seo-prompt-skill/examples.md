@@ -47,6 +47,38 @@ Its “Fill before use” list should ask for:
 3. Secondary/long-tail keywords and any exact-count targets (optional)
 4. Approved pricing, proof, sources, and internal links
 
+## Sparse keyword set
+
+### User input
+
+```text
+Primary keyword: AI room planner
+Long-tail keywords: plan a room online, upload a floor plan
+```
+
+### Expected behavior
+
+```markdown
+[[PRIMARY_KEYWORD]]: AI room planner
+[[SUPPORTING_PRIMARY_KEYWORDS]]: None supplied
+[[LONG_TAIL_KEYWORDS]]: plan a room online; upload a floor plan
+[[SECONDARY_KEYWORD_TABLE]]:
+| Keyword | Role | Intended intent/section | Use policy |
+| --- | --- | --- | --- |
+| plan a room online | Long-tail | Planning workflow | Use only where natural |
+| upload a floor plan | Long-tail | Product input workflow | Use only if supported |
+```
+
+- Keep `AI room planner` as the single focus keyword.
+- Use the two long-tail phrases only in sections that directly answer those
+  intents; either phrase may be omitted when unsupported by product facts.
+- Do not invent two more core keywords or additional long-tail phrases to fill
+  a standard keyword table.
+- Do not repeat all three phrases in the title, H1, opening, and every module.
+- Use natural mode unless the user also supplies numeric targets.
+- Report which supplied terms were used or omitted and why, without producing
+  a density target.
+
 ## Complete brief request
 
 ### User input

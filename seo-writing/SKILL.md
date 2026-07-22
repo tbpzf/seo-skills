@@ -39,6 +39,9 @@ It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or compet
 5. Use the primary keyword naturally where it clarifies the page. Never force a density target or repeat it in every heading.
 6. A product mention must solve the reader's current problem. Do not turn an informational article into an uninterrupted sales pitch.
 7. Do not claim that a change will rank, convert, or meet a Google requirement. Explain the user benefit and evidence instead.
+8. Scale keyword use to the supplied inventory and page length. Never add
+   keywords to fill the typical portfolio shape defined by the saved prompt,
+   and never require every supplied phrase to appear.
 
 ## Intake
 
@@ -81,6 +84,8 @@ Write a compact strategy before the draft:
 Intent:
 Reader and job to be done:
 Primary keyword/topic:
+Supporting core keywords:
+Long-tail keywords selected / omitted:
 Search promise:
 Information gain:
 Product relevance:
@@ -119,6 +124,12 @@ Do not use a generic feature dump. Every section must advance the page promise.
 
 ### 3. Draft
 
+- Use one focus keyword for the page promise. Give each selected supporting
+  core or long-tail term a distinct reader intent or section role.
+- With a sparse keyword set, reduce keyword-bearing headings and placements;
+  do not repeat the same terms across every module.
+- With a large or mixed-intent set, write only for the coherent cluster in the
+  specification. Do not merge separate search intents into one page.
 - Give each paragraph one job and lead important sections with a direct answer or claim.
 - Make headings descriptive enough to be scanned without body text.
 - Prefer concrete verbs, product behaviors, and observable outcomes over adjectives such as “powerful,” “seamless,” or “best-in-class.”
@@ -151,6 +162,10 @@ After the first draft, run both reviews and silently revise.
 ### B. Clarity and search-readiness audit
 
 - Remove keyword repetition, generic introductions, filler, and vague claims.
+- Remove exact phrases that compete for the same sentence, paragraph, or
+  heading without adding distinct meaning.
+- Confirm that a sparse keyword inventory was not expanded and that omitted
+  supporting terms were recorded rather than forced into the draft.
 - Replace unsupported “leading,” “trusted,” “faster,” or “better” claims with evidence or precise language.
 - Remove AI-style list inflation, fake urgency, empty transitions, and repetitive CTA wording.
 - Check that headings, title, meta description, and opening match one clear promise.
@@ -158,9 +173,12 @@ After the first draft, run both reviews and silently revise.
 
 ### C. Humanization pass
 
-Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or the user asked for publishable copy without a later humanization step).
+Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or no parent workflow will run a later humanization step).
 
-Skip the full Humalizer pass when a parent workflow will run `humalizer` next. In that case, keep audit A/B only: remove obvious filler and repetitive CTAs, but do not run a second scored rewrite.
+Skip the full Humalizer pass inside this skill when `seo-content-workflow` is
+the parent. That workflow runs `humalizer` once as its required Stage 6. Keep
+audit A/B here: remove obvious filler and repetitive CTAs, but do not run a
+second scored rewrite.
 
 When Humalizer does run here, preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
 

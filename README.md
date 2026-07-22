@@ -1,7 +1,7 @@
 # SEO Content Skills
 
 Prompt-first SEO workflow for English SaaS pages:
-`seo-content-workflow` → `seo-prompt-skill` → `seo-writing` → optional `humalizer`.
+`seo-content-workflow` → `seo-prompt-skill` → `seo-writing` → `humalizer`.
 
 ## Install
 
@@ -23,8 +23,9 @@ After install, in Cursor Agent say: “用 seo-content-workflow，关键词是 �
 Generated files land in the **current project** at `seo-content/<keyword-slug>/`.
 
 The root workflow uses the sibling skills by stage and runs prompt generation,
-saving, drafting, auditing, and content saving in one uninterrupted turn. It
-does not require prompt approval; interrupt with corrections whenever needed.
+saving, drafting, auditing, humanization, and final content saving in one
+uninterrupted turn. It does not require prompt approval or a separate
+humanization request; interrupt with corrections whenever needed.
 
 ## Validate
 

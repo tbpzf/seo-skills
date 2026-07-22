@@ -1,11 +1,28 @@
 ---
 name: humalizer
-description: Edit English SaaS SEO drafts to remove generic AI-writing patterns while preserving verified claims, search intent, keywords, metadata, internal links, and conversion paths. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated.
+description: Edit English SaaS SEO drafts to remove generic AI-writing patterns while preserving verified claims, search intent, keywords, metadata, internal links, and conversion paths. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated, and as the required final stage of seo-content-workflow unless the user explicitly opts out.
 ---
 
 # Humalizer for SaaS SEO
 
 Edit SEO content so it reads as a specific writer explaining a real product or problem to a real audience. This is a writing-quality pass, not an AI detector and not a way to guarantee rankings or evade detection systems.
+
+## Parent workflow contract
+
+```yaml
+automatic_final_stage: true
+requires_separate_request: false
+merge_into_parent_content: true
+```
+
+When called by [seo-content-workflow](../seo-content-workflow/SKILL.md), run
+automatically after the draft is saved; no separate user request is required.
+Read the saved prompt as the protected SEO contract when it exists. For a
+direct-copy route without a prompt file, use the contract supplied by the parent
+from the user brief and saved content. Return the revised page to the parent for
+merging into `content.md`. Do not wrap or replace the parent's metadata,
+evidence-gap, or final-audit structure with the standalone deliverable format
+below.
 
 ## Guardrails
 

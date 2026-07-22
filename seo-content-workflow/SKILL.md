@@ -3,11 +3,11 @@ name: seo-content-workflow
 description: >-
   Orchestrate a fully automatic, evidence-led SEO content workflow for English
   SaaS pages. Use when the user provides SEO keywords and wants the workflow to
-  generate and save both a reusable prompt and markdown page copy in one run,
-  without an approval checkpoint between stages. Also use when continuing an
-  interrupted run or coordinating creation, revision, or humanization of SaaS
-  SEO content while preserving search intent, factual accuracy, and conversion
-  paths.
+  generate and save a reusable prompt, draft markdown page copy, humanize it,
+  and save the final content in one run without an approval checkpoint between
+  stages. Also use when continuing an interrupted run or coordinating creation,
+  revision, or humanization of SaaS SEO content while preserving search intent,
+  factual accuracy, and conversion paths.
 ---
 
 # SEO Content Workflow
@@ -22,11 +22,12 @@ request.
 execution_mode: autonomous
 approval_required: false
 intermediate_turns: false
+humanization_required: true
 ```
 
 Treat this block as the machine-readable default workflow contract. Override it
 only when the user's current request explicitly asks for a review checkpoint or
-prompt-only output.
+prompt-only output, or explicitly opts out of humanization.
 
 ## Dependency preflight
 
@@ -36,12 +37,12 @@ Route the request first, then verify only the skill needed for the next stage:
 | --- | --- |
 | Generate or revise a prompt | `../seo-prompt-skill/SKILL.md` |
 | Draft, revise, or audit page copy | `../seo-writing/SKILL.md` |
-| Humanize copy | `../humalizer/SKILL.md` |
+| Final humanization or humanize existing copy | `../humalizer/SKILL.md` |
 
-In the default sequence, check `seo-prompt-skill` before Stage 1 and
-`seo-writing` before Stage 4. Check `humalizer` only when the user requests
-Stage 6. If a required skill is missing, stop and name it. Ask the user to
-install the complete repository with
+In the default sequence, check `seo-prompt-skill` before Stage 1,
+`seo-writing` before Stage 4, and `humalizer` before Stage 6. If a required
+skill is missing, stop and name it. Ask the user to install the complete
+repository with
 `npx skills add tbpzf/skills`; do not approximate that stage from
 memory.
 
@@ -67,8 +68,8 @@ Task progress:
 - [ ] Stage 2: Save generated prompt
 - [ ] Stage 3: Resolve content readiness with safe defaults
 - [ ] Stage 4: Generate markdown SEO content
-- [ ] Stage 5: Save markdown content
-- [ ] Stage 6: Optional humanization (only if requested)
+- [ ] Stage 5: Save draft markdown content
+- [ ] Stage 6: Humanize and save final markdown content
 ```
 
 Use the checklist for internal progress only. Do not end a response merely to
@@ -86,6 +87,13 @@ the keyword(s) and any supplied product brief.
 - With a product brief, fill those variables and retain unknown facts as
   `[fact needed]`.
 - Use natural keyword mode unless the user gave count targets.
+- Apply the adaptive keyword portfolio contract from `seo-prompt-skill`.
+  Preserve the supplied set; never invent keywords merely to fill its typical
+  shape. If the user explicitly asks for keyword research, keep new suggestions
+  optional until they are selected.
+- Choose one focus keyword for the page. Treat other relevant core keywords as
+  supporting terms, then select long-tail phrases only where they match the
+  page intent and section purpose.
 - Do not embed a full Humalizer pass in the prompt.
 - Resolve structural choices from the request and project context. Use the
   defaults in `seo-prompt-skill` when no explicit choice exists.
@@ -147,8 +155,11 @@ Apply `seo-writing` using the **saved** prompt as the content specification.
 
 - Preserve the prompt's keyword policy, modules, CTA, fact boundaries, and
   language settings.
+- Scale keyword placement to the saved keyword inventory. Do not require every
+  supplied phrase to appear, and do not expand a sparse inventory to the
+  typical portfolio shape defined by `seo-prompt-skill`.
 - Skip the standalone Humalizer subsection inside `seo-writing`; humanization
-  happens only in Stage 6 when requested.
+  runs once as the required Stage 6 finalization pass.
 - Output publishable markdown when no material placeholders remain. Otherwise,
   output a complete draft artifact with metadata, headings, body, CTAs, and a
   clear pre-publication gap list as required by the prompt / `seo-writing`
@@ -157,7 +168,7 @@ Apply `seo-writing` using the **saved** prompt as the content specification.
   the safest useful draft possible and surface those gaps in the audit. Do not
   stop to request approval.
 
-### Stage 5 — Save markdown content
+### Stage 5 — Save draft markdown content
 
 Write the generated page into the same project directory:
 
@@ -184,26 +195,49 @@ Default file contents:
 
 ## Final audit
 - ...
+- Humanization: pending
 ```
 
 If the user asked for draft-only markdown (no strategy/audit sections), save
 only the publishable page body plus metadata. Tell the user the saved path.
 
-### Stage 6 — Optional humanization
+### Stage 6 — Humanize and save the final content
 
-Run `humalizer` only when the user asks to humanize or polish after the draft
-exists. Protect the SEO contract throughout. If humanization changes the page,
-overwrite `content.md` (or write `content.humanized.md` if the user wants both).
+Run `humalizer` after every default Stage 5 completion; the user does not need
+to request it separately. Skip this stage only when the current request
+explicitly says to skip humanization or retain the raw draft unchanged.
+
+1. Read `content.md` and the saved `prompt.md` when it exists. Treat the
+   prompt's verified facts, keyword policy, metadata, links, headings, and CTA
+   as the protected SEO contract. On a direct-copy route without `prompt.md`,
+   build the same contract from the user's brief plus the saved content
+   strategy, metadata, links, evidence notes, and CTA.
+2. Apply the full `humalizer` workflow to the page copy. Remove generic or
+   keyword-shaped prose without inventing facts, personality, proof, or claims.
+3. Merge the revised copy back into the existing `content.md` structure.
+   Preserve metadata, internal-link/evidence gaps, and the final audit instead
+   of replacing the file with Humalizer's standalone response wrapper.
+4. When the file includes a final audit, update it with
+   `Humanization: completed` and concise material changes. If no edits were
+   necessary, record that the pass completed with no material changes. When the
+   user requested body-plus-metadata only, keep that shape and report completion
+   in the final response instead of adding an audit section.
+5. Overwrite `content.md` with the final merged page. Write a separate
+   `content.draft.md` only when the user explicitly asks to retain both versions.
+
+Do not end the turn after Stage 5. The default workflow is complete only after
+Stage 6 finishes and the final `content.md` is saved.
 
 ## Routing for non-default requests
 
 | User intent | Action |
 | --- | --- |
 | Prompt only | Generate the prompt; save it only when requested; do not add a confirmation turn |
-| Copy directly / skip prompt | Skip Stages 1–3; use `seo-writing`, then Stage 5 |
+| Copy directly / skip prompt | Skip Stages 1–3; use `seo-writing`, then Stages 5–6 |
 | Humanize existing draft | `humalizer` only |
 | Continue an interrupted run | Inspect saved artifacts and resume at the earliest incomplete stage without confirmation |
-| Revise an existing saved prompt | Edit `prompt.md` and regenerate affected content automatically unless the user asks for prompt-only |
+| Revise an existing saved prompt | Edit `prompt.md` and regenerate affected content through Stage 6 unless the user asks for prompt-only |
+| Explicitly skip humanization | Finish at Stage 5 and record `Humanization: skipped by user` |
 
 ## Workflow guardrails
 
@@ -216,5 +250,7 @@ overwrite `content.md` (or write `content.humanized.md` if the user wants both).
   local, ecommerce, programmatic SEO, or competitor-comparison content.
 - The default sequence has no approval gate. Introduce a review checkpoint only
   when the user explicitly asks for one in the current request.
+- Humanization is mandatory in the default sequence. Finishing after Stage 5
+  without an explicit user opt-out is an incomplete workflow.
 - Missing facts never authorize invented claims. Continue with safe omissions
   or labeled placeholders and identify anything still needed before publication.
