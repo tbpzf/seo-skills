@@ -5,8 +5,10 @@ description: >-
   Use when the user provides SEO keywords and wants a prompt-first workflow
   that generates a prompt for confirmation, saves the approved prompt in the
   project, then generates and saves markdown SEO content. Also use when
-  creating or improving SaaS SEO content, or humanizing an SEO draft while
-  preserving search intent, factual accuracy, and conversion paths.
+  resuming that workflow after the user approves a pending prompt with OK,
+  approve, confirm, continue, or 确认. Also use when coordinating creation,
+  revision, or humanization of SaaS SEO content while preserving search
+  intent, factual accuracy, and conversion paths.
 ---
 
 # SEO Content Workflow
@@ -14,6 +16,23 @@ description: >-
 Use this root skill to coordinate the repository's SEO skills. Each linked
 skill remains independently usable; load only the stage needed for the user's
 request.
+
+## Dependency preflight
+
+Route the request first, then verify only the skill needed for the next stage:
+
+| Stage or route | Required file |
+| --- | --- |
+| Generate or revise a prompt | `../seo-prompt-skill/SKILL.md` |
+| Draft, revise, or audit page copy | `../seo-writing/SKILL.md` |
+| Humanize copy | `../humalizer/SKILL.md` |
+
+In the default sequence, check `seo-prompt-skill` before Stage 1 and
+`seo-writing` after approval, before Stage 4. Check `humalizer` only when the
+user requests Stage 6. If a required skill is missing, stop and name it. Ask
+the user to install the complete repository with
+`npx skills add tbpzf/skills --skill '*'`; do not approximate that stage from
+memory.
 
 ## Skills
 
@@ -34,18 +53,18 @@ Task progress:
 - [ ] Stage 1: Generate prompt
 - [ ] Stage 2: User confirmation (STOP)
 - [ ] Stage 3: Save approved prompt
-- [ ] Stage 4: Generate markdown SEO content
+- [ ] Stage 4: Validate content readiness and generate markdown SEO content
 - [ ] Stage 5: Save markdown content
 - [ ] Stage 6: Optional humanization (only if requested)
 ```
 
 ### Stage 1 — Generate prompt
 
-Apply `seo-prompt-skill` to produce a completion-ready SEO content prompt from
+Apply `seo-prompt-skill` to produce a review-ready SEO content prompt from
 the keyword(s) and any supplied product brief.
 
-- With a keyword only, produce a completion-ready prompt with explicit product
-  fact, proof, audience, CTA, and keyword-policy variables.
+- With a keyword only, produce a prompt template with explicit product fact,
+  proof, audience, CTA, and keyword-policy variables.
 - With a product brief, fill those variables and retain unknown facts as
   `[fact needed]`.
 - Use natural keyword mode unless the user gave count targets.
@@ -64,6 +83,14 @@ Treat as confirmation only messages such as: “确认”, “没问题”, “O
 
 If the user requests changes, revise the prompt and return to Stage 2. Repeat
 until confirmed.
+
+End the Stage 1 response with a resume instruction that explicitly names the
+skill so a trigger-based agent can load it again on the next turn. Match the
+user's language. Example:
+
+```text
+Reply “Use $seo-content-workflow to approve and continue” when the prompt is ready.
+```
 
 ### Stage 3 — Save the approved prompt
 
@@ -87,6 +114,32 @@ seo-content/<keyword-slug>/prompt.md
 ### Stage 4 — Generate markdown SEO content
 
 Apply `seo-writing` using the **saved** prompt as the content specification.
+
+Prompt approval does not imply content readiness. Before drafting, scan the
+saved prompt and the Stage 1 “Fill before use” list for unresolved `[[...]]`,
+`[fact needed]`, and `[proof needed]` placeholders.
+
+- Block drafting when the target topic, page type, audience/job, page-copy
+  language, product capabilities or limits, or primary CTA/action is unresolved.
+- Ask only for the blocking inputs and preserve the approved prompt while
+  waiting.
+- Treat missing proof, optional internal links, pricing, or voice guidance as
+  non-blocking only when the draft can avoid the related claim. Keep those gaps
+  in the evidence/audit section, not as invented user-facing copy.
+- Proceed with unresolved facts only when the user explicitly requests an
+  outline or placeholder draft. Label that output as not publish-ready.
+
+When the user supplies blocking inputs, persist them before drafting:
+
+1. Merge each supplied value into `prompt.md`, replacing its corresponding
+   `[[VARIABLE]]` or `[fact needed]` placeholder and removing the resolved item
+   from any “Fill before use” section. Do not rely on conversation context as
+   the only copy of a required fact.
+2. Re-read the saved file and repeat the readiness scan.
+3. If a value changes the approved keyword, page type, keyword-count policy, or
+   other structural instruction, return to Stage 2 for confirmation. Otherwise,
+   continue Stage 4 without another approval.
+4. Invoke `seo-writing` only after the saved artifact passes the readiness gate.
 
 - Preserve the prompt's keyword policy, modules, CTA, fact boundaries, and
   language settings.
@@ -141,6 +194,7 @@ overwrite `content.md` (or write `content.humanized.md` if the user wants both).
 | Prompt only | Stages 1–2; save with Stage 3 only if they ask to save |
 | Copy directly / skip prompt | Skip Stages 1–3; use `seo-writing`, then Stage 5 |
 | Humanize existing draft | `humalizer` only |
+| Resume after prompt approval | Confirm Stage 2 from conversation context, then Stages 3–5 |
 | Revise an existing saved prompt | Edit `prompt.md`, re-confirm, then Stages 4–5 |
 
 ## Workflow guardrails
@@ -154,3 +208,5 @@ overwrite `content.md` (or write `content.humanized.md` if the user wants both).
   local, ecommerce, programmatic SEO, or competitor-comparison content.
 - Confirmation is mandatory in the default sequence. Saving and drafting
   without an explicit user OK is a workflow failure.
+- Content readiness is mandatory for publishable copy. Approval alone never
+  authorizes the workflow to invent or silently omit required inputs.

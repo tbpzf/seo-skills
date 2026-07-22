@@ -4,17 +4,22 @@ description: >-
   Write and improve English SaaS landing pages and educational blog posts for
   organic search and conversion. Use when creating SEO content, SaaS
   feature/use-case/industry pages, product-led blog articles, SEO titles or
-  meta descriptions, or when auditing a SaaS draft for search intent,
-  evidence, and CTA alignment. In the root seo-content-workflow, write from
-  the user-approved saved prompt and save markdown to
-  seo-content/<keyword-slug>/content.md.
+  meta descriptions, or when auditing finished SaaS copy and producing a final
+  SEO verification report for search intent, evidence, and CTA alignment. In
+  the root seo-content-workflow, write from the approved, content-ready prompt
+  and save markdown in its per-keyword content.md path.
 ---
 
 # SaaS SEO Writing
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after prompt confirmation, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
+When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after prompt confirmation and its content-readiness check, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
+
+Before drafting from a saved prompt, stop if unresolved placeholders affect the
+topic, page type, audience, product behavior or limits, page language, or CTA.
+Ask for those inputs instead of guessing. Proceed with placeholders only when
+the user explicitly requests an outline or a draft labeled not publish-ready.
 
 This skill covers:
 - SaaS landing pages: feature, use case, audience, or industry pages

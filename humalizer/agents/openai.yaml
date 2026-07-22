@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS SEO Humanizer"
+  short_description: "Humanize SaaS SEO copy while preserving verified claims"
+  default_prompt: "Use $humalizer to humanize this SaaS SEO draft while preserving facts, keywords, links, and the primary CTA."

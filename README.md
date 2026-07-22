@@ -42,3 +42,17 @@ npx skills remove seo-content-workflow
 
 After install, in Cursor Agent say: “用 seo-content-workflow，关键词是 …”  
 Generated files land in the **current project** at `seo-content/<keyword-slug>/`.
+
+The root workflow uses the sibling skills by stage. Install the complete set for
+the end-to-end workflow; prompt-only, copy-only, and humanization routes check
+only their required sibling. When the workflow presents a prompt for approval,
+use the explicit resume phrase it provides instead of replying with a bare OK.
+
+## Validate
+
+Run the repository checks, which require only Ruby's standard library, before
+publishing changes:
+
+```bash
+ruby scripts/validate-skills.rb
+```

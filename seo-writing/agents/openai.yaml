@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS SEO Writing"
+  short_description: "Write and audit evidence-led SaaS landing pages and blogs"
+  default_prompt: "Use $seo-writing to write or audit this SaaS SEO page using only verified product facts and evidence."

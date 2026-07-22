@@ -4,9 +4,10 @@ description: >-
   Generate reusable English SEO content prompts from a keyword and a product
   brief. Use when the user provides SEO keywords and wants a prompt,
   landing-page template, blog prompt, module outline, keyword plan, metadata
-  requirements, or a final SEO verification report. In the root
-  seo-content-workflow, stop after delivering the prompt and wait for user
-  confirmation before saving or drafting page copy.
+  requirements, or requirements for a final SEO verification report inside a
+  generated prompt. In the root seo-content-workflow, stop after delivering
+  the prompt and wait for user confirmation before saving or drafting page
+  copy. Do not use for auditing finished page copy; use seo-writing instead.
 ---
 
 # SEO Prompt Builder
@@ -23,13 +24,15 @@ When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL
 
 When the user supplies only a keyword:
 
-1. Generate a completion-ready prompt immediately.
+1. Generate a review-ready prompt template immediately.
 2. Use the keyword as the primary keyword.
 3. Default to an English SaaS landing page for a US audience only if the user gives no page type or market.
 4. Keep product facts, CTA, audience, evidence, and restrictions as clearly marked variables such as `[[PRODUCT_FACTS]]`.
 5. Default keyword policy to natural mode (no numeric targets).
 6. Set `[[INSTRUCTION_LANGUAGE]]` to the user's language for the request, and `[[PAGE_COPY_LANGUAGE]]` to the requested page language (default US English).
-7. Add a short “fill before use” list after the prompt. Do not ask questions before producing the prompt.
+7. Add a short “fill before use” list after the prompt. Do not call a prompt
+   copy-paste-ready while required variables remain unresolved, and do not ask
+   questions before producing the initial template.
 
 ### Brief mode
 
@@ -104,7 +107,7 @@ Return:
 
 ```markdown
 ## Generated SEO content prompt
-[A complete copy-paste-ready prompt in [[INSTRUCTION_LANGUAGE]]]
+[A complete prompt template in [[INSTRUCTION_LANGUAGE]]]
 
 ## Fill before use
 - [Only unresolved variables or facts]
@@ -133,6 +136,8 @@ Before delivering the generated prompt, verify:
 - Metadata guidance does not require Meta Keywords.
 - Product-accuracy, conversion, and anti-stuffing/clarity checks exist.
 - The prompt has no domain-specific residue from an unrelated template (including forced Chinese report text or per-item CTA spam).
+- Every unresolved `[[VARIABLE]]` is listed under “Fill before use.” Call the
+  prompt copy-paste-ready only when that list is empty.
 
 ## References
 
