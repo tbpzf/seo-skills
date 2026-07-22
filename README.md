@@ -22,9 +22,9 @@ npx skills add tbpzf/skills
 After install, in Cursor Agent say: “用 seo-content-workflow，关键词是 …”  
 Generated files land in the **current project** at `seo-content/<keyword-slug>/`.
 
-The root workflow uses the sibling skills by stage. When the workflow presents a
-prompt for approval, use the explicit resume phrase it provides instead of
-replying with a bare OK.
+The root workflow uses the sibling skills by stage and runs prompt generation,
+saving, drafting, auditing, and content saving in one uninterrupted turn. It
+does not require prompt approval; interrupt with corrections whenever needed.
 
 ## Validate
 

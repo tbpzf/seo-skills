@@ -17,6 +17,41 @@ skill_files = ROOT.children
 
 errors << "No top-level skills found" if skill_files.empty?
 
+workflow_file = ROOT.join("seo-content-workflow/SKILL.md")
+if workflow_file.file?
+  workflow = workflow_file.read
+  forbidden_approval_gates = [
+    "User confirmation (STOP)",
+    "Wait for confirmation (hard stop)",
+    "Confirmation is mandatory in the default sequence",
+    "approve and continue"
+  ]
+
+  contract_match = workflow.match(/## Execution contract\s+```yaml\s+(.*?)```/m)
+  if contract_match
+    begin
+      contract = YAML.safe_load(contract_match[1])
+      expected_contract = {
+        "execution_mode" => "autonomous",
+        "approval_required" => false,
+        "intermediate_turns" => false
+      }
+      unless contract == expected_contract
+        errors << "seo-content-workflow/SKILL.md: execution contract must be #{expected_contract.inspect}"
+      end
+    rescue Psych::SyntaxError => e
+      errors << "seo-content-workflow/SKILL.md: invalid execution contract YAML: #{e.message.lines.first.strip}"
+    end
+  else
+    errors << "seo-content-workflow/SKILL.md: missing YAML execution contract"
+  end
+  forbidden_approval_gates.each do |marker|
+    if workflow.include?(marker)
+      errors << "seo-content-workflow/SKILL.md: legacy approval gate found: #{marker.inspect}"
+    end
+  end
+end
+
 skill_files.each do |skill_file|
   skill_dir = skill_file.dirname
   content = skill_file.read

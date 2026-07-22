@@ -1,4 +1,4 @@
 interface:
   display_name: "SEO Content Workflow"
-  short_description: "Create approved, evidence-led SaaS SEO content end to end"
-  default_prompt: "Use $seo-content-workflow to turn these keywords and product facts into an approved, publishable SaaS SEO draft."
+  short_description: "Create evidence-led SaaS SEO content automatically end to end"
+  default_prompt: "Use $seo-content-workflow to turn these keywords and product facts into saved prompt and content files in one uninterrupted run."

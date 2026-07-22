@@ -5,9 +5,10 @@ description: >-
   brief. Use when the user provides SEO keywords and wants a prompt,
   landing-page template, blog prompt, module outline, keyword plan, metadata
   requirements, or requirements for a final SEO verification report inside a
-  generated prompt. In the root seo-content-workflow, stop after delivering
-  the prompt and wait for user confirmation before saving or drafting page
-  copy. Do not use for auditing finished page copy; use seo-writing instead.
+  generated prompt. In the root seo-content-workflow, hand the generated prompt
+  back immediately so it can be saved and used for drafting in the same run,
+  without a user approval checkpoint. Do not use for auditing finished page
+  copy; use seo-writing instead.
 ---
 
 # SEO Prompt Builder
@@ -16,7 +17,7 @@ Turn a keyword and optional business context into a complete, reusable prompt fo
 
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), deliver the prompt for review and **stop**. Do not save the prompt or write page copy until the user confirms. After confirmation, the workflow saves `seo-content/<keyword-slug>/prompt.md` and continues with `seo-writing`.
+When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), return the generated prompt to the parent workflow as an intermediate artifact. Do not stop, request confirmation, or wait for a follow-up. The parent workflow saves `seo-content/<keyword-slug>/prompt.md` and continues directly with `seo-writing`.
 
 ## Input modes
 
@@ -36,7 +37,7 @@ When the user supplies only a keyword:
 
 ### Brief mode
 
-When the user supplies a keyword plus context, use the supplied facts to fill the variables. Request only material missing facts if the user asks for an executable prompt with no placeholders.
+When the user supplies a keyword plus context, use the supplied facts to fill the variables. In a standalone prompt request, request only material missing facts if the user asks for an executable prompt with no placeholders. Inside `seo-content-workflow`, retain unknown facts as placeholders and return immediately so the parent can continue with safe omissions.
 
 Collect when available:
 
@@ -103,7 +104,7 @@ For a blog, replace Modules 2 through 5 with the blog structure in the skeleton 
 
 ### 5. Deliver
 
-Return:
+For a standalone request, return:
 
 ```markdown
 ## Generated SEO content prompt
@@ -123,6 +124,8 @@ Return:
 ```
 
 Do not add strategy commentary inside the copy-paste prompt unless the user asks for it.
+Inside `seo-content-workflow`, provide the same data to the parent without
+turning it into a user-facing approval checkpoint.
 
 ## Quality check
 

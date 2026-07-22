@@ -6,20 +6,23 @@ description: >-
   feature/use-case/industry pages, product-led blog articles, SEO titles or
   meta descriptions, or when auditing finished SaaS copy and producing a final
   SEO verification report for search intent, evidence, and CTA alignment. In
-  the root seo-content-workflow, write from the approved, content-ready prompt
-  and save markdown in its per-keyword content.md path.
+  the root seo-content-workflow, write automatically from the saved prompt and
+  save markdown in its per-keyword content.md path without an approval step.
 ---
 
 # SaaS SEO Writing
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after prompt confirmation and its content-readiness check, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
+When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after its automatic readiness pass, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
 
-Before drafting from a saved prompt, stop if unresolved placeholders affect the
-topic, page type, audience, product behavior or limits, page language, or CTA.
-Ask for those inputs instead of guessing. Proceed with placeholders only when
-the user explicitly requests an outline or a draft labeled not publish-ready.
+Inside the root workflow, use the normalized saved prompt as the only content
+specification. Do not infer new page type, audience, market, language, keyword
+policy, or CTA values from invocation context. If a required structural value
+is absent, return control to the parent's Stage 3 so it can resolve and persist
+the value, then continue without user approval. Omit unsupported factual claims
+and list unresolved evidence or destinations in the final audit. Label the
+draft as requiring input before publication when material placeholders remain.
 
 This skill covers:
 - SaaS landing pages: feature, use case, audience, or industry pages
@@ -55,7 +58,10 @@ Also request, when available:
 - Relevant internal pages and preferred anchor text
 - Geographic market, competitors, and SERP notes
 
-If facts are absent, ask for them before drafting. If the user only needs a structural outline, proceed with explicit evidence placeholders.
+For a standalone request, ask for facts before drafting when accurate copy is
+otherwise impossible. Inside `seo-content-workflow`, follow its automatic
+fallback rules and continue with explicit evidence placeholders or safe
+omissions.
 
 ## Workflow
 
