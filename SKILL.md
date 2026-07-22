@@ -1,6 +1,6 @@
 ---
 name: seo-content-workflow
-description: Orchestrate an evidence-led SEO content workflow for English SaaS pages. Use when the user wants to turn a keyword into an SEO prompt, create or improve SaaS SEO content, or humanize an SEO draft while preserving search intent, factual accuracy, and conversion paths.
+description: Orchestrate an evidence-led SEO content workflow for English SaaS pages. Use when the user provides SEO keywords and wants a prompt-first workflow: generate a prompt for confirmation, save the approved prompt in the project, then generate and save markdown SEO content. Also use when creating or improving SaaS SEO content, or humanizing an SEO draft while preserving search intent, factual accuracy, and conversion paths.
 ---
 
 # SEO Content Workflow
@@ -17,67 +17,134 @@ request.
 | [seo-writing](seo-writing/SKILL.md) | The user wants a publishable SaaS landing page or educational blog post. | Researches, structures, writes, and audits evidence-led SEO content. |
 | [humalizer](humalizer/SKILL.md) | The user already has a draft that sounds generic, templated, or AI-written. | Removes generic AI-writing patterns without changing the SEO contract. |
 
-## Workflow routing
+## Default keyword → content sequence
 
-### 1. Prompt generation
+When the user supplies one or more keywords and wants SEO content (or does not
+explicitly ask for prompt-only / copy-only), follow this gated sequence. Do not
+skip gates.
 
-Use `seo-prompt-skill` when the user asks for an SEO prompt, template, or
-keyword-driven content specification.
+```
+Task progress:
+- [ ] Stage 1: Generate prompt
+- [ ] Stage 2: User confirmation (STOP)
+- [ ] Stage 3: Save approved prompt
+- [ ] Stage 4: Generate markdown SEO content
+- [ ] Stage 5: Save markdown content
+- [ ] Stage 6: Optional humanization (only if requested)
+```
+
+### Stage 1 — Generate prompt
+
+Apply `seo-prompt-skill` to produce a completion-ready SEO content prompt from
+the keyword(s) and any supplied product brief.
 
 - With a keyword only, produce a completion-ready prompt with explicit product
   fact, proof, audience, CTA, and keyword-policy variables.
 - With a product brief, fill those variables and retain unknown facts as
   `[fact needed]`.
-- Do not write the final page unless the user asks for it.
+- Use natural keyword mode unless the user gave count targets.
+- Do not embed a full Humalizer pass in the prompt.
 
-### 2. Content creation or revision
+Present the prompt for review using the `seo-prompt-skill` deliverable shape
+(`Generated SEO content prompt`, `Fill before use`, `Prompt configuration`).
 
-Use `seo-writing` when the user asks for page copy, a content brief, metadata,
-an outline, or a rewrite of a SaaS landing page or educational article.
+### Stage 2 — Wait for confirmation (hard stop)
 
-- Establish intent, audience, verified product facts, evidence, internal links,
-  and one primary CTA before drafting.
-- Preserve the prompt's keyword policy if the user provided one; otherwise use
-  natural, intent-led keyword placement. Do not invent numeric keyword targets.
-- Flag unsupported claims instead of making them more persuasive.
-- In this end-to-end workflow, tell `seo-writing` to skip its standalone
-  Humalizer pass; humanization happens once in the next stage.
+**STOP after Stage 1.** Do not save files, draft page copy, or run
+`seo-writing` until the user explicitly confirms the prompt.
 
-### 3. Humanization
+Treat as confirmation only messages such as: “确认”, “没问题”, “OK”, “approve”,
+“save and continue”, or an edited prompt the user asks you to use.
 
-Use `humalizer` as the **only** full writing-quality pass for a completed SEO
-draft in this workflow, or as the only stage when the user supplies an existing
-draft for polishing.
+If the user requests changes, revise the prompt and return to Stage 2. Repeat
+until confirmed.
 
-Protect the SEO contract throughout: verified claims, source citations,
-keywords, metadata, headings, internal links, and the primary CTA. Never invent
-personal experience, customer proof, product behavior, or results to make copy
-appear human-written.
+### Stage 3 — Save the approved prompt
 
-## Default end-to-end sequence
+After confirmation, write the approved prompt into the **current project**
+(the user's workspace root, not this skills repository unless that is the
+active workspace).
 
-For a request such as “create an SEO page from this keyword,” follow this order:
+Default path (override only if the user specifies another location):
 
-1. Intake: classify page type and intent; collect facts, audience, market,
-   keyword policy, evidence, internal links, brand voice, and CTA.
-2. Prompt: apply `seo-prompt-skill` to create or validate the content
-   specification. Skip this output only when the user wants copy directly.
-   Generated prompts should use natural keyword mode unless the user gave
-   count targets, and should not embed a full Humalizer pass.
-3. Draft: apply `seo-writing` to produce the page or article from verified
-   facts. Skip the standalone Humalizer subsection; keep the clarity audit.
-4. Humanization: apply `humalizer` once to remove generic patterns without
-   changing facts or SEO requirements.
-5. Final check: report outstanding evidence gaps, exact keyword counts only if
-   the user requested a count policy, and any claims that require approval.
+```text
+seo-content/<keyword-slug>/prompt.md
+```
+
+- `<keyword-slug>`: lowercase primary keyword, spaces to hyphens, strip other
+  punctuation (example: `AI kitchen design` → `ai-kitchen-design`).
+- File contents: the full approved copy-paste prompt only (not the Stage 1
+  review chrome such as “Fill before use” or “Prompt configuration”, unless
+  the user asks to keep them).
+- Tell the user the saved path.
+
+### Stage 4 — Generate markdown SEO content
+
+Apply `seo-writing` using the **saved** prompt as the content specification.
+
+- Preserve the prompt's keyword policy, modules, CTA, fact boundaries, and
+  language settings.
+- Skip the standalone Humalizer subsection inside `seo-writing`; humanization
+  happens only in Stage 6 when requested.
+- Output markdown suitable for publishing: metadata, headings, body, CTAs,
+  and evidence placeholders as required by the prompt / `seo-writing`
+  deliverable.
+
+### Stage 5 — Save markdown content
+
+Write the generated page into the same project directory:
+
+```text
+seo-content/<keyword-slug>/content.md
+```
+
+Default file contents:
+
+```markdown
+# <H1>
+
+## SEO metadata
+- Title tag:
+- Meta description:
+- URL slug:
+- H1:
+
+## Draft
+[Full page copy in markdown]
+
+## Internal links and evidence to add
+- ...
+
+## Final audit
+- ...
+```
+
+If the user asked for draft-only markdown (no strategy/audit sections), save
+only the publishable page body plus metadata. Tell the user the saved path.
+
+### Stage 6 — Optional humanization
+
+Run `humalizer` only when the user asks to humanize or polish after the draft
+exists. Protect the SEO contract throughout. If humanization changes the page,
+overwrite `content.md` (or write `content.humanized.md` if the user wants both).
+
+## Routing for non-default requests
+
+| User intent | Action |
+| --- | --- |
+| Prompt only | Stages 1–2; save with Stage 3 only if they ask to save |
+| Copy directly / skip prompt | Skip Stages 1–3; use `seo-writing`, then Stage 5 |
+| Humanize existing draft | `humalizer` only |
+| Revise an existing saved prompt | Edit `prompt.md`, re-confirm, then Stages 4–5 |
 
 ## Workflow guardrails
 
 - This workflow improves content quality; it does not guarantee search rankings,
   conversions, or that a text will evade AI-detection systems.
-- Do not invent product facts or apply industry-specific assumptions from one
-  page to another.
-- Do not force a numeric keyword policy when the user did not provide one.
-- Keep the scope aligned with the standalone skills: English SaaS landing pages
-  and educational blogs, not YMYL, local, ecommerce, programmatic SEO, or
-  competitor-comparison content.
+- Never invent product facts. Prefer `[fact needed]` / `[proof needed]` over
+  unsupported claims.
+- Never force a numeric keyword policy when the user did not provide one.
+- Scope stays English SaaS landing pages and educational blogs — not YMYL,
+  local, ecommerce, programmatic SEO, or competitor-comparison content.
+- Confirmation is mandatory in the default sequence. Saving and drafting
+  without an explicit user OK is a workflow failure.

@@ -1,6 +1,6 @@
 ---
 name: seo-prompt-skill
-description: Generate reusable English SEO content prompts from a keyword and a product brief. Use when the user provides SEO keywords and wants a prompt, landing-page template, blog prompt, module outline, keyword plan, metadata requirements, or a final SEO verification report.
+description: Generate reusable English SEO content prompts from a keyword and a product brief. Use when the user provides SEO keywords and wants a prompt, landing-page template, blog prompt, module outline, keyword plan, metadata requirements, or a final SEO verification report. In the root seo-content-workflow, stop after delivering the prompt and wait for user confirmation before saving or drafting page copy.
 ---
 
 # SEO Prompt Builder
@@ -8,6 +8,8 @@ description: Generate reusable English SEO content prompts from a keyword and a 
 Turn a keyword and optional business context into a complete, reusable prompt for generating English SEO content. The output of this skill is a prompt, not the finished SEO page.
 
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
+
+When this skill runs inside [seo-content-workflow](../SKILL.md), deliver the prompt for review and **stop**. Do not save the prompt or write page copy until the user confirms. After confirmation, the workflow saves `seo-content/<keyword-slug>/prompt.md` and continues with `seo-writing`.
 
 ## Input modes
 
