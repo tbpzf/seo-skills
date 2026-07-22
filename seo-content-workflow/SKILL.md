@@ -31,7 +31,7 @@ In the default sequence, check `seo-prompt-skill` before Stage 1 and
 `seo-writing` after approval, before Stage 4. Check `humalizer` only when the
 user requests Stage 6. If a required skill is missing, stop and name it. Ask
 the user to install the complete repository with
-`npx skills add tbpzf/skills --skill '*'`; do not approximate that stage from
+`npx skills add tbpzf/skills`; do not approximate that stage from
 memory.
 
 ## Skills
