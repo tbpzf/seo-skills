@@ -2,17 +2,20 @@
 name: seo-writing
 description: >-
   Write and improve English SaaS landing pages and educational blog posts for
-  organic search and conversion. Use when creating SEO content, SaaS
-  feature/use-case/industry pages, product-led blog articles, SEO titles or
-  meta descriptions, or when auditing finished SaaS copy and producing a final
-  SEO verification report for search intent, evidence, and CTA alignment. In
-  the root seo-content-workflow, write automatically from the saved prompt and
-  save markdown in its per-keyword content.md path without an approval step.
+  organic search and conversion in plain, middle-school-readable language. Use
+  when creating SEO content, SaaS feature/use-case/industry pages, product-led
+  blog articles, SEO titles or meta descriptions, or when auditing finished SaaS
+  copy and producing a final SEO verification report for search intent, evidence,
+  clarity, and CTA alignment. In the root seo-content-workflow, write
+  automatically from the saved prompt and save markdown in its per-keyword
+  content.md path without an approval step.
 ---
 
 # SaaS SEO Writing
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
+
+**Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Keep the SaaS audience and accurate product terms; simplify the *language*, not the *job*. If a busy expert cannot skim it, rewrite.
 
 When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after its automatic readiness pass, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
 
@@ -42,6 +45,10 @@ It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or compet
 8. Scale keyword use to the supplied inventory and page length. Never add
    keywords to fill the typical portfolio shape defined by the saved prompt,
    and never require every supplied phrase to appear.
+9. Meet the clarity bar on every draft. Prefer short sentences, everyday words,
+   one idea per paragraph, and concrete examples. Define a technical term on
+   first use only when the intended reader may not know it. Do not “sound
+   smart”; sound clear.
 
 ## Intake
 
@@ -133,9 +140,27 @@ Do not use a generic feature dump. Every section must advance the page promise.
 - Give each paragraph one job and lead important sections with a direct answer or claim.
 - Make headings descriptive enough to be scanned without body text.
 - Prefer concrete verbs, product behaviors, and observable outcomes over adjectives such as “powerful,” “seamless,” or “best-in-class.”
-- Explain terms the intended reader may not know. Retain domain language when the ICP expects it.
+- Write to the clarity bar below. Retain domain terms the ICP expects; define only terms the intended reader may not know.
 - Link only to pages that genuinely help the reader continue: product, pricing, demo, documentation, case study, or a related guide.
 - Include title tag, meta description, H1, URL suggestion, body copy, CTA labels, and internal-link recommendations unless the user asks for only one component.
+
+## Clarity bar (middle-school readable)
+
+Goal: keep general prose near a grade 6–8 reading level. The reader is still a SaaS buyer or practitioner. Let the ICP determine which product and domain terms need an explanation; do not talk down, invent school metaphors, or strip needed terminology.
+
+| Rule | Do | Avoid |
+| --- | --- | --- |
+| Sentence length | Aim for ~15–20 words on average; review sentences over ~25 and split them when that improves clarity | Nested clauses, three ideas in one sentence |
+| Words | Short everyday verbs: use, help, show, fix, start | utilize, leverage, facilitate, empower, streamline |
+| Paragraphs | 1 idea; usually 2–4 short sentences | Walls of text; restating the same claim |
+| Structure | Answer first (inverted pyramid); scannable H2/H3; lists for steps | Clever headings that hide the point; long intros |
+| Terms | Keep familiar domain terms; define unfamiliar terms once in plain English | Jargon stacks; acronyms the intended reader may not know |
+| Concrete | Name the actor, action, and result | “Our solution enables seamless optimization…” |
+| Tone | Teach like a clear textbook or a good explainer blog | Marketese, hype, and fake “thought leadership” |
+
+**Self-check before audit:** read the opening and one mid-page section out loud. If you must re-parse a sentence, rewrite it. Prefer “what it does → how → what happens next” over abstract claims.
+
+For word swaps, model pages, and textbook-style patterns, see the “Plain language and middle-school clarity” section in [reference.md](reference.md). For before/after rewrites, see Example 3 in [examples.md](examples.md).
 
 ## Metadata and on-page guidance
 
@@ -161,6 +186,8 @@ After the first draft, run both reviews and silently revise.
 
 ### B. Clarity and search-readiness audit
 
+- Run the clarity bar: average sentence length, one idea per paragraph, everyday words, unfamiliar jargon defined once, answer-first openings.
+- Check general prose against the grade 6–8 target while preserving terms familiar to the ICP. If a sentence makes the intended reader re-read, shorten it or make it more concrete.
 - Remove keyword repetition, generic introductions, filler, and vague claims.
 - Remove exact phrases that compete for the same sentence, paragraph, or
   heading without adding distinct meaning.
@@ -206,6 +233,7 @@ Unless the user asks for a narrower output, return:
 ## Final audit
 - Intent and product fit:
 - Evidence gaps:
+- Clarity bar (middle-school readable): pass / fixes made:
 - Changes made:
 ```
 
@@ -213,4 +241,4 @@ For revisions, preserve validated facts and identify only material changes. Do n
 
 ## References
 
-Read [reference.md](reference.md) for source distinctions, evidence types, and detailed page blueprints. Read [examples.md](examples.md) when an input/output pattern would help.
+Read [reference.md](reference.md) for source distinctions, evidence types, plain-language standards, model pages, and page blueprints. Read [examples.md](examples.md) when an input/output or clarity-rewrite pattern would help.

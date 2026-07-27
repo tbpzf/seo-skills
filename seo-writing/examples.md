@@ -130,6 +130,48 @@ Why it works: The article answers the informational query before mentioning the
 product, offers a credible workflow, and places the product only at the step
 where its supplied capabilities help.
 
+## Example 3: Clarity rewrite
+
+Same facts; language meets the middle-school clarity bar.
+
+### Before (too dense)
+
+```markdown
+Our platform empowers product organizations to leverage synergistic release
+communication workflows, facilitating the seamless transformation of
+engineering artifacts into stakeholder-ready narratives at scale.
+```
+
+### After (clear)
+
+```markdown
+Changelogly helps product teams turn finished engineering work into release
+notes customers can understand.
+
+It pulls approved details from Linear and GitHub into one draft. You edit the
+wording, check the links, and publish only after someone on your team approves.
+```
+
+Why it works: short sentences, named actors, concrete tools, no empty praise.
+The general prose stays near the grade 6–8 target; a PM still gets the job done.
+
+### Before (jargon pile)
+
+```markdown
+Utilize our API-first architecture to orchestrate cross-functional alignment
+across the SDLC and accelerate time-to-value for enterprise stakeholders.
+```
+
+### After (define, then use)
+
+```markdown
+Use the API (a way for other apps to send and receive data) to connect your
+tools to Changelogly.
+
+Product, engineering, and support can work from the same release draft instead
+of copying updates between docs and chat.
+```
+
 ## Incomplete-input behavior
 
 If a request says only “Write a landing page for our AI analytics platform,”
