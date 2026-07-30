@@ -40,7 +40,7 @@ Evidence still needed: an approved customer story or product walkthrough recordi
 - Meta description: Draft, review, and publish release notes from your Linear and
   GitHub work. Keep every update connected to its original engineering context.
 - URL slug: /release-notes-software-product-teams
-- H1: Release notes software that keeps product and engineering in sync
+- H1: Release notes software for product teams that keeps engineering in sync
 
 ## Draft
 
@@ -98,7 +98,7 @@ Internal pages: /templates/release-notes-checklist, /product/changelog
 - Meta description: Use a practical release-notes workflow to choose updates,
   add useful context, and publish notes customers can act on.
 - URL slug: /blog/how-to-write-better-release-notes
-- H1: How to write release notes customers will actually read
+- H1: How to write better release notes customers will actually read
 
 ## Draft
 

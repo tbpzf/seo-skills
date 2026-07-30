@@ -115,10 +115,15 @@ Do not reveal detailed reasoning. After the plan, write the page content.
 Generate:
 
 - **Title Tag**: [[TITLE_WORD_RANGE]] words; [[TITLE_CHARACTER_GUIDANCE]]
-  characters when applicable; include the primary keyword naturally.
+  characters when applicable. Make it clear on the first read, state the page
+  topic directly, and include the primary keyword naturally. Do not use a
+  teaser-style or clever title that hides the topic.
 - **Meta Description**: [[META_CHARACTER_GUIDANCE]] characters; include the
   primary keyword and a relevant secondary keyword only if natural.
-- **H1**: [[H1_WORD_RANGE]] words; make the page promise clear.
+- **H1**: [[H1_WORD_RANGE]] words. Include the primary keyword naturally and a
+  specific, supportable user benefit or outcome. Make the promise clear on the
+  first read; do not use a vague slogan or a generic benefit such as “work
+  smarter.”
 - **Hero Paragraph**: [[HERO_LENGTH]] words; audience + outcome + supported
   product mechanism.
 - **Primary CTA**: [[PRIMARY_CTA_LABEL]].
@@ -205,9 +210,11 @@ Exclude `<keyword_plan>` and this report from any keyword counts.
 
 Confirm:
 
-- Title Tag topic fit, and word/character count when guidance was supplied
+- Title Tag clarity, focus-keyword inclusion, topic fit, and word/character
+  count when guidance was supplied
 - Meta Description usefulness and character count when guidance was supplied
-- H1 topic fit and word count when guidance was supplied
+- H1 clarity, focus-keyword inclusion, specific user benefit, topic fit, and
+  word count when guidance was supplied
 
 Do not require Meta Keywords.
 

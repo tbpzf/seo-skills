@@ -86,6 +86,9 @@ Every generated prompt must:
 12. Select one focus keyword, classify other core keywords as supporting, and
     allow irrelevant, redundant, or overly dense terms to be omitted with a
     reason in the final report.
+13. Require a clear, immediately understandable title tag and H1. Require the
+    focus keyword naturally in both, and require the H1 to pair it with a
+    specific, supportable user benefit or outcome.
 
 ## Building the prompt
 
@@ -181,6 +184,9 @@ turning it into a user-facing approval checkpoint.
 Before delivering the generated prompt, verify:
 
 - The primary keyword is present in the role/goal and keyword policy.
+- The prompt requires a clear title tag containing the focus keyword and a clear
+  H1 containing the focus keyword plus a specific, supportable user benefit or
+  outcome.
 - Every product statement comes from the user or remains a variable.
 - Page type, audience, market, intent, modules, and CTA are explicit.
 - Keyword policy is natural mode unless the user supplied targets; count instructions explain scope and overlap only in count mode.

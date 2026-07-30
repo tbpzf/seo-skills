@@ -155,6 +155,9 @@ Apply `seo-writing` using the **saved** prompt as the content specification.
 
 - Preserve the prompt's keyword policy, modules, CTA, fact boundaries, and
   language settings.
+- Require a clear title tag containing the focus keyword and a clear H1
+  containing the focus keyword plus a specific, supportable user benefit or
+  outcome. Treat these as publishability checks, not optional suggestions.
 - Scale keyword placement to the saved keyword inventory. Do not require every
   supplied phrase to appear, and do not expand a sparse inventory to the
   typical portfolio shape defined by `seo-prompt-skill`.

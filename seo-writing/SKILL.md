@@ -49,6 +49,10 @@ It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or compet
    one idea per paragraph, and concrete examples. Define a technical term on
    first use only when the intended reader may not know it. Do not “sound
    smart”; sound clear.
+10. Make the title tag and H1 clear on the first read. Include the focus keyword
+    naturally in both. Make the H1 state a specific, supportable user benefit or
+    outcome in addition to the focus keyword; do not use a vague slogan as the
+    H1.
 
 ## Intake
 
@@ -107,7 +111,8 @@ Choose one architecture.
 
 Use for information-led queries. Answer the question in the opening, then teach the reader how to act.
 
-1. SEO title and H1 with the same core promise
+1. Clear SEO title with the focus keyword, plus an H1 with the focus keyword and
+   a specific reader benefit
 2. Direct answer or problem framing
 3. Method, framework, or steps
 4. Examples, screenshots, data, or expert evidence
@@ -164,8 +169,17 @@ For word swaps, model pages, and textbook-style patterns, see the “Plain langu
 
 ## Metadata and on-page guidance
 
-- The title tag and H1 should reinforce the same topic but do not need identical wording.
-- Make the title and meta description precise, useful, and non-sensational. Avoid unverified superlatives and dates unless they matter and can be maintained.
+- Make the title tag immediately understandable and include the focus keyword
+  naturally. State the page topic, not a clever or teaser-style slogan.
+- Make the H1 immediately understandable and include both the focus keyword and
+  a specific, supportable user benefit or outcome. The benefit must tell the
+  reader what they can achieve, improve, avoid, or understand; avoid generic
+  claims such as “work smarter” or “unlock more.”
+- Keep the title tag and H1 aligned to the same page promise, but do not require
+  identical wording. If the supplied focus keyword cannot fit either element
+  clearly and naturally, flag the keyword or intent mismatch instead of hiding
+  the keyword or writing awkward copy.
+- Make the meta description precise, useful, and non-sensational. Avoid unverified superlatives and dates unless they matter and can be maintained.
 - Use a short, readable URL slug that describes the page.
 - Use one H1 and a logical H2/H3 hierarchy.
 - Add image alt-text suggestions only for meaningful images; describe the image, not a list of keywords.
@@ -195,7 +209,10 @@ After the first draft, run both reviews and silently revise.
   supporting terms were recorded rather than forced into the draft.
 - Replace unsupported “leading,” “trusted,” “faster,” or “better” claims with evidence or precise language.
 - Remove AI-style list inflation, fake urgency, empty transitions, and repetitive CTA wording.
-- Check that headings, title, meta description, and opening match one clear promise.
+- Confirm the title is clear and contains the focus keyword.
+- Confirm the H1 is clear and contains the focus keyword plus a specific,
+  supportable user benefit or outcome.
+- Check that headings, title, H1, meta description, and opening match one clear promise.
 - Check that the draft does not imitate or copy a competitor's wording or structure beyond common page conventions.
 
 ### C. Humanization pass
