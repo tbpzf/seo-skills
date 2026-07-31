@@ -5,7 +5,13 @@
 - [blader/humanizer](https://github.com/blader/humanizer) is a prompt-only skill: a Markdown instruction file pairs a large catalog of AI-writing patterns with voice calibration and a draft → audit → rewrite loop. Its stated source is [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing).
 - [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) uses a smaller core rule set and progressive disclosure: its `SKILL.md` contains core checks and points to phrase, structure, and before/after reference files. It uses a five-dimension review score before delivery.
 
-Humalizer adopts the useful mechanisms, not their text or rigid style bans:
+Humalizer coordinates the local `blader-humanizer` adaptation during the
+default workflow. The separate `stop-slop` skill runs after Humalizer and
+before Harper grammar checking. Both adaptations are shipped in this repository
+so the workflow never needs to fetch an upstream GitHub skill at runtime.
+
+The workflow adopts their useful mechanisms rather than applying rigid style
+bans mechanically:
 
 1. Pattern-based diagnosis before rewriting
 2. Optional voice calibration from real user samples

@@ -1,6 +1,6 @@
 ---
 name: harper-grammar
-description: Check English Markdown, documentation, SEO copy, and prose with the local Harper CLI for spelling and grammar findings. Use when the user asks to grammar-check, proofread, spell-check, or lint English text, or as the optional final grammar stage of seo-content-workflow after humanization.
+description: Check English Markdown, documentation, SEO copy, and prose with the local Harper CLI for spelling and grammar findings. Use when the user asks to grammar-check, proofread, spell-check, or lint English text, or as the optional final grammar stage of seo-content-workflow after humanization and stop-slop review.
 ---
 
 # Harper Grammar Check
@@ -12,7 +12,7 @@ rewrite every flagged phrase or a guarantee that the text is error-free.
 ## Parent workflow contract
 
 When called by [seo-content-workflow](../seo-content-workflow/SKILL.md), run
-after the Humanizer stage against the saved `content.md`. Preserve the SEO
+after the Humalizer, Blader Humanizer, and Stop Slop stages against the saved `content.md`. Preserve the SEO
 contract and return the checked content and a concise result to the parent for
 its final audit. Do not add a standalone response wrapper to `content.md`.
 Report the actual preflight path, command status, JSON-parse result, finding

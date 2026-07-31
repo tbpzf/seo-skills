@@ -1,6 +1,6 @@
 ---
 name: humalizer
-description: Edit English SaaS SEO drafts to remove generic AI-writing patterns while preserving verified claims, search intent, keywords, metadata, internal links, and conversion paths. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated, and as the required rewrite stage of seo-content-workflow before its Harper grammar check unless the user explicitly opts out.
+description: Protect the SEO contract while coordinating a Blader Humanizer rewrite of English SaaS SEO drafts. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated, and as the required rewrite stage of seo-content-workflow before its stop-slop and Harper checks unless the user explicitly opts out.
 ---
 
 # Humalizer for SaaS SEO
@@ -17,7 +17,8 @@ merge_into_parent_content: true
 
 When called by [seo-content-workflow](../seo-content-workflow/SKILL.md), run
 automatically after the draft is saved; no separate user request is required.
-The parent runs Harper grammar checking after this rewrite stage when available.
+The parent runs Stop Slop and then Harper grammar checking after this rewrite
+stage when available.
 Read the saved prompt as the protected SEO contract when it exists. For a
 direct-copy route without a prompt file, use the contract supplied by the parent
 from the user brief and saved content. Return the revised page to the parent for
@@ -103,7 +104,15 @@ Review the draft for these patterns. A pattern is a prompt to inspect, not an au
 
 See [reference.md](reference.md) for source notes and SEO-specific before/after guidance.
 
-### 4. Rewrite
+### 4. Run the Blader Humanizer pass
+
+Load and apply [blader-humanizer](../blader-humanizer/SKILL.md) to the page
+copy. Pass it the protected contract from Step 1 and any voice sample from Step
+2. Its rewrite and self-audit are required in this workflow, but the guardrails
+above override a source rule when it would change protected SEO content or
+reduce technical precision.
+
+### 5. Merge and audit
 
 - Keep the original coverage and section order unless the structure blocks comprehension.
 - Lead paragraphs with the reader's answer, decision, or task.
@@ -112,7 +121,7 @@ See [reference.md](reference.md) for source notes and SEO-specific before/after 
 - Preserve citations and source context. Never turn a conditional result into a universal claim.
 - Use a product mention where it genuinely helps the reader complete the step; otherwise leave it out.
 
-### 5. Audit and revise
+### 6. Audit and revise
 
 Audit the revised copy on five dimensions, scoring each 1-10:
 

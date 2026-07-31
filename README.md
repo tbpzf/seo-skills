@@ -1,7 +1,8 @@
 # SEO Content Skills
 
 Prompt-first SEO workflow for English SaaS pages:
-`seo-content-workflow` → `seo-prompt-skill` → `seo-writing` → `humalizer` → `harper-grammar`.
+`seo-content-workflow` → `seo-prompt-skill` → `seo-writing` → `humalizer`
+→ `blader-humanizer` → `stop-slop` → `harper-grammar`.
 
 ## Install
 
@@ -23,11 +24,11 @@ After install, in Cursor Agent say: “用 seo-content-workflow，关键词是 �
 Generated files land in the **current project** at `seo-content/<keyword-slug>/`.
 
 The root workflow uses the sibling skills by stage and runs prompt generation,
-saving, drafting, auditing, humanization, and final grammar checking in one
-uninterrupted turn. Grammar checking uses a locally available `harper-cli`; if
-it is unavailable, the workflow records the skipped check and still saves the
-content. It does not require prompt approval or a separate humanization request;
-interrupt with corrections whenever needed.
+saving, drafting, auditing, protected humanization, a final Stop Slop review,
+and grammar checking in one uninterrupted turn. Grammar checking uses a locally
+available `harper-cli`; if it is unavailable, the workflow records the skipped
+check and still saves the content. It does not require prompt approval or a
+separate humanization request; interrupt with corrections whenever needed.
 
 ## Validate
 
