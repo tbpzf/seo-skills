@@ -62,6 +62,20 @@ if workflow_file.file?
       errors << "seo-content-workflow/SKILL.md: optional humanization gate found: #{marker.inspect}"
     end
   end
+
+  required_trace_markers = [
+    "## Runtime trace",
+    "[seo-content-workflow][stage N][kind] status: detail",
+    "Do not silently load a sibling skill, contact a remote service,"
+  ]
+  required_trace_markers.each do |marker|
+    unless workflow.include?(marker)
+      errors << "seo-content-workflow/SKILL.md: missing runtime trace requirement: #{marker.inspect}"
+    end
+  end
+  unless workflow.match?(/Do not report\s+`completed` until/)
+    errors << "seo-content-workflow/SKILL.md: missing runtime trace completion-evidence requirement"
+  end
 end
 
 prompt_skill_file = ROOT.join("seo-prompt-skill/SKILL.md")

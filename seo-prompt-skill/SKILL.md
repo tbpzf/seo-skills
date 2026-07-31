@@ -19,6 +19,9 @@ Turn a keyword and optional business context into a complete, reusable prompt fo
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
 When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), return the generated prompt to the parent workflow as an intermediate artifact. Do not stop, request confirmation, or wait for a follow-up. The parent workflow saves `seo-content/<keyword-slug>/prompt.md` and continues directly with `seo-writing`.
+Return a concise completion or failure status to the parent so it can emit its
+runtime trace; do not claim the prompt was saved, because the parent owns that
+write.
 
 ## Input modes
 

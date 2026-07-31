@@ -31,6 +31,51 @@ Treat this block as the machine-readable default workflow contract. Override it
 only when the user's current request explicitly asks for a review checkpoint or
 prompt-only output, or explicitly opts out of humanization.
 
+## Runtime trace
+
+Emit concise progress messages in the conversation while this workflow runs.
+These are status messages, not approval checkpoints: continue automatically
+after each one. Do not silently load a sibling skill, contact a remote service,
+run a CLI, or write an artifact.
+
+Use this format, substituting only facts that have actually occurred:
+
+```text
+[seo-content-workflow][stage N][kind] status: detail
+```
+
+`kind` is one of `route`, `skill`, `remote`, `cli`, `file`, or `result`.
+At minimum, emit all applicable events below:
+
+- At routing: `route` with the selected route and the stages that will run.
+- Before and after every sibling-skill invocation: `skill` with the skill name,
+  local path, and `started`, `completed`, `skipped`, or `failed` status.
+- Before and after every remote operation: `remote` with the provider or
+  operation name and the same status vocabulary. State `remote: not used` when
+  a stage completes without one; never imply that research, a network call, or
+  a remote skill ran when it did not.
+- Before and after every CLI preflight or command: `cli` with the executable
+  name, operation, resolved absolute path when available, exit status, whether
+  structured output parsed, and the finding/correction count when applicable.
+- After each artifact write: `file` with the relative output path and artifact
+  type (`prompt`, `draft`, or `final`).
+- At the end: `result` with completed, skipped, and failed stages plus the
+  final artifact path.
+
+For example:
+
+```text
+[seo-content-workflow][stage 1][skill] started: loading seo-prompt-skill from ../seo-prompt-skill/SKILL.md
+[seo-content-workflow][stage 2][file] completed: wrote prompt to seo-content/ai-kitchen-design/prompt.md
+[seo-content-workflow][stage 7][cli] skipped: harper-cli was not found; grammar check is non-blocking
+```
+
+Do not expose prompt or draft body text, secrets, environment variables, API
+tokens, full command lines, or raw CLI output in trace messages. Do not report
+`completed` until the corresponding skill, command, or write actually finished.
+On failure, name the operation and a concise reason, then follow the workflow's
+existing blocking or non-blocking rule. A skipped stage must include its reason.
+
 ## Dependency preflight
 
 Route the request first, then verify only the skill needed for the next stage:

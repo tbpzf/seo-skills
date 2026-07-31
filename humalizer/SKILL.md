@@ -23,7 +23,9 @@ direct-copy route without a prompt file, use the contract supplied by the parent
 from the user brief and saved content. Return the revised page to the parent for
 merging into `content.md`. Do not wrap or replace the parent's metadata,
 evidence-gap, or final-audit structure with the standalone deliverable format
-below.
+below. Return a concise completion, skip, or failure status and material-change
+count to the parent so it can emit its runtime trace; do not claim the merged
+file was saved, because the parent owns that write.
 
 ## Guardrails
 
