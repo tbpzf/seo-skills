@@ -35,7 +35,8 @@ if workflow_file.file?
         "execution_mode" => "autonomous",
         "approval_required" => false,
         "intermediate_turns" => false,
-        "humanization_required" => true
+        "humanization_required" => true,
+        "grammar_check" => "if_available"
       }
       unless contract == expected_contract
         errors << "seo-content-workflow/SKILL.md: execution contract must be #{expected_contract.inspect}"
@@ -96,7 +97,7 @@ if humalizer_file.file?
     begin
       contract = YAML.safe_load(contract_match[1])
       expected_contract = {
-        "automatic_final_stage" => true,
+        "automatic_rewrite_stage" => true,
         "requires_separate_request" => false,
         "merge_into_parent_content" => true
       }

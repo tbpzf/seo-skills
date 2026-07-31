@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harper Grammar Check"
+  short_description: "Check English Markdown with Harper CLI"
+  default_prompt: "Use $harper-grammar to check this English Markdown for grammar and spelling issues."

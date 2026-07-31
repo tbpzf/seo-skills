@@ -4,10 +4,11 @@ description: >-
   Orchestrate a fully automatic, evidence-led SEO content workflow for English
   SaaS pages. Use when the user provides SEO keywords and wants the workflow to
   generate and save a reusable prompt, draft markdown page copy, humanize it,
-  and save the final content in one run without an approval checkpoint between
-  stages. Also use when continuing an interrupted run or coordinating creation,
-  revision, or humanization of SaaS SEO content while preserving search intent,
-  factual accuracy, and conversion paths.
+  grammar-check it when Harper is available, and save the final content in one
+  run without an approval checkpoint between stages. Also use when continuing
+  an interrupted run or coordinating creation, revision, humanization, or
+  grammar checking of SaaS SEO content while preserving search intent, factual
+  accuracy, and conversion paths.
 ---
 
 # SEO Content Workflow
@@ -23,6 +24,7 @@ execution_mode: autonomous
 approval_required: false
 intermediate_turns: false
 humanization_required: true
+grammar_check: if_available
 ```
 
 Treat this block as the machine-readable default workflow contract. Override it
@@ -38,11 +40,13 @@ Route the request first, then verify only the skill needed for the next stage:
 | Generate or revise a prompt | `../seo-prompt-skill/SKILL.md` |
 | Draft, revise, or audit page copy | `../seo-writing/SKILL.md` |
 | Final humanization or humanize existing copy | `../humalizer/SKILL.md` |
+| Grammar or spelling check | `../harper-grammar/SKILL.md` |
 
 In the default sequence, check `seo-prompt-skill` before Stage 1,
 `seo-writing` before Stage 4, and `humalizer` before Stage 6. If a required
-skill is missing, stop and name it. Ask the user to install the complete
-repository with
+skill is missing, stop and name it. Check `harper-grammar` before Stage 7;
+unlike the writing skills, a missing local `harper-cli` only skips that stage.
+Ask the user to install the complete repository with
 `npx skills add tbpzf/skills`; do not approximate that stage from
 memory.
 
@@ -53,6 +57,7 @@ memory.
 | [seo-prompt-skill](../seo-prompt-skill/SKILL.md) | The user gives a keyword and wants a reusable prompt or template. | Converts a keyword and brief into a complete SEO content prompt. |
 | [seo-writing](../seo-writing/SKILL.md) | The user wants a publishable SaaS landing page or educational blog post. | Researches, structures, writes, and audits evidence-led SEO content. |
 | [humalizer](../humalizer/SKILL.md) | The user already has a draft that sounds generic, templated, or AI-written. | Removes generic AI-writing patterns without changing the SEO contract. |
+| [harper-grammar](../harper-grammar/SKILL.md) | The user wants English spelling, grammar, or Markdown linting. | Runs a constrained Harper grammar review after humanization when the CLI is available. |
 
 ## Default keyword → content sequence
 
@@ -69,7 +74,8 @@ Task progress:
 - [ ] Stage 3: Resolve content readiness with safe defaults
 - [ ] Stage 4: Generate markdown SEO content
 - [ ] Stage 5: Save draft markdown content
-- [ ] Stage 6: Humanize and save final markdown content
+- [ ] Stage 6: Humanize and save markdown content
+- [ ] Stage 7: Grammar-check and save final markdown content
 ```
 
 Use the checklist for internal progress only. Do not end a response merely to
@@ -204,7 +210,7 @@ Default file contents:
 If the user asked for draft-only markdown (no strategy/audit sections), save
 only the publishable page body plus metadata. Tell the user the saved path.
 
-### Stage 6 — Humanize and save the final content
+### Stage 6 — Humanize and save content
 
 Run `humalizer` after every default Stage 5 completion; the user does not need
 to request it separately. Skip this stage only when the current request
@@ -228,19 +234,46 @@ explicitly says to skip humanization or retain the raw draft unchanged.
 5. Overwrite `content.md` with the final merged page. Write a separate
    `content.draft.md` only when the user explicitly asks to retain both versions.
 
-Do not end the turn after Stage 5. The default workflow is complete only after
-Stage 6 finishes and the final `content.md` is saved.
+### Stage 7 — Grammar-check and save final content
+
+Run [harper-grammar](../harper-grammar/SKILL.md) after Stage 6 unless the user
+explicitly asks to skip grammar checking. Check the saved `content.md` and
+preserve the same protected SEO contract used by Humalizer.
+
+1. Run the Harper preflight. Do not install or update the CLI as part of this
+   workflow.
+2. If Harper is available, review its JSON findings and apply only
+   high-confidence corrections allowed by `harper-grammar`. Re-run the check
+   after edits. Do not require zero findings.
+3. When `content.md` has a final audit, update it with `Grammar check:
+   completed`, the number of corrections, and material findings retained for
+   review. For a body-plus-metadata-only request, preserve that shape and report
+   the same result in the final response instead of adding an audit section.
+4. If `harper-cli` is absent, record `Grammar check: skipped (harper-cli
+   unavailable)` in an existing audit, or report it in the final response for
+   body-plus-metadata-only output. Do not block the workflow or substitute
+   another grammar service.
+5. If a present CLI lacks the required capability, exits unexpectedly, or emits
+   malformed JSON, record `Grammar check: failed (incompatible CLI or invalid
+   output)` in an existing audit, or report it in the final response for
+   body-plus-metadata-only output. Keep the workflow non-blocking, but do not
+   mislabel this as a skipped check.
+6. Save the final `content.md` without changing its requested output shape.
+
+Do not end the turn after Stage 6. The default workflow is complete only after
+Stage 7 finishes and the final `content.md` is saved.
 
 ## Routing for non-default requests
 
 | User intent | Action |
 | --- | --- |
 | Prompt only | Generate the prompt; save it only when requested; do not add a confirmation turn |
-| Copy directly / skip prompt | Skip Stages 1–3; use `seo-writing`, then Stages 5–6 |
-| Humanize existing draft | `humalizer` only |
+| Copy directly / skip prompt | Skip Stages 1–3; use `seo-writing`, then Stages 5–7 |
+| Humanize existing draft | `humalizer`, then Stage 7 when Harper is available |
 | Continue an interrupted run | Inspect saved artifacts and resume at the earliest incomplete stage without confirmation |
-| Revise an existing saved prompt | Edit `prompt.md` and regenerate affected content through Stage 6 unless the user asks for prompt-only |
-| Explicitly skip humanization | Finish at Stage 5 and record `Humanization: skipped by user` |
+| Revise an existing saved prompt | Edit `prompt.md` and regenerate affected content through Stage 7 unless the user asks for prompt-only |
+| Explicitly skip humanization | Skip Stage 6, run Stage 7, and record `Humanization: skipped by user` |
+| Explicitly skip grammar checking | Finish after Stage 6 and record `Grammar check: skipped by user` |
 
 ## Workflow guardrails
 
@@ -255,5 +288,7 @@ Stage 6 finishes and the final `content.md` is saved.
   when the user explicitly asks for one in the current request.
 - Humanization is mandatory in the default sequence. Finishing after Stage 5
   without an explicit user opt-out is an incomplete workflow.
+- Grammar checking is non-blocking by default. Harper findings require context;
+  do not force unsafe changes or claim that zero findings prove correctness.
 - Missing facts never authorize invented claims. Continue with safe omissions
   or labeled placeholders and identify anything still needed before publication.
