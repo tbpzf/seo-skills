@@ -18,7 +18,9 @@ merge_into_parent_content: true
 When called by [seo-content-workflow](../seo-content-workflow/SKILL.md), run
 automatically after the draft is saved; no separate user request is required.
 The parent runs Stop Slop and then Harper grammar checking after this rewrite
-stage when available.
+stage when available. Own the SEO contract, claim accuracy, voice, specificity,
+and Blader pattern rewrite here. Leave residual rhythm and leftover formulaic
+cadence to Stop Slop; do not re-run its checklist inside this stage.
 Read the saved prompt as the protected SEO contract when it exists. For a
 direct-copy route without a prompt file, use the contract supplied by the parent
 from the user brief and saved content. Return the revised page to the parent for

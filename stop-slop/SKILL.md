@@ -17,11 +17,16 @@ merge it back into the existing `content.md` structure, and report material
 changes plus the five review scores to the parent. Do not add a standalone
 response wrapper or contact the upstream repository.
 
+After Humalizer + Blader, treat this as a **residual** pass: fix leftover
+formulaic rhythm, filler, and weak cadence. Do not re-diagnose claim accuracy,
+voice calibration, keyword policy, or fabrication risk already owned by Stage
+6. Prefer no edit over reworking a passage that is already direct and accurate.
+
 ## Review process
 
-1. Remove throat-clearing, emphasis crutches, empty transitions, generic
-   declarations, needless hand-holding, and quote-shaped conclusions.
-2. Replace formulaic binary contrasts, negative listings, dramatic fragments,
+1. Scan for residual throat-clearing, emphasis crutches, empty transitions,
+   generic declarations, needless hand-holding, and quote-shaped conclusions.
+2. Replace leftover binary contrasts, negative listings, dramatic fragments,
    rhetorical setups, inanimate agency, and distant narrator voice with the
    direct supported statement.
 3. Name a human or system actor when it improves clarity. Retain passive voice
@@ -35,7 +40,9 @@ response wrapper or contact the upstream repository.
    the protected-content exceptions before making an edit.
 7. Score the revision from 1-10 for Directness, Rhythm, Trust, Authenticity,
    and Density. If the total is below 35/50, revise the responsible passages
-   and score again. Report the final scores honestly.
+   **once** and score again. Cap at two scoring rounds total (initial + one
+   revision). If still below 35 after the second score, stop, keep the best
+   revision, and report the honest scores with the shortfall noted.
 
 ## Protected content
 

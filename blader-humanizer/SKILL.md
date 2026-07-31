@@ -15,7 +15,9 @@ AI-detection system.
 When called by [humalizer](../humalizer/SKILL.md), edit only the page copy
 provided by the parent. Return the revised copy and a short list of material
 edits. Do not add standalone draft/audit wrappers, change the parent document
-structure, or make a network request for the upstream repository.
+structure, or make a network request for the upstream repository. Focus on
+claim-safe pattern cleanup and specificity; the parent's later Stop Slop stage
+handles residual rhythm and directness scoring.
 
 ## Required process
 

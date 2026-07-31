@@ -268,6 +268,9 @@ default Stage 5 completion; the user does not need to request either pass
 separately. Skip this stage only when the current request explicitly says to
 skip humanization or retain the raw draft unchanged.
 
+**Owns:** SEO contract, claim accuracy, voice calibration, fabrication
+prevention, specificity, and the main Blader pattern rewrite.
+
 1. Read `content.md` and the saved `prompt.md` when it exists. Treat the
    prompt's verified facts, keyword policy, metadata, links, headings, and CTA
    as the protected SEO contract. On a direct-copy route without `prompt.md`,
@@ -293,9 +296,13 @@ Run [stop-slop](../stop-slop/SKILL.md) after Stage 6 and before Harper. Skip
 this stage only when the current request explicitly skips humanization or asks
 to retain the post-Humalizer draft unchanged.
 
+**Owns:** residual directness, rhythm, density, and leftover formulaic cadence.
+Do not redo Stage 6's claim, voice, or SEO-contract work.
+
 1. Read the saved `content.md` and preserve the same protected SEO contract.
-2. Apply the full `stop-slop` review. Remove formulaic filler and weak rhythm
-   without enforcing blanket bans that would weaken accurate SEO content.
+2. Apply the residual `stop-slop` review (max two scoring rounds). Remove
+   leftover filler and weak rhythm without blanket bans that weaken accurate
+   SEO content.
 3. When the file includes a final audit, add `Stop Slop: completed (score:
    <total>/50)` with concise material changes. When no changes are necessary,
    record the completed score. For a body-plus-metadata-only request, preserve
