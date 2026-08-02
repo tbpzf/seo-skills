@@ -25,10 +25,13 @@ Generated files land in the **current project** at `seo-content/<keyword-slug>/`
 
 The root workflow uses the sibling skills by stage and runs prompt generation,
 saving, drafting, auditing, protected humanization, a final Stop Slop review,
-and grammar checking in one uninterrupted turn. Grammar checking uses a locally
-available `harper-cli`; if it is unavailable, the workflow records the skipped
-check and still saves the content. It does not require prompt approval or a
-separate humanization request; interrupt with corrections whenever needed.
+and grammar checking in one uninterrupted turn. It maintains
+`workflow-status.md` for interrupted-run resume. Child rewrite skills return
+revised copy; the root workflow owns merges into `content.md`. Grammar checking
+uses a locally available `harper-cli`; if it is unavailable, the workflow
+records the skipped check and still saves the content. It does not require
+prompt approval or a separate humanization request; interrupt with corrections
+whenever needed.
 
 ## Validate
 

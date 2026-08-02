@@ -3,7 +3,8 @@
 Run these checks after the Blader rewrite as a residual pass only. Each item
 is a signal to inspect leftover formulaic prose, not a second full humanization
 and not a mechanical ban. Preserve protected SEO content, quotations, proper
-names, and intentional brand voice. Skip an item when Stage 6 already fixed it.
+names, and intentional brand voice. Skip an item when Humalizer / Stage 8
+already fixed it. If nothing residual remains, stop without rewriting.
 
 - Cut "here is," "this is," and similar throat-clearing before the point.
 - Replace binary contrasts and "not X, but Y" constructions with the supported

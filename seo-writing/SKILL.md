@@ -16,7 +16,7 @@ Create helpful, evidence-led English content for a real SaaS audience. Optimize 
 
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), use `plan` mode to save `seo-content/<keyword-slug>/content-plan.md`, then use `draft-from-structure` mode with that plan and `prompt.md` when it exists to write `content.md`. Skip the standalone Humalizer pass because the root workflow owns finalization.
+When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), use `plan` mode to save `seo-content/<keyword-slug>/content-plan.md`, then use `draft-from-structure` mode with that plan and `prompt.md` when it exists to write `content.md`. Skip the standalone Humalizer pass because the root workflow owns finalization. The parent also maintains `workflow-status.md` for resume.
 
 Inside the root workflow, the parent-selected operating mode overrides any
 workflow or output instruction inside a reusable prompt. Use the normalized

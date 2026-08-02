@@ -76,6 +76,51 @@ if workflow_file.file?
   unless workflow.match?(/Do not report\s+`completed` until/)
     errors << "seo-content-workflow/SKILL.md: missing runtime trace completion-evidence requirement"
   end
+
+  %w[
+    references/runtime-trace.md
+    references/artifacts.md
+    references/routing.md
+  ].each do |relative_path|
+    unless ROOT.join("seo-content-workflow", relative_path).file?
+      errors << "seo-content-workflow/#{relative_path}: missing reference file"
+    end
+  end
+
+  unless workflow.include?("workflow-status.md")
+    errors << "seo-content-workflow/SKILL.md: missing workflow-status.md resume contract"
+  end
+  unless workflow.include?("Parent owns the merge")
+    errors << "seo-content-workflow/SKILL.md: missing parent merge/write ownership rule"
+  end
+end
+
+stop_slop_file = ROOT.join("stop-slop/SKILL.md")
+if stop_slop_file.file?
+  stop_slop = stop_slop_file.read
+  if stop_slop.match?(/owned by Stage\s*6\b/)
+    errors << "stop-slop/SKILL.md: stale Stage 6 ownership; humanization is Stage 8"
+  end
+  if stop_slop.match?(/merge it back into the existing `content\.md`/)
+    errors << "stop-slop/SKILL.md: child skill must not claim content.md write ownership"
+  end
+  unless stop_slop.match?(/Humalizer\s*\/\s*Stage\s*8/)
+    errors << "stop-slop/SKILL.md: must attribute prior ownership to Humalizer / Stage 8"
+  end
+  unless stop_slop.include?("Do not write `content.md`")
+    errors << "stop-slop/SKILL.md: must defer content.md writes to the parent workflow"
+  end
+end
+
+checklist_file = ROOT.join("stop-slop/references/checklist.md")
+if checklist_file.file?
+  checklist = checklist_file.read
+  if checklist.match?(/Stage 6 already fixed/)
+    errors << "stop-slop/references/checklist.md: stale Stage 6 reference; use Humalizer / Stage 8"
+  end
+  unless checklist.match?(/Humalizer\s*\/\s*Stage\s*8/)
+    errors << "stop-slop/references/checklist.md: must reference Humalizer / Stage 8"
+  end
 end
 
 prompt_skill_file = ROOT.join("seo-prompt-skill/SKILL.md")
