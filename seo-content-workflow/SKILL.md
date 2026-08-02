@@ -15,7 +15,7 @@ description: >-
 
 Coordinate the repository's SEO skills. Each linked skill remains independently
 usable; load only the stage needed for the user's request. Keep sibling skills
-installed together via `npx skills add tbpzf/skills`.
+installed together via `npx skills add tbpzf/seo-skill`.
 
 Read [runtime-trace.md](references/runtime-trace.md),
 [artifacts.md](references/artifacts.md), and

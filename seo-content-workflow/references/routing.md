@@ -34,4 +34,4 @@
 - Missing facts never authorize invented claims. Continue with safe omissions or
   labeled placeholders and list publication blockers.
 - Sibling skills are required as a complete repository install
-  (`npx skills add tbpzf/skills`). Do not approximate a missing stage from memory.
+  (`npx skills add tbpzf/seo-skill`). Do not approximate a missing stage from memory.

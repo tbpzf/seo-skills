@@ -19,6 +19,34 @@ Report the actual preflight path, command status, JSON-parse result, finding
 count, correction count, and any skip/failure reason to the parent so it can
 emit its required runtime trace. Do not include raw CLI output in that report.
 
+## Install Harper CLI before a content task
+
+Harper is an optional local dependency. Install it before starting a content
+task; this skill and `seo-content-workflow` must never install or update it
+while processing a draft.
+
+| Platform | Install command |
+| --- | --- |
+| macOS or Linux with Homebrew | `brew install harper` |
+| Windows with Scoop | `scoop install harper` |
+| Arch Linux | `sudo pacman -S harper` |
+| Nix/NixOS | `nix shell 'nixpkgs#harper'` |
+| Termux | `apt install harper` |
+
+Portable binaries are also available from the [Harper GitHub releases](https://github.com/Automattic/harper/releases).
+Use the [official Harper installation guide](https://writewithharper.com/docs/integrations/language-server)
+to find current package instructions for a platform not listed above.
+
+Verify that the package provided the required CLI interface:
+
+```bash
+harper-cli --version
+harper-cli lint --help
+```
+
+The second command must show `--format`, because this skill requires structured
+JSON output. Make sure the directory that contains `harper-cli` is on `PATH`.
+
 ## Preflight
 
 1. Resolve `harper-cli` to an absolute executable path and confirm its
