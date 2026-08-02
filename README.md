@@ -95,6 +95,24 @@ After installation, `seo-content-workflow` invokes `harper-cli lint` with JSON
 output. If it is unavailable or cannot produce structured output, the workflow
 records the grammar check as skipped and still saves the article.
 
+## Acknowledgements and upstream projects
+
+This repository orchestrates and adapts open-source tools and editorial
+workflows. It does not claim their original ideas or implementations as its
+own.
+
+- [blader/humanizer](https://github.com/blader/humanizer) by Siqi Chen:
+  `blader-humanizer` adapts its humanization workflow and pattern review for
+  fact-safe SEO editing. The upstream project is licensed under the
+  [MIT License](https://github.com/blader/humanizer/blob/main/LICENSE).
+- [Automattic/harper](https://github.com/Automattic/harper):
+  `harper-grammar` optionally invokes Harper's local `harper-cli` for grammar
+  and spelling findings. Harper remains a separate optional dependency and is
+  licensed under the [Apache License 2.0](https://github.com/Automattic/harper/blob/master/LICENSE).
+
+The repository's contribution is the SEO-oriented workflow, artifact handling,
+guardrails, and integration logic around these upstream projects.
+
 ## Validate
 
 Run the repository checks, which require only Ruby's standard library, before
