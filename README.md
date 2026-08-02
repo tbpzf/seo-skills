@@ -105,6 +105,10 @@ own.
   `blader-humanizer` adapts its humanization workflow and pattern review for
   fact-safe SEO editing. The upstream project is licensed under the
   [MIT License](https://github.com/blader/humanizer/blob/main/LICENSE).
+- [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya:
+  `stop-slop` adapts its final prose-review rules for direct, accurate SEO
+  copy. The upstream project is licensed under the
+  [MIT License](https://github.com/hardikpandya/stop-slop/blob/main/LICENSE).
 - [Automattic/harper](https://github.com/Automattic/harper):
   `harper-grammar` optionally invokes Harper's local `harper-cli` for grammar
   and spelling findings. Harper remains a separate optional dependency and is
