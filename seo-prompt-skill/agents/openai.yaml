@@ -1,4 +1,4 @@
 interface:
   display_name: "SEO Prompt Builder"
-  short_description: "Build reusable SEO prompts from keywords and product facts"
-  default_prompt: "Use $seo-prompt-skill to build a reusable SaaS SEO prompt from this keyword and product brief."
+  short_description: "Build intent-led SEO prompts and content structures"
+  default_prompt: "Use $seo-prompt-skill to build a reusable SEO prompt that separates reader-intent and content-structure planning from drafting."

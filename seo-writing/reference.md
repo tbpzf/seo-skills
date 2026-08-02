@@ -27,7 +27,11 @@ These are public explanations from established SaaS publishers. Use their princi
 
 ## Plain language and middle-school clarity
 
-Write for a *busy adult* using general prose near a grade 6–8 reading level. Plain language is not dumbing down; experts prefer it when they are scanning ([NN/g: plain language is for everyone, even experts](https://www.nngroup.com/articles/plain-language-experts/)).
+Write for a *busy, capable adult* using general prose near a grade 6–8 reading
+level. Plain language is not dumbing down; experts prefer it when they are
+scanning ([NN/g: plain language is for everyone, even experts](https://www.nngroup.com/articles/plain-language-experts/)). Match explanations to the
+reader's likely knowledge. Do not define familiar terms, narrate obvious steps,
+or hide missing substance behind simplified language.
 
 ### Standards to follow
 
@@ -51,17 +55,26 @@ Borrow how good middle-school explainers teach (science/history essays, BBC Bite
 4. **Use numbered steps** for procedures; bullets for unordered lists of options.
 5. **End a section with what to do next**, not a summary that repeats the section.
 
-### Model SEO / product pages (study the *style*, do not copy)
+### Model SEO / product content (study the method, do not copy)
 
-These publishers are useful clarity references for English SaaS SEO. Emulate structure and plain wording; never lift phrasing or claim their results.
+Use these concrete articles as reference cases. Borrow the content decision or
+delivery pattern named below; never lift phrasing, reproduce the whole outline,
+or assume an article's claims are current without checking its sources and
+publication date.
 
-| Model | Why it is a good clarity reference |
-| --- | --- |
-| [Ahrefs: SEO copywriting](https://ahrefs.com/blog/seo-copywriting/) | Simple language pass; edit with Hemingway-style checks; write how you speak. |
-| [Ahrefs: website content](https://ahrefs.com/blog/website-content/) | ASMR-style editing: annotations, short sentences and paragraphs, multimedia, and reading copy aloud. |
-| [Backlinko: write a blog post](https://backlinko.com/write-a-blog-post/) | Scannable listicles, specific subheads, chunked answers that stand alone. |
-| [Backlinko: SEO copywriting](https://backlinko.com/seo-copywriting/) | Explains jargon in plain English while staying useful to practitioners. |
-| [Webflow: landing page SEO](https://webflow.com/blog/seo-landing-page) | One promise per page; clear next step; descriptive metadata. |
+| Reference case | What to study | Do not copy blindly |
+| --- | --- | --- |
+| [Ahrefs: Search Intent in SEO](https://ahrefs.com/blog/search-intent/) | Separates content type, format, and angle; uses SERP examples to turn an abstract concept into decisions | The top results reveal expectations, not a mandatory structure or proof that the majority angle is best |
+| [Ahrefs: SEO Content Creation Process](https://ahrefs.com/blog/seo-content-creation/) | Shows the handoff from keyword and intent to pitch, titles, and outline; also shows that editorial feedback can change the first outline | Do not retain a weak outline merely because it came from SERP research or a previous article |
+| [Ahrefs: Content Gap Analysis](https://ahrefs.com/blog/content-gap-analysis/) | Gives a usable SOP, downloadable artifacts, filters, screenshots, and a decision step after data collection | A missing competitor keyword is not automatically a useful topic; relevance and business fit still decide |
+| [Zapier: Best Automation Software](https://zapier.com/blog/best-automation-software/) | States testing and editorial criteria, segments recommendations by reader situation, and supports commercial intent with first-hand evaluation | Do not produce “best” or comparison content without real testing, transparent criteria, and current product facts |
+| [Buffer: Social Media Calendar Templates](https://buffer.com/resources/social-media-calendar-template/) | Acknowledges that the reader wants a template, gives a quick answer and comparison table early, then supplies multiple usable artifacts and instructions | Do not delay a downloadable/template query with a long definition or generic benefits section |
+| [Intercom: Improve User Onboarding with Jobs-to-be-Done](https://www.intercom.com/blog/four-forces-user-onboarding/) | Organizes advice around stakeholder jobs, anxieties, difficult decisions, and concrete product examples instead of a feature list | Product examples must clarify the method; they cannot replace a complete answer or become unsupported promotion |
+| [Semrush: How to Create Content Briefs](https://www.semrush.com/blog/content-brief/) | Records audience knowledge, intent, title, outline, links, and evidence in a writer handoff; explicitly allows writers to deviate from a rigid brief | Suggested word counts and keyword-tool metrics are inputs, not quality targets or ranking guarantees |
+
+Use the smallest relevant subset for the current article. For example, a
+commercial roundup benefits from Zapier's testing transparency, while a
+template query benefits from Buffer's answer-and-artifact-first structure.
 
 ### Common swaps
 
@@ -78,6 +91,31 @@ These publishers are useful clarity references for English SaaS SEO. Emulate str
 | now / next | subsequently, going forward |
 
 Keep a longer Latinate word when it is the precise product or legal term the ICP expects. Gloss it only when the intended reader may not know it.
+
+## Intent-to-structure method
+
+Use this before choosing headings for an educational blog:
+
+1. **Interpret the query in context.** State what it most likely means for this
+   audience, product category, and market. Record plausible ambiguity instead
+   of quietly choosing a broad meaning.
+2. **Model the reader situation.** Identify the trigger, current knowledge,
+   task or decision, expected result, and what could make the advice fail.
+3. **Choose the useful angle.** Make one specific promise that the available
+   facts and evidence can support. A keyword restated as a title is not an
+   angle.
+4. **List required answers.** Include the decisions, steps, examples, evidence,
+   trade-offs, and likely follow-up questions needed to fulfill the promise.
+5. **Remove weak sections.** Delete generic history, definitions the audience
+   already knows, synonymous keyword headings, repeated summaries, and any
+   section with no distinct reader job.
+6. **Order by use.** Put the direct answer first, then the information needed to
+   act or decide. Match the sequence to the reader's workflow, not a fixed SEO
+   template.
+
+For each retained section, record: `reader question/job`, `key takeaway`, and
+`evidence/example/artifact`. This section contract is what the drafting stage
+must fulfill.
 
 ## Evidence inventory
 
@@ -112,13 +150,23 @@ Useful internal links: related use cases, feature documentation, integrations, p
 
 Use this for a question or a repeatable job. The reader should gain an answer even if they never click the CTA.
 
-1. **Opening answer** — answer the query or define the concept with general prose near the grade 6–8 target.
-2. **Context** — explain who needs this and when it matters, with one concrete scenario.
-3. **Method or framework** — offer ordered, actionable steps; one action per step.
-4. **Examples and evidence** — prefer first-hand examples, product walkthroughs, cited data, or practitioner insights.
-5. **Common mistakes or trade-offs** — help readers choose or adapt the method.
-6. **Product connection** — demonstrate one relevant workflow; do not treat the product as the only possible answer.
-7. **Next step** — point to an appropriate template, demo, documentation page, or related guide.
+Treat this as a set of possible reader jobs, not mandatory headings:
+
+1. **Opening answer or orientation** — answer the query or give the decision
+   frame without a generic introduction.
+2. **Necessary context** — include only context that changes the reader's action
+   or decision; do not manufacture a beginner scenario.
+3. **Method, criteria, or framework** — offer actionable steps or decision rules,
+   including the difficult part of the task.
+4. **Examples, artifacts, and evidence** — prefer worked examples, templates,
+   screenshots, first-hand evidence, cited data, or practitioner insight.
+5. **Mistakes, limits, or trade-offs** — include them when they materially alter
+   the outcome.
+6. **Product connection** — demonstrate one relevant workflow; the article must
+   still solve the reader's problem without the product.
+7. **Next useful action** — point to an appropriate template, demo,
+   documentation page, or related guide; do not repeat the article as a
+   conclusion.
 
 Useful internal links: a pillar guide, a narrower tutorial, product documentation, a template/tool, and a use-case page.
 

@@ -1,37 +1,52 @@
 ---
 name: seo-writing
 description: >-
-  Write and improve English SaaS landing pages and educational blog posts for
-  organic search and conversion in plain, middle-school-readable language. Use
-  when creating SEO content, SaaS feature/use-case/industry pages, product-led
-  blog articles, SEO titles or meta descriptions, or when auditing finished SaaS
-  copy and producing a final SEO verification report for search intent, evidence,
-  clarity, and CTA alignment. In the root seo-content-workflow, write
-  automatically from the saved prompt and save markdown in its per-keyword
-  content.md path without an approval step.
+  Plan, write, and improve English SaaS landing pages and educational blog posts
+  for organic search and conversion in clear language for capable adult readers.
+  Use when turning keywords into a useful topic and content structure, turning
+  a supplied structure into complete content, creating product-led articles,
+  writing SEO metadata, or auditing SaaS copy for reader intent, usefulness,
+  evidence, clarity, and CTA alignment. In the root seo-content-workflow, save
+  the plan and draft in their per-keyword paths without an approval step.
 ---
 
 # SaaS SEO Writing
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
-**Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Keep the SaaS audience and accurate product terms; simplify the *language*, not the *job*. If a busy expert cannot skim it, rewrite.
+**Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md) after its automatic readiness pass, treat the saved `seo-content/<keyword-slug>/prompt.md` as the content specification, skip the standalone Humalizer pass, and write the final markdown to `seo-content/<keyword-slug>/content.md`.
+When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), use `plan` mode to save `seo-content/<keyword-slug>/content-plan.md`, then use `draft-from-structure` mode with that plan and `prompt.md` when it exists to write `content.md`. Skip the standalone Humalizer pass because the root workflow owns finalization.
 
-Inside the root workflow, use the normalized saved prompt as the only content
-specification. Do not infer new page type, audience, market, language, keyword
-policy, or CTA values from invocation context. If a required structural value
-is absent, return control to the parent's Stage 3 so it can resolve and persist
-the value, then continue without user approval. Omit unsupported factual claims
-and list unresolved evidence or destinations in the final audit. Label the
-draft as requiring input before publication when material placeholders remain.
+Inside the root workflow, the parent-selected operating mode overrides any
+workflow or output instruction inside a reusable prompt. Use the normalized
+saved prompt for facts, SEO policy, audience, market, language, and CTA when it
+exists. Always use the saved content plan for the reader promise, intent,
+outline, required depth, and its normalized fallback constraints. Do not
+silently replace either contract from invocation context. If a required value
+is absent, return control to the parent stage that owns it, persist the
+correction, and continue without user approval. Omit unsupported factual claims
+and list unresolved evidence or destinations in the final audit.
 
 This skill covers:
 - SaaS landing pages: feature, use case, audience, or industry pages
 - SaaS educational blog posts: definitions, how-to guides, and problem-solving articles
 
 It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or competitor-comparison pages. State the limitation and ask to narrow or use a dedicated workflow when one of those is requested.
+
+## Operating modes
+
+Choose one mode from the request:
+
+| Mode | Input | Output |
+| --- | --- | --- |
+| `plan` | Keyword(s), audience/product context, and available evidence | One specific topic, reader-intent analysis, and a section-level content structure; no body copy |
+| `draft-from-structure` | A supplied or saved content structure plus factual/SEO constraints | Complete content that follows and, when necessary, safely corrects the structure |
+| `end-to-end` | Keyword(s) plus a request for finished content | Run `plan`, then draft from that plan |
+| `audit` | Existing copy | Findings and targeted revisions |
+
+Do not merge `plan` and `draft-from-structure` into one invisible step inside
+the root workflow. The saved plan is the handoff contract and recovery point.
 
 ## Non-negotiable rules
 
@@ -43,8 +58,8 @@ It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or compet
 6. A product mention must solve the reader's current problem. Do not turn an informational article into an uninterrupted sales pitch.
 7. Do not claim that a change will rank, convert, or meet a Google requirement. Explain the user benefit and evidence instead.
 8. Scale keyword use to the supplied inventory and page length. Never add
-   keywords to fill the typical portfolio shape defined by the saved prompt,
-   and never require every supplied phrase to appear.
+   keywords to fill the typical portfolio shape defined by the saved prompt or
+   plan, and never require every supplied phrase to appear.
 9. Meet the clarity bar on every draft. Prefer short sentences, everyday words,
    one idea per paragraph, and concrete examples. Define a technical term on
    first use only when the intended reader may not know it. Do not “sound
@@ -53,6 +68,17 @@ It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or compet
     naturally in both. Make the H1 state a specific, supportable user benefit or
     outcome in addition to the focus keyword; do not use a vague slogan as the
     H1.
+11. Infer and serve the reader's real task or decision, not just the literal
+    keyword. A page that restates definitions or offers interchangeable tips is
+    not useful enough to publish.
+12. Respect the reader's competence. Do not use a childish tone, fake beginner
+    scenarios, patronizing reassurance, or phrases such as “simply,”
+    “obviously,” or “even a beginner” to diminish the work. Explain a term only
+    when the intended audience is unlikely to know it.
+13. Earn every section. Each section must answer a distinct question, enable a
+    decision, teach an action, supply evidence, or clarify a meaningful limit.
+    Delete sections that exist only for word count, keyword placement, or a
+    generic template.
 
 ## Intake
 
@@ -82,28 +108,74 @@ omissions.
 ### 1. Research
 
 1. Classify the query: informational, commercial investigation, or transactional.
-2. When live search or SERP data is available, inspect the dominant result type, recurring reader questions, and gaps. Treat it as input, not a template to copy.
-3. Read the supplied product materials and list only substantiated capabilities, limitations, and proof.
-4. Identify the information gain: first-hand experience, original data, a useful framework, a concrete workflow, an expert explanation, or product evidence that competing pages do not provide.
-5. Map the reader's next decision. Do not target a query if the product has no credible relevance to its solution.
+2. Resolve the likely reader situation: who searches, what triggered the
+   search, what they already know, and the task or decision they need to finish.
+3. Define the expected result: a direct answer, comparison criteria, procedure,
+   template, diagnosis, recommendation, or buying decision support.
+4. List the constraints, failure modes, trade-offs, and follow-up questions a
+   useful answer must cover. Separate adjacent intents that need another page.
+5. When live search or SERP data is available, inspect the dominant result type,
+   recurring reader questions, and gaps. Treat it as evidence about expectations,
+   not a template to copy.
+6. Read supplied product materials and list only substantiated capabilities,
+   limitations, and proof.
+7. Identify the information gain: first-hand experience, original data, a useful
+   framework, a concrete workflow, an expert explanation, a downloadable
+   artifact, or product evidence that competing pages do not provide.
+8. Map the reader's next decision. Do not target a query if the product has no
+   credible relevance to its solution.
 
-### 2. Strategy
+### 2. Topic and content structure
 
-Write a compact strategy before the draft:
+In `plan` or `end-to-end` mode, select one topic that makes a specific,
+supportable promise. Do not use the keyword itself as the entire topic and do
+not broaden the topic beyond the reader's likely task.
+
+Return this plan:
 
 ```markdown
-Intent:
-Reader and job to be done:
-Primary keyword/topic:
-Supporting core keywords:
-Long-tail keywords selected / omitted:
-Search promise:
-Information gain:
-Product relevance:
-Primary CTA and destination:
-Evidence available / evidence still needed:
-Internal links:
+# Content plan
+
+## Reader intent
+- Focus keyword:
+- Search intent:
+- Reader and current knowledge:
+- Trigger, job, or decision:
+- Expected outcome:
+- Constraints and follow-up questions:
+- Out of scope:
+
+## Topic
+- Working title:
+- Reader promise:
+- Why this angle is useful:
+- Information gain and evidence available:
+
+## Content structure
+### <descriptive section heading>
+- Reader question/job:
+- Key takeaway:
+- Evidence, example, or artifact:
+- Product connection, if genuinely useful:
+
+## Writing constraints
+- Page type, market, and page-copy language:
+- Selected/omitted supporting keywords:
+- Keyword policy:
+- Verified product facts and prohibited claims:
+- Facts or evidence still needed:
+- Internal links:
+- Primary CTA and destination:
 ```
+
+Every saved plan must populate these constraints. When `prompt.md` does not
+exist, this section is the complete persisted drafting contract rather than a
+short note appended to the outline.
+
+Order sections by the reader's learning or decision sequence. Do not force a
+definition section when the audience already knows the concept. Do not create
+separate headings for synonymous keywords. A section may omit a product
+connection when the product would distract from the answer.
 
 Choose one architecture.
 
@@ -111,14 +183,16 @@ Choose one architecture.
 
 Use for information-led queries. Answer the question in the opening, then teach the reader how to act.
 
-1. Clear SEO title with the focus keyword, plus an H1 with the focus keyword and
-   a specific reader benefit
-2. Direct answer or problem framing
-3. Method, framework, or steps
-4. Examples, screenshots, data, or expert evidence
-5. Limits, alternatives, or common mistakes where useful
-6. Natural product connection for a relevant step
-7. Conclusion with the next useful action and CTA
+Use the likely architecture below as a starting point, then remove or reorder
+anything the reader does not need:
+
+1. Clear SEO title and H1 aligned to one specific reader promise
+2. Direct answer or useful orientation
+3. Method, framework, criteria, or steps suited to the query
+4. Concrete examples, screenshots, data, templates, or expert evidence
+5. Limits, alternatives, and common mistakes that affect the outcome
+6. Natural product connection only for a relevant step
+7. The next useful action; do not repeat the article as a conclusion
 
 #### SaaS landing page
 
@@ -134,7 +208,13 @@ Use for commercial or transactional queries. Make one audience/use-case promise 
 
 Do not use a generic feature dump. Every section must advance the page promise.
 
-### 3. Draft
+### 3. Draft from the structure
+
+In `draft-from-structure` mode, read the entire supplied or saved plan before
+writing. Preserve its reader promise and section jobs. Correct a section only
+when it conflicts with search intent, verified facts, or usefulness; record the
+material correction in the final audit instead of silently following a bad
+outline.
 
 - Use one focus keyword for the page promise. Give each selected supporting
   core or long-tail term a distinct reader intent or section role.
@@ -143,6 +223,12 @@ Do not use a generic feature dump. Every section must advance the page promise.
 - With a large or mixed-intent set, write only for the coherent cluster in the
   specification. Do not merge separate search intents into one page.
 - Give each paragraph one job and lead important sections with a direct answer or claim.
+- Deliver the information promised in each section. Include the planned
+  decision criteria, steps, examples, evidence, limits, or artifact rather than
+  replacing them with motivational prose.
+- Assume the knowledge level recorded in the plan. Do not define familiar terms,
+  narrate obvious steps, or add empty setup such as “In today's fast-paced
+  world.”
 - Make headings descriptive enough to be scanned without body text.
 - Prefer concrete verbs, product behaviors, and observable outcomes over adjectives such as “powerful,” “seamless,” or “best-in-class.”
 - Write to the clarity bar below. Retain domain terms the ICP expects; define only terms the intended reader may not know.
@@ -164,6 +250,10 @@ Goal: keep general prose near a grade 6–8 reading level. The reader is still a
 | Tone | Teach like a clear textbook or a good explainer blog | Marketese, hype, and fake “thought leadership” |
 
 **Self-check before audit:** read the opening and one mid-page section out loud. If you must re-parse a sentence, rewrite it. Prefer “what it does → how → what happens next” over abstract claims.
+
+Also run a reader-respect check: if a capable reader would say “I already know
+this,” “get to the point,” or “what should I do with this?”, cut the setup or
+replace it with a concrete answer, decision rule, example, or next action.
 
 For word swaps, model pages, and textbook-style patterns, see the “Plain language and middle-school clarity” section in [reference.md](reference.md). For before/after rewrites, see Example 3 in [examples.md](examples.md).
 
@@ -192,6 +282,12 @@ After the first draft, run both reviews and silently revise.
 ### A. Intent, evidence, and conversion audit
 
 - Would the target reader find the answer or buying information promised by the query?
+- Does the opening answer or orient the reader without delaying the useful part?
+- Does every major section fulfill its recorded reader question/job with a
+  concrete takeaway?
+- Can the reader make a better decision or take a real next step after reading?
+- Does the article avoid teaching obvious basics to an audience that already
+  knows them, while still defining genuinely unfamiliar terms?
 - Does the page offer a distinct insight, workflow, evidence source, or product demonstration?
 - Is every factual claim supplied, cited, or marked as needing validation?
 - Is the product connection natural, proportionate, and useful?
@@ -209,6 +305,8 @@ After the first draft, run both reviews and silently revise.
   supporting terms were recorded rather than forced into the draft.
 - Replace unsupported “leading,” “trusted,” “faster,” or “better” claims with evidence or precise language.
 - Remove AI-style list inflation, fake urgency, empty transitions, and repetitive CTA wording.
+- Remove patronizing language, fake beginner examples, redundant definitions,
+  rhetorical padding, and “simple” advice that omits the hard or useful part.
 - Confirm the title is clear and contains the focus keyword.
 - Confirm the H1 is clear and contains the focus keyword plus a specific,
   supportable user benefit or outcome.
@@ -220,8 +318,8 @@ After the first draft, run both reviews and silently revise.
 Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or no parent workflow will run a later humanization step).
 
 Skip the full Humalizer pass inside this skill when `seo-content-workflow` is
-the parent. That workflow runs `humalizer` with `blader-humanizer` as Stage 6,
-then `stop-slop` as Stage 7 and Harper grammar checking as Stage 8 when
+the parent. That workflow runs `humalizer` with `blader-humanizer` as Stage 8,
+then `stop-slop` as Stage 9 and Harper grammar checking as Stage 10 when
 available. Keep audit A/B here: remove obvious filler and repetitive CTAs, but
 do not run a second scored rewrite.
 
@@ -229,7 +327,10 @@ When Humalizer does run here, preserve the SEO contract: verified claims, intent
 
 ## Deliverable
 
-Unless the user asks for a narrower output, return:
+In `plan` mode, return only the content-plan format from Step 2. In `end-to-end`
+mode, return that content plan first, then the draft deliverable below; when the
+root workflow owns file writes, return them as separate artifacts. In
+`draft-from-structure` mode, read the supplied plan and return only:
 
 ```markdown
 ## Content strategy
@@ -250,6 +351,8 @@ Unless the user asks for a narrower output, return:
 
 ## Final audit
 - Intent and product fit:
+- Usefulness and reader-respect check:
+- Structure deviations, if any:
 - Evidence gaps:
 - Clarity bar (middle-school readable): pass / fixes made:
 - Changes made:

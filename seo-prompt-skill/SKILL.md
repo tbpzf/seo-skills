@@ -2,14 +2,13 @@
 name: seo-prompt-skill
 description: >-
   Generate reusable English SEO content prompts from a keyword and a product
-  brief. Use when the user provides SEO keywords and wants a prompt,
-  landing-page template, blog prompt, module outline, keyword plan, metadata
-  requirements, or requirements for a final SEO verification report inside a
-  generated prompt, including adapting keyword placement to sparse, typical,
-  or large keyword sets. In the root seo-content-workflow, hand the generated
-  prompt back immediately so it can be saved and used for drafting in the same
-  run, without a user approval checkpoint. Do not use for auditing finished
-  page copy; use seo-writing instead.
+  brief. Use when the user provides SEO keywords and wants a reusable prompt
+  that requires a useful topic and content structure, a blog or landing-page
+  template, a keyword plan, metadata requirements, or a final SEO verification
+  contract. Prompts must separate intent/topic/structure planning from drafting
+  and adapt keyword use to sparse, typical, or large sets. In the root seo-content-workflow, hand the
+  prompt back immediately for saved planning and drafting without an approval
+  checkpoint. Do not use for auditing finished copy; use seo-writing instead.
 ---
 
 # SEO Prompt Builder
@@ -77,7 +76,9 @@ Every generated prompt must:
 3. Preserve the difference between concepts, previews, and professional/regulated deliverables when relevant.
 4. Require one clear search intent and one primary CTA; secondary CTAs may only support the same next step.
 5. Require natural language, not keyword stuffing; semantic variants do not count as exact-match occurrences.
-6. Require a `<keyword_plan>` before page copy and a final SEO report after it.
+6. Require a `<content_plan>` before page copy. It must contain the reader-intent
+   analysis, one useful topic promise, a section-level structure, and the
+   keyword plan. Require a final SEO report after the copy.
 7. Use count-mode reporting only when the user supplied numeric targets; otherwise use natural-mode placement notes with no invented targets or per-module count tables.
 8. Exclude planning and reporting text from any exact keyword counts.
 9. Require the writer to flag an impossible or unnatural keyword rather than force it into user-facing copy.
@@ -92,6 +93,13 @@ Every generated prompt must:
 13. Require a clear, immediately understandable title tag and H1. Require the
     focus keyword naturally in both, and require the H1 to pair it with a
     specific, supportable user benefit or outcome.
+14. Require the writer to treat the audience as capable adults: use plain
+    language without childish explanations, obvious filler, fake beginner
+    scenarios, or patronizing phrases. Define terms according to the audience's
+    recorded knowledge, not a blanket beginner assumption.
+15. Require every planned section to answer a distinct reader question, enable
+    a decision, teach an action, provide evidence, or explain a material limit.
+    Forbid sections created only for length, keywords, or a generic template.
 
 ## Building the prompt
 
@@ -137,7 +145,7 @@ If the supplied keyword does not clearly match the product or page type, write a
   Actual/Target result. Do not promise that every target will be met.
 - When no targets are supplied, use **natural mode**: intent-led placement only. Do not invent numeric targets, planned exact-match totals, or per-module keyword count tables.
 - Define a `restricted keyword` area for awkward or weakly relevant terms. Allow zero uses and require an explanation in the report if omission improves clarity.
-- In count mode only, tell the writer to count visible page copy in the specified modules and exclude `<keyword_plan>` and the final report.
+- In count mode only, tell the writer to count visible page copy in the specified modules and exclude `<content_plan>` and the final report.
 - If the writer cannot verify a count reliably, it must say so rather than invent a total. If a supplied target would cause stuffing, report it as unmet instead of degrading the copy.
 
 ### 3. Configure factual boundaries
@@ -156,6 +164,10 @@ Do not transform a missing fact into a claim. Use `[fact needed]` in the generat
 For a landing page, use the six-module skeleton in [prompt-skeleton.md](prompt-skeleton.md). Adapt labels to the product, but keep the architecture aligned with `seo-writing`: hero, problem, how it works, outcomes, proof, FAQ. Keep one primary CTA; do not attach a CTA to every card or step.
 
 For a blog, replace Modules 2 through 5 with the blog structure in the skeleton while retaining the keyword plan, fact boundaries, conversion rules, FAQ where relevant, and final SEO report.
+
+Treat modules as a planning aid, not a mandatory table of contents. The
+generated prompt must tell the writer to omit or reorder modules that do not
+serve the resolved reader task.
 
 ### 5. Deliver
 
@@ -192,6 +204,8 @@ Before delivering the generated prompt, verify:
   outcome.
 - Every product statement comes from the user or remains a variable.
 - Page type, audience, market, intent, modules, and CTA are explicit.
+- The prompt separates content planning from drafting and requires a usable
+  topic/structure artifact before body copy.
 - Keyword policy is natural mode unless the user supplied targets; count instructions explain scope and overlap only in count mode.
 - The keyword plan scales to the supplied inventory, names one focus keyword,
   does not fill missing keyword slots, and does not require every phrase to
@@ -199,6 +213,8 @@ Before delivering the generated prompt, verify:
 - Reports and planning notes use `[[INSTRUCTION_LANGUAGE]]`, not a hardcoded language.
 - Metadata guidance does not require Meta Keywords.
 - Product-accuracy, conversion, and anti-stuffing/clarity checks exist.
+- Reader knowledge, usefulness, and reader-respect checks exist; plain language
+  is not treated as permission to talk down to the audience.
 - The prompt has no domain-specific residue from an unrelated template (including forced Chinese report text or per-item CTA spam).
 - Every unresolved `[[VARIABLE]]` is listed under “Fill before use.” Call the
   prompt copy-paste-ready only when that list is empty.

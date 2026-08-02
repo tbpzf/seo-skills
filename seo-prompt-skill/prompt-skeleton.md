@@ -25,6 +25,12 @@ Optimize for relevance, clarity, reader usefulness, and the primary conversion
 action. Do not claim that this page will rank or convert. Do not write unnatural
 sentences to meet a keyword count.
 
+Treat the audience as capable adults. Use plain language, but do not use a
+childish tone, explain concepts they are expected to know, pad the answer with
+obvious advice, or use phrases such as “simply,” “obviously,” and “even a
+beginner.” Explain only what this audience needs to complete the stated task or
+decision.
+
 ## Product facts and boundaries
 
 Use only the facts below. If a needed fact is missing, use `[fact needed]` or
@@ -91,8 +97,23 @@ Shared rules:
 
 ## Workflow
 
-Before writing visible page copy, output a short `<keyword_plan>` that lists:
+Work in two explicit phases.
 
+### Phase 1: Analyze intent and create the content plan
+
+Before writing visible page copy, output a concise `<content_plan>` containing:
+
+- The likely reader situation, current knowledge, triggering problem, and task
+  or decision behind the query
+- The expected result: direct answer, process, criteria, template, diagnosis,
+  recommendation, or buying support
+- Important constraints, trade-offs, failure modes, and follow-up questions
+- Adjacent intents that are out of scope for this page
+- One specific working title and reader promise; do not merely restate the
+  keyword as the topic
+- A section-level structure in reader order. For each section, state its reader
+  question/job, key takeaway, and needed evidence, example, or artifact
+- A product connection only where it genuinely helps complete a reader task
 - Where the primary keyword and any required terms will appear (title, H1,
   opening, relevant headings or body)
 - Which supporting core and long-tail terms were selected for this page, and
@@ -100,7 +121,20 @@ Before writing visible page copy, output a short `<keyword_plan>` that lists:
 - Any restricted keyword that will be omitted
 - Exact planned counts **only if** the keyword policy includes numeric targets
 
-Do not reveal detailed reasoning. After the plan, write the page content.
+Every planned section must answer a distinct question, enable a decision, teach
+an action, provide evidence, or explain a material limit. Do not add definition
+sections the audience does not need, synonymous keyword headings, repeated
+advice, or sections that exist only for word count.
+
+Do not reveal detailed reasoning. Close the block with `</content_plan>`.
+
+### Phase 2: Write from the content plan
+
+Write the full page from the Phase 1 structure. Deliver each section's promised
+answer, decision rule, step, evidence, example, or artifact. Do not replace the
+useful part with motivational prose, obvious setup, generic tips, or repeated
+summaries. If a planned section conflicts with verified facts or reader intent,
+correct it and report the material deviation in the final report.
 
 ## Conversion rules
 
@@ -200,7 +234,7 @@ Generate [[FAQ_COUNT]] useful questions a [[AUDIENCE]] reader would ask before
 ## Final SEO report
 
 After writing the modules, output this report in [[INSTRUCTION_LANGUAGE]].
-Exclude `<keyword_plan>` and this report from any keyword counts.
+Exclude `<content_plan>` and this report from any keyword counts.
 
 ### 1. Keyword check
 
@@ -237,16 +271,23 @@ AI scaffolding removed without changing verified facts, citations, links,
 metadata, required keywords, or CTAs. Do not run a separate full humanization
 skill here if a dedicated humanization stage will follow.
 
+Also confirm that every major section fulfills a distinct reader job, the
+useful answer appears without unnecessary delay, and the copy does not talk
+down to the audience, over-explain familiar concepts, or hide hard details
+behind “simple” advice.
+
 ## Writing requirements
 
 - Write all user-facing page content in natural [[PAGE_COPY_LANGUAGE]].
-- Write `<keyword_plan>`, module notes if any, and the Final SEO Report in
+- Write `<content_plan>`, module notes if any, and the Final SEO Report in
   [[INSTRUCTION_LANGUAGE]].
 - Use a professional, concise, credible SaaS voice.
 - Keep CTAs short and state the next action.
 - Do not use fabricated social proof, rankings, ratings, user counts, time
   savings, performance claims, or conversion data.
-- Output every requested module in full. Do not use `same as above` or ellipses.
+- Output every applicable planned section in full. Do not use `same as above`
+  or ellipses. Omit a generic module when the content plan establishes that the
+  reader does not need it.
 ```
 
 ## Keyword policy blocks
@@ -303,7 +344,7 @@ Briefly confirm:
 
 ```markdown
 Count exact, case-insensitive matches only in the visible page copy in
-Modules 1 through 6. Do not count `<keyword_plan>` or the Final SEO Report.
+Modules 1 through 6. Do not count `<content_plan>` or the Final SEO Report.
 
 An occurrence of a longer exact phrase also counts as an occurrence of a
 complete exact phrase contained within it.
@@ -337,15 +378,19 @@ decision in the report.
 For an educational blog, replace Modules 2 through 5 in the generated prompt
 with:
 
-1. **Direct answer and context** — Answer the query in the opening; define the
-   problem and the reader.
-2. **Method or framework** — Explain the ordered steps with examples.
-3. **Evidence, trade-offs, and common mistakes** — Cite provided sources and
-   state limits or alternatives.
-4. **Relevant product workflow** — Show one supported product use case only
-   where it helps the reader complete a step.
+1. **Direct answer or orientation** — Give the reader the answer or decision
+   frame early. Add context only when it changes what they should do.
+2. **Method, criteria, or framework** — Match the query's expected result and
+   explain the real work, including difficult decisions rather than only easy
+   setup steps.
+3. **Examples, evidence, trade-offs, and mistakes** — Supply concrete examples
+   or artifacts, cite provided sources, and explain limits that affect outcomes.
+4. **Relevant product workflow** — Show one supported use case only where it
+   helps the reader complete a step. The article must remain useful without the
+   product or CTA.
 
-Keep Module 1, Module 6, the keyword plan, conversion rules, and the Final SEO
-Report. Change the primary CTA to a useful next action, such as reading
-documentation, downloading an approved resource, or starting a trial. Still use
-only one primary CTA.
+Use these as candidate jobs, not mandatory headings. Keep Module 1, Module 6
+when readers have material follow-up questions, the content/keyword plan,
+conversion rules, and the Final SEO Report. Change the primary CTA to a useful
+next action, such as reading documentation, downloading an approved resource,
+or starting a trial. Still use only one primary CTA.

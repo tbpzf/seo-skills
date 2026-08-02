@@ -185,3 +185,79 @@ do not draft a page full of capabilities. Ask for:
 If the user wants an outline immediately, provide the landing-page blueprint
 from `reference.md` with `[product fact needed]` and `[proof needed]`
 placeholders.
+
+## Example 4: Keyword to topic and content structure
+
+### Input
+
+```text
+Mode: plan
+Keyword: customer onboarding checklist
+Audience: customer success leaders at B2B SaaS companies
+```
+
+### Good plan excerpt
+
+```markdown
+## Reader intent
+- Search intent: Informational; the reader wants a checklist they can use, not
+  a history of customer onboarding.
+- Reader and current knowledge: A customer success leader who already knows
+  what onboarding is and needs a repeatable operating standard.
+- Job or decision: Decide what must happen before, during, and after kickoff,
+  then assign ownership and define completion signals.
+- Expected outcome: A copyable checklist plus criteria for adapting it by
+  customer complexity.
+- Out of scope: Basic definitions of customer success; product comparisons.
+
+## Topic
+- Working title: Customer Onboarding Checklist: Tasks, Owners, and Exit Criteria
+- Reader promise: Build a checklist that shows what happens, who owns it, and
+  how the team knows each phase is complete.
+
+## Content structure
+### Set the onboarding outcome before listing tasks
+- Reader question/job: What must the customer achieve by the end of onboarding?
+- Key takeaway: Define an observable first-value outcome and deadline before
+  choosing calls, emails, or training steps.
+- Evidence, example, or artifact: Filled example for a fictional B2B SaaS
+  account; `[approved internal example needed]` for publication.
+
+### Copyable onboarding checklist by phase
+- Reader question/job: What tasks, owners, inputs, and exit criteria belong in
+  pre-kickoff, kickoff, implementation, enablement, and handoff?
+- Key takeaway: A checklist is operational only when every task has an owner
+  and a completion signal.
+- Evidence, example, or artifact: Markdown checklist table.
+```
+
+Why it works: it does not waste a customer success leader's time defining
+onboarding. It identifies the artifact the query implies and gives each section
+a distinct operational job.
+
+## Example 5: Structure to finished content
+
+### Input
+
+```markdown
+Mode: draft-from-structure
+Audience: experienced customer success leaders
+Topic promise: A copyable onboarding checklist with owners and exit criteria
+Sections:
+1. Define the first-value outcome
+2. Checklist by onboarding phase
+3. Adapt the checklist by account complexity
+4. Handoff and measurement
+```
+
+### Expected behavior
+
+- Start with the first decision or a short orientation; do not define customer
+  onboarding or explain why checklists are useful.
+- Turn Section 2 into a usable checklist table with task, owner, required input,
+  and exit criterion columns.
+- Give concrete rules for changing the checklist in Section 3; do not say only
+  “customize it for your business.”
+- Mark unsupported benchmarks or product claims as evidence gaps.
+- Keep the supplied order unless intent, facts, or usefulness require a change;
+  record any material change in the final audit.
