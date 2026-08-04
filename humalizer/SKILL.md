@@ -110,11 +110,15 @@ See [reference.md](reference.md) for source notes and SEO-specific before/after 
 
 ### 4. Run the Blader Humanizer pass
 
-Load and apply [blader-humanizer](../blader-humanizer/SKILL.md) to the page
-copy. Pass it the protected contract from Step 1 and any voice sample from Step
-2. Its rewrite and self-audit are required in this workflow, but the guardrails
-above override a source rule when it would change protected SEO content or
-reduce technical precision.
+Fetch and apply the upstream [Blader Humanizer
+instructions](https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md)
+to the page copy. Read them from GitHub for the current run only; do not install,
+clone, cache, or write them into the project. Pass the protected contract from
+Step 1 and any voice sample from Step 2. The rewrite and self-audit are required
+in this workflow, but the guardrails above override a source rule when it would
+change protected SEO content or reduce technical precision. If the remote file
+cannot be read, return a failed status with the URL and error instead of using a
+partial or remembered version.
 
 ### 5. Merge and audit
 

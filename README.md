@@ -7,7 +7,10 @@ content with evidence gaps called out.
 
 ## Install
 
-Uses the official [`skills`](https://www.npmjs.com/package/skills) CLI. One command installs the complete set.
+Uses the official [`skills`](https://www.npmjs.com/package/skills) CLI. One
+command installs the local SEO workflow skills. Blader Humanizer and Stop Slop
+remain on GitHub and are read remotely at runtime; they are not installed
+locally.
 
 ### Global (all projects)
 
@@ -27,6 +30,10 @@ Generated files land in the **current project** at `seo-content/<keyword-slug>/`
 The workflow runs without approval checkpoints and maintains
 `workflow-status.md` so interrupted work can resume. It never invents product
 facts: unsupported claims are kept as evidence gaps or publication blockers.
+Stage 8 reads Blader Humanizer from GitHub, and Stage 9 reads Stop Slop and its
+needed references from GitHub. These stages require network access to
+`raw.githubusercontent.com`. The workflow pins reviewed upstream commits so a
+remote edit cannot silently change its behavior.
 
 ## Usage
 
@@ -102,12 +109,12 @@ workflows. It does not claim their original ideas or implementations as its
 own.
 
 - [blader/humanizer](https://github.com/blader/humanizer) by Siqi Chen:
-  `blader-humanizer` adapts its humanization workflow and pattern review for
-  fact-safe SEO editing. The upstream project is licensed under the
+  the workflow reads its upstream `SKILL.md` remotely and applies it inside the
+  fact-safe SEO guardrails. The upstream project is licensed under the
   [MIT License](https://github.com/blader/humanizer/blob/main/LICENSE).
 - [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya:
-  `stop-slop` adapts its final prose-review rules for direct, accurate SEO
-  copy. The upstream project is licensed under the
+  the workflow reads its upstream skill and reference files remotely for the
+  final prose review. The upstream project is licensed under the
   [MIT License](https://github.com/hardikpandya/stop-slop/blob/main/LICENSE).
 - [Automattic/harper](https://github.com/Automattic/harper):
   `harper-grammar` optionally invokes Harper's local `harper-cli` for grammar

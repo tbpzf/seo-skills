@@ -318,10 +318,10 @@ After the first draft, run both reviews and silently revise.
 Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or no parent workflow will run a later humanization step).
 
 Skip the full Humalizer pass inside this skill when `seo-content-workflow` is
-the parent. That workflow runs `humalizer` with `blader-humanizer` as Stage 8,
-then `stop-slop` as Stage 9 and Harper grammar checking as Stage 10 when
-available. Keep audit A/B here: remove obvious filler and repetitive CTAs, but
-do not run a second scored rewrite.
+the parent. That workflow runs `humalizer` with the remote Blader Humanizer
+instructions as Stage 8, then the remote Stop Slop instructions as Stage 9 and
+Harper grammar checking as Stage 10 when available. Keep audit A/B here: remove
+obvious filler and repetitive CTAs, but do not run a second scored rewrite.
 
 When Humalizer does run here, preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
 

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Stop Slop Final Pass"
-  short_description: "Run a final directness and rhythm review"
-  default_prompt: "Use $stop-slop to run a final prose review while preserving facts, required SEO terms, links, and the CTA."

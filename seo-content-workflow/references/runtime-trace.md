@@ -18,11 +18,11 @@ write an artifact.
 - At routing: `route` with the selected route and the stages that will run.
 - Before and after every sibling-skill invocation: `skill` with the skill name,
   local path, and `started`, `completed`, `skipped`, or `failed` status.
-- Before and after every remote operation: `remote` with the provider or
-  operation name and the same status vocabulary. State `remote: not used` when
-  a stage completes without one; never imply that research, a network call, or
-  a remote skill ran when it did not. Default stages do not require live SERP
-  or remote research.
+- Before and after every remote operation: `remote` with the provider or URL and
+  the same status vocabulary. For the required Blader Humanizer and Stop Slop
+  reads, include the GitHub Raw URL. State `remote: not used` when a stage
+  completes without one; never imply that research, a network call, or a remote
+  skill ran when it did not. Default stages do not require live SERP research.
 - Before and after every CLI preflight or command: `cli` with the executable
   name, operation, resolved absolute path when available, exit status, whether
   structured output parsed, and the finding/correction count when applicable.
@@ -36,6 +36,8 @@ write an artifact.
 ```text
 [seo-content-workflow][stage 1][skill] started: loading seo-prompt-skill from ../seo-prompt-skill/SKILL.md
 [seo-content-workflow][stage 2][file] completed: wrote prompt to seo-content/ai-kitchen-design/prompt.md
+[seo-content-workflow][stage 8][remote] started: reading https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md
+[seo-content-workflow][stage 9][remote] completed: applied https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md
 [seo-content-workflow][stage 10][cli] skipped: harper-cli was not found; grammar check is non-blocking
 ```
 

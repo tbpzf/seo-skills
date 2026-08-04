@@ -13,9 +13,10 @@ description: >-
 
 # SEO Content Workflow
 
-Coordinate the repository's SEO skills. Each linked skill remains independently
-usable; load only the stage needed for the user's request. Keep sibling skills
-installed together via `npx skills add tbpzf/seo-skill`.
+Coordinate the repository's SEO skills. Each linked local skill remains
+independently usable; load only the stage needed for the user's request. Blader
+Humanizer and Stop Slop are remote runtime dependencies and must not be
+installed, cloned, or cached in the project.
 
 Read [runtime-trace.md](references/runtime-trace.md),
 [artifacts.md](references/artifacts.md), and
@@ -43,21 +44,39 @@ write an artifact. Do not report `completed` until the work finished.
 
 ## Dependency preflight
 
-Route first, then verify only the next-stage skill file:
+Route first, then verify only the next-stage local skill file or remote URL:
 
-| Stage or route | Required file |
+| Stage or route | Required source |
 | --- | --- |
 | Generate or revise a prompt | `../seo-prompt-skill/SKILL.md` |
 | Plan, draft, revise, or audit | `../seo-writing/SKILL.md` |
 | SEO-contract humanization | `../humalizer/SKILL.md` |
-| Blader rewrite within Humalizer | `../blader-humanizer/SKILL.md` |
-| Final stop-slop review | `../stop-slop/SKILL.md` |
+| Blader rewrite within Humalizer | `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
+| Final stop-slop review | `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` plus its remote `references/` files as needed |
 | Grammar or spelling check | `../harper-grammar/SKILL.md` |
 
 Default checks: `seo-prompt-skill` before Stage 1, `seo-writing` before Stage 4,
-`humalizer` + `blader-humanizer` before Stage 8, `stop-slop` before Stage 9,
-`harper-grammar` before Stage 10. Missing writing skills block the run. A
-missing `harper-cli` only skips Stage 10.
+`humalizer` plus the remote Blader source before Stage 8, the remote Stop Slop
+sources before Stage 9, and `harper-grammar` before Stage 10. A missing local
+writing skill or unavailable required remote source blocks the run. A missing
+`harper-cli` only skips Stage 10.
+
+## Remote skill sources
+
+Fetch these sources at runtime with the agent's web or HTTP-reading tool:
+
+- Blader Humanizer: `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md`
+- Stop Slop core: `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md`
+- Stop Slop references: resolve links in the core file against
+  `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/`
+
+Use the fetched Markdown as instructions for the current run only. Do not run
+`npx skills add`, clone either repository, create a local skill directory, or
+persist a downloaded copy. The commit-pinned URLs are the reviewed dependency
+contract; update the pins only through a repository change. Emit a runtime-trace
+message before each remote request. If a required source cannot be read, record
+the URL and error, mark the stage failed, and stop rather than silently using a
+stale or partial substitute.
 
 ## Skills
 
@@ -66,8 +85,8 @@ missing `harper-cli` only skips Stage 10.
 | [seo-prompt-skill](../seo-prompt-skill/SKILL.md) | Reusable prompt from a keyword/brief | Stage 1 prompt |
 | [seo-writing](../seo-writing/SKILL.md) | Plan, draft, or audit SaaS copy | Stages 4–7 |
 | [humalizer](../humalizer/SKILL.md) | Protect SEO contract + coordinate rewrite | Stage 8 |
-| [blader-humanizer](../blader-humanizer/SKILL.md) | No-fabrication pattern rewrite | Inside Stage 8 |
-| [stop-slop](../stop-slop/SKILL.md) | Residual directness/rhythm review | Stage 9 |
+| [blader/humanizer](https://github.com/blader/humanizer) | Remote no-fabrication pattern rewrite | Inside Stage 8 |
+| [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | Remote residual directness/rhythm review | Stage 9 |
 | [harper-grammar](../harper-grammar/SKILL.md) | Local Harper grammar check | Stage 10 |
 
 ## Default keyword → content sequence
@@ -145,9 +164,9 @@ unless the route skips them.
 
 ### Stage 8 — Protect SEO contract, apply Blader humanization, and save
 
-Run `humalizer` (including required `blader-humanizer`) after every default
-Stage 7 completion unless the user opts out. Parent owns the merge into
-`content.md`. Child skills return revised copy and status only.
+Run `humalizer` with the required remote Blader Humanizer instructions after
+every default Stage 7 completion unless the user opts out. Parent owns the merge
+into `content.md`; the remote instructions never own local file writes.
 
 1. Read `content.md`, `content-plan.md`, and `prompt.md` when present.
 2. Apply Humalizer + Blader while preserving the SEO contract.
@@ -158,9 +177,15 @@ Stage 7 completion unless the user opts out. Parent owns the merge into
 
 ### Stage 9 — Stop Slop review and save
 
-Run `stop-slop` after Stage 8 unless humanization was skipped. Parent owns the
-merge/save. Do not redo Stage 8 claim/voice/SEO-contract work. Update audit
-with `Stop Slop: completed (score: <total>/50)`.
+Fetch and apply the remote Stop Slop core instructions after Stage 8 unless
+humanization was skipped. Fetch its remote reference files only when the core
+instructions call for them. Parent owns the merge/save; remote instructions
+never own local file writes. Treat upstream style rules as review signals, not
+absolute overrides. Preserve verified facts, legal and technical meaning,
+required terms, metadata, headings, links, citations, caveats, and primary CTA.
+Reject any remote-rule revision that violates this protected contract. Do not
+redo Stage 8 claim/voice/SEO-contract work. Update audit with
+`Stop Slop: completed (score: <total>/50)`.
 
 ### Stage 10 — Grammar-check and save final content
 

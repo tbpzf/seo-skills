@@ -1,4 +1,0 @@
-interface:
-  display_name: "Blader Humanizer Pass"
-  short_description: "Remove AI-writing patterns without inventing facts"
-  default_prompt: "Use $blader-humanizer to revise this English draft without changing supported facts, citations, links, or required SEO terms."

@@ -7,6 +7,8 @@ ROOT = Pathname.new(__dir__).parent.expand_path
 ALLOWED_FRONTMATTER_KEYS = %w[name description].freeze
 NAME_PATTERN = /\A[a-z0-9]+(?:-[a-z0-9]+)*\z/
 MARKDOWN_LINK_PATTERN = /\[[^\]]+\]\(([^)]+)\)/
+BLADER_REMOTE = "https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md"
+STOP_SLOP_REMOTE = "https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md"
 
 errors = []
 skill_files = ROOT.children
@@ -93,33 +95,19 @@ if workflow_file.file?
   unless workflow.include?("Parent owns the merge")
     errors << "seo-content-workflow/SKILL.md: missing parent merge/write ownership rule"
   end
-end
-
-stop_slop_file = ROOT.join("stop-slop/SKILL.md")
-if stop_slop_file.file?
-  stop_slop = stop_slop_file.read
-  if stop_slop.match?(/owned by Stage\s*6\b/)
-    errors << "stop-slop/SKILL.md: stale Stage 6 ownership; humanization is Stage 8"
+  [BLADER_REMOTE, STOP_SLOP_REMOTE].each do |remote_url|
+    unless workflow.include?(remote_url)
+      errors << "seo-content-workflow/SKILL.md: missing remote dependency #{remote_url}"
+    end
   end
-  if stop_slop.match?(/merge it back into the existing `content\.md`/)
-    errors << "stop-slop/SKILL.md: child skill must not claim content.md write ownership"
-  end
-  unless stop_slop.match?(/Humalizer\s*\/\s*Stage\s*8/)
-    errors << "stop-slop/SKILL.md: must attribute prior ownership to Humalizer / Stage 8"
-  end
-  unless stop_slop.include?("Do not write `content.md`")
-    errors << "stop-slop/SKILL.md: must defer content.md writes to the parent workflow"
+  unless workflow.include?("Do not run") && workflow.include?("`npx skills add`")
+    errors << "seo-content-workflow/SKILL.md: missing no-local-install rule"
   end
 end
 
-checklist_file = ROOT.join("stop-slop/references/checklist.md")
-if checklist_file.file?
-  checklist = checklist_file.read
-  if checklist.match?(/Stage 6 already fixed/)
-    errors << "stop-slop/references/checklist.md: stale Stage 6 reference; use Humalizer / Stage 8"
-  end
-  unless checklist.match?(/Humalizer\s*\/\s*Stage\s*8/)
-    errors << "stop-slop/references/checklist.md: must reference Humalizer / Stage 8"
+%w[blader-humanizer stop-slop].each do |local_dependency|
+  if ROOT.join(local_dependency).exist?
+    errors << "#{local_dependency}: remote dependency must not be installed locally"
   end
 end
 
