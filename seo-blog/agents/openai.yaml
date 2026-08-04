@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Blog"
+  short_description: "Plan and write evidence-led SaaS SEO blog posts"
+  default_prompt: "Use $seo-blog to turn this SaaS topic or keyword into a useful, publish-ready SEO blog post."

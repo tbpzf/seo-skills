@@ -1,23 +1,22 @@
 ---
-name: seo-prompt-skill
+name: seo-landing-prompt
 description: >-
-  Generate reusable English SEO content prompts from a keyword and a product
-  brief. Use when the user provides SEO keywords and wants a reusable prompt
-  that requires a useful topic and content structure, a blog or landing-page
-  template, a keyword plan, metadata requirements, or a final SEO verification
-  contract. Prompts must separate intent/topic/structure planning from drafting
-  and adapt keyword use to sparse, typical, or large sets. In the root seo-content-workflow, hand the
-  prompt back immediately for saved planning and drafting without an approval
-  checkpoint. Do not use for auditing finished copy; use seo-writing instead.
+  Generate reusable English SEO prompts for SaaS landing pages from keywords
+  and a product brief. Use when the user wants a prompt for a feature, use-case,
+  industry, audience, or product landing page with an intent-led content plan,
+  keyword policy, metadata, conversion constraints, and final verification.
+  Adapt keyword use to sparse, typical, or large sets. Inside seo-landing-page,
+  return the prompt immediately for saved planning and drafting. Do not use for
+  blogs, finished copy, or copy audits.
 ---
 
-# SEO Prompt Builder
+# SEO Landing Prompt
 
 Turn a keyword and optional business context into a complete, reusable prompt for generating English SEO content. The output of this skill is a prompt, not the finished SEO page.
 
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), return the generated prompt to the parent workflow as an intermediate artifact. Do not stop, request confirmation, or wait for a follow-up. The parent workflow saves `seo-content/<keyword-slug>/prompt.md` and continues directly with `seo-writing`.
+When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md), return the generated prompt to the parent workflow as an intermediate artifact. Do not stop, request confirmation, or wait for a follow-up. The parent workflow saves `seo-content/<keyword-slug>-landing/prompt.md` and continues directly with `seo-writing`.
 Return a concise completion or failure status to the parent so it can emit its
 runtime trace; do not claim the prompt was saved, because the parent owns that
 write.
@@ -40,12 +39,12 @@ When the user supplies only a keyword:
 
 ### Brief mode
 
-When the user supplies a keyword plus context, use the supplied facts to fill the variables. In a standalone prompt request, request only material missing facts if the user asks for an executable prompt with no placeholders. Inside `seo-content-workflow`, retain unknown facts as placeholders and return immediately so the parent can continue with safe omissions.
+When the user supplies a keyword plus context, use the supplied facts to fill the variables. In a standalone prompt request, request only material missing facts if the user asks for an executable prompt with no placeholders. Inside `seo-landing-page`, retain unknown facts as placeholders and return immediately so the parent can continue with safe omissions.
 
 Collect when available:
 
 - Core keyword candidates, long-tail keywords, and terms that must or must not appear
-- Page type: SaaS landing page, feature, use case, industry, product, or educational blog
+- Page type: SaaS feature, use case, industry, audience, or product landing page
 - Market, page-copy language, instruction/report language, audience, reader task, and brand voice
 - Product capabilities, limits, pricing/free-trial policy, compliance or legal restrictions
 - Approved proof: citations, customer stories, statistics, screenshots, and internal links
@@ -105,12 +104,11 @@ Every generated prompt must:
 
 ### 1. Classify the page
 
-Choose the prompt shape that matches intent:
+Choose the landing-page subtype that matches intent:
 
 | Page type | Intent | Default modules |
 | --- | --- | --- |
 | Feature, use case, industry, product landing page | Commercial or transactional | Hero, problem, how it works, outcomes, proof, FAQ |
-| Educational blog | Informational | Direct answer, method, evidence/limits, product connection, FAQ |
 
 If the supplied keyword does not clearly match the product or page type, write a validation warning into the prompt instead of forcing topical relevance.
 
@@ -161,9 +159,7 @@ Do not transform a missing fact into a claim. Use `[fact needed]` in the generat
 
 ### 4. Select modules
 
-For a landing page, use the six-module skeleton in [prompt-skeleton.md](prompt-skeleton.md). Adapt labels to the product, but keep the architecture aligned with `seo-writing`: hero, problem, how it works, outcomes, proof, FAQ. Keep one primary CTA; do not attach a CTA to every card or step.
-
-For a blog, replace Modules 2 through 5 with the blog structure in the skeleton while retaining the keyword plan, fact boundaries, conversion rules, FAQ where relevant, and final SEO report.
+Use the six-module landing-page skeleton in [prompt-skeleton.md](prompt-skeleton.md). Adapt labels to the product, but keep the architecture aligned with `seo-writing`: hero, problem, how it works, outcomes, proof, FAQ. Keep one primary CTA; do not attach a CTA to every card or step.
 
 Treat modules as a planning aid, not a mandatory table of contents. The
 generated prompt must tell the writer to omit or reorder modules that do not
@@ -191,7 +187,7 @@ For a standalone request, return:
 ```
 
 Do not add strategy commentary inside the copy-paste prompt unless the user asks for it.
-Inside `seo-content-workflow`, provide the same data to the parent without
+Inside `seo-landing-page`, provide the same data to the parent without
 turning it into a user-facing approval checkpoint.
 
 ## Quality check

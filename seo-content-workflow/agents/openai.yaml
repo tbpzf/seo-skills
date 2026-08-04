@@ -1,4 +1,0 @@
-interface:
-  display_name: "SEO Content Workflow"
-  short_description: "Plan and write useful SaaS SEO content end to end"
-  default_prompt: "Use $seo-content-workflow to turn these keywords into an intent-led topic and content plan, then write and save the complete article from that structure."

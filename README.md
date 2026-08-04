@@ -1,133 +1,106 @@
-# SEO Content Skills
+# SaaS Content Skills
 
-An end-to-end SEO workflow for English SaaS pages and educational blogs:
-keyword → writing prompt → search-intent-led outline → complete Markdown draft
-→ protected humanization → directness review → grammar check → publish-ready
-content with evidence gaps called out.
+Focused workflows for English SaaS landing pages, SEO blogs, and press
+releases. The former combined content workflow is split by content type so each
+skill has a clear trigger, artifact contract, and editorial standard.
+
+## Skills
+
+| Skill | Purpose |
+| --- | --- |
+| `seo-landing-page` | Plan, write, humanize, and grammar-check SaaS landing pages |
+| `seo-blog` | Plan, write, humanize, and grammar-check useful SaaS blog posts |
+| `seo-pr` | Draft or audit factual, newsworthy SaaS press releases |
+| `seo-landing-prompt` | Generate reusable prompts for landing-page writing only |
+| `seo-writing` | Shared landing-page and blog planning/drafting engine |
+| `humalizer` | Fact-safe humanization used by the SEO workflows |
+| `harper-grammar` | Optional local Harper grammar check |
 
 ## Install
 
-Uses the official [`skills`](https://www.npmjs.com/package/skills) CLI. One
-command installs the local SEO workflow skills. Blader Humanizer and Stop Slop
-remain on GitHub and are read remotely at runtime; they are not installed
-locally.
-
-### Global (all projects)
+Install all local skills with the official `skills` CLI:
 
 ```bash
-npx skills add tbpzf/seo-skill -g
+npx skills add tbpzf/skills -g
 ```
 
-### Current project only
-
-```bash
-npx skills add tbpzf/seo-skill
-```
-
-After install, in Cursor Agent say: “用 seo-content-workflow，关键词是 …”  
-Generated files land in the **current project** at `seo-content/<keyword-slug>/`.
-
-The workflow runs without approval checkpoints and maintains
-`workflow-status.md` so interrupted work can resume. It never invents product
-facts: unsupported claims are kept as evidence gaps or publication blockers.
-Stage 8 reads Blader Humanizer from GitHub, and Stage 9 reads Stop Slop and its
-needed references from GitHub. These stages require network access to
-`raw.githubusercontent.com`. The workflow pins reviewed upstream commits so a
-remote edit cannot silently change its behavior.
+Omit `-g` to install for the current project only. Blader Humanizer and Stop
+Slop remain pinned remote runtime dependencies; they are read from GitHub and
+are not installed locally.
 
 ## Usage
 
-In your coding agent, invoke `seo-content-workflow` in natural language.
-
-### Generate a complete article from a keyword
+### SaaS landing page
 
 ```text
-Use seo-content-workflow to write an English SaaS blog article for the keyword
-"AI meeting notes". The audience is operations managers. Our CTA is "Start a
-free trial". Do not make unsupported product claims.
+Use seo-landing-page to write an English feature landing page for "release
+notes software". The audience is B2B SaaS product managers. Use only the
+product facts below and make "Start a free trial" the primary CTA.
 ```
 
-The workflow creates `seo-content/ai-meeting-notes/` with `prompt.md`,
+The workflow writes `seo-content/<keyword>-landing/` with `prompt.md`,
 `content-plan.md`, `content.md`, and `workflow-status.md`.
 
-### Generate only a topic and outline
+### SaaS blog
 
 ```text
-Use seo-content-workflow to create a topic and content structure only for
-"customer onboarding automation". Do not draft the article.
+Use seo-blog to write an evidence-led article about how product teams create
+useful release notes. The reader is a product manager evaluating their current
+workflow.
 ```
 
-This stops after the plan and saves `content-plan.md`.
+The workflow writes `seo-content/<topic>-blog/` with `content-plan.md`,
+`content.md`, and `workflow-status.md`. It does not invoke the landing-page
+prompt skill.
 
-### Draft from an existing outline
+### SaaS press release
 
 ```text
-Use seo-content-workflow to draft an English SaaS blog from this structure:
-[paste the title, reader intent, sections, and CTA]
+Use seo-pr to draft a US press release announcing general availability of our
+release-notes product. Flag every missing fact, approval, and media asset.
 ```
 
-The workflow normalizes the outline, writes the article, then runs
-humanization, Stop Slop review, and the optional Harper grammar check.
+`seo-pr` applies a newsworthiness gate, inverted-pyramid structure, AP-style US
+defaults, claim and quote verification, SaaS availability checks, and a
+distribution-readiness audit. Its standards synthesize current guidance from
+[PR Newswire](https://www.prnewswire.com/resources/articles/ap-style-press-release/)
+and [Business Wire](https://www.businesswire.com/resources-education/product-launch-release-examples).
 
-## Optional: Install Harper CLI
+### Landing-page prompt only
 
-`harper-cli` enables the optional final English grammar and spelling check. It
-is not installed automatically during content generation. Install it once in
-your local environment, then confirm the executable is on `PATH`.
+```text
+Use seo-landing-prompt to create a reusable landing-page prompt for the keyword
+"customer onboarding software".
+```
 
-### macOS or Linux (Homebrew)
+This skill does not generate blog prompts.
+
+## Optional Harper CLI
+
+`harper-cli` enables the final English grammar and spelling check for
+`seo-landing-page` and `seo-blog`. Workflows never install it during a content
+task. Follow the
+[official Harper installation guide](https://writewithharper.com/docs/integrations/language-server),
+then verify:
 
 ```bash
-brew install harper
 harper-cli --version
 harper-cli lint --help
 ```
 
-### Windows (Scoop)
+If Harper is unavailable, the workflow records the grammar stage as skipped and
+still saves the content.
 
-```powershell
-scoop install harper
-harper-cli --version
-harper-cli lint --help
-```
+## Upstream projects
 
-### Other supported platforms
-
-Harper also provides packages for Arch Linux, Nix/NixOS, and Termux, plus
-portable binaries on its release page. Follow the official Harper installation
-guide for the current command and binary for your platform:
-[Harper language-server installation](https://writewithharper.com/docs/integrations/language-server).
-
-After installation, `seo-content-workflow` invokes `harper-cli lint` with JSON
-output. If it is unavailable or cannot produce structured output, the workflow
-records the grammar check as skipped and still saves the article.
-
-## Acknowledgements and upstream projects
-
-This repository orchestrates and adapts open-source tools and editorial
-workflows. It does not claim their original ideas or implementations as its
-own.
-
-- [blader/humanizer](https://github.com/blader/humanizer) by Siqi Chen:
-  the workflow reads its upstream `SKILL.md` remotely and applies it inside the
-  fact-safe SEO guardrails. The upstream project is licensed under the
-  [MIT License](https://github.com/blader/humanizer/blob/main/LICENSE).
-- [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya:
-  the workflow reads its upstream skill and reference files remotely for the
-  final prose review. The upstream project is licensed under the
-  [MIT License](https://github.com/hardikpandya/stop-slop/blob/main/LICENSE).
-- [Automattic/harper](https://github.com/Automattic/harper):
-  `harper-grammar` optionally invokes Harper's local `harper-cli` for grammar
-  and spelling findings. Harper remains a separate optional dependency and is
-  licensed under the [Apache License 2.0](https://github.com/Automattic/harper/blob/master/LICENSE).
-
-The repository's contribution is the SEO-oriented workflow, artifact handling,
-guardrails, and integration logic around these upstream projects.
+- [blader/humanizer](https://github.com/blader/humanizer) supplies the pinned
+  remote rewrite instructions used inside the SEO guardrails.
+- [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) supplies
+  the pinned remote final prose review.
+- [Automattic/harper](https://github.com/Automattic/harper) supplies the optional
+  local grammar CLI.
 
 ## Validate
-
-Run the repository checks, which require only Ruby's standard library, before
-publishing changes:
 
 ```bash
 ruby scripts/validate-skills.rb

@@ -16,9 +16,8 @@ seo-content/<keyword-slug>/
 
 - `<keyword-slug>`: lowercase primary keyword, spaces to hyphens, strip other
   punctuation (example: `AI kitchen design` → `ai-kitchen-design`).
-- When the same keyword serves different page types, append a short page-type
-  suffix (`ai-kitchen-design-blog`, `ai-kitchen-design-landing`) or use a
-  user-supplied directory name.
+- Append `-landing` unless the user supplies a directory name or the slug
+  already ends with `-landing`.
 - For a structure-only route without a focus keyword, derive the slug from the
   working title/topic with the same normalization. Pause only when no safe
   non-empty child of `seo-content/` can be produced.
@@ -82,7 +81,7 @@ source of truth.
 
 ```markdown
 # Workflow status
-- Route: keyword-to-article | topic-and-structure-only | draft-from-structure | prompt-only | humanize-existing | other
+- Route: keyword-to-landing-page | page-plan-only | draft-from-structure | prompt-only | humanize-existing | other
 - Keyword slug:
 - Completed stages: [1, 2, 3]
 - Next stage: 4

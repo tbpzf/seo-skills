@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Landing Prompt"
+  short_description: "Build reusable prompts for SaaS landing pages"
+  default_prompt: "Use $seo-landing-prompt to build a reusable SaaS landing-page prompt with intent, structure, keyword, and conversion constraints."

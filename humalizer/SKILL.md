@@ -1,6 +1,6 @@
 ---
 name: humalizer
-description: Protect the SEO contract while coordinating a Blader Humanizer rewrite of English SaaS SEO drafts. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated, and as the required rewrite stage of seo-content-workflow before its stop-slop and Harper checks unless the user explicitly opts out.
+description: Protect the SEO contract while coordinating a Blader Humanizer rewrite of English SaaS SEO drafts. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated, and as the required rewrite stage of seo-landing-page or seo-blog before their stop-slop and Harper checks unless the user explicitly opts out.
 ---
 
 # Humalizer for SaaS SEO
@@ -15,10 +15,11 @@ requires_separate_request: false
 merge_into_parent_content: true
 ```
 
-When called by [seo-content-workflow](../seo-content-workflow/SKILL.md), run
-automatically after the draft is saved (Stage 8); no separate user request is
-required. The parent runs Stop Slop and then Harper grammar checking after this
-rewrite stage when available. Own the SEO contract, claim accuracy, voice,
+When called by [seo-landing-page](../seo-landing-page/SKILL.md) or
+[seo-blog](../seo-blog/SKILL.md), run automatically after the draft is saved;
+no separate user request is required. The parent runs Stop Slop and then Harper
+grammar checking after this rewrite stage when available. Own the SEO contract,
+claim accuracy, voice,
 specificity, and Blader pattern rewrite here. Leave residual rhythm and leftover
 formulaic cadence to Stop Slop; do not re-run its checklist or scoring inside
 this stage. Prefer one Blader rewrite plus the five-dimension audit below over

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS Press Release"
+  short_description: "Write factual, newsworthy SaaS press releases"
+  default_prompt: "Use $seo-pr to write a credible SaaS press release from this announcement brief."

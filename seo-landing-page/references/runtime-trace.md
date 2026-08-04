@@ -8,7 +8,7 @@ write an artifact.
 ## Format
 
 ```text
-[seo-content-workflow][stage N][kind] status: detail
+[seo-landing-page][stage N][kind] status: detail
 ```
 
 `kind` is one of `route`, `skill`, `remote`, `cli`, `file`, or `result`.
@@ -34,11 +34,11 @@ write an artifact.
 ## Examples
 
 ```text
-[seo-content-workflow][stage 1][skill] started: loading seo-prompt-skill from ../seo-prompt-skill/SKILL.md
-[seo-content-workflow][stage 2][file] completed: wrote prompt to seo-content/ai-kitchen-design/prompt.md
-[seo-content-workflow][stage 8][remote] started: reading https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md
-[seo-content-workflow][stage 9][remote] completed: applied https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md
-[seo-content-workflow][stage 10][cli] skipped: harper-cli was not found; grammar check is non-blocking
+[seo-landing-page][stage 1][skill] started: loading seo-landing-prompt from ../seo-landing-prompt/SKILL.md
+[seo-landing-page][stage 2][file] completed: wrote prompt to seo-content/ai-kitchen-design-landing/prompt.md
+[seo-landing-page][stage 8][remote] started: reading https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md
+[seo-landing-page][stage 9][remote] completed: applied https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md
+[seo-landing-page][stage 10][cli] skipped: harper-cli was not found; grammar check is non-blocking
 ```
 
 ## Safety

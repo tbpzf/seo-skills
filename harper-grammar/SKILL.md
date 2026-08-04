@@ -1,6 +1,6 @@
 ---
 name: harper-grammar
-description: Check English Markdown, documentation, SEO copy, and prose with the local Harper CLI for spelling and grammar findings. Use when the user asks to grammar-check, proofread, spell-check, or lint English text, or as the optional final grammar stage of seo-content-workflow after humanization and stop-slop review.
+description: Check English Markdown, documentation, SEO copy, and prose with the local Harper CLI for spelling and grammar findings. Use when the user asks to grammar-check, proofread, spell-check, or lint English text, or as the optional final grammar stage of seo-landing-page or seo-blog after humanization and stop-slop review.
 ---
 
 # Harper Grammar Check
@@ -11,11 +11,11 @@ rewrite every flagged phrase or a guarantee that the text is error-free.
 
 ## Parent workflow contract
 
-When called by [seo-content-workflow](../seo-content-workflow/SKILL.md), run
-after the Humalizer and remote Blader Humanizer and Stop Slop passes against the
-saved `content.md`. Preserve the SEO contract and return the checked content and
-a concise result to the parent for its final audit. Do not add a standalone
-response wrapper to `content.md`.
+When called by [seo-landing-page](../seo-landing-page/SKILL.md) or
+[seo-blog](../seo-blog/SKILL.md), run after the Humalizer, remote Blader
+Humanizer, and Stop Slop passes against the saved `content.md`. Preserve the SEO
+contract and return the checked content and a concise result to the parent for
+its final audit. Do not add a standalone response wrapper to `content.md`.
 Report the actual preflight path, command status, JSON-parse result, finding
 count, correction count, and any skip/failure reason to the parent so it can
 emit its required runtime trace. Do not include raw CLI output in that report.
@@ -23,7 +23,7 @@ emit its required runtime trace. Do not include raw CLI output in that report.
 ## Install Harper CLI before a content task
 
 Harper is an optional local dependency. Install it before starting a content
-task; this skill and `seo-content-workflow` must never install or update it
+task; this skill and its parent SEO workflow must never install or update it
 while processing a draft.
 
 | Platform | Install command |

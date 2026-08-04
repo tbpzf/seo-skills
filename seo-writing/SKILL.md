@@ -1,13 +1,13 @@
 ---
 name: seo-writing
 description: >-
-  Plan, write, and improve English SaaS landing pages and educational blog posts
-  for organic search and conversion in clear language for capable adult readers.
-  Use when turning keywords into a useful topic and content structure, turning
-  a supplied structure into complete content, creating product-led articles,
-  writing SEO metadata, or auditing SaaS copy for reader intent, usefulness,
-  evidence, clarity, and CTA alignment. In the root seo-content-workflow, save
-  the plan and draft in their per-keyword paths without an approval step.
+  Shared low-level planning, drafting, and audit engine for English SaaS landing
+  pages and educational blog posts. Use when explicitly invoked, when the user
+  requests only a content plan/draft/audit engine, or when called by
+  seo-landing-page or seo-blog. For a finished landing page or blog workflow,
+  prefer those parent skills. Evaluate reader intent, usefulness, evidence,
+  clarity, metadata, and CTA alignment, then return artifacts to the parent
+  without an approval step.
 ---
 
 # SaaS SEO Writing
@@ -16,12 +16,16 @@ Create helpful, evidence-led English content for a real SaaS audience. Optimize 
 
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
-When this skill runs inside [seo-content-workflow](../seo-content-workflow/SKILL.md), use `plan` mode to save `seo-content/<keyword-slug>/content-plan.md`, then use `draft-from-structure` mode with that plan and `prompt.md` when it exists to write `content.md`. Skip the standalone Humalizer pass because the root workflow owns finalization. The parent also maintains `workflow-status.md` for resume.
+When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md) or
+[seo-blog](../seo-blog/SKILL.md), use the parent-selected `plan` or
+`draft-from-structure` mode and return the artifact to the parent. The parent
+owns file writes, final humanization, and `workflow-status.md`.
 
-Inside the root workflow, the parent-selected operating mode overrides any
-workflow or output instruction inside a reusable prompt. Use the normalized
-saved prompt for facts, SEO policy, audience, market, language, and CTA when it
-exists. Always use the saved content plan for the reader promise, intent,
+Inside a parent workflow, its selected operating mode overrides any workflow or
+output instruction inside a reusable prompt. For `seo-landing-page`, use the
+normalized saved prompt for facts, SEO policy, audience, market, language, and
+CTA. `seo-blog` does not require a prompt artifact. Always use the saved content
+plan for the reader promise, intent,
 outline, required depth, and its normalized fallback constraints. Do not
 silently replace either contract from invocation context. If a required value
 is absent, return control to the parent stage that owns it, persist the
@@ -99,9 +103,9 @@ Also request, when available:
 - Geographic market, competitors, and SERP notes
 
 For a standalone request, ask for facts before drafting when accurate copy is
-otherwise impossible. Inside `seo-content-workflow`, follow its automatic
-fallback rules and continue with explicit evidence placeholders or safe
-omissions.
+otherwise impossible. Inside `seo-landing-page` or `seo-blog`, follow the
+parent's automatic fallback rules and continue with explicit evidence
+placeholders or safe omissions.
 
 ## Workflow
 
@@ -196,7 +200,7 @@ anything the reader does not need:
 
 #### SaaS landing page
 
-Use for commercial or transactional queries. Make one audience/use-case promise and support it with proof. Keep this architecture aligned with `seo-prompt-skill` landing prompts.
+Use for commercial or transactional queries. Make one audience/use-case promise and support it with proof. Keep this architecture aligned with `seo-landing-prompt` landing prompts.
 
 1. Hero: audience + outcome + product mechanism + primary CTA
 2. Problem context and why common alternatives fall short
@@ -317,11 +321,10 @@ After the first draft, run both reviews and silently revise.
 
 Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or no parent workflow will run a later humanization step).
 
-Skip the full Humalizer pass inside this skill when `seo-content-workflow` is
-the parent. That workflow runs `humalizer` with the remote Blader Humanizer
-instructions as Stage 8, then the remote Stop Slop instructions as Stage 9 and
-Harper grammar checking as Stage 10 when available. Keep audit A/B here: remove
-obvious filler and repetitive CTAs, but do not run a second scored rewrite.
+Skip the full Humalizer pass inside this skill when `seo-landing-page` or
+`seo-blog` is the parent. Those workflows own the Humalizer + Blader, Stop Slop,
+and Harper stages. Keep audit A/B here: remove obvious filler and repetitive
+CTAs, but do not run a second scored rewrite.
 
 When Humalizer does run here, preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
 

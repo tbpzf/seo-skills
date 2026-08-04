@@ -19,90 +19,77 @@ skill_files = ROOT.children
 
 errors << "No top-level skills found" if skill_files.empty?
 
-workflow_file = ROOT.join("seo-content-workflow/SKILL.md")
-if workflow_file.file?
-  workflow = workflow_file.read
-  forbidden_approval_gates = [
-    "User confirmation (STOP)",
-    "Wait for confirmation (hard stop)",
-    "Confirmation is mandatory in the default sequence",
-    "approve and continue"
-  ]
+expected_execution_contract = {
+  "execution_mode" => "autonomous",
+  "approval_required" => false,
+  "intermediate_turns" => false,
+  "humanization_required" => true,
+  "grammar_check" => "if_available"
+}.freeze
 
+%w[seo-landing-page seo-blog].each do |workflow_name|
+  workflow_file = ROOT.join(workflow_name, "SKILL.md")
+  unless workflow_file.file?
+    errors << "#{workflow_name}/SKILL.md: missing split workflow"
+    next
+  end
+
+  workflow = workflow_file.read
   contract_match = workflow.match(/## Execution contract\s+```yaml\s+(.*?)```/m)
   if contract_match
     begin
       contract = YAML.safe_load(contract_match[1])
-      expected_contract = {
-        "execution_mode" => "autonomous",
-        "approval_required" => false,
-        "intermediate_turns" => false,
-        "humanization_required" => true,
-        "grammar_check" => "if_available"
-      }
-      unless contract == expected_contract
-        errors << "seo-content-workflow/SKILL.md: execution contract must be #{expected_contract.inspect}"
+      unless contract == expected_execution_contract
+        errors << "#{workflow_name}/SKILL.md: execution contract must be #{expected_execution_contract.inspect}"
       end
     rescue Psych::SyntaxError => e
-      errors << "seo-content-workflow/SKILL.md: invalid execution contract YAML: #{e.message.lines.first.strip}"
+      errors << "#{workflow_name}/SKILL.md: invalid execution contract YAML: #{e.message.lines.first.strip}"
     end
   else
-    errors << "seo-content-workflow/SKILL.md: missing YAML execution contract"
-  end
-  forbidden_approval_gates.each do |marker|
-    if workflow.include?(marker)
-      errors << "seo-content-workflow/SKILL.md: legacy approval gate found: #{marker.inspect}"
-    end
+    errors << "#{workflow_name}/SKILL.md: missing YAML execution contract"
   end
 
-  forbidden_incomplete_workflow_markers = [
-    "Stage 6: Optional humanization",
-    "Run `humalizer` only when the user asks to humanize or polish"
-  ]
-  forbidden_incomplete_workflow_markers.each do |marker|
-    if workflow.include?(marker)
-      errors << "seo-content-workflow/SKILL.md: optional humanization gate found: #{marker.inspect}"
-    end
+  [
+    "User confirmation (STOP)",
+    "Wait for confirmation (hard stop)",
+    "Confirmation is mandatory in the default sequence",
+    "approve and continue",
+    "Stage 6: Optional humanization"
+  ].each do |marker|
+    errors << "#{workflow_name}/SKILL.md: forbidden workflow marker #{marker.inspect}" if workflow.include?(marker)
   end
 
-  required_trace_markers = [
+  [
     "## Runtime trace",
-    "[seo-content-workflow][stage N][kind] status: detail",
+    "[#{workflow_name}][stage N][kind] status: detail",
     "Do not silently load a sibling skill, contact a remote service,"
-  ]
-  required_trace_markers.each do |marker|
+  ].each do |marker|
     unless workflow.include?(marker)
-      errors << "seo-content-workflow/SKILL.md: missing runtime trace requirement: #{marker.inspect}"
+      errors << "#{workflow_name}/SKILL.md: missing runtime trace requirement #{marker.inspect}"
     end
   end
-  unless workflow.match?(/Do not report\s+`completed` until/)
-    errors << "seo-content-workflow/SKILL.md: missing runtime trace completion-evidence requirement"
+  unless workflow.match?(/Do\s+not report\s+`completed` until/)
+    errors << "#{workflow_name}/SKILL.md: missing completion-evidence requirement"
   end
 
-  %w[
-    references/runtime-trace.md
-    references/artifacts.md
-    references/routing.md
-  ].each do |relative_path|
-    unless ROOT.join("seo-content-workflow", relative_path).file?
-      errors << "seo-content-workflow/#{relative_path}: missing reference file"
+  %w[references/runtime-trace.md references/artifacts.md references/routing.md].each do |relative_path|
+    unless ROOT.join(workflow_name, relative_path).file?
+      errors << "#{workflow_name}/#{relative_path}: missing reference file"
     end
   end
 
-  unless workflow.include?("workflow-status.md")
-    errors << "seo-content-workflow/SKILL.md: missing workflow-status.md resume contract"
-  end
-  unless workflow.include?("Parent owns the merge")
-    errors << "seo-content-workflow/SKILL.md: missing parent merge/write ownership rule"
-  end
+  errors << "#{workflow_name}/SKILL.md: missing resume contract" unless workflow.include?("workflow-status.md")
+  errors << "#{workflow_name}/SKILL.md: missing parent merge ownership" unless workflow.include?("Parent owns the merge")
   [BLADER_REMOTE, STOP_SLOP_REMOTE].each do |remote_url|
-    unless workflow.include?(remote_url)
-      errors << "seo-content-workflow/SKILL.md: missing remote dependency #{remote_url}"
-    end
+    errors << "#{workflow_name}/SKILL.md: missing remote dependency #{remote_url}" unless workflow.include?(remote_url)
   end
   unless workflow.include?("Do not run") && workflow.include?("`npx skills add`")
-    errors << "seo-content-workflow/SKILL.md: missing no-local-install rule"
+    errors << "#{workflow_name}/SKILL.md: missing no-local-install rule"
   end
+end
+
+if ROOT.join("seo-content-workflow").exist?
+  errors << "seo-content-workflow: old combined workflow must be removed"
 end
 
 %w[blader-humanizer stop-slop].each do |local_dependency|
@@ -111,7 +98,7 @@ end
   end
 end
 
-prompt_skill_file = ROOT.join("seo-prompt-skill/SKILL.md")
+prompt_skill_file = ROOT.join("seo-landing-prompt/SKILL.md")
 if prompt_skill_file.file?
   prompt_skill = prompt_skill_file.read
   contract_match = prompt_skill.match(/## Keyword portfolio contract\s+```yaml\s+(.*?)```/m)
@@ -126,13 +113,25 @@ if prompt_skill_file.file?
         "require_every_keyword" => false
       }
       unless contract == expected_contract
-        errors << "seo-prompt-skill/SKILL.md: keyword portfolio contract must be #{expected_contract.inspect}"
+        errors << "seo-landing-prompt/SKILL.md: keyword portfolio contract must be #{expected_contract.inspect}"
       end
     rescue Psych::SyntaxError => e
-      errors << "seo-prompt-skill/SKILL.md: invalid keyword portfolio YAML: #{e.message.lines.first.strip}"
+      errors << "seo-landing-prompt/SKILL.md: invalid keyword portfolio YAML: #{e.message.lines.first.strip}"
     end
   else
-    errors << "seo-prompt-skill/SKILL.md: missing YAML keyword portfolio contract"
+    errors << "seo-landing-prompt/SKILL.md: missing YAML keyword portfolio contract"
+  end
+end
+
+errors << "seo-prompt-skill: old prompt skill must be removed" if ROOT.join("seo-prompt-skill").exist?
+
+pr_guidance = ROOT.join("seo-pr/references/authoritative-guidance.md")
+unless pr_guidance.file?
+  errors << "seo-pr/references/authoritative-guidance.md: missing authoritative source synthesis"
+else
+  guidance = pr_guidance.read
+  %w[prnewswire.com businesswire.com].each do |domain|
+    errors << "seo-pr guidance: missing authoritative source #{domain}" unless guidance.include?(domain)
   end
 end
 

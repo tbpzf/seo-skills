@@ -372,25 +372,3 @@ decision in the report.
 | [[PRIMARY_KEYWORD]] | | [[PRIMARY_KEYWORD_TARGET]] | | |
 | [[SECONDARY_KEYWORDS_FOR_REPORT]] | | | | |
 ```
-
-## Blog replacement modules
-
-For an educational blog, replace Modules 2 through 5 in the generated prompt
-with:
-
-1. **Direct answer or orientation** — Give the reader the answer or decision
-   frame early. Add context only when it changes what they should do.
-2. **Method, criteria, or framework** — Match the query's expected result and
-   explain the real work, including difficult decisions rather than only easy
-   setup steps.
-3. **Examples, evidence, trade-offs, and mistakes** — Supply concrete examples
-   or artifacts, cite provided sources, and explain limits that affect outcomes.
-4. **Relevant product workflow** — Show one supported use case only where it
-   helps the reader complete a step. The article must remain useful without the
-   product or CTA.
-
-Use these as candidate jobs, not mandatory headings. Keep Module 1, Module 6
-when readers have material follow-up questions, the content/keyword plan,
-conversion rules, and the Final SEO Report. Change the primary CTA to a useful
-next action, such as reading documentation, downloading an approved resource,
-or starting a trial. Still use only one primary CTA.

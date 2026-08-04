@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Landing Page"
+  short_description: "Plan and write conversion-focused SaaS landing pages"
+  default_prompt: "Use $seo-landing-page to turn these keywords and product facts into a complete, evidence-led SaaS landing page."
