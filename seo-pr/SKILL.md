@@ -139,7 +139,14 @@ context materially helps coverage.
   bloated list of claims or formulaic “leader in” language.
 - **Body:** Add evidence and context in descending importance. Use short,
   one-idea paragraphs, descriptive subheads, and bullets only when they improve
-  scanning.
+  scanning. Avoid repeating the same ordinary word, phrase, sentence opening,
+  or sentence shape in close succession. Delete redundant wording first; use a
+  natural equivalent or recast the sentence only when meaning stays precise.
+- **Series:** Do not stack three or more similar verbs, nouns, adjectives, or
+  clauses merely to make the release sound comprehensive. Keep the material
+  actions, split distinct ideas into sentences, or use bullets when reporters
+  need the complete set. Preserve exact product names, technical terms, and
+  factual labels instead of forcing synonyms.
 - **Benefits:** Connect verified product behavior to a real user or market need.
   Do not convert every feature into an adjective-heavy promise.
 - **Quote:** Add interpretation, stakes, or informed perspective that is not
@@ -177,6 +184,12 @@ Verify:
 - Quotes add insight and have approval status recorded.
 - Tone is objective and third-person outside direct quotes; jargon and acronyms
   are explained only when needed.
+- Adjacent sentences and paragraphs do not echo the same ordinary wording,
+  opening, or grammatical frame. Necessary names and precise terms remain
+  consistent.
+- Prose does not rely on dense verb chains, three-part slogans, or repeated
+  parallel sentences. Longer sets appear only when materially useful and are
+  formatted for scanning.
 - Company/product names, titles, dates, links, and boilerplate are consistent.
 - Paragraphs are short, important facts come first, and no section is filler.
 - Media contact and useful supporting assets are present or flagged.

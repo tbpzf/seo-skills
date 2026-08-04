@@ -83,6 +83,18 @@ the root workflow. The saved plan is the handoff contract and recovery point.
     decision, teach an action, supply evidence, or clarify a meaningful limit.
     Delete sections that exist only for word count, keyword placement, or a
     generic template.
+14. Vary nearby wording and sentence shape. Do not repeat the same ordinary
+    word, phrase, sentence opening, or full idea in close succession. Remove
+    the repetition first; when the meaning is still needed, use a natural
+    equivalent, pronoun, or different sentence structure. Keep exact product
+    names, required keywords, technical terms, and factual labels when a
+    substitute would reduce accuracy.
+15. Limit stacked parallel phrasing. In normal prose, do not pack three or more
+    similar verbs, nouns, adjectives, or clauses into a sentence merely to
+    sound comprehensive. Keep the two actions that matter most, split distinct
+    actions into sentences, or use bullets when the full set helps the reader
+    complete a procedure or compare options. Do not repeat the same grammatical
+    frame across several consecutive sentences or paragraphs.
 
 ## Intake
 
@@ -235,6 +247,14 @@ outline.
   world.”
 - Make headings descriptive enough to be scanned without body text.
 - Prefer concrete verbs, product behaviors, and observable outcomes over adjectives such as “powerful,” “seamless,” or “best-in-class.”
+- Vary nearby wording without reaching for decorative synonyms. If a common
+  word or phrase appears repeatedly within a paragraph or in adjacent
+  sentences, delete the redundant instance or recast the sentence. Preserve
+  exact terminology when precision, SEO intent, or product truth requires it.
+- Keep inline series short. Replace vague strings such as “use it to explore,
+  compare, discuss, and improve” with one concrete outcome, or split the
+  distinct actions into steps. Retain a longer series only when every item is
+  necessary and the list format makes it easier to scan.
 - Write to the clarity bar below. Retain domain terms the ICP expects; define only terms the intended reader may not know.
 - Link only to pages that genuinely help the reader continue: product, pricing, demo, documentation, case study, or a related guide.
 - Include title tag, meta description, H1, URL suggestion, body copy, CTA labels, and internal-link recommendations unless the user asks for only one component.
@@ -250,6 +270,8 @@ Goal: keep general prose near a grade 6–8 reading level. The reader is still a
 | Paragraphs | 1 idea; usually 2–4 short sentences | Walls of text; restating the same claim |
 | Structure | Answer first (inverted pyramid); scannable H2/H3; lists for steps | Clever headings that hide the point; long intros |
 | Terms | Keep familiar domain terms; define unfamiliar terms once in plain English | Jargon stacks; acronyms the intended reader may not know |
+| Rhythm | Vary sentence openings and shapes; use a natural equivalent only when it preserves meaning | Repeated sentence frames; nearby wording echoes; ornamental synonym swaps |
+| Series | Keep one or two key actions in prose; move necessary longer sets into bullets or steps | Dense verb, noun, adjective, or clause chains; repeated three-part slogans |
 | Concrete | Name the actor, action, and result | “Our solution enables seamless optimization…” |
 | Tone | Teach like a clear textbook or a good explainer blog | Marketese, hype, and fake “thought leadership” |
 
@@ -303,12 +325,20 @@ After the first draft, run both reviews and silently revise.
 - Run the clarity bar: average sentence length, one idea per paragraph, everyday words, unfamiliar jargon defined once, answer-first openings.
 - Check general prose against the grade 6–8 target while preserving terms familiar to the ICP. If a sentence makes the intended reader re-read, shorten it or make it more concrete.
 - Remove keyword repetition, generic introductions, filler, and vague claims.
+- Scan adjacent sentences and paragraphs for repeated ordinary words, phrases,
+  openings, and sentence frames. Delete redundant instances or rewrite them
+  naturally; do not replace precise product or technical terms with inaccurate
+  synonyms.
 - Remove exact phrases that compete for the same sentence, paragraph, or
   heading without adding distinct meaning.
 - Confirm that a sparse keyword inventory was not expanded and that omitted
   supporting terms were recorded rather than forced into the draft.
 - Replace unsupported “leading,” “trusted,” “faster,” or “better” claims with evidence or precise language.
 - Remove AI-style list inflation, fake urgency, empty transitions, and repetitive CTA wording.
+- Reduce stacked parallel constructions. When prose strings together three or
+  more similar actions, qualities, or clauses, keep only the material items,
+  split the thought, or format a genuinely useful set as a list. Check that
+  consecutive sentences do not reuse the same grammatical template.
 - Remove patronizing language, fake beginner examples, redundant definitions,
   rhetorical padding, and “simple” advice that omits the hard or useful part.
 - Confirm the title is clear and contains the focus keyword.
