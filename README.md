@@ -30,7 +30,7 @@ editing run from whether the content has enough verified facts to publish.
 | `seo-audience-strategy` | Map audience situations, search journeys, page gaps, and people-centered content briefs |
 | `seo-landing-page` | Plan, write, humanize, and grammar-check SaaS landing pages |
 | `seo-blog` | Plan, write, humanize, and grammar-check useful SaaS blog posts |
-| `seo-guest-post` | Write SaaS guest articles for third-party publications under their editorial rules |
+| `seo-guest-post` | Write, humanize, and grammar-check SaaS guest articles under publisher rules |
 | `seo-pr` | Draft or audit factual, newsworthy SaaS press releases |
 | `seo-landing-prompt` | Export reusable prompts for landing-page writing only |
 | `seo-writing` | Shared landing-page and blog planning/drafting stage |
@@ -85,10 +85,10 @@ In a Codex chat, name the skill with `$skill-name` and state the deliverable.
 You can write the request in Chinese; specify English for the page or article.
 Replace the example facts and URLs below with your own approved material.
 **PhotoNest is fictional**; none of its capabilities or links describe a real
-product. A finished landing page or blog automatically runs its writing,
-humanization, and available grammar stages. Landing pages, blogs, and guest
-posts also run the focused audience-strategy stage. You do not need to invoke
-those supporting skills separately.
+product. Finished landing pages, blogs, and guest posts automatically run
+humanization, a final prose review, and grammar checks when Harper is
+available. They also run the focused audience-strategy stage. You do not need
+to invoke those supporting skills separately.
 
 ### Audience strategy or a single-page brief
 
@@ -155,13 +155,18 @@ source]. Contributor relationship: [employee/founder/other]. Choose an angle
 that adds value for those readers. Follow the host's link and disclosure rules.
 Account for every supplied phrase in the brief and submission notes; use or
 omit each according to the host's readers and rules. Return the article and
-submission notes with the host sources you checked.
+submission notes with the host sources and writing-check results.
 ```
 
 Guest posts return an article and submission notes in chat unless you request
 a file. A target website and keywords are enough to start host research; a
 separate guidelines URL or audience description is optional. Without a named
 publication or checked guidelines, the submission status stays provisional.
+The draft and revision routes run Humalizer/Blader, Stop Slop, and available
+Harper before the final submission audit; the notes report completed, skipped,
+or blocked checks. Humanization is a prose review, not an AI-authorship test.
+If a host bans this AI-assisted workflow, it stops before drafting and reports
+the publication blocker.
 AI-specific claim checks apply only when relevant.
 
 ### Press release
@@ -215,8 +220,8 @@ article, use `seo-guest-post`; it returns copy in chat and saves only when asked
 ## Optional Harper CLI
 
 `harper-cli` enables the final English grammar and spelling check for
-`seo-landing-page` and `seo-blog`. Workflows never install it during a content
-task. Follow the
+`seo-landing-page`, `seo-blog`, and `seo-guest-post`. Workflows never install
+it during a content task. Follow the
 [official Harper installation guide](https://writewithharper.com/docs/integrations/language-server),
 then verify:
 
@@ -225,8 +230,9 @@ harper-cli --version
 harper-cli lint --help
 ```
 
-If Harper is unavailable, the workflow records the grammar stage as skipped and
-still saves the content.
+If Harper is unavailable, the workflow records the grammar stage as skipped.
+Owned-site routes still save their content; Guest Post returns the article in
+chat unless you request a file.
 
 ## Upstream projects
 

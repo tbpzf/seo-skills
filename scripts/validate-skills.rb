@@ -172,6 +172,7 @@ end
 
 guest_skill_file = ROOT.join("seo-guest-post/SKILL.md")
 guest_keyword_file = ROOT.join("seo-guest-post/references/keywords.md")
+guest_routes_file = ROOT.join("seo-guest-post/references/routes.md")
 if guest_skill_file.file?
   guest_skill = guest_skill_file.read
   unless guest_skill.include?("seo-audience-strategy") && guest_skill.include?("single-content brief")
@@ -187,6 +188,30 @@ if guest_skill_file.file?
      !(guest_skill.include?("avoid/prohibited") && guest_keyword_file.read.include?("prohibited terms"))
     errors << "seo-guest-post: missing user-prohibited keyword handling"
   end
+  ["### 4. Humanize the article", "### 5. Review directness",
+   "### 6. Check grammar", "### 7. Run the submission audit",
+   "../humalizer/SKILL.md", "../harper-grammar/SKILL.md",
+   BLADER_REMOTE, STOP_SLOP_REMOTE].each do |term|
+    errors << "seo-guest-post: missing quality stage #{term.inspect}" unless guest_skill.include?(term)
+  end
+  if guest_routes_file.file?
+    guest_routes = guest_routes_file.read
+    ["Audit-only requests", "Humalizer and Stop Slop", "Harper grammar check",
+     "unavailable Harper", "AI-assisted-writing ban"].each do |term|
+      errors << "seo-guest-post/references/routes.md: missing route outcome #{term.inspect}" unless guest_routes.include?(term)
+    end
+  end
+end
+
+humalizer_file = ROOT.join("humalizer/SKILL.md")
+if humalizer_file.file? && !humalizer_file.read.include?("references/guest-post.md")
+  errors << "humalizer: missing guest-post branch"
+end
+
+harper_file = ROOT.join("harper-grammar/SKILL.md")
+if harper_file.file? &&
+   !(harper_file.read.include?("seo-guest-post") && harper_file.read.include?("standard input"))
+  errors << "harper-grammar: missing chat-only guest-post check"
 end
 
 readme_file = ROOT.join("README.md")
@@ -197,6 +222,9 @@ if readme_file.file?
   end
   unless readme.include?("save only when asked") && readme.include?("saves only when asked")
     errors << "README.md: missing guest-post chat-default save ownership"
+  end
+  unless readme.include?("guest posts automatically run") && readme.include?("Harper")
+    errors << "README.md: missing guest-post prose and grammar workflow"
   end
   ["Landing page for your own site", "Blog post for your own site",
    "Guest post for another publication"].each do |heading|

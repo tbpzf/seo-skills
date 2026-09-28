@@ -10,6 +10,14 @@ notes separate so submission copy is easy to use.
 | Revise a supplied draft | Revised article plus material changes and submission notes |
 | Audit a supplied draft | Prioritized findings and concrete fixes; rewrite only when requested |
 
+Brief-only requests complete Steps 1-2 of the parent. Draft and revision
+requests continue through the humanization, Stop Slop, Harper, and final audit
+steps. Audit-only requests inspect the supplied copy and report findings
+without running rewrite stages or changing files; report prose or grammar
+findings when requested. If the user opts out of
+humanization, skip both Humalizer and Stop Slop; if they opt out of grammar,
+skip Harper. Record each requested skip in submission notes.
+
 ## Brief route
 
 Return the proposed publication, the Step 1 host rule check with a source URL
@@ -47,15 +55,23 @@ Follow with `## Submission notes` containing:
 - Evidence and source gaps, including AI-specific claims when applicable
 - Originality, exclusivity, and rights status
 - Link and product-mention compliance
+- Humanization and directness review: completed, skipped by user, or blocked;
+  material changes and any unresolved protected-contract conflict
+- Harper grammar check: completed with correction and retained-finding counts,
+  skipped by user, or skipped with the unavailable CLI/output reason
 - When keywords were supplied, each primary and long-tail term's actual use,
   natural variant, or omission and reason; note changes from the brief. For any
   user-set count, give actual/target or `unverifiable` with its reason
 - Material edits or approvals still needed
 
 Use `ready for editorial review` only when every known submission requirement
-is met and checked. Use `provisional` while the host or its rules, evidence,
+is met and checked and the selected prose stages are complete. A failed
+required Humalizer or Stop Slop source makes the writing route `blocked`;
+unavailable Harper alone is a recorded skip. Use `provisional` while the host
+or its rules, evidence,
 rights, or approvals remain unchecked. Use `blocked` when a known mandatory
-requirement is unmet or an indispensable claim is unsupported. When a
+requirement is unmet, including an AI-assisted-writing ban, or an indispensable
+claim is unsupported. When a
 publication is unknown, `provisional` is the highest possible status. For a
 limited number of company mentions, count article-body mentions by default;
 check whether the host also counts the byline and disclosure, and flag that
@@ -69,8 +85,9 @@ For revision, preserve verified facts and the writer's supported perspective.
 Reuse the existing reader brief when its audience and angle still fit; apply
 `seo-audience-strategy` in `single-content brief` mode when it is missing or
 the audience or angle changes. Carry the resulting evidence labels into the
-submission notes. Return the full revised article and note material changes,
-unresolved blockers, and any host guideline conflicts. Recheck supplied
+submission notes. Run the revised article through the selected prose and
+grammar stages before final audit. Return the full revised article and note
+material changes, unresolved blockers, and any host guideline conflicts. Recheck supplied
 keywords against the revised body and account for each in submission notes.
 
 For audit, assess the existing reader angle and its evidence without invoking

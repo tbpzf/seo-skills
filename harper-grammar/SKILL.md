@@ -1,6 +1,6 @@
 ---
 name: harper-grammar
-description: Check English Markdown, documentation, SEO copy, and prose with the local Harper CLI for spelling and grammar findings. Use when the user asks to grammar-check, proofread, spell-check, or lint English text, or as the optional final grammar stage of seo-landing-page or seo-blog after humanization and stop-slop review.
+description: Check English Markdown, documentation, SEO copy, and prose with the local Harper CLI for spelling and grammar findings. Use when asked to grammar-check or proofread English text, or as the optional final grammar stage of seo-landing-page, seo-blog, or seo-guest-post after humanization and Stop Slop review.
 ---
 
 # Harper Grammar Check
@@ -11,15 +11,19 @@ rewrite every flagged phrase or a guarantee that the text is error-free.
 
 ## Parent workflow contract
 
-When called by [seo-landing-page](../seo-landing-page/SKILL.md) or
-[seo-blog](../seo-blog/SKILL.md), run after Humalizer's single remote Blader
-rewrite and the Stop Slop pass against the saved `content.md`. Preserve the
-SEO contract and return the checked body and a concise result to the parent for
-`workflow-status.md`. Do not add a standalone response wrapper to `content.md`
-or put editorial findings inside publishable copy.
+When called by [seo-landing-page](../seo-landing-page/SKILL.md),
+[seo-blog](../seo-blog/SKILL.md), or
+[seo-guest-post](../seo-guest-post/SKILL.md), run after Humalizer's single
+remote Blader rewrite and the Stop Slop pass. For an owned-site parent, check
+saved `content.md` and return the checked body and result for
+`workflow-status.md`. For the guest-post parent, check the in-memory article
+through standard input and return checked copy and findings for its submission
+notes; no saved guest artifact is required. Preserve the parent's factual and
+editorial contract. Keep review notes outside publishable copy.
 Report the actual preflight path, command status, JSON-parse result, finding
 count, correction count, and any skip/failure reason to the parent so it can
-emit its required runtime trace. Do not include raw CLI output in that report.
+emit a runtime trace where required or document the guest-post check in
+submission notes. Do not include raw CLI output in that report.
 
 ## Install Harper CLI before a content task
 
@@ -75,6 +79,15 @@ When a project dictionary exists:
   --user-dict-path="$dictionary_file" -- "$content_file"
 ```
 
+For an unsaved guest article, pass only the article Markdown through standard
+input with no input-file argument. Do not include submission notes:
+
+```bash
+"$harper_cli" lint --format json --quiet --dialect us
+```
+
+Pass an existing project dictionary with `--user-dict-path` when applicable.
+
 Use an argument-array-capable executor where available; otherwise quote every
 path as shown and do not interpolate it into shell source. Capture stdout as
 the JSON report. A status of `1` means Harper found lints; inspect the report
@@ -110,5 +123,6 @@ For a standalone request, return:
 [text]
 ```
 
-For the parent workflow, return the status, number of corrections, and material
-unresolved findings for the parent to save in `workflow-status.md`.
+For a parent workflow, return the status, number of corrections, and material
+unresolved findings. Owned-site parents save them in `workflow-status.md`;
+the guest-post parent records them in submission notes.

@@ -5,8 +5,9 @@ description: >-
   Use for contributed articles, publisher-specific pitches, and sponsored
   guest articles, including requests with a target website and keywords.
   Research the host's readers and editorial rules; verify claims, attribution,
-  disclosures, originality, and links. For an article on the company's own
-  site, use seo-blog; for a news announcement, use seo-pr.
+  disclosures, originality, and links. Drafts and revisions also run a
+  humanization review and available grammar check. For an article on the
+  company's own site, use seo-blog; for a news announcement, use seo-pr.
 ---
 
 # SaaS Guest Post
@@ -19,6 +20,12 @@ not an owned-site SEO blog with a different byline.
 Use [routes.md](references/routes.md) for the requested brief, draft, revision,
 or audit output. The steps below apply to every route; complete only the steps
 needed for the requested deliverable.
+
+For a new or revised article, run Steps 4-7 in order unless the user explicitly
+opts out of a check. Humalizer and Stop Slop are required prose stages when
+selected; unavailable required remote instructions block editorial readiness.
+Harper is optional when its CLI is unavailable. Keep these checks in the
+working article; save a guest-post file only when the user asks.
 
 ## Shared workflow
 
@@ -33,6 +40,12 @@ citation style, link policy, and whether the placement is editorial, partner,
 or sponsored. Distinguish checked rules from editorial patterns and unknowns.
 If no host is known, use a publication-neutral draft and mark host fit and
 submission rules as pending.
+
+Check any verified AI-assisted-writing rule before a draft or revision. If it
+forbids the assistance this workflow would provide, stop that writing route;
+complete the reader brief in Step 2 and return it with blocked submission
+notes instead of a purportedly compliant article. An unknown rule keeps
+submission status provisional.
 
 Collect the SaaS product's verified category, user, workflow, capabilities,
 limits, and approved positioning. Note the contributor's relationship to the
@@ -115,10 +128,47 @@ article; follow the host's link rules for any anchor text.
 This step is complete when the article delivers its promised insight without
 unsupported claims or dependence on a product pitch.
 
-### 4. Run the submission audit
+### 4. Humanize the article
 
-Check the draft against the host's guidelines, the reader situation and next
-question, thesis, originality, evidence, attribution, applicable AI claim checks,
+Apply [humalizer](../humalizer/SKILL.md) to the article with the host's rules,
+reader brief, supplied keyword decisions, verified sources, byline, and
+disclosure as its protected contract. It fetches the pinned Blader instructions
+from `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md`
+once and returns revised copy plus material changes. Check that it has not
+invented firsthand experience, changed claims, altered required phrases or
+citations, or overridden the host's voice. This is a prose review, not an
+AI-authorship detector or a way around a host's AI-assisted-writing rule.
+The stage is complete when the revised article and changes have been checked
+against that contract; a failed fetch is recorded as blocked.
+
+### 5. Review directness
+
+Fetch and apply the pinned Stop Slop instructions at
+`https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md`
+to the revised article. Resolve linked references against that pinned GitHub
+Raw directory as needed. Remove remaining formulaic phrasing and repetition
+while retaining the host's style, useful nuance, source qualifications, and
+the contributor's supported voice. Read the remote instructions for this run
+only; do not install or persist them. Record material changes. The stage is
+complete when the article has been reviewed against the protected contract;
+an unavailable required source is recorded as blocked.
+
+### 6. Check grammar
+
+Apply [harper-grammar](../harper-grammar/SKILL.md) to the English article after
+the prose passes. For a chat-only draft, send the article Markdown through
+standard input; do not include submission notes or save a temporary article.
+Accept only clear corrections that preserve host style, facts, names, quotes,
+citations, links, byline, disclosure, and required terms. Record correction and
+retained-finding counts. If `harper-cli` or structured output is unavailable,
+record a skipped check and continue. The stage is complete when the checked
+article or a concrete skip reason is ready for the final audit.
+
+### 7. Run the submission audit
+
+Check the final article after all prose and grammar changes against the host's
+guidelines, the reader situation and next question, thesis, originality,
+evidence, attribution, applicable AI claim checks,
 conflicts/disclosures, link rules, and any approved product language. Confirm
 that citations resolve to the claimed source and that a supplied draft has not
 silently lost its corrected facts. Count article-body words against any host
@@ -126,8 +176,12 @@ range; exclude byline, disclosure, and submission notes unless the host says
 otherwise. Remove filler, repeated points, and promotional claims that do not
 help the reader. Record unresolved requirements outside the article text.
 
-For supplied keywords, compare each planned decision with the final article
-and account for any change in the submission notes or audit findings.
+For supplied keywords, compare each planned decision with the final article,
+recheck prohibited phrases and user-set placement or counts, and account for
+any change in the submission notes or audit findings. Record
+the humanization, directness, and grammar results outside the article. A host
+rule against AI-assisted submissions is a publication blocker; a prose rewrite
+does not make the article compliant with that rule.
 
 The work is complete only when the requested route's deliverable is returned
 and every material publication blocker is visible. Save a file only when the
@@ -135,5 +189,5 @@ user requests one, at the path they specify.
 
 Draft and revision routes also require submission notes. Call a draft ready for
 editorial review only after host rules, evidence, rights/originality,
-disclosures, and links have been checked. Do not promise publication, backlinks,
-rankings, traffic, or conversions.
+disclosures, links, and required prose stages have been checked. Do not promise
+publication, backlinks, rankings, traffic, or conversions.

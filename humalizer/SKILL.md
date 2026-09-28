@@ -1,6 +1,6 @@
 ---
 name: humalizer
-description: Protect the SEO contract while coordinating a Blader Humanizer rewrite of English SaaS SEO drafts. Use when humanizing, polishing, or reviewing SEO blogs and landing pages that sound templated, overly promotional, or AI-generated, and as the required rewrite stage of seo-landing-page or seo-blog before their stop-slop and Harper checks unless the user explicitly opts out.
+description: Protect the factual and editorial contract while coordinating a Blader Humanizer rewrite of English SaaS SEO drafts. Use when humanizing or polishing landing pages, owned-site blogs, or guest posts that sound templated or overly promotional, and as the default rewrite stage of seo-landing-page, seo-blog, or seo-guest-post before their Stop Slop and Harper checks unless the user opts out.
 ---
 
 # Humalizer for SaaS SEO
@@ -15,17 +15,17 @@ requires_separate_request: false
 merge_into_parent_content: true
 ```
 
-When called by [seo-landing-page](../seo-landing-page/SKILL.md) or
-[seo-blog](../seo-blog/SKILL.md), run automatically after the draft is saved;
+When called by [seo-landing-page](../seo-landing-page/SKILL.md),
+[seo-blog](../seo-blog/SKILL.md), or
+[seo-guest-post](../seo-guest-post/SKILL.md), run automatically after drafting;
 no separate user request is required. The parent runs Stop Slop and then Harper
-grammar checking after this rewrite stage when available. Own the SEO contract,
-claim accuracy, voice,
-specificity, and Blader pattern rewrite here. Leave residual rhythm and leftover
+grammar checking after this rewrite stage when available. Own claim accuracy,
+voice, specificity, and the Blader pattern rewrite here. Leave residual rhythm and leftover
 formulaic cadence to Stop Slop; do not re-run its checklist or scoring inside
 this stage. Prefer one Blader rewrite plus the five-dimension audit below over
 repeated full-pass rewrites.
-Read the saved `content-plan.md` as the protected SEO and factual contract;
-read `seo-metadata.md` for the title and description that must stay aligned
+For an owned-site parent, read the saved `content-plan.md` as the protected
+SEO and factual contract; read `seo-metadata.md` for the title and description that must stay aligned
 with the revised copy. An optional `prompt.md` is a reusable export, not a
 second source of truth. For an existing-copy route, use the protected contract
 the parent normalized from the supplied draft and brief. Return revised
@@ -35,11 +35,15 @@ wrapper below to publishable copy. Return a concise completion, skip, or
 failure status and material-change count; only the parent can claim a merged
 file was saved.
 
+For the guest-post parent, use the [guest-post rewrite branch](references/guest-post.md)
+with its in-memory article and publisher contract. Return revised article copy
+and material changes to that parent without saving a file.
+
 ## Guardrails
 
-1. Preserve verified facts, legal language, technical meaning, citations, keywords, headings, links, and the primary CTA unless the user authorizes a change.
+1. Preserve verified facts, legal language, technical meaning, citations, keywords, headings, links, and any primary CTA unless the user authorizes a change.
 2. Do not fabricate experience, opinions, customers, results, sources, product behavior, or personal anecdotes to make text sound human.
-3. Keep the page's search intent and conversion path intact. A landing page needs clear benefits and a CTA; an educational article needs a useful answer before a product mention.
+3. Keep the reader intent and relevant next action intact. A landing page needs clear benefits and a CTA; an educational article or guest post needs a useful answer before any product mention.
 4. Match the supplied brand voice. If no sample exists, use plain, precise, restrained English rather than a simulated personal voice.
 5. Do not apply a mechanical ban on adverbs, passive voice, em dashes, bullets, or three-item lists. Revise them only when their use feels repetitive, vague, or less clear.
 6. Prefer a factual qualifier to false certainty. Keep necessary caveats, safety warnings, and technical constraints.
@@ -67,8 +71,8 @@ Intent:
 Reader and job to be done:
 Primary keyword and required terms:
 Verified product claims and citations:
-Required internal links:
-Primary CTA:
+Required links:
+Primary CTA or permitted next action:
 Voice reference:
 ```
 
@@ -116,7 +120,7 @@ See [reference.md](reference.md) for source notes and SEO-specific before/after 
 This skill owns the single Blader fetch and rewrite in the parent workflow.
 Fetch and apply the upstream [Blader Humanizer
 instructions](https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md)
-to the page copy. Read them from GitHub for the current run only; do not install,
+to the draft copy. Read them from GitHub for the current run only; do not install,
 clone, cache, or write them into the project. Pass the protected contract from
 Step 1 and any voice sample from Step 2. The rewrite and self-audit are required
 in this workflow, but the guardrails above override a source rule when it would
@@ -142,8 +146,8 @@ Audit the revised copy on five dimensions, scoring each 1-10:
 | Specificity | Does each important claim name a real actor, behavior, result, or source? |
 | Voice | Does the language fit the supplied brand and audience without invented personality? |
 | Clarity | Can the reader understand the answer, workflow, and terms on the first pass? |
-| SEO integrity | Are intent, useful keywords, metadata, headings, links, and citations preserved naturally? |
-| Conversion integrity | Does the product value and CTA help the reader take the intended next step? |
+| Search and editorial integrity | Are intent, useful keywords, applicable metadata or host rules, headings, links, and citations preserved naturally? |
+| Next-action integrity | Does the next step fit the reader and publication, with product value or a CTA only where appropriate? |
 
 If a score is below 7, revise the responsible section. Do not force a high score by cutting necessary qualification, evidence, or technical detail.
 
@@ -166,5 +170,7 @@ Unless the user asks for only revised copy, return:
 
 For a standalone complete-page edit, retain title tag, meta description, URL,
 H1, headings, links, citations, and CTA in the revised deliverable. Inside a
-parent workflow, return only body changes and separately flag any metadata
-change for the parent to save in `seo-metadata.md`.
+landing-page or blog parent workflow, return only body changes and separately
+flag any metadata change for the parent to save in `seo-metadata.md`. Inside
+the guest-post parent, return the complete revised article and material changes;
+the parent owns the final submission notes.
