@@ -12,6 +12,7 @@
 | Skip humanization | Skip Stages 5-6, run Stage 7, and record both skips |
 | Skip grammar | Finish after Stage 6 and record the skip |
 | Landing-page request | Route to `seo-landing-page` |
+| Third-party guest-post request | Route to `seo-guest-post` |
 | Press-release request | Route to `seo-pr` |
 
 Guardrails:

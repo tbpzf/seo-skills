@@ -1,9 +1,9 @@
 # SaaS Content Skills
 
 Focused workflows for audience-first SEO strategy, English SaaS landing pages,
-SEO blogs, and press releases. The former combined content workflow is split by
-content type so each skill has a clear trigger, artifact contract, and editorial
-standard.
+SEO blogs, guest posts, and press releases. The former combined content workflow
+is split by content type so each skill has a clear trigger, artifact contract,
+and editorial standard.
 
 ## Skills
 
@@ -12,6 +12,7 @@ standard.
 | `seo-audience-strategy` | Map audience situations, search journeys, page gaps, and people-centered content briefs |
 | `seo-landing-page` | Plan, write, humanize, and grammar-check SaaS landing pages |
 | `seo-blog` | Plan, write, humanize, and grammar-check useful SaaS blog posts |
+| `seo-guest-post` | Write AI SaaS guest articles for third-party publications under their editorial rules |
 | `seo-pr` | Draft or audit factual, newsworthy SaaS press releases |
 | `seo-landing-prompt` | Generate reusable prompts for landing-page writing only |
 | `seo-writing` | Shared landing-page and blog planning/drafting engine |
@@ -67,6 +68,21 @@ workflow.
 The workflow writes `seo-content/<topic>-blog/` with `content-plan.md`,
 `content.md`, and `workflow-status.md`. It does not invoke the landing-page
 prompt skill.
+
+### AI SaaS guest post
+
+```text
+Use seo-guest-post to write a guest article for a product-operations
+publication. Our AI SaaS product helps teams review release notes; use the
+attached product facts and contributor guidelines. Keep the article useful to
+the host's readers and flag any claims or disclosures that need approval.
+```
+
+The skill starts with the host reader's situation and decision, using search
+phrases to refine the angle rather than dictate it. It returns an article and
+submission notes, checking publisher fit, AI and product claims, originality,
+disclosures, and link rules. Without a named publication, it marks the draft
+provisional. It saves a file only when the user requests one.
 
 ### SaaS press release
 

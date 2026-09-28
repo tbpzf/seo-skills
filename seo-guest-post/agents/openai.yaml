@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI SaaS Guest Post"
+  short_description: "Write publisher-ready AI SaaS guest articles"
+  default_prompt: "Use $seo-guest-post to write a guest article for this publication about our AI SaaS product."

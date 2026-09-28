@@ -7,7 +7,8 @@ description: >-
   problem-solving articles, product-led education, metadata, or finished-blog
   audits. Resolve reader intent, create a useful content plan, draft from that
   plan, humanize the prose, run a directness review, and optionally grammar
-  check it. Do not use for landing pages or press releases.
+  check it. For third-party guest posts, use seo-guest-post; do not use for
+  landing pages or press releases.
 ---
 
 # SEO Blog
@@ -133,7 +134,8 @@ action, provide evidence, or explain a material limit.
 
 Use [routing.md](references/routing.md) for plan-only, draft-from-structure,
 revision, audit, humanization-only, and resume requests. Recommend
-`seo-landing-page` for commercial landing pages and `seo-pr` for announcements.
+`seo-landing-page` for commercial landing pages, `seo-guest-post` for
+third-party contributed articles, and `seo-pr` for announcements.
 
 ## Completion
 
