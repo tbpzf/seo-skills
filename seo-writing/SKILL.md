@@ -14,6 +14,15 @@ description: >-
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
+For planning, resolve one reader situation inside this skill. Do not load
+`seo-audience-strategy`. A supplied keyword is a clue to the task, not evidence
+of the reader's circumstances. Label supplied facts as evidence and inferred
+details as `hypothesis` or `unknown`. Use only the situation prompts the page
+needs: why, when, where, while doing what, with whom, with or for what, and how
+the reader feels. Do not invent answers to fill every prompt. If the user
+already supplied a brief, keep its facts and labels, then return this skill's
+content-plan format.
+
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
 When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md) or
@@ -44,7 +53,7 @@ Choose one mode from the request:
 
 | Mode | Input | Output |
 | --- | --- | --- |
-| `plan` | Keyword(s), audience/product context, and available evidence | One specific topic, reader-intent analysis, and a section-level content structure; no body copy |
+| `plan` | Topic or keyword(s), audience/product context, and available evidence | One specific topic, audience-situation analysis, and a section-level content structure; no body copy |
 | `draft-from-structure` | A supplied or saved content structure plus factual/SEO constraints | Complete content that follows and, when necessary, safely corrects the structure |
 | `end-to-end` | Keyword(s) plus a request for finished content | Run `plan`, then draft from that plan |
 | `audit` | Existing copy | Findings and targeted revisions |
@@ -102,7 +111,7 @@ Identify or request only the missing information needed to produce accurate copy
 
 | Required input | Why it matters |
 | --- | --- |
-| Page type and target keyword/topic | Determines intent and page architecture |
+| Page type and target keyword/topic | Provides a search signal and page scope |
 | ICP: audience, role, maturity, and pain | Determines language and proof |
 | Product facts: capabilities, limits, differentiators | Prevents invented claims |
 | Primary CTA and post-click action | Keeps the conversion path coherent |
@@ -123,9 +132,12 @@ placeholders or safe omissions.
 
 ### 1. Research
 
-1. Classify the query: informational, commercial investigation, or transactional.
-2. Resolve the likely reader situation: who searches, what triggered the
+1. Resolve the likely reader situation: who searches, what triggered the
    search, what they already know, and the task or decision they need to finish.
+   Record only the relevant situation prompts, and mark each detail as evidence,
+   `hypothesis`, or `unknown`. Do not force a full persona exercise for a narrow
+   page.
+2. Classify the query: informational, commercial investigation, or transactional.
 3. Define the expected result: a direct answer, comparison criteria, procedure,
    template, diagnosis, recommendation, or buying decision support.
 4. List the constraints, failure modes, trade-offs, and follow-up questions a
@@ -140,6 +152,12 @@ placeholders or safe omissions.
    artifact, or product evidence that competing pages do not provide.
 8. Map the reader's next decision. Do not target a query if the product has no
    credible relevance to its solution.
+9. Check existing coverage only when the user supplied pages or asked for a
+   coverage audit. Recommend improve when one of those pages can answer the
+   task, create when the task or conversion path needs a distinct page, and
+   defer when the evidence is too thin to choose. When no pages were supplied,
+   set existing coverage to `unknown` and continue the requested page. Do not
+   stop to request a site audit.
 
 ### 2. Topic and content structure
 
@@ -155,10 +173,12 @@ Return this plan:
 ## Reader intent
 - Focus keyword:
 - Search intent:
-- Reader and current knowledge:
+- Reader situation and current knowledge (evidence or hypothesis):
 - Trigger, job, or decision:
+- Journey stage and next question:
 - Expected outcome:
 - Constraints and follow-up questions:
+- Existing coverage and page decision (improve/create/defer/unknown):
 - Out of scope:
 
 ## Topic
@@ -166,6 +186,7 @@ Return this plan:
 - Reader promise:
 - Why this angle is useful:
 - Information gain and evidence available:
+- Audience evidence sources and validation gaps:
 
 ## Content structure
 ### <descriptive section heading>
@@ -182,6 +203,7 @@ Return this plan:
 - Facts or evidence still needed:
 - Internal links:
 - Primary CTA and destination:
+- Success measure tied to the reader's next action:
 ```
 
 Every saved plan must populate these constraints. When `prompt.md` does not

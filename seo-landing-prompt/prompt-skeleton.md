@@ -104,7 +104,15 @@ Work in two explicit phases.
 Before writing visible page copy, output a concise `<content_plan>` containing:
 
 - The likely reader situation, current knowledge, triggering problem, and task
-  or decision behind the query
+  or decision behind the query. Note which details are supplied evidence and
+  which are hypotheses. Use relevant context prompts: why, when, where, while
+  doing what, with whom, with or for what, and how the reader feels. Do not
+  invent answers merely to fill every prompt
+- The reader's journey stage and next likely question. If existing pages were
+  supplied, say whether one already serves the situation, and recommend a
+  distinct page only when its decision, evidence, or conversion path needs
+  separate treatment. If no pages were supplied, mark coverage `unknown` and
+  continue this page
 - The expected result: direct answer, process, criteria, template, diagnosis,
   recommendation, or buying support
 - Important constraints, trade-offs, failure modes, and follow-up questions

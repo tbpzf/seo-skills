@@ -1,13 +1,15 @@
 # SaaS Content Skills
 
-Focused workflows for English SaaS landing pages, SEO blogs, and press
-releases. The former combined content workflow is split by content type so each
-skill has a clear trigger, artifact contract, and editorial standard.
+Focused workflows for audience-first SEO strategy, English SaaS landing pages,
+SEO blogs, and press releases. The former combined content workflow is split by
+content type so each skill has a clear trigger, artifact contract, and editorial
+standard.
 
 ## Skills
 
 | Skill | Purpose |
 | --- | --- |
+| `seo-audience-strategy` | Map audience situations, search journeys, page gaps, and people-centered content briefs |
 | `seo-landing-page` | Plan, write, humanize, and grammar-check SaaS landing pages |
 | `seo-blog` | Plan, write, humanize, and grammar-check useful SaaS blog posts |
 | `seo-pr` | Draft or audit factual, newsworthy SaaS press releases |
@@ -29,6 +31,19 @@ Slop remain pinned remote runtime dependencies; they are read from GitHub and
 are not installed locally.
 
 ## Usage
+
+### Audience-first SEO strategy or content brief
+
+```text
+Use seo-audience-strategy to map how our target customers evaluate release
+notes software. Review our existing pages, identify meaningful content gaps,
+and create a brief for the highest-priority page. Label assumptions separately
+from customer and search evidence.
+```
+
+This skill produces a strategy or brief, not finished copy. `seo-writing` keeps
+a lightweight version of the same situation rules inside its planning stage and
+does not load this skill during an ordinary page or post.
 
 ### SaaS landing page
 

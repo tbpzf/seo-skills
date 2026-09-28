@@ -16,6 +16,12 @@ Turn a keyword and optional business context into a complete, reusable prompt fo
 
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
+Do not load `seo-audience-strategy` while building the prompt. A keyword is a
+clue to a reader's task, not sufficient evidence of the reader's circumstances.
+When the user supplies no audience evidence, the generated prompt must label the
+likely situation as a hypothesis. When no existing pages were supplied, the
+prompt must tell the writer to mark coverage as `unknown` and continue.
+
 When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md), return the generated prompt to the parent workflow as an intermediate artifact. Do not stop, request confirmation, or wait for a follow-up. The parent workflow saves `seo-content/<keyword-slug>-landing/prompt.md` and continues directly with `seo-writing`.
 Return a concise completion or failure status to the parent so it can emit its
 runtime trace; do not claim the prompt was saved, because the parent owns that
@@ -46,6 +52,7 @@ Collect when available:
 - Core keyword candidates, long-tail keywords, and terms that must or must not appear
 - Page type: SaaS feature, use case, industry, audience, or product landing page
 - Market, page-copy language, instruction/report language, audience, reader task, and brand voice
+- Customer situations or questions from sales/support, journey stage, existing page coverage, and known objections when available
 - Product capabilities, limits, pricing/free-trial policy, compliance or legal restrictions
 - Approved proof: citations, customer stories, statistics, screenshots, and internal links
 - Primary CTA, optional same-path secondary CTA destinations, required modules, and word-count constraints
@@ -76,8 +83,9 @@ Every generated prompt must:
 4. Require one clear search intent and one primary CTA; secondary CTAs may only support the same next step.
 5. Require natural language, not keyword stuffing; semantic variants do not count as exact-match occurrences.
 6. Require a `<content_plan>` before page copy. It must contain the reader-intent
-   analysis, one useful topic promise, a section-level structure, and the
-   keyword plan. Require a final SEO report after the copy.
+   analysis, the audience situation and its evidence status, one useful topic
+   promise, a section-level structure, and the keyword plan. Require a final
+   SEO report after the copy.
 7. Use count-mode reporting only when the user supplied numeric targets; otherwise use natural-mode placement notes with no invented targets or per-module count tables.
 8. Exclude planning and reporting text from any exact keyword counts.
 9. Require the writer to flag an impossible or unnatural keyword rather than force it into user-facing copy.
@@ -200,6 +208,10 @@ Before delivering the generated prompt, verify:
   outcome.
 - Every product statement comes from the user or remains a variable.
 - Page type, audience, market, intent, modules, and CTA are explicit.
+- The reader situation is supported by supplied evidence or labeled as a
+  hypothesis. When existing pages were supplied, the plan checks that coverage
+  before proposing a separate page. Otherwise it marks coverage `unknown` and
+  continues.
 - The prompt separates content planning from drafting and requires a usable
   topic/structure artifact before body copy.
 - Keyword policy is natural mode unless the user supplied targets; count instructions explain scope and overlap only in count mode.

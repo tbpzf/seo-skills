@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audience-First SEO Strategy"
+  short_description: "Plan SEO pages and briefs around real audience situations"
+  default_prompt: "Use $seo-audience-strategy to map my audience's situations and search journey, then recommend pages or create a content brief."
