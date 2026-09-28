@@ -200,20 +200,35 @@ Audience: customer success leaders at B2B SaaS companies
 
 ```markdown
 ## Reader intent
+- Focus keyword: customer onboarding checklist
 - Search intent: Informational; the reader wants a checklist they can use, not
   a history of customer onboarding.
-- Reader and current knowledge: A customer success leader who already knows
-  what onboarding is and needs a repeatable operating standard.
-- Job or decision: Decide what must happen before, during, and after kickoff,
-  then assign ownership and define completion signals.
+- Reader situation and current knowledge (evidence or hypothesis): Hypothesis.
+  A customer success leader who already knows what onboarding is and needs a
+  repeatable operating standard. Why, when, where, companions, and feelings are
+  unknown because the request supplied only a role.
+- Trigger, job, or decision: Decide what must happen before, during, and after
+  kickoff, then assign ownership and define completion signals.
+- Journey stage and next question: Exploration. Next question: which tasks
+  belong to which phase, and how the team knows a phase is done.
 - Expected outcome: A copyable checklist plus criteria for adapting it by
   customer complexity.
+- Constraints and follow-up questions: No approved internal example was
+  supplied. Follow-up: how the team adapts the checklist for complex accounts.
+- Existing coverage and page decision (improve/create/defer/unknown): unknown.
+  No existing pages were supplied, so continue this page.
 - Out of scope: Basic definitions of customer success; product comparisons.
 
 ## Topic
 - Working title: Customer Onboarding Checklist: Tasks, Owners, and Exit Criteria
 - Reader promise: Build a checklist that shows what happens, who owns it, and
   how the team knows each phase is complete.
+- Why this angle is useful: The query asks for a checklist the team can run,
+  not a definition of onboarding.
+- Information gain and evidence available: A phase table with owner, input, and
+  exit criterion. No customer proof was supplied.
+- Audience evidence sources and validation gaps: Audience role was supplied.
+  The specific trigger and current onboarding process are still hypotheses.
 
 ## Content structure
 ### Set the onboarding outcome before listing tasks
