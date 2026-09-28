@@ -1,24 +1,21 @@
 ---
 name: seo-landing-page
 description: >-
-  Plan, write, revise, and save complete English SaaS SEO landing pages for
-  feature, use-case, audience, industry, and product keywords. Use when the user
-  wants a commercial or transactional landing page, landing-page content plan,
-  copy from an outline, or an end-to-end keyword-to-page workflow. Generate a
-  reusable landing prompt, preserve factual boundaries, align one page promise
-  and CTA, humanize the copy, run a directness review, and optionally grammar
-  check it. Do not use for blog posts or press releases; use seo-blog or seo-pr.
+  Plan, write, revise, and save English SaaS feature, use-case, audience,
+  industry, and product landing pages for commercial or transactional queries.
+  Use for a landing-page plan, finished page, draft from an outline, revision,
+  audit, or resume. Produce a reusable landing prompt only when requested.
+  Route informational blog posts to seo-blog, third-party guest articles to
+  seo-guest-post, and announcements to seo-pr.
 ---
 
 # SEO Landing Page
 
-Coordinate a complete SaaS landing-page workflow. Load only the stage needed.
-Blader Humanizer and Stop Slop are remote runtime dependencies; do not install,
-clone, or cache them in the project.
-
-Read [runtime-trace.md](references/runtime-trace.md),
-[artifacts.md](references/artifacts.md), and
-[routing.md](references/routing.md) before running the workflow.
+Coordinate one decision-led landing page. The parent workflow owns every file
+write, stage status, and merge. Read [artifacts.md](references/artifacts.md)
+before a saved run. Read [routing.md](references/routing.md) for non-default
+requests and [runtime-trace.md](references/runtime-trace.md) when reporting
+progress.
 
 ## Execution contract
 
@@ -30,106 +27,148 @@ humanization_required: true
 grammar_check: if_available
 ```
 
-Override only when the user asks for a checkpoint, prompt-only output, or no
-humanization.
+Run the selected route without a checkpoint unless the user requests one.
+User-requested prompt-only, plan-only, or no-humanization work follows its
+matching branch in [routing.md](references/routing.md).
 
 ## Dependencies
 
-| Stage | Required source |
+| Work | Source |
 | --- | --- |
-| Prompt | `../seo-landing-prompt/SKILL.md` |
-| Plan, draft, revise, or audit | `../seo-writing/SKILL.md` |
-| Fact-safe humanization | `../humalizer/SKILL.md` |
-| Blader rewrite | `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
-| Stop Slop review | `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` plus linked references as needed |
-| Grammar check | `../harper-grammar/SKILL.md` |
+| Evidence-labeled reader brief during planning | `../seo-audience-strategy/SKILL.md` |
+| Plan, draft, or audit | `../seo-writing/SKILL.md` |
+| Requested reusable prompt | `../seo-landing-prompt/SKILL.md` |
+| Fact-safe rewrite, including one Blader fetch | `../humalizer/SKILL.md` |
+| Final prose review | `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` plus linked references as needed |
+| Optional grammar check | `../harper-grammar/SKILL.md` |
 
-Fetch remote Markdown for the current run only. Resolve Stop Slop reference
-links against its pinned GitHub Raw directory. Do not run `npx skills add` or
-persist downloaded copies. A missing local writing skill or required remote
-source blocks the run; a missing `harper-cli` only skips grammar checking.
+Humalizer fetches the pinned Blader instructions once per run from
+`https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md`.
+The parent fetches Stop Slop for the current run and resolves its reference
+links against the pinned GitHub Raw directory. Do not run `npx skills add`,
+install, clone, or cache remote instructions in the project. A missing required
+local skill or required remote source blocks the default run. Missing
+`harper-cli` skips Stage 6.
 
 ## Runtime trace
 
-Follow [runtime-trace.md](references/runtime-trace.md). Emit
-`[seo-landing-page][stage N][kind] status: detail` updates. Do not silently load a sibling skill, contact a remote service, run a CLI, or write an artifact.
-Do not report `completed` until the action finished.
+Use `[seo-landing-page][stage N][kind] status: detail` for route, stage
+milestones, exceptions, and result. Do not silently load a sibling skill, contact a remote service,
+run a CLI, or write an artifact. Group successful
+operations into concise stage updates; record operation details in
+`workflow-status.md`. Do not report `completed` until the action finished.
 
 ## Default keyword-to-page sequence
 
-Run all stages without an approval checkpoint when the user supplies keywords
-and asks for a finished landing page.
+1. **Intake.** Select one page subtype and commercial or transactional reader
+   task. Record the user's primary keyword and every supplied supporting or
+   long-tail phrase verbatim, including must-use, avoid, placement, or numeric
+   targets.
+   Record the audience, market, language, product identity and category,
+   actual capability or workflow, limits, available proof, one primary CTA
+   action and destination, brand voice and any sample source, and useful links.
+   Check user-provided product URLs and product files in the active workspace
+   when available.
+   Label supplied or documented facts with source and approval status,
+   hypotheses, and missing facts. Save the route and intake state in
+   `workflow-status.md`. This stage ends when each field is either grounded in
+   supplied material or explicitly marked missing.
+2. **Plan.** Apply `seo-audience-strategy` in single-content brief mode using
+   the intake evidence and supplied queries. Identify one reader situation,
+   the decision this page supports, journey questions, factual boundaries,
+   and evidence or validation gaps. Label each material insight as supplied
+   or observed evidence, `hypothesis`, or `unknown`; when only keywords are
+   available, keep the brief provisional. Check existing-page coverage only
+   when pages are supplied or a coverage audit is requested.    Pass that transient brief and original intake to `seo-writing` in `plan`
+   mode. Save its full plan—including the `Keyword map` schema and any
+   user-set count—to `content-plan.md` with one supportable page promise and
+   writing constraints; do not re-author map columns here. Choose one coherent landing-page intent;
+   recommend a separate page for another intent. A supplied primary that cannot
+   support this truthful page promise blocks drafting until the mismatch is
+   resolved. `content-plan.md` is the sole persisted drafting contract.
+   For a new page, require a known product identity and category, an actual
+   capability or workflow, a reader task, and a CTA action before drafting.
+   If any is missing, record the gap and `blocked` workflow state in
+   `workflow-status.md` and stop after the plan. For a supplied-copy revision,
+   retain supported claims, mark unverified ones as publication blockers, and
+   make only the requested edits that can be supported. This stage ends when
+   the brief has informed the saved plan and the draft gate has been evaluated
+   when needed. The brief is a stage output, not another saved drafting artifact.
+3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
+   new copy or `revise` mode with the existing body, metadata, plan, and
+   requested change. Use the saved keyword map's selected terms only where
+   their section jobs fit; a required phrase that cannot fit naturally becomes
+   an audit finding, not awkward visible copy. Save one publishable page body
+   with exactly one H1 to `content.md` and its title tag, meta description,
+   and URL slug to `seo-metadata.md`. Transfer strategy, evidence gaps, audit
+   findings, and publication blockers to `workflow-status.md`; keep editorial
+   notes and unsupported placeholders out of the page body. Parent owns the
+   merge into `content.md`. This stage ends
+   when both page artifacts are saved and match the plan's reader decision,
+   promise, and CTA.
+4. **Humanize.** Apply `humalizer`, which owns one pinned Blader fetch and
+   returns revised copy under the saved plan's factual and SEO constraints.
+   Parent owns the merge into `content.md` and records material changes. This
+   stage ends when the revised body is saved and protected facts, metadata,
+   links, keywords, caveats, and CTA have been checked.
+5. **Review prose.** Apply the pinned Stop Slop instructions to remaining
+   filler and repetitive cadence. Preserve the same protected contract. Parent
+   owns the merge and save. This stage ends when the revised body is saved and
+   material changes are recorded.
+6. **Check grammar.** Apply `harper-grammar` to the saved English body when
+   available. Accept only high-confidence corrections that preserve meaning,
+   merge the result, and record findings. If unavailable or explicitly declined,
+   record the skip. This stage ends when the checked body is saved or the skip
+   reason is recorded.
+7. **Verify.** Compare `content.md` and `seo-metadata.md` with the saved plan.
+   Confirm the page answers its planned reader questions in decision order,
+   respects factual boundaries, and has one H1, supported claims, one
+   coherent CTA path, useful links, and no editorial notes in the body.
+   Reconcile every supplied keyword against the final copy and metadata:
+   record natural placement for used terms and the reason for each omission
+   or unmet must-use request. Check exact counts only for targets the user
+   supplied, and verify user-prohibited phrases are absent. Save the final
+   audit, stage states, publication blockers, and readiness in
+   `workflow-status.md`.
+   This stage ends only when the verification is recorded and all required
+   stages have completed or were skipped by explicit user direction.
 
-1. Apply `seo-landing-prompt`; preserve unknown facts as placeholders and use
-   natural keyword mode unless the user supplied numeric targets.
-2. Save `seo-content/<keyword-slug>-landing/prompt.md`.
-3. Resolve page subtype, audience, market, language, page promise, and primary
-   CTA from supplied context. Never invent product behavior, proof, pricing,
-   integrations, or destinations. Record unresolved publication blockers.
-4. Apply `seo-writing` in `plan` mode with a commercial or transactional intent.
-5. Save `content-plan.md`.
-6. Apply `seo-writing` in `draft-from-structure` mode. Use the saved prompt for
-   facts, keywords, audience, and CTA; use the saved plan for the page promise,
-   section jobs, evidence, and decision sequence.
-7. Save `content.md` with humanization, Stop Slop, and grammar statuses pending.
-8. Apply `humalizer` plus the pinned Blader instructions while preserving the
-   SEO contract. Parent owns the merge into `content.md`.
-9. Apply the pinned Stop Slop review. Preserve facts, metadata, headings,
-   required keywords, links, caveats, and CTA. Parent owns the merge and save.
-10. Apply `harper-grammar` when available. Accept only high-confidence allowed
-    fixes, update the audit, and save the final page.
-
-Update `workflow-status.md` after every stage. When an earlier artifact changes,
-reset downstream statuses and resume from the earliest affected stage.
+Update `workflow-status.md` after each persistent stage. A failed required
+remote stage leaves the workflow blocked. Harper unavailability is
+non-blocking. When an upstream artifact changes, reset affected downstream
+stages and follow [artifacts.md](references/artifacts.md) to resume.
 
 ## Landing-page contract
 
-### Resolve one commercial job
+Identify the reader's trigger, comparison, adoption, or purchase task, desired
+outcome, objections, and next step. The reader may be an individual end user or
+a business buyer. Choose one page subtype and one supportable promise.
+Split unrelated intents into separate page recommendations.
 
-Identify the audience, trigger, comparison or buying task, desired outcome,
-objections, and next step. Select one landing-page subtype and one supportable
-promise. Split unrelated intents into separate page recommendations instead of
-building a catch-all page.
+Use the following only as a starting architecture; keep sections that advance
+the reader's decision:
 
-### Use a decision-led structure
+1. Hero: audience, supportable outcome, product mechanism, primary CTA
+2. Problem context and relevant alternatives
+3. How it works: actual inputs, steps, review points, outputs, limits
+4. Outcomes tied to supplied or documented capabilities
+5. Proof from approved evidence or product demonstration
+6. Material objections or FAQ with supportable answers
+7. The same primary CTA at natural decision points
 
-Start from this architecture, then remove or reorder sections that do not help
-the reader decide:
-
-1. Hero: audience, supportable outcome, product mechanism, and primary CTA
-2. Problem context: the costly current workflow and relevant alternatives
-3. How it works: actual inputs, steps, review points, outputs, and limits
-4. Outcomes: benefits tied to verified capabilities
-5. Proof: approved customer evidence, product demonstration, security,
-   integrations, or implementation detail
-6. Objections or FAQ: material decision questions with supportable answers
-7. Primary CTA repeated only at natural decision points
-
-Do not publish generic feature lists, per-card CTAs, unsupported superiority
-claims, or sections that exist only for keyword placement.
-
-### Protect facts and conversion coherence
-
-- Use only supplied or cited product facts.
-- Mark `[fact needed]`, `[proof needed]`, and `[destination needed]` rather than
-  fabricating details.
-- Use one focus keyword naturally in the title tag and H1. Pair the H1 with a
-  specific, supportable benefit.
-- Use one primary CTA and one post-click action. Secondary CTAs may support the
-  same path only.
-- Keep the title, H1, hero, proof, and CTA aligned to the same promise.
-- Treat the audience as capable adults. Use plain language without obvious
-  filler, patronizing explanations, or SaaS hype.
-
-## Route handling
-
-Use [routing.md](references/routing.md) for prompt-only, plan-only,
-draft-from-structure, revision, humanization-only, and resume requests. Reject
-blog and press-release work with the correct sibling skill recommendation.
+Use supplied or cited product facts. Record missing proof or CTA destinations
+as publication blockers and omit unsupported claims from the page. Place one
+focus keyword naturally in the title tag and H1. Align the title, H1, hero,
+proof, and CTA to the same promise. Write plainly for capable adults; each
+section must help the reader decide. Match the CTA to the supported product
+path: try, sign up, install, or purchase only when that action is supported.
 
 ## Completion
 
-A default run completes only when the final `content.md` and
-`workflow-status.md` are saved and Stages 8-10 are completed or accurately
-recorded as skipped/failed under their blocking rules. Report the artifact path
-and every publication blocker; never promise rankings or conversions.
+Report the saved page paths, workflow state, publication readiness, and every
+blocker. A plan-only route completes when its plan and status are saved, with
+publication readiness not assessed. A full-page route completes when required
+editing stages and verification finish; publication readiness separately
+checks the facts, supporting evidence, required links, and CTA destination
+needed to publish. A blocked draft gate or failed required remote source is
+not a completed full-page workflow. Never promise rankings or conversions.

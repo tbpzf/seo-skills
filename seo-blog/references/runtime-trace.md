@@ -1,27 +1,31 @@
 # Blog runtime trace
 
-Emit progress messages; do not pause for approval.
+Give concise progress at route selection, focused reader brief or saved-plan
+reuse, saved plan, saved draft, completed rewrite/review, grammar outcome, and
+final verification. Combine adjacent
+completed actions in one update when that is clearer. Report exceptions as
+soon as they affect the route. Do not pause for approval.
 
 ```text
 [seo-blog][stage N][kind] status: detail
 ```
 
-`kind` is `route`, `skill`, `remote`, `cli`, `file`, or `result`.
-
-Report routing, sibling skill calls, remote reads, CLI checks, artifact writes,
-and the final result. For remote operations include the exact pinned URL. For a
-CLI include the executable, operation, exit status, parse status, and finding
-count when available. Never expose draft text, secrets, environment variables,
-tokens, complete commands, or raw CLI output in a trace.
+`kind` is `route`, `skill`, `remote`, `cli`, `file`, or `result`. Name a sibling
+skill when it first runs, a remote source with its exact pinned URL when first
+read, and each saved artifact at the save milestone. For Harper, include the
+preflight outcome, command status, JSON parse result, finding count, and
+correction count when available. Keep draft text, secrets, environment
+variables, tokens, complete commands, and raw CLI output out of the trace.
 
 Examples:
 
 ```text
-[seo-blog][stage 2][skill] started: loading seo-writing from ../seo-writing/SKILL.md in plan mode
-[seo-blog][stage 2][file] completed: wrote seo-content/release-notes-blog/content-plan.md
-[seo-blog][stage 5][remote] started: reading pinned Blader Humanizer instructions
-[seo-blog][stage 7][cli] skipped: harper-cli unavailable; grammar check is non-blocking
+[seo-blog][stage 2][skill] completed: seo-audience-strategy returned an evidence-labeled single-content brief for seo-writing
+[seo-blog][stage 2][file] completed: saved content-plan.md from seo-writing plan output
+[seo-blog][stage 4][remote] completed: Humalizer read https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md
+[seo-blog][stage 6][cli] skipped: harper-cli unavailable; grammar check is non-blocking
+[seo-blog][stage 7][result] completed: workflow completed; publication blocked by missing product evidence
 ```
 
-Report `completed` only after the operation finishes. A skipped or failed stage
-must include its reason and follow the workflow's blocking rule.
+Use `completed` only after the operation finishes. A failed required source
+sets workflow state to `blocked`; an unavailable Harper check is `skipped`.

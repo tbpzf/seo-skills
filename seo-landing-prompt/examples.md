@@ -10,10 +10,11 @@ Generate an SEO content prompt for “AI kitchen design”.
 
 ### Expected behavior
 
-Generate a copy-paste-ready landing-page prompt using:
+Generate a review-ready landing-page prompt template using:
 
 ```markdown
 [[PAGE_NAME]]: AI Kitchen Design
+[[SUPPLIED_PRIMARY_KEYWORD]]: ai kitchen design
 [[PRIMARY_KEYWORD]]: ai kitchen design
 [[PAGE_TYPE]]: SaaS landing page
 [[MARKET]]: United States
@@ -59,6 +60,7 @@ Long-tail keywords: plan a room online, upload a floor plan
 ### Expected behavior
 
 ```markdown
+[[SUPPLIED_PRIMARY_KEYWORD]]: AI room planner
 [[PRIMARY_KEYWORD]]: AI room planner
 [[SUPPORTING_PRIMARY_KEYWORDS]]: None supplied
 [[LONG_TAIL_KEYWORDS]]: plan a room online; upload a floor plan

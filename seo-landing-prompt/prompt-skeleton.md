@@ -55,7 +55,8 @@ claims.
 
 ### Keyword inventory and scale
 
-- Focus keyword: `[[PRIMARY_KEYWORD]]`
+- User-supplied primary keyword: `[[SUPPLIED_PRIMARY_KEYWORD]]`
+- Focus keyword for this page: `[[PRIMARY_KEYWORD]]`
 - Supporting core keywords: [[SUPPORTING_PRIMARY_KEYWORDS]]
 - Long-tail keywords: [[LONG_TAIL_KEYWORDS]]
 
@@ -78,14 +79,22 @@ Include only supplied terms selected for this page. The table may be empty.
 
 [[RESTRICTED_KEYWORD_POLICY]]
 
+If this prompt was exported from a saved content plan, keep its keyword
+decisions and section roles in the `<content_plan>`. Change a decision only
+when new verified facts or reader intent make it invalid, and explain the
+change in the Final SEO Report.
+If the supplied primary differs from the chosen focus, state the mismatch and
+its resolution before drafting; do not silently replace the user's target.
+
 Shared rules:
 
 - Treat the supplied inventory as the complete input, not a quota to expand.
   Do not create extra required keywords to reach three core terms or ten to
   twelve long-tail terms. When keyword research was explicitly requested, keep
   new suggestions optional until the user or workflow selects them.
-- Do not require every supplied phrase to appear. Select only terms that add a
-  distinct meaning or answer a relevant sub-intent on this page.
+- Select terms that add a distinct meaning or answer a relevant sub-intent on
+  this page. Honor a user-required phrase when it fits truthfully and naturally;
+  flag a conflicting requirement in the report.
 - Do not give every keyword its own heading, paragraph, or module. Do not place
   multiple exact phrases together when a natural sentence would use one.
 - Do not place several exact keywords in one sentence or paragraph solely to
@@ -125,8 +134,9 @@ Before writing visible page copy, output a concise `<content_plan>` containing:
 - Where the primary keyword and any required terms will appear (title, H1,
   opening, relevant headings or body)
 - Which supporting core and long-tail terms were selected for this page, and
-  the distinct reader intent or section purpose each serves
-- Any restricted keyword that will be omitted
+  the distinct reader intent or section purpose each serves. If a saved plan
+  was supplied, carry forward its decisions and planned placements
+- Every supplied restricted keyword that will be omitted, with its reason
 - Exact planned counts **only if** the keyword policy includes numeric targets
 
 Every planned section must answer a distinct question, enable a decision, teach
@@ -351,8 +361,11 @@ Briefly confirm:
 `[[KEYWORD_POLICY_BLOCK]]`:
 
 ```markdown
-Count exact, case-insensitive matches only in the visible page copy in
-Modules 1 through 6. Do not count `<content_plan>` or the Final SEO Report.
+Count exact, case-insensitive matches in the title tag, meta description, and
+rendered page body in Modules 1 through 6, including the H1, headings, and CTA
+labels. Exclude the URL slug, alt text, `<content_plan>`, and Final SEO Report.
+If the user specified a different count scope, use that scope instead and
+state it in the report. A parent export must use the saved plan's scope.
 
 An occurrence of a longer exact phrase also counts as an occurrence of a
 complete exact phrase contained within it.

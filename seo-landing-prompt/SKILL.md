@@ -6,8 +6,9 @@ description: >-
   industry, audience, or product landing page with an intent-led content plan,
   keyword policy, metadata, conversion constraints, and final verification.
   Adapt keyword use to sparse, typical, or large sets. Inside seo-landing-page,
-  return the prompt immediately for saved planning and drafting. Do not use for
-  blogs, finished copy, or copy audits.
+  export a reusable prompt only when the user requests one; its saved content
+  plan remains the drafting contract. Do not use for blogs, finished copy, or
+  copy audits.
 ---
 
 # SEO Landing Prompt
@@ -22,10 +23,17 @@ When the user supplies no audience evidence, the generated prompt must label the
 likely situation as a hypothesis. When no existing pages were supplied, the
 prompt must tell the writer to mark coverage as `unknown` and continue.
 
-When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md), return the generated prompt to the parent workflow as an intermediate artifact. Do not stop, request confirmation, or wait for a follow-up. The parent workflow saves `seo-content/<keyword-slug>-landing/prompt.md` and continues directly with `seo-writing`.
-Return a concise completion or failure status to the parent so it can emit its
-runtime trace; do not claim the prompt was saved, because the parent owns that
-write.
+When [seo-landing-page](../seo-landing-page/SKILL.md) explicitly requests a
+reusable prompt, build it from the normalized `content-plan.md` and return it
+to the parent. The parent may save `prompt.md` as an export; the plan, not the
+exported prompt, controls drafting. Carry the plan's `Keyword map` into the
+prompt: preserve the supplied primary and supporting or long-tail list
+verbatim, the chosen focus keyword, and each distinct term's use or omit
+decision, reader intent and section role or omission reason, planned placement,
+and user-set count. Do not run fresh keyword selection for an export. Return a
+concise status and unresolved variables to the parent. Do not claim a file was
+saved, because the parent owns every write. A standalone prompt-only request
+can use the keyword-only or brief mode below without an existing plan.
 
 ## Input modes
 
@@ -45,7 +53,13 @@ When the user supplies only a keyword:
 
 ### Brief mode
 
-When the user supplies a keyword plus context, use the supplied facts to fill the variables. In a standalone prompt request, request only material missing facts if the user asks for an executable prompt with no placeholders. Inside `seo-landing-page`, retain unknown facts as placeholders and return immediately so the parent can continue with safe omissions.
+When the user supplies a keyword plus context, use the supplied facts to fill
+the variables. In a standalone prompt request, request only material missing
+facts if the user asks for an executable prompt with no placeholders. Inside
+`seo-landing-page`, use the saved plan as input, retain its explicit unknowns
+as placeholders, and return the prompt without a confirmation turn. A missing
+core product fact may block the parent's drafting stage even though a prompt
+template can be exported.
 
 Collect when available:
 
@@ -122,10 +136,17 @@ If the supplied keyword does not clearly match the product or page type, write a
 
 ### 2. Configure keyword policy
 
-- Normalize the supplied inventory before choosing a mode: remove exact
-  duplicates, identify phrases contained inside longer phrases, select one
-  focus keyword, and classify the rest as supporting core, long-tail, or
-  restricted terms. Preserve the user's wording in the report.
+- For a standalone prompt, normalize the supplied inventory before choosing
+  a mode: identify exact duplicates and phrases contained inside longer
+  phrases, select one focus keyword, and classify the rest as supporting core,
+  long-tail, or restricted terms. Preserve every supplied phrase in the prompt
+  or its report, including duplicates and omitted terms, with its disposition.
+  For a parent export, use the saved `Keyword map` classifications and
+  placements without recomputing them.
+- Set `[[SUPPLIED_PRIMARY_KEYWORD]]` to the user's original primary term, or
+  `None supplied` for a topic-only request. Set `[[PRIMARY_KEYWORD]]` to the
+  plan's chosen focus term. On a parent export, preserve any mismatch and its
+  blocker instead of silently replacing the supplied term.
 - Scale the plan to the actual inventory:
   - **Sparse example: one core keyword and zero to three long-tail terms.** Keep
     the page tightly focused. Do not manufacture related exact-match phrases or
@@ -142,16 +163,21 @@ If the supplied keyword does not clearly match the product or page type, write a
 - Treat these ranges as planning guidance, never as quotas or density targets.
 - Populate `[[SECONDARY_KEYWORD_TABLE]]` with keyword, role (supporting core or
   long-tail), intended reader intent/section, and use policy. In natural mode,
-  do not add a numeric target column.
+  do not add a numeric target column. In a parent export, populate it from the
+  selected rows and term types of the saved map.
 - Fill `[[SUPPORTING_PRIMARY_KEYWORDS]]` and `[[LONG_TAIL_KEYWORDS]]` with only
   the supplied terms selected for this page. Write `None supplied` for an empty
-  group instead of inventing replacements.
+  group instead of inventing replacements. In a parent export, place each
+  omitted supplied term and its saved reason in `[[RESTRICTED_KEYWORD_POLICY]]`
+  so the complete input remains traceable.
 - When a user specifies targets, use **count mode**: preserve each exact target
-  range in the plan and report, explain overlap counting, and require an honest
-  Actual/Target result. Do not promise that every target will be met.
+  range and count scope from the plan in the prompt and report, explain overlap
+  counting, and require an honest Actual/Target result. Do not promise that
+  every target will be met.
 - When no targets are supplied, use **natural mode**: intent-led placement only. Do not invent numeric targets, planned exact-match totals, or per-module keyword count tables.
 - Define a `restricted keyword` area for awkward or weakly relevant terms. Allow zero uses and require an explanation in the report if omission improves clarity.
-- In count mode only, tell the writer to count visible page copy in the specified modules and exclude `<content_plan>` and the final report.
+- In count mode only, apply the plan's count scope or the skeleton default;
+  exclude `<content_plan>` and the final report.
 - If the writer cannot verify a count reliably, it must say so rather than invent a total. If a supplied target would cause stuffing, report it as unmet instead of degrading the copy.
 
 ### 3. Configure factual boundaries
@@ -196,7 +222,8 @@ For a standalone request, return:
 
 Do not add strategy commentary inside the copy-paste prompt unless the user asks for it.
 Inside `seo-landing-page`, provide the same data to the parent without
-turning it into a user-facing approval checkpoint.
+turning it into a user-facing approval checkpoint or an alternate drafting
+contract.
 
 ## Quality check
 
@@ -217,7 +244,11 @@ Before delivering the generated prompt, verify:
 - Keyword policy is natural mode unless the user supplied targets; count instructions explain scope and overlap only in count mode.
 - The keyword plan scales to the supplied inventory, names one focus keyword,
   does not fill missing keyword slots, and does not require every phrase to
-  appear.
+  appear by default.
+- For a parent export, every supplied phrase and its use or omit decision,
+  term type, section role or omission reason, and user-set count match
+  `content-plan.md`.
+- The original user-supplied primary and chosen focus occupy distinct fields.
 - Reports and planning notes use `[[INSTRUCTION_LANGUAGE]]`, not a hardcoded language.
 - Metadata guidance does not require Meta Keywords.
 - Product-accuracy, conversion, and anti-stuffing/clarity checks exist.

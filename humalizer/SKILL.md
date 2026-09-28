@@ -24,14 +24,16 @@ specificity, and Blader pattern rewrite here. Leave residual rhythm and leftover
 formulaic cadence to Stop Slop; do not re-run its checklist or scoring inside
 this stage. Prefer one Blader rewrite plus the five-dimension audit below over
 repeated full-pass rewrites.
-Read the saved prompt as the protected SEO contract when it exists. For a
-direct-copy route without a prompt file, use the contract supplied by the parent
-from the user brief and saved content. Return the revised page to the parent for
-merging into `content.md`. Do not wrap or replace the parent's metadata,
-evidence-gap, or final-audit structure with the standalone deliverable format
-below. Return a concise completion, skip, or failure status and material-change
-count to the parent so it can emit its runtime trace; do not claim the merged
-file was saved, because the parent owns that write.
+Read the saved `content-plan.md` as the protected SEO and factual contract;
+read `seo-metadata.md` for the title and description that must stay aligned
+with the revised copy. An optional `prompt.md` is a reusable export, not a
+second source of truth. For an existing-copy route, use the protected contract
+the parent normalized from the supplied draft and brief. Return revised
+publishable body copy to the parent for merging into `content.md`, and report
+any suggested metadata change separately. Do not add the standalone audit
+wrapper below to publishable copy. Return a concise completion, skip, or
+failure status and material-change count; only the parent can claim a merged
+file was saved.
 
 ## Guardrails
 
@@ -111,6 +113,7 @@ See [reference.md](reference.md) for source notes and SEO-specific before/after 
 
 ### 4. Run the Blader Humanizer pass
 
+This skill owns the single Blader fetch and rewrite in the parent workflow.
 Fetch and apply the upstream [Blader Humanizer
 instructions](https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md)
 to the page copy. Read them from GitHub for the current run only; do not install,
@@ -161,4 +164,7 @@ Unless the user asks for only revised copy, return:
 - [change and reason]
 ```
 
-For a complete page, retain title tag, meta description, URL, H1, headings, links, citations, and CTA in the revised copy.
+For a standalone complete-page edit, retain title tag, meta description, URL,
+H1, headings, links, citations, and CTA in the revised deliverable. Inside a
+parent workflow, return only body changes and separately flag any metadata
+change for the parent to save in `seo-metadata.md`.

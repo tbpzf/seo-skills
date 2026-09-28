@@ -5,9 +5,11 @@
    branches in the description, shared steps and completion criteria in
    `SKILL.md`, and branch-specific guidance behind links from the relevant step.
 2. Trace callers and dependencies before changing a workflow contract.
-   `seo-landing-page` and `seo-blog` own saved artifacts and merges; their
-   supporting skills provide stage outputs. A shared-stage change is complete
-   when both parent routes and their linked references agree on the inputs,
+   `seo-landing-page` and `seo-blog` own saved artifacts and merges.
+   `seo-guest-post` owns the guest article and submission notes; it returns
+   them in chat and saves a file only when the user asks. Supporting skills
+   provide stage outputs. A shared-stage change is complete when every
+   affected parent route and its linked references agree on the inputs,
    outputs, and ownership.
 3. Update `README.md` when public skill scope, routing, or artifacts change.
    Run `ruby scripts/validate-skills.rb` after edits. For behavior changes,

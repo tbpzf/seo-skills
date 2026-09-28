@@ -12,12 +12,17 @@ notes separate so submission copy is easy to use.
 
 ## Brief route
 
-Return the proposed publication and a specific reader situation: trigger,
-current task or decision, relevant constraints, current knowledge, next
-question, and evidence or hypothesis labels. Add the thesis, why it fits now,
-original contribution and evidence, section outline in the reader's question
-sequence, permitted product role, disclosure and link plan, and open questions.
+Return the proposed publication, the Step 1 host rule check with a source URL
+and check date per verified rule or `unknown`, and the adapted
+`seo-audience-strategy` reader situation: trigger, current task or decision,
+relevant constraints, current knowledge, next question, and evidence source
+and label for each material detail. Add the thesis, why it fits now, original
+contribution and evidence, section outline in the reader's question sequence,
+permitted product role, disclosure and link plan, and open questions.
 If the host is unknown, label the proposed angle and format provisional.
+When keywords were supplied, include the primary term and every long-tail
+phrase with its intended reader question, planned section and wording, or
+reason for omission, using the [keyword plan](keywords.md).
 
 ## Draft route
 
@@ -31,12 +36,20 @@ for them.
 Follow with `## Submission notes` containing:
 
 - Status: ready for editorial review, provisional, or blocked
-- Host and guideline source; unchecked host requirements
-- Reader situation and next question, with evidence or hypothesis labels
+- Host rule check: topic fit, length/format, citations, originality/rights,
+  AI-assisted writing, product mentions/links, disclosure, byline, and
+  pitch/submission process.
+  Give each verified rule and its first-party URL and check date, or `unknown`
+  with the pages/searches checked. Include audience evidence URLs.
+- Reader situation and next question, with their evidence sources and labels;
+  note any change from the brief
 - Contributor relationship, disclosure text/status, and byline status
-- Evidence and source gaps, including AI-specific claims
+- Evidence and source gaps, including AI-specific claims when applicable
 - Originality, exclusivity, and rights status
 - Link and product-mention compliance
+- When keywords were supplied, each primary and long-tail term's actual use,
+  natural variant, or omission and reason; note changes from the brief. For any
+  user-set count, give actual/target or `unverifiable` with its reason
 - Material edits or approvals still needed
 
 Use `ready for editorial review` only when every known submission requirement
@@ -53,8 +66,17 @@ placement as independent editorial coverage.
 ## Revision and audit routes
 
 For revision, preserve verified facts and the writer's supported perspective.
-Return the full revised article and note material changes, unresolved blockers,
-and any host guideline conflicts. For audit, rank findings by what prevents
-submission first, then by reader usefulness and prose quality. Cite the draft
-passage or section for each finding and give a specific repair. Return the
-audit without a rewritten article unless the user asks for one.
+Reuse the existing reader brief when its audience and angle still fit; apply
+`seo-audience-strategy` in `single-content brief` mode when it is missing or
+the audience or angle changes. Carry the resulting evidence labels into the
+submission notes. Return the full revised article and note material changes,
+unresolved blockers, and any host guideline conflicts. Recheck supplied
+keywords against the revised body and account for each in submission notes.
+
+For audit, assess the existing reader angle and its evidence without invoking
+a new strategy brief. Rank findings by what prevents submission first, then
+by reader usefulness and prose quality. Cite the draft passage or section for
+each finding and give a specific repair. Return the audit without a rewritten
+article or newly saved brief unless the user asks for one. When the user
+supplied keywords, identify terms whose use or omission conflicts with the
+reader angle, host rules, or requested keyword policy.

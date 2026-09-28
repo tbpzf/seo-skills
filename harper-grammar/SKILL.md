@@ -12,10 +12,11 @@ rewrite every flagged phrase or a guarantee that the text is error-free.
 ## Parent workflow contract
 
 When called by [seo-landing-page](../seo-landing-page/SKILL.md) or
-[seo-blog](../seo-blog/SKILL.md), run after the Humalizer, remote Blader
-Humanizer, and Stop Slop passes against the saved `content.md`. Preserve the SEO
-contract and return the checked content and a concise result to the parent for
-its final audit. Do not add a standalone response wrapper to `content.md`.
+[seo-blog](../seo-blog/SKILL.md), run after Humalizer's single remote Blader
+rewrite and the Stop Slop pass against the saved `content.md`. Preserve the
+SEO contract and return the checked body and a concise result to the parent for
+`workflow-status.md`. Do not add a standalone response wrapper to `content.md`
+or put editorial findings inside publishable copy.
 Report the actual preflight path, command status, JSON-parse result, finding
 count, correction count, and any skip/failure reason to the parent so it can
 emit its required runtime trace. Do not include raw CLI output in that report.
@@ -109,5 +110,5 @@ For a standalone request, return:
 [text]
 ```
 
-For the parent workflow, update its final audit with the status, number of
-corrections, and only the material unresolved findings.
+For the parent workflow, return the status, number of corrections, and material
+unresolved findings for the parent to save in `workflow-status.md`.

@@ -80,11 +80,49 @@ expected_execution_contract = {
 
   errors << "#{workflow_name}/SKILL.md: missing resume contract" unless workflow.include?("workflow-status.md")
   errors << "#{workflow_name}/SKILL.md: missing parent merge ownership" unless workflow.include?("Parent owns the merge")
+  ["content-plan.md", "content.md", "seo-metadata.md", "workflow-status.md",
+   "sole persisted drafting contract", "publication readiness", "`revise` mode",
+   "`Keyword map`", "user-set count", "seo-audience-strategy",
+   "single-content brief"].each do |term|
+    errors << "#{workflow_name}/SKILL.md: missing saved-content contract #{term.inspect}" unless workflow.include?(term)
+  end
+  artifacts_file = ROOT.join(workflow_name, "references/artifacts.md")
+  if artifacts_file.file?
+    artifacts = artifacts_file.read
+    ["content-plan.md", "content.md", "seo-metadata.md", "workflow-status.md",
+     "Workflow state", "Publication readiness", "content.legacy.md",
+     "Keyword map", "omission", "user-set", "seo-audience-strategy"].each do |term|
+      errors << "#{workflow_name}/references/artifacts.md: missing artifact contract #{term.inspect}" unless artifacts.include?(term)
+    end
+  end
   [BLADER_REMOTE, STOP_SLOP_REMOTE].each do |remote_url|
     errors << "#{workflow_name}/SKILL.md: missing remote dependency #{remote_url}" unless workflow.include?(remote_url)
   end
   unless workflow.include?("Do not run") && workflow.include?("`npx skills add`")
     errors << "#{workflow_name}/SKILL.md: missing no-local-install rule"
+  end
+end
+
+writing_file = ROOT.join("seo-writing/SKILL.md")
+if writing_file.file?
+  writing = writing_file.read
+  ["sole persisted drafting contract", "Product facts and provenance",
+   "Brand voice and sample source", "Next useful action", "Primary CTA and destination", "`revise`", "## Editorial audit",
+   "seo-metadata.md", "## Keyword map", "Supplied supporting and long-tail keywords",
+   "User keyword requirements", "Type (primary/supporting/long-tail)",
+   "case-insensitive exact matches", "Supplied keyword check",
+   "seo-audience-strategy"].each do |term|
+    errors << "seo-writing/SKILL.md: missing shared stage contract #{term.inspect}" unless writing.include?(term)
+  end
+end
+
+audience_file = ROOT.join("seo-audience-strategy/SKILL.md")
+if audience_file.file?
+  audience = audience_file.read
+  unless audience.include?("single-content brief") &&
+         audience.include?("without writing a file") &&
+         audience.include?("references/guest-post.md")
+    errors << "seo-audience-strategy: missing focused parent-stage or guest-reader contract"
   end
 end
 
@@ -101,6 +139,15 @@ end
 prompt_skill_file = ROOT.join("seo-landing-prompt/SKILL.md")
 if prompt_skill_file.file?
   prompt_skill = prompt_skill_file.read
+  unless prompt_skill.include?("`Keyword map`") && prompt_skill.include?("without recomputing them")
+    errors << "seo-landing-prompt/SKILL.md: parent export must reuse the saved keyword map"
+  end
+  prompt_skeleton_file = ROOT.join("seo-landing-prompt/prompt-skeleton.md")
+  unless prompt_skill.include?("[[SUPPLIED_PRIMARY_KEYWORD]]") &&
+         prompt_skeleton_file.file? &&
+         prompt_skeleton_file.read.include?("[[SUPPLIED_PRIMARY_KEYWORD]]")
+    errors << "seo-landing-prompt: exported prompt must distinguish supplied primary from focus"
+  end
   contract_match = prompt_skill.match(/## Keyword portfolio contract\s+```yaml\s+(.*?)```/m)
   if contract_match
     begin
@@ -120,6 +167,43 @@ if prompt_skill_file.file?
     end
   else
     errors << "seo-landing-prompt/SKILL.md: missing YAML keyword portfolio contract"
+  end
+end
+
+guest_skill_file = ROOT.join("seo-guest-post/SKILL.md")
+guest_keyword_file = ROOT.join("seo-guest-post/references/keywords.md")
+if guest_skill_file.file?
+  guest_skill = guest_skill_file.read
+  unless guest_skill.include?("seo-audience-strategy") && guest_skill.include?("single-content brief")
+    errors << "seo-guest-post: missing focused audience-strategy stage"
+  end
+  unless guest_skill.include?("Save a file only when")
+    errors << "seo-guest-post: missing chat-default save contract"
+  end
+  unless guest_keyword_file.file? && guest_skill.include?("references/keywords.md")
+    errors << "seo-guest-post: missing guest keyword planning reference"
+  end
+  if guest_keyword_file.file? &&
+     !(guest_skill.include?("avoid/prohibited") && guest_keyword_file.read.include?("prohibited terms"))
+    errors << "seo-guest-post: missing user-prohibited keyword handling"
+  end
+end
+
+readme_file = ROOT.join("README.md")
+if readme_file.file?
+  readme = readme_file.read
+  unless readme.include?("`seo-audience-strategy` automatically")
+    errors << "README.md: missing automatic audience-strategy routing"
+  end
+  unless readme.include?("save only when asked") && readme.include?("saves only when asked")
+    errors << "README.md: missing guest-post chat-default save ownership"
+  end
+  ["Landing page for your own site", "Blog post for your own site",
+   "Guest post for another publication"].each do |heading|
+    section = readme.split("### #{heading}", 2)[1]&.split(/^### /, 2)&.first.to_s
+    unless section.include?("Primary keyword:") && section.include?("Long-tail keywords:")
+      errors << "README.md: #{heading} example must show primary and long-tail input"
+    end
   end
 end
 
@@ -260,7 +344,7 @@ Dir.glob(ROOT.join("**/*.md")).sort.each do |path|
 end
 
 if errors.empty?
-  puts "Validated #{skill_files.length} skills: frontmatter, metadata, size, and local links passed."
+  puts "Validated #{skill_files.length} skills: structure, workflow handoffs, metadata, and local links passed."
   exit 0
 end
 

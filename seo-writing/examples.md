@@ -14,7 +14,7 @@ Product: Changelogly collects approved release details from Linear and GitHub,
 turns them into an editable draft, and publishes approved notes to a hosted changelog.
 It does not publish without a human approval step.
 Differentiator: release drafts retain links to the original issue and pull request.
-Primary CTA: Start a free trial
+Primary CTA: Start a free trial → /signup
 Approved proof: none yet
 Internal pages: /integrations/linear, /integrations/github, /product/changelog
 Voice: direct, calm, technical
@@ -29,6 +29,7 @@ release work into customer-facing notes without losing engineering context.
 Search promise: Explain how Changelogly supports a reviewable release-note workflow.
 Information gain: Traceability from a published item to its linked Linear issue and GitHub PR.
 Primary CTA: Start a free trial → signup flow
+Product fact source: supplied brief; verify against current product documentation before publication.
 Evidence still needed: an approved customer story or product walkthrough recording.
 ```
 
@@ -40,35 +41,36 @@ Evidence still needed: an approved customer story or product walkthrough recordi
 - Meta description: Draft, review, and publish release notes from your Linear and
   GitHub work. Keep every update connected to its original engineering context.
 - URL slug: /release-notes-software-product-teams
-- H1: Release notes software for product teams that keeps engineering in sync
 
 ## Draft
 
-### Turn completed work into a release draft
+# Release notes software for product teams that keeps engineering in sync
+
+## Turn completed work into a release draft
 
 Changelogly brings approved release details from Linear and GitHub into one
 editable draft. Product teams can decide what customers need to know, refine
 the language, and approve the note before it is published.
 
-### Keep the implementation context close
+## Keep the implementation context close
 
 Each release item can retain a link to its original Linear issue and GitHub
 pull request. That gives reviewers a fast way to check scope and gives support
 teams a path back to the technical detail when a customer asks a question.
 
-### Review before you publish
+## Review before you publish
 
 Changelogly does not publish release notes automatically. Use the approval step
 to confirm the audience, wording, and links before the update reaches your
 hosted changelog.
 
-[Start a free trial]
+[Start a free trial](/signup)
 
-## Internal links and evidence to add
-- Linear release workflow → /integrations/linear
-- GitHub release workflow → /integrations/github
-- Hosted changelog → /product/changelog
-- [Add an approved product walkthrough or customer example]
+## Editorial audit
+- Internal links still to add: Linear release workflow → /integrations/linear;
+  GitHub release workflow → /integrations/github; hosted changelog → /product/changelog.
+- Evidence gap: Add an approved product walkthrough or customer example.
+- Publication blocker: Verify the supplied product claims and signup destination.
 ```
 
 Why it works: It matches a commercial task, describes only supplied capabilities,
@@ -98,25 +100,26 @@ Internal pages: /templates/release-notes-checklist, /product/changelog
 - Meta description: Use a practical release-notes workflow to choose updates,
   add useful context, and publish notes customers can act on.
 - URL slug: /blog/how-to-write-better-release-notes
-- H1: How to write better release notes customers will actually read
 
 ## Draft
+
+# How to write better release notes customers will actually read
 
 Good release notes answer three questions quickly: what changed, who it helps,
 and what the reader should do next. Start with the customer-facing impact, then
 link to technical detail only when it helps the reader take action.
 
-### 1. Choose updates with a clear customer impact
+## 1. Choose updates with a clear customer impact
 
 Do not publish every internal ticket. Select changes that affect a customer
 workflow, fix a visible problem, or change a decision they need to make.
 
-### 2. Explain the outcome before the implementation
+## 2. Explain the outcome before the implementation
 
 “You can now save filtered views” is more useful than “We updated the query
 layer.” If a technical detail matters, include it after the practical result.
 
-### 3. Make every note reviewable
+## 3. Make every note reviewable
 
 Use a reviewer who can check the release against the original work and against
 the language customers will see. Tools such as Changelogly can keep a draft
@@ -124,6 +127,11 @@ linked to its Linear issue or GitHub pull request while the team edits it.
 
 Download the [release notes checklist](/templates/release-notes-checklist) to
 review the audience, outcome, action, and source links before publication.
+
+## Editorial audit
+- Product fact source: supplied brief; verify before publication.
+- Internal link: checklist destination supplied in the input.
+- Publication blocker: Confirm the checklist is approved for distribution.
 ```
 
 Why it works: The article answers the informational query before mentioning the
@@ -200,7 +208,6 @@ Audience: customer success leaders at B2B SaaS companies
 
 ```markdown
 ## Reader intent
-- Focus keyword: customer onboarding checklist
 - Search intent: Informational; the reader wants a checklist they can use, not
   a history of customer onboarding.
 - Reader situation and current knowledge (evidence or hypothesis): Hypothesis.
@@ -229,6 +236,16 @@ Audience: customer success leaders at B2B SaaS companies
   exit criterion. No customer proof was supplied.
 - Audience evidence sources and validation gaps: Audience role was supplied.
   The specific trigger and current onboarding process are still hypotheses.
+
+## Keyword map
+- Primary keyword (verbatim): customer onboarding checklist
+- Focus keyword for this page: customer onboarding checklist
+- Supplied supporting and long-tail keywords (verbatim): none
+- User keyword requirements (must-use, avoid, placement, exact-count): none
+
+| Supplied term | Type (primary/supporting/long-tail) | Decision (use/omit) | Reader intent and section role, or omission reason | Planned placement | User-set count (if any) |
+| --- | --- | --- | --- | --- | --- |
+| customer onboarding checklist | primary | use | Find an operational checklist | Title and H1 | none |
 
 ## Content structure
 ### Set the onboarding outcome before listing tasks
@@ -276,3 +293,60 @@ Sections:
 - Mark unsupported benchmarks or product claims as evidence gaps.
 - Keep the supplied order unless intent, facts, or usefulness require a change;
   record any material change in the final audit.
+
+## Example 6: Consumer SaaS keyword handoff
+
+### Input
+
+```text
+Mode: plan, then draft-from-structure
+Page type: product landing page
+Primary keyword: digital photo organizer
+Long-tail keywords: photo organizer for computer; organize photos into albums;
+automatic Google Drive photo import
+Product brief: PhotoNest lets users upload photos from a computer and arrange
+them in albums. It does not import photos directly from Google Drive.
+Audience: people trying to find photos by album on a computer
+Primary CTA: Try PhotoNest -> /signup
+```
+
+### Focused audience brief (stage output)
+
+```markdown
+- Reader task: Find photos by album on a computer (supplied).
+- Trigger: A growing, hard-to-browse photo collection (hypothesis; no customer
+  research was supplied).
+- Decision criteria: Confirm that computer upload and albums fit the task;
+  direct Google Drive import is unavailable (supplied product brief).
+- Next question: What happens after upload, and how can albums be organized?
+- Existing page coverage: unknown; no site pages were supplied.
+- Validation gap: Check real customer questions before treating the trigger as
+  an observed pain point.
+```
+
+`seo-audience-strategy` returns this brief to `seo-writing`. Its evidence
+labels and reader questions enter the Reader intent, Topic, and Content
+structure sections of `content-plan.md`; no separate brief file is saved.
+
+### Keyword map excerpt in `content-plan.md`
+
+```markdown
+## Keyword map
+- Primary keyword (verbatim): digital photo organizer
+- Focus keyword for this page: digital photo organizer
+- Supplied supporting and long-tail keywords (verbatim): photo organizer for
+  computer; organize photos into albums; automatic Google Drive photo import
+- User keyword requirements (must-use, avoid, placement, exact-count): none
+
+| Supplied term | Type (primary/supporting/long-tail) | Decision (use/omit) | Reader intent and section role, or omission reason | Planned placement | User-set count (if any) |
+| --- | --- | --- | --- | --- | --- |
+| digital photo organizer | primary | use | Find and evaluate a product for organizing photos | Title and H1 | none |
+| photo organizer for computer | long-tail | use | Check device fit | How it works | none |
+| organize photos into albums | long-tail | use | Understand the supported workflow | Album section | none |
+| automatic Google Drive photo import | long-tail | omit | Contradicts the supplied product limit | none | none |
+```
+
+The draft can use the two relevant long-tail phrases where they help explain
+the workflow. Its editorial audit reports actual placement and explains the
+omitted phrase. It does not suggest direct Google Drive import or invent a
+keyword count.

@@ -3,9 +3,11 @@ name: seo-audience-strategy
 description: >-
   Develop audience-first SEO strategies and people-centered content briefs from
   customer situations, decision journeys, existing pages, and search evidence.
-  Use for audience-situation mapping, content-gap analysis, or a brief before
-  writing. Do not use for finished landing pages, blog posts, keyword-list
-  expansion, or press releases.
+  Use directly for audience-situation mapping, owned-site content-gap analysis,
+  or a reader brief. Also use in single-content brief mode inside
+  seo-landing-page, seo-blog, and seo-guest-post. Route finished copy to those
+  writing skills, press releases to seo-pr, and keyword-list expansion to the
+  writing parents.
 ---
 
 # Audience-First SEO Strategy
@@ -14,12 +16,14 @@ Start with a real audience's situation and decision. Use queries to learn how
 people express that need and to refine the work. A keyword's search volume alone
 does not establish that the audience, page, or topic is valuable to the business.
 
-This skill produces either a site/content strategy or a brief for one page. It
-does not write the page and does not load `seo-writing`. Follow the user's
-requested scope: a single-page brief does not require a site audit, and a site
-strategy does not require finished copy. If the user wants a finished landing
-page or blog post, recommend `seo-landing-page` or `seo-blog` and stop after
-the brief.
+This skill produces either a site/content strategy or a focused reader brief
+for one page or guest article. It does not write copy or load `seo-writing`.
+When `seo-landing-page`, `seo-blog`, or `seo-guest-post` calls it, return the
+brief as a stage output without writing a file or asking the user to invoke
+another skill. Owned-site parents own saved artifacts and merges; guest-post
+owns the chat deliverable and any requested file. A standalone reader-brief
+request uses the same method and may be returned directly. A single-content
+brief does not require a site audit.
 
 ## Evidence and intake
 
@@ -38,9 +42,9 @@ when the requested decision cannot responsibly be made without it.
 
 ## Research method
 
-1. **Define the decision.** Name the business outcome, the audience's task, and
-   the next action the content should support. Reject topics that attract
-   attention but have no credible connection to that task or product.
+1. **Define the decision.** Name the content's business or editorial purpose,
+   the audience's task, and the next useful action. A topic needs a credible
+   connection to the reader's task and available expertise.
 2. **Segment by meaningful differences.** Distinguish people by trigger,
    constraints, desired outcome, objections, and decision criteria. Role or
    demographic labels alone are too thin. Use as many segments as the evidence
@@ -61,18 +65,21 @@ when the requested decision cannot responsibly be made without it.
    resolves the gap; propose a separate page when the intent, evidence, or
    conversion path is meaningfully different. Avoid near-duplicate pages for
    thin persona labels. If no pages were supplied, label coverage `unknown` and
-   continue. A single-page brief does not require a site audit.
+   continue. A single-page brief does not require a site audit. For a guest
+   article, use the [host-reader adaptation](references/guest-post.md) instead
+   of owned-site page decisions.
 6. **Use search evidence.** Cluster actual or supplied queries by situation and
    stage. Use query wording, SERP patterns, volume, impressions, and click data
    as directional evidence, not as a mandate to write every high-volume topic.
    Search Console is especially useful for checking how published pages are
    found and where impressions do not lead to useful clicks. It may also reveal
    overlooked questions; investigate them against audience evidence.
-7. **Choose and measure.** Prioritize by audience relevance, business fit,
-   content gap, credible expertise, and available proof. Select measures that
-   match the page's job: qualified engagement, useful next actions, assisted
-   conversions, leads, and search visibility where appropriate. Do not promise
-   rankings or infer business value from impressions alone.
+7. **Choose and measure.** Prioritize by audience relevance, business or
+   editorial fit, content gap, credible expertise, and available proof. Select
+   measures that match the content's job: qualified engagement, useful next
+   actions, assisted conversions, leads, and search visibility where
+   appropriate. Do not promise rankings or infer business value from
+   impressions alone.
 
 ## Deliverables
 
@@ -82,7 +89,7 @@ evidence labels, journey questions, existing coverage, recommended page actions
 paths, priorities, and validation gaps. Explain why each proposed page deserves
 to exist. Do not prescribe a new URL for every persona or keyword.
 
-For a **single content brief**, include:
+For a **single-content brief**, include:
 
 - Primary audience and specific scenario; relevant seven prompts with evidence
   source or `hypothesis`/`unknown` labels.
@@ -91,18 +98,25 @@ For a **single content brief**, include:
 - The question or decision this page will resolve, its distinct angle, and
   what is outside its scope.
 - Existing page coverage and the reason to improve, create, or defer. Use
-  `unknown` when no pages were supplied.
+  `unknown` when no pages were supplied. For a guest article, record host
+  audience and editorial fit instead, using the linked host-reader adaptation.
 - Content type, proposed section jobs in reader order, needed examples or
   proof, brand-voice notes, and factual boundaries.
 - Supplied or observed query cluster, one natural focus phrase if useful, and
   terms to omit or cover elsewhere. Do not invent keyword quotas.
-- Useful internal links, the next action or CTA when relevant, success measures,
-  and unresolved evidence with its likely owner (for example sales or support).
+- Useful internal links for owned pages, the next action or CTA when relevant,
+  success measures, and unresolved evidence with its likely owner (for example
+  sales, support, or the contributor).
 
 Keep the brief proportionate to the assignment. A narrow page may need only one
-well-supported situation. When handing the brief to a drafting workflow,
-preserve supplied facts, evidence labels, and constraints. The drafting skill
-owns its content-plan schema.
+well-supported situation. The brief is complete when the reader's task and
+next question, evidence-labeled situation, decision criteria, needed proof,
+scope, and validation gaps are explicit. When handing it to a writing workflow,
+preserve supplied facts and evidence labels. `seo-writing` defines the owned-site
+content-plan schema; `seo-landing-page` and `seo-blog` own the saved
+`content-plan.md` and merges. `seo-guest-post` owns publisher fit, links,
+disclosures, pitch structure, copy, and submission notes in chat, and saves a
+file only when requested.
 
 ## Validation
 

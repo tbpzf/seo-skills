@@ -1,110 +1,153 @@
-# Artifacts and resume status
+# Landing-page artifacts and resume status
 
-All paths are under the **current project** workspace root (not this skills
-repository unless that is the active workspace). Override only when the user
-specifies another location.
-
-## Directory layout
+The parent `seo-landing-page` workflow owns every write and merge. Save files
+under the active project workspace, not this skills repository, unless the user
+chooses another location.
 
 ```text
-seo-content/<keyword-slug>/
-  prompt.md
+seo-content/<keyword-slug>-landing/
   content-plan.md
   content.md
+  seo-metadata.md
   workflow-status.md
+  prompt.md          # only for a requested reusable prompt export
 ```
 
-- `<keyword-slug>`: lowercase primary keyword, spaces to hyphens, strip other
-  punctuation (example: `AI kitchen design` → `ai-kitchen-design`).
-- Append `-landing` unless the user supplies a directory name or the slug
-  already ends with `-landing`.
-- For a structure-only route without a focus keyword, derive the slug from the
-  working title/topic with the same normalization. Pause only when no safe
-  non-empty child of `seo-content/` can be produced.
-
-## `prompt.md`
-
-Full generated copy-paste prompt only. Do not keep Stage 1 review chrome such
-as “Fill before use” or “Prompt configuration” unless the user asks to keep
-them.
+Create `<keyword-slug>` from the lowercase focus keyword: replace spaces with
+hyphens and strip other punctuation. Append `-landing` unless already present.
+For a supplied outline without a keyword, use its working title. Pause only
+when no safe, non-empty child of `seo-content/` can be derived. Do not overwrite
+another page's directory merely because two requests share a keyword; resolve
+the collision from the page subtype or user-supplied name. Reuse the existing
+directory for revision and resume requests.
 
 ## `content-plan.md`
 
-Persist the complete plan returned by `seo-writing` without dropping or
-renaming fields. `seo-writing` owns the schema.
+Save the full `seo-writing` plan without dropping or renaming fields. That
+plan's `Keyword map` is the single schema for type, use/omit, omission reason,
+placement, and any user-set count. Fold the Stage 2 `seo-audience-strategy`
+brief into `Reader intent`, `Topic`, `Content structure`, and `Writing
+constraints`, preserving evidence, `hypothesis`, and `unknown` labels. It is
+the sole persisted drafting contract. When a field is unknown, label it
+`unknown` or `[fact needed]`; record the source for material claims. A
+generated `prompt.md` is an export derived from this plan and never overrides
+it.
 
-## `content.md`
+## `content.md` and `seo-metadata.md`
 
-Default shape:
+`content.md` contains the publishable landing-page body only. It starts with
+exactly one Markdown H1 and uses H2/H3 headings for its sections. Keep strategy,
+audit notes, evidence requests, publication blockers, and unresolved
+placeholders in `workflow-status.md`, not in visible copy. Omit claims that
+depend on unavailable proof.
+
+`seo-metadata.md` contains only:
 
 ```markdown
-# <H1>
-
-## SEO metadata
+# SEO metadata
 - Title tag:
 - Meta description:
 - URL slug:
-- H1:
-
-## Draft
-[Full page copy in markdown]
-
-## Internal links and evidence to add
-- ...
-
-## Publication blockers
-- ...
-
-## Final audit
-- Intent and product fit:
-- Usefulness and reader-respect check:
-- Structure deviations, if any:
-- Evidence gaps:
-- Clarity bar (middle-school readable): pass / fixes made:
-- Humanization: pending
-- Stop Slop: pending
-- Grammar check: pending
-- Changes made:
 ```
 
-If the user asked for draft-only markdown (no strategy/audit sections), save
-only the publishable page body plus metadata. Still maintain
-`workflow-status.md` so resume stays deterministic.
-
-Write a separate `content.draft.md` only when the user explicitly asks to
-retain both versions.
+The parent extracts these two artifacts from the `seo-writing`
+`draft-from-structure` output. The `Editorial audit` becomes status
+findings, including evidence and link gaps. The `Draft` block, including its
+one H1, becomes `content.md`. Verify that metadata and body make the same
+promise after each rewrite.
 
 ## `workflow-status.md`
 
-Update after every completed, skipped, or failed stage. This file is the resume
-source of truth.
+Write this after each stage in a saved page route. It is the resume source of truth
+and the home for editorial findings:
 
 ```markdown
 # Workflow status
-- Route: keyword-to-landing-page | page-plan-only | draft-from-structure | prompt-only | humanize-existing | other
+- Route: keyword-to-page | plan-only | draft-from-structure | revision | humanize-existing | other
+- Workflow state: in progress | blocked | completed
+- Publication readiness: not assessed | ready | blocked
 - Keyword slug:
-- Completed stages: [1, 2, 3]
-- Next stage: 4
-- Skipped stages:
-- Failed stages:
+- Next stage: 1 | 2 | 3 | 4 | 5 | 6 | 7 | none
+- Stages:
+  - 1 Intake: pending | completed | not requested | failed
+  - 2 Plan: pending | completed | not requested | failed
+  - 3 Draft: pending | completed | not requested | failed
+  - 4 Humalizer and Blader: pending | completed | not requested | skipped by user | failed
+  - 5 Stop Slop: pending | completed | not requested | skipped by user | failed
+  - 6 Harper: pending | completed | not requested | skipped (unavailable) | skipped by user | failed
+  - 7 Final verification: pending | completed | not requested | failed
 - Artifacts:
-  - prompt.md: present | absent
   - content-plan.md: present | absent
   - content.md: present | absent
-- Humanization: pending | completed | skipped by user | failed
-- Stop Slop: pending | completed | skipped by user | failed
-- Grammar check: pending | completed | skipped (harper-cli unavailable) | skipped by user | failed
-- Publication blockers: none | [short list]
+  - seo-metadata.md: present | absent
+  - prompt.md: present | absent
+- Intake: source references, evidence labels, and missing required inputs
+- Final audit:
+  - Reader situation, journey questions, usefulness, and reader respect:
+  - Plan or structure deviations:
+  - Product and external claims with sources:
+  - Keyword map reconciliation (each supplied term used and where, or omitted and why; unmet must-use terms; user-set counts only):
+  - Metadata and H1 alignment:
+  - Links and CTA destination:
+  - Humanization and Stop Slop changes:
+  - Grammar findings and corrections:
+- Publication blockers: none | [specific missing facts, proof, links, or destination]
+- Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, exit, parse, findings, and corrections
 - Notes:
 ```
 
+`Workflow state: completed` records execution of the requested route; it does
+not mean the page is ready to publish. A completed plan-only route marks
+Stages 3-7 `not requested` and publication readiness `not assessed`. For a
+full page, set `Publication readiness: blocked` while any material claim
+lacks support, a required link or CTA destination is missing, or a requested
+publishable element is unresolved. A failed required remote stage sets
+`Workflow state: blocked`; Harper unavailability does not. If the Stage 2
+minimum draft gate fails on a body-copy route, save the plan and status with
+`Workflow state: blocked`, `Next stage: 3`, and the exact missing inputs.
+After Stage 2, the plan controls drafting facts; intake notes in status are
+provenance and gap records, not a second fact sheet.
+
+## Optional `prompt.md`
+
+When the user requests a reusable prompt export, save the generated prompt
+with its `Fill before use` list for any unresolved variables. Keep that list
+outside the copy-paste prompt block. An export with required variables still
+unresolved is a template, not an executable prompt. Changes to this file do
+not alter the plan or page. Carry the plan's evidence-labeled reader situation,
+section jobs, factual boundaries, and every keyword use or omission decision
+into the export; the prompt does not reclassify the list.
+
 ## Resume rules
 
-1. Read `workflow-status.md` when it exists. Resume at `Next stage`.
-2. If the status file is missing, infer the earliest incomplete stage from
-   artifacts and `content.md` audit fields (`Humanization`, `Stop Slop`,
-   `Grammar check`), then recreate `workflow-status.md` before continuing.
-3. Never treat a present `content.md` as complete while Humanization, Stop Slop,
-   or Grammar check remain `pending` on the default route.
-4. After regenerating an earlier artifact, reset every downstream status field
-   to `pending` and resume from the earliest affected stage.
+1. Read the status and confirm its referenced artifacts exist. An older run may
+   have a ten-stage status and a wrapped `content.md` containing `## SEO
+   metadata`, `## Draft`, and `## Final audit`. Before applying new stage
+   numbers, preserve that file as `content.legacy.md`, extract its single page
+   body into `content.md`, move metadata to `seo-metadata.md`, and carry audit
+   findings into the new status. Normalize the saved plan to the current
+   reader-intent, audience-evidence, provenance, CTA, and `Keyword map` fields,
+   marking gaps `unknown`; preserve every recoverable supplied phrase and do
+   not add new claims.
+   Rebuild stage states from evidence of completed work, leaving any unproven
+   rewrite or check pending. If status is absent, reconstruct intake and the
+   earliest incomplete stage from files in the same way. Save the normalized
+   status before continuing.
+2. Resume at `Next stage` using the saved plan's reader strategy. Run the
+   Stage 2 single-content brief again when the reader situation or intent has
+   changed, or the plan lacks that strategy. Fold the refreshed brief into
+   the plan before drafting or revising. Resolve a blocked draft gate from
+   verified product input, update the plan, and then run Stage 3. Never fill
+   the gate with an inferred capability or invented CTA.
+3. After a plan change, reset Stages 3-7. After a body change, reset Stages
+   4-7. After a metadata-only change, rerun Stage 7 and rerun Stage 3 if the
+   change conflicts with the plan. A prompt export change does not reset the
+   page workflow.
+4. Recheck body, metadata, and status together before marking the route
+   completed. File presence alone does not prove a stage ran.
+
+In-chat prompt-only and audit-only requests create no files or status unless
+the user asks for a saved artifact. A requested saved prompt goes to
+`prompt.md` without starting a staged page workflow or creating
+`workflow-status.md`; it remains independent of the page's drafting contract.
+Save audit-only findings to the user-requested path, also without page status.

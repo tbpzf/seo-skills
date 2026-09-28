@@ -1,48 +1,52 @@
 ---
 name: seo-writing
 description: >-
-  Shared low-level planning, drafting, and audit engine for English SaaS landing
-  pages and educational blog posts. Use when explicitly invoked, when the user
-  requests only a content plan/draft/audit engine, or when called by
-  seo-landing-page or seo-blog. For a finished landing page or blog workflow,
-  prefer those parent skills. Evaluate reader intent, usefulness, evidence,
-  clarity, metadata, and CTA alignment, then return artifacts to the parent
-  without an approval step.
+  Plan, draft, revise, or audit English SaaS landing-page and owned-site blog content as
+  a stage called by seo-landing-page or seo-blog. Use directly only when the
+  user explicitly wants a standalone plan, draft or revision from a supplied
+  structure, or read-only copy audit. Route finished landing pages to seo-landing-page and
+  finished owned-site articles to seo-blog; third-party articles belong to
+  seo-guest-post.
 ---
 
 # SaaS SEO Writing
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
-For planning, resolve one reader situation inside this skill. Do not load
-`seo-audience-strategy`. A supplied keyword is a clue to the task, not evidence
-of the reader's circumstances. Label supplied facts as evidence and inferred
-details as `hypothesis` or `unknown`. Use only the situation prompts the page
-needs: why, when, where, while doing what, with whom, with or for what, and how
-the reader feels. Do not invent answers to fill every prompt. If the user
-already supplied a brief, keep its facts and labels, then return this skill's
-content-plan format.
+Before `plan`, `draft-from-structure`, or `revise`, use a focused single-content
+brief from [`seo-audience-strategy`](../seo-audience-strategy/SKILL.md). The
+landing or blog parent supplies that brief as a transient stage output on the
+first plan, then folds it into the saved `content-plan.md`; return a missing
+or stale reader situation to that parent for refresh. For direct use,
+reuse a supplied plan's evidence-labeled reader task, decision criteria,
+journey question, and gaps when they still fit the audience and intent.
+Otherwise call `seo-audience-strategy` in single-content mode and fold its
+brief into the working plan before writing. Keep the supplied structure and
+keyword inventory. `audit` remains read-only and does not trigger this stage. A
+keyword is a clue to the reader's task, not evidence of their circumstances;
+label inferences as `hypothesis` or `unknown`.
 
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
 When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md) or
-[seo-blog](../seo-blog/SKILL.md), use the parent-selected `plan` or
-`draft-from-structure` mode and return the artifact to the parent. The parent
-owns file writes, final humanization, and `workflow-status.md`.
+[seo-blog](../seo-blog/SKILL.md), use the parent-selected `plan`,
+`draft-from-structure`, or `revise` mode and return the stage output. This skill
+defines the content-plan schema; the parent owns every file write, merge, final
+humanization, and `workflow-status.md`.
 
-Inside a parent workflow, its selected operating mode overrides any workflow or
-output instruction inside a reusable prompt. For `seo-landing-page`, use the
-normalized saved prompt for facts, SEO policy, audience, market, language, and
-CTA. `seo-blog` does not require a prompt artifact. Always use the saved content
-plan for the reader promise, intent,
-outline, required depth, and its normalized fallback constraints. Do not
-silently replace either contract from invocation context. If a required value
-is absent, return control to the parent stage that owns it, persist the
-correction, and continue without user approval. Omit unsupported factual claims
-and list unresolved evidence or destinations in the final audit.
+The parent's saved `content-plan.md` is the sole persisted drafting contract for
+both owned-site routes: evidence-labeled reader situation, reader promise,
+intent, section jobs, the complete supplied keyword
+inventory and per-term decisions, product facts and sources, brand voice and
+its sample source, language, market, and next action. A landing-page `prompt.md`, when
+requested, is a reusable export of that plan, never a competing input. If a
+required value is absent, return the gap to the parent stage that owns it;
+the parent updates the plan or records a blocker before drafting. Omit
+unsupported claims and record unresolved evidence or destinations in the
+editorial audit.
 
 This skill covers:
-- SaaS landing pages: feature, use case, audience, or industry pages
+- SaaS landing pages: feature, use case, audience, industry, or product pages
 - SaaS educational blog posts: definitions, how-to guides, and problem-solving articles
 
 It does not cover local SEO, ecommerce, programmatic SEO, YMYL topics, or competitor-comparison pages. State the limitation and ask to narrow or use a dedicated workflow when one of those is requested.
@@ -55,24 +59,27 @@ Choose one mode from the request:
 | --- | --- | --- |
 | `plan` | Topic or keyword(s), audience/product context, and available evidence | One specific topic, audience-situation analysis, and a section-level content structure; no body copy |
 | `draft-from-structure` | A supplied or saved content structure plus factual/SEO constraints | Complete content that follows and, when necessary, safely corrects the structure |
-| `end-to-end` | Keyword(s) plus a request for finished content | Run `plan`, then draft from that plan |
-| `audit` | Existing copy | Findings and targeted revisions |
+| `revise` | Existing body and metadata, saved plan, and a specific requested change | Targeted revised copy, existing or updated metadata, and material-change audit |
+| `audit` | Existing copy | Prioritized findings and targeted repairs; no rewrite unless requested |
 
 Do not merge `plan` and `draft-from-structure` into one invisible step inside
-the root workflow. The saved plan is the handoff contract and recovery point.
+the parent workflow. The saved plan is the handoff contract and recovery point.
 
 ## Non-negotiable rules
 
 1. Write for a person with a real task, not for a search engine.
 2. Do not invent product behavior, integrations, customer names, testimonials, statistics, awards, case-study results, expert quotes, or sources.
 3. Separate supplied facts from proposed copy. Mark placeholders such as `[customer result needed]` rather than fabricating proof.
-4. Use one primary search intent and one primary CTA per page. Secondary CTAs may only support the same next step.
+4. Use one primary search intent per page. A landing page needs one primary CTA;
+   an informational blog may have no sales CTA. Secondary CTAs, when present,
+   support the same next step.
 5. Use the primary keyword naturally where it clarifies the page. Never force a density target or repeat it in every heading.
 6. A product mention must solve the reader's current problem. Do not turn an informational article into an uninterrupted sales pitch.
 7. Do not claim that a change will rank, convert, or meet a Google requirement. Explain the user benefit and evidence instead.
 8. Scale keyword use to the supplied inventory and page length. Never add
-   keywords to fill the typical portfolio shape defined by the saved prompt or
-   plan, and never require every supplied phrase to appear.
+   keywords to fill a typical portfolio shape. Treat a supplied phrase as
+   optional unless the user explicitly requires it and the page can use it
+   truthfully and naturally.
 9. Meet the clarity bar on every draft. Prefer short sentences, everyday words,
    one idea per paragraph, and concrete examples. Define a technical term on
    first use only when the intended reader may not know it. Do not “sound
@@ -111,13 +118,15 @@ Identify or request only the missing information needed to produce accurate copy
 
 | Required input | Why it matters |
 | --- | --- |
-| Page type and target keyword/topic | Provides a search signal and page scope |
-| ICP: audience, role, maturity, and pain | Determines language and proof |
-| Product facts: capabilities, limits, differentiators | Prevents invented claims |
-| Primary CTA and post-click action | Keeps the conversion path coherent |
+| Page type, primary keyword or topic, and every supplied supporting or long-tail term | Preserves the user's search targets and page scope |
+| Audience: reader or user, current knowledge, task, and constraints | Determines language and proof |
+| Product facts when the product is mentioned: capabilities, limits, differentiators, and sources | Prevents invented claims; an informational article may omit a product connection |
+| Next action; for a landing page, the primary CTA and post-click action | Keeps the conversion path coherent without forcing a sales CTA into an informational article |
 | Brand voice and approved claims | Keeps copy on-brand and supportable |
 
 Also request, when available:
+- Any user-required, prohibited, placement-targeted, or count-targeted keyword
+  and its exact instruction
 - The existing draft or URL and its target metric
 - Customer evidence, screenshots, demos, documentation, or source URLs
 - Relevant internal pages and preferred anchor text
@@ -125,43 +134,46 @@ Also request, when available:
 
 For a standalone request, ask for facts before drafting when accurate copy is
 otherwise impossible. Inside `seo-landing-page` or `seo-blog`, follow the
-parent's automatic fallback rules and continue with explicit evidence
-placeholders or safe omissions.
+parent's minimum drafting gate. Record missing facts in the plan; use safe
+omissions in copy and mark any indispensable missing fact as a blocker.
 
 ## Workflow
 
 ### 1. Research
 
-1. Resolve the likely reader situation: who searches, what triggered the
-   search, what they already know, and the task or decision they need to finish.
-   Record only the relevant situation prompts, and mark each detail as evidence,
-   `hypothesis`, or `unknown`. Do not force a full persona exercise for a narrow
-   page.
-2. Classify the query: informational, commercial investigation, or transactional.
-3. Define the expected result: a direct answer, comparison criteria, procedure,
+1. Preserve the user's primary keyword and all supplied supporting and
+   long-tail terms verbatim. Note exact duplicates, contained phrases, and
+   terms with a different search intent; keep the original inventory even
+   when a term will be omitted from this page. If the request supplies a topic
+   but no primary keyword, label the proposed focus phrase as inferred.
+2. Transfer the strategy brief's specific reader situation, trigger, current
+   knowledge, decision criteria, and next question with their evidence labels.
+   Validate the proposed reader task against supplied product facts and query
+   intent; keep unresolved details as `hypothesis` or `unknown`.
+3. Classify the query: informational, commercial investigation, or transactional.
+4. Define the expected result: a direct answer, comparison criteria, procedure,
    template, diagnosis, recommendation, or buying decision support.
-4. List the constraints, failure modes, trade-offs, and follow-up questions a
+5. List the constraints, failure modes, trade-offs, and follow-up questions a
    useful answer must cover. Separate adjacent intents that need another page.
-5. When live search or SERP data is available, inspect the dominant result type,
+6. When live search or SERP data is available, inspect the dominant result type,
    recurring reader questions, and gaps. Treat it as evidence about expectations,
    not a template to copy.
-6. Read supplied product materials and list only substantiated capabilities,
-   limitations, and proof.
-7. Identify the information gain: first-hand experience, original data, a useful
+7. Read supplied product materials and list capabilities, limitations, and
+   proof with their source and approval status. Distinguish a claim confirmed
+   by current documentation from a user-supplied claim that still needs review.
+8. Identify the information gain: first-hand experience, original data, a useful
    framework, a concrete workflow, an expert explanation, a downloadable
    artifact, or product evidence that competing pages do not provide.
-8. Map the reader's next decision. Do not target a query if the product has no
-   credible relevance to its solution.
-9. Check existing coverage only when the user supplied pages or asked for a
-   coverage audit. Recommend improve when one of those pages can answer the
-   task, create when the task or conversion path needs a distinct page, and
-   defer when the evidence is too thin to choose. When no pages were supplied,
-   set existing coverage to `unknown` and continue the requested page. Do not
-   stop to request a site audit.
+9. Map the reader's next decision. For a product-led page, confirm that the
+   product has credible relevance to the task; for an informational blog with
+   no supported product connection, teach the task without inventing one.
+10. Carry the brief's existing-coverage decision into the plan. When no pages
+    were supplied, keep coverage `unknown` and continue the requested page.
+    Do not initiate a site audit for a single-content request.
 
 ### 2. Topic and content structure
 
-In `plan` or `end-to-end` mode, select one topic that makes a specific,
+In `plan` mode, select one topic that makes a specific,
 supportable promise. Do not use the keyword itself as the entire topic and do
 not broaden the topic beyond the reader's likely task.
 
@@ -171,13 +183,12 @@ Return this plan:
 # Content plan
 
 ## Reader intent
-- Focus keyword:
 - Search intent:
 - Reader situation and current knowledge (evidence or hypothesis):
 - Trigger, job, or decision:
 - Journey stage and next question:
 - Expected outcome:
-- Constraints and follow-up questions:
+- Constraints, objections, decision criteria, and follow-up questions:
 - Existing coverage and page decision (improve/create/defer/unknown):
 - Out of scope:
 
@@ -188,6 +199,17 @@ Return this plan:
 - Information gain and evidence available:
 - Audience evidence sources and validation gaps:
 
+## Keyword map
+- Primary keyword (verbatim; `none supplied` if the user gave only a topic):
+- Focus keyword for this page (use the supplied primary when coherent; mark
+  `inferred` if not supplied):
+- Supplied supporting and long-tail keywords (verbatim; `none` if absent):
+- User keyword requirements (must-use, avoid, placement, exact-count; `none` if absent):
+
+| Supplied term | Type (primary/supporting/long-tail) | Decision (use/omit) | Reader intent and section role, or omission reason | Planned placement | User-set count (if any) |
+| --- | --- | --- | --- | --- | --- |
+| <each distinct supplied term, including the primary when supplied> | | | | | |
+
 ## Content structure
 ### <descriptive section heading>
 - Reader question/job:
@@ -197,18 +219,43 @@ Return this plan:
 
 ## Writing constraints
 - Page type, market, and page-copy language:
-- Selected/omitted supporting keywords:
-- Keyword policy:
-- Verified product facts and prohibited claims:
+- Keyword policy (natural use by default; count scope and overlap rule only for user-set targets):
+- Product facts and provenance (claim, source, approval status):
+- External claims and cited sources:
+- Prohibited or unverified claims to omit:
+- Brand voice and sample source (or `none`):
 - Facts or evidence still needed:
 - Internal links:
-- Primary CTA and destination:
+- Next useful action:
+- Primary CTA and destination (landing: required; informational blog: `none` when no sales action fits):
 - Success measure tied to the reader's next action:
 ```
 
-Every saved plan must populate these constraints. When `prompt.md` does not
-exist, this section is the complete persisted drafting contract rather than a
-short note appended to the outline.
+Every saved plan must carry the strategy brief's evidence labels, reader task,
+journey question, decision criteria, and validation gaps as well as the keyword
+map and writing constraints. Use
+`unknown` for an unresolved required value and `none` for an intentionally
+absent optional value. Together they are the persisted drafting contract,
+whether or not a reusable prompt was exported.
+
+Complete the keyword map before drafting. Keep all supplied phrases in the
+verbatim inventory even if duplicated, overlapping, awkward, or off-intent;
+one decision row per distinct phrase is enough. Record each term's supplied
+type; mark an inferred type as inferred when the user did not label it. Give
+selected terms a distinct reader intent and section role, and explain every
+omitted term. A supplied must-use term that conflicts with facts or the page's
+intent is an explicit conflict for the parent to resolve, not a silent
+omission. A selected term may
+still have zero exact-match uses if natural copy needs a variant; explain the
+change in the editorial audit. Record numeric targets only when the user
+supplied them. Never invent counts or add terms merely to fill a portfolio.
+If the supplied primary itself cannot support the page promise, mark the plan
+blocked and return the mismatch to the parent before drafting; do not silently
+substitute a different focus keyword. For a user-set count without a specified
+scope, count case-insensitive exact matches in the title tag, meta description,
+and rendered body including the H1, headings, and CTA labels. Exclude the URL
+slug, alt text, plan, and audit. A complete shorter phrase inside a longer one
+counts for both; preserve a different scope if the user supplied one.
 
 Order sections by the reader's learning or decision sequence. Do not force a
 definition section when the audience already knows the concept. Do not create
@@ -255,7 +302,8 @@ material correction in the final audit instead of silently following a bad
 outline.
 
 - Use one focus keyword for the page promise. Give each selected supporting
-  core or long-tail term a distinct reader intent or section role.
+  core or long-tail term its planned reader intent or section role from the
+  keyword map. Preserve user-required terms when they fit naturally.
 - With a sparse keyword set, reduce keyword-bearing headings and placements;
   do not repeat the same terms across every module.
 - With a large or mixed-intent set, write only for the coherent cluster in the
@@ -277,13 +325,30 @@ outline.
   compare, discuss, and improve” with one concrete outcome, or split the
   distinct actions into steps. Retain a longer series only when every item is
   necessary and the list format makes it easier to scan.
-- Write to the clarity bar below. Retain domain terms the ICP expects; define only terms the intended reader may not know.
+- Write to the clarity bar below. Retain domain terms the audience expects; define only terms the intended reader may not know.
 - Link only to pages that genuinely help the reader continue: product, pricing, demo, documentation, case study, or a related guide.
-- Include title tag, meta description, H1, URL suggestion, body copy, CTA labels, and internal-link recommendations unless the user asks for only one component.
+- Include title tag, meta description, H1, URL suggestion, body copy, and
+  useful internal links. Include a CTA label only when the saved plan calls for
+  one; a blog may end with a useful next action and no sales CTA.
+
+### 4. Revise existing copy
+
+In `revise` mode, read the existing body and metadata (saved files or supplied
+text), the normalized plan, and the requested change. Make the smallest edit that fulfills the
+request while retaining unaffected sections, approved facts, citations,
+links, and the reader promise. Return the full revised body so the parent can
+save it once. Return the existing metadata unchanged unless the edit changes
+its accuracy or promise; identify every metadata change in the editorial
+audit. A body revision does not authorize replacing the plan with a new
+angle. If the request changes the page's intent, factual constraints, or CTA,
+return to `plan` mode first and reset dependent stages.
 
 ## Clarity bar (middle-school readable)
 
-Goal: keep general prose near a grade 6–8 reading level. The reader is still a SaaS buyer or practitioner. Let the ICP determine which product and domain terms need an explanation; do not talk down, invent school metaphors, or strip needed terminology.
+Goal: keep general prose near a grade 6–8 reading level. The reader may be an
+end user, a buyer, or a practitioner. Let the recorded audience determine
+which product and domain terms need an explanation; do not talk down, invent
+school metaphors, or strip needed terminology.
 
 | Rule | Do | Avoid |
 | --- | --- | --- |
@@ -345,7 +410,7 @@ After the first draft, run both reviews and silently revise.
 ### B. Clarity and search-readiness audit
 
 - Run the clarity bar: average sentence length, one idea per paragraph, everyday words, unfamiliar jargon defined once, answer-first openings.
-- Check general prose against the grade 6–8 target while preserving terms familiar to the ICP. If a sentence makes the intended reader re-read, shorten it or make it more concrete.
+- Check general prose against the grade 6–8 target while preserving terms familiar to the audience. If a sentence makes the intended reader re-read, shorten it or make it more concrete.
 - Remove keyword repetition, generic introductions, filler, and vague claims.
 - Scan adjacent sentences and paragraphs for repeated ordinary words, phrases,
   openings, and sentence frames. Delete redundant instances or rewrite them
@@ -354,7 +419,12 @@ After the first draft, run both reviews and silently revise.
 - Remove exact phrases that compete for the same sentence, paragraph, or
   heading without adding distinct meaning.
 - Confirm that a sparse keyword inventory was not expanded and that omitted
-  supporting terms were recorded rather than forced into the draft.
+  supporting terms were recorded rather than forced into the draft. Reconcile
+  each supplied term against the map: actual exact use or natural variant,
+  placement, omissions, and any change from the plan. Check user-set targets
+  against the plan's count scope; report an unmet or unverifiable target honestly.
+- Confirm every user-prohibited phrase is absent, including phrases listed only
+  as an avoid instruction. Check user-required placement against the final copy.
 - Replace unsupported “leading,” “trusted,” “faster,” or “better” claims with evidence or precise language.
 - Remove AI-style list inflation, fake urgency, empty transitions, and repetitive CTA wording.
 - Reduce stacked parallel constructions. When prose strings together three or
@@ -382,36 +452,38 @@ When Humalizer does run here, preserve the SEO contract: verified claims, intent
 
 ## Deliverable
 
-In `plan` mode, return only the content-plan format from Step 2. In `end-to-end`
-mode, return that content plan first, then the draft deliverable below; when the
-root workflow owns file writes, return them as separate artifacts. In
-`draft-from-structure` mode, read the supplied plan and return only:
+In `plan` mode, return only the content-plan format from Step 2. In
+`draft-from-structure` or `revise` mode, read the supplied plan and return these distinct
+parts. The parent saves only the text under `Draft` to `content.md`, the three
+SEO metadata fields to `seo-metadata.md`, and the editorial audit to
+`workflow-status.md`. Do not duplicate the H1 in the body or put internal
+review notes inside publishable copy.
 
 ```markdown
-## Content strategy
-[Compact research and positioning brief]
-
 ## SEO metadata
 - Title tag:
 - Meta description:
 - URL slug:
-- H1:
 
 ## Draft
-[Publishable page copy]
+# <H1>
+[Publishable page copy with inline links and citations]
 
-## Internal links and evidence to add
-- [anchor text] → [destination or placeholder]
-- [missing evidence / owner]
-
-## Final audit
+## Editorial audit
 - Intent and product fit:
+- Supplied keyword check (each term: exact use/variant/omission, placement, and reason for any change; user-set counts only):
 - Usefulness and reader-respect check:
 - Structure deviations, if any:
-- Evidence gaps:
+- Sources checked and evidence gaps:
+- Internal links still to add, with destinations:
+- Publication blockers:
 - Clarity bar (middle-school readable): pass / fixes made:
 - Changes made:
 ```
+
+In `audit` mode, return prioritized findings tied to specific passages and
+repairs. Treat an audit-only request as read-only; return a revised draft only
+when the user requests revision.
 
 For revisions, preserve validated facts and identify only material changes. Do not rewrite a usable page merely to make it longer.
 

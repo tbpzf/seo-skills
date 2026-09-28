@@ -1,26 +1,21 @@
 ---
 name: seo-blog
 description: >-
-  Plan, write, revise, and save evidence-led English SaaS SEO blog posts from a
-  topic, keyword, brief, or supplied outline. Use for informational SaaS blog
-  content, how-to guides, definitions that support a real task, frameworks,
-  problem-solving articles, product-led education, metadata, or finished-blog
-  audits. Resolve reader intent, create a useful content plan, draft from that
-  plan, humanize the prose, run a directness review, and optionally grammar
-  check it. For third-party guest posts, use seo-guest-post; do not use for
-  landing pages or press releases.
+  Plan, write, revise, or audit an English SaaS SEO article for the company's
+  own blog. Use for a topic, keyword, brief, supplied outline, or existing
+  draft. Full drafts save a plan, article, metadata, and editorial status;
+  audit-only requests return findings without changing files. Route a
+  third-party contributed article to seo-guest-post, a commercial page to
+  seo-landing-page, and an announcement to seo-pr.
 ---
 
 # SEO Blog
 
-Coordinate a complete SaaS blog workflow. A blog starts from the user's topic,
-keyword, brief, or outline; it does not use `seo-landing-prompt`. Blader
-Humanizer and Stop Slop remain remote runtime dependencies and must not be
-installed, cloned, or cached in the project.
-
-Read [runtime-trace.md](references/runtime-trace.md),
-[artifacts.md](references/artifacts.md), and
-[routing.md](references/routing.md) before running the workflow.
+Coordinate an owned-site blog post from reader intent through a verified draft.
+Start from the user's topic, keyword, brief, outline, or existing copy. A blog
+does not use `seo-landing-prompt`. Read [routing.md](references/routing.md) to
+select the route, [artifacts.md](references/artifacts.md) before saving or
+resuming, and [runtime-trace.md](references/runtime-trace.md) for progress.
 
 ## Execution contract
 
@@ -32,114 +27,139 @@ humanization_required: true
 grammar_check: if_available
 ```
 
-Override only when the user asks for a checkpoint, plan-only output, or no
-humanization.
+The user may request a checkpoint, a partial deliverable, or no humanization.
+Complete the selected route without an approval pause otherwise.
 
 ## Dependencies
 
-| Stage | Required source |
+| Stage | Source and owner |
 | --- | --- |
-| Plan, draft, revise, or audit | `../seo-writing/SKILL.md` |
-| Fact-safe humanization | `../humalizer/SKILL.md` |
-| Blader rewrite | `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
-| Stop Slop review | `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` plus linked references as needed |
-| Grammar check | `../harper-grammar/SKILL.md` |
+| 2. Reader strategy | `../seo-audience-strategy/SKILL.md` returns a focused, evidence-labeled `single-content brief`; this parent passes it into planning |
+| Plan, draft, revise, or audit | `../seo-writing/SKILL.md` returns stage output; this parent saves and merges |
+| 4. Humanize | `../humalizer/SKILL.md` owns one rewrite and fetches `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
+| 5. Directness review | This parent applies `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` and linked references as needed |
+| 6. Grammar | `../harper-grammar/SKILL.md` returns checked copy and findings when `harper-cli` is available |
 
-Fetch remote Markdown for the current run only. Resolve Stop Slop references
-against its pinned GitHub Raw directory. Do not run `npx skills add` or persist
-remote copies. A missing local writing skill or required remote source blocks
-the run; a missing `harper-cli` only skips grammar checking.
+Read remote Markdown for this run only. Resolve Stop Slop references against
+its pinned GitHub Raw directory. Do not run `npx skills add`, install, clone,
+or persist remote copies in the project. A missing required local skill or
+required remote source blocks the workflow; unavailable Harper skips Stage 6.
 
 ## Runtime trace
 
 Follow [runtime-trace.md](references/runtime-trace.md). Emit
-`[seo-blog][stage N][kind] status: detail` updates. Do not silently load a sibling skill, contact a remote service, run a CLI, or write an artifact.
+`[seo-blog][stage N][kind] status: detail` at milestones and exceptions. Do not silently load a sibling skill, contact a remote service, run a CLI, or write an artifact.
 Do not report `completed` until the action finished. Parent owns the merge and every file write.
 
-## Default topic-to-blog sequence
+## Default sequence
 
-Run all stages without an approval checkpoint when the user requests a finished
-blog post.
+1. **Intake.** Record the exact user-supplied primary keyword, when provided,
+   and every supplied supporting or long-tail phrase, including any must-use,
+   avoid/prohibited, placement, or count instructions; distinguish them from
+   optional inferred phrases. Record the focus topic, audience, market,
+   language, informational intent, reader task, next useful action, supplied
+   evidence, sourced product facts, factual boundaries, brand voice and any
+   sample source, and known internal links. Label hypotheses and unknowns. An
+   informational article may have `Primary CTA and destination: none`; its next
+   useful action need not be a sales CTA. This stage is complete when the
+   reader promise and factual boundaries are explicit enough to plan without
+   inventing a fact or URL, and the supplied keyword inventory is preserved
+   without additions or losses.
+2. **Plan.** Apply `seo-audience-strategy` in focused `single-content brief`
+   mode for this article. Give it the supplied audience and product context,
+   evidence, primary and long-tail keywords, and any existing pages the user
+   supplied. Ask it to resolve the reader's situation, journey question,
+   decision criteria, proof needs, and useful next action, with evidence labels.
+   Treat missing audience details as hypotheses or unknowns; assess site
+   coverage only when pages are supplied or the user requests it. Then pass
+   that transient brief and the complete original keyword inventory to
+   `seo-writing` in `plan` mode. Normalize any supplied outline into the
+   `seo-writing` plan schema, preserving evidence labels, constraints, and the
+   user's keyword wording. Save the full plan—including its `Keyword map` and
+   any user-set count—to `content-plan.md`; do not re-author map columns here. If a supplied primary
+   differs from the brief's suggested focus phrase, retain it and resolve any
+   intent mismatch explicitly before drafting. Fold the brief into the plan;
+   the parent saves no separate audience artifact. A supplied primary that
+   cannot support this article's intent blocks drafting until the mismatch is
+   resolved. `content-plan.md` is the sole persisted drafting contract.
+   This stage is complete when the plan contains the evidence-labeled
+   reader situation and decision, section jobs, proof and validation needs,
+   every supplied keyword's disposition, product limits, and next action.
+3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
+   new copy or `revise` mode with the existing article, metadata, plan, and
+   requested change. Parent maps the returned draft and metadata to `content.md` and
+   `seo-metadata.md` as specified in [artifacts.md](references/artifacts.md).
+   Put evidence gaps, link suggestions without verified destinations, and the
+   draft audit in `workflow-status.md`. Use selected long-tail terms where they
+   advance their planned section jobs, with natural wording. This stage is
+   complete when the article has exactly one H1, no editorial wrapper, its
+   metadata is separate, and any keyword departure from the plan is recorded.
+4. **Humanize.** Apply `humalizer`, which fetches and applies the pinned Blader
+   instructions once. Preserve the saved plan's facts, citations, technical
+   meaning, links, selected keyword roles, user-specified exact wording, and
+   CTA if present. Parent merges the
+   returned article into `content.md`. This stage is complete when the merged
+   article and material-change audit are saved. An unavailable Blader source
+   blocks the workflow.
+5. **Review directness.** Fetch and apply the pinned Stop Slop instructions to
+   the merged article. Remove residual filler and repetitive rhythm while
+   retaining necessary nuance and domain terms. Parent merges and saves the
+   result. This stage is complete when the review result and material changes
+   are recorded. An unavailable Stop Slop source blocks the workflow.
+6. **Check grammar.** Apply `harper-grammar` when available, accept only
+   high-confidence allowed fixes, and merge them into `content.md`. Record the
+   finding and correction counts. Mark this stage skipped when the CLI or its
+   structured output is unavailable, or when the user opts out. This stage is
+   complete when the checked article is saved or the skip reason is recorded.
+7. **Verify and close.** Compare the final article and metadata with the plan.
+   Confirm one H1, the reader situation and decision, intent, section jobs,
+   needed proof, supported claims, citations, links, and any CTA destination.
+   Reconcile the final article and metadata against
+   every user-supplied term in the plan: check the planned focus keyword in the
+   title tag and H1; check each selected supporting or long-tail term in its
+   planned role, or document a natural variant or changed disposition; and
+   retain the reason for every omitted term. Check user-prohibited phrases are
+   absent and user-required placement or occurrence counts against the plan.
+   Repair any missing user-set requirement where the copy
+   can meet it naturally and factually; otherwise record a publication blocker.
+   Save the keyword reconciliation, final audit, stage
+   states, evidence gaps, workflow state, and publication readiness in
+   `workflow-status.md`. This stage is complete when every requested stage is
+   completed or legitimately skipped, every supplied term is accounted for,
+   and every publication blocker is visible.
 
-1. Resolve the focus topic or keyword, audience, market, language, reader task,
-   useful next action, supplied evidence, and factual boundaries. Do not invent
-   product behavior, data, quotes, sources, customers, or internal links.
-2. Apply `seo-writing` in `plan` mode. Select one informational intent, one
-   specific reader promise, and a section structure that helps complete a task
-   or decision. Save `content-plan.md`.
-3. Apply `seo-writing` in `draft-from-structure` mode. Treat the saved plan as
-   the drafting contract and preserve its evidence requirements, constraints,
-   selected keywords, and product boundaries.
-4. Save `content.md` with humanization, Stop Slop, and grammar statuses pending.
-5. Apply `humalizer` plus the pinned Blader instructions while preserving facts,
-   citations, technical meaning, metadata, links, and keyword intent. Parent
-   owns the merge into `content.md`.
-6. Apply the pinned Stop Slop review. Remove residual filler and repetitive
-   rhythm without erasing necessary nuance or domain terms. Parent owns the
-   merge and save.
-7. Apply `harper-grammar` when available. Accept only high-confidence allowed
-   fixes, update the audit, and save the final post.
+Update `workflow-status.md` after every performed stage. On revision or resume,
+apply the reader-strategy refresh rule in [routing.md](references/routing.md)
+and preserve user edits. Reset dependent stages only when the plan actually
+changes. A required remote failure records a blocked workflow, not a completed
+one.
 
-Update `workflow-status.md` after every stage. When an earlier artifact changes,
-reset downstream statuses and resume from the earliest affected stage.
+## Editorial standard
 
-## Blog contract
+Select one informational intent and one specific reader promise. Identify who
+searches, what triggered the search, what they know, and the result they need.
+Make the opening useful immediately. Include methods, criteria, examples,
+evidence, and limits only where they advance the reader's task. Each section
+must answer a distinct question, support a decision, teach an action, or show
+a material limit. Product mentions belong where the verified capability helps
+complete a real step; the article must still be useful without a product pitch.
 
-### Serve the reader's actual task
-
-Identify who searches, what triggered the search, what they already know, the
-result they need, and the hard questions that affect that result. A keyword is
-not a topic by itself. Select a useful angle that promises a direct answer,
-procedure, decision framework, diagnosis, template, or evidence-led explanation.
-
-Split commercial landing-page intent, competitor comparisons, and unrelated
-subtopics into separate recommendations. Do not stretch a weak topic to hit a
-word count.
-
-### Build a useful article structure
-
-Use this architecture as a starting point, then remove or reorder anything the
-reader does not need:
-
-1. Clear title tag and H1 aligned to one reader promise
-2. Direct answer or orientation in the opening
-3. Method, framework, criteria, or steps suited to the query
-4. Concrete examples, screenshots, data, templates, or expert evidence
-5. Limits, alternatives, trade-offs, and mistakes that change the outcome
-6. Natural product connection only where it helps complete a real step
-7. One useful next action instead of a repetitive summary conclusion
-
-Every section must answer a distinct question, enable a decision, teach an
-action, provide evidence, or explain a material limit.
-
-### Protect usefulness and evidence
-
-- Use only supplied or cited facts. Mark `[source needed]`, `[example needed]`,
-  or `[product fact needed]` rather than fabricating support.
-- Answer early; do not delay useful information with a generic introduction.
-- Use the focus keyword naturally in the title tag and H1. Do not create a
-  heading for every keyword or invent density targets.
-- Treat the supplied keyword inventory as complete unless the user explicitly
-  requests keyword research. Do not turn inferred semantic phrases into
-  required or selected keywords; keep any new suggestions optional until the
-  user or workflow selects them.
-- Keep product mentions proportional. The article must remain useful without
-  the product pitch.
-- Cite external claims near the statement they support. Do not cite search
-  result pages or imply that an owned source independently validates itself.
-- Treat readers as capable adults. Define only terms the recorded audience may
-  not know, and remove obvious advice, fake beginner stories, and SaaS hype.
-
-## Route handling
-
-Use [routing.md](references/routing.md) for plan-only, draft-from-structure,
-revision, audit, humanization-only, and resume requests. Recommend
-`seo-landing-page` for commercial landing pages, `seo-guest-post` for
-third-party contributed articles, and `seo-pr` for announcements.
+Use only supplied or cited facts. Put unverifiable claims in the status file as
+evidence gaps, or omit them from the article. Cite external claims near the
+statement they support; an owned source does not independently prove its own
+outcomes. Use the focus keyword naturally in the title tag and H1. Treat the
+supplied keyword inventory as complete unless research was explicitly
+requested. Select long-tail terms by reader intent and article fit; keep
+inferred phrases optional. Apply numeric keyword targets only when the user
+supplies them. Write for capable adults: define
+only unfamiliar terms and remove generic introductions, obvious advice, and
+SaaS hype. Do not stretch a weak topic to reach a word count.
 
 ## Completion
 
-A default run completes only when final `content.md` and `workflow-status.md`
-are saved and Stages 5-7 are completed or accurately recorded as skipped/failed
-under their blocking rules. Report the artifact path, evidence gaps, and
-publication blockers. Never promise rankings, traffic, or conversions.
+A full workflow completes when `content-plan.md`, `content.md`,
+`seo-metadata.md`, and `workflow-status.md` are saved, Stages 4-5 succeeded or
+were skipped by the user's explicit choice, and Stage 6 succeeded or has a
+recorded non-blocking skip. Workflow completion does not mean the article is
+ready to publish: report publication readiness and every blocker separately.
+Report artifact paths and never promise rankings, traffic, or conversions.
