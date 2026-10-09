@@ -30,6 +30,8 @@ brief into `Reader intent`, `Topic`, `Content structure`, and `Writing
 constraints`, preserving evidence, `hypothesis`, and `unknown` labels. It is
 the sole persisted drafting contract. When a field is unknown, label it
 `unknown` or `[fact needed]`; record the source for material claims. A
+`Distinctive contribution` block must carry the `distinctive-content` packet
+status, source owner, limits, interview count, and section mapping. A
 generated `prompt.md` is an export derived from this plan and never overrides
 it.
 
@@ -82,6 +84,7 @@ and the home for editorial findings:
   - seo-metadata.md: present | absent
   - prompt.md: present | absent
 - Intake: source references, evidence labels, and missing required inputs
+- Distinctive content: packet status, contribution, source owner, interview count, mapped sections, and open gaps
 - Final audit:
   - Reader situation, journey questions, usefulness, and reader respect:
   - Plan or structure deviations:
@@ -91,6 +94,7 @@ and the home for editorial findings:
   - Links and CTA destination:
   - Humanization and Stop Slop changes:
   - Grammar findings and corrections:
+  - Distinctive contribution and evidence packet:
 - Publication blockers: none | [specific missing facts, proof, links, or destination]
 - Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, exit, parse, findings, and corrections
 - Notes:
@@ -133,8 +137,10 @@ into the export; the prompt does not reclassify the list.
    rewrite or check pending. If status is absent, reconstruct intake and the
    earliest incomplete stage from files in the same way. Save the normalized
    status before continuing.
-2. Resume at `Next stage` using the saved plan's reader strategy. Run the
-   Stage 2 single-content brief again when the reader situation or intent has
+2. Resume at `Next stage` using the saved plan's reader strategy and
+   `distinctive-content` packet. If the packet is `interview-needed`, ask its
+   saved one next question and fold the answer into the plan before drafting.
+   Run the Stage 2 single-content brief again when the reader situation or intent has
    changed, or the plan lacks that strategy. Fold the refreshed brief into
    the plan before drafting or revising. Resolve a blocked draft gate from
    verified product input, update the plan, and then run Stage 3. Never fill

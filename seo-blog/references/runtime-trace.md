@@ -21,6 +21,7 @@ Examples:
 
 ```text
 [seo-blog][stage 2][skill] completed: seo-audience-strategy returned an evidence-labeled single-content brief for seo-writing
+[seo-blog][stage 2][skill] completed: distinctive-content packet ready; mapped source material to the plan
 [seo-blog][stage 2][file] completed: saved content-plan.md from seo-writing plan output
 [seo-blog][stage 4][remote] completed: Humalizer read https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md
 [seo-blog][stage 6][cli] skipped: harper-cli unavailable; grammar check is non-blocking

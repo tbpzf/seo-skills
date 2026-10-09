@@ -15,8 +15,9 @@ decisions and output; the shared writing and editing skills supply stages.
 | Audience map, content gaps, or a brief without finished copy | `seo-audience-strategy` | Strategy or brief |
 | Reusable landing-page prompt only | `seo-landing-prompt` | Prompt template |
 | Announcement or press release | `seo-pr` | Release and readiness audit |
+| Source interview or distinctiveness audit for substantive content | `distinctive-content` | Evidence packet, next interview question, or audit findings |
 
-Use `seo-writing`, `humalizer`, and `harper-grammar` directly only for a
+Use `seo-writing`, `distinctive-content`, `humalizer`, and `harper-grammar` directly only for a
 specific planning, drafting, audit, rewrite, or grammar stage. A generic
 request for a finished page should enter through the route above.
 The owned-site routes also support plan-only, targeted revision, read-only
@@ -34,15 +35,26 @@ editing run from whether the content has enough verified facts to publish.
 | `seo-pr` | Draft or audit factual, newsworthy SaaS press releases |
 | `seo-landing-prompt` | Export reusable prompts for landing-page writing only |
 | `seo-writing` | Shared landing-page and blog planning/drafting stage |
+| `distinctive-content` | Interview and audit source material so substantive content has a concrete, useful contribution |
 | `humalizer` | Fact-safe humanization used by the SEO workflows |
 | `harper-grammar` | Optional local Harper grammar check |
 
-The landing-page, owned-blog, and guest-post routes use
+The landing-page, owned-blog, guest-post, and press-release routes use
 `seo-audience-strategy` automatically to build a focused, evidence-labeled
 reader brief before planning the copy. You do not need to invoke it separately
 for a finished article or page. A standalone strategy request is for an
 audience map, content gaps, or a brief without finished copy; a routine writing
 request does not trigger a full site audit.
+
+Those writing routes also use `distinctive-content` as a source gate before
+drafting. They first look for real workflows, decisions, examples, original
+data, approved proof, and meaningful limits. When the planned piece lacks a
+defensible contribution, the skill interviews the source with one focused
+question per turn, up to 10 questions, then passes a source-and-limits packet
+into the draft. A supplied product workflow or approved evidence can satisfy
+the gate without an interview. A route records a provisional or blocked status
+when a material source gap remains; it never fills the gap with invented
+experience, results, quotes, or authority.
 
 ## Install
 
@@ -115,7 +127,8 @@ import is not supported. The reader wants to find photos by album. No customer
 research was supplied; label inferred triggers and objections as hypotheses.
 Primary CTA: "Try PhotoNest" -> https://example.com/signup. Use only these facts, mark
 missing proof, and save the page and SEO metadata. Account for every supplied
-keyword in the plan and final audit; omit the import phrase because it
+keyword in the plan and final audit; provide any first-hand workflow, decision,
+example, or approved proof that should make the page specific; omit the import phrase because it
 conflicts with the product.
 ```
 
@@ -136,7 +149,9 @@ upload photos from a computer and arrange them in albums; it cannot import
 directly from cloud drives. Use the first two long-tail phrases where they
 serve the article and explain whether the sync phrase belongs on another page.
 Cite external claims near their sources. Do not add a sales CTA unless it helps
-the reader's next step.
+the reader's next step. Provide a workflow, decision rule, example, data, or
+source; if a material contribution is missing, answer the one-at-a-time source
+questions before drafting.
 ```
 
 The route saves `content-plan.md`, publishable `content.md`,
@@ -154,7 +169,9 @@ relevant published articles. PhotoNest's approved facts are: [facts and
 source]. Contributor relationship: [employee/founder/other]. Choose an angle
 that adds value for those readers. Follow the host's link and disclosure rules.
 Account for every supplied phrase in the brief and submission notes; use or
-omit each according to the host's readers and rules. Return the article and
+omit each according to the host's readers and rules. Supply the contributor's
+substantiated practice, examples, decisions, or evidence; the route may ask one
+source question at a time before drafting. Return the article and
 submission notes with the host sources and writing-check results.
 ```
 
@@ -176,6 +193,8 @@ Use $seo-pr to draft a US press release for PhotoNest's [actual announcement].
 Launch date and availability: [verified facts]. Approved product claims:
 [facts and sources]. Approved quote and media contact: [details]. Flag any
 missing approval or asset before calling the release ready for distribution.
+Include the concrete new event, verified scope, and attributable source that
+make the announcement useful to a journalist.
 ```
 
 This route checks newsworthiness and returns a release with distribution
@@ -194,6 +213,20 @@ must fill before using it. Do not write the landing page.
 
 This route returns a prompt template, not finished copy, and does not generate
 blog prompts.
+
+### Distinctive source interview or audit
+
+```text
+Use $distinctive-content in gate mode for this English article about [topic].
+Here is the reader situation: [reader and task]. Here are the facts, workflow,
+examples, decisions, data, and sources I already have: [material]. Find the
+strongest distinctive contribution. If a material source is missing, ask me
+one focused question at a time, no more than 10 total. Return the evidence
+packet with source owners, limits, and a section map; do not draft the article.
+```
+
+Use `audit` mode to review existing copy for generic advice, missing evidence,
+unsupported authority, and sections that do not change what the reader can do.
 
 ### Partial and follow-up requests
 
@@ -216,6 +249,7 @@ article, use `seo-guest-post`; it returns copy in chat and saves only when asked
 | `seo-writing` | `Use $seo-writing in plan mode. Primary keyword: [main term]. Long-tail keywords: [all supplied phrases]. Audience: [reader]. Evidence: [sources]. Return a content plan with a decision for every phrase, but no article.` |
 | `humalizer` | `Use $humalizer to revise [draft path]. Preserve its verified facts, citations, focus keyword, links, and CTA; return revised copy and material changes.` |
 | `harper-grammar` | `Use $harper-grammar to check [English Markdown path] for spelling and grammar. Apply only clear corrections and report retained findings.` |
+| `distinctive-content` | `Use $distinctive-content in audit mode to find generic sections, missing source material, and unsupported first-person or outcome claims in [content]. Return findings and concrete repairs; do not rewrite.` |
 
 ## Optional Harper CLI
 

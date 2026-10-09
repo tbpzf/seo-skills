@@ -1,0 +1,4 @@
+interface:
+  display_name: "Distinctive Content"
+  short_description: "Elicit original, useful source material"
+  default_prompt: "Use $distinctive-content to find and develop the real experience, evidence, examples, and decisions that make this content useful and distinctive."

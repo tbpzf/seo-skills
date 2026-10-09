@@ -36,6 +36,7 @@ Complete the selected route without an approval pause otherwise.
 | --- | --- |
 | 2. Reader strategy | `../seo-audience-strategy/SKILL.md` returns a focused, evidence-labeled `single-content brief`; this parent passes it into planning |
 | Plan, draft, revise, or audit | `../seo-writing/SKILL.md` returns stage output; this parent saves and merges |
+| Distinctive source gate and one-at-a-time interview | `../distinctive-content/SKILL.md`, called by `seo-writing` |
 | 4. Humanize | `../humalizer/SKILL.md` owns one rewrite and fetches `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
 | 5. Directness review | This parent applies `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` and linked references as needed |
 | 6. Grammar | `../harper-grammar/SKILL.md` returns checked copy and findings when `harper-cli` is available |
@@ -73,7 +74,9 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    Treat missing audience details as hypotheses or unknowns; assess site
    coverage only when pages are supplied or the user requests it. Then pass
    that transient brief and the complete original keyword inventory to
-   `seo-writing` in `plan` mode. Normalize any supplied outline into the
+   `seo-writing` in `plan` mode. `seo-writing` runs `distinctive-content` in
+   `gate` mode using supplied experience, sources, examples, product facts, and
+   constraints. Normalize any supplied outline into the
    `seo-writing` plan schema, preserving evidence labels, constraints, and the
    user's keyword wording. Save the full plan—including its `Keyword map` and
    any user-set count—to `content-plan.md`; do not re-author map columns here. If a supplied primary
@@ -82,9 +85,12 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    the parent saves no separate audience artifact. A supplied primary that
    cannot support this article's intent blocks drafting until the mismatch is
    resolved. `content-plan.md` is the sole persisted drafting contract.
-   This stage is complete when the plan contains the evidence-labeled
-   reader situation and decision, section jobs, proof and validation needs,
-   every supplied keyword's disposition, product limits, and next action.
+   This stage is complete when the plan contains the evidence-labeled reader
+   situation and decision, section jobs, proof and validation needs, every
+   supplied keyword's disposition, product limits, next action, and distinctive
+   packet mapping. If the packet is `interview-needed`, save the one next
+   question and block before drafting; resume after the answer rather than
+   filling the article with generic advice.
 3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
    new copy or `revise` mode with the existing article, metadata, plan, and
    requested change. Parent maps the returned draft and metadata to `content.md` and
@@ -93,11 +99,12 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    draft audit in `workflow-status.md`. Use selected long-tail terms where they
    advance their planned section jobs, with natural wording. This stage is
    complete when the article has exactly one H1, no editorial wrapper, its
-   metadata is separate, and any keyword departure from the plan is recorded.
+   metadata is separate, mapped distinctive material is used or its proof gap
+   is recorded, and any keyword departure from the plan is recorded.
 4. **Humanize.** Apply `humalizer`, which fetches and applies the pinned Blader
    instructions once. Preserve the saved plan's facts, citations, technical
-   meaning, links, selected keyword roles, user-specified exact wording, and
-   CTA if present. Parent merges the
+   meaning, links, selected keyword roles, distinctive packet details,
+   user-specified exact wording, and CTA if present. Parent merges the
    returned article into `content.md`. This stage is complete when the merged
    article and material-change audit are saved. An unavailable Blader source
    blocks the workflow.
@@ -113,7 +120,8 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    complete when the checked article is saved or the skip reason is recorded.
 7. **Verify and close.** Compare the final article and metadata with the plan.
    Confirm one H1, the reader situation and decision, intent, section jobs,
-   needed proof, supported claims, citations, links, and any CTA destination.
+   distinctive packet coverage, needed proof, supported claims, citations,
+   links, and any CTA destination.
    Reconcile the final article and metadata against
    every user-supplied term in the plan: check the planned focus keyword in the
    title tag and H1; check each selected supporting or long-tail term in its

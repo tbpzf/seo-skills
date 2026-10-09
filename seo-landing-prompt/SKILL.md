@@ -17,6 +17,11 @@ Turn a keyword and optional business context into a complete, reusable prompt fo
 
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
+Carry the [`distinctive-content`](../distinctive-content/SKILL.md) contract into
+every exported prompt: use supplied experience, decisions, examples, data,
+and proof; ask one source question at a time, up to 10, when a material gap
+remains; and label the prompt provisional when the source gap is accepted.
+
 Do not load `seo-audience-strategy` while building the prompt. A keyword is a
 clue to a reader's task, not sufficient evidence of the reader's circumstances.
 When the user supplies no audience evidence, the generated prompt must label the
@@ -69,6 +74,7 @@ Collect when available:
 - Customer situations or questions from sales/support, journey stage, existing page coverage, and known objections when available
 - Product capabilities, limits, pricing/free-trial policy, compliance or legal restrictions
 - Approved proof: citations, customer stories, statistics, screenshots, and internal links
+- Distinctive source material: first-hand workflow, decisions, examples, results, limits, and attribution owner
 - Primary CTA, optional same-path secondary CTA destinations, required modules, and word-count constraints
 - Keyword frequency policy: natural use (default), or explicit per-keyword targets
 
@@ -121,6 +127,10 @@ Every generated prompt must:
 15. Require every planned section to answer a distinct reader question, enable
     a decision, teach an action, provide evidence, or explain a material limit.
     Forbid sections created only for length, keywords, or a generic template.
+16. Require a distinctive source gate before drafting. If the supplied material
+    lacks a defensible contribution, ask one focused question per turn (maximum
+    10), preserve the answers with their sources and limits, and record any
+    accepted provisional gap in the final report.
 
 ## Building the prompt
 
@@ -254,6 +264,8 @@ Before delivering the generated prompt, verify:
 - Product-accuracy, conversion, and anti-stuffing/clarity checks exist.
 - Reader knowledge, usefulness, and reader-respect checks exist; plain language
   is not treated as permission to talk down to the audience.
+- The prompt carries the distinctive-content gate, one-at-a-time interview limit,
+  source owner, evidence limits, and mapped section use.
 - The prompt has no domain-specific residue from an unrelated template (including forced Chinese report text or per-item CTA spam).
 - Every unresolved `[[VARIABLE]]` is listed under “Fill before use.” Call the
   prompt copy-paste-ready only when that list is empty.

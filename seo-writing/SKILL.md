@@ -21,10 +21,11 @@ or stale reader situation to that parent for refresh. For direct use,
 reuse a supplied plan's evidence-labeled reader task, decision criteria,
 journey question, and gaps when they still fit the audience and intent.
 Otherwise call `seo-audience-strategy` in single-content mode and fold its
-brief into the working plan before writing. Keep the supplied structure and
-keyword inventory. `audit` remains read-only and does not trigger this stage. A
+brief into the working plan before writing. Keep the supplied structure and keyword inventory. `audit` stays read-only, skips the audience brief, and runs the `distinctive-content` audit when usefulness is in scope. A
 keyword is a clue to the reader's task, not evidence of their circumstances;
 label inferences as `hypothesis` or `unknown`.
+
+After the reader brief and before planning or body copy, run [`distinctive-content`](../distinctive-content/SKILL.md) in `gate` mode with the available facts, sources, experience, examples, data, decisions, and constraints. If it returns `interview-needed`, ask its one question and resume with `interview`; keep planning blocked until the answer is recorded or the user explicitly accepts a `provisional` packet. `audit` remains read-only. The packet is transient; the landing-page or blog parent folds it into the saved plan.
 
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
@@ -34,11 +35,13 @@ When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md) or
 defines the content-plan schema; the parent owns every file write, merge, final
 humanization, and `workflow-status.md`.
 
+Shared stages: [`seo-audience-strategy`](../seo-audience-strategy/SKILL.md) supplies the evidence-labeled reader brief; [`distinctive-content`](../distinctive-content/SKILL.md) supplies the source inventory, one-at-a-time interview, and distinctive evidence packet.
+
 The parent's saved `content-plan.md` is the sole persisted drafting contract for
 both owned-site routes: evidence-labeled reader situation, reader promise,
 intent, section jobs, the complete supplied keyword
 inventory and per-term decisions, product facts and sources, brand voice and
-its sample source, language, market, and next action. A landing-page `prompt.md`, when
+its sample source, language, market, next action, and distinctive packet status and mapping. A landing-page `prompt.md`, when
 requested, is a reusable export of that plan, never a competing input. If a
 required value is absent, return the gap to the parent stage that owns it;
 the parent updates the plan or records a blocker before drafting. Omit
@@ -99,13 +102,14 @@ the parent workflow. The saved plan is the handoff contract and recovery point.
     decision, teach an action, supply evidence, or clarify a meaningful limit.
     Delete sections that exist only for word count, keyword placement, or a
     generic template.
-14. Vary nearby wording and sentence shape. Do not repeat the same ordinary
+14. Ground information gain in the `distinctive-content` packet: use first-hand practice, a decision rule, original proof, a concrete example, or a meaningful limit where the reader needs it. Keep source, attribution, and caveat attached through every rewrite.
+15. Vary nearby wording and sentence shape. Do not repeat the same ordinary
     word, phrase, sentence opening, or full idea in close succession. Remove
     the repetition first; when the meaning is still needed, use a natural
     equivalent, pronoun, or different sentence structure. Keep exact product
     names, required keywords, technical terms, and factual labels when a
     substitute would reduce accuracy.
-15. Limit stacked parallel phrasing. In normal prose, do not pack three or more
+16. Limit stacked parallel phrasing. In normal prose, do not pack three or more
     similar verbs, nouns, adjectives, or clauses into a sentence merely to
     sound comprehensive. Keep the two actions that matter most, split distinct
     actions into sentences, or use bullets when the full set helps the reader
@@ -123,6 +127,7 @@ Identify or request only the missing information needed to produce accurate copy
 | Product facts when the product is mentioned: capabilities, limits, differentiators, and sources | Prevents invented claims; an informational article may omit a product connection |
 | Next action; for a landing page, the primary CTA and post-click action | Keeps the conversion path coherent without forcing a sales CTA into an informational article |
 | Brand voice and approved claims | Keeps copy on-brand and supportable |
+| Distinctive source material or permission to interview | Gives the reader a useful contribution instead of interchangeable advice |
 
 Also request, when available:
 - Any user-required, prohibited, placement-targeted, or count-targeted keyword
@@ -161,15 +166,12 @@ omissions in copy and mark any indispensable missing fact as a blocker.
 7. Read supplied product materials and list capabilities, limitations, and
    proof with their source and approval status. Distinguish a claim confirmed
    by current documentation from a user-supplied claim that still needs review.
-8. Identify the information gain: first-hand experience, original data, a useful
-   framework, a concrete workflow, an expert explanation, a downloadable
-   artifact, or product evidence that competing pages do not provide.
-9. Map the reader's next decision. For a product-led page, confirm that the
+8. Identify the information gain: first-hand experience, original data, a useful framework, a concrete workflow, an expert explanation, a downloadable artifact, or product evidence that competing pages do not provide.
+9. Run `distinctive-content` in `gate` mode. Record its contribution, source owner, limits, interview count, and candidate section mapping; complete the mapping in the plan. If `interview-needed`, return the plan with its one next question and no body copy; do not fill the gap with generic advice.
+10. Map the reader's next decision. For a product-led page, confirm that the
    product has credible relevance to the task; for an informational blog with
    no supported product connection, teach the task without inventing one.
-10. Carry the brief's existing-coverage decision into the plan. When no pages
-    were supplied, keep coverage `unknown` and continue the requested page.
-    Do not initiate a site audit for a single-content request.
+11. Carry the brief's existing-coverage decision into the plan. When no pages were supplied, keep coverage `unknown` and continue the requested page. Do not initiate a site audit for a single-content request.
 
 ### 2. Topic and content structure
 
@@ -197,6 +199,8 @@ Return this plan:
 - Reader promise:
 - Why this angle is useful:
 - Information gain and evidence available:
+- Distinctive contribution, reader change, packet status, source owner, limits, and section mapping:
+- Interview questions asked / answered / remaining (0-10):
 - Audience evidence sources and validation gaps:
 
 ## Keyword map
@@ -233,7 +237,7 @@ Return this plan:
 
 Every saved plan must carry the strategy brief's evidence labels, reader task,
 journey question, decision criteria, and validation gaps as well as the keyword
-map and writing constraints. Use
+map, distinctive evidence packet, and writing constraints. Use
 `unknown` for an unresolved required value and `none` for an intentionally
 absent optional value. Together they are the persisted drafting contract,
 whether or not a reusable prompt was exported.
@@ -312,6 +316,7 @@ outline.
 - Deliver the information promised in each section. Include the planned
   decision criteria, steps, examples, evidence, limits, or artifact rather than
   replacing them with motivational prose.
+- Use the mapped distinctive packet item or a clearly recorded proof gap in each major section. Keep first-person wording, results, examples, and expert judgments tied to their source and scope.
 - Assume the knowledge level recorded in the plan. Do not define familiar terms,
   narrate obvious steps, or add empty setup such as “In today's fast-paced
   world.”
@@ -399,11 +404,11 @@ After the first draft, run both reviews and silently revise.
 - Does every major section fulfill its recorded reader question/job with a
   concrete takeaway?
 - Can the reader make a better decision or take a real next step after reading?
-- Does the article avoid teaching obvious basics to an audience that already
-  knows them, while still defining genuinely unfamiliar terms?
+- Does the article avoid teaching obvious basics to an audience that already knows them, while still defining genuinely unfamiliar terms?
 - Does the page offer a distinct insight, workflow, evidence source, or product demonstration?
-- Is every factual claim supplied, cited, or marked as needing validation?
-- Is the product connection natural, proportionate, and useful?
+- Does every major section use a mapped packet item, concrete example, decision rule, or explicit evidence/limit gap?
+- Are experience, results, quotes, and authority attributed to the recorded source without invented first-person detail?
+- Is every factual claim supplied, cited, or marked as needing validation? Is the product connection natural, proportionate, and useful?
 - Does each CTA lead to the stated next action?
 - Are internal links specific and useful rather than decorative?
 
@@ -477,6 +482,7 @@ review notes inside publishable copy.
 - Sources checked and evidence gaps:
 - Internal links still to add, with destinations:
 - Publication blockers:
+- Distinctive contribution and evidence packet:
 - Clarity bar (middle-school readable): pass / fixes made:
 - Changes made:
 ```

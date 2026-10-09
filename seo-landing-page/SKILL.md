@@ -37,6 +37,7 @@ matching branch in [routing.md](references/routing.md).
 | --- | --- |
 | Evidence-labeled reader brief during planning | `../seo-audience-strategy/SKILL.md` |
 | Plan, draft, or audit | `../seo-writing/SKILL.md` |
+| Distinctive source gate and one-at-a-time interview | `../distinctive-content/SKILL.md`, called by `seo-writing` |
 | Requested reusable prompt | `../seo-landing-prompt/SKILL.md` |
 | Fact-safe rewrite, including one Blader fetch | `../humalizer/SKILL.md` |
 | Final prose review | `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` plus linked references as needed |
@@ -81,7 +82,8 @@ operations into concise stage updates; record operation details in
    available, keep the brief provisional. Check existing-page coverage only
    when pages are supplied or a coverage audit is requested.    Pass that transient brief and original intake to `seo-writing` in `plan`
    mode. Save its full plan—including the `Keyword map` schema and any
-   user-set count—to `content-plan.md` with one supportable page promise and
+   user-set count—to `content-plan.md` with one supportable page promise,
+   the `distinctive-content` packet status and section mapping, and
    writing constraints; do not re-author map columns here. Choose one coherent landing-page intent;
    recommend a separate page for another intent. A supplied primary that cannot
    support this truthful page promise blocks drafting until the mismatch is
@@ -92,8 +94,11 @@ operations into concise stage updates; record operation details in
    `workflow-status.md` and stop after the plan. For a supplied-copy revision,
    retain supported claims, mark unverified ones as publication blockers, and
    make only the requested edits that can be supported. This stage ends when
-   the brief has informed the saved plan and the draft gate has been evaluated
-   when needed. The brief is a stage output, not another saved drafting artifact.
+   the brief and distinctive-content packet have informed the saved plan and
+   the draft gate has been evaluated when needed. If the packet is
+   `interview-needed`, save the question and block before drafting; resume with
+   the next answer rather than writing generic copy. The brief and packet are
+   stage outputs, not separate saved artifacts.
 3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
    new copy or `revise` mode with the existing body, metadata, plan, and
    requested change. Use the saved keyword map's selected terms only where
@@ -105,12 +110,12 @@ operations into concise stage updates; record operation details in
    notes and unsupported placeholders out of the page body. Parent owns the
    merge into `content.md`. This stage ends
    when both page artifacts are saved and match the plan's reader decision,
-   promise, and CTA.
+   promise, CTA, and mapped distinctive contribution.
 4. **Humanize.** Apply `humalizer`, which owns one pinned Blader fetch and
    returns revised copy under the saved plan's factual and SEO constraints.
    Parent owns the merge into `content.md` and records material changes. This
    stage ends when the revised body is saved and protected facts, metadata,
-   links, keywords, caveats, and CTA have been checked.
+   links, keywords, caveats, CTA, and distinctive packet details have been checked.
 5. **Review prose.** Apply the pinned Stop Slop instructions to remaining
    filler and repetitive cadence. Preserve the same protected contract. Parent
    owns the merge and save. This stage ends when the revised body is saved and
@@ -122,8 +127,9 @@ operations into concise stage updates; record operation details in
    reason is recorded.
 7. **Verify.** Compare `content.md` and `seo-metadata.md` with the saved plan.
    Confirm the page answers its planned reader questions in decision order,
-   respects factual boundaries, and has one H1, supported claims, one
-   coherent CTA path, useful links, and no editorial notes in the body.
+   uses the mapped distinctive packet or records a proof gap per major section,
+   respects factual boundaries, and has one H1, supported claims, one coherent
+   CTA path, useful links, and no editorial notes in the body.
    Reconcile every supplied keyword against the final copy and metadata:
    record natural placement for used terms and the reason for each omission
    or unmet must-use request. Check exact counts only for targets the user

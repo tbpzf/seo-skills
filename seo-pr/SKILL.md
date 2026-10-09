@@ -19,13 +19,19 @@ Write news, not an advertisement. Read
 first draft or when auditing format, claims, quotes, multimedia, or search
 readiness.
 
+Use [`distinctive-content`](../distinctive-content/SKILL.md) as the shared
+source gate. It keeps the announcement anchored in the verified new event,
+specific scope, approved evidence, and an attributable quote or explanation;
+it can interview the source one question at a time, up to 10 questions, when a
+material detail is missing.
+
 ## Operating modes
 
 | Mode | Input | Output |
 | --- | --- | --- |
 | `draft` | Announcement brief and verified facts | Complete release plus readiness audit |
 | `revise` | Existing release and corrected facts | Targeted rewrite plus material changes |
-| `audit` | Existing release | Findings, blockers, and specific fixes; do not rewrite unless asked |
+| `audit` | Existing release | Findings, blockers, and specific fixes; run the `distinctive-content` audit branch; do not rewrite unless asked |
 | `component` | Request for headline, lead, quote draft, boilerplate, or contact block | Requested component with fact/approval labels |
 
 Default to `draft` when the user asks to write a press release.
@@ -85,6 +91,17 @@ Separate facts into:
 For a SaaS launch, explicitly verify product name, target user, problem solved,
 actual workflow, launch/availability date, supported plans or markets, pricing
 language, limits, security/compliance claims, integrations, and CTA destination.
+
+Run `distinctive-content` in `gate` mode after this fact sheet. Pass the new
+event, what changed in practice, verified scope, methodology, approved quote,
+customer evidence, and material limits. If it returns `interview-needed`, ask
+one question per turn, up to 10 total, and resume with `interview`; keep the release blocked or
+provisional until the answer is recorded. A routine update cannot be made
+distinctive by adding adjectives.
+For `audit`, run its `distinctive-content` audit branch against the existing
+release and return findings without rewriting it. For `revise`, reuse the
+packet when its sources and announcement still fit; refresh it when they do
+not.
 
 ### 3. Choose one angle and audience
 
@@ -177,6 +194,8 @@ as permission for keyword stuffing.
 Verify:
 
 - The event is genuinely new, specific, timely, and relevant outside the company.
+- The distinctive-content packet names the reader change, source owner, evidence
+  limits, and any interview or approval still required.
 - The headline and lead identify the news without hype or ambiguity.
 - The five Ws, availability, market, key limits, and CTA are clear.
 - Every claim, number, comparison, certification, customer, partner, and quote
@@ -213,6 +232,7 @@ For `draft` or `revise`, return:
 - Media assets to attach:
 - Suggested distribution audience/categories:
 - Final checks required:
+- Distinctive contribution and evidence packet:
 ```
 
 Do not call a release wire-ready while placeholders, unapproved proposed quotes,

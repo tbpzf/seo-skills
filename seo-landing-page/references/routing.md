@@ -49,6 +49,10 @@ publication blockers.
   mixed search intents into separate page recommendations.
 - Use supplied or cited facts. Missing evidence becomes a specific publication
   blocker; unsupported claims stay out of visible copy.
+- Run `distinctive-content` through `seo-writing` before drafting. If the packet
+  is `interview-needed`, save the one next question in status and resume after
+  the answer; a generic draft is not a substitute. A supplied product workflow,
+  approved proof, or documented limit may satisfy the gate without an interview.
 - Use natural keyword placement unless the user supplied numeric targets.
   New keyword suggestions stay optional until selected.
 - Keep one reader decision and one primary CTA path. The reader may be an end

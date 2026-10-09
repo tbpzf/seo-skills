@@ -48,6 +48,8 @@ claims.
 - Required citations or approved proof: [[EVIDENCE_AND_SOURCES]]
 - Required internal links: [[INTERNAL_LINKS]]
 - Brand voice: [[BRAND_VOICE]]
+- Distinctive source material and attribution owner: [[DISTINCTIVE_SOURCE_MATERIAL]]
+- Distinctive evidence limits and approvals: [[DISTINCTIVE_EVIDENCE_LIMITS]]
 
 ## Keyword policy
 
@@ -138,11 +140,18 @@ Before writing visible page copy, output a concise `<content_plan>` containing:
   was supplied, carry forward its decisions and planned placements
 - Every supplied restricted keyword that will be omitted, with its reason
 - Exact planned counts **only if** the keyword policy includes numeric targets
+- The distinctive contribution, source owner, mapped evidence or examples for
+  each major section, and any open evidence gap
 
 Every planned section must answer a distinct question, enable a decision, teach
 an action, provide evidence, or explain a material limit. Do not add definition
 sections the audience does not need, synonymous keyword headings, repeated
 advice, or sections that exist only for word count.
+
+If the distinctive source material is insufficient for the planned promise, ask
+one focused source question in a separate turn and wait for its answer before
+writing. Ask no more than 10 questions. Use `[proof needed]` or a provisional
+status for an accepted gap; never invent experience, results, quotes, or data.
 
 Do not reveal detailed reasoning. Close the block with `</content_plan>`.
 
@@ -153,6 +162,8 @@ answer, decision rule, step, evidence, example, or artifact. Do not replace the
 useful part with motivational prose, obvious setup, generic tips, or repeated
 summaries. If a planned section conflicts with verified facts or reader intent,
 correct it and report the material deviation in the final report.
+Use the mapped distinctive source material in each major section and preserve
+its attribution, scope, and limits through every rewrite.
 
 ## Conversion rules
 

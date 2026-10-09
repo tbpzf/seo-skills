@@ -64,3 +64,7 @@ through planning, rewriting, and final verification; check numeric targets only
 when the user supplies them.
 Keep evidence gaps out of the article as invented claims. A blog
 may end with a useful resource or next step and no promotional CTA.
+Before drafting, let `seo-writing` run `distinctive-content` in `gate` mode. If
+the packet is `interview-needed`, save the one next question and resume after
+the answer; a generic draft is not a substitute. A documented workflow,
+approved proof, concrete example, or meaningful limit may satisfy the gate.

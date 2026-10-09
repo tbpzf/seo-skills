@@ -27,6 +27,14 @@ selected; unavailable required remote instructions block editorial readiness.
 Harper is optional when its CLI is unavailable. Keep these checks in the
 working article; save a guest-post file only when the user asks.
 
+After the host reader situation is known, run
+[`distinctive-content`](../distinctive-content/SKILL.md) in `gate` mode with
+the contributor's substantiated practice, decisions, examples, data, product
+evidence, and limits. If it returns `interview-needed`, ask one question per
+turn, up to 10 total, and resume with `interview`; keep the article blocked until the source is
+recorded or the contributor explicitly accepts a `provisional` packet. For an
+audit route, use its read-only `audit` branch.
+
 ## Shared workflow
 
 ### 1. Establish the editorial contract
@@ -100,9 +108,9 @@ product's role proportional to what the article teaches and what the publisher
 permits.
 
 For a writing route, this step is complete when the outline has a specific,
-evidence-labeled reader situation, a clear benefit, an original contribution,
-and a reason for each section. For an audit, it is complete when gaps in that
-contract are recorded as findings.
+evidence-labeled reader situation, a clear benefit, a `distinctive-content`
+packet with a source owner and limits, and a reason for each section. For an
+audit, it is complete when gaps in that contract are recorded as findings.
 
 ### 3. Verify claims and draft
 
@@ -125,8 +133,10 @@ and link rules. Prefer descriptive, useful links to relevant sources. Treat
 selected search terms as reader language. Use them where they clarify the
 article; follow the host's link rules for any anchor text.
 
-This step is complete when the article delivers its promised insight without
-unsupported claims or dependence on a product pitch.
+This step is complete when the article delivers its promised insight using the
+mapped distinctive material, without unsupported claims or dependence on a
+product pitch. Record a proof gap when a section cannot yet carry its planned
+contribution.
 
 ### 4. Humanize the article
 
@@ -167,7 +177,8 @@ article or a concrete skip reason is ready for the final audit.
 ### 7. Run the submission audit
 
 Check the final article after all prose and grammar changes against the host's
-guidelines, the reader situation and next question, thesis, originality,
+guidelines, the reader situation and next question, thesis, distinctive packet
+coverage, originality,
 evidence, attribution, applicable AI claim checks,
 conflicts/disclosures, link rules, and any approved product language. Confirm
 that citations resolve to the claimed source and that a supplied draft has not

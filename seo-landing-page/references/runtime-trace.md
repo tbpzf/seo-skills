@@ -13,8 +13,9 @@ Use `started`, `completed`, `skipped`, `blocked`, or `failed` only when
 the stated state is true.
 
 1. Announce the selected route and stages before work. In Stage 2, name
-   `seo-audience-strategy` when starting its single-content brief and
-   `seo-writing` when turning that brief into the saved plan. Report the
+   `seo-audience-strategy` when starting its single-content brief,
+   `distinctive-content` when its gate or interview runs, and `seo-writing`
+   when turning those outputs into the saved plan. Report the
    completed artifact or blocker at the stage boundary. Group routine writes
    into that stage result.
 2. Announce a remote fetch before it happens. Stage 4 names Humalizer and its
@@ -34,6 +35,7 @@ Examples:
 ```text
 [seo-landing-page][stage 1][route] started: keyword-to-page, Stages 1-7
 [seo-landing-page][stage 2][skill] started: seo-audience-strategy single-content brief
+[seo-landing-page][stage 2][skill] completed: distinctive-content packet ready; mapped source material to the plan
 [seo-landing-page][stage 2][skill] completed: evidence-labeled reader brief passed to seo-writing
 [seo-landing-page][stage 2][skill] completed: seo-writing plan saved to seo-content/release-notes-landing/content-plan.md
 [seo-landing-page][stage 4][remote] started: Humalizer reading https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md

@@ -29,7 +29,9 @@ Reader intent, Topic, Content structure, and Writing constraints, preserving
 evidence labels. The brief is transient; this plan is the sole persisted
 drafting contract. For an informational article without a promotional CTA, set
 `Primary CTA and destination: none` and record the useful next action
-separately.
+separately. Include a `Distinctive contribution` block with the
+`distinctive-content` packet status, source owner, limits, interview count, and
+section mapping.
 
 ## `content.md`
 
@@ -75,6 +77,7 @@ than filled with an invented fact or destination.
   - content.md: present | absent
   - seo-metadata.md: present | absent
 - Intake: source references, evidence labels, and missing required inputs
+- Distinctive content: packet status, contribution, source owner, interview count, mapped sections, and open gaps
 - Final audit:
   - Reader situation, journey questions, usefulness, and reader respect:
   - Plan or structure deviations:
@@ -84,6 +87,7 @@ than filled with an invented fact or destination.
   - Links and next action:
   - Humanization and Stop Slop changes:
   - Grammar findings and corrections:
+  - Distinctive contribution and evidence packet:
 - Publication blockers: none | [short list]
 - Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, exit, parse, findings, and corrections
 - Reader-strategy dependency: focused brief completed | reused saved plan | not requested (audit-only); evidence source or reason for refresh
@@ -102,11 +106,13 @@ On resume, read this file and the referenced artifacts. An older run may have
 an older status without workflow state or readiness. Preserve that file as
 `content.legacy.md` before extracting the article into body-only `content.md`,
 the metadata into `seo-metadata.md`, and editorial notes into status. Normalize
-the saved plan to the current source, keyword inventory, and next-action fields,
+the saved plan to the current source, keyword inventory, next-action, and distinctive packet fields,
 marking gaps `unknown` instead of inventing facts. Recover user-supplied terms
 from the original brief where available; do not label inferred phrases as
 user-supplied. Apply the reader-strategy refresh rule in [routing.md](routing.md)
-and normalize any refreshed brief into this same plan, preserving user edits.
+and resume any saved `distinctive-content` interview one question at a time
+before drafting. Normalize any refreshed brief into this same plan, preserving
+user edits.
 Rebuild stage states from documented work; leave unproven
 rewrites and checks pending. If status is absent, infer the
 earliest incomplete stage from available files and recreate status. If the

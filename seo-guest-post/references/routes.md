@@ -25,7 +25,8 @@ and check date per verified rule or `unknown`, and the adapted
 `seo-audience-strategy` reader situation: trigger, current task or decision,
 relevant constraints, current knowledge, next question, and evidence source
 and label for each material detail. Add the thesis, why it fits now, original
-contribution and evidence, section outline in the reader's question sequence,
+contribution and evidence, the `distinctive-content` packet with its source
+owner and limits, section outline in the reader's question sequence,
 permitted product role, disclosure and link plan, and open questions.
 If the host is unknown, label the proposed angle and format provisional.
 When keywords were supplied, include the primary term and every long-tail
@@ -51,6 +52,8 @@ Follow with `## Submission notes` containing:
   with the pages/searches checked. Include audience evidence URLs.
 - Reader situation and next question, with their evidence sources and labels;
   note any change from the brief
+- Distinctive contribution and packet status, including interview questions
+  asked, source owner, mapped sections, and open evidence gaps
 - Contributor relationship, disclosure text/status, and byline status
 - Evidence and source gaps, including AI-specific claims when applicable
 - Originality, exclusivity, and rights status
@@ -81,12 +84,14 @@ placement as independent editorial coverage.
 
 ## Revision and audit routes
 
-For revision, preserve verified facts and the writer's supported perspective.
-Reuse the existing reader brief when its audience and angle still fit; apply
+For revision, preserve verified facts, the writer's supported perspective, and
+the distinctive-content packet. Reuse the existing reader brief and packet
+when their audience and angle still fit; apply
 `seo-audience-strategy` in `single-content brief` mode when it is missing or
 the audience or angle changes. Carry the resulting evidence labels into the
 submission notes. Run the revised article through the selected prose and
-grammar stages before final audit. Return the full revised article and note
+grammar stages before final audit. If a material source gap remains, ask one
+question at a time through `distinctive-content` before rewriting. Return the full revised article and note
 material changes, unresolved blockers, and any host guideline conflicts. Recheck supplied
 keywords against the revised body and account for each in submission notes.
 
