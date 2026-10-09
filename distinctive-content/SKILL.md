@@ -2,102 +2,120 @@
 name: distinctive-content
 description: >-
   Turn thin, generic content requests into useful, distinctive material by
-  checking for first-hand experience, subject-matter decisions, original data,
-  concrete workflows, examples, trade-offs, or approved proof. Use as a gate or
-  interview stage for SEO landing pages, owned-site blogs, guest posts, press
-  releases, briefs, and other substantive copy when the source material is
-  missing or weak. Ask one focused source question at a time, up to 10 total,
-  when the writer needs the user's knowledge; use audit mode for existing copy.
+  developing supported experience, research, judgment, workflows, or examples.
+  Use as the source gate during planning for landing pages, blogs, guest posts,
+  press releases, briefs, and other substantive copy. Research accessible gaps;
+  interview when essential knowledge belongs to the user; use audit mode for
+  existing copy. Reuse a fitting packet for drafting and minor revisions.
 ---
 
 # Distinctive Content
 
-Make the source's real knowledge visible in the work. AI can organize, question,
-and clarify supplied material; it cannot supply a credible experience, case,
-result, opinion, or source that the user has not provided. A keyword, outline,
-product category, or audience label is a starting signal, not a contribution.
+Make a useful contribution visible and support it honestly. Supplied knowledge,
+inspected research, and transparent synthesis can all help the reader. First-hand
+experience, quotes, results, and attribution must come from their actual source.
+A keyword, outline, product category, or audience label is a starting signal.
 
 This skill returns a transient evidence packet. The calling workflow owns the
-article, page, release, brief, submission notes, and any saved files. Read
-[interview.md](references/interview.md) when the interview branch is active and
-[audit.md](references/audit.md) when reviewing existing copy.
+article, page, release, brief, submission notes, and any saved files. Apply the
+[helpful-content standard](references/helpful-content.md) to the promised
+reader task and the finished work.
 
 ## Invocation branches
 
 | Branch | Use when | Output |
 | --- | --- | --- |
-| `gate` | A parent is about to plan, draft, or revise substantive content | Ready packet, provisional packet, or one next interview question |
+| `gate` | Planning substantive content, or a changed promise/source needs a refreshed packet | Evidence packet and any essential next question or blocker |
 | `interview` | The previous question was answered or the route is being resumed | Updated packet or one next question |
 | `audit` | Existing copy needs a usefulness and distinctiveness review | Findings and repairs; no rewrite |
 
-Run `gate` after the reader and editorial situation are known and before body
-copy. Reuse a saved or supplied packet when its sources and scope still fit.
-For a content-only request, run the same gate directly. A parent may proceed
-with a `provisional` packet when the user explicitly accepts a source gap; mark
-the gap in that parent's audit instead of filling it with invented detail.
+Run `gate` once during planning after the reader and editorial situation are
+known. For a content-only request, use the same gate directly. Reuse the packet
+for drafting and minor edits when its promise, sources, scope, and approvals
+still fit; refresh affected items when they change. A plan skeleton may expose
+gaps while an interview is pending. New substantive body copy requires a
+supported core promise. For a local wording or typo correction that introduces
+no new substance, reuse the supported material and return any pre-existing
+core gaps as publication blockers; interview only for knowledge essential to
+the requested correction.
 
 ## Shared workflow
 
-### 1. Inventory the source
+### 1. Inventory and develop the contribution
 
 Classify the material already available:
 
 - **Practice:** what the author or team actually did, including sequence,
   tools, timing, review points, and implementation context.
-- **Judgment:** a decision rule, opinion, trade-off, failure mode, or lesson
-  that explains why one approach was chosen.
+- **Judgment:** an attributed view or transparently derived decision rule,
+  trade-off, failure mode, or lesson, with reasoning and conditions.
 - **Proof:** approved data, customer evidence, experiment method, source,
   product demonstration, screenshot, or documented limitation.
 - **Example:** a concrete before/after, input/output, scenario, artifact, or
   edge case that a reader can inspect or adapt.
 
-Record the owner and source for each item. Treat product documentation as proof
-of documented behavior, not proof of customer outcomes. Treat a plausible
-inference as `hypothesis` and an absent source as `unknown`.
+Record the source owner, exact supporting reference, and scope/date when relevant.
+Separate `supplied`, `checked`, `hypothesis`, and `unknown` evidence status;
+supplied material has not necessarily been independently verified. Product
+documentation supports documented behavior, not customer outcomes.
 
-The inventory is sufficient when it contains a contribution that can change a
-reader's decision or action and enough support to state its limits. It is
-`interview-needed` when the planned angle would otherwise be filled with
-interchangeable advice, generic claims, or an invented first-person voice.
+When accessible research or synthesis can fill a gap, follow
+[research and judgment](references/research-and-judgment.md) before interviewing.
+Identify the baseline answer and the contribution's added value for this reader.
+The inventory is sufficient when the core promise is supported and the reader
+can complete the promised task. One concrete detail or limitation cannot carry
+an otherwise unsupported how-to. Helpful synthesis and explanation count;
+claims of novelty need an actual comparison.
+
+Choose the packet status:
+
+- `ready`: the core promise and contribution are supported.
+- `provisional`: the core is supported; nonessential gaps can be safely omitted
+  or narrowed. Proceed autonomously and record the omissions in the audit.
+- `interview-needed`: an essential gap requires knowledge only the user or
+  contributor can supply. Ask the next source question; body drafting waits.
+- `blocked`: essential support remains unavailable, conflicting, or unresolved
+  after the interview ceiling. Name the missing input or narrower viable promise.
 
 ### 2. Interview the source when needed
 
-Use `interview` mode for the highest-value gap. Ask exactly one answerable
-question in a turn and wait for the answer before asking another. Ask no more
-than 10 questions for one content item; stop earlier when the packet supports
-the angle and its sections. Follow the question order and examples in
+Use `interview` mode for essential private knowledge the agent cannot obtain.
+Ask exactly one answerable question in a turn and wait for the answer before
+another. Ask no more than 10 questions for one content item; stop earlier when
+the core promise is supported. Follow the priorities and examples in
 [interview.md](references/interview.md).
 
 Prefer questions that elicit a concrete situation, action, decision, constraint,
-result, failure, example, or reusable rule. Ask for a source or permission to
-label an item as personal experience when attribution matters. If the user
-cannot answer, record `unknown`, choose the next highest-value gap, or return a
-provisional packet when the remaining gap is nonessential. Never imply that the
-user said something they did not say.
+result, failure, example, or reusable rule. Confirm the source and attribution
+when needed. If the user cannot answer, record `unknown`, research another route
+or safely narrow the promise; return `blocked` if the essential gap remains.
 
-When a question is pending, return only the next question plus the interview
-state needed to resume. Do not draft body copy in the same response; generic
-drafting would hide the missing source and make the interview harder to answer.
-This intake continuation is not an approval checkpoint; the calling route stays
-autonomous and resumes as soon as the answer arrives.
+When a question is pending, return the packet state and one next question,
+including its count and gap. The parent may save a plan skeleton and resume
+after the answer; it keeps body drafting pending. This is source intake, not
+an approval checkpoint.
 
 ### 3. Build the evidence packet
 
-Normalize supplied facts and interview answers into this packet:
+Normalize supplied material, inspected research, synthesis, and interview
+answers into this packet:
 
 ```markdown
 ## Distinctive content packet
 - Status: ready | interview-needed | provisional | blocked
 - Core contribution:
 - Reader change: what the reader can decide, do, or understand better
+- Baseline answer and added value:
+- Judgment reasoning, alternatives, and conditions (or none):
 - Source owner and attribution:
 - Interview: questions asked / answered / remaining (0-10)
+- Pending question: one next question or none
 
-| ID | Material detail or claim | Type | Source | Confidence | Limit or approval | Planned use |
+| ID | Material detail or claim | Type | Source | Evidence status | Limit or approval | Planned use |
 | --- | --- | --- | --- | --- | --- | --- |
-| D1 | ... | practice / judgment / proof / example | ... | supplied / observed / hypothesis | ... | ... |
+| D1 | ... | practice / judgment / proof / example | exact reference; scope/date when relevant | supplied / checked / hypothesis / unknown | ... | ... |
 
-- Open evidence gaps:
+- Open evidence gaps: central or optional; owner and next action
 - Provisional-use note, if any:
 ```
 
@@ -110,11 +128,12 @@ attribution carry the packet.
 
 ### 4. Map the packet into the work
 
-Pass the packet to the parent before planning or drafting. Give each major
-section one planned item from the packet or an explicit reason that the section
-needs no unique source. Use the material to answer the reader's question, show
-the work, explain a trade-off, or bound a claim. Preserve attribution and
-qualifications through humanization, grammar edits, and format changes.
+Pass the packet to the parent during planning. Map each major section to a
+packet item, a concrete grounded answer, or a reason it needs no unique source.
+Use the material to answer the reader's question, show the work, explain a
+trade-off, or bound a claim. Keep editorial proof requests in the parent's
+audit, outside publishable copy. Preserve attribution and qualifications
+through humanization, grammar edits, and format changes.
 
 The packet is doing its job when the outline and draft identify where each
 material item appears, what reader action it supports, and what remains
@@ -124,18 +143,20 @@ source supports.
 ### 5. Audit the result
 
 Run `audit` after the draft and after any substantial rewrite. Follow
-[audit.md](references/audit.md). Repair generic openings, interchangeable tips,
-unsupported authority, and sections that merely repeat the keyword. Keep a
-useful section when its job is clear even if its distinctive evidence is a
-reader-facing limit or a transparent `proof needed` note. Return blockers when
-the central promise still depends on missing evidence.
+[audit.md](references/audit.md). Identify repairs for generic openings, interchangeable tips,
+unsupported authority, and sections that merely repeat the keyword. Walk through
+the promised task using only the draft and its verified artifacts. Keep relevant
+reader-facing limitations; editorial `proof needed` notes belong in the audit.
+Return blockers when the central promise still depends on missing evidence.
+Audit mode returns findings and repairs for the parent without rewriting copy.
 
 ## Completion criteria
 
-The gate is complete when the packet is `ready` or explicitly `provisional`,
-the core contribution and source owner are named, and every material item has
-a limit or approval status. Once a plan exists, map each planned section to an
-item or record its gap. An interview branch is complete when it returns one
-next question with a count from 0 to 10, or when the packet reaches a terminal
-status. An audit is complete when every major section has a concrete reader job
-and the findings identify the exact missing, generic, or unsupported material.
+The gate returns a status justified by support for the core promise, a named
+contribution and added value, and traceable items with evidence status and limits.
+When planning is complete, every major section has a grounded answer or mapped
+item, or a reason no unique source is needed. Drafting proceeds with `ready` or
+`provisional`; other statuses carry the exact next question or blocker. An
+interview returns one pending question with its count, or an updated packet with
+no pending question. An audit is complete when it tests the promised task and
+identifies exact repairs and central support gaps for every major section.

@@ -14,8 +14,9 @@ description: >-
 
 Write a contributed article that gives the host publication's readers an
 independent reason to read it. The publication controls format and link policy;
-the company supplies expertise and verifiable product context. A guest post is
-not an owned-site SEO blog with a different byline.
+the company supplies expertise and verifiable product context. Apply the shared
+[helpful-content criteria](../distinctive-content/references/helpful-content.md) to the reader's
+task, search-intent evidence, contribution, and final answer.
 
 Use [routes.md](references/routes.md) for the requested brief, draft, revision,
 or audit output. The steps below apply to every route; complete only the steps
@@ -27,13 +28,20 @@ selected; unavailable required remote instructions block editorial readiness.
 Harper is optional when its CLI is unavailable. Keep these checks in the
 working article; save a guest-post file only when the user asks.
 
-After the host reader situation is known, run
+For a brief, new draft, or substantive revision, once the host reader situation
+and planned angle are known, run
 [`distinctive-content`](../distinctive-content/SKILL.md) in `gate` mode with
-the contributor's substantiated practice, decisions, examples, data, product
-evidence, and limits. If it returns `interview-needed`, ask one question per
-turn, up to 10 total, and resume with `interview`; keep the article blocked until the source is
-recorded or the contributor explicitly accepts a `provisional` packet. For an
-audit route, use its read-only `audit` branch.
+the contributor's substantiated practice, decisions, examples, data, inspected
+sources, product evidence, and limits. Research or a source-backed synthesis
+can satisfy the gate; interview only for material knowledge that the available
+sources cannot supply. If it returns `interview-needed`, ask its one pending
+question and resume with `interview`, up to 10 questions total. Carry the packet's
+completeness, pending question, and asked/answered counts in the brief or
+submission notes. An unanswered central promise blocks body copy; an optional
+gap may remain explicitly provisional while the supported article proceeds.
+For an audit route, use its read-only `audit` branch. A local correction retains
+the supplied article's task and sources, reuses any valid brief and packet,
+and reports unrelated source gaps in its audit without reopening the interview.
 
 ## Shared workflow
 
@@ -57,10 +65,12 @@ submission status provisional.
 
 Collect the SaaS product's verified category, user, workflow, capabilities,
 limits, and approved positioning. Note the contributor's relationship to the
-company and any required disclosure. Separate supplied facts, independently
-sourced facts, assumptions, and missing evidence. Ask for a missing fact only
-when its absence prevents an accurate article; otherwise continue with a safe
-omission or a clearly labeled placeholder.
+company and any required disclosure. Separate supplied statements, checked
+sources, hypotheses, and unknowns; inspect sources before calling claims
+verified. Ask for a missing fact only when its absence prevents an accurate
+article; otherwise continue with a safe
+omission. Keep indispensable missing claims in the brief and blockers until
+they can be supported, rather than drafting the promised answer around them.
 
 Record the user's primary keyword and every supplied long-tail phrase verbatim,
 when provided. Keep any must-use, avoid/prohibited, count, or placement
@@ -79,8 +89,11 @@ For a brief or new draft, apply `seo-audience-strategy` in
 evidence, supplied keywords, and available product evidence. Use its
 host-reader branch to identify a specific situation, trigger, current
 knowledge, constraint, question or decision, and likely next question. For a
-revision, reuse an existing evidence-labeled reader brief; apply the strategy
-when the brief is missing or the audience or angle changes. For an audit-only
+revision, reuse an existing evidence-labeled reader brief. For a local wording
+or grammar correction, retain the supplied article's reader task and evidence;
+rebuild a brief only when the requested change alters the audience, angle, or
+central promise. For a substantive revision, apply the strategy when the brief
+is missing or the audience or angle changes. For an audit-only
 route, assess the supplied article's reader situation without creating a new
 brief. The strategy returns a stage output;
 this skill owns the guest-post brief and submission notes, and saves a file
@@ -88,7 +101,7 @@ only when requested.
 
 For brief, draft, and revision routes, adapt the strategy output or reused
 brief to the publication with the [reader brief](references/reader-brief.md).
-Preserve observed, hypothesis, and unknown labels and the source of each
+Preserve supplied, checked, hypothesis, and unknown labels and the source of each
 important insight. Use search phrases only when they help verify or express
 the reader's need; a keyword list alone does not establish an angle.
 
@@ -99,18 +112,22 @@ supplied phrase into the guest-post brief or submission notes. On an audit
 route, assess each supplied phrase against that plan and report conflicts.
 
 State one thesis relevant to that situation and the work it helps the reader
-complete. Identify the contribution that makes the piece worth publishing:
+complete. Define observable completion: the decision the reader can make, the
+steps and result they can reproduce, or the explanation they can apply.
+Identify the contribution that makes the piece worth publishing:
 firsthand practice the contributor can substantiate, original data with
-methodology, a concrete framework, or a specific example. Choose a structure
-that develops the thesis in the reader's question or decision sequence; every
-section must add a distinct answer, example, trade-off, or action. Keep the
+methodology, a concrete framework, a specific example, or an inspected-source
+synthesis that explains its facts, reasoning, recommendation, and limits.
+Choose a structure that develops the thesis in the reader's question or decision
+sequence; every section must add a distinct answer, example, trade-off, or action. Keep the
 product's role proportional to what the article teaches and what the publisher
 permits.
 
 For a writing route, this step is complete when the outline has a specific,
 evidence-labeled reader situation, a clear benefit, a `distinctive-content`
-packet with a source owner and limits, and a reason for each section. For an
-audit, it is complete when gaps in that contract are recorded as findings.
+packet with a source owner, completeness, and limits, observable completion,
+and a reason for each section. For an audit, it is complete when gaps in that
+contract are recorded as findings.
 
 ### 3. Verify claims and draft
 
@@ -135,8 +152,10 @@ article; follow the host's link rules for any anchor text.
 
 This step is complete when the article delivers its promised insight using the
 mapped distinctive material, without unsupported claims or dependence on a
-product pitch. Record a proof gap when a section cannot yet carry its planned
-contribution.
+product pitch. Walk through the promised decision, method, or explanation using
+only the draft and its linked evidence. Repair missing inputs, steps, decision
+criteria, and important limits; a gap that prevents completion blocks the
+article. Record optional proof gaps outside the article.
 
 ### 4. Humanize the article
 
@@ -170,7 +189,10 @@ the prose passes. For a chat-only draft, send the article Markdown through
 standard input; do not include submission notes or save a temporary article.
 Accept only clear corrections that preserve host style, facts, names, quotes,
 citations, links, byline, disclosure, and required terms. Record correction and
-retained-finding counts. If `harper-cli` or structured output is unavailable,
+retained-finding counts and the actual dialect selected or existing-spelling
+preservation mode. When the host's requested English variety is unsupported,
+record the limitation and retain dialect-sensitive findings. If `harper-cli` or
+structured output is unavailable,
 record a skipped check and continue. The stage is complete when the checked
 article or a concrete skip reason is ready for the final audit.
 
@@ -186,6 +208,14 @@ silently lost its corrected facts. Count article-body words against any host
 range; exclude byline, disclosure, and submission notes unless the host says
 otherwise. Remove filler, repeated points, and promotional claims that do not
 help the reader. Record unresolved requirements outside the article text.
+
+Run `distinctive-content` in `audit` mode against this final article and apply
+the shared helpful-content walkthrough. Check that the promised reader task can
+be completed, that search-intent assumptions retain their evidence labels, and
+that the contribution's sources and reasoning survive the prose passes.
+Repair findings within the requested scope before declaring readiness; report
+other substantive findings as remaining blockers. A central unanswered promise or
+unsupported recommendation is a blocker even when every style check passes.
 
 For supplied keywords, compare each planned decision with the final article,
 recheck prohibited phrases and user-set placement or counts, and account for

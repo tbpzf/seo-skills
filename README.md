@@ -1,9 +1,17 @@
 # SaaS Content Skills
 
-Workflows for English SaaS landing pages, owned-site blogs, guest posts,
-audience strategy, and press releases. They work for consumer-facing and
-business-facing products. Each finished-content route owns its editorial
-decisions and output; the shared writing and editing skills supply stages.
+Help authors create useful English SaaS content that answers a real reader's
+search need and offers a defensible contribution: better explanation, a usable
+method, evidence, or reasoned judgment. These workflows cover landing pages,
+owned-site blogs, guest posts, audience strategy, and press releases for
+consumer-facing and business-facing products. Each finished-content route owns
+its editorial decisions and output; supporting skills supply stages.
+
+The shared [helpful content standard](distinctive-content/references/helpful-content.md) defines
+completion by what the reader can decide, do, or understand. Search intent needs
+recorded evidence or explicit uncertainty. Views need reasoning, alternatives,
+and limits. Final verification walks through the promised task after editing;
+keyword placement and polished prose alone cannot make content ready.
 
 ## Choose a Route
 
@@ -39,22 +47,30 @@ editing run from whether the content has enough verified facts to publish.
 | `humalizer` | Fact-safe humanization used by the SEO workflows |
 | `harper-grammar` | Optional local Harper grammar check |
 
-The landing-page, owned-blog, guest-post, and press-release routes use
+The landing-page, owned-blog, and guest-post routes use
 `seo-audience-strategy` automatically to build a focused, evidence-labeled
 reader brief before planning the copy. You do not need to invoke it separately
 for a finished article or page. A standalone strategy request is for an
 audience map, content gaps, or a brief without finished copy; a routine writing
 request does not trigger a full site audit.
 
-Those writing routes also use `distinctive-content` as a source gate before
-drafting. They first look for real workflows, decisions, examples, original
-data, approved proof, and meaningful limits. When the planned piece lacks a
-defensible contribution, the skill interviews the source with one focused
-question per turn, up to 10 questions, then passes a source-and-limits packet
-into the draft. A supplied product workflow or approved evidence can satisfy
-the gate without an interview. A route records a provisional or blocked status
-when a material source gap remains; it never fills the gap with invented
-experience, results, quotes, or authority.
+Landing pages, owned blogs, guest posts, and press releases also use
+`distinctive-content` during planning. They inspect available sources before
+asking for private author knowledge. First-hand material, checked research,
+transparent synthesis, and useful explanations can support the contribution.
+A viewpoint records its evidence, reasoning, relevant alternative, and the
+conditions where the recommendation changes. Original data and a contrarian
+opinion are optional; fabricated experience, results, quotes, and authority are
+forbidden.
+
+The gate runs once and its full packet is reused for drafting and local edits.
+When essential knowledge belongs to the author, it asks one focused question
+per turn, up to 10 total, preserving the pending question and count for resume.
+An incomplete plan can still be saved. Optional gaps allow a provisional packet
+with unsupported claims omitted; a central unsupported promise blocks new body
+copy. Plan-only requests may finish with gaps recorded, and wording corrections
+do not trigger an unrelated source interview. Press releases use a journalist's
+reporting task and verified news event, without requiring an SEO query.
 
 ## Install
 
@@ -156,7 +172,10 @@ questions before drafting.
 
 The route saves `content-plan.md`, publishable `content.md`,
 `seo-metadata.md`, and `workflow-status.md` under `seo-content/<topic>-blog/`.
-An informational post may have no sales CTA.
+An informational post may have no sales CTA. Its saved plan keeps intent
+observations and uncertainty, the reader completion signal, and the full source
+packet. Final readiness includes the helpful-content walkthrough, not just
+finished editing stages.
 
 ### Guest post for another publication
 
@@ -264,7 +283,10 @@ harper-cli --version
 harper-cli lint --help
 ```
 
-If Harper is unavailable, the workflow records the grammar stage as skipped.
+Harper respects the requested English variety and publisher style when its
+installed CLI supports them. Otherwise it preserves the draft's spelling and
+reports the limitation. If Harper is unavailable, the workflow records the
+grammar stage as skipped.
 Owned-site routes still save their content; Guest Post returns the article in
 chat unless you request a file.
 
@@ -282,3 +304,7 @@ chat unless you request a file.
 ```bash
 ruby scripts/validate-skills.rb
 ```
+
+The [project review and route traces](docs/helpful-content-review.md) record the
+behavioral changes and representative manual checks. Structural validation
+checks packaging and workflow contracts; it does not measure output quality.

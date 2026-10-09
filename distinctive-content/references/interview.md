@@ -1,8 +1,10 @@
 # Source interview patterns
 
-Use these prompts as a priority order, not a script. Ask one question per turn
-and adapt the next question to the previous answer. Keep the question tied to
-the planned reader and content angle.
+Use these prompts for essential knowledge only the user or contributor can
+supply, after accessible research. They are priorities, not a script. Ask one
+question per turn and adapt it to the previous answer, the promised task, and
+the highest-value remaining gap. Apply the
+[helpful-content standard](helpful-content.md).
 
 1. **Situation:** What specific situation led you or the team to work on this?
 2. **Action:** What did you actually do, step by step, that a reader could
@@ -18,8 +20,15 @@ the planned reader and content angle.
 8. **Rule:** What rule of thumb would you use next time, and when would it fail?
 
 Use an attribution question when the material will appear as a first-person
-account, named expert view, quote, customer result, or company claim. Ask for
-permission and the preferred attribution rather than guessing it.
+account, named expert view, quote, customer result, or company claim and its
+source, preferred attribution, or necessary approval is unresolved. Reuse
+recorded attribution and authorization instead of asking again.
 
-Stop when the packet has a defensible contribution, a source, a reader-facing
-use, and material limits. The tenth question is a hard ceiling, not a target.
+Preserve the pending question, its gap, and the asked/answered/remaining count
+in the packet. Count each asked question once; resuming the saved question does
+not start a new ten-question budget. Record an unanswered item as `unknown`.
+
+Stop when the core promise has adequate support and limits. Safely omit optional
+gaps and return `provisional`; after the tenth question, return `blocked` if
+essential support remains missing. Name the needed source or narrower viable
+promise. The ceiling is not a target and does not authorize a generic draft.

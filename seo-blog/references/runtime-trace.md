@@ -13,7 +13,8 @@ soon as they affect the route. Do not pause for approval.
 `kind` is `route`, `skill`, `remote`, `cli`, `file`, or `result`. Name a sibling
 skill when it first runs, a remote source with its exact pinned URL when first
 read, and each saved artifact at the save milestone. For Harper, include the
-preflight outcome, command status, JSON parse result, finding count, and
+preflight outcome, actual dialect or spelling preservation mode, command status,
+JSON parse result, finding count, and
 correction count when available. Keep draft text, secrets, environment
 variables, tokens, complete commands, and raw CLI output out of the trace.
 
@@ -30,3 +31,9 @@ Examples:
 
 Use `completed` only after the operation finishes. A failed required source
 sets workflow state to `blocked`; an unavailable Harper check is `skipped`.
+
+For an essential source question, report the saved incomplete plan and one
+pending question; keep Stage 2 pending and resume there after the answer. A
+plan-only result can complete with gaps recorded. At final verification report
+the helpful-content walkthrough result and specific publication blockers,
+separately from the editing-stage outcome.

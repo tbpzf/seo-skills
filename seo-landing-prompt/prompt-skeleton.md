@@ -3,6 +3,11 @@
 Replace every `[[VARIABLE]]` before use. Remove any bracketed field that is
 not applicable.
 
+Use this skeleton for an independent template. For an export of a saved plan,
+apply [plan-export.md](references/plan-export.md) instead of its planning phase
+and generic modules. Embed the applicable checks from
+[helpful-content.md](../distinctive-content/references/helpful-content.md) in either output.
+
 - Page copy language: `[[PAGE_COPY_LANGUAGE]]` (default: US English).
 - Instruction and report language: `[[INSTRUCTION_LANGUAGE]]` (follow the
   user's preferred language for the prompt itself; do not hardcode Chinese or
@@ -33,8 +38,9 @@ decision.
 
 ## Product facts and boundaries
 
-Use only the facts below. If a needed fact is missing, use `[fact needed]` or
-omit the claim. Do not invent capabilities, integrations, customer names,
+Use only supplied or verified product facts. If a needed fact is missing, omit
+the unsupported claim and record the gap in the final report. Do not invent
+capabilities, integrations, customer names,
 testimonials, metrics, sources, pricing, certifications, or legal/compliance
 claims.
 
@@ -50,6 +56,10 @@ claims.
 - Brand voice: [[BRAND_VOICE]]
 - Distinctive source material and attribution owner: [[DISTINCTIVE_SOURCE_MATERIAL]]
 - Distinctive evidence limits and approvals: [[DISTINCTIVE_EVIDENCE_LIMITS]]
+- Existing evidence packet and interview state: [[EXISTING_PACKET_AND_STATE]]
+  (write `None supplied` when absent).
+- User-supplied length or item-count constraints: [[USER_LENGTH_CONSTRAINTS]]
+  (write `None supplied` when absent; derive detail from the reader task).
 
 ## Keyword policy
 
@@ -82,7 +92,7 @@ Include only supplied terms selected for this page. The table may be empty.
 [[RESTRICTED_KEYWORD_POLICY]]
 
 If this prompt was exported from a saved content plan, keep its keyword
-decisions and section roles in the `<content_plan>`. Change a decision only
+decisions and section roles in the embedded saved contract. Change a decision only
 when new verified facts or reader intent make it invalid, and explain the
 change in the Final SEO Report.
 If the supplied primary differs from the chosen focus, state the mismatch and
@@ -91,9 +101,9 @@ its resolution before drafting; do not silently replace the user's target.
 Shared rules:
 
 - Treat the supplied inventory as the complete input, not a quota to expand.
-  Do not create extra required keywords to reach three core terms or ten to
-  twelve long-tail terms. When keyword research was explicitly requested, keep
-  new suggestions optional until the user or workflow selects them.
+  Do not create extra required keywords to fill a default portfolio. When
+  keyword research was explicitly requested, keep new suggestions optional
+  until the user or workflow selects them.
 - Select terms that add a distinct meaning or answer a relevant sub-intent on
   this page. Honor a user-required phrase when it fits truthfully and naturally;
   flag a conflicting requirement in the report.
@@ -105,6 +115,28 @@ Shared rules:
 - If a keyword would make the page misleading, irrelevant, or unnatural, use it
   zero times and explain why in the final report.
 - Never invent a numeric target the user did not supply.
+
+## Resolve source material
+
+Reuse an existing evidence packet when its claims, sources, limits, and scope
+still support the promise. For a new material gap, read available product
+documentation and credible primary sources. Record which source supports each
+claim, what it actually establishes, and its limits or uncertainty.
+
+You may derive an analysis, decision rule, or synthesis from verified material.
+Identify it as this article's analysis, make its reasoning inspectable, and
+separate it from what a source explicitly states. Label a constructed example
+as illustrative. Research, inference, and examples cannot become invented
+first-hand experience, quotes, customer results, original measurements, or an
+opinion attributed to someone who did not express it.
+
+When necessary knowledge belongs to the user and remains unavailable, ask one
+focused source question per turn and wait. Fold any new answer into the saved state before repeating a pending question;
+count prior questions in that state toward the maximum of 10. Preserve each answer's attribution and limits.
+If the central promise cannot be supported, narrow it transparently or report a
+blocker before drafting. Use a provisional packet when the core is supported
+and nonessential gaps can be safely omitted or narrowed. Proceed autonomously
+within that supported scope and record the omissions in the report.
 
 ## Workflow
 
@@ -126,6 +158,9 @@ Before writing visible page copy, output a concise `<content_plan>` containing:
   continue this page
 - The expected result: direct answer, process, criteria, template, diagnosis,
   recommendation, or buying support
+- The observations that support the proposed search intent: supplied reader
+  evidence, current search-result observations when available, or an explicit
+  hypothesis. Name meaningful ambiguity and what would resolve it
 - Important constraints, trade-offs, failure modes, and follow-up questions
 - Adjacent intents that are out of scope for this page
 - One specific working title and reader promise; do not merely restate the
@@ -141,17 +176,17 @@ Before writing visible page copy, output a concise `<content_plan>` containing:
 - Every supplied restricted keyword that will be omitted, with its reason
 - Exact planned counts **only if** the keyword policy includes numeric targets
 - The distinctive contribution, source owner, mapped evidence or examples for
-  each major section, and any open evidence gap
+  relevant sections, and any open evidence gap. Keep each packet item's detail,
+  source, attribution, evidence status, limits, and planned section use together
 
 Every planned section must answer a distinct question, enable a decision, teach
 an action, provide evidence, or explain a material limit. Do not add definition
 sections the audience does not need, synonymous keyword headings, repeated
 advice, or sections that exist only for word count.
 
-If the distinctive source material is insufficient for the planned promise, ask
-one focused source question in a separate turn and wait for its answer before
-writing. Ask no more than 10 questions. Use `[proof needed]` or a provisional
-status for an accepted gap; never invent experience, results, quotes, or data.
+Complete source resolution before drafting. Record packet status, remaining
+blockers, and any safely narrowed provisional scope in the plan; keep evidence requests
+outside visible copy.
 
 Do not reveal detailed reasoning. Close the block with `</content_plan>`.
 
@@ -162,8 +197,10 @@ answer, decision rule, step, evidence, example, or artifact. Do not replace the
 useful part with motivational prose, obvious setup, generic tips, or repeated
 summaries. If a planned section conflicts with verified facts or reader intent,
 correct it and report the material deviation in the final report.
-Use the mapped distinctive source material in each major section and preserve
-its attribution, scope, and limits through every rewrite.
+Each major section must use a mapped packet item, give a grounded concrete
+answer, or explain in the plan why no unique source is needed. Preserve source
+attribution, scope, and limits through every rewrite. Keep proof gaps in the
+report rather than filling sections with placeholders or repeated evidence.
 
 ## Conversion rules
 
@@ -177,18 +214,18 @@ its attribution, scope, and limits through every rewrite.
 
 Generate:
 
-- **Title Tag**: [[TITLE_WORD_RANGE]] words; [[TITLE_CHARACTER_GUIDANCE]]
-  characters when applicable. Make it clear on the first read, state the page
-  topic directly, and include the primary keyword naturally. Do not use a
+- **Title Tag**: follow user-supplied length constraints when present. Make it
+  clear on the first read, state the page topic directly, and include the
+  primary keyword naturally. Do not use a
   teaser-style or clever title that hides the topic.
-- **Meta Description**: [[META_CHARACTER_GUIDANCE]] characters; include the
+- **Meta Description**: give a precise description; include the
   primary keyword and a relevant secondary keyword only if natural.
-- **H1**: [[H1_WORD_RANGE]] words. Include the primary keyword naturally and a
-  specific, supportable user benefit or outcome. Make the promise clear on the
+- **H1**: include the primary keyword naturally and a specific, supportable user
+  benefit or outcome. Make the promise clear on the
   first read; do not use a vague slogan or a generic benefit such as “work
   smarter.”
-- **Hero Paragraph**: [[HERO_LENGTH]] words; audience + outcome + supported
-  product mechanism.
+- **Hero Paragraph**: audience + outcome + supported product mechanism, with
+  enough detail to make the promise clear.
 - **Primary CTA**: [[PRIMARY_CTA_LABEL]].
 - **Optional secondary CTA**: only if it supports the same next step.
 
@@ -201,19 +238,18 @@ reader do.
 Explain the costly or frustrating work in the reader's language and why common
 alternatives fall short. Use only supportable contrasts.
 
-- **H2**: 5 to 10 words in [[PAGE_COPY_LANGUAGE]].
-- **Description**: 2 to 3 sentences.
-- Optional: [[MODULE_2_ITEM_COUNT]] short problem points (H3 + paragraph). No
+- **H2**: describe the reader problem in [[PAGE_COPY_LANGUAGE]].
+- Explain only context that changes the reader's decision.
+- Include problem points when each adds distinct, supported information. No
   per-item CTAs.
 
 ## Module 3: How the product works
 
-Generate [[STEP_COUNT]] steps that explain the real user workflow for this use
-case.
+Explain the real user workflow for this use case. Derive its steps from the
+supported workflow and the reader's task.
 
-- **H2**: 5 to 10 words in [[PAGE_COPY_LANGUAGE]].
-- **Description**: 2 to 3 sentences.
-- Each step has an H3 and a [[STEP_PARAGRAPH_LENGTH]]-word paragraph.
+- **H2**: make the workflow clear in [[PAGE_COPY_LANGUAGE]].
+- Use steps, headings, or examples where they help a reader follow the process.
 - Explain relevant inputs, choices, review steps, outputs, and limitations.
 - Include professional, technical, or regulated-work disclaimers only where the
   supplied facts require them.
@@ -221,40 +257,37 @@ case.
 
 ## Module 4: Outcomes and benefits
 
-Generate [[MODULE_4_ITEM_COUNT]] outcome sections tied to specific supported
-capabilities.
+Include outcome sections tied to specific supported capabilities when they
+answer distinct reader questions.
 
-- **H2**: 5 to 10 words in [[PAGE_COPY_LANGUAGE]].
-- **Description**: 2 to 3 sentences.
-- Each item has an H3 and a [[MODULE_4_PARAGRAPH_LENGTH]]-word paragraph.
-- Anchor each benefit in a supplied capability, cited evidence, or a clearly
-  marked `[proof needed]` placeholder. Never use generic “best,” “leading,”
-  “perfect,” or guaranteed-result claims.
+- Use descriptive headings and enough explanation to show the capability and
+  its effect on the reader's task.
+- Anchor each benefit in a supplied capability or cited evidence. Record
+  missing proof in the report and omit the unsupported claim. Never use generic
+  “best,” “leading,” “perfect,” or guaranteed-result claims.
 - No per-item CTAs.
 
 ## Module 5: Proof and decision support
 
 Present approved customer evidence, integrations, security/compliance detail,
 product demonstration, or implementation evidence. If proof is missing, use
-`[proof needed]` placeholders instead of inventing results.
+available documented behavior within its limits; omit unsupported claims and
+record the gap in the final report.
 
-- **H2**: 5 to 10 words in [[PAGE_COPY_LANGUAGE]].
-- **Section Description**: 2 to 3 sentences.
-- Generate [[PROOF_ITEM_COUNT]] proof or decision-support items when material
-  exists.
+- Use a heading that identifies what the evidence helps the reader judge.
+- Include proof or decision-support items when relevant material exists.
 - Describe only supported features or approved evidence. Group them around user
   outcomes rather than an unprioritized feature dump.
 - Optional: repeat the primary CTA once after the proof section.
 
 ## Module 6: FAQ and closing CTA
 
-Generate [[FAQ_COUNT]] useful questions a [[AUDIENCE]] reader would ask before
-[[PRIMARY_CTA_ACTION]].
+Include unresolved, material questions a [[AUDIENCE]] reader would ask before
+[[PRIMARY_CTA_ACTION]]. Omit a standalone FAQ when the planned sections already
+answer those questions.
 
-- **H2**: 5 to 10 words in [[PAGE_COPY_LANGUAGE]].
-- **Section Description**: 2 to 3 sentences.
-- Each FAQ has an 8 to 15-word H3 question and a
-  [[FAQ_ANSWER_LENGTH]]-word answer.
+- Use natural questions as headings and answer them directly. Add enough detail
+  to explain any condition or limitation that changes the decision.
 - Cover the supplied pricing/free-use policy, required inputs, core limitations,
   supported use cases, and any important output disclaimer.
 - Do not add FAQ schema or make an unsupported statement just to use a keyword.
@@ -305,6 +338,25 @@ useful answer appears without unnecessary delay, and the copy does not talk
 down to the audience, over-explain familiar concepts, or hide hard details
 behind “simple” advice.
 
+### 6. Helpful-content check and readiness
+
+Walk through the reader's task from the supplied starting situation to the
+promised result using only this draft and its linked artifacts. Check that the
+reader can complete the steps or make the decision, including the difficult
+choice, relevant alternative, and important limit. Repair missing instructions,
+unsupported conclusions, unusable examples, and promised artifacts that were
+not delivered.
+
+Identify the specific contribution that changes the reader's understanding or
+action, with its supporting source or inspectable analysis. Keep intent
+uncertainty visible in the report instead of treating a keyword or a plausible
+persona as research. Confirm that substantive answers, decision criteria,
+source mappings, and caveats survived any prose rewrite.
+
+Report remaining factual, intent, artifact, source, or destination blockers.
+Distinguish a completed draft from content ready to publish. A style score,
+keyword check, or confident self-assessment cannot establish helpfulness.
+
 ## Writing requirements
 
 - Write all user-facing page content in natural [[PAGE_COPY_LANGUAGE]].
@@ -340,13 +392,11 @@ Scale use to the supplied inventory:
   placements; do not repeat the same small set across every module. Keep the
   content complete by using natural vocabulary rather than manufactured exact
   phrases.
-- For a typical set of up to three core and up to twelve long-tail keywords,
-  select and distribute only the terms that have a distinct role.
 - For a larger or mixed-intent set, use only the coherent cluster for this page
   and omit or separate the rest.
 
-These ranges describe common input sizes, not quotas. It is acceptable for a
-relevant supplied keyword to appear zero times when including it would be
+The supplied inventory is not a quota. It is acceptable for a relevant supplied
+keyword to appear zero times when including it would be
 redundant, misleading, or unnatural.
 ```
 
@@ -373,8 +423,9 @@ Briefly confirm:
 
 ```markdown
 Count exact, case-insensitive matches in the title tag, meta description, and
-rendered page body in Modules 1 through 6, including the H1, headings, and CTA
-labels. Exclude the URL slug, alt text, `<content_plan>`, and Final SEO Report.
+final rendered page body, including the H1, headings, and CTA labels. Exclude
+the URL slug, alt text, any newly created or embedded saved plan, and Final SEO
+Report.
 If the user specified a different count scope, use that scope instead and
 state it in the report. A parent export must use the saved plan's scope.
 

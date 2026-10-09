@@ -18,11 +18,12 @@ skill_files = ROOT.children
   .sort
 
 errors << "No top-level skills found" if skill_files.empty?
+skill_directory_names = skill_files.map { |file| file.dirname.basename.to_s }
 
 expected_execution_contract = {
   "execution_mode" => "autonomous",
   "approval_required" => false,
-  "intermediate_turns" => false,
+  "intermediate_turns" => "source_questions_only",
   "humanization_required" => true,
   "grammar_check" => "if_available"
 }.freeze
@@ -126,6 +127,28 @@ if audience_file.file?
   end
 end
 
+# These are handoff fields, not an assessment of generated-content quality.
+distinctive_file = ROOT.join("distinctive-content/SKILL.md")
+if distinctive_file.file?
+  distinctive = distinctive_file.read
+  ["- Status: ready | interview-needed | provisional | blocked",
+   "- Baseline answer and added value:", "- Judgment reasoning, alternatives, and conditions",
+   "- Pending question:", "Evidence status", "- Open evidence gaps:"].each do |field|
+    errors << "distinctive-content/SKILL.md: missing evidence-packet field #{field.inspect}" unless distinctive.include?(field)
+  end
+else
+  errors << "distinctive-content/SKILL.md: missing shared source stage"
+end
+
+helpful_reference = ROOT.join("distinctive-content/references/helpful-content.md")
+errors << "distinctive-content: missing shared helpful-content standard" unless helpful_reference.file?
+%w[seo-audience-strategy seo-writing seo-landing-page seo-blog seo-guest-post seo-pr seo-landing-prompt humalizer].each do |skill_name|
+  file = ROOT.join(skill_name, "SKILL.md")
+  unless file.file? && file.read.include?("../distinctive-content/references/helpful-content.md")
+    errors << "#{skill_name}: missing shared helpful-content handoff"
+  end
+end
+
 if ROOT.join("seo-content-workflow").exist?
   errors << "seo-content-workflow: old combined workflow must be removed"
 end
@@ -154,8 +177,6 @@ if prompt_skill_file.file?
       contract = YAML.safe_load(contract_match[1])
       expected_contract = {
         "selection_mode" => "adaptive",
-        "typical_core_keyword_count" => 3,
-        "typical_long_tail_keyword_range" => "10-12",
         "fill_missing_keywords" => false,
         "require_every_keyword" => false
       }
@@ -366,6 +387,13 @@ Dir.glob(ROOT.join("**/*.md")).sort.each do |path|
       target = file.dirname.join(link).cleanpath
       unless target.file?
         errors << "#{file.relative_path_from(ROOT)}:#{line_number}: broken local link #{link}"
+        next
+      end
+
+      source_directory = file.relative_path_from(ROOT).each_filename.first
+      target_directory = target.relative_path_from(ROOT).each_filename.first
+      if skill_directory_names.include?(source_directory) && !skill_directory_names.include?(target_directory)
+        errors << "#{file.relative_path_from(ROOT)}:#{line_number}: local dependency must ship inside an installed skill: #{link}"
       end
     end
   end

@@ -15,6 +15,8 @@ description: >-
 Start with a real audience's situation and decision. Use queries to learn how
 people express that need and to refine the work. A keyword's search volume alone
 does not establish that the audience, page, or topic is valuable to the business.
+Apply the [helpful-content standard](../distinctive-content/references/helpful-content.md): the brief
+must define what the reader can complete and what evidence supports its promise.
 
 This skill produces either a site/content strategy or a focused reader brief
 for one page or guest article. It does not write copy or load `seo-writing`.
@@ -30,10 +32,13 @@ brief does not require a site audit.
 Use available business goals, product facts, target customers, existing pages,
 search data, and direct audience evidence. Useful sources include customer
 interviews, sales and support questions, onsite search, reviews, Search Console,
-analytics, and the live search results when available. Record where each
-important insight came from. Separate observed evidence, a reasoned hypothesis,
-and a fact still needing validation. Never invent customer quotes, volumes,
-search behavior, product capabilities, or performance results.
+analytics, and live search results when needed and available. Inspect relevant
+supplied URLs, artifacts, and search notes when accessible. Record the actual
+reference and context behind each important insight, including date, market,
+query, or sample scope when relevant. Separate supplied or checked evidence,
+a reasoned hypothesis, and an unknown; a supplied claim is not automatically
+verified. Never invent customer quotes, volumes, search behavior, product
+capabilities, or performance results.
 
 If only keywords are supplied, produce a provisional brief or strategy. Infer
 plausible situations, label them as hypotheses, and identify the smallest
@@ -43,8 +48,9 @@ when the requested decision cannot responsibly be made without it.
 ## Research method
 
 1. **Define the decision.** Name the content's business or editorial purpose,
-   the audience's task, and the next useful action. A topic needs a credible
-   connection to the reader's task and available expertise.
+   the audience's task, its expected answer or usable artifact, and the next
+   useful action. Describe how to tell that the task is completed. A topic needs
+   a credible connection to the reader's task and available expertise.
 2. **Segment by meaningful differences.** Distinguish people by trigger,
    constraints, desired outcome, objections, and decision criteria. Role or
    demographic labels alone are too thin. Use as many segments as the evidence
@@ -68,12 +74,14 @@ when the requested decision cannot responsibly be made without it.
    continue. A single-page brief does not require a site audit. For a guest
    article, use the [host-reader adaptation](references/guest-post.md) instead
    of owned-site page decisions.
-6. **Use search evidence.** Cluster actual or supplied queries by situation and
-   stage. Use query wording, SERP patterns, volume, impressions, and click data
-   as directional evidence, not as a mandate to write every high-volume topic.
-   Search Console is especially useful for checking how published pages are
-   found and where impressions do not lead to useful clicks. It may also reveal
-   overlooked questions; investigate them against audience evidence.
+6. **Validate the intent.** Cluster actual or supplied queries by situation and
+   stage. Record the expected answer, content type/format, competing
+   interpretations, supporting observations, and uncertainty. When research can
+   resolve a material ambiguity, follow the
+   [search-evidence branch](references/search-evidence.md). Treat query wording,
+   SERP patterns, volume, impressions, and clicks as directional evidence; check
+   search expectations against audience evidence before choosing the promise.
+   A result pattern is neither a template to copy nor proof of the reader's need.
 7. **Choose and measure.** Prioritize by audience relevance, business or
    editorial fit, content gap, credible expertise, and available proof. Select
    measures that match the content's job: qualified engagement, useful next
@@ -84,10 +92,11 @@ when the requested decision cannot responsibly be made without it.
 ## Deliverables
 
 For a **site or topic strategy**, return a concise audience-situation map with
-evidence labels, journey questions, existing coverage, recommended page actions
-(keep, improve, create, or defer), supporting query clusters, internal-link
-paths, priorities, and validation gaps. Explain why each proposed page deserves
-to exist. Do not prescribe a new URL for every persona or keyword.
+evidence labels, reader tasks and completion signals, journey questions, intent
+evidence and uncertainty, existing coverage, recommended page actions (keep,
+improve, create, or defer), supporting query clusters, internal-link paths,
+priorities, and validation gaps. Explain why each proposed page deserves to
+exist. Do not prescribe a new URL for every persona or keyword.
 
 For a **single-content brief**, include:
 
@@ -95,13 +104,17 @@ For a **single-content brief**, include:
   source or `hypothesis`/`unknown` labels.
 - Trigger, current knowledge, desired outcome, fears or constraints, decision
   criteria, and journey stage.
-- The question or decision this page will resolve, its distinct angle, and
-  what is outside its scope.
+- The question or decision this page will resolve, expected answer or artifact,
+  task-completion criterion, useful angle, and what is outside its scope.
+- Intent interpretation, content type/format, supporting reader/query/search
+  observations with their actual source and context, competing interpretations,
+  and remaining uncertainty. Mark uninspected or ambiguous intent provisional.
 - Existing page coverage and the reason to improve, create, or defer. Use
   `unknown` when no pages were supplied. For a guest article, record host
   audience and editorial fit instead, using the linked host-reader adaptation.
-- Content type, proposed section jobs in reader order, needed examples or
-  proof, brand-voice notes, and factual boundaries.
+- Proposed section jobs in reader order, needed examples or proof, the added
+  value beyond the baseline answer, brand-voice notes, and factual boundaries.
+  A proposed contribution is not yet evidence or an established novelty claim.
 - Supplied or observed query cluster, one natural focus phrase if useful, and
   terms to omit or cover elsewhere. Do not invent keyword quotas.
 - Useful internal links for owned pages, the next action or CTA when relevant,
@@ -109,10 +122,11 @@ For a **single-content brief**, include:
   sales, support, or the contributor).
 
 Keep the brief proportionate to the assignment. A narrow page may need only one
-well-supported situation. The brief is complete when the reader's task and
-next question, evidence-labeled situation, decision criteria, needed proof,
-scope, and validation gaps are explicit. When handing it to a writing workflow,
-preserve supplied facts and evidence labels. `seo-writing` defines the owned-site
+well-supported situation. The brief is complete when the reader's task,
+expected answer/artifact, completion criterion and next question, intent evidence
+and uncertainty, evidence-labeled situation, decision criteria, needed proof,
+scope, added value, and validation gaps are explicit. When handing it to a
+writing workflow, preserve supplied facts and evidence labels. `seo-writing` defines the owned-site
 content-plan schema; `seo-landing-page` and `seo-blog` own the saved
 `content-plan.md` and merges. `seo-guest-post` owns publisher fit, links,
 disclosures, pitch structure, copy, and submission notes in chat, and saves a
@@ -120,7 +134,9 @@ file only when requested.
 
 ## Validation
 
-Include a comparison method only when the user asks how to test this approach.
+Use the shared helpful-content checks to test the brief's promise and section
+jobs before handoff. Include a comparison experiment only when the user asks
+how to test this approach.
 Then compare a conventional keyword-led brief with a brief built from the same
 audience situation. Review whether the drafts answer actual questions,
 differentiate the page, and provide needed proof. After publication, compare

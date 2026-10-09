@@ -2,8 +2,10 @@
 
 Apply these checks when the product uses AI or the article makes a claim about
 AI. Record the source and scope of each material claim before it reaches the
-article. Put unresolved claims in submission notes; omit them from the article
-or use a visible placeholder only when the claim is indispensable.
+article. Put unresolved claims in submission notes and omit unsupported
+optional claims. If an indispensable claim is needed to deliver the central
+answer, block body drafting until it is supported or a narrower truthful
+promise can satisfy the reader.
 
 - **Capability and limits:** Identify what the AI feature actually does, the
   inputs and outputs, known failure cases, and where a person reviews the work.

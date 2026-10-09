@@ -21,6 +21,11 @@ The primary keyword is an input to the angle, not a mandatory headline or H1.
 When it does not fit the host's readers, propose a fitting angle and disclose
 the mismatch. If the host, its reader evidence, or relevant rules cannot be
 checked, mark affected keyword decisions provisional.
+Record whether an intent judgment comes from inspected search results or
+reader evidence, the user's supplied phrasing, or an inference. A phrase alone
+does not verify what searchers need. When search evidence is unavailable, keep
+the intent hypothesis visible and prioritize the supported host-reader task;
+do not imply that a search result pattern was checked.
 Do not expand the supplied list unless the user requests keyword research. Use
 natural frequency; apply an explicit user-supplied placement or count request
 only when it fits the host's rules and the prose, and flag a conflict instead

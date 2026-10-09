@@ -22,13 +22,23 @@ resuming, and [runtime-trace.md](references/runtime-trace.md) for progress.
 ```yaml
 execution_mode: autonomous
 approval_required: false
-intermediate_turns: false
+intermediate_turns: source_questions_only
 humanization_required: true
 grammar_check: if_available
 ```
 
 The user may request a checkpoint, a partial deliverable, or no humanization.
 Complete the selected route without an approval pause otherwise.
+Essential source questions may interrupt the
+run; preserve the pending question and interview count, then resume after the
+answer. Optional gaps can be omitted with a provisional packet. A plan-only
+request returns its plan and any pending question without requiring an
+interview to complete the requested planning work.
+
+For a targeted correction, preserve untouched passages. Later editing stages
+review the remaining text without rewriting it outside the authorized scope;
+record unrelated defects and publication blockers. Pass that scope to each
+editing skill, including Humalizer and grammar review.
 
 ## Dependencies
 
@@ -71,12 +81,16 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    evidence, primary and long-tail keywords, and any existing pages the user
    supplied. Ask it to resolve the reader's situation, journey question,
    decision criteria, proof needs, and useful next action, with evidence labels.
+   Preserve the query interpretation, inspected intent evidence and uncertainty,
+   expected answer form, and observable reader completion signal.
    Treat missing audience details as hypotheses or unknowns; assess site
    coverage only when pages are supplied or the user requests it. Then pass
    that transient brief and the complete original keyword inventory to
    `seo-writing` in `plan` mode. `seo-writing` runs `distinctive-content` in
-   `gate` mode using supplied experience, sources, examples, product facts, and
-   constraints. Normalize any supplied outline into the
+   `gate` mode once using available sources, research, examples, product facts,
+   and contributor knowledge, or reuses an adequate packet. Save the full packet
+   including pending question, count, evidence status, reasoning, and limits.
+   Normalize any supplied outline into the
    `seo-writing` plan schema, preserving evidence labels, constraints, and the
    user's keyword wording. Save the full plan—including its `Keyword map` and
    any user-set count—to `content-plan.md`; do not re-author map columns here. If a supplied primary
@@ -89,8 +103,10 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    situation and decision, section jobs, proof and validation needs, every
    supplied keyword's disposition, product limits, next action, and distinctive
    packet mapping. If the packet is `interview-needed`, save the one next
-   question and block before drafting; resume after the answer rather than
-   filling the article with generic advice.
+   question with the incomplete plan, Stage 2 pending, and `Next stage: 2`.
+   Resume by recording the answer in the existing packet. A `blocked` packet
+   stops new body drafting; a `provisional` packet permits only a supported
+   promise with optional claims omitted.
 3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
    new copy or `revise` mode with the existing article, metadata, plan, and
    requested change. Parent maps the returned draft and metadata to `content.md` and
@@ -99,8 +115,9 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    draft audit in `workflow-status.md`. Use selected long-tail terms where they
    advance their planned section jobs, with natural wording. This stage is
    complete when the article has exactly one H1, no editorial wrapper, its
-   metadata is separate, mapped distinctive material is used or its proof gap
-   is recorded, and any keyword departure from the plan is recorded.
+   metadata is separate, every major section uses mapped distinctive material,
+   a grounded answer, or a reason no unique source is needed, and any keyword
+   departure from the plan is recorded.
 4. **Humanize.** Apply `humalizer`, which fetches and applies the pinned Blader
    instructions once. Preserve the saved plan's facts, citations, technical
    meaning, links, selected keyword roles, distinctive packet details,
@@ -115,13 +132,18 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    are recorded. An unavailable Stop Slop source blocks the workflow.
 6. **Check grammar.** Apply `harper-grammar` when available, accept only
    high-confidence allowed fixes, and merge them into `content.md`. Record the
-   finding and correction counts. Mark this stage skipped when the CLI or its
+   finding and correction counts, actual dialect or spelling preservation mode,
+   and any limitation. Mark this stage skipped when the CLI or its
    structured output is unavailable, or when the user opts out. This stage is
    complete when the checked article is saved or the skip reason is recorded.
 7. **Verify and close.** Compare the final article and metadata with the plan.
    Confirm one H1, the reader situation and decision, intent, section jobs,
    distinctive packet coverage, needed proof, supported claims, citations,
-   links, and any CTA destination.
+   links, and any CTA destination. Run `distinctive-content` in `audit` mode
+   and apply the skeptical reader walkthrough from the
+   [helpful content standard](../distinctive-content/references/helpful-content.md) to the final
+   copy. Repair local defects; record any unresolved central answer, evidence,
+   or reasoning gap as a publication blocker. Prose polish cannot pass this gate.
    Reconcile the final article and metadata against
    every user-supplied term in the plan: check the planned focus keyword in the
    title tag and H1; check each selected supporting or long-tail term in its
@@ -168,6 +190,8 @@ SaaS hype. Do not stretch a weak topic to reach a word count.
 A full workflow completes when `content-plan.md`, `content.md`,
 `seo-metadata.md`, and `workflow-status.md` are saved, Stages 4-5 succeeded or
 were skipped by the user's explicit choice, and Stage 6 succeeded or has a
-recorded non-blocking skip. Workflow completion does not mean the article is
+recorded non-blocking skip. Stage 7 must also record the final helpful-content
+walkthrough, distinctive audit, keyword reconciliation, and publication blockers.
+Workflow completion does not mean the article is
 ready to publish: report publication readiness and every blocker separately.
 Report artifact paths and never promise rankings, traffic, or conversions.

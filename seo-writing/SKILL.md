@@ -13,7 +13,7 @@ description: >-
 
 Create helpful, evidence-led English content for a real SaaS audience. Optimize for discovery and decision-making, never for keyword density or a guessed ranking formula.
 
-Before `plan`, `draft-from-structure`, or `revise`, use a focused single-content
+Before `plan`, `draft-from-structure`, or a substantive `revise`, use a focused single-content
 brief from [`seo-audience-strategy`](../seo-audience-strategy/SKILL.md). The
 landing or blog parent supplies that brief as a transient stage output on the
 first plan, then folds it into the saved `content-plan.md`; return a missing
@@ -25,7 +25,24 @@ brief into the working plan before writing. Keep the supplied structure and keyw
 keyword is a clue to the reader's task, not evidence of their circumstances;
 label inferences as `hypothesis` or `unknown`.
 
-After the reader brief and before planning or body copy, run [`distinctive-content`](../distinctive-content/SKILL.md) in `gate` mode with the available facts, sources, experience, examples, data, decisions, and constraints. If it returns `interview-needed`, ask its one question and resume with `interview`; keep planning blocked until the answer is recorded or the user explicitly accepts a `provisional` packet. `audit` remains read-only. The packet is transient; the landing-page or blog parent folds it into the saved plan.
+For a local wording, typo, or supplied factual correction, use the supplied
+copy and any existing plan as the working contract. Keep its promise, supported
+substance, and untouched passages; record uncertain pre-existing claims as
+findings. A missing plan or unrelated source gap does not require a new reader
+brief or gate. Ask only when a fact essential to the requested correction is
+unavailable. This branch creates no new substantive claims.
+
+During planning, run [`distinctive-content`](../distinctive-content/SKILL.md)
+once with the reader brief and available material, or reuse a packet whose
+sources and scope still fit. Research can supply checked facts and reasoned
+synthesis; interview only for essential knowledge the agent cannot obtain.
+Return an incomplete plan with its packet and one pending question when the
+status is `interview-needed`; body drafting waits for the answer. A
+`provisional` packet permits a supported answer with optional gaps omitted and
+recorded. A `blocked` packet stops new substantive body drafting; the local-correction
+branch can still return supported edits with pre-existing blockers. Reuse the packet for
+`draft-from-structure` and local revisions; refresh affected material when the
+promise, sources, or claims change. The parent folds it into the saved plan.
 
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
@@ -49,6 +66,7 @@ unsupported claims and record unresolved evidence or destinations in the
 editorial audit.
 
 This skill covers:
+
 - SaaS landing pages: feature, use case, audience, industry, or product pages
 - SaaS educational blog posts: definitions, how-to guides, and problem-solving articles
 
@@ -62,59 +80,25 @@ Choose one mode from the request:
 | --- | --- | --- |
 | `plan` | Topic or keyword(s), audience/product context, and available evidence | One specific topic, audience-situation analysis, and a section-level content structure; no body copy |
 | `draft-from-structure` | A supplied or saved content structure plus factual/SEO constraints | Complete content that follows and, when necessary, safely corrects the structure |
-| `revise` | Existing body and metadata, saved plan, and a specific requested change | Targeted revised copy, existing or updated metadata, and material-change audit |
+| `revise` | Existing copy, metadata/plan when available, and a specific requested change | Targeted revised copy, existing or updated metadata, and material-change audit |
 | `audit` | Existing copy | Prioritized findings and targeted repairs; no rewrite unless requested |
 
 Do not merge `plan` and `draft-from-structure` into one invisible step inside
 the parent workflow. The saved plan is the handoff contract and recovery point.
 
-## Non-negotiable rules
+## Editorial contract
 
-1. Write for a person with a real task, not for a search engine.
-2. Do not invent product behavior, integrations, customer names, testimonials, statistics, awards, case-study results, expert quotes, or sources.
-3. Separate supplied facts from proposed copy. Mark placeholders such as `[customer result needed]` rather than fabricating proof.
-4. Use one primary search intent per page. A landing page needs one primary CTA;
-   an informational blog may have no sales CTA. Secondary CTAs, when present,
-   support the same next step.
-5. Use the primary keyword naturally where it clarifies the page. Never force a density target or repeat it in every heading.
-6. A product mention must solve the reader's current problem. Do not turn an informational article into an uninterrupted sales pitch.
-7. Do not claim that a change will rank, convert, or meet a Google requirement. Explain the user benefit and evidence instead.
-8. Scale keyword use to the supplied inventory and page length. Never add
-   keywords to fill a typical portfolio shape. Treat a supplied phrase as
-   optional unless the user explicitly requires it and the page can use it
-   truthfully and naturally.
-9. Meet the clarity bar on every draft. Prefer short sentences, everyday words,
-   one idea per paragraph, and concrete examples. Define a technical term on
-   first use only when the intended reader may not know it. Do not “sound
-   smart”; sound clear.
-10. Make the title tag and H1 clear on the first read. Include the focus keyword
-    naturally in both. Make the H1 state a specific, supportable user benefit or
-    outcome in addition to the focus keyword; do not use a vague slogan as the
-    H1.
-11. Infer and serve the reader's real task or decision, not just the literal
-    keyword. A page that restates definitions or offers interchangeable tips is
-    not useful enough to publish.
-12. Respect the reader's competence. Do not use a childish tone, fake beginner
-    scenarios, patronizing reassurance, or phrases such as “simply,”
-    “obviously,” or “even a beginner” to diminish the work. Explain a term only
-    when the intended audience is unlikely to know it.
-13. Earn every section. Each section must answer a distinct question, enable a
-    decision, teach an action, supply evidence, or clarify a meaningful limit.
-    Delete sections that exist only for word count, keyword placement, or a
-    generic template.
-14. Ground information gain in the `distinctive-content` packet: use first-hand practice, a decision rule, original proof, a concrete example, or a meaningful limit where the reader needs it. Keep source, attribution, and caveat attached through every rewrite.
-15. Vary nearby wording and sentence shape. Do not repeat the same ordinary
-    word, phrase, sentence opening, or full idea in close succession. Remove
-    the repetition first; when the meaning is still needed, use a natural
-    equivalent, pronoun, or different sentence structure. Keep exact product
-    names, required keywords, technical terms, and factual labels when a
-    substitute would reduce accuracy.
-16. Limit stacked parallel phrasing. In normal prose, do not pack three or more
-    similar verbs, nouns, adjectives, or clauses into a sentence merely to
-    sound comprehensive. Keep the two actions that matter most, split distinct
-    actions into sentences, or use bullets when the full set helps the reader
-    complete a procedure or compare options. Do not repeat the same grammatical
-    frame across several consecutive sentences or paragraphs.
+Apply the [helpful content standard](../distinctive-content/references/helpful-content.md) during
+planning and final review. Give the reader one supportable promise, a complete
+answer, and a contribution whose evidence and reasoning explain its value.
+Keep facts, attribution, and limits attached through every rewrite. Invented
+product behavior, experience, quotes, results, and sources are forbidden.
+
+A landing page needs one primary CTA path; a blog may have no sales CTA.
+Product mentions must help the current task. Keep keyword requirements finite,
+truthful, and natural. Put missing proof and editorial placeholders in the
+plan or audit, outside publishable copy. Use plain language for capable adults;
+length and readability scores are review prompts, never quality gates.
 
 ## Intake
 
@@ -127,9 +111,10 @@ Identify or request only the missing information needed to produce accurate copy
 | Product facts when the product is mentioned: capabilities, limits, differentiators, and sources | Prevents invented claims; an informational article may omit a product connection |
 | Next action; for a landing page, the primary CTA and post-click action | Keeps the conversion path coherent without forcing a sales CTA into an informational article |
 | Brand voice and approved claims | Keeps copy on-brand and supportable |
-| Distinctive source material or permission to interview | Gives the reader a useful contribution instead of interchangeable advice |
+| Available source material, research access, or essential contributor knowledge | Grounds a useful contribution and determines whether an interview is needed |
 
 Also request, when available:
+
 - Any user-required, prohibited, placement-targeted, or count-targeted keyword
   and its exact instruction
 - The existing draft or URL and its target metric
@@ -155,19 +140,29 @@ omissions in copy and mark any indispensable missing fact as a blocker.
    knowledge, decision criteria, and next question with their evidence labels.
    Validate the proposed reader task against supplied product facts and query
    intent; keep unresolved details as `hypothesis` or `unknown`.
-3. Classify the query: informational, commercial investigation, or transactional.
-4. Define the expected result: a direct answer, comparison criteria, procedure,
-   template, diagnosis, recommendation, or buying decision support.
+3. Carry the brief's query interpretation, intent evidence, competing
+   interpretations, and uncertainty into the plan. Classify the query without
+   treating that label as proof of the reader's task.
+4. Define the expected answer form and observable reader completion signal:
+   a direct answer, criteria, procedure, template, explanation, or buying support.
 5. List the constraints, failure modes, trade-offs, and follow-up questions a
    useful answer must cover. Separate adjacent intents that need another page.
-6. When live search or SERP data is available, inspect the dominant result type,
-   recurring reader questions, and gaps. Treat it as evidence about expectations,
-   not a template to copy.
+6. Reuse the brief's inspected search evidence. When material intent ambiguity
+   remains and research is available, inspect relevant supplied or live results;
+   record the sources, market/date where relevant, and what they establish.
+   Without access, keep the interpretation provisional. A result pattern is
+   evidence about expectations, not a template to copy.
 7. Read supplied product materials and list capabilities, limitations, and
    proof with their source and approval status. Distinguish a claim confirmed
    by current documentation from a user-supplied claim that still needs review.
-8. Identify the information gain: first-hand experience, original data, a useful framework, a concrete workflow, an expert explanation, a downloadable artifact, or product evidence that competing pages do not provide.
-9. Run `distinctive-content` in `gate` mode. Record its contribution, source owner, limits, interview count, and candidate section mapping; complete the mapping in the plan. If `interview-needed`, return the plan with its one next question and no body copy; do not fill the gap with generic advice.
+8. Identify the baseline answer and added value: an explained judgment,
+   worked example, usable method, checked synthesis, or first-hand evidence.
+   Claim competitive novelty only when the relevant pages were inspected.
+9. Run or reuse the `distinctive-content` gate as defined above. Preserve its
+   full packet, pending question, interview count, and evidence limits; complete
+   the section mapping in the plan. Return the plan without body copy for
+   `interview-needed` or `blocked` on new substantive work, naming the gap and
+   next action. Local corrections follow the exception above.
 10. Map the reader's next decision. For a product-led page, confirm that the
    product has credible relevance to the task; for an informational blog with
    no supported product connection, teach the task without inventing one.
@@ -186,6 +181,8 @@ Return this plan:
 
 ## Reader intent
 - Search intent:
+- Query interpretation, inspected intent evidence, alternatives, and uncertainty:
+- Expected answer form and reader completion signal:
 - Reader situation and current knowledge (evidence or hypothesis):
 - Trigger, job, or decision:
 - Journey stage and next question:
@@ -199,9 +196,13 @@ Return this plan:
 - Reader promise:
 - Why this angle is useful:
 - Information gain and evidence available:
-- Distinctive contribution, reader change, packet status, source owner, limits, and section mapping:
-- Interview questions asked / answered / remaining (0-10):
 - Audience evidence sources and validation gaps:
+
+## Distinctive contribution
+- Full distinctive-content packet (retain its item table, evidence status,
+  source references, baseline answer, added value, reasoning, alternatives,
+  limits, pending question, and interview count):
+- Section mapping (item IDs, grounded answer, or reason no unique source is needed):
 
 ## Keyword map
 - Primary keyword (verbatim; `none supplied` if the user gave only a topic):
@@ -219,6 +220,7 @@ Return this plan:
 - Reader question/job:
 - Key takeaway:
 - Evidence, example, or artifact:
+- Reader completion check (what the answer must enable):
 - Product connection, if genuinely useful:
 
 ## Writing constraints
@@ -236,7 +238,8 @@ Return this plan:
 ```
 
 Every saved plan must carry the strategy brief's evidence labels, reader task,
-journey question, decision criteria, and validation gaps as well as the keyword
+journey question, intent evidence and uncertainty, reader completion signal,
+decision criteria, and validation gaps as well as the keyword
 map, distinctive evidence packet, and writing constraints. Use
 `unknown` for an unresolved required value and `none` for an intentionally
 absent optional value. Together they are the persisted drafting contract,
@@ -316,7 +319,9 @@ outline.
 - Deliver the information promised in each section. Include the planned
   decision criteria, steps, examples, evidence, limits, or artifact rather than
   replacing them with motivational prose.
-- Use the mapped distinctive packet item or a clearly recorded proof gap in each major section. Keep first-person wording, results, examples, and expert judgments tied to their source and scope.
+- Give each major section a mapped packet item, grounded concrete answer, or
+  reason no unique source is needed. Preserve source, scope, reasoning, and
+  limits. Proof gaps remain in the audit; they do not satisfy a promised answer.
 - Assume the knowledge level recorded in the plan. Do not define familiar terms,
   narrate obvious steps, or add empty setup such as “In today's fast-paced
   world.”
@@ -330,7 +335,7 @@ outline.
   compare, discuss, and improve” with one concrete outcome, or split the
   distinct actions into steps. Retain a longer series only when every item is
   necessary and the list format makes it easier to scan.
-- Write to the clarity bar below. Retain domain terms the audience expects; define only terms the intended reader may not know.
+- Use the plain-language guidance in [reference.md](reference.md). Retain domain terms the audience expects; define only terms the intended reader may not know.
 - Link only to pages that genuinely help the reader continue: product, pricing, demo, documentation, case study, or a related guide.
 - Include title tag, meta description, H1, URL suggestion, body copy, and
   useful internal links. Include a CTA label only when the saved plan calls for
@@ -339,7 +344,8 @@ outline.
 ### 4. Revise existing copy
 
 In `revise` mode, read the existing body and metadata (saved files or supplied
-text), the normalized plan, and the requested change. Make the smallest edit that fulfills the
+text), the available plan or local working contract, and the requested change.
+Make the smallest edit that fulfills the
 request while retaining unaffected sections, approved facts, citations,
 links, and the reader promise. Return the full revised body so the parent can
 save it once. Return the existing metadata unchanged unless the edit changes
@@ -348,112 +354,33 @@ audit. A body revision does not authorize replacing the plan with a new
 angle. If the request changes the page's intent, factual constraints, or CTA,
 return to `plan` mode first and reset dependent stages.
 
-## Clarity bar (middle-school readable)
-
-Goal: keep general prose near a grade 6–8 reading level. The reader may be an
-end user, a buyer, or a practitioner. Let the recorded audience determine
-which product and domain terms need an explanation; do not talk down, invent
-school metaphors, or strip needed terminology.
-
-| Rule | Do | Avoid |
-| --- | --- | --- |
-| Sentence length | Aim for ~15–20 words on average; review sentences over ~25 and split them when that improves clarity | Nested clauses, three ideas in one sentence |
-| Words | Short everyday verbs: use, help, show, fix, start | utilize, leverage, facilitate, empower, streamline |
-| Paragraphs | 1 idea; usually 2–4 short sentences | Walls of text; restating the same claim |
-| Structure | Answer first (inverted pyramid); scannable H2/H3; lists for steps | Clever headings that hide the point; long intros |
-| Terms | Keep familiar domain terms; define unfamiliar terms once in plain English | Jargon stacks; acronyms the intended reader may not know |
-| Rhythm | Vary sentence openings and shapes; use a natural equivalent only when it preserves meaning | Repeated sentence frames; nearby wording echoes; ornamental synonym swaps |
-| Series | Keep one or two key actions in prose; move necessary longer sets into bullets or steps | Dense verb, noun, adjective, or clause chains; repeated three-part slogans |
-| Concrete | Name the actor, action, and result | “Our solution enables seamless optimization…” |
-| Tone | Teach like a clear textbook or a good explainer blog | Marketese, hype, and fake “thought leadership” |
-
-**Self-check before audit:** read the opening and one mid-page section out loud. If you must re-parse a sentence, rewrite it. Prefer “what it does → how → what happens next” over abstract claims.
-
-Also run a reader-respect check: if a capable reader would say “I already know
-this,” “get to the point,” or “what should I do with this?”, cut the setup or
-replace it with a concrete answer, decision rule, example, or next action.
-
-For word swaps, model pages, and textbook-style patterns, see the “Plain language and middle-school clarity” section in [reference.md](reference.md). For before/after rewrites, see Example 3 in [examples.md](examples.md).
-
-## Metadata and on-page guidance
-
-- Make the title tag immediately understandable and include the focus keyword
-  naturally. State the page topic, not a clever or teaser-style slogan.
-- Make the H1 immediately understandable and include both the focus keyword and
-  a specific, supportable user benefit or outcome. The benefit must tell the
-  reader what they can achieve, improve, avoid, or understand; avoid generic
-  claims such as “work smarter” or “unlock more.”
-- Keep the title tag and H1 aligned to the same page promise, but do not require
-  identical wording. If the supplied focus keyword cannot fit either element
-  clearly and naturally, flag the keyword or intent mismatch instead of hiding
-  the keyword or writing awkward copy.
-- Make the meta description precise, useful, and non-sensational. Avoid unverified superlatives and dates unless they matter and can be maintained.
-- Use a short, readable URL slug that describes the page.
-- Use one H1 and a logical H2/H3 hierarchy.
-- Add image alt-text suggestions only for meaningful images; describe the image, not a list of keywords.
-- Suggest structured data only when it accurately represents visible page content. Do not add FAQ markup solely to chase a search feature.
-
 ## Audit loop
 
-After the first draft, run both reviews and silently revise.
+After drafting or revision, apply [editorial-review.md](references/editorial-review.md)
+for metadata, evidence, keyword reconciliation, clarity, and reader respect.
+Run `distinctive-content` in `audit` mode against the draft and after any
+substantial rewrite. Apply the shared helpful-content walkthrough to the final
+copy: attempt the promised task and check the reasoning, examples, and limits.
+Repair local defects and rerun affected checks; return exact unresolved gaps
+as publication blockers. In `audit` mode, return findings without rewriting.
+A proof-gap note cannot make an unanswered central promise pass.
 
-### A. Intent, evidence, and conversion audit
+### Humanization ownership
 
-- Would the target reader find the answer or buying information promised by the query?
-- Does the opening answer or orient the reader without delaying the useful part?
-- Does every major section fulfill its recorded reader question/job with a
-  concrete takeaway?
-- Can the reader make a better decision or take a real next step after reading?
-- Does the article avoid teaching obvious basics to an audience that already knows them, while still defining genuinely unfamiliar terms?
-- Does the page offer a distinct insight, workflow, evidence source, or product demonstration?
-- Does every major section use a mapped packet item, concrete example, decision rule, or explicit evidence/limit gap?
-- Are experience, results, quotes, and authority attributed to the recorded source without invented first-person detail?
-- Is every factual claim supplied, cited, or marked as needing validation? Is the product connection natural, proportionate, and useful?
-- Does each CTA lead to the stated next action?
-- Are internal links specific and useful rather than decorative?
-
-### B. Clarity and search-readiness audit
-
-- Run the clarity bar: average sentence length, one idea per paragraph, everyday words, unfamiliar jargon defined once, answer-first openings.
-- Check general prose against the grade 6–8 target while preserving terms familiar to the audience. If a sentence makes the intended reader re-read, shorten it or make it more concrete.
-- Remove keyword repetition, generic introductions, filler, and vague claims.
-- Scan adjacent sentences and paragraphs for repeated ordinary words, phrases,
-  openings, and sentence frames. Delete redundant instances or rewrite them
-  naturally; do not replace precise product or technical terms with inaccurate
-  synonyms.
-- Remove exact phrases that compete for the same sentence, paragraph, or
-  heading without adding distinct meaning.
-- Confirm that a sparse keyword inventory was not expanded and that omitted
-  supporting terms were recorded rather than forced into the draft. Reconcile
-  each supplied term against the map: actual exact use or natural variant,
-  placement, omissions, and any change from the plan. Check user-set targets
-  against the plan's count scope; report an unmet or unverifiable target honestly.
-- Confirm every user-prohibited phrase is absent, including phrases listed only
-  as an avoid instruction. Check user-required placement against the final copy.
-- Replace unsupported “leading,” “trusted,” “faster,” or “better” claims with evidence or precise language.
-- Remove AI-style list inflation, fake urgency, empty transitions, and repetitive CTA wording.
-- Reduce stacked parallel constructions. When prose strings together three or
-  more similar actions, qualities, or clauses, keep only the material items,
-  split the thought, or format a genuinely useful set as a list. Check that
-  consecutive sentences do not reuse the same grammatical template.
-- Remove patronizing language, fake beginner examples, redundant definitions,
-  rhetorical padding, and “simple” advice that omits the hard or useful part.
-- Confirm the title is clear and contains the focus keyword.
-- Confirm the H1 is clear and contains the focus keyword plus a specific,
-  supportable user benefit or outcome.
-- Check that headings, title, H1, meta description, and opening match one clear promise.
-- Check that the draft does not imitate or copy a competitor's wording or structure beyond common page conventions.
-
-### C. Humanization pass
-
-Apply the full [Humalizer](../humalizer/SKILL.md) review only when this skill is the final writing stage (standalone request, or no parent workflow will run a later humanization step).
+Apply the full [Humalizer](../humalizer/SKILL.md) review when this skill is the
+final substantive writing stage. For a local correction, check the affected
+passage and return the full copy with only authorized edits; a typo-only
+request does not require a remote whole-page rewrite.
 
 Skip the full Humalizer pass inside this skill when `seo-landing-page` or
 `seo-blog` is the parent. Those workflows own the Humalizer + Blader, Stop Slop,
 and Harper stages. Keep audit A/B here: remove obvious filler and repetitive
 CTAs, but do not run a second scored rewrite.
 
-When Humalizer does run here, preserve the SEO contract: verified claims, intent, required keywords, metadata, citations, links, and primary CTA. Do not invent personality, customer proof, or first-hand experience to make the page feel less AI-generated.
+When Humalizer runs here, preserve the reader promise, method, reasoning,
+verified claims, citations, keywords, metadata, links, limits, and CTA. Recheck
+its final copy with the helpful-content walkthrough and distinctive audit.
+Personality edits cannot invent experience or customer proof.
 
 ## Deliverable
 
@@ -477,6 +404,9 @@ review notes inside publishable copy.
 ## Editorial audit
 - Intent and product fit:
 - Supplied keyword check (each term: exact use/variant/omission, placement, and reason for any change; user-set counts only):
+- Helpful-content walkthrough (pass / repair needed / blocked; completion signal, exact gaps, and repairs):
+- Intent evidence and remaining uncertainty:
+- Added value, judgment reasoning, alternatives, and limits:
 - Usefulness and reader-respect check:
 - Structure deviations, if any:
 - Sources checked and evidence gaps:

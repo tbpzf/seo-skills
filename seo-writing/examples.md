@@ -202,26 +202,36 @@ placeholders.
 Mode: plan
 Keyword: customer onboarding checklist
 Audience: customer success leaders at B2B SaaS companies
+Approved source note (fictional fixture, not a customer case): our workflow
+records the first-value outcome and owner before kickoff, checks a sample data
+import before training, and hands off after the customer completes the target
+task independently. Complex data migrations need a separate validation step.
+No measured outcomes or benchmarks are supplied.
 ```
 
 ### Good plan excerpt
 
 ```markdown
 ## Reader intent
-- Search intent: Informational; the reader wants a checklist they can use, not
-  a history of customer onboarding.
+- Search intent: Informational; a usable checklist is the proposed answer.
+- Query interpretation, inspected intent evidence, alternatives, and uncertainty:
+  The supplied query and workflow suggest an operational checklist. No live
+  results or customer interviews were checked; actual query expectations remain
+  a hypothesis rather than a verified search pattern.
+- Expected answer form and reader completion signal: A copyable phase table;
+  the reader can assign an owner, input, and completion signal to each task.
 - Reader situation and current knowledge (evidence or hypothesis): Hypothesis.
   A customer success leader who already knows what onboarding is and needs a
   repeatable operating standard. Why, when, where, companions, and feelings are
-  unknown because the request supplied only a role.
+  unknown because no audience research was supplied.
 - Trigger, job, or decision: Decide what must happen before, during, and after
   kickoff, then assign ownership and define completion signals.
 - Journey stage and next question: Exploration. Next question: which tasks
   belong to which phase, and how the team knows a phase is done.
 - Expected outcome: A copyable checklist plus criteria for adapting it by
   customer complexity.
-- Constraints and follow-up questions: No approved internal example was
-  supplied. Follow-up: how the team adapts the checklist for complex accounts.
+- Constraints and follow-up questions: Use the approved workflow, without
+  inventing performance benchmarks. Complex migrations need extra validation.
 - Existing coverage and page decision (improve/create/defer/unknown): unknown.
   No existing pages were supplied, so continue this page.
 - Out of scope: Basic definitions of customer success; product comparisons.
@@ -232,10 +242,35 @@ Audience: customer success leaders at B2B SaaS companies
   how the team knows each phase is complete.
 - Why this angle is useful: The query asks for a checklist the team can run,
   not a definition of onboarding.
-- Information gain and evidence available: A phase table with owner, input, and
-  exit criterion. No customer proof was supplied.
+- Information gain and evidence available: Turn the approved workflow into a
+  phase table with owner, input, and exit criterion; no outcome proof is claimed.
 - Audience evidence sources and validation gaps: Audience role was supplied.
-  The specific trigger and current onboarding process are still hypotheses.
+  The specific trigger and customer context are still hypotheses.
+
+## Distinctive contribution
+## Distinctive content packet
+- Status: ready
+- Core contribution: A checklist built around observable completion signals.
+- Reader change: Assign tasks and decide when a phase can finish.
+- Baseline answer and added value: An ordinary task list names activities;
+  this example adds an owner and exit condition so the list can guide handoffs.
+- Judgment reasoning, alternatives, and conditions: The supplied workflow
+  advances after independent task completion; use exit conditions rather than
+  attendance as the handoff rule. An exploratory pilot may instead need a
+  narrower learning milestone. This is editorial analysis, not measured proof.
+- Source owner and attribution: User-supplied approved workflow fixture.
+- Interview: questions asked / answered / remaining: 0 / 0 / 10
+- Pending question: none
+
+| ID | Material detail or claim | Type | Source | Evidence status | Limit or approval | Planned use |
+| --- | --- | --- | --- | --- | --- | --- |
+| D1 | First-value outcome, import validation, independent task completion | practice | Approved input workflow note | supplied | Fictional fixture; no customer result | Phase table and handoff |
+| D2 | Complex migrations need extra validation | judgment | Approved input workflow note | supplied | Scope changes with data complexity | Adaptation section |
+
+- Open evidence gaps: optional measured outcomes; omit benchmarks.
+- Provisional-use note: none; search interpretation remains a labeled hypothesis.
+- Section mapping: D1 supports the table and handoff; D2 supports adaptation;
+  introductory guidance supplies necessary orientation without unique evidence.
 
 ## Keyword map
 - Primary keyword (verbatim): customer onboarding checklist
@@ -252,16 +287,24 @@ Audience: customer success leaders at B2B SaaS companies
 - Reader question/job: What must the customer achieve by the end of onboarding?
 - Key takeaway: Define an observable first-value outcome and deadline before
   choosing calls, emails, or training steps.
-- Evidence, example, or artifact: Filled example for a fictional B2B SaaS
-  account; `[approved internal example needed]` for publication.
+- Evidence, example, or artifact: An illustrative filled row derived from D1;
+  label it fictional rather than a customer case.
+- Reader completion check: Define an observable first-value outcome.
 
 ### Copyable onboarding checklist by phase
 - Reader question/job: What tasks, owners, inputs, and exit criteria belong in
   pre-kickoff, kickoff, implementation, enablement, and handoff?
 - Key takeaway: A checklist is operational only when every task has an owner
   and a completion signal.
-- Evidence, example, or artifact: Markdown checklist table.
+- Evidence, example, or artifact: Markdown checklist table using D1 and D2.
+- Reader completion check: A task can be assigned and checked without guessing
+  its required input or finish condition.
 ```
+
+If the request contains only the original keyword and role, return an incomplete
+plan with hypotheses and develop its source packet through accessible research.
+If essential private practice is still missing, preserve one source question and
+withhold body copy; a proposed phase table is not evidence by itself.
 
 Why it works: it does not waste a customer success leader's time defining
 onboarding. It identifies the artifact the query implies and gives each section
@@ -273,6 +316,7 @@ a distinct operational job.
 
 ```markdown
 Mode: draft-from-structure
+Saved contract: the complete plan and ready packet from Example 4
 Audience: experienced customer success leaders
 Topic promise: A copyable onboarding checklist with owners and exit criteria
 Sections:
@@ -290,7 +334,9 @@ Sections:
   and exit criterion columns.
 - Give concrete rules for changing the checklist in Section 3; do not say only
   “customize it for your business.”
-- Mark unsupported benchmarks or product claims as evidence gaps.
+- Omit unsupported benchmarks or product claims and record gaps in the audit.
+- Reuse the saved packet; after editing, attempt to fill and apply the checklist
+  as the reader. Missing inputs or exit conditions require repair.
 - Keep the supplied order unless intent, facts, or usefulness require a change;
   record any material change in the final audit.
 
@@ -319,6 +365,10 @@ Primary CTA: Try PhotoNest -> /signup
 - Decision criteria: Confirm that computer upload and albums fit the task;
   direct Google Drive import is unavailable (supplied product brief).
 - Next question: What happens after upload, and how can albums be organized?
+- Intent evidence: The supplied task and keyword suggest product evaluation;
+  no live results were checked. Alternative app-comparison intent is out of scope.
+- Expected answer and completion: A concrete upload-to-album demonstration;
+  the reader can assess computer upload, album organization, and the import limit.
 - Existing page coverage: unknown; no site pages were supplied.
 - Validation gap: Check real customer questions before treating the trigger as
   an observed pain point.

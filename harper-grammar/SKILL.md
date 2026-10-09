@@ -20,7 +20,8 @@ saved `content.md` and return the checked body and result for
 through standard input and return checked copy and findings for its submission
 notes; no saved guest artifact is required. Preserve the parent's factual and
 editorial contract. Keep review notes outside publishable copy.
-Report the actual preflight path, command status, JSON-parse result, finding
+Report the actual preflight path, dialect choice or spelling-preservation mode,
+command status, JSON-parse result, finding
 count, correction count, and any skip/failure reason to the parent so it can
 emit a runtime trace where required or document the guest-post check in
 submission notes. Do not include raw CLI output in that report.
@@ -63,19 +64,30 @@ JSON output. Make sure the directory that contains `harper-cli` is on `PATH`.
    executable or its JSON output is unavailable, report a skipped check.
 4. If the project already has `harper-dictionary.txt`, pass it with
    `--user-dict-path`. Do not create or edit that dictionary implicitly.
+5. Use the supplied English variety or the parent's brand/host style. Inspect
+   the installed `lint --help` for dialect support and accepted values before
+   choosing an argument; do not assume a code from the market name. If the
+   requested variety is unsupported, record that limitation and retain
+   dialect-sensitive findings. When no variety is specified, preserve the
+   draft's existing spelling rather than silently standardizing it to US
+   English. Record whether a supported dialect was selected or CLI defaults
+   were used with spelling preserved.
 
 ## Run the check
 
 Run one file at a time and request structured output:
 
 ```bash
-"$harper_cli" lint --format json --quiet --dialect us -- "$content_file"
+harper_dialect_args=()
+# When help confirms the requested value, set:
+# harper_dialect_args=(--dialect "$confirmed_dialect")
+"$harper_cli" lint --format json --quiet "${harper_dialect_args[@]}" -- "$content_file"
 ```
 
 When a project dictionary exists:
 
 ```bash
-"$harper_cli" lint --format json --quiet --dialect us \
+"$harper_cli" lint --format json --quiet "${harper_dialect_args[@]}" \
   --user-dict-path="$dictionary_file" -- "$content_file"
 ```
 
@@ -83,10 +95,12 @@ For an unsaved guest article, pass only the article Markdown through standard
 input with no input-file argument. Do not include submission notes:
 
 ```bash
-"$harper_cli" lint --format json --quiet --dialect us
+"$harper_cli" lint --format json --quiet "${harper_dialect_args[@]}"
 ```
 
 Pass an existing project dictionary with `--user-dict-path` when applicable.
+Use an argument array for the optional dialect flag; leave it empty when the
+preflight selected spelling preservation rather than an explicit CLI dialect.
 
 Use an argument-array-capable executor where available; otherwise quote every
 path as shown and do not interpolate it into shell source. Capture stdout as
@@ -105,7 +119,8 @@ unavailable.
    destinations, code fences, inline code, quoted legal text, verified claims,
    required keywords, metadata, headings, citations, or CTA labels.
 4. Keep ambiguous style suggestions and possible domain terms as findings for
-   review. Prefer an existing project dictionary for approved proper nouns.
+   review. Retain regional-spelling findings when the variety is unspecified or
+   unsupported. Prefer an existing project dictionary for approved proper nouns.
 5. Re-run Harper after edits. Do not chase a zero-lint result when the remaining
    findings are intentional, ambiguous, or protected.
 
@@ -116,6 +131,7 @@ For a standalone request, return:
 ```markdown
 ## Harper grammar check
 - Status: passed / findings reviewed / skipped
+- Dialect: requested variety and supported CLI choice, or existing spelling preserved
 - Corrections applied:
 - Findings retained and why:
 
@@ -123,6 +139,7 @@ For a standalone request, return:
 [text]
 ```
 
-For a parent workflow, return the status, number of corrections, and material
+For a parent workflow, return the status, actual dialect choice or limitation,
+number of corrections, and material
 unresolved findings. Owned-site parents save them in `workflow-status.md`;
 the guest-post parent records them in submission notes.

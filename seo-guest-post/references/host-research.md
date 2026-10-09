@@ -32,7 +32,8 @@ several recent articles close to the user's keywords when available. Use author
 or contributor pages and reader comments or questions when available. Record
 who the host explicitly serves, what tasks and depth its articles address, how
 similar topics are framed, and what a useful new contribution would add. Cite
-the pages behind each observation. Label a reader situation inferred from coverage as a
+the pages behind each observation and label inspected support `checked`.
+Keep user-supplied evidence `supplied` until inspected. Label a reader situation inferred from coverage as a
 `hypothesis`; mark absent or inaccessible audience evidence `unknown`.
 
 Pass the sourced rules, audience observations, hypotheses, gaps, and supplied

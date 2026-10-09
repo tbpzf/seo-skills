@@ -1,4 +1,4 @@
 interface:
   display_name: "SaaS Guest Post"
   short_description: "Write SaaS guest articles for publisher review"
-  default_prompt: "Use $seo-guest-post to write a guest article for this publication about our SaaS product."
+  default_prompt: "Use $seo-guest-post to write a useful guest article for this publication's readers from these verified sources and contributor expertise."

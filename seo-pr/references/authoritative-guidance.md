@@ -5,6 +5,13 @@ guidance from major press-release distribution services, accessed August 4,
 2026. Treat platform limits as distribution-specific requirements and the
 shared principles as the default house standard.
 
+For reader usefulness, apply the shared
+[helpful-content criteria](../../distinctive-content/references/helpful-content.md) to the
+journalist's reporting task. The release must supply a verifiable new event,
+applicable scope, significance, and material limits; search visibility does
+not establish newsworthiness. A sourced explanation can add useful analysis
+when its facts, reasoning, and limits are explicit.
+
 ## Source index
 
 - [PR Newswire: How to Write an AP Style Press Release](https://www.prnewswire.com/resources/articles/ap-style-press-release/)
@@ -67,6 +74,9 @@ For SaaS announcements, translate the shared rules into concrete verification:
   claims as evidence-sensitive.
 - Prefer a product leader's explanation of the customer problem or design
   decision over a generic executive celebration quote.
+- Keep company assertions distinct from checked evidence. Quote approval
+  establishes permission and attribution, while factual outcome or comparison
+  claims still require supporting evidence and methodology.
 - Link to the product page, documentation, methodology, demo, or press kit that
   helps a reporter validate and explain the news.
 - Recommend a changelog or blog post instead when the update lacks significance

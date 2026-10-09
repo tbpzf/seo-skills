@@ -1,4 +1,4 @@
 interface:
   display_name: "Distinctive Content"
-  short_description: "Elicit original, useful source material"
-  default_prompt: "Use $distinctive-content to find and develop the real experience, evidence, examples, and decisions that make this content useful and distinctive."
+  short_description: "Develop supported contributions and useful judgment"
+  default_prompt: "Use $distinctive-content to develop a supported contribution from supplied knowledge, inspected research, examples, and reasoned judgment. Interview me only for essential knowledge you cannot obtain, and audit whether the reader can complete the promised task."

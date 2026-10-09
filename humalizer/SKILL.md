@@ -41,12 +41,25 @@ and material changes to that parent without saving a file.
 
 ## Guardrails
 
-1. Preserve verified facts, legal language, technical meaning, citations, keywords, headings, links, and any primary CTA unless the user authorizes a change.
+1. Preserve verified facts, legal language, technical meaning, citations,
+   required keywords, links, and the authorized next action. Keep exact wording
+   for mandated headings, quotes, and other protected text. Other headings or
+   section order may change when the authorized edit improves comprehension;
+   report material changes to the parent.
 2. Do not fabricate experience, opinions, customers, results, sources, product behavior, or personal anecdotes to make text sound human.
 3. Keep the reader intent and relevant next action intact. A landing page needs clear benefits and a CTA; an educational article or guest post needs a useful answer before any product mention.
 4. Match the supplied brand voice. If no sample exists, use plain, precise, restrained English rather than a simulated personal voice.
 5. Do not apply a mechanical ban on adverbs, passive voice, em dashes, bullets, or three-item lists. Revise them only when their use feels repetitive, vague, or less clear.
 6. Prefer a factual qualifier to false certainty. Keep necessary caveats, safety warnings, and technical constraints.
+7. Respect the caller's edit scope. For a local correction, review untouched
+   passages without rewriting them; report broader defects as findings. A
+   scored review can complete with unchanged copy. Review and repair within
+   scope even when unrelated prose scores remain below the usual target.
+8. Preserve the reader promise and the useful substance that fulfills it:
+   methods, decision criteria, difficult steps, examples, alternatives, and
+   evidence limits. A shorter or smoother draft must still let the reader do
+   the job. Apply [helpful-content.md](../distinctive-content/references/helpful-content.md) to
+   meaning-affecting edits.
 
 ## Intake
 
@@ -69,14 +82,21 @@ Before editing, identify:
 ```markdown
 Intent:
 Reader and job to be done:
+Promised answer, method, decision criteria, and essential details:
 Primary keyword and required terms:
 Verified product claims and citations:
+Distinctive source-to-claim mapping, attribution, and limits:
 Required links:
 Primary CTA or permitted next action:
 Voice reference:
 ```
 
 Keep the keyword where it clarifies meaning. Do not add repetitions to meet a density target, and do not remove it if that would make the title, H1, or answer less relevant.
+
+Reuse an adequate saved evidence packet for a supported prose rewrite. When an
+edit introduces a new factual claim or changes the promise, flag the affected
+source gap to the parent instead of beginning a new interview or improvising a
+stronger contribution. Keep evidence requests in the audit, outside copy.
 
 ### 2. Calibrate voice when evidence exists
 
@@ -143,13 +163,22 @@ Audit the revised copy on five dimensions, scoring each 1-10:
 
 | Dimension | Question |
 | --- | --- |
-| Specificity | Does each important claim name a real actor, behavior, result, or source? |
+| Specificity | Does each important claim name a real actor, behavior, result, or source, within the source's actual limits? |
 | Voice | Does the language fit the supplied brand and audience without invented personality? |
 | Clarity | Can the reader understand the answer, workflow, and terms on the first pass? |
-| Search and editorial integrity | Are intent, useful keywords, applicable metadata or host rules, headings, links, and citations preserved naturally? |
+| Search and editorial integrity | Are intent, useful keywords, applicable metadata or host rules, required wording, links, citations, and source mappings preserved naturally? |
 | Next-action integrity | Does the next step fit the reader and publication, with product value or a CTA only where appropriate? |
 
-If a score is below 7, revise the responsible section. Do not force a high score by cutting necessary qualification, evidence, or technical detail.
+For an unrestricted prose rewrite, if a score is below 7, revise the responsible
+section. In a scoped correction, revise only authorized passages and report
+unrelated low-scoring sections as findings. Do not force a high score by cutting necessary qualification, evidence, or technical detail.
+
+These scores guide prose repairs; they do not prove helpfulness or publication
+readiness. Compare meaning-affecting changes with the protected contract, then
+walk through the reader's task using the revised answer. Restore an omitted
+criterion, difficult step, example, alternative, or caveat when its loss prevents
+the promised decision or action. Return unresolved factual or substantive gaps
+as findings rather than polishing around them.
 
 ## Deliverable
 

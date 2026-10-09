@@ -19,6 +19,12 @@ bans mechanically:
 4. Focused, one-level-deep reference material
 5. A score that triggers revision rather than pretending to detect authorship
 
+A prose score is a diagnostic aid, not evidence that the content is useful.
+After a meaning-affecting rewrite, apply the
+[helpful-content checks](../distinctive-content/references/helpful-content.md): verify the promised
+task still works and the source-supported method, criteria, examples, and limits
+remain intact.
+
 For SaaS SEO, a blanket “no passive voice,” “no adverbs,” “no em dashes,” or “no lists of three” rule is counterproductive. It can break product terminology, change legal or technical precision, and make prose sound mechanically altered. Judge those choices in context.
 
 ## SEO-specific before and after

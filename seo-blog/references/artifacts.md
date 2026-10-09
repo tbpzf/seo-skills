@@ -26,12 +26,15 @@ plan's `Keyword map` is the single schema for type, use/omit, omission reason,
 placement, and any user-set count; keep optional inferred phrases separate
 from user-supplied terms. Fold the Stage 2 `seo-audience-strategy` brief into
 Reader intent, Topic, Content structure, and Writing constraints, preserving
-evidence labels. The brief is transient; this plan is the sole persisted
+evidence labels, intent observations and uncertainty, expected answer form, and
+reader completion signal. The brief is transient; this plan is the sole persisted
 drafting contract. For an informational article without a promotional CTA, set
 `Primary CTA and destination: none` and record the useful next action
 separately. Include a `Distinctive contribution` block with the
-`distinctive-content` packet status, source owner, limits, interview count, and
-section mapping.
+full `distinctive-content` packet, including its item table and evidence status,
+precise sources, limits, baseline answer and added value, judgment reasoning and
+alternatives, pending question, interview count, gap owners/actions, and section
+mapping.
 
 ## `content.md`
 
@@ -77,7 +80,7 @@ than filled with an invented fact or destination.
   - content.md: present | absent
   - seo-metadata.md: present | absent
 - Intake: source references, evidence labels, and missing required inputs
-- Distinctive content: packet status, contribution, source owner, interview count, mapped sections, and open gaps
+- Distinctive content: packet status, pending question/count, mapped sections, and gap owners/actions (full packet in content-plan.md)
 - Final audit:
   - Reader situation, journey questions, usefulness, and reader respect:
   - Plan or structure deviations:
@@ -87,19 +90,27 @@ than filled with an invented fact or destination.
   - Links and next action:
   - Humanization and Stop Slop changes:
   - Grammar findings and corrections:
-  - Distinctive contribution and evidence packet:
+  - Distinctive contribution, reasoning, alternatives, limits, and evidence packet:
+  - Intent evidence and remaining uncertainty:
+  - Helpful-content walkthrough: pass | repair needed | blocked; reader completion, exact gaps, and repairs
 - Publication blockers: none | [short list]
-- Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, exit, parse, findings, and corrections
+- Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, dialect, exit, parse, findings, and corrections
 - Reader-strategy dependency: focused brief completed | reused saved plan | not requested (audit-only); evidence source or reason for refresh
 - Notes:
 ```
 
-Update the stage state after each performed stage. A completed plan-only route
+Set publication readiness to `blocked` for unresolved central answer, evidence,
+or reasoning gaps from the helpful-content walkthrough, as well as material
+claim or required-link gaps. Update the stage state after each performed stage.
+A completed plan-only route
 marks later stages `not requested` and sets
 publication readiness to `not assessed`; the full completion gate applies only
 to a full-article route. A failed required remote stage sets workflow state to
 `blocked`, names the failed source, and leaves later stages pending. Harper
-unavailability is a non-blocking skip.
+unavailability is a non-blocking skip. An `interview-needed` packet or failed
+new-body draft gate leaves Stage 2 pending, workflow blocked, and `Next stage: 2`;
+keep the incomplete plan and one pending question. For plan-only work, the
+requested plan can complete with these gaps recorded and later stages not requested.
 
 On resume, read this file and the referenced artifacts. An older run may have
 `## SEO metadata`, `## Draft`, and `## Final audit` inside `content.md`, plus
@@ -111,8 +122,10 @@ marking gaps `unknown` instead of inventing facts. Recover user-supplied terms
 from the original brief where available; do not label inferred phrases as
 user-supplied. Apply the reader-strategy refresh rule in [routing.md](routing.md)
 and resume any saved `distinctive-content` interview one question at a time
-before drafting. Normalize any refreshed brief into this same plan, preserving
-user edits.
+before drafting, only asking the saved question when no answer has arrived.
+Fold new answers into the existing packet without resetting the count; reevaluate
+Stage 2. Reuse a valid packet for local supported revisions. Normalize any
+refreshed brief into this same plan, preserving user edits.
 Rebuild stage states from documented work; leave unproven
 rewrites and checks pending. If status is absent, infer the
 earliest incomplete stage from available files and recreate status. If the

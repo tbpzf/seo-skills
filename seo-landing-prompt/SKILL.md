@@ -5,7 +5,7 @@ description: >-
   and a product brief. Use when the user wants a prompt for a feature, use-case,
   industry, audience, or product landing page with an intent-led content plan,
   keyword policy, metadata, conversion constraints, and final verification.
-  Adapt keyword use to sparse, typical, or large sets. Inside seo-landing-page,
+  Adapt keyword use to sparse or mixed-intent sets. Inside seo-landing-page,
   export a reusable prompt only when the user requests one; its saved content
   plan remains the drafting contract. Do not use for blogs, finished copy, or
   copy audits.
@@ -18,9 +18,16 @@ Turn a keyword and optional business context into a complete, reusable prompt fo
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
 Carry the [`distinctive-content`](../distinctive-content/SKILL.md) contract into
-every exported prompt: use supplied experience, decisions, examples, data,
-and proof; ask one source question at a time, up to 10, when a material gap
-remains; and label the prompt provisional when the source gap is accepted.
+every generated prompt. Reuse a sufficient saved packet. For an independent
+template, allow supplied material, verified primary sources, and clearly
+identified analysis of those sources. Ask one source question at a time, up to
+10, when essential material belongs to the user. Proceed with a provisional
+packet when its core is supported and optional gaps can be safely omitted;
+record those gaps in the report. Research and synthesis cannot supply invented experience,
+quotes, results, or an attributed opinion.
+
+Embed the applicable checks from [helpful-content.md](../distinctive-content/references/helpful-content.md)
+in the generated prompt so it can be used without this skill repository.
 
 Do not load `seo-audience-strategy` while building the prompt. A keyword is a
 clue to a reader's task, not sufficient evidence of the reader's circumstances.
@@ -31,14 +38,14 @@ prompt must tell the writer to mark coverage as `unknown` and continue.
 When [seo-landing-page](../seo-landing-page/SKILL.md) explicitly requests a
 reusable prompt, build it from the normalized `content-plan.md` and return it
 to the parent. The parent may save `prompt.md` as an export; the plan, not the
-exported prompt, controls drafting. Carry the plan's `Keyword map` into the
-prompt: preserve the supplied primary and supporting or long-tail list
-verbatim, the chosen focus keyword, and each distinct term's use or omit
-decision, reader intent and section role or omission reason, planned placement,
-and user-set count. Do not run fresh keyword selection for an export. Return a
-concise status and unresolved variables to the parent. Do not claim a file was
-saved, because the parent owns every write. A standalone prompt-only request
-can use the keyword-only or brief mode below without an existing plan.
+exported prompt, controls drafting. Read [plan-export.md](references/plan-export.md)
+for this branch. Embed the complete saved plan, including reader evidence and
+uncertainty, the full distinctive packet and section mapping, keyword decisions,
+and pending interview state. Do not run fresh planning or keyword selection;
+reuse the decisions in the saved `Keyword map` without recomputing them. Return
+a concise status and unresolved variables to the parent. Do not claim a file was saved, because
+the parent owns every write. A standalone prompt-only request can use the
+keyword-only or brief mode below without an existing plan.
 
 ## Input modes
 
@@ -82,16 +89,13 @@ Collect when available:
 
 ```yaml
 selection_mode: adaptive
-typical_core_keyword_count: 3
-typical_long_tail_keyword_range: 10-12
 fill_missing_keywords: false
 require_every_keyword: false
 ```
 
-Treat the typical counts as a common brief shape, not required counts or hard
-caps. A smaller set must produce a narrower keyword plan. A larger or
-mixed-intent set must be clustered, with only the cluster relevant to the page
-used in visible copy.
+Use the supplied inventory without a default portfolio size. A smaller set
+produces a narrower keyword plan. Cluster a larger or mixed-intent set, using
+only the relevant terms in visible copy.
 
 ## Non-negotiable prompt requirements
 
@@ -102,18 +106,16 @@ Every generated prompt must:
 3. Preserve the difference between concepts, previews, and professional/regulated deliverables when relevant.
 4. Require one clear search intent and one primary CTA; secondary CTAs may only support the same next step.
 5. Require natural language, not keyword stuffing; semantic variants do not count as exact-match occurrences.
-6. Require a `<content_plan>` before page copy. It must contain the reader-intent
-   analysis, the audience situation and its evidence status, one useful topic
-   promise, a section-level structure, and the keyword plan. Require a final
-   SEO report after the copy.
+6. Put the content plan before page copy. An independent template creates a
+   `<content_plan>` with reader-intent evidence and uncertainty, one supportable
+   promise, section jobs, source mapping, and keyword decisions. A parent export
+   embeds and reuses the complete saved plan. Require a final editorial report.
 7. Use count-mode reporting only when the user supplied numeric targets; otherwise use natural-mode placement notes with no invented targets or per-module count tables.
 8. Exclude planning and reporting text from any exact keyword counts.
 9. Require the writer to flag an impossible or unnatural keyword rather than force it into user-facing copy.
 10. Include product-accuracy, conversion, and anti-stuffing/clarity checks. Do not require a full [Humalizer](../humalizer/SKILL.md) pass inside the generated prompt when a later humanization stage will run; a light clarity check is enough.
-11. Preserve the user's keyword inventory without filling it to three core
-    keywords or ten to twelve long-tail keywords, unless the user explicitly
-    asks for keyword research or expansion. Keep new suggestions optional until
-    selected.
+11. Preserve the user's keyword inventory. Expand it only when research or
+    expansion was requested; keep new suggestions optional until selected.
 12. Select one focus keyword, classify other core keywords as supporting, and
     allow irrelevant, redundant, or overly dense terms to be omitted with a
     reason in the final report.
@@ -128,9 +130,14 @@ Every generated prompt must:
     a decision, teach an action, provide evidence, or explain a material limit.
     Forbid sections created only for length, keywords, or a generic template.
 16. Require a distinctive source gate before drafting. If the supplied material
-    lacks a defensible contribution, ask one focused question per turn (maximum
-    10), preserve the answers with their sources and limits, and record any
-    accepted provisional gap in the final report.
+    lacks a defensible contribution, use available primary-source research or
+    grounded synthesis where they can fill the gap. Ask one focused question per
+    turn (maximum 10) for needed user knowledge. Preserve sources, attribution,
+    limits, and any safely omitted provisional gap. A supported minor rewrite reuses
+    the packet; revisit a gap when the promise, scope, or claims change.
+17. Require a critical walkthrough of the reader's task, repair omitted steps
+    and unsupported claims, and separate completed writing from publication
+    readiness. A self-score or passed style check does not establish usefulness.
 
 ## Building the prompt
 
@@ -142,7 +149,9 @@ Choose the landing-page subtype that matches intent:
 | --- | --- | --- |
 | Feature, use case, industry, product landing page | Commercial or transactional | Hero, problem, how it works, outcomes, proof, FAQ |
 
-If the supplied keyword does not clearly match the product or page type, write a validation warning into the prompt instead of forcing topical relevance.
+If the supplied keyword does not clearly match the product or page type, record
+the uncertainty and a validation step. A mismatch that undermines the central
+promise blocks body copy until resolved; a warning alone does not make it usable.
 
 ### 2. Configure keyword policy
 
@@ -158,19 +167,16 @@ If the supplied keyword does not clearly match the product or page type, write a
   plan's chosen focus term. On a parent export, preserve any mismatch and its
   blocker instead of silently replacing the supplied term.
 - Scale the plan to the actual inventory:
-  - **Sparse example: one core keyword and zero to three long-tail terms.** Keep
+  - **Sparse set.** Keep
     the page tightly focused. Do not manufacture related exact-match phrases or
     repeat the small set across every module. Still cover the reader's topic
     completely with natural language; fewer keywords do not require thinner
     content.
-  - **Typical example: up to three core keywords and up to twelve long-tail
-    terms.** Give each relevant term a distinct intent or section role. Do not
-    put every core term in the title/H1 or force every long-tail phrase into
-    visible copy.
   - **Large or mixed-intent set.** Cluster by search intent. Use only the
     coherent cluster for this page and mark the rest as restricted or suggest
     separate pages.
-- Treat these ranges as planning guidance, never as quotas or density targets.
+- Give each relevant term a distinct reader intent or section role. The supplied
+  inventory never becomes a quota or density target.
 - Populate `[[SECONDARY_KEYWORD_TABLE]]` with keyword, role (supporting core or
   long-tail), intended reader intent/section, and use policy. In natural mode,
   do not add a numeric target column. In a parent export, populate it from the
@@ -207,7 +213,9 @@ Use the six-module landing-page skeleton in [prompt-skeleton.md](prompt-skeleton
 
 Treat modules as a planning aid, not a mandatory table of contents. The
 generated prompt must tell the writer to omit or reorder modules that do not
-serve the resolved reader task.
+serve the resolved reader task. Derive section length and item counts from the
+answers and evidence needed; include numeric limits only when the user supplied
+them. A parent export uses its saved sections instead of rebuilding modules.
 
 ### 5. Deliver
 
@@ -246,7 +254,8 @@ Before delivering the generated prompt, verify:
 - Every product statement comes from the user or remains a variable.
 - Page type, audience, market, intent, modules, and CTA are explicit.
 - The reader situation is supported by supplied evidence or labeled as a
-  hypothesis. When existing pages were supplied, the plan checks that coverage
+  hypothesis. Search-intent observations have sources or explicit uncertainty.
+  When existing pages were supplied, the plan checks that coverage
   before proposing a separate page. Otherwise it marks coverage `unknown` and
   continues.
 - The prompt separates content planning from drafting and requires a usable
@@ -258,6 +267,10 @@ Before delivering the generated prompt, verify:
 - For a parent export, every supplied phrase and its use or omit decision,
   term type, section role or omission reason, and user-set count match
   `content-plan.md`.
+- The complete saved plan is embedded in an export, with packet items,
+  attribution, limits, section mapping, blockers, pending questions, and existing
+  interview count retained. An export never asks the writer to start planning
+  or the interview again.
 - The original user-supplied primary and chosen focus occupy distinct fields.
 - Reports and planning notes use `[[INSTRUCTION_LANGUAGE]]`, not a hardcoded language.
 - Metadata guidance does not require Meta Keywords.
@@ -266,10 +279,16 @@ Before delivering the generated prompt, verify:
   is not treated as permission to talk down to the audience.
 - The prompt carries the distinctive-content gate, one-at-a-time interview limit,
   source owner, evidence limits, and mapped section use.
+- The prompt checks task completion through a concrete reader walkthrough.
+  Necessary general explanations may use grounded answers without a unique
+  source item. Evidence gaps remain in the report; unsupported placeholders stay
+  out of page copy.
 - The prompt has no domain-specific residue from an unrelated template (including forced Chinese report text or per-item CTA spam).
 - Every unresolved `[[VARIABLE]]` is listed under “Fill before use.” Call the
   prompt copy-paste-ready only when that list is empty.
 
 ## References
 
-Read [prompt-skeleton.md](prompt-skeleton.md) for the reusable copy-paste skeleton and [examples.md](examples.md) for keyword-only and brief-mode examples.
+Read [prompt-skeleton.md](prompt-skeleton.md) for an independent template,
+[plan-export.md](references/plan-export.md) when exporting a saved plan, and
+[examples.md](examples.md) when an input/output pattern would help.

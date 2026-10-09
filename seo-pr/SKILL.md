@@ -14,16 +14,19 @@ description: >-
 # SaaS Press Release
 
 Create a release that a journalist can understand, verify, and reuse quickly.
-Write news, not an advertisement. Read
+Use the shared [helpful-content criteria](../distinctive-content/references/helpful-content.md)
+for the journalist's task: identify the new event, verify its scope, and explain
+why it matters to the relevant readers. Search-intent research is optional for
+an owned newsroom page; it is not a requirement for newsworthiness. Read
 [authoritative-guidance.md](references/authoritative-guidance.md) before the
 first draft or when auditing format, claims, quotes, multimedia, or search
 readiness.
 
 Use [`distinctive-content`](../distinctive-content/SKILL.md) as the shared
 source gate. It keeps the announcement anchored in the verified new event,
-specific scope, approved evidence, and an attributable quote or explanation;
-it can interview the source one question at a time, up to 10 questions, when a
-material detail is missing.
+specific scope, approved evidence, and an attributable quote or explanation.
+Inspect available sources before interviewing the source one question at a
+time, up to 10 questions, for material knowledge those sources cannot supply.
 
 ## Operating modes
 
@@ -35,6 +38,25 @@ material detail is missing.
 | `component` | Request for headline, lead, quote draft, boilerplate, or contact block | Requested component with fact/approval labels |
 
 Default to `draft` when the user asks to write a press release.
+
+For `draft`, complete the workflow below. For `revise`, reuse the reader angle,
+fact sheet, and packet while their sources and scope still fit; refresh only
+what the requested change invalidates, then rerun the final audit. A local
+wording correction retains the supplied facts and sources, reuses any valid
+packet, and reports pre-existing publication blockers without a new interview.
+Keep edits within the requested scope and report unrelated substantive findings
+separately. For `audit`, inspect the existing release against the gates and
+Step 7, return findings, and keep the
+release unchanged.
+
+For `component`, collect only the facts required by that component and apply
+its Step 5 checks. Headlines and leads need a supported news event and angle;
+a quote draft needs a factual basis, attribution, and an approval label.
+Boilerplate and media contacts need current verified company or public-contact
+facts and can be completed without a new event, a full release, or an event
+interview. Return the requested component and any source or approval gaps;
+completion means it performs that component's job with accurate facts and
+visible unresolved requirements.
 
 ## Intake
 
@@ -55,7 +77,10 @@ Collect or resolve these fields before calling a draft distribution-ready:
 - Product/announcement URL, company newsroom URL, media assets, and captions
 - Current company boilerplate and public media contact
 
-Do not delay a useful first draft when facts can remain labeled placeholders.
+Proceed with a supported first draft when nonessential details can be omitted
+and recorded in the readiness notes. A missing fact that prevents the
+journalist from identifying or verifying the central news blocks body copy;
+return the brief and pending evidence question or terminal blocker instead.
 Do not infer or invent dates, availability, pricing, product capabilities,
 customers, partners, results, market leadership, funding terms, quotes, or
 contact details.
@@ -79,36 +104,58 @@ innovation, an opinion without new evidence, or an old event. Do not inflate it.
 Recommend a changelog, blog post, customer email, or product update when that
 format fits better.
 
-### 2. Build the fact sheet
+This gate is complete when a supported new event and its significance are
+explicit, or the route returns a better-fitting format and the news blocker.
 
-Separate facts into:
+### 2. Choose one angle and audience
 
-- **Verified:** supplied directly or supported by a named source
-- **Attributable:** approved statement tied to a named person or organization
-- **Needs verification:** usable only as `[fact needed]`
-- **Prohibited:** confidential, legally restricted, contradicted, or unsupported
+Select one primary news angle and the journalists/readers who care about it.
+State why it matters in concrete operational, market, or customer terms, with
+sources or hypothesis labels for audience assumptions. Define observable
+completion: a reporter can identify what changed, for whom, when and where,
+verify the material claims, and explain the significance and limits. Keep the
+release focused on that event and audience.
+
+This step is complete when the audience, angle, significance, evidence needs,
+and reporting task are explicit. Pass them to the source gate.
+
+### 3. Build the fact sheet and source packet
+
+Record each material fact's source, scope, check date, and approval status.
+Separate these evidence labels:
+
+- **Checked:** inspected evidence supports the claim within its recorded scope
+- **Supplied:** asserted by the user or company; record attribution and what
+  remains unverified
+- **Hypothesis:** a reasoned inference, not an established event or outcome
+- **Unknown:** a needed fact without adequate evidence
+
+Track approved attributable statements separately from factual verification.
+Approval permits use of a quote; it does not prove the quote's factual claims.
+Company documentation can establish its product's behavior, but outcomes,
+comparisons, statistics, and superiority need evidence with applicable scope,
+methodology, and limits. Keep restricted, contradicted, and unsupported claims
+out of the release; record any indispensable omission as a blocker.
 
 For a SaaS launch, explicitly verify product name, target user, problem solved,
 actual workflow, launch/availability date, supported plans or markets, pricing
 language, limits, security/compliance claims, integrations, and CTA destination.
 
-Run `distinctive-content` in `gate` mode after this fact sheet. Pass the new
-event, what changed in practice, verified scope, methodology, approved quote,
-customer evidence, and material limits. If it returns `interview-needed`, ask
-one question per turn, up to 10 total, and resume with `interview`; keep the release blocked or
-provisional until the answer is recorded. A routine update cannot be made
-distinctive by adding adjectives.
-For `audit`, run its `distinctive-content` audit branch against the existing
-release and return findings without rewriting it. For `revise`, reuse the
-packet when its sources and announcement still fit; refresh it when they do
-not.
+Run `distinctive-content` in `gate` mode after the audience, angle, and fact
+sheet. Pass the reporting task, new event, what changed in practice, inspected
+sources, verified scope, methodology, approved quote, customer evidence, and
+material limits. An inspected announcement, documented workflow, or supported
+explanation can satisfy the packet without an interview. If it returns
+`interview-needed`, ask its one pending question and resume with `interview`,
+up to 10 questions total. Keep packet completeness, pending question, and
+asked/answered counts in the readiness notes. A central source gap blocks body
+copy; optional gaps may remain explicitly provisional while supported news
+proceeds. For `audit`, use the read-only `distinctive-content` audit branch.
 
-### 3. Choose one angle and audience
-
-Select one primary news angle and the journalists/readers who care about it.
-State why it matters in concrete operational, market, or customer terms. Do not
-combine several unrelated announcements or optimize the release around a list
-of SEO keywords.
+This step is complete when the source packet supports the central reporting
+task, records provenance and material limits, and distinguishes nonessential
+gaps from any blocker. A routine update cannot acquire news value through
+adjectives.
 
 ### 4. Draft in inverted-pyramid order
 
@@ -127,7 +174,7 @@ FOR IMMEDIATE RELEASE
 
 [Approved evidence, product workflow, customer impact, or market context.]
 
-"[Approved quote or clearly labeled proposed quote]," said [Name], [title] at
+"[Approved quote]," said [Name], [title] at
 [Company].
 
 [Useful next step with a descriptive link; optional media/press-kit note.]
@@ -191,11 +238,20 @@ as permission for keyword stuffing.
 
 ### 7. Run the release audit
 
+Run `distinctive-content` in `audit` mode and apply the shared helpful-content
+walkthrough to the final release. Using only its text and linked evidence,
+check whether a journalist can complete the reporting task from Step 2. Repair
+missing context, evidence, reasoning, or material limits within the requested
+scope; report other substantive findings as remaining blockers before evaluating
+prose. A central unanswered promise or unsupported significance claim blocks
+readiness even when the format and style pass.
+
 Verify:
 
 - The event is genuinely new, specific, timely, and relevant outside the company.
-- The distinctive-content packet names the reader change, source owner, evidence
-  limits, and any interview or approval still required.
+- The distinctive-content packet names the reader change, source owner,
+  completeness, evidence limits, pending question, asked/answered counts, and
+  any approval still required.
 - The headline and lead identify the news without hype or ambiguity.
 - The five Ws, availability, market, key limits, and CTA are clear.
 - Every claim, number, comparison, certification, customer, partner, and quote
@@ -215,6 +271,11 @@ Verify:
 - Legal, finance, security, privacy, and regulatory claims have the required
   owner review. Do not imply this skill supplies legal approval.
 
+The audit is complete when the central reporting task is supported, every
+material finding is repaired or visible as a blocker, and nonessential gaps
+remain separate from the ready content. An audit-only request returns findings
+and concrete repairs without changing the release.
+
 ## Deliverable
 
 For `draft` or `revise`, return:
@@ -224,17 +285,24 @@ For `draft` or `revise`, return:
 [Release text only; keep internal labels out of this block]
 
 ## Distribution readiness
-- Status: ready for review | blocked
+- Status: ready for review | provisional | blocked
 - News angle:
-- Verified sources/facts used:
+- Journalist task and walkthrough result:
+- Checked sources/facts used:
+- Supplied assertions and unverified claims omitted:
 - Quote approval:
+- Proposed quote for approval, if requested (outside the release):
 - Missing facts or approvals:
 - Media assets to attach:
 - Suggested distribution audience/categories:
 - Final checks required:
 - Distinctive contribution and evidence packet:
+- Packet completeness, pending question, and interview asked/answered counts:
 ```
 
 Do not call a release wire-ready while placeholders, unapproved proposed quotes,
 or material fact/legal reviews remain. Preserve corrected facts during revision
-and identify only material changes.
+and identify only material changes. Use `blocked` for a central reporting or
+mandatory approval gap; use `provisional` for a supported draft with remaining
+nonessential checks. The press-release route owns this chat deliverable and
+any file the user explicitly requests.

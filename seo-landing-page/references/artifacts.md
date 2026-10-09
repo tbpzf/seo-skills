@@ -27,11 +27,14 @@ Save the full `seo-writing` plan without dropping or renaming fields. That
 plan's `Keyword map` is the single schema for type, use/omit, omission reason,
 placement, and any user-set count. Fold the Stage 2 `seo-audience-strategy`
 brief into `Reader intent`, `Topic`, `Content structure`, and `Writing
-constraints`, preserving evidence, `hypothesis`, and `unknown` labels. It is
+constraints`, preserving evidence labels, intent observations and uncertainty,
+expected answer form, and reader completion signal. It is
 the sole persisted drafting contract. When a field is unknown, label it
 `unknown` or `[fact needed]`; record the source for material claims. A
-`Distinctive contribution` block must carry the `distinctive-content` packet
-status, source owner, limits, interview count, and section mapping. A
+`Distinctive contribution` block must carry the full `distinctive-content`
+packet, including its item table and evidence status, precise sources,
+limits, baseline answer and added value, judgment reasoning and alternatives,
+pending question, interview count, gap owners/actions, and section mapping. A
 generated `prompt.md` is an export derived from this plan and never overrides
 it.
 
@@ -84,7 +87,7 @@ and the home for editorial findings:
   - seo-metadata.md: present | absent
   - prompt.md: present | absent
 - Intake: source references, evidence labels, and missing required inputs
-- Distinctive content: packet status, contribution, source owner, interview count, mapped sections, and open gaps
+- Distinctive content: packet status, pending question/count, mapped sections, and gap owners/actions (full packet in content-plan.md)
 - Final audit:
   - Reader situation, journey questions, usefulness, and reader respect:
   - Plan or structure deviations:
@@ -94,9 +97,11 @@ and the home for editorial findings:
   - Links and CTA destination:
   - Humanization and Stop Slop changes:
   - Grammar findings and corrections:
-  - Distinctive contribution and evidence packet:
+  - Distinctive contribution, reasoning, alternatives, limits, and evidence packet:
+  - Intent evidence and remaining uncertainty:
+  - Helpful-content walkthrough: pass | repair needed | blocked; reader completion, exact gaps, and repairs
 - Publication blockers: none | [specific missing facts, proof, links, or destination]
-- Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, exit, parse, findings, and corrections
+- Operations: Stage 2 audience brief and writing-plan skill outcomes; required remote URLs/outcomes; Harper path, dialect, exit, parse, findings, and corrections
 - Notes:
 ```
 
@@ -105,10 +110,14 @@ not mean the page is ready to publish. A completed plan-only route marks
 Stages 3-7 `not requested` and publication readiness `not assessed`. For a
 full page, set `Publication readiness: blocked` while any material claim
 lacks support, a required link or CTA destination is missing, or a requested
-publishable element is unresolved. A failed required remote stage sets
+publishable element is unresolved, or the helpful-content walkthrough finds
+an unresolved central answer, evidence, or reasoning gap. A failed required remote stage sets
 `Workflow state: blocked`; Harper unavailability does not. If the Stage 2
 minimum draft gate fails on a body-copy route, save the plan and status with
-`Workflow state: blocked`, `Next stage: 3`, and the exact missing inputs.
+`Workflow state: blocked`, Stage 2 pending, `Next stage: 2`, and the exact
+missing inputs or one pending source question. Preserve the packet in the plan.
+For plan-only work, an incomplete packet does not prevent completing the
+requested plan; preserve its gaps and next question for a future drafting run.
 After Stage 2, the plan controls drafting facts; intake notes in status are
 provenance and gap records, not a second fact sheet.
 
@@ -139,7 +148,10 @@ into the export; the prompt does not reclassify the list.
    status before continuing.
 2. Resume at `Next stage` using the saved plan's reader strategy and
    `distinctive-content` packet. If the packet is `interview-needed`, ask its
-   saved one next question and fold the answer into the plan before drafting.
+   saved one next question only if no answer has arrived. Fold any new answer
+   into the existing packet, retain the question count, and reevaluate Stage 2
+   before drafting. Reuse a valid packet for local revisions; a small supported
+   correction does not require a new interview.
    Run the Stage 2 single-content brief again when the reader situation or intent has
    changed, or the plan lacks that strategy. Fold the refreshed brief into
    the plan before drafting or revising. Resolve a blocked draft gate from

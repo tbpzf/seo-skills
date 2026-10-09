@@ -22,12 +22,22 @@ progress.
 ```yaml
 execution_mode: autonomous
 approval_required: false
-intermediate_turns: false
+intermediate_turns: source_questions_only
 humanization_required: true
 grammar_check: if_available
 ```
 
 Run the selected route without a checkpoint unless the user requests one.
+Essential source questions may interrupt the
+run; preserve the pending question and interview count, then resume after the
+answer. Optional gaps can be omitted with a provisional packet. A plan-only
+request returns its plan and any pending question without requiring an
+interview to complete the requested planning work.
+For a targeted correction, preserve untouched passages. Later editing stages
+review the remaining text without rewriting it outside the authorized scope;
+record unrelated defects and publication blockers. Pass that scope to each
+editing skill, including Humalizer and grammar review.
+
 User-requested prompt-only, plan-only, or no-humanization work follows its
 matching branch in [routing.md](references/routing.md).
 
@@ -77,28 +87,35 @@ operations into concise stage updates; record operation details in
 2. **Plan.** Apply `seo-audience-strategy` in single-content brief mode using
    the intake evidence and supplied queries. Identify one reader situation,
    the decision this page supports, journey questions, factual boundaries,
-   and evidence or validation gaps. Label each material insight as supplied
-   or observed evidence, `hypothesis`, or `unknown`; when only keywords are
+   and evidence or validation gaps. Preserve the query interpretation, inspected
+   intent evidence and uncertainty, expected answer form, and reader completion
+   signal. Label each material insight as supplied or checked evidence,
+   `hypothesis`, or `unknown`; when only keywords are
    available, keep the brief provisional. Check existing-page coverage only
-   when pages are supplied or a coverage audit is requested.    Pass that transient brief and original intake to `seo-writing` in `plan`
+   when pages are supplied or a coverage audit is requested. Pass that transient
+   brief and original intake to `seo-writing` in `plan`
    mode. Save its full plan—including the `Keyword map` schema and any
    user-set count—to `content-plan.md` with one supportable page promise,
-   the `distinctive-content` packet status and section mapping, and
-   writing constraints; do not re-author map columns here. Choose one coherent landing-page intent;
+   the full `distinctive-content` packet, pending question and count, section
+   mapping, and writing constraints; do not re-author map columns here. Choose
+   one coherent landing-page intent;
    recommend a separate page for another intent. A supplied primary that cannot
    support this truthful page promise blocks drafting until the mismatch is
    resolved. `content-plan.md` is the sole persisted drafting contract.
    For a new page, require a known product identity and category, an actual
    capability or workflow, a reader task, and a CTA action before drafting.
    If any is missing, record the gap and `blocked` workflow state in
-   `workflow-status.md` and stop after the plan. For a supplied-copy revision,
+   `workflow-status.md`, leave Stage 2 pending with `Next stage: 2`, and stop
+   after the incomplete plan. For a supplied-copy revision,
    retain supported claims, mark unverified ones as publication blockers, and
    make only the requested edits that can be supported. This stage ends when
    the brief and distinctive-content packet have informed the saved plan and
    the draft gate has been evaluated when needed. If the packet is
-   `interview-needed`, save the question and block before drafting; resume with
-   the next answer rather than writing generic copy. The brief and packet are
-   stage outputs, not separate saved artifacts.
+   `interview-needed`, save the incomplete plan and one pending question with
+   Stage 2 pending and `Next stage: 2`; resume by recording the answer in the
+   existing packet. A `blocked` packet stops new body drafting; a `provisional`
+   packet permits only a supported promise with optional claims omitted. The
+   brief and packet are stage outputs, not separate saved artifacts.
 3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
    new copy or `revise` mode with the existing body, metadata, plan, and
    requested change. Use the saved keyword map's selected terms only where
@@ -122,14 +139,19 @@ operations into concise stage updates; record operation details in
    material changes are recorded.
 6. **Check grammar.** Apply `harper-grammar` to the saved English body when
    available. Accept only high-confidence corrections that preserve meaning,
-   merge the result, and record findings. If unavailable or explicitly declined,
+   merge the result, and record findings plus the actual dialect or spelling
+   preservation mode and any limitation. If unavailable or explicitly declined,
    record the skip. This stage ends when the checked body is saved or the skip
    reason is recorded.
 7. **Verify.** Compare `content.md` and `seo-metadata.md` with the saved plan.
    Confirm the page answers its planned reader questions in decision order,
-   uses the mapped distinctive packet or records a proof gap per major section,
-   respects factual boundaries, and has one H1, supported claims, one coherent
-   CTA path, useful links, and no editorial notes in the body.
+   gives each major section a mapped packet item, grounded concrete answer, or
+   reason no unique source is needed, and respects factual boundaries. Confirm
+   one H1, supported claims, one coherent CTA path, useful links, and no editorial notes in the body. Apply
+   `distinctive-content` in `audit` mode and the skeptical reader walkthrough in
+   the [helpful content standard](../distinctive-content/references/helpful-content.md) to the final
+   copy. Repair local defects; record any unresolved central answer, evidence,
+   or reasoning gap as a publication blocker. Prose polish cannot pass this gate.
    Reconcile every supplied keyword against the final copy and metadata:
    record natural placement for used terms and the reason for each omission
    or unmet must-use request. Check exact counts only for targets the user

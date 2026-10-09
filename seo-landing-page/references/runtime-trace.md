@@ -23,7 +23,7 @@ the stated state is true.
    exact URL and outcome in status. A required remote failure is reported
    immediately and blocks the workflow.
 3. Announce Harper preflight and result for Stage 6 when used. Record the
-   executable path, operation, exit status, JSON parse status, finding count,
+   executable path, operation, exit status, JSON parse status, actual dialect or spelling preservation mode, finding count,
    correction count, and skip/failure reason in status; keep raw output out of
    progress messages.
 4. Report the final workflow state, publication readiness, page artifact
@@ -48,3 +48,9 @@ Keep draft text, secrets, environment variables, tokens, complete commands,
 and raw CLI output out of trace messages. State a concrete reason for each
 skip, block, or failure. Do not report `completed` until the operation and
 its required file write finished.
+
+For an essential source question, report the saved incomplete plan and one
+pending question; keep Stage 2 pending and resume there after the answer. A
+plan-only result can complete with gaps recorded. At final verification report
+the helpful-content walkthrough result and specific publication blockers,
+separately from the editing-stage outcome.
