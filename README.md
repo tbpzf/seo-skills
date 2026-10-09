@@ -3,8 +3,8 @@
 Help authors create useful English SaaS content that answers a real reader's
 search need and offers a defensible contribution: better explanation, a usable
 method, evidence, or reasoned judgment. These workflows cover landing pages,
-owned-site blogs, guest posts, audience strategy, and press releases for
-consumer-facing and business-facing products. Each finished-content route owns
+owned-site blogs, guest posts, existing-content reviews, audience strategy, and
+press releases for consumer-facing and business-facing products. Each finished-content route owns
 its editorial decisions and output; supporting skills supply stages.
 
 The shared [helpful content standard](distinctive-content/references/helpful-content.md) defines
@@ -19,6 +19,7 @@ keyword placement and polished prose alone cannot make content ready.
 | --- | --- | --- |
 | Product, feature, audience, industry, or use-case page on your site | `seo-landing-page` | Saved page, metadata, plan, and status |
 | Educational article on your own site | `seo-blog` | Saved article, metadata, plan, and status |
+| Review existing content or assess changed product details | `seo-content-review` | Read-only findings and scoped update actions in chat |
 | Article for another publication | `seo-guest-post` | Article and submission notes in chat; save only when asked |
 | Audience map, content gaps, or a brief without finished copy | `seo-audience-strategy` | Strategy or brief |
 | Reusable landing-page prompt only | `seo-landing-prompt` | Prompt template |
@@ -31,6 +32,9 @@ request for a finished page should enter through the route above.
 The owned-site routes also support plan-only, targeted revision, read-only
 audit, and resume requests. Their `workflow-status.md` separates a completed
 editing run from whether the content has enough verified facts to publish.
+Their existing-copy audit branches use `seo-content-review`; the existing
+`seo-writing` audit mode remains a compatible entry to the same reviewer.
+Draft/revision final checks retain their own workflow stages.
 
 ## Skills
 
@@ -39,6 +43,7 @@ editing run from whether the content has enough verified facts to publish.
 | `seo-audience-strategy` | Map audience situations, search journeys, page gaps, and people-centered content briefs |
 | `seo-landing-page` | Plan, write, humanize, and grammar-check SaaS landing pages |
 | `seo-blog` | Plan, write, humanize, and grammar-check useful SaaS blog posts |
+| `seo-content-review` | Review usefulness, evidence, and outdated product details; plan or hand off scoped updates |
 | `seo-guest-post` | Write, humanize, and grammar-check SaaS guest articles under publisher rules |
 | `seo-pr` | Draft or audit factual, newsworthy SaaS press releases |
 | `seo-landing-prompt` | Export reusable prompts for landing-page writing only |
@@ -247,12 +252,60 @@ packet with source owners, limits, and a section map; do not draft the article.
 Use `audit` mode to review existing copy for generic advice, missing evidence,
 unsupported authority, and sections that do not change what the reader can do.
 
+### Review existing content and plan feature updates
+
+```text
+Use $seo-content-review in review mode for [article path or URL]. The reader
+needs to [task]. Current product documentation: [URL or file]. Recent feature
+changes and release scope: [approved notes]. Check usefulness, source support,
+outdated claims and steps, and affected metadata or links. Return prioritized
+findings with exact passages, evidence, reader impact, and concrete repairs.
+Do not change the article.
+```
+
+The default is a read-only report in chat. A saved plan is optional. The review
+checks whether the reader can complete the task, whether judgments are supported,
+and whether current product changes affect the answer. Missing sources or
+analytics are reported as verification gaps. Historical claims retain their
+time context, and partial rollouts retain their plan, version, or platform limits.
+Reports are saved only when requested.
+
+Use `update-plan` for a section-level refresh brief without changing copy:
+
+```text
+Use $seo-content-review in update-plan mode for [existing article path].
+Approved change note: [old behavior -> new behavior, effective release date,
+plan/platform/rollout scope, and source]. Map the change to all affected claims,
+steps, limits, recommendations, FAQ, metadata, screenshots, and CTA paths in this
+article. Keep useful supported sections and explain what still needs checking.
+Return the update plan without rewriting.
+```
+
+For an authorized update:
+
+```text
+Use $seo-content-review in review-and-update mode for [existing article path].
+Apply the product changes supported by [current docs/release notes]. Update only
+the affected feature descriptions, instructions, limits, and dependent metadata.
+Preserve unrelated sections and historical examples. Save the updated owned-site
+article using its existing workflow; report remaining verification gaps.
+```
+
+The reviewer hands edits to `seo-blog`, `seo-landing-page`, `seo-guest-post`, or
+`seo-pr` according to the content type. Those routes keep ownership of the copy
+and any saved artifacts. Guest and PR copy stay in chat unless a file is requested.
+A review or update plan does not change `content-plan.md` or `workflow-status.md`;
+a writing parent updates its own contract only when applying authorized changes.
+A proposed feature or code change is not proof that it has reached production.
+The [review and scoped-update validation](docs/content-review-validation.md)
+records two independent executions against fictional content and their limits.
+
 ### Partial and follow-up requests
 
 | Task | Example request |
 | --- | --- |
 | Plan only | `Use $seo-landing-page to plan a page. Primary keyword: digital photo organizer. Long-tail keywords: organize photos into albums; photo organizer for computer. Use [product brief]. Save the content plan, but do not draft copy.` |
-| Read-only audit | `Use $seo-blog to audit [article path] for reader usefulness, unsupported claims, and SEO metadata. Return findings only; do not edit the article.` |
+| Read-only audit | `Use $seo-content-review to review [article path] for reader usefulness, unsupported claims, and outdated product instructions. Return findings only; do not edit the article.` |
 | Targeted revision | `Use $seo-landing-page to revise [page path]. Correct the upload workflow using [approved documentation], keep the other sections, and rerun the remaining checks.` |
 | Resume | `Use $seo-blog to resume the run in [seo-content/topic-blog/workflow-status.md] from its next incomplete stage.` |
 | Guest-post pitch | `Use $seo-guest-post to create a pitch and outline for [publication URL]. Primary keyword: [term]. Long-tail keywords: [phrases]. Research the host's guidelines and readers, use [verified contributor experience], and do not draft the article.` |

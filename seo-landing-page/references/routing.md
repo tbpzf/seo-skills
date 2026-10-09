@@ -12,13 +12,22 @@ stages are in [SKILL.md](../SKILL.md); saved output and resume behavior are in
 | Copy directly, without a reusable prompt | Run the default sequence; no prompt export is needed |
 | Reusable prompt only | Apply `seo-landing-prompt` and return the prompt; save `prompt.md` only when requested |
 | Reusable prompt in addition to a page | Build the plan first, then export a prompt derived from it; the saved plan still controls drafting |
-| Audit existing copy only | Apply `seo-writing` in `audit` mode; return findings in chat unless a file is requested |
-| Revise a supplied external draft or audit and fix it | Run Stages 1-2 to read its body and metadata and save a plan with reader situation, facts, voice, and CTA; apply `seo-writing` in `revise` mode for requested fixes at Stage 3, then run Stages 4-7 |
+| Audit existing copy only | Apply `seo-content-review` in `review` mode; return findings in chat unless a file is requested |
+| Revise a supplied external draft or audit and fix it | For audit-and-fix, first apply `seo-content-review` in `update-plan` mode and retain its update brief; run Stages 1-2 to read its body and metadata and save a plan with reader situation, facts, voice, and CTA; apply `seo-writing` in `revise` mode for requested fixes at Stage 3, then run Stages 4-7 |
+| Check copy after product features change | Apply `seo-content-review` to current evidence; return an update plan, or use the revision route for requested edits |
 | Humanize existing copy | Run Stages 1-2 to import the body and metadata and normalize its reader situation, protected facts, SEO contract, and CTA into a saved plan without redrafting, then run Stages 4-7 |
 | Resume interrupted work | Read or reconstruct `workflow-status.md`, then resume at the earliest incomplete stage |
 | Revise a saved plan or page | Use the saved reader strategy; rerun the Stage 2 brief if reader situation or intent changed or is missing, then update the plan and rerun Stages 3-7 if its contract changes; for a body edit, use `seo-writing` in `revise` mode with existing copy, then run Stages 4-7 |
 | Explicitly skip humanization | Record Stages 4-5 as skipped by user, run Stage 6 and Stage 7 |
 | Explicitly skip grammar | Record Stage 6 as skipped by user, then run Stage 7 |
+
+For existing-copy review, pass the body, available metadata/plan, current product
+sources, and requested scope to
+[seo-content-review](../../seo-content-review/SKILL.md). It returns findings and
+a bounded update brief; this parent owns any requested report save and all
+page revisions. For audit-and-fix, request `update-plan` mode and continue the
+revision route with supported
+changes, without invoking this parent recursively.
 
 For prompt-only and audit-only replies in chat, create no file or status unless
 the user requests saved output. Saving a standalone prompt or audit does not

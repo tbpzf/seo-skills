@@ -39,7 +39,11 @@ question and resume with `interview`, up to 10 questions total. Carry the packet
 completeness, pending question, and asked/answered counts in the brief or
 submission notes. An unanswered central promise blocks body copy; an optional
 gap may remain explicitly provisional while the supported article proceeds.
-For an audit route, use its read-only `audit` branch. A local correction retains
+For audit-only work, use [seo-content-review](../seo-content-review/SKILL.md) in
+`review` mode with the article, known host rules, contributor relationship,
+keywords, and available sources. It applies the read-only contribution audit;
+this parent returns findings and submission-specific notes without repeating
+the writing or rewrite stages. A local correction retains
 the supplied article's task and sources, reuses any valid brief and packet,
 and reports unrelated source gaps in its audit without reopening the interview.
 

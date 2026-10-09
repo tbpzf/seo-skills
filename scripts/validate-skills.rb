@@ -142,11 +142,29 @@ end
 
 helpful_reference = ROOT.join("distinctive-content/references/helpful-content.md")
 errors << "distinctive-content: missing shared helpful-content standard" unless helpful_reference.file?
-%w[seo-audience-strategy seo-writing seo-landing-page seo-blog seo-guest-post seo-pr seo-landing-prompt humalizer].each do |skill_name|
+%w[seo-audience-strategy seo-writing seo-content-review seo-landing-page seo-blog seo-guest-post seo-pr seo-landing-prompt humalizer].each do |skill_name|
   file = ROOT.join(skill_name, "SKILL.md")
   unless file.file? && file.read.include?("../distinctive-content/references/helpful-content.md")
     errors << "#{skill_name}: missing shared helpful-content handoff"
   end
+end
+
+review_file = ROOT.join("seo-content-review/SKILL.md")
+if review_file.file?
+  review = review_file.read
+  ["`review` (default)", "`update-plan`", "`review-and-update`",
+   "references/freshness.md", "references/update-handoff.md",
+   "../seo-writing/references/editorial-review.md", "../distinctive-content/SKILL.md"].each do |term|
+    errors << "seo-content-review: missing review-stage contract #{term.inspect}" unless review.include?(term)
+  end
+  %w[seo-blog seo-landing-page seo-guest-post seo-writing].each do |caller|
+    caller_file = ROOT.join(caller, "SKILL.md")
+    unless caller_file.file? && caller_file.read.include?("seo-content-review")
+      errors << "#{caller}: missing existing-content review handoff"
+    end
+  end
+else
+  errors << "seo-content-review/SKILL.md: missing existing-content review entry"
 end
 
 if ROOT.join("seo-content-workflow").exist?

@@ -21,8 +21,11 @@ or stale reader situation to that parent for refresh. For direct use,
 reuse a supplied plan's evidence-labeled reader task, decision criteria,
 journey question, and gaps when they still fit the audience and intent.
 Otherwise call `seo-audience-strategy` in single-content mode and fold its
-brief into the working plan before writing. Keep the supplied structure and keyword inventory. `audit` stays read-only, skips the audience brief, and runs the `distinctive-content` audit when usefulness is in scope. A
-keyword is a clue to the reader's task, not evidence of their circumstances;
+brief into the working plan before writing. Keep the supplied structure and
+keyword inventory. Explicit `audit` requests delegate to
+[seo-content-review](../seo-content-review/SKILL.md) in `review` mode, without
+an audience brief or rewrite. A keyword is a clue to the reader's task, not
+evidence of their circumstances;
 label inferences as `hypothesis` or `unknown`.
 
 For a local wording, typo, or supplied factual correction, use the supplied
@@ -362,8 +365,10 @@ Run `distinctive-content` in `audit` mode against the draft and after any
 substantial rewrite. Apply the shared helpful-content walkthrough to the final
 copy: attempt the promised task and check the reasoning, examples, and limits.
 Repair local defects and rerun affected checks; return exact unresolved gaps
-as publication blockers. In `audit` mode, return findings without rewriting.
-A proof-gap note cannot make an unanswered central promise pass.
+as publication blockers. These are the internal draft/revision checks. For
+explicit `audit` mode, return the `seo-content-review` stage result instead of
+running a second review here. A proof-gap note cannot make an unanswered
+central promise pass.
 
 ### Humanization ownership
 
@@ -417,9 +422,15 @@ review notes inside publishable copy.
 - Changes made:
 ```
 
-In `audit` mode, return prioritized findings tied to specific passages and
-repairs. Treat an audit-only request as read-only; return a revised draft only
-when the user requests revision.
+In `audit` mode, pass the copy, available plan/metadata, current product evidence,
+and review scope to `seo-content-review` in `review` mode. Return its prioritized
+findings tied to specific passages and repairs. This compatibility entry stays
+read-only. When a content parent invoked this skill, return stage output and let
+that parent handle requested saves or revisions. For direct `seo-writing` audit
+use, redirect to standalone `seo-content-review`, forwarding any requested report
+path and leaving no writing parent; the reviewer owns that report save.
+A standalone review-and-update request goes through the matching
+writing parent rather than expanding an audit into an unowned rewrite.
 
 For revisions, preserve validated facts and identify only material changes. Do not rewrite a usable page merely to make it longer.
 

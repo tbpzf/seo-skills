@@ -8,7 +8,8 @@ notes separate so submission copy is easy to use.
 | Angle, pitch concept, outline, or brief only | Guest-post brief; no body copy |
 | Write a guest post | Complete article plus submission notes |
 | Revise a supplied draft | Revised article plus material changes and submission notes |
-| Audit a supplied draft | Prioritized findings and concrete fixes; rewrite only when requested |
+| Audit a supplied draft | `seo-content-review` review stage, then prioritized findings and relevant submission notes; source unchanged |
+| Review and update changed product details | `seo-content-review` update-plan stage, then the existing revision route for supported requested changes |
 
 Brief-only requests complete Steps 1-2 of the parent. Draft and revision
 requests continue through the humanization, Stop Slop, Harper, and final audit
@@ -115,11 +116,17 @@ Keep edits within the requested scope and report any unrelated substantive
 findings separately. Recheck supplied keywords against the revised body and
 account for each in submission notes.
 
-For audit, assess the existing reader angle and its evidence without invoking
-a new strategy brief. Apply the parent Step 7 helpful-content walkthrough and
-`distinctive-content` audit branch without rewriting. Rank findings by what
-prevents submission first, then by reader usefulness and prose quality. Cite the draft passage or section for
-each finding and give a specific repair. Return the audit without a rewritten
-article or newly saved brief unless the user asks for one. When the user
-supplied keywords, identify terms whose use or omission conflicts with the
-reader angle, host rules, or requested keyword policy.
+For audit, pass the existing article, reader angle, supplied keywords, sources,
+current product change notes, and known host rules to
+[seo-content-review](../../seo-content-review/SKILL.md) in `review` mode. It
+returns the helpful-content walkthrough, contribution audit, feature-change
+findings, and necessary update actions without a new strategy or interview. Keep
+unchecked host rules explicit and append submission-specific findings from the
+known publisher contract. Use `provisional` when required host checks remain
+unknown; a material known rule conflict remains `blocked`.
+
+Return the prioritized report without a rewritten article or newly saved brief
+unless the user asks for one. This parent owns every requested save. When the
+user requests review and fixes, request `update-plan` mode and continue the
+revision route with its full handoff brief; do not call this parent again from the reviewer. Draft/revision final
+checks still use the parent Step 7 once, without another whole review cycle.

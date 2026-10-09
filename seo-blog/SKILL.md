@@ -45,7 +45,8 @@ editing skill, including Humalizer and grammar review.
 | Stage | Source and owner |
 | --- | --- |
 | 2. Reader strategy | `../seo-audience-strategy/SKILL.md` returns a focused, evidence-labeled `single-content brief`; this parent passes it into planning |
-| Plan, draft, revise, or audit | `../seo-writing/SKILL.md` returns stage output; this parent saves and merges |
+| Plan, draft, or revise | `../seo-writing/SKILL.md` returns stage output; this parent saves and merges |
+| Existing-copy audit or feature-refresh diagnosis | `../seo-content-review/SKILL.md` returns findings and a bounded update brief; this parent owns any requested save or revision |
 | Distinctive source gate and one-at-a-time interview | `../distinctive-content/SKILL.md`, called by `seo-writing` |
 | 4. Humanize | `../humalizer/SKILL.md` owns one rewrite and fetches `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
 | 5. Directness review | This parent applies `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` and linked references as needed |

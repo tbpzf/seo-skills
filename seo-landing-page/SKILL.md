@@ -46,7 +46,8 @@ matching branch in [routing.md](references/routing.md).
 | Work | Source |
 | --- | --- |
 | Evidence-labeled reader brief during planning | `../seo-audience-strategy/SKILL.md` |
-| Plan, draft, or audit | `../seo-writing/SKILL.md` |
+| Plan, draft, or revise | `../seo-writing/SKILL.md` |
+| Existing-copy audit or feature-refresh diagnosis | `../seo-content-review/SKILL.md`; returns findings and an update brief, this parent owns saving and revision |
 | Distinctive source gate and one-at-a-time interview | `../distinctive-content/SKILL.md`, called by `seo-writing` |
 | Requested reusable prompt | `../seo-landing-prompt/SKILL.md` |
 | Fact-safe rewrite, including one Blader fetch | `../humalizer/SKILL.md` |

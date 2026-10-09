@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS Content Review"
+  short_description: "Review usefulness and outdated product details"
+  default_prompt: "Use $seo-content-review to review this existing SaaS article for reader usefulness, evidence, and outdated product details. Return prioritized findings and a targeted update plan without changing the source."

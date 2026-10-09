@@ -11,8 +11,9 @@ Select one route before writing. The stage numbers refer to the sequence in
 | Revise a saved plan only | Reuse its reader strategy or refresh it under the rule below, update `content-plan.md`, invalidate Stages 3-7, and stop with status updated |
 | Revise a saved article | Reuse its plan or refresh Stage 2 under the rule below; apply `seo-writing` in `revise` mode at Stage 3, then run Stages 4-7 and record material changes |
 | Revise a supplied external article | Normalize the article and brief through Stage 2 into saved plan/body/metadata as below, apply `seo-writing` in `revise` mode, then run Stages 4-7 |
-| Audit an existing article | Apply `seo-writing` audit mode and return ranked findings without changing files; save an audit only when requested |
-| Audit and fix an article | Audit first, then use the revision route for authorized changes |
+| Audit an existing article | Apply `seo-content-review` in `review` mode; return ranked findings without changing files; save an audit only when requested |
+| Audit and fix an article | Apply `seo-content-review` in `update-plan` mode, then use its update brief in the revision route for authorized changes |
+| Check an article after product features change | Apply `seo-content-review` to current product evidence; return an update plan, or use the revision route when edits are requested |
 | Humanize an existing article | Normalize its protected contract and files as below, then run Stages 4-7 |
 | Continue interrupted work | Read or reconstruct `workflow-status.md`, apply the reader-strategy refresh rule below, then resume at the earliest incomplete or invalidated stage |
 | User opts out of humanization | Mark Stages 4-5 `skipped by user`; run Stages 6-7 |
@@ -29,7 +30,13 @@ save a second brief. A keyword addition alone does not require a new strategy
 brief when it fits the existing situation and intent. Preserve user edits when
 updating the plan and reset downstream stages only when it changes.
 
-For an audit-only request, keep the source unchanged. Return findings ordered
+For an audit-only request, pass the article, available metadata/plan, current
+product evidence, and requested scope to
+[seo-content-review](../../seo-content-review/SKILL.md). Its report and update
+brief are transient stage outputs; this parent owns any requested save and
+continues revision when authorized. For audit-and-fix, request `update-plan`
+mode so the full handoff is returned before this parent edits. Keep the source
+unchanged during review. Return findings ordered
 by publication impact, with exact passages and suggested corrections. Do not
 create `workflow-status.md` or an audit file unless the user requests a saved
 result. If saved, write to the user's path or `audit.md` beside an existing
