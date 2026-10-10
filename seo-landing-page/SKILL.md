@@ -3,7 +3,8 @@ name: seo-landing-page
 description: >-
   Plan, write, revise, and save English SaaS feature, use-case, audience,
   industry, and product landing pages for commercial or transactional queries.
-  Use for a landing-page plan, finished page, draft from an outline, revision,
+  Interview the author before new body copy. Use for a landing-page plan,
+  finished page, draft from an outline, revision,
   audit, or resume. Produce a reusable landing prompt only when requested.
   Route informational blog posts to seo-blog, third-party guest articles to
   seo-guest-post, and announcements to seo-pr.
@@ -23,14 +24,18 @@ progress.
 execution_mode: autonomous
 approval_required: false
 intermediate_turns: source_questions_only
+source_interview: before_new_body
 humanization_required: true
 grammar_check: if_available
 ```
 
 Run the selected route without a checkpoint unless the user requests one.
-Essential source questions may interrupt the
-run; preserve the pending question and interview count, then resume after the
-answer. Optional gaps can be omitted with a provisional packet. A plan-only
+For new body copy, run the default author intake defined by `distinctive-content`
+after a brief inventory, before extended research and the full plan. Ask its
+one question visibly in chat and wait; preserve intake status/basis, the pending
+question, and interview count, then resume after the answer. Reuse fitting
+resolved intake or an explicit user opt-out. Optional factual gaps can be
+omitted with a provisional packet after intake is resolved. A plan-only
 request returns its plan and any pending question without requiring an
 interview to complete the requested planning work.
 For a targeted correction, preserve untouched passages. Later editing stages
@@ -86,7 +91,9 @@ operations into concise stage updates; record operation details in
    `workflow-status.md`. This stage ends when each field is either grounded in
    supplied material or explicitly marked missing.
 2. **Plan.** Apply `seo-audience-strategy` in single-content brief mode using
-   the intake evidence and supplied queries. Identify one reader situation,
+   the intake evidence and supplied queries. For new body copy, request an
+   initial brief from available material with explicit hypotheses; defer
+   extended search research until author intake is resolved. Identify one reader situation,
    the decision this page supports, journey questions, factual boundaries,
    and evidence or validation gaps. Preserve the query interpretation, inspected
    intent evidence and uncertainty, expected answer form, and reader completion
@@ -97,7 +104,8 @@ operations into concise stage updates; record operation details in
    brief and original intake to `seo-writing` in `plan`
    mode. Save its full plan—including the `Keyword map` schema and any
    user-set count—to `content-plan.md` with one supportable page promise,
-   the full `distinctive-content` packet, pending question and count, section
+   the full `distinctive-content` packet, author intake status and basis,
+   pending question and count, section
    mapping, and writing constraints; do not re-author map columns here. Choose
    one coherent landing-page intent;
    recommend a separate page for another intent. A supplied primary that cannot
@@ -112,11 +120,14 @@ operations into concise stage updates; record operation details in
    make only the requested edits that can be supported. This stage ends when
    the brief and distinctive-content packet have informed the saved plan and
    the draft gate has been evaluated when needed. If the packet is
-   `interview-needed`, save the incomplete plan and one pending question with
+   `interview-needed` on a body-copy route, ask the one pending question in chat
+   and wait; save the
+   incomplete plan and question with
    Stage 2 pending and `Next stage: 2`; resume by recording the answer in the
    existing packet. A `blocked` packet stops new body drafting; a `provisional`
-   packet permits only a supported promise with optional claims omitted. The
-   brief and packet are stage outputs, not separate saved artifacts.
+   packet permits only a supported promise with optional claims omitted.
+   Plan-only work returns the plan and future question without requiring an
+   answer. The brief and packet are stage outputs, not separate saved artifacts.
 3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
    new copy or `revise` mode with the existing body, metadata, plan, and
    requested change. Use the saved keyword map's selected terms only where

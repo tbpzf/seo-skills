@@ -60,8 +60,11 @@ audience map, content gaps, or a brief without finished copy; a routine writing
 request does not trigger a full site audit.
 
 Landing pages, owned blogs, guest posts, and press releases also use
-`distinctive-content` during planning. They inspect available sources before
-asking for private author knowledge. First-hand material, checked research,
+`distinctive-content` during planning. New body copy starts with a brief source
+inventory and an author interview before extended research or the full plan,
+even when code, product documentation, or competitor research supports the
+facts. Ask about real situations, decisions, examples, and lessons beyond a
+feature list. First-hand material, checked research,
 transparent synthesis, and useful explanations can support the contribution.
 A viewpoint records its evidence, reasoning, relevant alternative, and the
 conditions where the recommendation changes. Original data and a contrarian
@@ -69,10 +72,16 @@ opinion are optional; fabricated experience, results, quotes, and authority are
 forbidden.
 
 The gate runs once and its full packet is reused for drafting and local edits.
-When essential knowledge belongs to the author, it asks one focused question
-per turn, up to 10 total, preserving the pending question and count for resume.
+Author intake and factual support are recorded separately. Reuse a fitting
+completed interview or concrete author-supplied experience, judgment, or
+examples; an explicit user request to skip questions is recorded as an opt-out.
+Otherwise ask one focused question visibly in chat, wait for the answer, and
+adapt the next question, up to 10 total. Preserve intake status/basis, the
+pending question, and count for resume. If the author has no first-hand material,
+record that answer and develop transparent research or analysis instead.
 An incomplete plan can still be saved. Optional gaps allow a provisional packet
-with unsupported claims omitted; a central unsupported promise blocks new body
+with unsupported claims omitted after intake is resolved; pending intake or a
+central unsupported promise blocks new body
 copy. Plan-only requests may finish with gaps recorded, and wording corrections
 do not trigger an unrelated source interview. Press releases use a journalist's
 reporting task and verified news event, without requiring an SEO query.

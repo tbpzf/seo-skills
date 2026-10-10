@@ -8,7 +8,8 @@ angle, outline, keyword map, or evidence packet. The parent owns the file save.
    hypotheses, uncertainty, promise, section jobs, facts, voice, CTA, and keyword
    inventory. Include the full distinctive packet: each item's detail, source,
    attribution, evidence status, limit or approval, and section use. Keep packet
-   status, open gaps, pending question, and questions already asked and answered.
+   status, author intake status/basis, open gaps, pending question, and questions
+   already asked and answered.
    If the saved plan lacks a required field, preserve the gap and return it to
    the parent; exporting does not authorize inventing or repairing the plan.
 2. Embed that plan verbatim under `## Saved drafting contract` in the prompt.
@@ -39,7 +40,15 @@ suggests different sections.
 First fold any newly supplied answer into the existing packet and clear a
 resolved pending question without resetting the recorded interview count. If
 the saved question remains unanswered, ask it and wait. Continue from the
-recorded count, with no more than 10 total questions for this content item. If a central fact or source requirement remains
+recorded count, with no more than 10 total questions for this content item.
+Before new body copy, check author intake separately from factual support. Reuse
+a fitting completed interview or concrete author-supplied experience, judgment,
+or examples, or a recorded explicit request to skip questions. If intake is
+missing, pending, or marked `not required` for a plan-only route, ask one
+question about the author's concrete experience, decision, or example and
+wait; code, feature descriptions, and competitor research alone cannot close
+intake. Record intake status and its basis alongside the existing packet.
+If a central fact or source requirement remains
 blocked, identify it and withhold the affected promise or body copy. Respect a
 recorded provisional scope; do not upgrade it to supported evidence.
 

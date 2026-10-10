@@ -71,18 +71,21 @@ through planning, rewriting, and final verification; check numeric targets only
 when the user supplies them.
 Keep evidence gaps out of the article as invented claims. A blog
 may end with a useful resource or next step and no promotional CTA.
-Before drafting, let `seo-writing` run `distinctive-content` in `gate` mode. If
-the packet is `interview-needed`, save the one next question and resume after
-the answer; a generic draft is not a substitute. A documented workflow, checked synthesis, example, or meaningful limit may
-satisfy the gate when it supports the core promise; one limitation alone is
-insufficient for a complete how-to. Research precedes questions for knowledge
-the agent can obtain. Reuse a valid packet instead of running a second gate.
+Before drafting, let `seo-writing` run `distinctive-content` in `gate` mode
+with the requested deliverable. For new body copy, apply its default author
+intake even when research supports the promise. Reuse fitting resolved intake
+or an explicit user opt-out. If the packet is `interview-needed`, ask its one
+question in chat and wait; save the question/count and resume after the answer.
+A supported workflow, checked synthesis, or example establishes evidence
+readiness, not interview completion. Reuse a valid packet with resolved intake
+instead of running a second gate.
 
 ## Source-gate scope
 
-For new substantive copy, keep an incomplete plan and the full packet while an
-essential source question is pending; Stage 2 stays pending and resume starts
-there. Provisional packets can proceed with optional claims omitted. A plan-only
+For new substantive copy, keep an incomplete plan and the full packet while a
+source-intake or essential factual question is pending; Stage 2 stays pending
+and resume starts there. Provisional packets can proceed after author intake
+is resolved, with optional claims omitted. A plan-only
 request may complete with gaps and the next question recorded. For a local
 revision or humanization request, reuse the supplied copy's supported substance
 and any valid packet. Record existing shortcomings in the audit; ask a source

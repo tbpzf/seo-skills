@@ -4,7 +4,8 @@ description: >-
   Plan, draft, revise, or audit English SaaS landing-page and owned-site blog content as
   a stage called by seo-landing-page or seo-blog. Use directly only when the
   user explicitly wants a standalone plan, draft or revision from a supplied
-  structure, or read-only copy audit. Route finished landing pages to seo-landing-page and
+  structure, or read-only copy audit. Interview before new body copy; reuse
+  resolved author intake for drafting and local edits. Route finished landing pages to seo-landing-page and
   finished owned-site articles to seo-blog; third-party articles belong to
   seo-guest-post.
 ---
@@ -36,9 +37,13 @@ brief or gate. Ask only when a fact essential to the requested correction is
 unavailable. This branch creates no new substantive claims.
 
 During planning, run [`distinctive-content`](../distinctive-content/SKILL.md)
-once with the reader brief and available material, or reuse a packet whose
-sources and scope still fit. Research can supply checked facts and reasoned
-synthesis; interview only for essential knowledge the agent cannot obtain.
+once with the reader brief, available material, and the requested deliverable,
+or reuse a packet whose sources, scope, and author intake still fit. For new
+body copy, apply its default author interview after a brief inventory, before
+extended research or the full section plan. Code, documentation, and research
+support facts but do not replace author intake. Follow its intake reuse and
+user opt-out rules; plan-only work may return an incomplete plan without an
+interview. Research can supply checked facts and reasoned synthesis.
 Return an incomplete plan with its packet and one pending question when the
 status is `interview-needed`; body drafting waits for the answer. A
 `provisional` packet permits a supported answer with optional gaps omitted and
@@ -114,7 +119,7 @@ Identify or request only the missing information needed to produce accurate copy
 | Product facts when the product is mentioned: capabilities, limits, differentiators, and sources | Prevents invented claims; an informational article may omit a product connection |
 | Next action; for a landing page, the primary CTA and post-click action | Keeps the conversion path coherent without forcing a sales CTA into an informational article |
 | Brand voice and approved claims | Keeps copy on-brand and supportable |
-| Available source material, research access, or essential contributor knowledge | Grounds a useful contribution and determines whether an interview is needed |
+| Available source material, research access, and author intake status/basis | Grounds a useful contribution and distinguishes resolved intake from pending interview |
 
 Also request, when available:
 
@@ -143,29 +148,32 @@ omissions in copy and mark any indispensable missing fact as a blocker.
    knowledge, decision criteria, and next question with their evidence labels.
    Validate the proposed reader task against supplied product facts and query
    intent; keep unresolved details as `hypothesis` or `unknown`.
-3. Carry the brief's query interpretation, intent evidence, competing
+3. Run or reuse the `distinctive-content` gate as defined above, passing the
+   requested deliverable and this brief inventory before extended research.
+   Preserve its full packet, author intake status and basis, pending question,
+   interview count, and evidence limits. For new body copy with pending intake,
+   return an incomplete plan and one question; wait before the remaining
+   research and full structure. On resume, update the same packet with the
+   answer. Complete its section mapping in Step 2 below. A terminal blocker
+   stops new body copy; local corrections follow the exception above.
+4. Carry the brief's query interpretation, intent evidence, competing
    interpretations, and uncertainty into the plan. Classify the query without
    treating that label as proof of the reader's task.
-4. Define the expected answer form and observable reader completion signal:
+5. Define the expected answer form and observable reader completion signal:
    a direct answer, criteria, procedure, template, explanation, or buying support.
-5. List the constraints, failure modes, trade-offs, and follow-up questions a
+6. List the constraints, failure modes, trade-offs, and follow-up questions a
    useful answer must cover. Separate adjacent intents that need another page.
-6. Reuse the brief's inspected search evidence. When material intent ambiguity
+7. Reuse the brief's inspected search evidence. When material intent ambiguity
    remains and research is available, inspect relevant supplied or live results;
    record the sources, market/date where relevant, and what they establish.
    Without access, keep the interpretation provisional. A result pattern is
    evidence about expectations, not a template to copy.
-7. Read supplied product materials and list capabilities, limitations, and
+8. Read supplied product materials and list capabilities, limitations, and
    proof with their source and approval status. Distinguish a claim confirmed
    by current documentation from a user-supplied claim that still needs review.
-8. Identify the baseline answer and added value: an explained judgment,
+9. Identify the baseline answer and added value: an explained judgment,
    worked example, usable method, checked synthesis, or first-hand evidence.
    Claim competitive novelty only when the relevant pages were inspected.
-9. Run or reuse the `distinctive-content` gate as defined above. Preserve its
-   full packet, pending question, interview count, and evidence limits; complete
-   the section mapping in the plan. Return the plan without body copy for
-   `interview-needed` or `blocked` on new substantive work, naming the gap and
-   next action. Local corrections follow the exception above.
 10. Map the reader's next decision. For a product-led page, confirm that the
    product has credible relevance to the task; for an informational blog with
    no supported product connection, teach the task without inventing one.
@@ -204,7 +212,7 @@ Return this plan:
 ## Distinctive contribution
 - Full distinctive-content packet (retain its item table, evidence status,
   source references, baseline answer, added value, reasoning, alternatives,
-  limits, pending question, and interview count):
+  limits, author intake status and basis, pending question, and interview count):
 - Section mapping (item IDs, grounded answer, or reason no unique source is needed):
 
 ## Keyword map

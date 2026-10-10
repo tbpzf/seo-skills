@@ -119,7 +119,17 @@ Shared rules:
 ## Resolve source material
 
 Reuse an existing evidence packet when its claims, sources, limits, and scope
-still support the promise. For a new material gap, read available product
+still support the promise, and retain its author intake status and basis.
+Before new body copy, conduct a source interview after a brief inventory,
+even when product facts are supported. Reuse a fitting completed interview or
+concrete author-supplied experience, judgment, or examples; record an explicit
+user request to skip questions as an opt-out. Otherwise ask one focused
+question about a real situation, decision, or example, visibly in chat, and
+wait for the answer before extended research or the full section plan.
+Feature lists, code, documentation, and competitor research alone do not
+complete author intake. If the author has no first-hand material, record that
+answer and use transparent research or analysis without inventing experience.
+For a new factual gap, read available product
 documentation and credible primary sources. Record which source supports each
 claim, what it actually establishes, and its limits or uncertainty.
 
@@ -130,7 +140,7 @@ as illustrative. Research, inference, and examples cannot become invented
 first-hand experience, quotes, customer results, original measurements, or an
 opinion attributed to someone who did not express it.
 
-When necessary knowledge belongs to the user and remains unavailable, ask one
+For pending author intake or necessary private knowledge, ask one
 focused source question per turn and wait. Fold any new answer into the saved state before repeating a pending question;
 count prior questions in that state toward the maximum of 10. Preserve each answer's attribution and limits.
 If the central promise cannot be supported, narrow it transparently or report a

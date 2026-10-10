@@ -12,7 +12,7 @@
 | 优先级 | 原有问题 | 当前行为 | 主要落点 |
 | --- | --- | --- | --- |
 | P1 | 搜索意图可以只有分类，没有实际依据或验证结果 | 保存查询解释、预期答案形式、已检查的证据、竞争解释和不确定性；未研究时保留假设 | [audience strategy](../seo-audience-strategy/SKILL.md)、[writing plan](../seo-writing/SKILL.md) |
-| P1 | 来源门槛把作者经验与可信研究、分析混在一起 | 先检查可获取来源；透明综合与有推导的判断可以构成贡献，私人经验仍需真实来源 | [distinctive content](../distinctive-content/SKILL.md)、[research and judgment](../distinctive-content/references/research-and-judgment.md) |
+| P1 | 来源门槛把作者经验与可信研究、分析混在一起 | 事实支持与作者访谈分别记录；新正文默认先访谈，研究与透明分析仍可支撑内容，私人经验需真实来源 | [distinctive content](../distinctive-content/SKILL.md)、[research and judgment](../distinctive-content/references/research-and-judgment.md) |
 | P1 | 一条具体素材或限制可能让宽泛的承诺通过 | 检查核心承诺的支持程度，尝试执行文章提供的方法；必要步骤与决策缺失会阻止发布 | [shared standard](../distinctive-content/references/helpful-content.md)、[final writing review](../seo-writing/references/editorial-review.md) |
 | P1 | 计划导出只保证关键词表，可能丢失来源与判断边界 | 完整嵌入已保存计划，复用章节、来源包、证据状态、待答问题与计数 | [plan export](../seo-landing-prompt/references/plan-export.md) |
 | P1 | PR 将直接提供的事实视为已核实，且来源门槛先于读者选择 | 区分提供、检查、假设和未知；先确定记者任务与新闻角度；引用批准不证明结果声明 | [press release](../seo-pr/SKILL.md) |
@@ -45,7 +45,7 @@ Landing Page 与 Blog 继续拥有保存和合并；Guest Post 默认在 chat �
 
 | 请求与材料 | 预期路线及检查结果 |
 | --- | --- |
-| 有已检查的一手公开来源，作者没有亲身经历，写实用教程 | 读者简报 → 已检查来源和透明分析 → 来源包 → 计划与教程；无需强制访谈，也不生成第一人称经历 |
+| 有已检查的一手公开来源，作者没有亲身经历，写实用教程 | 读者简报 → 一次一问的作者访谈；记录作者没有相关经历的回答后，用已检查来源和透明分析完成来源包、计划与教程，不生成第一人称经历 |
 | 产品工作流明确，但“节省 80%”没有测量依据 | 保留受支持的工作流；省略可选数字并记录缺口；数字若是核心承诺则缩小承诺或停止正文 |
 | 商业落地页关键词指向不支持的功能 | 保留原关键词及冲突；保存计划，阻止新正文；不默默替换关键词或编造功能 |
 | 必须使用作者私人实测结果，但公开研究无法证明 | 只问一个必要问题；保存原包与计数，Stage 2 待完成；续答先更新包，达到十问上限仍无支持则 blocked |

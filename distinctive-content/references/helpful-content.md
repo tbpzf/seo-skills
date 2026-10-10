@@ -61,8 +61,11 @@ experience or credentials.
 Safe omissions and a narrower truthful promise can resolve optional gaps.
 An indispensable missing fact, unsupported central answer, or unresolved
 factual conflict blocks body drafting when no defensible answer remains. Ask
-the user only for essential knowledge the agent cannot obtain. Carry any
-pending question and interview count through the parent plan or guest notes.
+the user for essential private facts; resolve accessible factual gaps through
+research. Before new body copy, also resolve author intake under
+[distinctive-content](../SKILL.md), even when facts are already supported.
+Carry intake status/basis, any pending question, and interview count through
+the parent plan or guest notes.
 Editorial placeholders and proof requests belong in review notes, outside
 publishable copy.
 

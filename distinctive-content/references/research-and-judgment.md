@@ -4,6 +4,11 @@ Use this branch when inspected public material, supplied artifacts, or reasoned
 synthesis can strengthen the contribution. Apply the
 [helpful-content standard](helpful-content.md).
 
+Research supports facts and analysis. For new body copy, complete or reuse the
+author-intake step in [SKILL.md](../SKILL.md) before extended research; sufficient
+public evidence alone does not close that step. After intake, resolve accessible
+factual gaps here so follow-up questions focus on private knowledge.
+
 ## Fill accessible gaps
 
 1. Read relevant supplied sources or artifacts. If needed and tools are

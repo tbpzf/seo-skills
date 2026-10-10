@@ -27,7 +27,8 @@ and check date per verified rule or `unknown`, and the adapted
 relevant constraints, current knowledge, next question, and evidence source
 and label for each material detail. Add the thesis, why it fits now, original
 contribution and evidence, the `distinctive-content` packet with its source
-owner, completeness, limits, pending question, and asked/answered counts,
+owner, author intake status/basis, completeness, limits, pending question,
+and asked/answered counts,
 observable reader-task completion, section outline in the reader's question
 sequence, permitted product role, disclosure and link plan, and open questions.
 If the host is unknown, label the proposed angle and format provisional.
@@ -38,10 +39,11 @@ reason for omission, using the [keyword plan](keywords.md).
 ## Draft route
 
 Return the complete article under `## Guest post`, with its title, byline or
-byline placeholder, body, and citations in the host's required format. If an
-indispensable source gap prevents the central reader task, return the brief and
-blocked submission notes with the packet's pending question or terminal blocker
-instead of body copy.
+byline placeholder, body, and citations in the host's required format. If
+author intake is pending or an indispensable source gap prevents the central
+reader task, return the brief and blocked submission notes instead of body
+copy. Ask the packet's one pending question in chat and wait when one exists;
+otherwise name the terminal blocker.
 Omit unsupported optional claims and record their gaps in notes. Do not add
 owned-site title tags, meta descriptions, URL slugs, internal-link plans, or sales CTAs unless the host asks
 for them.
@@ -58,7 +60,8 @@ Follow with `## Submission notes` containing:
   note any change from the brief
 - Promised reader task and observable completion; final helpful-content
   walkthrough and distinctive-content audit findings, repairs, or blockers
-- Distinctive contribution and packet status, including interview questions
+- Distinctive contribution and packet status, including author intake
+  status/basis and interview questions
   asked/answered, pending question, completeness, source owner, mapped
   sections, and open evidence gaps
 - Contributor relationship, disclosure text/status, and byline status

@@ -18,10 +18,14 @@ Turn a keyword and optional business context into a complete, reusable prompt fo
 The generated prompt uses the structure of a content-production brief: fact boundaries, keyword plan, modular deliverables, and final verification. It must not imply that keyword counts, a particular structure, or AI-generated copy guarantees rankings.
 
 Carry the [`distinctive-content`](../distinctive-content/SKILL.md) contract into
-every generated prompt. Reuse a sufficient saved packet. For an independent
+every generated prompt. Reuse a sufficient saved packet with resolved author
+intake. For an independent
 template, allow supplied material, verified primary sources, and clearly
-identified analysis of those sources. Ask one source question at a time, up to
-10, when essential material belongs to the user. Proceed with a provisional
+identified analysis of those sources. Instruct the writer to complete default
+author intake before new body copy, even when research supports the facts;
+reuse fitting intake or an explicit user opt-out. Ask one source question at a
+time, up to 10, and wait for each answer. Generating a template or exporting a
+plan does not conduct that interview. Proceed with a provisional
 packet when its core is supported and optional gaps can be safely omitted;
 record those gaps in the report. Research and synthesis cannot supply invented experience,
 quotes, results, or an attributed opinion.
@@ -129,10 +133,13 @@ Every generated prompt must:
 15. Require every planned section to answer a distinct reader question, enable
     a decision, teach an action, provide evidence, or explain a material limit.
     Forbid sections created only for length, keywords, or a generic template.
-16. Require a distinctive source gate before drafting. If the supplied material
+16. Require a distinctive source gate and resolved author intake before new
+    body drafting, even when product facts are available. Reuse fitting author
+    intake or an explicit user opt-out. If the supplied material
     lacks a defensible contribution, use available primary-source research or
     grounded synthesis where they can fill the gap. Ask one focused question per
-    turn (maximum 10) for needed user knowledge. Preserve sources, attribution,
+    turn (maximum 10), waiting for each answer. Preserve intake status/basis,
+    sources, attribution,
     limits, and any safely omitted provisional gap. A supported minor rewrite reuses
     the packet; revisit a gap when the promise, scope, or claims change.
 17. Require a critical walkthrough of the reader's task, repair omitted steps
@@ -269,8 +276,9 @@ Before delivering the generated prompt, verify:
   `content-plan.md`.
 - The complete saved plan is embedded in an export, with packet items,
   attribution, limits, section mapping, blockers, pending questions, and existing
-  interview count retained. An export never asks the writer to start planning
-  or the interview again.
+  interview count and author intake status/basis retained. An export reuses
+  resolved intake and resumes pending intake; it starts intake when a plan-only
+  packet has not required it yet. It never resets the existing count or plan.
 - The original user-supplied primary and chosen focus occupy distinct fields.
 - Reports and planning notes use `[[INSTRUCTION_LANGUAGE]]`, not a hardcoded language.
 - Metadata guidance does not require Meta Keywords.

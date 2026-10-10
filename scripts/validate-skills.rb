@@ -24,6 +24,7 @@ expected_execution_contract = {
   "execution_mode" => "autonomous",
   "approval_required" => false,
   "intermediate_turns" => "source_questions_only",
+  "source_interview" => "before_new_body",
   "humanization_required" => true,
   "grammar_check" => "if_available"
 }.freeze
@@ -133,6 +134,8 @@ if distinctive_file.file?
   distinctive = distinctive_file.read
   ["- Status: ready | interview-needed | provisional | blocked",
    "- Baseline answer and added value:", "- Judgment reasoning, alternatives, and conditions",
+   "- Source intake: pending | completed | supplied | skipped by user | not required",
+   "- Intake basis:",
    "- Pending question:", "Evidence status", "- Open evidence gaps:"].each do |field|
     errors << "distinctive-content/SKILL.md: missing evidence-packet field #{field.inspect}" unless distinctive.include?(field)
   end

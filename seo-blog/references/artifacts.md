@@ -33,7 +33,8 @@ drafting contract. For an informational article without a promotional CTA, set
 separately. Include a `Distinctive contribution` block with the
 full `distinctive-content` packet, including its item table and evidence status,
 precise sources, limits, baseline answer and added value, judgment reasoning and
-alternatives, pending question, interview count, gap owners/actions, and section
+alternatives, author intake status and basis, pending question, interview count,
+gap owners/actions, and section
 mapping.
 
 ## `content.md`
@@ -80,7 +81,7 @@ than filled with an invented fact or destination.
   - content.md: present | absent
   - seo-metadata.md: present | absent
 - Intake: source references, evidence labels, and missing required inputs
-- Distinctive content: packet status, pending question/count, mapped sections, and gap owners/actions (full packet in content-plan.md)
+- Distinctive content: packet status, author intake status/basis, pending question/count, mapped sections, and gap owners/actions (full packet in content-plan.md)
 - Final audit:
   - Reader situation, journey questions, usefulness, and reader respect:
   - Plan or structure deviations:
@@ -123,6 +124,9 @@ from the original brief where available; do not label inferred phrases as
 user-supplied. Apply the reader-strategy refresh rule in [routing.md](routing.md)
 and resume any saved `distinctive-content` interview one question at a time
 before drafting, only asking the saved question when no answer has arrived.
+For unfinished new body copy, check author intake status and basis; an older
+`ready` packet with zero questions and no supplied author material or opt-out
+leaves intake pending. Reevaluate the shared gate at Stage 2 before drafting.
 Fold new answers into the existing packet without resetting the count; reevaluate
 Stage 2. Reuse a valid packet for local supported revisions. Normalize any
 refreshed brief into this same plan, preserving user edits.

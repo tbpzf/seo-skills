@@ -22,7 +22,8 @@ Examples:
 
 ```text
 [seo-blog][stage 2][skill] completed: seo-audience-strategy returned an evidence-labeled single-content brief for seo-writing
-[seo-blog][stage 2][skill] completed: distinctive-content packet ready; mapped source material to the plan
+[seo-blog][stage 2][skill] blocked: distinctive-content author intake pending; ask question 1/10 in chat and wait
+[seo-blog][stage 2][skill] completed: author intake resolved; distinctive-content packet ready; mapped source material to the plan
 [seo-blog][stage 2][file] completed: saved content-plan.md from seo-writing plan output
 [seo-blog][stage 4][remote] completed: Humalizer read https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md
 [seo-blog][stage 6][cli] skipped: harper-cli unavailable; grammar check is non-blocking
@@ -32,8 +33,11 @@ Examples:
 Use `completed` only after the operation finishes. A failed required source
 sets workflow state to `blocked`; an unavailable Harper check is `skipped`.
 
-For an essential source question, report the saved incomplete plan and one
-pending question; keep Stage 2 pending and resume there after the answer. A
+On a body-copy route with a pending author-intake or essential factual question,
+ask the single
+question visibly in chat and wait; report any saved incomplete plan, keep
+Stage 2 pending, and resume there after the answer. A file containing the
+question or a progress line saying an interview is needed does not ask it. A
 plan-only result can complete with gaps recorded. At final verification report
 the helpful-content walkthrough result and specific publication blockers,
 separately from the editing-stage outcome.

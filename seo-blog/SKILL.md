@@ -3,7 +3,8 @@ name: seo-blog
 description: >-
   Plan, write, revise, or audit an English SaaS SEO article for the company's
   own blog. Use for a topic, keyword, brief, supplied outline, or existing
-  draft. Full drafts save a plan, article, metadata, and editorial status;
+  draft. Interview the author before new body copy. Full drafts save a plan,
+  article, metadata, and editorial status;
   audit-only requests return findings without changing files. Route a
   third-party contributed article to seo-guest-post, a commercial page to
   seo-landing-page, and an announcement to seo-pr.
@@ -23,15 +24,19 @@ resuming, and [runtime-trace.md](references/runtime-trace.md) for progress.
 execution_mode: autonomous
 approval_required: false
 intermediate_turns: source_questions_only
+source_interview: before_new_body
 humanization_required: true
 grammar_check: if_available
 ```
 
 The user may request a checkpoint, a partial deliverable, or no humanization.
 Complete the selected route without an approval pause otherwise.
-Essential source questions may interrupt the
-run; preserve the pending question and interview count, then resume after the
-answer. Optional gaps can be omitted with a provisional packet. A plan-only
+For new body copy, run the default author intake defined by `distinctive-content`
+after a brief inventory, before extended research and the full plan. Ask its
+one question visibly in chat and wait; preserve intake status/basis, the pending
+question, and interview count, then resume after the answer. Reuse fitting
+resolved intake or an explicit user opt-out. Optional factual gaps can be
+omitted with a provisional packet after intake is resolved. A plan-only
 request returns its plan and any pending question without requiring an
 interview to complete the requested planning work.
 
@@ -78,7 +83,9 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    inventing a fact or URL, and the supplied keyword inventory is preserved
    without additions or losses.
 2. **Plan.** Apply `seo-audience-strategy` in focused `single-content brief`
-   mode for this article. Give it the supplied audience and product context,
+   mode for this article. For new body copy, request an initial brief from
+   available material with explicit hypotheses; defer extended search research
+   until author intake is resolved. Give it the supplied audience and product context,
    evidence, primary and long-tail keywords, and any existing pages the user
    supplied. Ask it to resolve the reader's situation, journey question,
    decision criteria, proof needs, and useful next action, with evidence labels.
@@ -89,8 +96,9 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    that transient brief and the complete original keyword inventory to
    `seo-writing` in `plan` mode. `seo-writing` runs `distinctive-content` in
    `gate` mode once using available sources, research, examples, product facts,
-   and contributor knowledge, or reuses an adequate packet. Save the full packet
-   including pending question, count, evidence status, reasoning, and limits.
+   and contributor knowledge, or reuses an adequate packet with resolved author
+   intake. Save the full packet including author intake status and basis,
+   pending question, count, evidence status, reasoning, and limits.
    Normalize any supplied outline into the
    `seo-writing` plan schema, preserving evidence labels, constraints, and the
    user's keyword wording. Save the full plan—including its `Keyword map` and
@@ -103,11 +111,14 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    This stage is complete when the plan contains the evidence-labeled reader
    situation and decision, section jobs, proof and validation needs, every
    supplied keyword's disposition, product limits, next action, and distinctive
-   packet mapping. If the packet is `interview-needed`, save the one next
-   question with the incomplete plan, Stage 2 pending, and `Next stage: 2`.
+   packet mapping. If the packet is `interview-needed` on a body-copy route,
+   ask the one next
+   question in chat and wait; save it with the incomplete plan, Stage 2 pending,
+   and `Next stage: 2`.
    Resume by recording the answer in the existing packet. A `blocked` packet
    stops new body drafting; a `provisional` packet permits only a supported
-   promise with optional claims omitted.
+   promise with optional claims omitted. Plan-only work returns the plan and
+   future question without requiring an answer.
 3. **Draft or revise.** Apply `seo-writing` in `draft-from-structure` mode for
    new copy or `revise` mode with the existing article, metadata, plan, and
    requested change. Parent maps the returned draft and metadata to `content.md` and

@@ -6,7 +6,8 @@ description: >-
   geographic expansion, and company news. Use when the user asks for a press
   release, news release, wire-ready announcement, SaaS launch announcement,
   boilerplate, headline, lead, executive quote draft, or media-ready release.
-  Apply a newsworthiness gate, inverted-pyramid structure, AP-style defaults,
+  Interview the source before a new full release. Apply a newsworthiness gate,
+  inverted-pyramid structure, AP-style defaults,
   evidence and attribution checks, and distribution-readiness audit. Do not use
   for landing pages, blog posts, media pitches, or fabricated announcements.
 ---
@@ -25,8 +26,9 @@ readiness.
 Use [`distinctive-content`](../distinctive-content/SKILL.md) as the shared
 source gate. It keeps the announcement anchored in the verified new event,
 specific scope, approved evidence, and an attributable quote or explanation.
-Inspect available sources before interviewing the source one question at a
-time, up to 10 questions, for material knowledge those sources cannot supply.
+For a new full release, apply its default author intake after a brief inventory,
+before extended research and drafting. Follow its intake reuse and explicit
+user opt-out rules; ask one question at a time, up to 10 questions total.
 
 ## Operating modes
 
@@ -137,17 +139,19 @@ comparisons, statistics, and superiority need evidence with applicable scope,
 methodology, and limits. Keep restricted, contradicted, and unsupported claims
 out of the release; record any indispensable omission as a blocker.
 
-For a SaaS launch, explicitly verify product name, target user, problem solved,
+After author intake, complete the fact sheet. For a SaaS launch, explicitly
+verify product name, target user, problem solved,
 actual workflow, launch/availability date, supported plans or markets, pricing
 language, limits, security/compliance claims, integrations, and CTA destination.
 
 Run `distinctive-content` in `gate` mode after the audience, angle, and fact
 sheet. Pass the reporting task, new event, what changed in practice, inspected
 sources, verified scope, methodology, approved quote, customer evidence, and
-material limits. An inspected announcement, documented workflow, or supported
-explanation can satisfy the packet without an interview. If it returns
-`interview-needed`, ask its one pending question and resume with `interview`,
-up to 10 questions total. Keep packet completeness, pending question, and
+material limits, plus the requested deliverable. Inspected sources support
+facts; new full-release body copy also requires resolved author intake under
+the shared gate. If it returns `interview-needed`, ask its one pending question
+in chat and wait, then resume with `interview`, up to 10 questions total.
+Keep author intake status/basis, packet completeness, pending question, and
 asked/answered counts in the readiness notes. A central source gap blocks body
 copy; optional gaps may remain explicitly provisional while supported news
 proceeds. For `audit`, use the read-only `distinctive-content` audit branch.
@@ -297,7 +301,7 @@ For `draft` or `revise`, return:
 - Suggested distribution audience/categories:
 - Final checks required:
 - Distinctive contribution and evidence packet:
-- Packet completeness, pending question, and interview asked/answered counts:
+- Author intake status/basis, packet completeness, pending question, and interview asked/answered counts:
 ```
 
 Do not call a release wire-ready while placeholders, unapproved proposed quotes,

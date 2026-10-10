@@ -43,7 +43,9 @@ The generated prompt must:
 7. Omit Meta Keywords.
 8. Resolve intent uncertainty and source material before body copy. Research
    verified primary sources or derive clearly identified analysis where useful;
-   interview for needed user knowledge. Keep gaps in the report.
+   complete default author intake before new body copy, reusing fitting intake
+   or an explicit user opt-out. Ask one question at a time, wait for each answer,
+   and cap the interview at 10 total. Keep gaps in the report.
 9. Derive section detail from the reader's decision, with no invented heading
    word limits or item counts. Verify that the reader can complete the task.
 
@@ -144,7 +146,7 @@ source and scope. Packet ready. Three source questions have already been answere
 
 - Embed the complete saved plan unchanged, including D1/D2 details, source,
   attribution, evidence status, limits, section mapping, keyword decisions, and the
-  existing interview count.
+  existing interview count and author intake status/basis.
 - Reuse the three planned sections. Do not regenerate a six-module outline or
   ask the same source questions again. A necessary general explanation may use
   a grounded answer without duplicating D1 or D2.

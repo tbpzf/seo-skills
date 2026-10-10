@@ -34,7 +34,8 @@ the sole persisted drafting contract. When a field is unknown, label it
 `Distinctive contribution` block must carry the full `distinctive-content`
 packet, including its item table and evidence status, precise sources,
 limits, baseline answer and added value, judgment reasoning and alternatives,
-pending question, interview count, gap owners/actions, and section mapping. A
+author intake status and basis, pending question, interview count, gap
+owners/actions, and section mapping. A
 generated `prompt.md` is an export derived from this plan and never overrides
 it.
 
@@ -87,7 +88,7 @@ and the home for editorial findings:
   - seo-metadata.md: present | absent
   - prompt.md: present | absent
 - Intake: source references, evidence labels, and missing required inputs
-- Distinctive content: packet status, pending question/count, mapped sections, and gap owners/actions (full packet in content-plan.md)
+- Distinctive content: packet status, author intake status/basis, pending question/count, mapped sections, and gap owners/actions (full packet in content-plan.md)
 - Final audit:
   - Reader situation, journey questions, usefulness, and reader respect:
   - Plan or structure deviations:
@@ -147,7 +148,10 @@ into the export; the prompt does not reclassify the list.
    earliest incomplete stage from files in the same way. Save the normalized
    status before continuing.
 2. Resume at `Next stage` using the saved plan's reader strategy and
-   `distinctive-content` packet. If the packet is `interview-needed`, ask its
+   `distinctive-content` packet. For unfinished new body copy, check the packet's
+   author intake status and basis; an older `ready` packet with zero questions
+   and no supplied author material or opt-out leaves intake pending. Reevaluate
+   the shared gate at Stage 2 before drafting. If the packet is `interview-needed`, ask its
    saved one next question only if no answer has arrived. Fold any new answer
    into the existing packet, retain the question count, and reevaluate Stage 2
    before drafting. Reuse a valid packet for local revisions; a small supported

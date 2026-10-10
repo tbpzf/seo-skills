@@ -4,7 +4,8 @@ description: >-
   Plan, write, revise, or audit SaaS guest posts for third-party publications.
   Use for contributed articles, publisher-specific pitches, and sponsored
   guest articles, including requests with a target website and keywords.
-  Research the host's readers and editorial rules; verify claims, attribution,
+  Interview the contributor before new body copy. Research the host's readers
+  and editorial rules; verify claims, attribution,
   disclosures, originality, and links. Drafts and revisions also run a
   humanization review and available grammar check. For an article on the
   company's own site, use seo-blog; for a news announcement, use seo-pr.
@@ -28,14 +29,17 @@ selected; unavailable required remote instructions block editorial readiness.
 Harper is optional when its CLI is unavailable. Keep these checks in the
 working article; save a guest-post file only when the user asks.
 
-For a brief, new draft, or substantive revision, once the host reader situation
+For a brief, new draft, or substantive revision, once the initial host reader situation
 and planned angle are known, run
 [`distinctive-content`](../distinctive-content/SKILL.md) in `gate` mode with
 the contributor's substantiated practice, decisions, examples, data, inspected
-sources, product evidence, and limits. Research or a source-backed synthesis
-can satisfy the gate; interview only for material knowledge that the available
-sources cannot supply. If it returns `interview-needed`, ask its one pending
-question and resume with `interview`, up to 10 questions total. Carry the packet's
+sources, product evidence, and limits. Pass the requested deliverable so the
+gate applies its default author intake before new body copy. Start from a
+brief inventory; complete intake before extended research or the full plan.
+Follow its intake reuse and explicit user opt-out rules; research supports
+facts without replacing intake. If it returns `interview-needed` on a body-copy
+route, ask its one pending question in chat and wait, then resume with `interview`, up to 10
+questions total. Carry the packet's intake status/basis,
 completeness, pending question, and asked/answered counts in the brief or
 submission notes. An unanswered central promise blocks body copy; an optional
 gap may remain explicitly provisional while the supported article proceeds.
@@ -53,7 +57,9 @@ and reports unrelated source gaps in its audit without reopening the interview.
 
 When a target publication or website is supplied, perform the
 [host research](references/host-research.md) yourself, even if the user supplied
-no guidelines URL or audience description. Record the host's stated audience,
+no guidelines URL or audience description. For a new draft, do a bounded
+initial check to frame author intake and identify an explicit assistance ban;
+complete extended host research after intake before drafting. Record the host's stated audience,
 relevant published coverage, current contributor guidelines, topic and angle,
 article length and format, byline, deadline, originality/exclusivity terms,
 citation style, link policy, and whether the placement is editorial, partner,

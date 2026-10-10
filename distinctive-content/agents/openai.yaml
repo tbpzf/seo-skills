@@ -1,4 +1,4 @@
 interface:
   display_name: "Distinctive Content"
   short_description: "Develop supported contributions and useful judgment"
-  default_prompt: "Use $distinctive-content to develop a supported contribution from supplied knowledge, inspected research, examples, and reasoned judgment. Interview me only for essential knowledge you cannot obtain, and audit whether the reader can complete the promised task."
+  default_prompt: "Use $distinctive-content to develop a supported contribution. Before new body copy, interview me one question at a time, up to 10 total, and wait for each answer; reuse fitting author intake or my explicit opt-out. Keep sources and limits traceable and audit whether the reader can complete the promised task."
