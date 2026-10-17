@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "20 vérités sur le GEO, pour arrêter de payer des choses qui ne fonctionnent pas 👇\n\nJordan Chenevier-Truchet 的 LinkedIn 帖子（法语），列了 20 条关于 GEO（AI 搜索优化）的判断，目的是让大家别再为没用的东西花钱。核心观点：在 AI 里“被看见”分两种——被点名（mention）和被链接引用（citation）；引用靠的是 SEO 基本功，点名靠的是营销、口碑和客户。\n\n要点：\n1. 想被 AI 在“怎么做 X”这类问题里引用，你得先有一个讲清楚怎么做 X 的页面，没有 SEO 基础就没有引用。但光有引用也不够：作者说在一个回答里当第 17 个来源，相当于排在 Google 第 6 页。\n2. 作者称，讲解型页面（什么是 X、为什么 X）能拿到几百次引用，而“最好的 X 软件”这类产品页有时只有几次。\n3. llms.txt 和所谓“给 LLM 专用的 schema”目前没人证明有效；也不需要把文章切成小块喂 AI。Reddit 不保证任何结果，但大家在上面怎么评价你，会影响 AI 怎么描述你的品牌。\n4. 每个 AI 逻辑不同，出现在 Google AI Overviews 不代表在 ChatGPT、Claude、Perplexity、Gemini 里也出现。别为了讨好 AI 牺牲 Google 排名，作者说丢了要两三年才拿得回来。AI 搜索也没有可靠的归因：用户在 ChatGPT 里认识一个品牌，几周后才去 Google 搜品牌名下单。\n\n结论：起步不需要买工具，先拿几个关于自己品牌的问题去问 AI，就已经有活可干了。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7512768774534733824%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 13,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T16:41:05.467+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "20 vérités sur ...",
+    "topic_id": "45548554845888858",
+    "type": "talk"
+  }
+}

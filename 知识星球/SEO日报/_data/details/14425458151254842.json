@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "Google Updates AI Content Guidelines: Manually Factcheck & Review AI-Generated Content\n\nSearch Engine Roundtable 的 Barry Schwartz 报道：Google 更新了 Search Central 里的“在网站上使用生成式 AI 内容”指南，明确要求用 AI 写的内容在发布前必须人工核查事实。\n\n要点：\n1. 新加的原话：“It is critical to manually factcheck and review all AI-generated content for accuracy and trustworthiness before publishing.” 用了 critical（至关重要）这个词，Google 的帮助文档里很少这么说。\n2. 理由：生成式模型不是去“查”事实，而是根据训练数据预测最可能出现的词序列，所以输出可能有错误，也就是常说的“幻觉”。\n3. Google 在更新日志里说，这次改动是为了让文档和他们在开发者活动上讲的内容保持一致。这份文档上次更新是 2025 年 10 月。\n4. Barry 的猜测：用 critical 这么重的词，可能和 2026 年 9 月的垃圾内容更新（spam update）针对这类内容有关。这只是他的推测，Google 没有这么说。\n\n结论：用 AI 批量产内容的，发布前逐条核对事实、数据和引用，现在是 Google 写进文档的明确要求。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.seroundtable.com%2Fgoogle-updates-ai-content-guidelines-factcheck-review-42217.html\" title=\"Google%20Updates%20AI%20Content%20Guidelines%3A%20Manually%20Fac...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-03T00:14:28.479+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Updates ...",
+    "topic_id": "14425458151254842",
+    "type": "talk"
+  }
+}

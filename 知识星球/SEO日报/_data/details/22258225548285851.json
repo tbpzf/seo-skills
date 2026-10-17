@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "Quality at Google: what it is, how it is measured and how long it takes to recover from a core update\n\nNacho Mascort 参加了 Google 巴塞罗那活动的质量分享,把现场幻灯片和质量评估指南、泄露文档、反垄断案材料对上:Google 说的质量是什么、怎么衡量、核心更新后多久能恢复。\n\n要点:\n1. 质量四要素:投入的功夫、原创性、才能或专业度、准确性,人写的和 AI 写的按同一标准评。\n2. \"大路货内容\"(commodity content)就是谁都能写的内容。测试方法:把页面上的品牌换成竞争对手,页面依然一样有用,那就是大路货。幻灯片举例:跑鞋店写\"买跑鞋要考虑的 10 件事\"是大路货,写\"这位顾客的鞋为什么跑到 400 英里就塌了:磨损分析\"就不是。\n3. 现场幻灯片显示,Google 从索引里捞候选页面时,每个 URL 都带着语言、国家、质量等属性,并据此重新排序——作者的理解是,质量分在你搜索之前就已经算好了。作者还说 Gary Illyes 现场明确表示核心更新看的是整个站。\n4. 作者自己的案例:他在 Softonic 把多语言子域并入主域,核心更新来时整站掉了 20% 多;判断是翻译内容质量拖累主站,于是把各语言迁到独立国家域名,之后主域和各语言站都超过了原来的水平(作者自述)。\n5. 他的检查清单:按页面类型分组看流量和收录比例 → 每类页面过一遍四要素 → 用换品牌测试找大路货 → 能改的改、能合并的合并、不行的删 → 按月衡量,通常 3–6 个月见效。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fnachomascort.com%2Fen%2Fblog%2Fgoogle-quality-core-updates%2F\" title=\"Quality%20at%20Google%3A%20what%20it%20is%2C%20how%20it%20is%20measured%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 12,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T00:24:21.267+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Quality at Goog...",
+    "topic_id": "22258225548285851",
+    "type": "talk"
+  }
+}

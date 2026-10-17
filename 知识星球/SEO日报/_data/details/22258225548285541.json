@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+    "content": "Google Search Central Live Deep Dive, Barcelona - Day 3 Recap | We Are ROAST\n\nGoogle 巴塞罗那活动最后一天,讲排名、质量和\"各种事情到底要多久\"。最大亮点是 Gary Illyes 第一次公开了 Google 内部统计的各环节典型时长和最慢时长,很多最慢一栏写着\"永不(质量原因)\"。\n\n要点:\n1. 时长(典型 / 最慢):新 URL 被发现约 20 小时 / 几周到永不;sitemap 处理 24 小时 / 最多 14 天或永不(质量原因);整个索引流程约 1.5 小时 / 几个月或永不(质量原因);迁站 1–3 个月 / 6 个月到 1 年以上;人工处罚解除 1–2 周 / 4–6 周;核心更新后恢复 3–6 个月 / 6 个月到 1 年(等下一次核心更新)。\n2. Illyes 说 Google 每天过滤 400 亿个垃圾页面;规模化批量内容正在成为比垃圾链接更大的问题;核心更新针对的是页面,不是整个域名,所以同一个站会有页面涨、有页面跌。\n3. Google 的 Duy Nguyen 说质量看四点:投入的功夫、原创性、才能或专业度、准确性,不管是人写的还是 AI 写的,标准一样。spam 更新变多,是因为新内容暴增,团队也在用 AI 抓。\n4. John Mueller:AI 搜索会把一个问题拆成很多子查询去搜,但这些子查询不会出现在 Search Console 里,因为不是用户发起的。\n\n结论:技术修得再快,质量不过关,Google 可能永远不收、不展示;核心更新后的恢复要按月算。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fweareroast.com%2Fnews%2Fgoogle-search-central-live-deep-dive-barcelona-day-3-recap%2F\" title=\"Google%20Search%20Central%20Live%20Deep%20Dive%2C%20Barcelona%20-%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T00:24:13.880+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Search C...",
+    "topic_id": "22258225548285541",
+    "type": "talk"
+  }
+}

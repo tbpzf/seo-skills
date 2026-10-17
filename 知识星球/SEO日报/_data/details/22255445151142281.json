@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "谷歌不会惩罚人工智能生成的内容；它惩罚的是劣质内容（研究了33.1万个页面）\n<e type=\"web\" href=\"https%3A%2F%2Fahrefs.com%2Fblog%2Fgoogle-doesnt-punish-ai-content%2F\" title=\"Google%20Doesn%E2%80%99t%20Punish%20AI%20Content%3B%20It%20Punishes%20Bad%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 28,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-07-27T17:12:54.282+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "谷歌不会惩罚人工智能生成的内容...",
+    "topic_id": "22255445151142281",
+    "type": "talk"
+  }
+}

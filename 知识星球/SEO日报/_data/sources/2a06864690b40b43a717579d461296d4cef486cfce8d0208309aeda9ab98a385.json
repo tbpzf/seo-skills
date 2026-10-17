@@ -1,0 +1,46 @@
+{
+  "url": "https://lnkd.in/eDQdS4RC",
+  "key": "2a06864690b40b43a717579d461296d4cef486cfce8d0208309aeda9ab98a385",
+  "status": "captured",
+  "reason": null,
+  "content_markdown": "---\nmeta-viewport: width=device-width, initial-scale=1\ntitle: Quality Rater Jev\n---\n\n![Herringbone](https://lnkd.in/brand/herringbone-lockup-color.png)\n\n01Rate a page\n\n# Rate a webpage against *Google Quality Raters Guidelines*\n\nEnter a URL. The report opens on its own page with the rating, every judgment behind it, and what still needs a person.\n\n02How it works\n\n## Three steps, *all visible.*\n\nRender\n\n#### Browser Run reads the page\n\nA headless browser loads the URL as a visitor would and returns the page as Markdown. Code pulls out facts: bylines, About and Contact links, dates, ad markers, AI boilerplate.\n\nJudge\n\n#### Jev answers the rubric\n\nOne request asks thirty-odd typed questions drawn from the guidelines: purpose, YMYL, harm and spam flags, main content quality, E-E-A-T, website information, and Needs Met when you give a query. Each answer comes back as a level with probabilities.\n\nRate\n\n#### Code applies the rules\n\nHarm, deception, and spam force Lowest first. A firm Low attribute gives Low. High and Highest need the guideline's High criteria. YMYL raises scrutiny. Every rule that fired is listed under the rating.\n\n#### What it cannot see\n\n- Reputation. The guidelines require research beyond the page; the report tells you which searches to run.\n- Layout, images, and ad placement. Ads and obstruction are judged from the text only.\n- Other pages on the site, so systemic problems can only be suspected.",
+  "fetched_at": "2026-10-17T02:39:12.453240+00:00",
+  "details": {
+    "initial_reader": {
+      "kind": "url",
+      "url": "https://lnkd.in/eDQdS4RC",
+      "finalUrl": "https://lnkd.in/eDQdS4RC",
+      "contentType": "text/html",
+      "method": "native",
+      "truncated": false,
+      "notes": [],
+      "meta": {
+        "source": {
+          "type": "url",
+          "value": "https://lnkd.in/eDQdS4RC"
+        }
+      }
+    },
+    "alternate_reader": {
+      "kind": "url",
+      "url": "https://qualityrater.herringbone.ai/",
+      "finalUrl": "https://qualityrater.herringbone.ai/",
+      "contentType": "text/html",
+      "method": "native",
+      "truncated": false,
+      "notes": [],
+      "meta": {
+        "source": {
+          "type": "url",
+          "value": "https://qualityrater.herringbone.ai/"
+        }
+      }
+    },
+    "resolved_url": "https://qualityrater.herringbone.ai/",
+    "browser": {
+      "url": "https://lnkd.in/eDQdS4RC",
+      "title": "LinkedIn"
+    },
+    "relative_markdown_links_resolved_against": "https://lnkd.in/eDQdS4RC"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "What is Site Authority? The siteAuthority Signal in the Google Leak - Hobo\n\nHobo 的 Shaun Anderson 专门拆了 2024 年 Google 泄露文档里的 siteAuthority 字段。很多人看到这个名字就说\"Google 骗了我们十年,其实有域名权威分\"。作者的结论是:Google 没撒谎,它否认的是 Moz 的 DA 和\"把外链加总成一个域名分\",并没有否认站级质量分。\n\n要点：\n1. 泄露文档对 siteAuthority 只有一行描述：\"converted from quality_nsr.SiteAuthority, applied in Qstar\"，类型是整数，默认值 nil（空，不是 0）。它只写了数据从哪来（NSR 站级质量体系）、用在哪（Q* 质量评分），完全没写输入是什么。所以\"它就是算外链的\"\"新站从 0 分起步\"\"它是排名第一道闸门\"这类说法都没有文档依据，作者一口气驳了 17 条。\n2. 这个字段所在的 CompressedQualitySignals 模块，文档写明是压缩后送进 Mustang 和 TeraGoogle 的信号，在 TeraGoogle 里用于 preliminary scoring（初步打分），存放在 \"very limited serving memory (Flash storage)\"。作者据此推断它是提前算好、变化很慢的基线分（作者推论）。\n3. Google 官方表态按时间排一下：Matt Cutts 2013 说会识别某领域的话题权威；Gary Illyes 2016 说 \"We don't really have overall domain authority\"；Paul Haahr 2017 说没有哪一个信号叫\"authority\"；John Mueller 2018 承认 \"we do have some metrics that are more on a site level\"；2019 又说 Google 不评估网站的 authority；2022 说做 Google 搜索 \"you do not need DA\"。\n4. 实操含义：别花钱刷第三方 DA 分数，那是 Google 根本不看的游戏；作者认为 Google 在这一块看的是链接质量、点击和整站内容质量。\n\n结论：泄露暴露的不是 Google 撒谎，而是它措辞极度精确——否认的是工具商的指标名，不是\"站级信任分\"这个概念。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.hobo-web.co.uk%2Fwhat-is-site-authority-the-siteauthority-signal-in-the-google-leak%2F\" title=\"What%20is%20Site%20Authority%3F%20The%20siteAuthority%20Signal%20i...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 14,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-12T04:13:04.029+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "What is Site Au...",
+    "topic_id": "55521551844545144",
+    "type": "talk"
+  }
+}

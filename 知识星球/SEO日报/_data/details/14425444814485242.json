@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Glenn Gabe: When sites drop for their core queries due to major algorithm updates, other queries can show up in GSC\n\nGlenn Gabe 提醒：网站在算法更新中丢了核心关键词后，GSC 里会冒出一些看起来很\"新\"、甚至很吓人的 query。先别慌，这些词很可能一直都在，只是以前排不进 GSC 界面的前 1000 行。\n\n要点：\n1. 核心词排名掉了以后，原本排在后面的 query 会在 GSC 报表里浮到前面，看起来像是更新后才出现的新词。\n2. 想确认是不是真的新词，用 GSC API 把下跌之前的全部 query 导出来对比，\"Don't just rely on the top 1K in the GSC UI\"。\n3. 他刚帮一个站做过（作者自述）：API 一共导出了 7.6 万条 query，其中近 1000 条\"吓人的新词\"在更新前就已经存在、也一直在带来流量，只是没出现在默认的 1000 行报表里。\n4. 导出工具可以用 Analytics Edge，他写过多篇教程。\n\n结论：判断更新后的 query 变化，别只看 GSC 界面的前 1000 行，用 API 全量导出再比。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fx.com%2Fglenngabe%2Fstatus%2F2108924035375485048\" title=\"https%3A%2F%2Fx.com%2Fglenngabe%2Fstatus%2F2108924035375485048\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 8,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-14T04:06:42.684+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Glenn Gabe: Whe...",
+    "topic_id": "14425444814485242",
+    "type": "talk"
+  }
+}

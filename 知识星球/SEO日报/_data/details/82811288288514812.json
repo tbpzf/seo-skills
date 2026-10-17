@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "谷歌的约翰·穆勒再次表示，LLm.txt 与谷歌或 Gemini 无关 🙏\n\n这个问题已经被问过很多次、讨论过很多次了…… \n\n我最近好像没看到有人推荐使用 LLM.txt，但这个问题却一直被反复提及🤷‍♀️\n\n曾经有一段时间，我的时间线上充斥着关于 LLM.txt 的帖子，都在夸它有多好多有价值……现在却看不到了……不过我想惯性还是在起作用吧😂\n\n那么，让我们再说一遍，让后面的人也能听见：\n\nLLM.txt 没有价值",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 28,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-22T19:04:10.659+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "4844212521218528",
+        "large": {
+          "height": 687,
+          "url": "https://images.zsxq.com/Fgyfr6Td3HDctaEqd8omrVb_Rq-5?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:ByzRvxUKiqyv-ua-ESBUlcrlrnE=",
+          "width": 523
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 985,
+          "url": "https://images.zsxq.com/Fgyfr6Td3HDctaEqd8omrVb_Rq-5?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:hMGpyWm8jLEj3qYYqAEkEM9zIFU=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "谷歌的约翰·穆勒再次表示，LL...",
+    "topic_id": "82811288288514812",
+    "type": "talk"
+  }
+}

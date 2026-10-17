@@ -1,0 +1,1188 @@
+{
+  "count": 30,
+  "has_more": true,
+  "next_end_time": "2026-01-22T15:38:28.781+0800",
+  "success": true,
+  "topics_brief": [
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "众所周知，LLMs无法读取JavaScript.\n\n那么你知道你的网站是否依赖于大量的JavaScript,而导致内容无法被AI读取嘛?\n这也就意味着你的网站内容永远不会上GEO和AIO.\n\n你可以在浏览器上下载这个插件'JavaScript 禁用 Chrome'来测试一下. 当你把网站上的JavaScript 全部关闭后，你看一下你的网站内容呈现是怎么样的。\n<e type=\"web\" href=\"https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fjavascript-disable-chrome%2Fjbjdopljoflabmgndibnfmnmojbafaog%3Fhl%3Dzh-CN\" title=\"https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fjavascrip...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 25,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-28T08:27:42.229+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "众所周知，LLMs无法读取Ja...",
+      "topic_id": "22811228482855241",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "并非每个页面都需要通过搜索来证明其价值。\n\n我们过于痴迷于流量指标，以至于忘记了网站除了吸引谷歌上的陌生人之外还有其他用途。有些页面并非为了让那些不知道你存在的人找到，而是为了服务那些已经知道你的人。\n这两个页面分别是《不与 Nikki Pilkington 合作的 6 个理由》和《与 Nikki Pilkington 合作进行 SEO – 我需要你做什么？》。\n没人会搜索“不和妮基·皮尔金顿合作的理由”（至少我希望如此）。“妮基需要我做什么”也不是个热门关键词。但这些页面对我的业务贡献比我一些流量不错的博客文章还要大。\n\n这些页面为何能帮我节省时间和精力\n\n我喜欢把这些页面比作一位优秀的接待员。它们本身并不直接产生收入，但它们能筛选出合适的访客，并礼貌地将不合适的访客转介出去。\n“不与我合作的六大理由”页面简直有神奇的魔力——它能在不合适的咨询进入我的收件箱之前就将其拒之门外。那些想要 Fiverr 价格却想获得优质服务的人？他们会读完这个页面，然后默默地离开。那些需要十七个人审核才能确定每个标点符号的委员会式企业？他们也会主动选择退出。\n这让我省去了无数毫无结果的咨询电话，省去了无数为那些根本不会支付我收费标准的人撰写提案的时间，也省去了无数委婉拒绝、解释我们为什么不合适的邮件的时间。\n“我需要您提供什么信息”页面则起到相反的作用。新客户只需点击一个链接，我就不必一遍又一遍地在邮件中重复输入相同的信息了。Google Search Console 的访问说明、Google Analytics 的设置、以及应该介绍给我的人等等，所有信息都清晰明了，注册后即可立即发送。\n\n停止使用相同的指标来衡量每个页面。\n\n你的网站不仅仅是流量获取工具，它还是你的数字办公室、接待区、客户注册系统和资格审查流程的集合体。\n有些页面旨在吸引新访客，有些页面旨在将访客转化为潜在客户，还有一些页面纯粹是为了让您的业务运营更加顺畅——节省您的时间、筛选掉不合适的客户或简化您的流程。\n如果你正在审核网站并考虑删除“表现不佳”的页面，请停下来问问自己每个页面究竟发挥了什么作用。一个自然流量为零但每周能帮你节省两小时重复发送邮件时间的页面，其作用远大于一篇每月只有五十个访客但从未转化的博客文章。\n\n哪些页面你可能低估了其价值？\n\n仔细看看你自己的网站。有没有一些页面因为流量数据惨淡而想删除？在删除之前，想想它们除了分析数据之外还有哪些作用。\n您的常见问题解答页面可以避免重复问题充斥您的收件箱。您的“工作方式”页面可以在项目开始前明确客户的期望。您的定价页面可以筛选掉那些负担不起您服务的客户。您的“并非适合所有人”页面可以坦诚地告诉客户哪些人不适合您，从而吸引合适的客户。\n这些页面可能永远不会出现在任何搜索结果中，也可能永远不会为你带来任何搜索访客。但它们正在默默地以流量报告无法衡量的方式提升你的业务。\n\n并非所有有价值的东西都能用曝光量和点击量来衡量。",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 26,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-27T17:51:43.360+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "2026-01-27T17:54:46.851+0800",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "并非每个页面都需要通过搜索来证...",
+      "topic_id": "14588445515551122",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "语义搜索是目前唯一重要的搜索方式（对于SEO和GEO而言）\n<e type=\"web\" href=\"https%3A%2F%2Fahrefs.com%2Fblog%2Fsemantic-search-is-the-only-search-that-matters-now%2F%3Futm_source%3Dsubstack%26utm_medium%3Demail\" title=\"Semantic%20Search%20Is%20the%20Only%20Search%20That%20Matters%20No...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 28,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-27T15:08:33.599+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "语义搜索是目前唯一重要的搜索方...",
+      "topic_id": "22811228824142411",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "Google 搜索团队不认可 LLMs.txt 文件\n<e type=\"web\" href=\"https%3A%2F%2Fwww.seroundtable.com%2Fgoogle-does-not-endorse-llms-txt-40789.html%3Futm_source%3Dsubstack%26utm_medium%3Demail\" title=\"Google%20Does%20Not%20Endorse%20LLMs.txt%20Files\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 26,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-27T15:08:00.615+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google 搜索团队不认可 ...",
+      "topic_id": "45811558852125548",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "checkin": null,
+      "content": "GEO内容分析工具\n<e type=\"web\" href=\"https%3A%2F%2Faiseo.houtini.com%2F\" title=\"AISEO%20-%20AI%20Search%20Content%20Optimiser\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 26,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-27T08:11:38.807+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "GEO内容分析工具\nAISEO...",
+      "topic_id": "45811558415282828",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "内部链接，首先从高价值/高流量文章入手。链接到相关的标签/主题页面、相关文章、以往报道和其他重要页面，因为这能展现 EEAT 信号，而这些信号对于搜索和 AI 的可见性都至关重要。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 26,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-27T08:07:20.526+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "内部链接，首先从高价值/高流量...",
+      "topic_id": "45811558415245258",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "优质内容必须带来什么\n\n内容需要提供人们无法通过快速搜索结果（SERP）回答获得的东西。这也是为什么现在许多用户跳过传统搜索，直接使用视觉平台的原因之一。YouTube常被认为是世界第二大搜索引擎，人们在想看到任务演示而非解释时，往往会转向它。TikTok也是如此;大量用户使用TikTok来搜索，而不是谷歌。\n\n人们仍然想要信息。他们只是想以一种能让他们最快理解的方式来学习。书面内容必须通过提供深度、清晰度和生活体验来赢得其位置，而这些是短视频或AI片段无法总能提供的。内容需要“活生生”，并以不同格式提供。\n\n优质内容基于真实经验，提供具体细节，并有清晰的观点。无论是“精选集”、解说还是更具创意的内容，力量都来自只有你能添加的内容以及你的专业知识和经验。\n\n当信息内容达到最佳状态时，能够推动读者前进。它帮助他们理解问题，做出决策或自信地采取行动。浅薄、以卷为中心的方法已经不再有效，因为读者不愿意也不会读同一本指南的十个版本。他们想要一个有真正见解的优秀作品。\n\n这一方向也与谷歌所奖励的内容相符。展现真实经验和清晰理由的内容往往比任何薄弱或泛泛的内容更能吸引点击。如果页面真的能帮助到某人，你不需要庞大的域名或全面的反向链接档案。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 26,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-26T17:47:05.612+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "优质内容必须带来什么\n\n内容需...",
+      "topic_id": "55188551218552254",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "AI 可抓取性：SEO 从业者需要了解哪些内容才能在 AI 搜索中保持可见性\n<e type=\"web\" href=\"https%3A%2F%2Fwww.womenintechseo.com%2Fknowledge%2Fai-crawlability-for-ai-search%2F%3Fck_subscriber_id%3D3761585660%26utm_source%3Dconvertkit%26utm_medium%3Demail%26utm_campaign%3D%25F0%259F%2593%2588%2520Top%2520SEO%2520%26%2520AI%2520Search%2520Updates%2520with%2520SEOFOMO%2520\" title=\"AI%20Crawlability%3A%20What%20SEOs%20Need%20to%20Know%20to%20Stay%20Vi...\" />[January%2025,%202026]%20-%2020489280",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-26T09:27:03.381+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "AI 可抓取性：SEO 从业者...",
+      "topic_id": "45811554222241418",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "ChatGPT 与 Google 之间令人惊讶的差距：为什么传统的 SEO 还不够\n<e type=\"web\" href=\"https%3A%2F%2Fwww.tryprofound.com%2Fresources%2Farticles%2Fthe-surprising-gap-between-chatgpt-and-google%3Futm_source%3Dsubstack%26utm_medium%3Demail%23what-you-should-do\" title=\"The%20surprising%20gap%20between%20ChatGPT%20and%20Google%3A%20why...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-26T09:19:21.013+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "ChatGPT 与 Googl...",
+      "topic_id": "45811554222818488",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "新的内容失败模式：人们喜欢它，但AI却忽略它\n\n<e type=\"web\" href=\"https%3A%2F%2Fduaneforresterdecodes.substack.com%2Fp%2Fthe-new-content-failure-mode-people%3Futm_source%3Dpost-email-title%26publication_id%3D2939445%26post_id%3D185734167%26utm_campaign%3Demail-post-title%26isFreemail%3Dtrue%26r%3D29asy1%26triedRedirect%3Dtrue%26utm_medium%3Demail\" title=\"https%3A%2F%2Fduaneforresterdecodes.substack.com%2Fp%2Fthe-n...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-26T09:15:27.115+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "新的内容失败模式：人们喜欢它，...",
+      "topic_id": "22811225444544811",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "checkin": null,
+      "content": "关键词与PAA拓展工具\n<e type=\"web\" href=\"https%3A%2F%2Fanswersocrates.com\" title=\"https%3A%2F%2Fanswersocrates.com\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-25T14:46:33.279+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "关键词与PAA拓展工具\nhtt...",
+      "topic_id": "55188552548824454",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "checkin": null,
+      "content": "导出GSC 25K数据到G sheet\n<e type=\"web\" href=\"https%3A%2F%2Fworkspace.google.com%2Fmarketplace%2Fapp%2Fsearch_analytics_for_sheets%2F1035646374811\" title=\"https%3A%2F%2Fworkspace.google.com%2Fmarketplace%2Fapp%2Fsearc...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-25T13:31:29.647+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "导出GSC 25K数据到G s...",
+      "topic_id": "22811225241881821",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "checkin": null,
+      "content": "非常好用的GSC第三方分析工具\n<e type=\"web\" href=\"https%3A%2F%2Fapp.storychief.io\" title=\"https%3A%2F%2Fapp.storychief.io\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 24,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-25T13:30:32.283+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "非常好用的GSC第三方分析工具...",
+      "topic_id": "14588442418558242",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "SEO速成\n1. 寻找高流量或者低KD的产品/行业高度相关关键词\n2. 分析意图并创作对应页面\n3. 如果是文章页,则对关键词进行query fan-out+PAA,从而获取几百个话题\n4. 分析与归类话题的相关性\n5. 开始写作",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 23,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-25T06:57:14.035+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "SEO速成\n1. 寻找高流量或...",
+      "topic_id": "55188552558488484",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "大多数 SEO 审核只不过是美化过的清单而已。 \n对实际业务增长没有任何影响。 \n\n你会收到一份所谓的“详细”审计报告，其中会告诉你： \n- 缺少元标题\n- 图片未压缩\n等一百个“问题”。\n\n但他们不会告诉你：\n您的网站缺少哪些对业务增长至关重要的功能？ \n哪些问题应该优先解决，哪些问题可以完全忽略。\n\n你会得到一个超过 30 页的 Gdoc/PDF 文件或电子表格，你会感觉非常迷茫. \n这并不是你做seo审计的目的,你的目的是希望能突破当前的困境,而其他的一切都是垃圾.",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 23,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-24T18:06:49.964+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "大多数 SEO 审核只不过是美...",
+      "topic_id": "45811554582111828",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "内容更新还是内容重写：如何选择？ \n \n大多数团队的回应是把所有内容从头开始重写，或者更糟糕的是，更改日期并称之为“更新”。\n\n这招已经不管用了。（而且谷歌很擅长识别虚假更新。）\n\n你究竟如何做出决定？\n\n我采用的规则是这样的：\n\n刷新条件：\n • 核心意图仍然匹配\n • 该页面已获得提及或信任\n • 结构稳固但已过时\n • 你可以添加新的见解，而不仅仅是新的词汇。\n\n重写时间：\n 搜索意图已发生转变。\n 该页面是为了提升排名而构建的，而不是为了提取数据。\n • 内容缺乏明确的观点。\n\n新鲜度指的是你的内容是否仍然值得再次使用。\n\n以下是如何调整刷新策略的方法：\n- 高影响力/高意向页面（产品页面、关键决策内容）：大约每 30 天更新一次\n\n- “常青”内容（AEO 中心、核心指南、基石文章）：大约每 45-60 天更新一次\n\n- 研究/原始数据资产：大约每 90 天更新一次\n\n- 低优先级或历史旧帖：大约每 6 个月重新审阅一次",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 23,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-24T17:15:57.345+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "内容更新还是内容重写：如何选择...",
+      "topic_id": "45811554888184148",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "根据 Edward Sturm 的第 925 期播客节目《Topical Authority Isn’t Blog Posts - It’s This》，这一期深入探讨了 SEO 领域的一个核心概念——主题权威性（Topical Authority）。\n很多 SEO 从业者错误地认为建立主题权威性就是“疯狂写博客文章”。Edward Sturm 通过回答 Reddit 上关于代理商策略的提问，澄清了这一误区，并提供了更高效的策略。\n以下是核心观点总结：\n1. 主题权威性 ≠ 堆砌博客文章 (Not Just Blog Posts)\n误区：许多代理商为了建立权威性，向客户推销通用的“博客内容包”，这往往是肤浅且不可扩展的，尤其是对于拥有数百个产品类别的电商客户。\n真相：虽然博客有用，但你不需要海量博客文章来建立权威性。实际上，主题权威性是你做好营销工作的自然结果，而非一种需要生搬硬套的“魔法框架”。\n价值：拥有主题权威性意味着你可以通过高流量、高购买意图的关键词获得排名。当你在某个细分领域拥有权威时，你可以主宰该领域的搜索结果。\n2. 建立权威性的替代方案 (Better Alternatives)\n与其写泛泛的教育性文章，不如专注于以下几种高价值内容：\n产品导向型内容 (Product-Led Content) / 混合落地页：针对那些已经知道自己想要什么、只想找“最好品牌”的用户（漏斗底部用户）。页面应直接解释为什么你的品牌是最佳选择，兼具教育和销售功能，直接以此类页面争取排名。\n易于被链接的资产 (Linkable Assets)：制作工具、计算器、配置器或数据报告。你可以利用 AI（如 Claude）快速编写简单的工具代码。这类资产会自然地吸引外链和分享。\n利用场外信号 (Off-Site Authority)：主题权威性很大程度上是在网站之外建立的。当人们在社交媒体、播客或文章中提到你的品牌，并使用了与你所在行业相关的语言（Language/Context）时，搜索引擎就会将你的品牌与该主题联系起来。\n3. 多品类/电商网站的策略 (Strategy for Generalists)\n对于销售多种产品、没有单一主题的电商网站，建立权威性确实更难。博主给出了以下建议：\n专注于收入而非虚荣指标：不要试图在所有领域同时建立权威。找出产生最多收入的前 10 个搜索词，围绕这些词构建策略。\n垂直或水平专业化：要么在 2-3 个高利润类别中建立深度权威；要么解决一个跨类别的用户问题（例如“送给 X 的礼物”）。\n回归基础：对于许多多品类电商，与其纠结于“主题权威性”这个概念，不如做好基础 SEO（产品页转化率、结构化数据、用户评论）。只要你针对具体产品做好了营销，你实际上就在“顺便”建立该细分领域的主题权威性。\n4. 核心执行框架 (The Action Plan)\nEdward 总结了一套具体的执行逻辑：\n列出关键词：写下与你产品对应的、针对漏斗底部（准备购买）用户的关键词和语言。\n场外营销：在进行链接建设、公关（PR）或播客访谈时，确保持续使用这些特定的行业语言来描述你的品牌。\n相邻扩张：像 Forbes 这样的网站之所以能覆盖所有话题，是因为他们从一个点开始，逐渐向相邻领域（Adjacent Niches）扩张。你也应该先在一个点上做强，再逐步外扩。\n总结\n主题权威性不是靠在博客里写“什么是 X”这种初级文章堆出来的，而是通过高转化率的落地页、实用工具以及外部营销中一致的品牌语言关联来建立的。对于 SEO 来说，真正有效的策略是针对那些能直接带来收入的搜索词进行深耕，而不是盲目追求内容数量。\n<e type=\"web\" href=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8DuIlUdfY_w\" title=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8DuIlUdfY_w\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T14:09:32.815+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "根据 Edward Sturm...",
+      "topic_id": "82811225581155512",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "根据 Ahrefs 发布的最新视频《顶尖 SEO 专家为我构建 AI 搜索策略 (GEO)》，主持人采访了五位 SEO 专家，探讨了如何在生成式引擎优化（GEO）和 AI 搜索（如 AI Overviews, ChatGPT 等）中获得排名的最佳策略。\n以下是专家们的核心观点总结：\n1. 超越传统关键词，挖掘真实对话 (Context over Keywords)\nKevin Indig 指出，AI 搜索中的提示词（Prompts）平均比传统 SEO 关键词长 5 倍，包含了更多上下文和细节,。\n传统的关键词研究已不足够，建议利用销售通话记录、Zoom 会议、客户支持邮件等真实对话数据，输入大语言模型（LLM）进行分析，找出用户真正关心的问题和恐惧点。\n除了自有内容，还需要在出版商网站和 UGC 平台（如 Reddit）上获得品牌提及，因为这些是 LLM 依赖的信息源。\n2. 抢占 YouTube 阵地与保持内容新鲜 (YouTube Visibility & Freshness)\nLouise Linehan 的研究发现，YouTube 视频提及是与 AI 可见性相关性最强的因素。这是因为 OpenAI 等模型使用了数百万小时的 YouTube 字幕进行训练，YouTube 既是重要的输入源，也是 AI 输出的高频引用源。\n内容时效性至关重要。研究显示 AI 引用的内容比普通搜索结果的内容新鲜度高 26%，因此定期更新内容和发布新内容能显著增加被 AI 引用的机会。\n3. 利用细分比较与“榜单”策略 (Niche Comparisons & Listicles)\nSteve Toth 建议利用特定场景的 SaaS 比较内容。例如，不要只写“A vs B”，而要写“适合平面设计师的 QuickBooks 替代品”，利用 LLM 对特定用户群体的理解来生成答案,。\n关联大品牌：如果你的品牌较新，可以通过“搭便车”策略，购买竞争对手所在的“赞助链接”或出现在包含行业巨头的“列表文章”（Listicles）中，让 AI 将你的品牌与行业领头羊联系在一起。\n4. 品牌正当性与填补空白 (Brand Legitimacy)\nGlen Allsopp 提出了一个灵魂拷问：“你真的值得出现吗？”如果有人搜索“最佳 CRM”，结果中没有 HubSpot 是不正常的。AI 搜索结果反映了现实世界的品牌地位。\n建议监控那些在有机搜索中排名靠前的 Reddit 帖子，并自然地参与讨论。\n利用“品牌雷达”寻找竞争对手被提及而你未被提及的话题，填补这些内容空白。\n5. 核心原则：打造更好的业务 (Build a Better Business)\n最后一位技术 SEO 专家的建议最为朴素但深刻：打造更好的业务。所有战术最终都围绕这一核心原则。长期来看，AI 搜索（GEO）奖励的是那些值得用户信任和依赖的品牌、产品及内容。\n总结\n要在 AI 搜索时代获胜，不能仅靠传统的关键词堆砌。你需要深入了解用户真实的提问语境，重视 YouTube 视频内容的布局，通过细分比较和列表文章与大品牌建立关联，并最终致力于建立一个值得被引用的优质品牌业务。\n\n<e type=\"web\" href=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRwKKLnyXCig\" title=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRwKKLnyXCig\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 26,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T14:08:06.171+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "根据 Ahrefs 发布的最新...",
+      "topic_id": "22811225581414551",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "主题权威性并非指博客文章——而是指这个\n<e type=\"web\" href=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8DuIlUdfY_w\" title=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8DuIlUdfY_w\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 27,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T13:59:11.034+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "主题权威性并非指博客文章——而...",
+      "topic_id": "22811225581215411",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "checkin": null,
+      "content": "免费 SEO 工具合集\n<e type=\"web\" href=\"https%3A%2F%2Fwww.leefoot.com%2Ftools\" title=\"Free%20SEO%20Tools%20%7C%20Lee%20Foot\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T09:23:00.502+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "免费 SEO 工具合集\nFre...",
+      "topic_id": "14588442222584212",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "Microsoft Clarity 刚刚推出了机器人活动追踪功能——现在你可以看到哪些 AI 机器人爬取你的网站以及多频繁。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T09:15:40.991+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "1522181124218252",
+          "large": {
+            "height": 320,
+            "url": "https://images.zsxq.com/Fm7Q1dc_DjiApRBpjuHme1qZ6Ma7?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:_VFyAsRYma6Y4RRJSZSafbgHUlY=",
+            "width": 599
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 401,
+            "url": "https://images.zsxq.com/Fm7Q1dc_DjiApRBpjuHme1qZ6Ma7?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:gKwaVlyGXXy5PRLpfRjusSX2Wxw=",
+            "width": 750
+          },
+          "type": "jpg"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Microsoft Clari...",
+      "topic_id": "82811281114244842",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "利用 API 和 Screaming Frog SEO Spider 实现大规模数据驱动的内容修剪\n<e type=\"web\" href=\"https%3A%2F%2Fwww.screamingfrog.co.uk%2Fblog%2Fdata-driven-content-pruning%2F\" title=\"Data-Driven%20Content%20Pruning%20at%20Scale%20Using%20APIs%20an...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T07:42:50.169+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "利用 API 和 Scream...",
+      "topic_id": "45811581121815288",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "AI如何“看待”你的页面标题\n\n举个老式的标题例子：\n“ 修复爬虫预算问题 ”（26 个字符）\n它简短且技术上准确，但语义平淡。\n如何解决抓取预算问题，防止 Googlebot 索引您的网站 （77 个字符）\n它篇幅更长，但内容也更丰富：包括操作指南意图、抓取预算、Googlebot、索引问题等信息。这让 AI 更有理由相信你的页面直接解答了用户的查询。不仅仅是“这与 SEO 有关”，而是“这正是你提出的问题”。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T07:35:58.429+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "AI如何“看待”你的页面标题\n...",
+      "topic_id": "82811281141842142",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "多年来，大多数 SEO 都遵循着一种可预测的模式。你打开 Ahrefs 或 SEMrush，找到搜索量高的关键词，查看哪些关键词排名靠前，然后尝试撰写更好或更长的内容。在关键时刻，你甚至会复制竞争对手的反向链接。这就是红海 SEO——你已置身于鲨鱼出没的海域。\n\n问题在于，只要有浏览器、信用卡和足够的预算购买 SEO 工具，任何人都能做到同样的事情。最终，你会陷入关键词竞争、内容雷同、目标用户群体单一的困境。这导致市场拥挤，差异化难以实现，利润空间也随着时间推移而不断压缩。\n蓝海 SEO 的运作方式截然不同。它始于对用户需求的假设，而非关键词工具显示的搜索量。它没有现成的搜索量来预先验证你的策略，只有客户调研、痛点分析以及对用户旅程的理解。你创建内容或打造产品体验来解决实际问题，并相信用户会在需要时找到并欣赏它们。\n\n这种方法并不容易，而且存在真正的风险。\n\n你必须真正了解你的用户。不是肤浅的了解，而是深入的了解。你需要与他们交谈，了解他们试图解决什么问题，以及他们在哪些方面遇到了困难。找到他们在其他地方没有得到良好解答的问题。\n这是客户调研，不是关键词调研。\n\n挑战在于，你在没有验证搜索量数据的情况下进行开发。你可能会开发出无人问津的产品，因为实际需求可能远没有你想象的那么普遍。这确实是一个风险。你需要从客户对话、支持工单、产品分析和用户行为中获得强有力的信号来指导你的决策。你是在进行一项有根据的冒险，而不是稳操胜券。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 30,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-23T07:13:19.001+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "多年来，大多数 SEO 都遵循...",
+      "topic_id": "55188518848258114",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "谷歌的约翰·穆勒再次表示，LLm.txt 与谷歌或 Gemini 无关 🙏\n\n这个问题已经被问过很多次、讨论过很多次了…… \n\n我最近好像没看到有人推荐使用 LLM.txt，但这个问题却一直被反复提及🤷‍♀️\n\n曾经有一段时间，我的时间线上充斥着关于 LLM.txt 的帖子，都在夸它有多好多有价值……现在却看不到了……不过我想惯性还是在起作用吧😂\n\n那么，让我们再说一遍，让后面的人也能听见：\n\nLLM.txt 没有价值",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 28,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-22T19:04:10.659+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "4844212521218528",
+          "large": {
+            "height": 687,
+            "url": "https://images.zsxq.com/Fgyfr6Td3HDctaEqd8omrVb_Rq-5?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:ByzRvxUKiqyv-ua-ESBUlcrlrnE=",
+            "width": 523
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 985,
+            "url": "https://images.zsxq.com/Fgyfr6Td3HDctaEqd8omrVb_Rq-5?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:hMGpyWm8jLEj3qYYqAEkEM9zIFU=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "谷歌的约翰·穆勒再次表示，LL...",
+      "topic_id": "82811288288514812",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "内容再利用\n<e type=\"web\" href=\"https%3A%2F%2Fbuffer.com%2Fresources%2Frepurposing-content-guide%2F\" title=\"The%20Ultimate%20Guide%20to%20Repurposing%20Content%20%28With%20Ex...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 28,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-22T18:50:20.586+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "内容再利用\nThe Ultim...",
+      "topic_id": "22811288288552441",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "如果同一个网址同时出现在 Google AI 概览和经典的 10 个蓝色链接中，Google Search Console 会将其计为一次展示，而不是两次。",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 24,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-22T18:49:03.842+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "4844212521251888",
+          "large": {
+            "height": 524,
+            "url": "https://images.zsxq.com/Fm4erEGyfp7S5J6EPcyU0ICm8kHW?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:b2vDUtvKbWPRL8YjQ8Nb60nZBSc=",
+            "width": 800
+          },
+          "original": {
+            "height": 822,
+            "size": 350999,
+            "url": "https://images.zsxq.com/Fm4erEGyfp7S5J6EPcyU0ICm8kHW?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:o66B0zYCuzsJwvDTa24VRRb_w-w=",
+            "width": 1254
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 492,
+            "url": "https://images.zsxq.com/Fm4erEGyfp7S5J6EPcyU0ICm8kHW?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:i5Z4-XBlSKxQj7UWDk2tRa3NWxg=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "如果同一个网址同时出现在 Go...",
+      "topic_id": "22811288288558281",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "写手怎么在AI中生存\n<e type=\"web\" href=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyUCZoZ5vg-A%26t%3D439s\" title=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyUCZoZ5vg-A%26t%3D439s\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 24,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-22T16:02:34.667+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "写手怎么在AI中生存\nhttp...",
+      "topic_id": "14588455424518582",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "为什么谷歌奖励不完美但真实的内容\n<e type=\"web\" href=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKxo6gOv_DkE%26t%3D1044s\" title=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKxo6gOv_DkE%26t%3D1044...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 2,
+        "readers": 23,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-22T15:58:34.865+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "为什么谷歌奖励不完美但真实的内...",
+      "topic_id": "45811588545824518",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "一个巧妙的 SEO 技巧是更新你的对比页面，在标题标签中包含“替代”一词。\n\n理想情况下，你应该还有其他博客内容，但如果没有，有时也可以通过优化比较页面，使其在其他关键词的搜索结果中排名靠前。 \n\n虽然并非每次都有效，但如果你还没有相关内容，这不失为一个不错的补充策略。\n\n我通常会这样做：[你的公司] vs [你的竞争对手]",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 24,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-01-22T15:38:28.781+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "5122484544122814",
+          "large": {
+            "height": 800,
+            "url": "https://images.zsxq.com/FqPNt-p30iQ0zmqcraX3QxnG-EPV?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:UGQm8viwatXLycSc4BtjShGuhw4=",
+            "width": 800
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 750,
+            "url": "https://images.zsxq.com/FqPNt-p30iQ0zmqcraX3QxnG-EPV?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:msMboGN4WJ1klqC_Tn3ifFP4GyY=",
+            "width": 750
+          },
+          "type": "jpg"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "一个巧妙的 SEO 技巧是更新...",
+      "topic_id": "14588455424221112",
+      "type": "talk",
+      "vote": null
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "80%的人不会读你的文章。\n\n\n他们扫描它。\n\n\n他们先阅读 H1，然后滚动阅读 H2。\n\n如果你的 H2 标题过于模糊（例如“引言”、“背景”、“结论”），它们就会消失。\n\n\n你的 H2 数据本身就能说明问题。\n\nBad H2：“优势”\n\n好的 H2：“为什么 SEO 比广告更有利可图”\n\n\nBad H2：“我们的解决方案”\n\n优质标题2：“如何三步安装我们的工具”\n\n\n针对忙碌的读者（也就是所有人）优化您的 H2 标题。\n\n额外提示：谷歌经常使用您的 H2 标签来回复语音查询。",
+    "counts": {
+      "comments": 0,
+      "likes": 2,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-29T17:40:19.898+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "2855411445188481",
+        "large": {
+          "height": 751,
+          "url": "https://images.zsxq.com/Fm2tFU5jfnQRJu44N4Q4Mq30HdD8?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:rGmZe8ZeuwRbOICstFNB4gsDmKI=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 704,
+          "url": "https://images.zsxq.com/Fm2tFU5jfnQRJu44N4Q4Mq30HdD8?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:WZHPtkynlZoPKUqFGfABh2IhvKw=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "80%的人不会读你的文章。\n\n...",
+    "topic_id": "45811555858284818",
+    "type": "talk"
+  }
+}

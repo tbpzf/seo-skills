@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" /><e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "Prediction: the next massive Google update is around the corner\n\nLily Ray 认为下一次大型 Google 更新快来了。她的依据是一条老规律:Google 往往先改文档、再放大更新;而这一周 Google 刚改了 AI 内容指南、有用内容文档和作者信息说明,同时 spam update 越来越密。\n\n要点:\n1. spam update 明显变密:2026 年已经有 4 次(3 月、6 月、8 月、9 月),2025 全年只有 1 次;间隔从 92 天缩到 55 天再到 37 天。9 月那次给的周期是\"最多两周\",和核心更新一样,前三次都在 3 天内结束。\n2. 自己给自己排第一的\"best of\"榜单文章在 AI Overviews 里越来越不好用:她复测 100 个\"best B2B software\"查询,AI Overviews 引用这类自荐榜单比 6 月少了 38%;发文品牌被排除在推荐之外的比例从 69% 升到 83%;70% 的情况下,这篇榜单反而在帮竞品被推荐。\n3. 花钱买提及就是新版买链接:有人按 DR/DA 卖榜单位置,单个约 $135–250,也有\"5 次提及 $1,500\"的套餐。只要带了传权重的链接,就违反 Google 的链接 spam 政策。\n4. 她今年接触的被打站有几个共同点:短时间大量发 AI 内容、只改几个词的模板页(每个城市 / 每个电话号码一页)、号称有人审稿但没用、编造作者和 AI 头像、专门写给 AI 搜索看的自荐内容。这些站有机流量掉了以后,在 AI Overviews、AI Mode、ChatGPT 里的引用也跟着掉。\n\n结论:作者建议趁更新前清理——审视批量发布的内容、核对作者页是不是真人、所有 AI 内容发布前由人核对事实,重新考虑面向 AI 的自荐榜单和付费提及。她也说,没人知道更新具体哪天来,但在更新前清理比事后花一年恢复容易得多。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Flilyraynyc.substack.com%2Fp%2Fprediction-the-next-massive-google\" title=\"https%3A%2F%2Flilyraynyc.substack.com%2Fp%2Fprediction-the-n...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 10,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T00:23:44.309+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Prediction: the...",
+    "topic_id": "22258225548251111",
+    "type": "talk"
+  }
+}

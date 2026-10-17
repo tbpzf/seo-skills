@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "谷歌竟然在近一年的时间里，一直在无意中夸大搜索控制台报告中的展示次数！\n\n这是一个重大更新，SEO 从业者应该了解。谷歌悄悄地宣布，Search Console 的日志记录存在问题。因此，自 2025 年 5 月以来，报告中的搜索展示次数被夸大了。这基本上意味着整整一年的数据都被夸大了。\n\n报告中提到，点击量、点击率、平均排名等其他指标并未受到影响。但报告也指出，营销人员应预期账户中的展示次数会有所下降。\n\n他们没有说明曝光量应该减少多少——显然，每个网站的情况都不一样。我目前查看的用户画像相当稳定。但请务必注意这一点，因为预计修复工作将在未来几周内完成。\n<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 46,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-07T06:57:17.285+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "4844128242128828",
+        "large": {
+          "height": 582,
+          "url": "https://images.zsxq.com/FpZ7IjwKHkuqt_mjduqMqkhkTng8?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:fUv1-1KwBmDP5-kL9Qu7M4B-yRQ=",
+          "width": 651
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 671,
+          "url": "https://images.zsxq.com/FpZ7IjwKHkuqt_mjduqMqkhkTng8?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:M5jS1ddhksYaIpNfWLWnlDKj6_g=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "谷歌竟然在近一年的时间里，一直...",
+    "topic_id": "22255518121588221",
+    "type": "talk"
+  }
+}

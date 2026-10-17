@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Google Rewrites 61% of Page Title Tags [SEO Study]\n\nZyppy 拿 2,370 个网站、80,959 个 title 标签,和 Google 桌面搜索结果里实际显示的标题做对比(数据是 2022 年第一季度)。结论:61.6% 的 title 被 Google 改写过,有的只是小改,有的改得很大。改写最常见的触发点是长度、方括号和竖线分隔符,而让 H1 和 title 保持一致,能明显减少被改写。\n\n要点：\n1. 长度两头都危险:1-5 个字符的短标题(比如 \"Home\")96.6% 被改写,20 字符以内的超过一半被改;超过 60 字符的被改写概率超过 76%,超过 70 字符的 99.9% 被改。51-60 字符最安全,改写率只有 39%-42%。\n2. 想强调的内容用圆括号,别用方括号:带方括号 [] 的标题改写率 77.6%,方括号里的文字有 32.9% 被整段删掉;圆括号的改写率 61.9%,整段被删只有 19.7%。\n3. 分隔符用 dash 比用竖线稳:用 dash \"-\" 的标题,dash 被删的比例是 19.7%;用竖线 \"|\" 的,竖线被删或被换掉(通常换成 dash)的比例是 41.0%,高出一倍多。作者认为用竖线不会带来伤害,只是更容易被改。\n4. H1 和 title 对齐:title 里有数字但 H1 没有,25.8% 的情况下 Google 显示的标题会把数字去掉;title 和 H1 都有数字,97.3% 的情况下显示的标题会保留数字。\n\n结论：想减少 Google 改写你的标题,让 H1 和 title 标签保持一致是一个有效的办法。另外,标题里的词没被显示出来,不代表它对排名没有帮助,这是两个独立的过程。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fzyppy.com%2Fseo%2Fgoogle-title-rewrite-study%2F\" title=\"https%3A%2F%2Fzyppy.com%2Fseo%2Fgoogle-title-rewrite-study%2F\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-08T00:05:24.183+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Rewrites...",
+    "topic_id": "45548554288215258",
+    "type": "talk"
+  }
+}

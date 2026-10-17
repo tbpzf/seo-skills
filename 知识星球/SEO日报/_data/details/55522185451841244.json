@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "看来谷歌对人工智能概览中那些自吹自擂的列表式文章持否定态度。\n\n受……启发 \n @lilyraynyc \n 为了验证假设，我抓取了 177 个不同的“最佳[类别]软件”查询的 AI 概述，并处理了结果。\n\n以下是我发现的情况：\n\n→ 62% 的情况下，当 AI 概览引用您的内容时，AI 会将您的品牌排除在响应之外。也就是说，您的品牌不会被推荐。\n\n如果你的内容被引用，而且还是列表文章，情况就更糟了：69% 的情况下，你的品牌不会被推荐。\n\n但这并不意味着列表式文章在综合内容创作中普遍失宠。恰恰相反：\n\n→ 85% 的 AI 概述引用了列表文章，中位数为 3，最大值为 13。\n\n所以说，谷歌其实只是对你对自己的描述持一种健康的怀疑态度。（考虑到最近铺天盖地的“没错，我们在17个不同类别中绝对是第一名”之类的榜单，这种怀疑也是可以理解的。）\n\n但是，当有人要求提供 B2B 产品或服务推荐时，他们和其他大型 AI 提供商仍然依赖列表文章来描述其他品牌。\n\n因此，要想让你的 B2B 品牌在 AI 概述和其他 AI 回复中获得推荐，最好的办法仍然是让你的品牌被大型 AI 聊天机器人引用的第三方列表文章所收录。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 37,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-05-20T05:52:22.902+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "1525421481552242",
+        "large": {
+          "height": 800,
+          "url": "https://images.zsxq.com/FsnFRlkkcwaE4KvWilXC6AQE4yu7?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:9rDVkqxS4-e4UQm0HybRj5a7CEs=",
+          "width": 800
+        },
+        "original": {
+          "height": 1080,
+          "size": 162036,
+          "url": "https://images.zsxq.com/FsnFRlkkcwaE4KvWilXC6AQE4yu7?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SB3TnUwOhta3kS3y6z7h7CQ0q_k=",
+          "width": 1080
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 750,
+          "url": "https://images.zsxq.com/FsnFRlkkcwaE4KvWilXC6AQE4yu7?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:UNF1FpYlWwU9cuR53AUJ_gImRro=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "看来谷歌对人工智能概览中那些自...",
+    "topic_id": "55522185451841244",
+    "type": "talk"
+  }
+}

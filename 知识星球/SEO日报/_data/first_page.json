@@ -1,0 +1,1118 @@
+{
+  "count": 30,
+  "has_more": true,
+  "next_end_time": "2026-10-06T00:23:44.309+0800",
+  "success": true,
+  "topics_brief": [
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" /><e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "把 Claude Code / Codex 接进本星球,当成你自己的 SEO 知识库\n\n星球里很多帖子只有一段摘要加一条原文链接,有的同学说看不懂,或者懒得一条条点开。现在有个更省事的办法:知识星球官方出了 AI 接入工具(zsxq-cli + 知识星球 Skill),装好以后,你在 Claude Code 或 Codex 里直接用中文提问,AI 会去星球里搜帖子,再帮你打开原文链接,用大白话讲给你听。\n\n它用的是你自己的星球账号,只能看到你已经加入的星球,不会碰别的东西。\n\n一、怎么装(5 分钟)\n1. 电脑上先装好 Node.js 18 以上版本(终端输入 node -v 能看到版本号就行)。\n2. 打开 Claude Code 或 Codex,把下面这句话原样发给它,它会自己装:\n帮我安装知识星球 Skill:<e type=\"web\" href=\"https%3A%2F%2Fgarden.zsxq.com%2Fskill%2FINSTALL.md\" title=\"https%3A%2F%2Fgarden.zsxq.com%2Fskill%2FINSTALL.md\" />\n3. 装完 AI 会给你一个授权链接和验证码,用浏览器打开、确认授权,就装好了。\n\n二、装好以后可以这么问(直接复制改关键词)\n1. 在「SEO日报」星球里搜关于 AI Overviews 的帖子,列出标题和一句话总结。\n2. 把这几条帖子里的原文链接打开,用大白话给我讲讲每篇讲了什么,我是 SEO 新手。\n3. 星球最近一周发了哪些帖子?按 SEO / AI 搜索 / 工具 分类整理给我。\n4. 我做外贸 B2B 独立站,星球里哪些帖子的方法我现在就能用上?给我列个清单。\n5. 帮我看看星球里关于 GSC 的帖子,里面提到的数字和做法汇总成一张表。\n\n三、想做成本地知识库(进阶,可选)\n可以让 AI 把星球帖子一页页拉下来,每个帖子存成一个 Markdown 文件,顺便把原文链接里的文章也抓下来存好。之后你就在本地文件夹里提问,AI 回答会更快、更完整。直接跟 AI 说:\"把 SEO日报 星球的帖子全部拉到本地,每篇存一个 md 文件,并抓取原文\",它会一步步做。\n\n四、几点注意\n1. 有的网站挡爬虫或有付费墙,AI 打不开原文,这种只能看帖子里的摘要。\n2. AI 可能会讲错,看到关键数字最好回原文核对一下。\n3. 这个工具也能发帖、评论,但它每次写入前都会先问你,别让它乱发。\n4. 拉到本地的内容仅供自己学习使用,请不要外传。\n\n有问题直接在这条帖子下面留言。",
+      "counts": {
+        "comments": 2,
+        "likes": 3,
+        "readers": 12,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-16T10:33:28.679+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "2026-10-16T10:33:42.805+0800",
+      "sticky": true,
+      "text_type": "",
+      "title": "把 Claude Code /...",
+      "topic_id": "82258224114152882",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "SEO Tip: Here's a great search operator to mine Reddit for key questions. Perform a Reddit 'site:' search for a topic + 'intitle:?' to find questions\n\nChris Long 在 LinkedIn 分享了一个用 Google 搜索指令挖 Reddit 用户问题的小技巧，他说是从 Surfer SEO Expert 的 YouTube 频道看来的：只搜标题里带问号的 Reddit 帖子，就能快速看到用户到底在问什么。\n\n要点：\n1. 第一步，用 site:reddit.com 把搜索范围限定在 Reddit。\n2. 第二步，加上你要研究的话题，可以是你的核心话题领域、你的品牌名，或者别的你关心的东西。\n3. 第三步，加上 intitle:? ，只留下标题是提问的帖子。\n4. 搜出来的就是一串专门提问的 Reddit 帖子，能更具体地看到用户围绕你的产品或话题领域有哪些疑问，可以拿来找选题。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7514287159013482496%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 12,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-16T04:09:46.674+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "SEO Tip: Here's...",
+      "topic_id": "22258224125444821",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "Introducing Topics Portfolio (Beta) in AI Performance\n\nBing Webmaster Tools 在 AI Performance 报告里上线了一个测试版新功能 Topics Portfolio：把你网站在 AI 搜索里出现过的 grounding queries（AI 去检索时用的查询词）按主题归成几大类，让你一眼看出自己在哪些主题上有存在感、每个主题有多大、有多挤、还有哪些空档。\n\n要点：\n1. 入口：登录 Bing Webmaster Tools → AI Performance，在 Citations & Pages 旁边多了一个 Topics 标签。只有数据足够的网站才看得到，主题和机会词都是根据你自己网站生成的。\n2. 主题列表有 4 列：Topic（主题）、Topic Size（选定时间内所有网站在这个主题下被 AI 引用的大概总次数，代表需求大小）、Sites Cited（大概有多少网站被引，代表拥挤程度）、Queries（这个主题下大概有多少个不同的查询词）。下面还有 Top Opportunity Queries：别的网站被引用了、你没被引用的查询词，引用量只给区间。\n3. 点进某个主题，顶部 3 张卡片是主题规模、你在这个主题的引用数、查询词数量；下面分两张表：你已经出现的查询词，和你还没出现的机会查询词。时间范围可以选 1、2 或 3 个月。\n4. 测试版限制：主题分类是 AI 生成的，可能分错；数据不够的主题不显示，小站可能看到的很少甚至看不到这个功能；品牌词可能被当成机会词列出来；所有数字都是近似值，Bing 自己说只当方向参考，不是精确账本。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fblogs.bing.com%2Fwebmaster%2F2026%2F10%2Fintroducing-topics-portfolio-beta-in-ai-performance%2F\" title=\"https%3A%2F%2Fblogs.bing.com%2Fwebmaster%2F2026%2F10%2Fintroduci...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 7,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-16T04:09:39.351+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Introducing Top...",
+      "topic_id": "55521554852444154",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "Google Search On PDFs - Deep Dive Podcast\n\nGoogle 的 Martin Splitt 和 John Mueller 在 Search Off the Record 播客里专门聊了一期 PDF：Google 怎么处理 PDF、能不能排名、有哪些坑。这篇是 Search Engine Roundtable 的 Barry Schwartz 听了两遍之后整理的要点。\n\n要点：\n1. PDF 是二进制文件，Google 在索引时会先把它转成 HTML，之后就用和普通网页同一套系统去收录和排名。PDF 也能出现在 AI Overviews 里，也能被 AI 用来训练和 grounding。\n2. PDF 里的文字链接会保留并正常抓取；但 PDF 里嵌的图片没有独立 URL，一般进不了 Google 图片搜索。PDF 的抓取上限比 HTML 大，播客里没给具体数字（SER 旧报道标题写的是 PDF 64MB、其他文件类型 2MB）。\n3. Google 把 PDF 当成相对静态的文件，重抓频率比 HTML 低得多。PDF 更新了想尽快被收录，就换一个新 URL 或文件名发布，别直接覆盖原文件。CMS 自动给网页生成\"打印版\" PDF 的，会和网页抢排名，而且 PDF 版本常常是过期的。\n4. 常见坑：扫描件或整页是图片的 PDF，没有 OCR 搜索引擎读不到字（可以选中文字复制粘贴到编辑器里自测）；设了密码 Google 就读不了；手机上要整份下载完才能看，放大也不会重新排版。同一份 PDF 放在多个网站上很难做 canonical，可以用 HTTP header 里的 rel=canonical、填好 PDF 的 metadata、在文档页首放回到自己网站的链接。\n\n结论：默认用 HTML，只有需要固定打印格式、可下载的表格或纸质文档时才用 PDF；llms.txt 这种给机器读的文件千万别存成 PDF。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.seroundtable.com%2Fgoogle-search-on-pdfs-42291.html\" title=\"Google%20Search%20On%20PDFs%20-%20Deep%20Dive%20Podcast\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 6,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-16T04:09:32.029+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google Search O...",
+      "topic_id": "45548552154222858",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "It's possible your migration issues may be due to site quality - Marie Haynes\n\n最近不少站换域名之后新站迟迟不被收录。Marie Haynes 根据自己咨询过的案例提出一个理论（她自己说目前证明不了，写出来是为了讨论）：换域名会让 Google 重新、而且更严格地审一遍整站质量，内容没有原创价值的站，迁完可能整站不收，技术上修不好。\n\n要点：\n1. 案例是一个兴趣类博客，迁移步骤全做对了：GSC 提交改址、重定向逐一对应、改内链、确认新站能抓、给新域名生成 sitemap。结果 Page Indexing 报告里 98% 的 URL 未收录；连报告说已收录的 33 个页面，逐个检查也都是 \"crawled - currently not indexed\"。\n2. 在 GSC 里跑 Live Test，提示页面\"满足某些条件\"才能收录。Google 帮助页列了三条：没有人工处罚、不是重复页、页面质量要高到值得收录。前两条都排除了，只剩质量。\n3. 她的诊断：内容写得好也全面，但几乎每页都是 commodity content，就是网上别家都有的东西。Google 最近更新的 helpful content 文档强调 main content 的 effort、originality、talent or skill、accuracy，她认为 originality 最关键。\n4. 为什么旧域名没事？她的看法是，如果 Google 对全网都用这套标准，大部分网站都会崩；而迁站触发了更严的评估。这个案例迁完 4 个月，只有首页被收录。\n5. 建议：先彻底排查技术问题（重定向、GSC 改址、Live Test 看 Google 能不能看到内容），也可能只是需要再等等；如果确认是质量问题，就做少量真正原创、有洞见的文章，或者干脆换个新域名用全新内容重来。\n\n结论：如果这个理论成立，很多迁站后收录不了的站根本没有技术 SEO 的解法。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.mariehaynes.com%2Fits-possible-your-migration-issues-may-be-due-to-site-quality%2F%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-14%26utm_medium%3Demail\" title=\"It%27s%20possible%20your%20migration%20issues%20may%20be%20due%20to%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 6,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-16T04:09:24.674+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "It's possible y...",
+      "topic_id": "14425441842111542",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "Which Sections of Your Content Are Actually Citable?\n\nLumar GEO 系列的一篇：AI 答案引用的是页面里的某一段，不是整页。页面再相关、再权威，如果段落本身没法单独拿出来用，也不会被引。文章给了 5 项检查，逐段自查。\n\n要点：\n1. 能被引的段要做到三件事：能单独被检索到、脱离上下文也看得懂、引用出去不会出错。\n2. 五项检查：这段只回答一个问题；单独读也能懂（没有指代不明的 this / it，没有\"as mentioned above\"）；需要的事实就在段里（名称、数值单位、适用条件），反例是\"The torque value is listed in the table below\"却不写数值；不跑题；长度适中，太短缺条件，太长混了几件事。\n3. 同一页里，分步操作、参数规格这类段更容易被引；概述、背景、历史这类段较少被引（作者给的示意，没有数据）。\n4. 文笔好不等于能被引：AI 更偏好开头就给关键信息、必要时重复交代、事实密、结构可预测的段落。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.lumar.io%2Fblog%2Fbest-practice%2Fcontent-section-citability-generative-search%2F%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-13%26utm_medium%3Demail\" title=\"Which%20Sections%20of%20Your%20Content%20Are%20Actually%20Citabl...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 10,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-15T04:10:24.363+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Which Sections ...",
+      "topic_id": "82258224252185822",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Finding High-Value Converting Queries That Mainstream Tools Miss\n\nDejan 讲怎么找那些关键词工具里显示\"0 搜索量\"、但真能带来客户的 query。这类词不光有转化，竞品看第三方工具估算你的流量时也看不出来。\n\n要点：\n1. 作者案例（作者自述）：一篇论文的标题在关键词工具里查不到任何量，但 GSC 里这个词 6 月一波就有 1,020 次曝光、37 次点击，平均排名 4.3，点击率 3.6%，还出现在 AI Overviews 和聊天回答里。而且这只是其中一个写法，把各种长短变体加起来流量更大。\n2. 真人原话从哪来：站内搜索日志、客服和聊天机器人记录；客户询价单里\"问题 + 限定条件\"的说法（比如\"furnace shuts off after five minutes\"，而不是笼统的\"furnace repair\"），再和 CRM 里成交的单子对上；销售电话录音和表单；Reddit、Telegram 群、YouTube 评论区。\n3. 其他找法：自己扮演买家走一遍流程、打电话问供应商新手该问什么；从下单那一步倒推用户旅程；Google Ads 跑广泛匹配并配大量否定词，捞出工具里没记录但会转化的词。\n4. 用 embedding 批量生成的候选词只是概率上的猜测，还得证明真人确实这么搜。\n5. 作者建议的五步流程：收集原始 query → 用 LLM 分出商业意图 / 解决问题意图 → 把相近长尾合并成一个标准话题 → 建话题、用户问题、自家产品之间的关系图 → 按这张图写内容、做内链。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fdejan.ai%2Fblog%2Fstealthy-queries%2F%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-13%26utm_medium%3Demail\" title=\"Finding%20High-Value%20Converting%20Queries%20That%20Mainstr...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 10,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-15T04:10:17.059+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Finding High-Va...",
+      "topic_id": "45548552545184858",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" />",
+      "checkin": null,
+      "content": "Content Engineering Tip: Help Centers are often a HUGE source of citations for LLMs\n\nChris Long（Nectiv）分享：B2B / 科技公司被 LLM 引用的页面里，帮助中心和产品文档往往占了很大一块。难点是这类文档不好写，他的办法是让 Claude 浏览器扩展直接去操作产品、写步骤、截图。\n\n要点：\n1. Nectiv 的客户多是 B2B / tech 公司，看引用数据时经常发现帮助中心 / 文档是很大的引用来源，见过一个站 40% 的 AI 引用来自帮助中心（作者自述）。\n2. 原因：这类内容信息密、全是事实、结构清楚，天生适合 LLM 拿去用。有大科技公司已经把这些页当成和落地页一样重要来做。\n3. 难点：写帮助文档要客服或产品团队的专业知识，经常卡在没人写。\n4. 做法：装上 Claude 浏览器扩展，让 Claude 能直接控制 Chrome / Safari；把它指到产品的某个模块，让它执行一个具体操作，它往往能完成操作、写出步骤、截好图，生成整篇帮助文档。\n5. 作者提醒：很多公司的法务 / IT 团队不会同意这么干，但技术上是可行的。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7513569419126632448%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 7,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-15T04:10:09.740+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Content Enginee...",
+      "topic_id": "14425441424852542",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Regular Expressions (RegEx) in Google Search Console - UPDATED 2024\n\nJean-Christophe Chouinard 整理的 GSC 正则速查。GSC 效果报告里按 Query 和 Page 过滤都能用正则，这篇把常用写法和坑一次列全，最新加了一条用来捞 AI Mode 对话式 query 的正则。\n\n要点：\n1. GSC 用的是 RE2 语法，不支持 lookahead 这类写法；一条正则最多 4096 个字符；想排除某类词，用过滤里的 \"Doesn't match regex\"。开头加 (?i) 就不区分大小写。\n2. 找长尾：^[\\w\\W\\s\\S]{70,}$ 筛出 70 个字符以上的 query，(\\w+\\s){7,}\\w+ 按词数筛；按意图分组：信息型 who|what|how，商业型 best|top|vs|review，交易型 buy|price|order。\n3. 排查问题页：URL 里有特殊字符用 [^\\/\\.\\-:0-9A-Za-z_]；查被注入的垃圾页用 viagra|cialis 这类词；查被收录的 WordPress 后台页用 wp-。\n4. 作者实测：\\p{Han}、\\p{Cyrillic} 这类按文字类型匹配的写法，在 Query 过滤里能用，在 URL 过滤里不生效。\n5. AI Mode 段：作者自己的实验里 AI Mode 的 query 在 GSC 全被匿名化了，但他根据大型 LLM 的真实 prompt（已去掉个人信息）总结了一条正则，专门匹配 please / write / summarize / act as、thanks、yes go on、show me more 这类聊天式句子，可以直接贴进 GSC 的 Query 过滤里用。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.jcchouinard.com%2Fregex-in-google-search-console%2F%23Chat_Like_Queries_That_may_come_from_AI_Mode\" title=\"Regular%20Expressions%20%28RegEx%29%20in%20Google%20Search%20Conso...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 7,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-15T04:10:02.417+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Regular Express...",
+      "topic_id": "22258224252185881",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Glenn Gabe: When sites drop for their core queries due to major algorithm updates, other queries can show up in GSC\n\nGlenn Gabe 提醒：网站在算法更新中丢了核心关键词后，GSC 里会冒出一些看起来很\"新\"、甚至很吓人的 query。先别慌，这些词很可能一直都在，只是以前排不进 GSC 界面的前 1000 行。\n\n要点：\n1. 核心词排名掉了以后，原本排在后面的 query 会在 GSC 报表里浮到前面，看起来像是更新后才出现的新词。\n2. 想确认是不是真的新词，用 GSC API 把下跌之前的全部 query 导出来对比，\"Don't just rely on the top 1K in the GSC UI\"。\n3. 他刚帮一个站做过（作者自述）：API 一共导出了 7.6 万条 query，其中近 1000 条\"吓人的新词\"在更新前就已经存在、也一直在带来流量，只是没出现在默认的 1000 行报表里。\n4. 导出工具可以用 Analytics Edge，他写过多篇教程。\n\n结论：判断更新后的 query 变化，别只看 GSC 界面的前 1000 行，用 API 全量导出再比。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fx.com%2Fglenngabe%2Fstatus%2F2108924035375485048\" title=\"https%3A%2F%2Fx.com%2Fglenngabe%2Fstatus%2F2108924035375485048\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 8,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-14T04:06:42.684+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Glenn Gabe: Whe...",
+      "topic_id": "14425444814485242",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "Google Explains The \"Couldn't Fetch\" Sitemap Errors\n\nGoogle 的 Martin Splitt 和 John Mueller 聊了一个常见困惑：sitemap 明明格式正确、能公开访问、也在 robots.txt 里写了，Search Console 却还是报 \"couldn't fetch\"。Mueller 的回答是：很多时候这不是技术问题，而是 Google 没空抓，或者觉得你的站不值得多抓。\n\n要点：\n1. Splitt 承认这种情况很常见：sitemap XML 校验通过、公开可访问、robots.txt 已链接，GSC 仍会显示 couldn't fetch。\n2. 原因一是 hostload：Google 能分给这个站的抓取量已经被别的页面占满了，\"didn't have time to actually fetch it\"，也会显示成 couldn't fetch。\n3. 原因二是 crawl demand：Mueller 说抓取需求 \"very often based on the perceived quality of a website\"，Google 觉得站整体质量一般，就不花时间抓 sitemap。\n4. 原因三：Google 可能就是不需要这份 sitemap，等站的质量明显提升后才会去用。文章作者另外提醒，深夜大量爬虫同时请求可能让服务器报 500，可以在 GSC 和服务器日志里确认。\n\n结论：sitemap 报 couldn't fetch 时，先确认 XML 和服务器没问题；如果都没问题，更该检查的是网站整体质量，而不是反复重新提交 sitemap。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.searchenginejournal.com%2Fgoogle-explains-couldnt-fetch-sitemap-errors%2F592040%2F\" title=\"Google%20Explains%20The%20%22Couldn%27t%20Fetch%22%20Sitemap%20Error...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 8,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-14T04:06:36.358+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google Explains...",
+      "topic_id": "55521555845581214",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Publish stats, get cited: The tactic that put my data all over the web - Peec AI\n\nPeec AI 的作者做了一个很狠的实验：建一个全是假统计数据的新站，看 AI 会不会引用。结果 Google 很快把站打没了，ChatGPT 却 7 个月一直在抓、在引。核心结论：在 Google 排名和被 AI 检索到是两回事，统计数据页是赚 AI 引用和外链的强打法（前提是数据要真）。\n\n要点：\n1. 实验做法：2026 年 3 月注册新域名 stateglobe.com，用 GPT-4.1 一天生成 5 万个统计页，后来又加了 1.5 万篇清单文，总成本约 50 美元，所有数字都是编的、一个没核过。上线后赶上两次 Google 更新，可见度崩掉，页面只剩 5–20 次展示。\n2. AI 这边完全相反：Cloudflare 显示最近 30 天 bot 请求 60 万+，其中约 7.2 万次来自 ChatGPT-User（ChatGPT 回答用户时实时打开网页的爬虫，不是训练爬虫）；GA4 里自 3 月以来 ChatGPT 带来 1 万+ 次访问；Ahrefs / Semrush 显示 330+ 个引用域，包括 Shopify、DHL、Bluehost；假数字还被一篇学术论文和卡塔尔最大金融集团的研报引用（作者自述）。作者把这叫 citation laundering：假数据被引用越多，看起来越可信。\n3. 为什么统计页容易被 AI 引用：越来越多内容是 LLM 写的，LLM 写稿遇到缺口会去搜数字，拆出的子查询会自动加 statistics、data、年份这类词；系统只给\"相不相关\"打分，不核对真假；统计页标题和 URL 里常带年份，显得新。\n4. 正确做统计页的方法：一句话只放一个数字，能脱离上下文单独成立；每个数字旁边写来源和年份；小标题按 AI 会搜的方式写，比如\"[话题] statistics\"\"[话题] market size\"；显示更新日期并且真的更新；用服务端 HTML，别把数据藏在 JS、标签页或图片里，检查 robots.txt 和 CDN/WAF 有没有挡 AI 检索爬虫；页面做成简单列表就行；能加原创数据就加。跟踪效果看服务器日志里的 ChatGPT-User / OAI-SearchBot / PerplexityBot、GA4 里来自 chatgpt.com 的访问、新增引用域，再用引号搜自己的数字找没带链接的引用。\n\n结论：作者强调这是研究不是教程，千万别发假数据；这招现在有效，但 AI 平台以后可能会补上这个漏洞。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fpeec.ai%2Fblog%2Fpublish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web\" title=\"Publish%20stats%2C%20get%20cited%3A%20The%20tactic%20that%20put%20my%20d...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 14,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-12T04:13:11.425+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Publish stats, ...",
+      "topic_id": "22258228144242841",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "What is Site Authority? The siteAuthority Signal in the Google Leak - Hobo\n\nHobo 的 Shaun Anderson 专门拆了 2024 年 Google 泄露文档里的 siteAuthority 字段。很多人看到这个名字就说\"Google 骗了我们十年,其实有域名权威分\"。作者的结论是:Google 没撒谎,它否认的是 Moz 的 DA 和\"把外链加总成一个域名分\",并没有否认站级质量分。\n\n要点：\n1. 泄露文档对 siteAuthority 只有一行描述：\"converted from quality_nsr.SiteAuthority, applied in Qstar\"，类型是整数，默认值 nil（空，不是 0）。它只写了数据从哪来（NSR 站级质量体系）、用在哪（Q* 质量评分），完全没写输入是什么。所以\"它就是算外链的\"\"新站从 0 分起步\"\"它是排名第一道闸门\"这类说法都没有文档依据，作者一口气驳了 17 条。\n2. 这个字段所在的 CompressedQualitySignals 模块，文档写明是压缩后送进 Mustang 和 TeraGoogle 的信号，在 TeraGoogle 里用于 preliminary scoring（初步打分），存放在 \"very limited serving memory (Flash storage)\"。作者据此推断它是提前算好、变化很慢的基线分（作者推论）。\n3. Google 官方表态按时间排一下：Matt Cutts 2013 说会识别某领域的话题权威；Gary Illyes 2016 说 \"We don't really have overall domain authority\"；Paul Haahr 2017 说没有哪一个信号叫\"authority\"；John Mueller 2018 承认 \"we do have some metrics that are more on a site level\"；2019 又说 Google 不评估网站的 authority；2022 说做 Google 搜索 \"you do not need DA\"。\n4. 实操含义：别花钱刷第三方 DA 分数，那是 Google 根本不看的游戏；作者认为 Google 在这一块看的是链接质量、点击和整站内容质量。\n\n结论：泄露暴露的不是 Google 撒谎，而是它措辞极度精确——否认的是工具商的指标名，不是\"站级信任分\"这个概念。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.hobo-web.co.uk%2Fwhat-is-site-authority-the-siteauthority-signal-in-the-google-leak%2F\" title=\"What%20is%20Site%20Authority%3F%20The%20siteAuthority%20Signal%20i...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 14,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-12T04:13:04.029+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "What is Site Au...",
+      "topic_id": "55521551844545144",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "Ultimate Migration Tool — Know how your migration actually performed\n\n一个免费的网站迁移复盘工具：接上 Google Search Console(只读权限),把换域名、换 CMS、改版前后的数据按上线日对齐比较，看迁移到底掉没掉、掉在哪。\n\n要点：\n1. 只看 4 个数：点击、曝光、CTR、平均排名。前后数据按上线日逐日对齐叠成一张图，另有标出上线日的真实日历时间线。\n2. 口径值得抄:CTR 用总点击 ÷ 总曝光，不把各页 CTR 再求平均;平均排名按曝光加权，避免低流量页把均值拉偏;http/https、带不带 www 当成不同 URL,不合并。\n3. 用法：谷歌账号登录 → 上传\"旧 URL → 新 URL\"映射表 CSV(不传就做域名级对比)→ 采数，每次迁移最多 5,000 个 URL → 出 4 份报告：总对比、关键词(哪些词涨了、跌了、消失了)、逐页重定向、迁移健康看板(恢复预测 + 风险分)。\n4. 可以导入 Screaming Frog 抓取结果，按映射表逐条核对重定向链;报告能导出 CSV 和 PDF。适用于换域名、.co.uk 转 .com、改 CMS、改版、URL 重构、HTTP 转 HTTPS。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fultimatemigration.co.uk%2F\" title=\"Ultimate%20Migration%20Tool%20%E2%80%94%20Know%20how%20your%20migration%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-11T04:08:01.495+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Ultimate Migrat...",
+      "topic_id": "45548558218442248",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "Do exact match domains have value in 2027?\n\nSearch Engine Land 重新回答\"完全匹配关键词的域名(EMD,比如 siamesekittens.com)现在还值不值钱\"。结论:好域名仍然可以是好资产,但\"域名里带关键词\"本身几乎不帮你排名,别为了这个花大价钱。\n\n要点：\n1. Google 官方 SEO Starter Guide 原话:域名或 URL 路径里的关键词 \"alone have hardly any effect\"(除了在面包屑里显示)。Google 的排名系统指南里还专门有一个 exact match domain system,防止为匹配某个搜索词注册的域名拿到过多好处。\n2. 以前 EMD 好排，很多是间接原因：站名、网址、别人链过来的锚文本天然都是同一个词。买一个用了 15 年、有真实外链和直接流量的老域名，买的是历史和链接，不是\"带词加分\"。\n3. 描述性名字和泛化名字是两回事。bestchicagoroofers.com 看不出是公司、目录还是卖线索的站;Google 的站名文档以 \"Best Dentists in Iowa\" 为例，说这种泛化名除非已是知名品牌，否则不太会被选作站名。作者也明确说：没有证据表明好记的品牌域名是 AI 搜索的排名因素。\n4. 本地站别批量注册\"城市+服务.com\",已经在跑的站更不要为了 SEO / GEO 迁到 EMD——换域名是一次真正的迁移，重定向、信号合并都有掉流量的风险。选域名先过 radio test:别人听一遍能不能记住、拼对。\n\n结论：选一个 5–10 年后你希望别人记住的名字;EMD 正好满足这些条件可以买，但要为对的理由买。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fsearchengineland.com%2Fexact-match-domains-value-453837\" title=\"https%3A%2F%2Fsearchengineland.com%2Fexact-match-domains-v...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-11T04:07:54.053+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Do exact match ...",
+      "topic_id": "14425445185221122",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "AEO Tip: Your sitemap.xml isn't only for Google anymore. Our log data shows that GPTBot + ClaudeBot crawl the sitemap.xml A LOT\n\nChris Long 看了自家公司 Nectiv 网站的服务器日志,发现 GPTBot 和 ClaudeBot 这两个 AI 爬虫来得最勤的地方就是 sitemap.xml。他的结论:sitemap 已经不只是给 Google 看的了,AI 爬虫也在用它。\n\n要点：\n1. 日志截图里 bot 访问次数排前面的是:/sitemap.xml 315 次、/robots.txt 315 次、/sitemap-md.xml 186 次、首页 43 次,单篇博文只有 4 次。作者说这是 GPTBot 和 ClaudeBot 的抓取记录(截图没写时间范围,也没把两个 bot 分开)。\n2. 作者让 Claude Code 分析他们的网站时,Claude Code 调了两次 ahrefs 之后,就直接去抓 sitemap.xml(12.3KB)来盘点站上有哪些内容。作者说这只是一次性的观察。\n3. 他们站上同时在测试给 bot 提供 Markdown 版页面(所以有一个 sitemap-md.xml);LLMs.txt 还没测过。\n\n结论：AI 爬虫确实在读 sitemap.xml,所以把 sitemap 维护好,好处已经不只在 Google 搜索上。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7513963315136495616%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-10T00:05:52.619+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "AEO Tip: Your s...",
+      "topic_id": "55521551521524444",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "If I did SEO for the UK's fastest growing business, this is what I would do\n\nFreddie Chatt 拿 Ahrefs 数据给英国增长最快的健康电商 Healf 做了一次外部 SEO 诊断:站的权重(DR 66)其实够,但几乎不排类目词,缺的是能排名的页面,不是外链。文中流量数字都是 Ahrefs 的第三方估算,作者自己也说 Healf 的 Search Console 会更准。\n\n要点：\n1. Healf 在英国每月约 51,000 自然访问,其中 58% 来自搜 Healf 品牌名,39% 来自搜它代理的品牌(如 Thorne、LMNT),只有 3% 来自 \"magnesium supplement\" 这类通用词。作者查了 72 个它卖的类目词,合计每月 185 万次搜索,Healf 只有 5 个进了前 100。\n2. 对手权重比它低反而排得上:\"magnesium glycinate\"(每月 161,000 次搜索)上 DR 53 和 DR 56 的站排第 5、第 6;\"hydroxyapatite toothpaste\" 上 DR 21 的站用一个 collection 页排第 2。而 Healf 的镁类目页导语只有 12 个词。\n3. 作者的做法:类目页做成\"帮人选产品\"的页(title 和 H1 对上搜索词、写清哪种形态适合谁、按形态和用途筛选、加 FAQ);有搜索量的产品类型单独做可索引页,不能只靠筛选项;按形态、饮食、人生阶段、设备去扩新类目,但只在有真实搜索需求、且至少约 6 个产品时才建,避免薄页。\n4. 已经排在第 4-20 位的有 83 个词,最快的办法是从流量稳定的品牌页加内链过去,再刷新文案;另外 \"healf discount code\" 每月 8,600 次搜索,大部分点击被优惠码网站拿走,自建一个优惠页就能抢回来。AI 搜索里,ChatGPT 引用 Healf 69 次,Holland & Barrett 是 1,276 次。\n\n结论：作者按 72 个类目词粗算,在容易的词上拿到约 10% 点击,每月可多约 108,000 次访问,按 2% 转化和 60-75 英镑客单(作者假设),首单每年约 150-190 万英镑,而且这还没算长尾、新类目和复购。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.inoreader.com%2Farticle%2F3a9c6e76696c480e-if-i-did-seo-for-the-uks-fastest-growing-business-this-is-what-i-would-do\" title=\"https%3A%2F%2Fwww.inoreader.com%2Farticle%2F3a9c6e76696c480e...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 15,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-09T00:13:52.995+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "If I did SEO fo...",
+      "topic_id": "55521552848515154",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "Content Effort: One of Google’s Signals Your SEO Agency Doesn’t Want You to Know About\n\nAnn Smarty 认为,Google 在打击的不是 AI 写的内容本身,而是\"低投入(low-effort)\"的内容。能不能被检测出是 AI 写的、内容有没有用,都不是关键;关键是你有没有给这篇内容加进别处没有的东西。\n\n要点：\n1. Google 搜索质量评分员指南(QRG)里 \"Effort\" 这个词出现了 120 次,定义是:一个人为了做出让人满意的内容,实际投入了多少工作。指南里被判为最低投入的例子,就是那种只把别人的内容换个说法、不给出处、没有专家观点的文章,作者说这正是很多站在发的典型 AI 文章。\n2. Google 官方的有用内容文档里也写了 Effort:写原创分析、手工翻译一首诗、给游戏做一张自定义互动地图算高投入;从 feed 自动生成页面、用生成式 AI 大量产文却没有人工审核把关,算几乎零投入;标注出处不能代替原创投入。\n3. 作者的区分:\"非同质化内容\"是调研、自有数据、白皮书这类权威资产,一年做不了几篇;\"有投入的内容\"是全站所有内容(教程、测评、产品对比)的编辑标准。投入不等于字数、不等于内容深度(AI 也能做调研)、也不等于你花多久调 prompt。\n4. Shaun Anderson 在 Google 泄露的算法文档里找到一个 contentEffort 属性,作者说目前不知道它是不是直接排名信号、影响有多大,但它存在本身就说明问题;有人认为它支撑了 Helpful Content 更新。\n\n结论：真正要问的是,Google 或大模型凭什么要把这篇展示出来?你加了什么新东西,让它比同主题的一大堆内容更好?\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.annsmarty.com%2Fp%2Fcontent-effort-one-of-googles-signals%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-07%26utm_medium%3Demail\" title=\"Content%20Effort%3A%20One%20of%20Google%E2%80%99s%20Signals%20Your%20SEO%20A...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 15,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-09T00:13:46.634+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Content Effort:...",
+      "topic_id": "45548554121585858",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Link Building & Outreach for AI Search\n\nDEJAN 的作者讲外联(outreach)换来的链接为什么大多白费:问题不在对方站的 DA、DR 够不够高,而在链接放得\"不协调\"。有经验的作者在哪里放链接,其实有很稳定的规律,模型能学出来;不符合规律的那条付费链,人和算法都一眼能看出是谁想要的。\n\n要点：\n1. 作者用大量自然链接和非自然链接的样本训练了一个模型,给它一段纯文本,它能预测真人作者会在哪些词上放链接。拿一位资深博主的文章测试,在 93% 置信度阈值下,模型预测的位置和作者真实放的链接基本对得上(作者自述)。\n2. 行业流行的\"1 + 2\"套路(一条商业链 + 几条权威链,\"让它看起来自然\")反而是可识别的模式。作者举例:有发布方收 150 美元编辑费,规定只能有 1 条商业链、外加 1-3 条新闻或政府类权威链。而作者称,自然内容一页常有 10-20 条链接,博客网络每篇只有 2-3 条。\n3. 让链接像编辑自己加的,有四条规则:多链(该链的都链,包括和你无关的外站,链接密度跟宿主站平时一样);每条链接都有明确用途(出处、定义、举例、证据等 10 种,商业推广也算一种,但要过同样的关);链到这个位置最好的那一页;锚文本贴合宿主站平时的写法,不硬塞目标关键词。\n4. 自检办法:把稿子给另一个 SEO 看,让他猜\"这页上是谁想要这条链接\"。猜中了,就说明放得还不够自然。作者自家的流程是让 AI 红队写稿放链、蓝队(付费链检测器)找链,被找出来的稿子直接作废。\n\n结论：内容先行,链接是为内容服务的;一旦\"放链接\"变成写这篇文章的主要目的,内容就会变成陪衬,链接也就暴露了。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fdejan.ai%2Fblog%2Foutreach%2F\" title=\"Link%20Building%20%26%20Outreach%20for%20AI%20Search\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 12,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-09T00:13:40.187+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Link Building &...",
+      "topic_id": "45548554121585848",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Google Rewrites 61% of Page Title Tags [SEO Study]\n\nZyppy 拿 2,370 个网站、80,959 个 title 标签,和 Google 桌面搜索结果里实际显示的标题做对比(数据是 2022 年第一季度)。结论:61.6% 的 title 被 Google 改写过,有的只是小改,有的改得很大。改写最常见的触发点是长度、方括号和竖线分隔符,而让 H1 和 title 保持一致,能明显减少被改写。\n\n要点：\n1. 长度两头都危险:1-5 个字符的短标题(比如 \"Home\")96.6% 被改写,20 字符以内的超过一半被改;超过 60 字符的被改写概率超过 76%,超过 70 字符的 99.9% 被改。51-60 字符最安全,改写率只有 39%-42%。\n2. 想强调的内容用圆括号,别用方括号:带方括号 [] 的标题改写率 77.6%,方括号里的文字有 32.9% 被整段删掉;圆括号的改写率 61.9%,整段被删只有 19.7%。\n3. 分隔符用 dash 比用竖线稳:用 dash \"-\" 的标题,dash 被删的比例是 19.7%;用竖线 \"|\" 的,竖线被删或被换掉(通常换成 dash)的比例是 41.0%,高出一倍多。作者认为用竖线不会带来伤害,只是更容易被改。\n4. H1 和 title 对齐:title 里有数字但 H1 没有,25.8% 的情况下 Google 显示的标题会把数字去掉;title 和 H1 都有数字,97.3% 的情况下显示的标题会保留数字。\n\n结论：想减少 Google 改写你的标题,让 H1 和 title 标签保持一致是一个有效的办法。另外,标题里的词没被显示出来,不代表它对排名没有帮助,这是两个独立的过程。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fzyppy.com%2Fseo%2Fgoogle-title-rewrite-study%2F\" title=\"https%3A%2F%2Fzyppy.com%2Fseo%2Fgoogle-title-rewrite-study%2F\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-08T00:05:24.183+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google Rewrites...",
+      "topic_id": "45548554288215258",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "Re-imagining AI Visibility KPIs in a Query Fan Out world\n\nSeer Interactive 的 Wil Reynolds 讨论 AI 搜索时代该看什么 KPI。核心观点：在 AI 答案里“出现”不等于“被推荐”，而且 AI 拆出来的子查询（query fan-out）经常直接点名它已经信任的网站和行业人物，所以长期该追的是“有没有被这些可信来源提到”。\n\n要点：\n1. “出现但被反推荐”：作者举例，ChatGPT 的回答里出现了 Airbnb 和 VRBO，但它建议用户“去这两家之外找找”。只统计“品牌有没有出现”，会给人一种虚假的成功感。\n2. AI 拆子查询时会直接点名：比如“Top GEO news august 2026”被改写成“site:searchegineland.com GEO news august 2026”，“GEO visibility research”被改写成“Lily Ray GEO research B2B”。再比如 Banana Republic 在 Google 搜“ethical jeans”能进前 10，但作者说查了上千次，AI 答案里从没出现过它——ChatGPT 在搜索之前心里就已经有一份品牌名单。\n3. 作者提出的 KPI（文中说 4 个，实际列了 5 个）：① 你的内容里有多少比例是靠“人转给人”带来流量的（用 GA4 按 URL 拆算法流量和人推荐流量）；② 可信行业媒体对你的提及 / 带来的流量趋势；③ 行业影响者有没有提到你；④ 把老板最关心的 10 个 prompt 每月各跑 10–30 次，看出现比例，用来判断方向对不对，不当最终 KPI 上报；⑤ 新产品和“你被大家认知的主题”之间的距离，用来解释“刚上的产品为什么 AI 还不提”。\n4. 作者反对的做法：看到 LinkedIn 被 AI 引用多，就用 AI 批量写低质量 LinkedIn 文章——这种打地鼠式的玩法撑不了长期可见性。\n\n结论：可见性要配上可信度才有商业价值；长期功夫在于让 AI 已经信任的媒体和人提到你。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.seerinteractive.com%2Finsights%2Fai-visibility-kpis\" title=\"https%3A%2F%2Fwww.seerinteractive.com%2Finsights%2Fai-visibi...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 13,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T16:41:11.918+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Re-imagining AI...",
+      "topic_id": "14425442524555512",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "20 vérités sur le GEO, pour arrêter de payer des choses qui ne fonctionnent pas 👇\n\nJordan Chenevier-Truchet 的 LinkedIn 帖子（法语），列了 20 条关于 GEO（AI 搜索优化）的判断，目的是让大家别再为没用的东西花钱。核心观点：在 AI 里“被看见”分两种——被点名（mention）和被链接引用（citation）；引用靠的是 SEO 基本功，点名靠的是营销、口碑和客户。\n\n要点：\n1. 想被 AI 在“怎么做 X”这类问题里引用，你得先有一个讲清楚怎么做 X 的页面，没有 SEO 基础就没有引用。但光有引用也不够：作者说在一个回答里当第 17 个来源，相当于排在 Google 第 6 页。\n2. 作者称，讲解型页面（什么是 X、为什么 X）能拿到几百次引用，而“最好的 X 软件”这类产品页有时只有几次。\n3. llms.txt 和所谓“给 LLM 专用的 schema”目前没人证明有效；也不需要把文章切成小块喂 AI。Reddit 不保证任何结果，但大家在上面怎么评价你，会影响 AI 怎么描述你的品牌。\n4. 每个 AI 逻辑不同，出现在 Google AI Overviews 不代表在 ChatGPT、Claude、Perplexity、Gemini 里也出现。别为了讨好 AI 牺牲 Google 排名，作者说丢了要两三年才拿得回来。AI 搜索也没有可靠的归因：用户在 ChatGPT 里认识一个品牌，几周后才去 Google 搜品牌名下单。\n\n结论：起步不需要买工具，先拿几个关于自己品牌的问题去问 AI，就已经有活可干了。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7512768774534733824%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 13,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T16:41:05.467+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "20 vérités sur ...",
+      "topic_id": "45548554845888858",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "checkin": null,
+      "content": "Your biggest SEO opportunity is your category pages:\n\nSimone Parodi 在 LinkedIn 发的电商 SEO 清单，观点是：电商站最大的 SEO 机会在类目页（产品列表页），给了 11 条优化动作。\n\n要点：\n1. 内链：给新上的产品列表页加内链；用有针对性的内链给重点类目页加权重；在类目页上放图块式链接（tile links），作者说见效快。\n2. 结构：做一套语义清晰的筛选（filter）；找那些对业务和 SEO 都有价值的新类目来开。\n3. 页面本身：类目标题要贴合用户意图；在类目页底部加以用户为中心、带关键词的内容，去吃长尾词；加结构化数据（schema）；优化加载速度，减少跳出。\n4. 持续跟进：定期看类目页表现，按用户行为和搜索趋势更新内容。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7512943768082350080%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T16:40:59.091+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Your biggest SE...",
+      "topic_id": "55521552125111114",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "Content Effort: The Google Ranking Feature Nobody Talks About\n\n作者 Cyrus Shepard 以前做过 Google 质量评分员，这篇讲 Google 评估页面时看的 “Effort（用心程度）”。核心结论：Effort 不是你花了多少时间、写了多少字，而是页面上能看到的“有用工作的证据”。\n\n要点：\n1. Google 质量评分员指南对 Effort 的定义是：一个人在多大程度上主动投入去做出让人满意的内容；把现成内容丢进翻译软件批量生成几千页、没人审核，就不算有 Effort。作者称指南里 Effort 出现了 100 多次。\n2. 2024 年泄露的 Google API 文档里有两个相关字段：contentEffort（“基于 LLM 的文章页 Effort 估算”）和 ugcDiscussionEffortScore（UGC 页面质量信号）。作者也承认不知道 Google 是否真的在用。\n3. Effort 不是：字数、制作耗时、“人写的一定比 AI 写的好”。作者把指南归成几类信号：有没有人认真挑选和编排；自动化有没有加东西进去（自有数据、真实评价、原创图片）；有没有原创事实和观点而不是复述网上常识；有用信息有没有放在前面而不是先堆 600 字背景；讨论有没有深度。\n4. 发布前 5 个自查问题：内容是不是围绕用户目标编排的？有没有别处没有的一手信息？有没有展示工作证据（方法、实拍、截图、访谈）？有没有超出网上随手能查到的常识？该给观点的地方有没有基于证据的判断？\n\n结论：低成本批量 AI 内容正在被算法打掉，与其拼字数，不如在页面上留下“真做过”的证据。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fsignal.zyppy.com%2Fp%2Fcontent-effort\" title=\"Content%20Effort%3A%20The%20Google%20Ranking%20Feature%20Nobody%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T16:40:52.622+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Content Effort:...",
+      "topic_id": "82258225852888512",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "checkin": null,
+      "content": "Quality at Google: what it is, how it is measured and how long it takes to recover from a core update\n\nNacho Mascort 参加了 Google 巴塞罗那活动的质量分享,把现场幻灯片和质量评估指南、泄露文档、反垄断案材料对上:Google 说的质量是什么、怎么衡量、核心更新后多久能恢复。\n\n要点:\n1. 质量四要素:投入的功夫、原创性、才能或专业度、准确性,人写的和 AI 写的按同一标准评。\n2. \"大路货内容\"(commodity content)就是谁都能写的内容。测试方法:把页面上的品牌换成竞争对手,页面依然一样有用,那就是大路货。幻灯片举例:跑鞋店写\"买跑鞋要考虑的 10 件事\"是大路货,写\"这位顾客的鞋为什么跑到 400 英里就塌了:磨损分析\"就不是。\n3. 现场幻灯片显示,Google 从索引里捞候选页面时,每个 URL 都带着语言、国家、质量等属性,并据此重新排序——作者的理解是,质量分在你搜索之前就已经算好了。作者还说 Gary Illyes 现场明确表示核心更新看的是整个站。\n4. 作者自己的案例:他在 Softonic 把多语言子域并入主域,核心更新来时整站掉了 20% 多;判断是翻译内容质量拖累主站,于是把各语言迁到独立国家域名,之后主域和各语言站都超过了原来的水平(作者自述)。\n5. 他的检查清单:按页面类型分组看流量和收录比例 → 每类页面过一遍四要素 → 用换品牌测试找大路货 → 能改的改、能合并的合并、不行的删 → 按月衡量,通常 3–6 个月见效。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fnachomascort.com%2Fen%2Fblog%2Fgoogle-quality-core-updates%2F\" title=\"Quality%20at%20Google%3A%20what%20it%20is%2C%20how%20it%20is%20measured%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 12,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T00:24:21.267+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Quality at Goog...",
+      "topic_id": "22258225548285851",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "checkin": null,
+      "content": "Google Search Central Live Deep Dive, Barcelona - Day 3 Recap | We Are ROAST\n\nGoogle 巴塞罗那活动最后一天,讲排名、质量和\"各种事情到底要多久\"。最大亮点是 Gary Illyes 第一次公开了 Google 内部统计的各环节典型时长和最慢时长,很多最慢一栏写着\"永不(质量原因)\"。\n\n要点:\n1. 时长(典型 / 最慢):新 URL 被发现约 20 小时 / 几周到永不;sitemap 处理 24 小时 / 最多 14 天或永不(质量原因);整个索引流程约 1.5 小时 / 几个月或永不(质量原因);迁站 1–3 个月 / 6 个月到 1 年以上;人工处罚解除 1–2 周 / 4–6 周;核心更新后恢复 3–6 个月 / 6 个月到 1 年(等下一次核心更新)。\n2. Illyes 说 Google 每天过滤 400 亿个垃圾页面;规模化批量内容正在成为比垃圾链接更大的问题;核心更新针对的是页面,不是整个域名,所以同一个站会有页面涨、有页面跌。\n3. Google 的 Duy Nguyen 说质量看四点:投入的功夫、原创性、才能或专业度、准确性,不管是人写的还是 AI 写的,标准一样。spam 更新变多,是因为新内容暴增,团队也在用 AI 抓。\n4. John Mueller:AI 搜索会把一个问题拆成很多子查询去搜,但这些子查询不会出现在 Search Console 里,因为不是用户发起的。\n\n结论:技术修得再快,质量不过关,Google 可能永远不收、不展示;核心更新后的恢复要按月算。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fweareroast.com%2Fnews%2Fgoogle-search-central-live-deep-dive-barcelona-day-3-recap%2F\" title=\"Google%20Search%20Central%20Live%20Deep%20Dive%2C%20Barcelona%20-%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 11,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T00:24:13.880+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google Search C...",
+      "topic_id": "22258225548285541",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "Google Search Central Live Deep Dive, Barcelona - Day 2 Recap | We Are ROAST\n\nGoogle 巴塞罗那活动第二天,主题是索引:页面被抓到之后,Google 怎么判断页面上有什么、要不要收进索引。\n\n要点:\n1. Googlebot 渲染页面时用的视口大约 10,000 像素高,而且不滚动、不点击。要等用户滚动或点击才加载的内容,Google 看不到。\n2. Google 工程师 Ryan Levering 说,结构化数据(schema)经过清洗过滤后,要么用在普通搜索结果里,要么作为 AI Overviews 和 AI Mode 的参考上下文——不是当代码用,而是把文字加进上下文。加 schema 从来不会有坏处,问题只是值不值得花这个工夫。\n3. Google 更看重页面主体内容,导航、页脚、侧边栏不算重要内容。John Mueller 建议想在 Google 里获得最大展示的站点用 max-image-preview:large 和 max-snippet:-1 这两个 robots 指令。\n4. 两个社区案例:有人用 AI 批量生成图片 alt 文本,上线后表现下降;另一个案例把两个品牌站合并成一个,页面从 2,000 减到 100,流量没掉,收入上升(演讲者自述)。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fweareroast.com%2Fnews%2Fgoogle-search-central-live-deep-dive-barcelona-day-2-recap%2F\" title=\"Google%20Search%20Central%20Live%20Deep%20Dive%2C%20Barcelona%20-%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 10,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T00:24:06.528+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google Search C...",
+      "topic_id": "55521552241512244",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+      "checkin": null,
+      "content": "Google Search Central Live Deep Dive, Barcelona - Day 1 Recap | We Are ROAST\n\nROAST 的 John Campbell 记录了 Google 巴塞罗那三天活动的第一天,主题是抓取。核心意思:不管是传统搜索还是 AI 搜索,能被正常抓取都是地基。\n\n要点:\n1. Gary Illyes 公布的 AI Mode 数据:查询量自上线以来每季度翻倍;平均长度约是传统搜索的 3 倍;每 6 次里有 1 次用语音或图片;美国的追问每月平均增长超过 40%。\n2. Google 搜索、AI Overviews、AI Mode 用的是同一个爬虫 Googlebot,Gemini 用的是另一个。Google 的说法是\"good SEO is good GEO\"。\n3. 抓取预算分两半。抓取速度上限由 Google 所有爬虫共用(搜索、广告、购物、图片吃同一份额度),连接时间、首字节时间变长,或者出现 429 / 5xx,Google 就会放慢。抓取需求看网站质量、URL 更新频率和受欢迎程度;Google 不知道某个 URL 质量如何时,会参考它所在目录的整体情况,再往上一层。\n4. 越来越常见的问题:DNS 和 CDN 出错,比如 CDN 拦截机器人时把 Googlebot 也拦了;验证码页面返回 200,Google 看到的是一个\"正常\"但没内容的页面,被当成软 404。另外,页面从别的域名加载的文件,要看那个域名自己的 robots.txt。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fweareroast.com%2Fnews%2Fgoogle-search-central-live-deep-dive-barcelona-day-1-recap%2F\" title=\"Google%20Search%20Central%20Live%20Deep%20Dive%2C%20Barcelona%20-%20...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 10,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T00:23:59.141+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Google Search C...",
+      "topic_id": "55521552241512254",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "How long does it take for Google to crawl, index, and serve a webpage?\n\nEstela Franco 在巴塞罗那的 Google Search Central Live 活动上记下了 Gary Illyes 的几张幻灯片:Google 抓取、索引、展示各个环节平均要花多久。这类时间 Google 平时很少一次性公开。\n\n要点:\n1. 抓取:新页面平均约 20 小时被抓;已知页面平均约 30 天重抓一次;sitemap 平均约 24 小时处理。\n2. 索引:渲染从几秒到几小时;meta 信息处理平均约 45–90 分钟;链接信息处理从几分钟到 1–3 周;整个索引流程平均约 1.5 小时;删除页面平均 1–3 周;改版迁站平均约 1–3 个月。\n3. 展示:在 Search Console 里提交移除平均约 2 小时生效;搜索结果摘要更新 1–2 天;文本结果里的图片更新约 1–2 周;核心更新后的恢复平均 3–6 个月。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3AugcPost%3A7512112385164300288%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3AugcPos...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 10,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T00:23:51.784+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "How long does i...",
+      "topic_id": "22258225548285551",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" /><e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+      "checkin": null,
+      "content": "Prediction: the next massive Google update is around the corner\n\nLily Ray 认为下一次大型 Google 更新快来了。她的依据是一条老规律:Google 往往先改文档、再放大更新;而这一周 Google 刚改了 AI 内容指南、有用内容文档和作者信息说明,同时 spam update 越来越密。\n\n要点:\n1. spam update 明显变密:2026 年已经有 4 次(3 月、6 月、8 月、9 月),2025 全年只有 1 次;间隔从 92 天缩到 55 天再到 37 天。9 月那次给的周期是\"最多两周\",和核心更新一样,前三次都在 3 天内结束。\n2. 自己给自己排第一的\"best of\"榜单文章在 AI Overviews 里越来越不好用:她复测 100 个\"best B2B software\"查询,AI Overviews 引用这类自荐榜单比 6 月少了 38%;发文品牌被排除在推荐之外的比例从 69% 升到 83%;70% 的情况下,这篇榜单反而在帮竞品被推荐。\n3. 花钱买提及就是新版买链接:有人按 DR/DA 卖榜单位置,单个约 $135–250,也有\"5 次提及 $1,500\"的套餐。只要带了传权重的链接,就违反 Google 的链接 spam 政策。\n4. 她今年接触的被打站有几个共同点:短时间大量发 AI 内容、只改几个词的模板页(每个城市 / 每个电话号码一页)、号称有人审稿但没用、编造作者和 AI 头像、专门写给 AI 搜索看的自荐内容。这些站有机流量掉了以后,在 AI Overviews、AI Mode、ChatGPT 里的引用也跟着掉。\n\n结论:作者建议趁更新前清理——审视批量发布的内容、核对作者页是不是真人、所有 AI 内容发布前由人核对事实,重新考虑面向 AI 的自荐榜单和付费提及。她也说,没人知道更新具体哪天来,但在更新前清理比事后花一年恢复容易得多。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Flilyraynyc.substack.com%2Fp%2Fprediction-the-next-massive-google\" title=\"https%3A%2F%2Flilyraynyc.substack.com%2Fp%2Fprediction-the-n...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 10,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-10-06T00:23:44.309+0800",
+      "creation_statement": "aigc",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Prediction: the...",
+      "topic_id": "22258225548251111",
+      "type": "talk",
+      "vote": null
+    }
+  ]
+}

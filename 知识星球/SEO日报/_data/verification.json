@@ -1,0 +1,19 @@
+{
+  "verified_markdown_posts": 294,
+  "verified_topic_details": 294,
+  "verified_unique_original_records": 237,
+  "original_status_counts": {
+    "captured": 195,
+    "unavailable": 30,
+    "partial": 12
+  },
+  "per_post_source_usage": {
+    "captured": 195,
+    "unavailable": 30,
+    "partial": 13
+  },
+  "verified_local_images": 44,
+  "pagination_end": "empty page before oldest topic verified",
+  "attachment_metadata_only": 3,
+  "result": "PASS"
+}

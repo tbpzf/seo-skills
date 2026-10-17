@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "SEO 小贴士：不要只在 Google Search Console 中提交站点地图索引文件，还需要单独提交所有重要的站点地图。 \n\n当我获得客户的 GSC 访问权限时（通常是针对非常大的网站），很遗憾，我并不总是能从一开始就获得我需要的索引数据。 \n\n造成这种情况的一个主要原因是，只提交了站点地图索引文件，而没有提交网站核心部分（例如产品、类别、文章、指南等）的各个站点地图。 \n\n这种方法有效地适用于所有类型的网站。无论是新闻发布网站（文章通常按日期在网站地图中分组）、电子商务网站、市场，还是任何类型的网站。 \n\n当你想到那些将页面数量压缩到站点地图上限（50K 是上限）的大型网站时，你会在此过程中损失大量信息，尤其是在一次只能查看数百万个 URL 的页面索引时。 \n\n我个人认为，鉴于报告的实用性，当在索引中检测到站点地图时，谷歌应该自动执行此操作，但我也理解这首先需要网站所有者的输入。 \n\n如果您尚未以这种方式将站点地图添加到 Google Search Console (GSC)，请立即完成并进行更改。如果您最终与技术 SEO 人员合作，他们会感谢您的这一举措（如果他们了解此报告视图的重要性）。<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 22,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-04T20:56:35.763+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "5122815445452524",
+        "large": {
+          "height": 501,
+          "url": "https://images.zsxq.com/FmvXxk5BVPn-gKXnwCmQ4mwzEotG?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:8h3HnhNGgOH36DPoZC5seWwM8KI=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 470,
+          "url": "https://images.zsxq.com/FmvXxk5BVPn-gKXnwCmQ4mwzEotG?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:m8OVMJ6RikkEqOm9iLZU-UIm2qk=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "SEO 小贴士：不要只在 Go...",
+    "topic_id": "22811452151814481",
+    "type": "talk"
+  }
+}

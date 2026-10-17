@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "Which Sections of Your Content Are Actually Citable?\n\nLumar GEO 系列的一篇：AI 答案引用的是页面里的某一段，不是整页。页面再相关、再权威，如果段落本身没法单独拿出来用，也不会被引。文章给了 5 项检查，逐段自查。\n\n要点：\n1. 能被引的段要做到三件事：能单独被检索到、脱离上下文也看得懂、引用出去不会出错。\n2. 五项检查：这段只回答一个问题；单独读也能懂（没有指代不明的 this / it，没有\"as mentioned above\"）；需要的事实就在段里（名称、数值单位、适用条件），反例是\"The torque value is listed in the table below\"却不写数值；不跑题；长度适中，太短缺条件，太长混了几件事。\n3. 同一页里，分步操作、参数规格这类段更容易被引；概述、背景、历史这类段较少被引（作者给的示意，没有数据）。\n4. 文笔好不等于能被引：AI 更偏好开头就给关键信息、必要时重复交代、事实密、结构可预测的段落。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.lumar.io%2Fblog%2Fbest-practice%2Fcontent-section-citability-generative-search%2F%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-13%26utm_medium%3Demail\" title=\"Which%20Sections%20of%20Your%20Content%20Are%20Actually%20Citabl...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 10,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-15T04:10:24.363+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Which Sections ...",
+    "topic_id": "82258224252185822",
+    "type": "talk"
+  }
+}

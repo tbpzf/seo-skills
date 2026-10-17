@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Screaming Frog 的“JS Word Count %”功能可以显示页面内容中有多少依赖于 JS。这段文字可能在 Google 和 LLM 搜索引擎中存在索引问题： \n\n这是我在使用  Screaming Frog 时最喜欢生成的报告之一，尤其是在分析 Google 和 LLM 索引问题时。Screaming Frog 实际上有一个专门的“JavaScript”报告部分，可以提供关于 JS 在整个网站中如何使用的各种视图。 \n\n在这份报告中，您可以清楚地看到单个 URL 的内容有多少是由 JavaScript 控制的。以下是查找该报告的方法： \n\n1. 打开尖叫蛙。 \n2. 导航至“配置”>“蜘蛛”>“渲染”\n3. 从渲染下拉菜单中选择“JavaScript”。\n4. 转到配置 > 爬虫 > 渲染，确保“存储 HTML”和“存储渲染后的 HTML”已选中。 \n5. 以蜘蛛模式开始爬行\n6. 在右侧边栏中，导航至“JavaScript”>“包含 JavaScript 内容”。\n\n在这里，您可以看到 Screaming Frog 抓取的所有 URL，以及“JavaScript 变化百分比”和“字数变化”。您可以大致了解有多少内容存在被 Google（风险较低）或 LLM（风险高得多）抓取的潜在问题。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 29,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-01T19:27:51.222+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "1522822522554822",
+        "large": {
+          "height": 704,
+          "url": "https://images.zsxq.com/Fi2pdkrNEIg24kROx1vfMDYP2NKz?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:xxNlmF6cwciHP9z8JiRX_2qNtUw=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 660,
+          "url": "https://images.zsxq.com/Fi2pdkrNEIg24kROx1vfMDYP2NKz?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:8KnOQ3I21jSSP3mxwtY3QTRoPGY=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Screaming Frog ...",
+    "topic_id": "22811224511218221",
+    "type": "talk"
+  }
+}

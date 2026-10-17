@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "全新SEO工具：我们发布了一款免费工具，利用新的AI模型Jev，在不到一秒的时间内将任何页面与谷歌的搜索质量评分指南对比。\n\nHerringbone实验室团队利用谷歌的质量评分指南规则和评分标准，构建了一个指向Jev的流程，该模型能够在毫秒级内进行分类和决策。结果显示，你可以看到谷歌如何评估页面渲染所需的质量。\n\n为什么这对SEO很重要\n - 谷歌的质量评级员不会给你定排名。他们的指南描述了谷歌排名系统旨在奖励的内容：第一手经验、真实专业知识、信任，以及能满足页面目的的内容。未达标的页面往往会随着时间推移失去优势。\n- 问题是时间。将一份180页的文件应用到单一页上需要数小时，因此大多数团队只审计几页，其余部分靠猜测。\n\n优质评审员Jev通过以下方式帮助内容和SEO团队：\n- 在毫秒级内对每个质量评级测试评分\n- 标记评级者可能发现的E-E-A-T和内容质量缺口\n- 允许优先考虑高收入但评分较低的页面\n- 展示模型在每次通过或失败时的信心\n\n工作原理\n\n我们构建了Quality Rater Jev作为一个免费的概念验证工具。它会加载完整的搜索质量评分指南，审核你页面上的内容，并根据每个评分者的测试进行评估。\n你只需输入一个网址。该工具会给你每次测试的通过或不通过，并在渲染页面所需的时间内给出总分。\n\n速度来自Jev，TypeSafe AI的首款System One型号。聊天模特写段落。Jev 返回结构化决策并对每个决策都有一个置信度估计。\n\n我们的工具让你能根据谷歌的质量标准筛选每个收入页面，而无需对每个页面进行全面的人工审核。它读取的是页面内容，而不是你的站外声誉，所以用它来决定先从哪里挖掘。\n\n试试你的收入排名，告诉我们它会发现什么。\n\n<e type=\"web\" href=\"https%3A%2F%2Flnkd.in%2FeDQdS4RC\" title=\"https%3A%2F%2Flnkd.in%2FeDQdS4RC\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 15,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-09-26T17:08:27.366+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "全新SEO工具：我们发布了一款...",
+    "topic_id": "22258251225154811",
+    "type": "talk"
+  }
+}

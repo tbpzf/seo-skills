@@ -1,0 +1,12 @@
+{
+  "group_id": "88882458825452",
+  "group_name": "SEO日报",
+  "unique_topics": 294,
+  "pages": 13,
+  "pagination_exhausted": true,
+  "exhaustion_evidence": "Inclusive last page returned only the existing oldest topic; querying one millisecond earlier returned no topics.",
+  "boundary_query_end_time": "2026-01-22T14:20:34.431+08:00",
+  "last_page_has_more": false,
+  "oldest": "2026-01-22T14:20:34.432+0800",
+  "newest": "2026-10-16T10:33:28.679+0800"
+}

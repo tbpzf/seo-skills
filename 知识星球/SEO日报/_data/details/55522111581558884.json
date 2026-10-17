@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "Claude Desktop使用自定义API \n<e type=\"web\" href=\"https%3A%2F%2Flinux.do%2Ft%2Ftopic%2F2032192\" title=\"https%3A%2F%2Flinux.do%2Ft%2Ftopic%2F2032192\" />\n<e type=\"hashtag\" hid=\"88281188225152\" title=\"%23claude%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-23T14:56:51.889+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "5121188121854854",
+        "large": {
+          "height": 2126,
+          "url": "https://images.zsxq.com/FuMjrMLmo9VhDI_qxMpg5FlDrxv2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:WLmQ7V-hcKKDsd54uil0NLuXsGc=",
+          "width": 800
+        },
+        "original": {
+          "height": 3282,
+          "size": 1039219,
+          "url": "https://images.zsxq.com/FuMjrMLmo9VhDI_qxMpg5FlDrxv2?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:_jSZevSX_uoLwUT5wi4qDmmLKZo=",
+          "width": 1235
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 1993,
+          "url": "https://images.zsxq.com/FuMjrMLmo9VhDI_qxMpg5FlDrxv2?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:hGP8BW5vXHhoHWSH910qMJNJ3A8=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "2026-04-23T14:57:14.506+0800",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Claude Desktop使...",
+    "topic_id": "55522111581558884",
+    "type": "talk"
+  }
+}

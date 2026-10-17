@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "语义搜索是目前唯一重要的搜索方式（对于SEO和GEO而言）\n<e type=\"web\" href=\"https%3A%2F%2Fahrefs.com%2Fblog%2Fsemantic-search-is-the-only-search-that-matters-now%2F%3Futm_source%3Dsubstack%26utm_medium%3Demail\" title=\"Semantic%20Search%20Is%20the%20Only%20Search%20That%20Matters%20No...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 28,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-27T15:08:33.599+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "语义搜索是目前唯一重要的搜索方...",
+    "topic_id": "22811228824142411",
+    "type": "talk"
+  }
+}

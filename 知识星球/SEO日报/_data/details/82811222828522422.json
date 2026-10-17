@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "OpenAI 在索引网页时会优先抓取英文内容 ，抓取次数比其他语言版本高出 30 倍。ChatGPT 倾向于根据英文页面提供答案，即使这些页面内容已过时，也会忽略其他语言中更新的信息。如果您的网站是多语言的，那么保持英文版本内容完全更新至关重要；即使它并非您的主要流量来源，它也会成为 AI 讨论您品牌时的参考来源。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-29T17:01:44.329+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "OpenAI 在索引网页时会优...",
+    "topic_id": "82811222828522422",
+    "type": "talk"
+  }
+}

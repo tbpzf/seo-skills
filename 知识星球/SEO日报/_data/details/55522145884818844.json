@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "「图片」",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 41,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-05-16T09:03:08.497+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "4848545118185518",
+        "large": {
+          "height": 1073,
+          "url": "https://images.zsxq.com/Fg-ekiEVFUOy38HSfrUfWKeVRKw3?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:2OuA3t2uDauj8Cthp8cPw5fmjuY=",
+          "width": 800
+        },
+        "original": {
+          "height": 1613,
+          "size": 449978,
+          "url": "https://images.zsxq.com/Fg-ekiEVFUOy38HSfrUfWKeVRKw3?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:JaeD9EL8KJg6xmTlxCq8k6ayug8=",
+          "width": 1203
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 1006,
+          "url": "https://images.zsxq.com/Fg-ekiEVFUOy38HSfrUfWKeVRKw3?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:VUXGRxrdvgcCziOYXPyj7yr7dRU=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "「图片」",
+    "topic_id": "55522145884818844",
+    "type": "talk"
+  }
+}

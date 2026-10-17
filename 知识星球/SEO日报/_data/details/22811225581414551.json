@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "根据 Ahrefs 发布的最新视频《顶尖 SEO 专家为我构建 AI 搜索策略 (GEO)》，主持人采访了五位 SEO 专家，探讨了如何在生成式引擎优化（GEO）和 AI 搜索（如 AI Overviews, ChatGPT 等）中获得排名的最佳策略。\n以下是专家们的核心观点总结：\n1. 超越传统关键词，挖掘真实对话 (Context over Keywords)\nKevin Indig 指出，AI 搜索中的提示词（Prompts）平均比传统 SEO 关键词长 5 倍，包含了更多上下文和细节,。\n传统的关键词研究已不足够，建议利用销售通话记录、Zoom 会议、客户支持邮件等真实对话数据，输入大语言模型（LLM）进行分析，找出用户真正关心的问题和恐惧点。\n除了自有内容，还需要在出版商网站和 UGC 平台（如 Reddit）上获得品牌提及，因为这些是 LLM 依赖的信息源。\n2. 抢占 YouTube 阵地与保持内容新鲜 (YouTube Visibility & Freshness)\nLouise Linehan 的研究发现，YouTube 视频提及是与 AI 可见性相关性最强的因素。这是因为 OpenAI 等模型使用了数百万小时的 YouTube 字幕进行训练，YouTube 既是重要的输入源，也是 AI 输出的高频引用源。\n内容时效性至关重要。研究显示 AI 引用的内容比普通搜索结果的内容新鲜度高 26%，因此定期更新内容和发布新内容能显著增加被 AI 引用的机会。\n3. 利用细分比较与“榜单”策略 (Niche Comparisons & Listicles)\nSteve Toth 建议利用特定场景的 SaaS 比较内容。例如，不要只写“A vs B”，而要写“适合平面设计师的 QuickBooks 替代品”，利用 LLM 对特定用户群体的理解来生成答案,。\n关联大品牌：如果你的品牌较新，可以通过“搭便车”策略，购买竞争对手所在的“赞助链接”或出现在包含行业巨头的“列表文章”（Listicles）中，让 AI 将你的品牌与行业领头羊联系在一起。\n4. 品牌正当性与填补空白 (Brand Legitimacy)\nGlen Allsopp 提出了一个灵魂拷问：“你真的值得出现吗？”如果有人搜索“最佳 CRM”，结果中没有 HubSpot 是不正常的。AI 搜索结果反映了现实世界的品牌地位。\n建议监控那些在有机搜索中排名靠前的 Reddit 帖子，并自然地参与讨论。\n利用“品牌雷达”寻找竞争对手被提及而你未被提及的话题，填补这些内容空白。\n5. 核心原则：打造更好的业务 (Build a Better Business)\n最后一位技术 SEO 专家的建议最为朴素但深刻：打造更好的业务。所有战术最终都围绕这一核心原则。长期来看，AI 搜索（GEO）奖励的是那些值得用户信任和依赖的品牌、产品及内容。\n总结\n要在 AI 搜索时代获胜，不能仅靠传统的关键词堆砌。你需要深入了解用户真实的提问语境，重视 YouTube 视频内容的布局，通过细分比较和列表文章与大品牌建立关联，并最终致力于建立一个值得被引用的优质品牌业务。\n\n<e type=\"web\" href=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRwKKLnyXCig\" title=\"https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRwKKLnyXCig\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-23T14:08:06.171+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "根据 Ahrefs 发布的最新...",
+    "topic_id": "22811225581414551",
+    "type": "talk"
+  }
+}

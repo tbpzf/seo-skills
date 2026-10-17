@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "AI写作调教\n\n节奏限制：\n“连续出现长度相近的句子不得超过两句。”\n“每段至少有一句少于五个字的句子。”\n“每四个段落中应该只有一个句子。”\n人工智能偏爱中等长度的句子。层层叠叠，无穷无尽，如同砖块。直到你眼神迷离，完全记不起刚才读了什么，也想不起当初为什么开始读，甚至连现在是哪一年都不知道。\n\n词汇限制：\n“永远不要使用：very、really、just、actually、basically、essentially。”\n“将所有抽象名词替换成具体名词。”\n“一个句子中不能包含超过一个形容词。”\n这些措施旨在消除冗余的言辞、清嗓子之类的废话，以及让 AI 将所有说法都变成毫无意义的限定词。“非常重要”变成了“重要”，（理想情况下）变成了足够具体的词语，以至于重要性是隐含的，而不是断言的。\n\n结构限制：\n“开头段落不得超过三句话。”\n“永远不要以背景介绍作为章节的开头。”\n“以推进事态发展结尾，而不是总结。”\n人工智能默认采用冗长的开头、详尽的中间部分和全面的结尾，结尾会重述你刚才读到的所有内容。（以防你在阅读后的十二秒钟内忘记了。人工智能非常关心你的记忆力。人工智能认为你可能存在某种记忆问题。）\n结构限制要求保持势头。无需回顾。无需“总之”。直入主题，阐明观点，然后结束。死后你才能总结。",
+    "counts": {
+      "comments": 0,
+      "likes": 3,
+      "readers": 25,
+      "reading": 1,
+      "rewards": 1
+    },
+    "create_time": "2026-01-29T07:34:31.336+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "AI写作调教\n\n节奏限制：\n“...",
+    "topic_id": "14588444212518822",
+    "type": "talk"
+  }
+}

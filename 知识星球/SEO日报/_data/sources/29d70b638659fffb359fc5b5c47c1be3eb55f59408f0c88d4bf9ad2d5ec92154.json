@@ -1,0 +1,24 @@
+{
+  "url": "https://indexwizard.listicle.dev/",
+  "key": "29d70b638659fffb359fc5b5c47c1be3eb55f59408f0c88d4bf9ad2d5ec92154",
+  "status": "captured",
+  "reason": null,
+  "content_markdown": "---\nbase: https://indexwizard.listicle.dev/\ncanonical: https://indexwizard.listicle.dev/\nmeta-og:image: indexwizard.jpg\nmeta-og:title: GSC Bulk URL Index Checker\nmeta-og:url: https://indexwizard.listicle.dev/\nmeta-viewport: width=device-width, initial-scale=1.0\ntitle: GSC Bulk URL Index Status Checker\n---\n\n![Listicle Wizard](https://indexwizard.listicle.dev/listicle-wizard.png)\n\n# GSC Bulk URL index status checker\n\nCheck 1000 URLs for indexing status via Google Search Console - Inspection API. Be aware, there is a 2.000 URL limit per day. Use folder level properties if you want to work around those. Every property has a limit of 2.000 per day. For live index monitoring: check [GSC Wizard](https://tool.gscwizard.com)!\n\n## Connect Your Account\n\nSign in with your Google account to access Search Console data.\n\n![SVG Image] Sign in with Google\n\nConnected to Google Search Console Logout\n\n## Select Property\n\nLoading sites...\n\n## Load from Sitemap\n\nEnter an XML sitemap URL to load URLs automatically\n\nLoad Sitemap\n\n## URLs to Check\n\nEnter one URL per line (max 1000 URLs)\n\n0 URLs entered\n\nCheck Index Status\n\n## Results\n\n0 Total\n\n0 Indexed\n\n0 Not Indexed\n\n0 Errors\n\nExport CSV\n\nExport JSON\n\n| URL | Status | Coverage | Last Crawl | Indexing | Inspect |\n| --- | ------ | -------- | ---------- | -------- | ------- |\n\nChecking URLs...\n\n## Select URLs from Sitemap\n\n×\n\n0 URLs found in sitemap\n\nSelect All\n\nUnselect All\n\n0 selected\n\nCancel\n\nUse Selected URLs\n\n## Privacy Policy\n\n×\n\n### Your Privacy Matters\n\nThis tool is designed with your privacy in mind. Here's how we handle your data:\n\n#### No data shared with my server\n\nI do not collect, store, or share any of your data on my servers. Your URLs, search console data, and inspection results are never transmitted to or stored on our infrastructure.\n\n#### Direct communication with Google\n\nAll data requests are made directly between your browser, Google's API client library (api.js) and Google's Search Console API. When you authenticate, you grant permission for this application to access your Google Search Console data on your behalf. This communication happens directly with Google - there is no server involved.\n\n#### Authentication\n\nThe webapp (app.js) uses Google OAuth 2.0 for authentication via Google Identity Services, running entirely in your browser. Your Google credentials are never shared with us. The authentication tokens are stored only in your browser's memory and used solely to make requests directly to Google's API.\n\n#### Fully client-Side\n\nThis application runs entirely in your browser. There is no backend server processing your data. All API calls go directly from your browser to Google's servers.\n\n#### Local processing\n\nAll data processing, including displaying results and generating exports (CSV/JSON), happens entirely in your browser. Your data stays on your device.\n\n#### No tracking\n\nI use Vercel Web Analytics to understand aggregated usage of my website. It does not use cookies and stores only anonymized, aggregated data. I do not use cookies for tracking or advertising purposes. I do not track your usage patterns or behavior.\n\nGot it",
+  "fetched_at": "2026-10-17T02:39:12.458628+00:00",
+  "details": {
+    "kind": "url",
+    "url": "https://indexwizard.listicle.dev/",
+    "finalUrl": "https://indexwizard.listicle.dev/",
+    "contentType": "text/html",
+    "method": "native",
+    "truncated": false,
+    "notes": [],
+    "meta": {
+      "source": {
+        "type": "url",
+        "value": "https://indexwizard.listicle.dev/"
+      }
+    },
+    "relative_markdown_links_resolved_against": "https://indexwizard.listicle.dev/"
+  }
+}

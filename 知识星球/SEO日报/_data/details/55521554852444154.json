@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+    "content": "Introducing Topics Portfolio (Beta) in AI Performance\n\nBing Webmaster Tools 在 AI Performance 报告里上线了一个测试版新功能 Topics Portfolio：把你网站在 AI 搜索里出现过的 grounding queries（AI 去检索时用的查询词）按主题归成几大类，让你一眼看出自己在哪些主题上有存在感、每个主题有多大、有多挤、还有哪些空档。\n\n要点：\n1. 入口：登录 Bing Webmaster Tools → AI Performance，在 Citations & Pages 旁边多了一个 Topics 标签。只有数据足够的网站才看得到，主题和机会词都是根据你自己网站生成的。\n2. 主题列表有 4 列：Topic（主题）、Topic Size（选定时间内所有网站在这个主题下被 AI 引用的大概总次数，代表需求大小）、Sites Cited（大概有多少网站被引，代表拥挤程度）、Queries（这个主题下大概有多少个不同的查询词）。下面还有 Top Opportunity Queries：别的网站被引用了、你没被引用的查询词，引用量只给区间。\n3. 点进某个主题，顶部 3 张卡片是主题规模、你在这个主题的引用数、查询词数量；下面分两张表：你已经出现的查询词，和你还没出现的机会查询词。时间范围可以选 1、2 或 3 个月。\n4. 测试版限制：主题分类是 AI 生成的，可能分错；数据不够的主题不显示，小站可能看到的很少甚至看不到这个功能；品牌词可能被当成机会词列出来；所有数字都是近似值，Bing 自己说只当方向参考，不是精确账本。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fblogs.bing.com%2Fwebmaster%2F2026%2F10%2Fintroducing-topics-portfolio-beta-in-ai-performance%2F\" title=\"https%3A%2F%2Fblogs.bing.com%2Fwebmaster%2F2026%2F10%2Fintroduci...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 7,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-16T04:09:39.351+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Introducing Top...",
+    "topic_id": "55521554852444154",
+    "type": "talk"
+  }
+}

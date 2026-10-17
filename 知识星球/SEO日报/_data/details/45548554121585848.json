@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Link Building & Outreach for AI Search\n\nDEJAN 的作者讲外联(outreach)换来的链接为什么大多白费:问题不在对方站的 DA、DR 够不够高,而在链接放得\"不协调\"。有经验的作者在哪里放链接,其实有很稳定的规律,模型能学出来;不符合规律的那条付费链,人和算法都一眼能看出是谁想要的。\n\n要点：\n1. 作者用大量自然链接和非自然链接的样本训练了一个模型,给它一段纯文本,它能预测真人作者会在哪些词上放链接。拿一位资深博主的文章测试,在 93% 置信度阈值下,模型预测的位置和作者真实放的链接基本对得上(作者自述)。\n2. 行业流行的\"1 + 2\"套路(一条商业链 + 几条权威链,\"让它看起来自然\")反而是可识别的模式。作者举例:有发布方收 150 美元编辑费,规定只能有 1 条商业链、外加 1-3 条新闻或政府类权威链。而作者称,自然内容一页常有 10-20 条链接,博客网络每篇只有 2-3 条。\n3. 让链接像编辑自己加的,有四条规则:多链(该链的都链,包括和你无关的外站,链接密度跟宿主站平时一样);每条链接都有明确用途(出处、定义、举例、证据等 10 种,商业推广也算一种,但要过同样的关);链到这个位置最好的那一页;锚文本贴合宿主站平时的写法,不硬塞目标关键词。\n4. 自检办法:把稿子给另一个 SEO 看,让他猜\"这页上是谁想要这条链接\"。猜中了,就说明放得还不够自然。作者自家的流程是让 AI 红队写稿放链、蓝队(付费链检测器)找链,被找出来的稿子直接作废。\n\n结论：内容先行,链接是为内容服务的;一旦\"放链接\"变成写这篇文章的主要目的,内容就会变成陪衬,链接也就暴露了。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fdejan.ai%2Fblog%2Foutreach%2F\" title=\"Link%20Building%20%26%20Outreach%20for%20AI%20Search\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 12,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-09T00:13:40.187+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Link Building &...",
+    "topic_id": "45548554121585848",
+    "type": "talk"
+  }
+}

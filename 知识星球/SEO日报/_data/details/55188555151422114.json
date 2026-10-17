@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "How you can find hidden keywords\n如何找到隐藏的关键词\nGo to Google Analytics 4 >\n前往 Google Analytics 4 >\n\n\n> Go to Admin (gear icon) > Data Streams\n> 进入管理界面（齿轮图标）> 数据流\n> Select your Web Stream\n选择您的网络直播\n> Ensure Enhanced Measurement toggle is ON\n请确保“增强测量”开关已开启。\n> Click the Gear Icon\n点击齿轮图标\n> Check that Site Search is enabled\n请检查网站搜索功能是否已启用。\n\nBy default the internal search is being tracked but just to make sure\n默认情况下，内部搜索会被跟踪，但为了确保万无一失，我们还是再检查一遍。\n\nNext:下一个：\n\n> Go to Explore (left sidebar)\n> 前往“探索”（左侧边栏） \n> Start a Blank exploration\n开始空白探索\n> Dimensions: Click +, add Search term\n> 尺寸：点击“+”，添加搜索词\n> Metrics: Click +, add Event count\n指标：点击“+”，添加事件计数\n> Rows: Select \"Search term\"\n> 行：选择“搜索词”\n> Values: Drag \"Event count\"\n> 值：拖动“事件计数”\n> Filters: Exclude empty or (not set)\n> 筛选条件：排除空值或（未设置）\n\nExport data (top right).导出数据（右上角）。\nCluster the data with relevant pages.\n将数据与相关页面进行聚类。\n\nAnalyze the data to improve your website structure and content:\n分析数据以改进网站结构和内容：\n- Top 10%: High demand - Add in navigation, homepage\n- 前 10%：需求量高 - 添加至导航栏、首页\n- Mid 10%-25%: Content gaps - Optimize On-Page\n- 中间 10%-25%：内容缺口 - 优化页面\n- Mid 25%-35%: Internal linking - bulk links & related pages\n- 中间 25%-35%：内部链接 - 批量链接和相关页面\n- Low 10%: Pruning or Testing - either remove or fully optimize\n- 低 10%：精简或测试 - 要么移除，要么完全优化\n\nThis is the simplest way to make users happy\n这是让用户开心的最简单方法\n\nUsing one of the oldest and most basic tracking options of GA:\n使用 GA 最古老、最基本的跟踪选项之一： \nthe internal search of your website\n网站内部搜索\n\nThe Google Search console is limited to data coming from outside your website. With this process you know exactly what is happening INSIDE.\nGoogle 搜索控制台只能显示来自您网站外部的数据。通过此流程，您可以准确了解网站内部发生的情况。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-29T17:34:50.094+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "8855411445152822",
+        "large": {
+          "height": 680,
+          "url": "https://images.zsxq.com/FuADVBcwL8ms59UTEONisOgmHC3v?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:9wHGwCmpwY-rJZZrzAoMBlJ-KKs=",
+          "width": 800
+        },
+        "original": {
+          "height": 1536,
+          "size": 598192,
+          "url": "https://images.zsxq.com/FuADVBcwL8ms59UTEONisOgmHC3v?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:mPGel2ROp_JdxhpsWzCIONKD_pE=",
+          "width": 1806
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 638,
+          "url": "https://images.zsxq.com/FuADVBcwL8ms59UTEONisOgmHC3v?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:kP0MGf1ERV0cdCHRyVgK3HLc7x8=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "How you can fin...",
+    "topic_id": "55188555151422114",
+    "type": "talk"
+  }
+}

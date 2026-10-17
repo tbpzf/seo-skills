@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "Do exact match domains have value in 2027?\n\nSearch Engine Land 重新回答\"完全匹配关键词的域名(EMD,比如 siamesekittens.com)现在还值不值钱\"。结论:好域名仍然可以是好资产,但\"域名里带关键词\"本身几乎不帮你排名,别为了这个花大价钱。\n\n要点：\n1. Google 官方 SEO Starter Guide 原话:域名或 URL 路径里的关键词 \"alone have hardly any effect\"(除了在面包屑里显示)。Google 的排名系统指南里还专门有一个 exact match domain system,防止为匹配某个搜索词注册的域名拿到过多好处。\n2. 以前 EMD 好排，很多是间接原因：站名、网址、别人链过来的锚文本天然都是同一个词。买一个用了 15 年、有真实外链和直接流量的老域名，买的是历史和链接，不是\"带词加分\"。\n3. 描述性名字和泛化名字是两回事。bestchicagoroofers.com 看不出是公司、目录还是卖线索的站;Google 的站名文档以 \"Best Dentists in Iowa\" 为例，说这种泛化名除非已是知名品牌，否则不太会被选作站名。作者也明确说：没有证据表明好记的品牌域名是 AI 搜索的排名因素。\n4. 本地站别批量注册\"城市+服务.com\",已经在跑的站更不要为了 SEO / GEO 迁到 EMD——换域名是一次真正的迁移，重定向、信号合并都有掉流量的风险。选域名先过 radio test:别人听一遍能不能记住、拼对。\n\n结论：选一个 5–10 年后你希望别人记住的名字;EMD 正好满足这些条件可以买，但要为对的理由买。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fsearchengineland.com%2Fexact-match-domains-value-453837\" title=\"https%3A%2F%2Fsearchengineland.com%2Fexact-match-domains-v...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-11T04:07:54.053+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Do exact match ...",
+    "topic_id": "14425445185221122",
+    "type": "talk"
+  }
+}

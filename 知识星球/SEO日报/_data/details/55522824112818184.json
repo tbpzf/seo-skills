@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "FanoutFox 会读取您的 ChatGPT 和 Perplexity 会话记录。您可以获取它执行的搜索、抓取的页面、 引用的对象以及提及的对象 。一款用于查询fanout query的chrome插件\n<e type=\"web\" href=\"https%3A%2F%2Ffanoutfox.com%2F\" title=\"FanoutFox%3A%20See%20exactly%20how%20ChatGPT%20and%20Perplexity%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 23,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-08-19T18:13:19.543+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "FanoutFox 会读取您的...",
+    "topic_id": "55522824112818184",
+    "type": "talk"
+  }
+}

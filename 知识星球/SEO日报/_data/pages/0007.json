@@ -1,0 +1,1379 @@
+{
+  "count": 30,
+  "has_more": true,
+  "next_end_time": "2026-03-16T08:11:29.312+0800",
+  "success": true,
+  "topics_brief": [
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "<e type=\"hashtag\" hid=\"88281188225152\" title=\"%23claude%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 28,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-14T10:45:05.344+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "8855142152888442",
+          "large": {
+            "height": 560,
+            "url": "https://images.zsxq.com/FnHYde2q_R7cySnQJIOm64d8Bn6M?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:ekueYKxEmoJvhkRrb1sU0LNLsS8=",
+            "width": 733
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 573,
+            "url": "https://images.zsxq.com/FnHYde2q_R7cySnQJIOm64d8Bn6M?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:pCMvSHU1CmJTqqRyIXuuTwb2wbw=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "#claude",
+      "topic_id": "55522288424185424",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "Claude IP 风险检测与更多知识\n<e type=\"web\" href=\"https%3A%2F%2Fip.net.coffee%2Fclaude%2F\" title=\"Claude%20AI%20IP%20%E9%A3%8E%E9%99%A9%E6%A3%80%E6%B5%8B%20-%20IP%E7%BA%AF%E5%87%80%E5%BA%A6%20-%20Claude%20Code%E5%8F%AF%E7%94%A8IP%20-%20Net....\" />\n<e type=\"hashtag\" hid=\"88281188225152\" title=\"%23claude%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 28,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-14T05:56:03.129+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Claude IP 风险检测与...",
+      "topic_id": "22255511842284421",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "Claude Code国内如何使用 ？\n<e type=\"web\" href=\"https%3A%2F%2Fglass-croissant-a3a.notion.site%2FClaude-Code-3413207ca0fd800b9041c8d4d731f59c%3Fsource%3Dcopy_link\" title=\"Notion\" />\n<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" />",
+      "counts": {
+        "comments": 2,
+        "likes": 1,
+        "readers": 25,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-13T20:08:44.051+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Claude Code国内如何...",
+      "topic_id": "55522288118221484",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "Claude code 永久记忆\n每次会话的代币消耗量减少 95%。\n它从不触及上下文限制。\n它会从你上次中断的地方继续对话。\n<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" /> \n\n<e type=\"web\" href=\"https%3A%2F%2Fgithub.com%2Fthedotmack%2Fclaude-mem\" title=\"GitHub%20-%20thedotmack%2Fclaude-mem%3A%20A%20Claude%20Code%20plug...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 28,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-13T11:12:47.139+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Claude code 永久记...",
+      "topic_id": "82255511515211842",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "Claude尼日利亚区订阅攻略，Pro：88元、Max5：580元、Max20：1160元(风险偏高,用别怕,怕别用)\n1. 使用同一个 Claude 帐户，如果您之前在美国地区订阅过，则可以在尼日利亚地区再次订阅。\n2. 一个 Apple ID 可以订阅多个 Claude 帐户。\n3. 通过礼品卡订阅导致被封禁的，可以退款。<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 32,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-12T15:04:27.604+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "2855142258254411",
+          "large": {
+            "height": 6789,
+            "url": "https://images.zsxq.com/FgP-wAzH7ju4u7Qyh3o7kGI-5CoY?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:eA_Y2G3I9pnzqySOq4cVWw418iY=",
+            "width": 742
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 6862,
+            "url": "https://images.zsxq.com/FgP-wAzH7ju4u7Qyh3o7kGI-5CoY?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:bBWxqnaXgis60IKlABMHVQsALtI=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Claude尼日利亚区订阅攻略...",
+      "topic_id": "22255514441245141",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "#<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" /> Claude订阅风险",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-12T14:55:38.424+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "5122845521522114",
+          "large": {
+            "height": 115,
+            "url": "https://images.zsxq.com/FuH4kqKzBeyAKARXE7hW74Vz0T7b?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:2sF-KZHy35PwmUBIt9SnQA7Qvso=",
+            "width": 736
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 59,
+            "url": "https://images.zsxq.com/FuH4kqKzBeyAKARXE7hW74Vz0T7b?imageMogr2/auto-orient/thumbnail/380x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:tmJf0SUJud5KWPk9WDw6Js-63Es=",
+            "width": 380
+          },
+          "type": "png"
+        },
+        {
+          "image_id": "2855142258255881",
+          "large": {
+            "height": 133,
+            "url": "https://images.zsxq.com/FhyqsD8JmBh_OhW6nDmMfK59S5Kw?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:vHBg9csE31GQBNz0XM0t4PT25Eg=",
+            "width": 736
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 69,
+            "url": "https://images.zsxq.com/FhyqsD8JmBh_OhW6nDmMfK59S5Kw?imageMogr2/auto-orient/thumbnail/380x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:ix8P6PjX9zXxEi3if1a6dXaczRc=",
+            "width": 380
+          },
+          "type": "png"
+        },
+        {
+          "image_id": "8855142258255842",
+          "large": {
+            "height": 133,
+            "url": "https://images.zsxq.com/Fo2h_PHqFNC8sVFjomfk0Z6hxRUY?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:R7SYcaMb-ORreOcZp0fX82_zts0=",
+            "width": 736
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 69,
+            "url": "https://images.zsxq.com/Fo2h_PHqFNC8sVFjomfk0Z6hxRUY?imageMogr2/auto-orient/thumbnail/380x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:L035_m7EQ3Bb7h7MpJN-TFYuRMY=",
+            "width": 380
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "##Claude Claude...",
+      "topic_id": "82255514441282412",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "一键书签小工具，可以提取所有ChatGPT对话中的扇出查询\n1. 从GitHub仓库复制代码：<e type=\"web\" href=\"https%3A%2F%2Flnkd.in%2FeNpCgsMi\" title=\"LinkedIn\" />\n2. 将其保存为浏览器书签\n3. 通过网络搜索开启ChatGPT对话\n4. 点击书签→查看所有查询+复制",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 35,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-12T11:58:59.356+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "1522814422451112",
+          "large": {
+            "height": 616,
+            "url": "https://images.zsxq.com/Fpw0XVIYREkJp-6OYQpuRw3e0lqt?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:wdLOeQmjwRUVKlLK3ILoPtr7BBI=",
+            "width": 800
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 578,
+            "url": "https://images.zsxq.com/Fpw0XVIYREkJp-6OYQpuRw3e0lqt?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:o29bQ7kuOg5bgcrBPbHLnX8BQcs=",
+            "width": 750
+          },
+          "type": "jpg"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "一键书签小工具，可以提取所有C...",
+      "topic_id": "22255514448815251",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "私聊群主微信 xiaxiaseo\n\n进入 ''知识星球专属微信群''\n交流任意的谷歌SEO+AI相关内容",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 37,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-12T11:53:19.710+0800",
+      "creation_statement": "",
+      "digested": true,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "2026-07-31T12:06:44.806+0800",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "2026-04-12T11:53:26.546+0800",
+      "sticky": true,
+      "text_type": "plain",
+      "title": "私聊群主微信 xiaxiase...",
+      "topic_id": "22255514448848451",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "AI写作背景\n<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" /> \n用户资料。 您的姓名、背景、专长、网络形象。Claude 需要这些基本信息，这样它就不会再问“你是做什么的？”\n企业概况。 您销售什么产品、您的市场定位、您的内容渠道、您的盈利模式。克劳德了解您的运营模式，而不仅仅是您的主题。\n理想客户画像 (ICP)。 你的服务对象是谁？他们的痛点、他们的愿望、阻碍他们购买的因素、他们如何描述自己的问题。克劳德撰写的每一篇内容都针对真实的人，而非泛泛的受众。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 37,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-10T17:40:20.113+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "AI写作背景\n#写作 \n用户资...",
+      "topic_id": "55522284155884254",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "写作思维导图",
+      "counts": {
+        "comments": 0,
+        "likes": 3,
+        "readers": 39,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-10T13:49:53.660+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [
+        {
+          "create_time": "2026-04-10T13:49:45.253+0800",
+          "download_count": 38,
+          "duration": 0,
+          "file_id": "585548285155144",
+          "hash": "3e2a3f78762f37a8ab53185f0e97406282609872eac10aa0236bd9188bfef4ee",
+          "name": "高质量文章撰写步骤.pdf",
+          "size": 77347,
+          "source": "talk"
+        }
+      ],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "写作思维导图",
+      "topic_id": "82255514882111142",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "claude code写作模板. 自用请勿分享\n仅适用于claude code + claude opus,也可以在vscode中直接使用. \n其他cli以及模型理论上可用,也许你需要调整一下文件内容格式,然后确保模型能力足够<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 4,
+        "readers": 42,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-10T13:23:52.039+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [
+        {
+          "create_time": "2026-04-10T13:22:05.641+0800",
+          "download_count": 35,
+          "duration": 0,
+          "file_id": "212241512548281",
+          "hash": "525c026b9f73c5156b8a6cad40c28e3b6286554fff9ef07f80e27a4ba037dc75",
+          "name": "写作-知识星球.zip",
+          "size": 2011712,
+          "source": "talk"
+        }
+      ],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "2026-04-10T13:25:28.562+0800",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "claude code写作模板...",
+      "topic_id": "45544412885541848",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "谷歌竟然在近一年的时间里，一直在无意中夸大搜索控制台报告中的展示次数！\n\n这是一个重大更新，SEO 从业者应该了解。谷歌悄悄地宣布，Search Console 的日志记录存在问题。因此，自 2025 年 5 月以来，报告中的搜索展示次数被夸大了。这基本上意味着整整一年的数据都被夸大了。\n\n报告中提到，点击量、点击率、平均排名等其他指标并未受到影响。但报告也指出，营销人员应预期账户中的展示次数会有所下降。\n\n他们没有说明曝光量应该减少多少——显然，每个网站的情况都不一样。我目前查看的用户画像相当稳定。但请务必注意这一点，因为预计修复工作将在未来几周内完成。\n<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 46,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-07T06:57:17.285+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "4844128242128828",
+          "large": {
+            "height": 582,
+            "url": "https://images.zsxq.com/FpZ7IjwKHkuqt_mjduqMqkhkTng8?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:fUv1-1KwBmDP5-kL9Qu7M4B-yRQ=",
+            "width": 651
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 671,
+            "url": "https://images.zsxq.com/FpZ7IjwKHkuqt_mjduqMqkhkTng8?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:M5jS1ddhksYaIpNfWLWnlDKj6_g=",
+            "width": 750
+          },
+          "type": "jpg"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "谷歌竟然在近一年的时间里，一直...",
+      "topic_id": "22255518121588221",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "谷歌：“你永远不会知道我们真正的排名因素。”\n\n与此同时，一个免费网站正在追踪其中的 150,163 个。\n\n拥有超过3亿个数据点。\n\n每日更新。\n\n它的运作方式如下：\n\n每次有人运行 Cora 报告时，都会将匿名关联数据发送回网络。这些数据会汇总来自数千个真实搜索引擎结果页面 (SERP) 的数据，并公开发布。\n\n不发表任何观点，不编造任何博客神话，只提供数据。\n\n目前（2026 年 4 月），相关性最高的因素是加载时间——第 1 页平均加载时间为 1,586 毫秒。\n\n字数排名第 30 位——第 1 页平均字数为 1,511。\n\n引用域数量？<e type=\"hashtag\" hid=\"51518514115544\" title=\"%2335%E3%80%82%23\" />\n\n该网站还跟踪因素类别——从相关性（54,123 个因素）到权威性（163 个因素）到信任度（15 个因素）。\n\n相关性并不等于因果关系。但跨越数千个搜索引擎结果页面的相关性，是搜索引擎优化领域最接近科学指南针的工具。\n\n在你相信“元描述无关紧要”之前，请先查看数据实际显示的内容。\n\n<e type=\"web\" href=\"https%3A%2F%2Ftopseofactors.com%2F\" title=\"200%20Top%20SEO%20Ranking%20Factors%20April%202026%20-%20TopSEOFac...\" />\n<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 38,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-07T06:50:27.059+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "谷歌：“你永远不会知道我们真正...",
+      "topic_id": "55522281854842124",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "Claude Code Max，Opus-4.6的所有渠道研究【260321底楼更新OAuth直连拼车】\n<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> <e type=\"web\" href=\"https%3A%2F%2Flinux.do%2Ft%2Ftopic%2F1740014\" title=\"https%3A%2F%2Flinux.do%2Ft%2Ftopic%2F1740014\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 39,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-04T14:02:28.074+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Claude Code Max...",
+      "topic_id": "82255518258854142",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "Claude Code Max，Opus4.6，OAuth直连拼车方案的实践研究\n<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Flinux.do%2Ft%2Ftopic%2F1790652\" title=\"https%3A%2F%2Flinux.do%2Ft%2Ftopic%2F1790652\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 34,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-04T13:54:52.333+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "Claude Code Max...",
+      "topic_id": "45544418548848148",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "B2B SEO 网站规划\n<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n7.69 复制打开抖音，看看【虾虾宝贝的作品】B2B SEO 网站规划 # 独立站 # 外贸 <e type=\"hashtag\" hid=\"48581588248258\" title=\"%23...%23\" /> <e type=\"web\" href=\"https%3A%2F%2Fv.douyin.com%2FtGpgQqCZj7I%2F\" title=\"https%3A%2F%2Fv.douyin.com%2FtGpgQqCZj7I%2F\" /> 10/01 u@S.Yz Xzg:/",
+      "counts": {
+        "comments": 4,
+        "likes": 2,
+        "readers": 30,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-04-04T13:23:32.279+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "B2B SEO 网站规划\n#T...",
+      "topic_id": "45544418548424818",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "AI写作思路与全流程 <e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Fzkami.substack.com%2Fp%2Fhow-to-built-an-ai-content-writer\" title=\"https%3A%2F%2Fzkami.substack.com%2Fp%2Fhow-to-built-an-ai-co...\" />",
+      "counts": {
+        "comments": 1,
+        "likes": 1,
+        "readers": 35,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-28T11:16:12.879+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "AI写作思路与全流程 #写作 ...",
+      "topic_id": "45811251458185848",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "页面上显示两个日期让我们的点击率下降了20%，因为谷歌在搜索结果页中显示了多年的发布日期。HubSpot找到了一种方法，既能同时显示两个日期，又不影响性能👇\n\nHubSpot仅包含标准格式的“日期更新”（例如2026年3月23日），并附注：“本文最初发布于2020年8月。”\n\n因为原始日期不是标准格式，谷歌忽略它，而是在搜索结果页✅中显示较新的日期\n\n📌 动作场面：\n\n1️^ 仅以标准日期格式显示“日期更新”。\n\n2️# 添加原始发布月份+年份作为文本（非标准日期格式）<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 33,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-27T14:14:34.645+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "2855145552221151",
+          "large": {
+            "height": 533,
+            "url": "https://images.zsxq.com/Fsz62aPoCUt09Q_HhZOQhKeZaYIA?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:kohGTudVwZXovHhbuq_WKFmSTDI=",
+            "width": 800
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 500,
+            "url": "https://images.zsxq.com/Fsz62aPoCUt09Q_HhZOQhKeZaYIA?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:Uy3QsbNuphahT0YlA1FhL5UM0oA=",
+            "width": 750
+          },
+          "type": "jpg"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "页面上显示两个日期让我们的点击...",
+      "topic_id": "22811424115185251",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "谷歌点击信号如何影响 SEO 排名和 AI 答案<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Fsignal.zyppy.com%2Fp%2Fgoogle-click-signals\" title=\"How%20Google%20Click%20Signals%20Drive%20SEO%20Rankings%20and%20AI...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 33,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-26T21:06:19.660+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "谷歌点击信号如何影响 SEO ...",
+      "topic_id": "55188454584815414",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "1\\. 找到你的主要关键词（例如，“汽车保险”）  \n2\\. 取第一个位置的定义域  \n3\\. 现在在谷歌上搜索：site: domain.com汽车保险  \n  \n您在这里看到的是该域名为了在该主题上占据主导地位而构建的内容地图。出现的每个 URL 都代表着该主题权威性的一部分。  \n  \n对前 3-4 位竞争对手重复此过程，您就会开始发现规律：  \n  \n他们涵盖的你没涉及的子主题  \n\\- 他们如何构建内容集群  \n您可以针对的主题空白进行研究  \n  \n如果想更进一步，可以提取这些 URL 并使用 Ahrefs 的批量分析功能进行分析。这样就能将真正带来流量的页面与填充页面区分开来。<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 33,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-26T20:47:18.664+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "4844151228811448",
+          "large": {
+            "height": 800,
+            "url": "https://images.zsxq.com/Fr_VXjXWczEmOXM3qqda00gUSpol?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:cq0kIfa0ZxnCBGF9Dk0vgbmsqzY=",
+            "width": 800
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 750,
+            "url": "https://images.zsxq.com/Fr_VXjXWczEmOXM3qqda00gUSpol?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:ObRd-GsxtwhsqRNxFVuz7H0JaUc=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "1\\. 找到你的主要关键词（例...",
+      "topic_id": "55188454581815154",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "小语种专用:deepseek for translatepress插件\n\n下载: <e type=\"web\" href=\"https%3A%2F%2Fgithub.com%2Ftod-zhang%2Fdeepseek-for-translatepress%2Fblob%2Fmain%2Fdeepseek-for-translatepress.zip\" title=\"https%3A%2F%2Fgithub.com%2Ftod-zhang%2Fdeepseek-for-translat...\" />\n\n\n\n图片为预估翻译成本<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 32,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-26T14:21:46.987+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "5122858451851454",
+          "large": {
+            "height": 689,
+            "url": "https://images.zsxq.com/FvDBDg7Q5L0d42Ee9brSHQB8D4mO?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:0t3zk70o-aIWO-0-k9M2z4kLrG8=",
+            "width": 600
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 436,
+            "url": "https://images.zsxq.com/FvDBDg7Q5L0d42Ee9brSHQB8D4mO?imageMogr2/auto-orient/thumbnail/380x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:55maRRi9Nx20QwueQx7efwLseAo=",
+            "width": 380
+          },
+          "type": "png"
+        },
+        {
+          "image_id": "1522848144544842",
+          "large": {
+            "height": 482,
+            "url": "https://images.zsxq.com/FqorTRgQQxi6niRBKACp-gweHhfm?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:GocvPXvET8oFgdhUd_FFA4pM9oc=",
+            "width": 800
+          },
+          "original": {
+            "height": 876,
+            "size": 157992,
+            "url": "https://images.zsxq.com/FqorTRgQQxi6niRBKACp-gweHhfm?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:-ov0SuYyG9qIorgy62a8mcdEpqw=",
+            "width": 1453
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 229,
+            "url": "https://images.zsxq.com/FqorTRgQQxi6niRBKACp-gweHhfm?imageMogr2/auto-orient/thumbnail/380x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:qXQM4mpVapeNlfqnQd0wvJ6WsJc=",
+            "width": 380
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "2026-03-26T15:21:57.720+0800",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "小语种专用:deepseek ...",
+      "topic_id": "14588141412482182",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "关键词研究策略\n非常好的文章<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fanti-keyword-strategy-craig-addyman-xmzce%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fanti-keyword-strate...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 34,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-25T19:16:59.239+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "关键词研究策略\n非常好的文章#...",
+      "topic_id": "14588141212584442",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "在传统搜索中， 只要内容质量高， 字数和页面长度就能在一定程度上反映排名。我再次想知道，这是否也适用于 ChatGPT 回答？\n方法 ：\n测量每个被引用页面的原始文本长度\n将长度分组到 7 个桶中\n对于每个分组，计算每页平均引用次数\n结果 ：字数越多，引用次数确实越多，但存在上限。\n<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n从 5K 到 10K 的跃升幅度最大——几乎翻了一番。超过 20,000 个字符的页面平均每个页面有 10.18 次引用，而少于 500 个字符的页面平均每个页面只有 2.39 次引用。",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 32,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-25T07:58:40.674+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "4844151528851448",
+          "large": {
+            "height": 334,
+            "url": "https://images.zsxq.com/Fuo8HNY5B34VhGkY5VmBBQHYVMqA?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:6VbgGo7E2XBehg7CocjpFpS08V0=",
+            "width": 800
+          },
+          "original": {
+            "height": 459,
+            "size": 216461,
+            "url": "https://images.zsxq.com/Fuo8HNY5B34VhGkY5VmBBQHYVMqA?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:90qarll0d9sWf5l0WL1x4MnQJZQ=",
+            "width": 1100
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 313,
+            "url": "https://images.zsxq.com/Fuo8HNY5B34VhGkY5VmBBQHYVMqA?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SClds94z-b4Lg7vWkIElWV850AM=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "在传统搜索中， 只要内容质量高...",
+      "topic_id": "82811422141421142",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "在进行关键词研究之前🔬 \n\n创建 2-3 个买家画像示例 🧍♀️🧍♂️ \n\n了解你的客户，并设想他们的想法和需求，这对你非常有帮助。\n\n这将为你的关键词研究提供很多灵感。 \n\n应该深入研究哪些领域和主题等等……\n\n最简单的办法就是用 Reddit🤓 \n\n在 Reddit 上寻找与您的业务相关的问题\n\n看看大家都在问什么，并记下类似这样的笔记：\n\nAlex，美国男性，小企业主（花店），对 SEO 对其业务的价值持怀疑态度，正在考虑自行进行 SEO 优化。 \n\n-> 给你的角色命名\n-> 也给他们一个年龄。 \n-> 现在设身处地地为他们着想，想想你可以如何创作内容来帮助他们。<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 2,
+        "readers": 34,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-22T08:41:12.236+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "在进行关键词研究之前🔬 \n\n创...",
+      "topic_id": "22811428128444441",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "「图片」",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 33,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-20T17:37:03.608+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "2855124481444151",
+          "large": {
+            "height": 691,
+            "url": "https://images.zsxq.com/FkBCF-0C6LjSPUCWJRXZXFF1R8u8?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:kq9z7IKL-5EaRIc93BJUVzPh15Y=",
+            "width": 578
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 897,
+            "url": "https://images.zsxq.com/FkBCF-0C6LjSPUCWJRXZXFF1R8u8?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:U4h6jcPtPRd0i3-DVe3tqhes2CY=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "「图片」",
+      "topic_id": "22811428221581511",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "<e type=\"web\" href=\"https%3A%2F%2Fsubstack.com%2F%40charliehills%2Fnote%2Fc-219980326%3Fr%3D29asy1%26utm_source%3Dnotes-share-action%26utm_medium%3Dweb\" title=\"https%3A%2F%2Fsubstack.com%2F%40charliehills%2Fnote%2Fc-21998032...\" />\n<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-19T08:15:25.528+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [
+        {
+          "image_id": "1522841442111222",
+          "large": {
+            "height": 1447,
+            "url": "https://images.zsxq.com/FgAGRmI0MWhUm2MEChsd_yw0S4tK?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:gJhFWDPfi0cBCrz7zUawPkTikx4=",
+            "width": 800
+          },
+          "original": {
+            "height": 1485,
+            "size": 311650,
+            "url": "https://images.zsxq.com/FgAGRmI0MWhUm2MEChsd_yw0S4tK?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:J-SG5DkdxSoplNeg_l0ILF6TlQA=",
+            "width": 821
+          },
+          "source": "talk",
+          "thumbnail": {
+            "height": 1357,
+            "url": "https://images.zsxq.com/FgAGRmI0MWhUm2MEChsd_yw0S4tK?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:vNonuJnD05wIGrwWTDvGNh9_Eo4=",
+            "width": 750
+          },
+          "type": "png"
+        }
+      ],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "https://substac...",
+      "topic_id": "14588142848858512",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "对1.5万个URL的新研究表明，接受重大重写（内容占30%-100%）的文章表现远超小幅或中等更新\n\n即使是小幅内容更新也能防止衰退，但没有更新的内容表现最差\n\n有趣的是，即使是“小幅”改写，也就是0-30%的内容，也出现了衰退——虽然没那么严重\n\n这是“lastSignificantUpdate”的截止点吗？该信息在Google API泄露中 Shaun Anderson 定义为“一个时间戳（以秒计）表示文档上一次经历重大内容变更的时间，区别于小的表面修改”？\n\n无论如何，我的两分之一观点是，内容更新确实能防止排名下滑，但“重大”的内容更新可能效果好得多\n\n<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Frepublishai.com%2Fcontent-optimization%2Fcontent-refresh%2F\" title=\"https%3A%2F%2Frepublishai.com%2Fcontent-optimization%2Fconte...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 34,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-18T06:35:41.259+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "对1.5万个URL的新研究表明...",
+      "topic_id": "55188415124128214",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "以前，普通SEO机构的正确文本必须满足三个标准：\n\n1.检查前三名搜索结果\n\n2.比其他内容更长\n\n3.通过反向链接获得提升\n\n在2026年，情况已经变得更复杂,你需要做的是尽可能多地、尽可能频繁地寻找独特的信息。\n\n写作少了，但质量、质量都提高了。\n\n别试图快。谷歌不想要不需要任何调研努力的内容。\n\n最大的风险不是浪费时间，而是失去希望.\n\n添加你的上下文, 它们需要精心编写，并且可以针对每一条新内容、网站或客户重复使用。\n\n1.about-me.md：你的整体职业背景和/或每个客户的情况。\n\n2.my-voice.md：你的写作风格。避免任何AI模式词汇和语句。\n\n3.my-rules.md：你的规则、你的价值观、你的目标。\n\n<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 32,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-17T15:30:54.045+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "以前，普通SEO机构的正确文本...",
+      "topic_id": "45811285424848828",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "使用 claude创建可互动图表\n\n适用于网站的内容/工具页<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Fruben.substack.com%2Fp%2Fclaude-charts%3Futm_source%3Dpost-email-title%26publication_id%3D4937949%26post_id%3D190812144%26utm_campaign%3Demail-post-title%26isFreemail%3Dtrue%26r%3D29asy1%26triedRedirect%3Dtrue%26utm_medium%3Demail\" title=\"https%3A%2F%2Fruben.substack.com%2Fp%2Fclaude-charts%3Futm_sou...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 0,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-16T08:14:28.195+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "使用 claude创建可互动图...",
+      "topic_id": "14588155415252552",
+      "type": "talk",
+      "vote": null
+    },
+    {
+      "annotation": "",
+      "checkin": null,
+      "content": "如何将Claude Code变成你的SEO指挥中心<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Fsearchengineland.com%2Fclaude-code-seo-work-470668\" title=\"https%3A%2F%2Fsearchengineland.com%2Fclaude-code-seo-work-...\" />",
+      "counts": {
+        "comments": 0,
+        "likes": 1,
+        "readers": 31,
+        "reading": 1,
+        "rewards": 0
+      },
+      "create_time": "2026-03-16T08:11:29.312+0800",
+      "creation_statement": "",
+      "digested": false,
+      "files": [],
+      "group": {
+        "group_id": "88882458825452",
+        "name": "SEO日报"
+      },
+      "images": [],
+      "modify_time": "",
+      "owner": {
+        "alias": "SEO日报",
+        "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+        "name": "虾虾",
+        "user_id": "548818158288144"
+      },
+      "question": null,
+      "referenced_topic": null,
+      "stick_time": "",
+      "sticky": false,
+      "text_type": "",
+      "title": "如何将Claude Code变...",
+      "topic_id": "45811288528444518",
+      "type": "talk",
+      "vote": null
+    }
+  ]
+}

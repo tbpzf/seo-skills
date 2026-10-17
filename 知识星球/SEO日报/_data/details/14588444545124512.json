@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "谷歌对优质内容进行排名。ChatGPT 给出的答案是最新内容。\n\n我们分析了数万条 ChatGPT 引用，发现即使旧内容同样相关，新内容进入前 3 个结果的可能性也高出 2.3 倍。 \n\n30天后，即使是最相关的内容也会开始从搜索结果中消失。\n\n以下是详细分析：\n我们绘制了不同来源类型（.com、edu/org 和政府网站）的“新鲜度”（自发布以来的天数）与“相关性”（与查询的语义匹配）之间的关系图。\n\n我们看到了：\n\n→ .com 内容在“新鲜”内容领域占据主导地位。这类内容推广迅速，但很快也会过时。\n\n→ 政府网站（.gov）的内容往往比较陈旧，相关性得分通常低得惊人。它们虽然能被检索到，但并非因为它们与查询内容真正匹配。\n\n→ Edu/org 处于中间位置，具有不错的持久性，但仍然输给了更新的 .com 域名。\n\n这意味着什么？新鲜度扮演的是先决条件，而不是筛选条件。它能倍增曝光度，而不仅仅是决定胜负的关键因素。\n\n对于内容团队而言，这意味着：\n\n如果你不定期更新，即使你的内容客观上更好，你的 ChatGPT 排名也会下降。\n\n“常青”策略不再是“一劳永逸”了。如果出现了更新的内容，ChatGPT 就不会在意你的指南是否经典。\n\n这30天的窗口期至关重要。非常重要。上个月发布的内容获得高引用率的比例明显高于其他内容。\n\n我们看到一种全新的内容生命周期正在出现，在这种生命周期中，时效性不仅仅是锦上添花，而是结构性因素。",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-29T17:36:40.531+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "8855411445151512",
+        "large": {
+          "height": 541,
+          "url": "https://images.zsxq.com/Fk7bs44bw7WWJ_GwPg6nOXc7v8xk?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:h93S4FUwwmKceKyc1OiGvOYMoeI=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 507,
+          "url": "https://images.zsxq.com/Fk7bs44bw7WWJ_GwPg6nOXc7v8xk?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:JT8_GjlbSZNrspm2zP9dRL9yoV4=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "谷歌对优质内容进行排名。Cha...",
+    "topic_id": "14588444545124512",
+    "type": "talk"
+  }
+}

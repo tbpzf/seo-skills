@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "如果你的落地页不够好，谷歌可以根据搜索结果页面（SERP）生成新的落地页（基于谷歌最新的专利）\n\n听起来它既可以用于广告，也可以用于SEO.\n\n该系统将计算组织现有网站的“着陆页得分”。该得分评估当前页面满足用户特定需求的程度。\n\n*如果现有落地页被认为不够好（得分超过一定的改进阈值），系统将触发 AI 生成。\n*人工智能模型利用用户的搜索上下文、位置和过去的偏好，从组织的网站提取数据，并将其重新打包成一个新的、直观的界面。\n*用户将看到更新后的搜索结果页面，其中包含指向此自定义 AI 生成页面的导航链接，而不是标准 URL。\n<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" /> \n专利地址:<e type=\"web\" href=\"https%3A%2F%2Fpatents.google.com%2Fpatent%2FUS12536233B1%2Fen\" title=\"https%3A%2F%2Fpatents.google.com%2Fpatent%2FUS12536233B1%2Fen\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-28T10:50:21.596+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "如果你的落地页不够好，谷歌可以...",
+    "topic_id": "22811214528822211",
+    "type": "talk"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Your biggest SEO opportunity is your category pages:\n\nSimone Parodi 在 LinkedIn 发的电商 SEO 清单，观点是：电商站最大的 SEO 机会在类目页（产品列表页），给了 11 条优化动作。\n\n要点：\n1. 内链：给新上的产品列表页加内链；用有针对性的内链给重点类目页加权重；在类目页上放图块式链接（tile links），作者说见效快。\n2. 结构：做一套语义清晰的筛选（filter）；找那些对业务和 SEO 都有价值的新类目来开。\n3. 页面本身：类目标题要贴合用户意图；在类目页底部加以用户为中心、带关键词的内容，去吃长尾词；加结构化数据（schema）；优化加载速度，减少跳出。\n4. 持续跟进：定期看类目页表现，按用户行为和搜索趋势更新内容。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7512943768082350080%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T16:40:59.091+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Your biggest SE...",
+    "topic_id": "55521552125111114",
+    "type": "talk"
+  }
+}

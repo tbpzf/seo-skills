@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" /><e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "把 Claude Code / Codex 接进本星球,当成你自己的 SEO 知识库\n\n星球里很多帖子只有一段摘要加一条原文链接,有的同学说看不懂,或者懒得一条条点开。现在有个更省事的办法:知识星球官方出了 AI 接入工具(zsxq-cli + 知识星球 Skill),装好以后,你在 Claude Code 或 Codex 里直接用中文提问,AI 会去星球里搜帖子,再帮你打开原文链接,用大白话讲给你听。\n\n它用的是你自己的星球账号,只能看到你已经加入的星球,不会碰别的东西。\n\n一、怎么装(5 分钟)\n1. 电脑上先装好 Node.js 18 以上版本(终端输入 node -v 能看到版本号就行)。\n2. 打开 Claude Code 或 Codex,把下面这句话原样发给它,它会自己装:\n帮我安装知识星球 Skill:<e type=\"web\" href=\"https%3A%2F%2Fgarden.zsxq.com%2Fskill%2FINSTALL.md\" title=\"https%3A%2F%2Fgarden.zsxq.com%2Fskill%2FINSTALL.md\" />\n3. 装完 AI 会给你一个授权链接和验证码,用浏览器打开、确认授权,就装好了。\n\n二、装好以后可以这么问(直接复制改关键词)\n1. 在「SEO日报」星球里搜关于 AI Overviews 的帖子,列出标题和一句话总结。\n2. 把这几条帖子里的原文链接打开,用大白话给我讲讲每篇讲了什么,我是 SEO 新手。\n3. 星球最近一周发了哪些帖子?按 SEO / AI 搜索 / 工具 分类整理给我。\n4. 我做外贸 B2B 独立站,星球里哪些帖子的方法我现在就能用上?给我列个清单。\n5. 帮我看看星球里关于 GSC 的帖子,里面提到的数字和做法汇总成一张表。\n\n三、想做成本地知识库(进阶,可选)\n可以让 AI 把星球帖子一页页拉下来,每个帖子存成一个 Markdown 文件,顺便把原文链接里的文章也抓下来存好。之后你就在本地文件夹里提问,AI 回答会更快、更完整。直接跟 AI 说:\"把 SEO日报 星球的帖子全部拉到本地,每篇存一个 md 文件,并抓取原文\",它会一步步做。\n\n四、几点注意\n1. 有的网站挡爬虫或有付费墙,AI 打不开原文,这种只能看帖子里的摘要。\n2. AI 可能会讲错,看到关键数字最好回原文核对一下。\n3. 这个工具也能发帖、评论,但它每次写入前都会先问你,别让它乱发。\n4. 拉到本地的内容仅供自己学习使用,请不要外传。\n\n有问题直接在这条帖子下面留言。",
+    "counts": {
+      "comments": 2,
+      "likes": 3,
+      "readers": 12,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-16T10:33:28.679+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "2026-10-16T10:33:42.805+0800",
+    "sticky": true,
+    "text_type": "",
+    "title": "把 Claude Code /...",
+    "topic_id": "82258224114152882",
+    "type": "talk"
+  }
+}

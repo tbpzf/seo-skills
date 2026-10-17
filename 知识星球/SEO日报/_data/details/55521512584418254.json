@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "How to Optimize Content for AI Search Engines\n\n网上各种\"AI 搜索优化\"攻略翻来覆去就那几条：加 schema、段落写短、放 llms.txt、专门为 AI 改写。这篇把常见的 10 条做法按\"有没有证据\"分了级，结论是：真正有用的大多就是好好做 SEO，有几条 Google 已经明说不需要。\n\n要点：\n1. 有证据支持的三条：每个小标题下第一句就直接给答案；放原创数据、统计和有名有姓的出处；在论坛、评测站、行业媒体上有第三方曝光（Google 确认它的 AI 功能会从博客、视频、论坛讨论里取信息）。\n2. 算好习惯但没有证据证明能多被 AI 引用的：作者署名和资质、服务端渲染让爬虫读得到、内容保持更新、FAQ/Article schema。\n3. Google 明确说不需要的：llms.txt（Google 直接忽略）、把内容切成小块、专门\"为 AI 写\"的文风。注意这只针对 Google 搜索、AI Overviews 和 AI Mode，其他 AI 引擎没发过类似说明。\n4. 排名有帮助但不是全部：文中引用 Originality.ai 研究，AI Overviews 的引用 48% 在同一搜索词的 Google 前 100 名里，52% 在前 100 名之外；Ahrefs 2026 年 3 月对 86.3 万个关键词的研究显示 38% 来自前 10 名。检查效果先看 GSC 效果报告里的 Generative AI 报告，其他 AI 引擎就拿同一批 prompt 反复跑。\n\n结论：最稳的底子还是把真实问题答清楚、来源可信、爬虫能访问；一个做法如果唯一的依据是\"别的攻略也这么说\"，就当它是猜测。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.searchable.com%2Fblog%2Foptimize-content-for-ai-search\" title=\"How%20to%20Optimize%20Content%20for%20AI%20Search%20Engines\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 14,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-09-30T00:08:35.492+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "How to Optimize...",
+    "topic_id": "55521512584418254",
+    "type": "talk"
+  }
+}

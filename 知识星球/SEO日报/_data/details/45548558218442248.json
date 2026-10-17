@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "Ultimate Migration Tool — Know how your migration actually performed\n\n一个免费的网站迁移复盘工具：接上 Google Search Console(只读权限),把换域名、换 CMS、改版前后的数据按上线日对齐比较，看迁移到底掉没掉、掉在哪。\n\n要点：\n1. 只看 4 个数：点击、曝光、CTR、平均排名。前后数据按上线日逐日对齐叠成一张图，另有标出上线日的真实日历时间线。\n2. 口径值得抄:CTR 用总点击 ÷ 总曝光，不把各页 CTR 再求平均;平均排名按曝光加权，避免低流量页把均值拉偏;http/https、带不带 www 当成不同 URL,不合并。\n3. 用法：谷歌账号登录 → 上传\"旧 URL → 新 URL\"映射表 CSV(不传就做域名级对比)→ 采数，每次迁移最多 5,000 个 URL → 出 4 份报告：总对比、关键词(哪些词涨了、跌了、消失了)、逐页重定向、迁移健康看板(恢复预测 + 风险分)。\n4. 可以导入 Screaming Frog 抓取结果，按映射表逐条核对重定向链;报告能导出 CSV 和 PDF。适用于换域名、.co.uk 转 .com、改 CMS、改版、URL 重构、HTTP 转 HTTPS。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fultimatemigration.co.uk%2F\" title=\"Ultimate%20Migration%20Tool%20%E2%80%94%20Know%20how%20your%20migration%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-11T04:08:01.495+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Ultimate Migrat...",
+    "topic_id": "45548558218442248",
+    "type": "talk"
+  }
+}

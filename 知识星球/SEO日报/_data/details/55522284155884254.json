@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "AI写作背景\n<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" /> \n用户资料。 您的姓名、背景、专长、网络形象。Claude 需要这些基本信息，这样它就不会再问“你是做什么的？”\n企业概况。 您销售什么产品、您的市场定位、您的内容渠道、您的盈利模式。克劳德了解您的运营模式，而不仅仅是您的主题。\n理想客户画像 (ICP)。 你的服务对象是谁？他们的痛点、他们的愿望、阻碍他们购买的因素、他们如何描述自己的问题。克劳德撰写的每一篇内容都针对真实的人，而非泛泛的受众。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 37,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-10T17:40:20.113+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "AI写作背景\n#写作 \n用户资...",
+    "topic_id": "55522284155884254",
+    "type": "talk"
+  }
+}

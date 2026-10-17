@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "AEO Tip: Your sitemap.xml isn't only for Google anymore. Our log data shows that GPTBot + ClaudeBot crawl the sitemap.xml A LOT\n\nChris Long 看了自家公司 Nectiv 网站的服务器日志,发现 GPTBot 和 ClaudeBot 这两个 AI 爬虫来得最勤的地方就是 sitemap.xml。他的结论:sitemap 已经不只是给 Google 看的了,AI 爬虫也在用它。\n\n要点：\n1. 日志截图里 bot 访问次数排前面的是:/sitemap.xml 315 次、/robots.txt 315 次、/sitemap-md.xml 186 次、首页 43 次,单篇博文只有 4 次。作者说这是 GPTBot 和 ClaudeBot 的抓取记录(截图没写时间范围,也没把两个 bot 分开)。\n2. 作者让 Claude Code 分析他们的网站时,Claude Code 调了两次 ahrefs 之后,就直接去抓 sitemap.xml(12.3KB)来盘点站上有哪些内容。作者说这只是一次性的观察。\n3. 他们站上同时在测试给 bot 提供 Markdown 版页面(所以有一个 sitemap-md.xml);LLMs.txt 还没测过。\n\n结论：AI 爬虫确实在读 sitemap.xml,所以把 sitemap 维护好,好处已经不只在 Google 搜索上。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7513963315136495616%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-10T00:05:52.619+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "AEO Tip: Your s...",
+    "topic_id": "55521551521524444",
+    "type": "talk"
+  }
+}

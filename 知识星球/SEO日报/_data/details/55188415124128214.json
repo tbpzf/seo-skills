@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "对1.5万个URL的新研究表明，接受重大重写（内容占30%-100%）的文章表现远超小幅或中等更新\n\n即使是小幅内容更新也能防止衰退，但没有更新的内容表现最差\n\n有趣的是，即使是“小幅”改写，也就是0-30%的内容，也出现了衰退——虽然没那么严重\n\n这是“lastSignificantUpdate”的截止点吗？该信息在Google API泄露中 Shaun Anderson 定义为“一个时间戳（以秒计）表示文档上一次经历重大内容变更的时间，区别于小的表面修改”？\n\n无论如何，我的两分之一观点是，内容更新确实能防止排名下滑，但“重大”的内容更新可能效果好得多\n\n<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Frepublishai.com%2Fcontent-optimization%2Fcontent-refresh%2F\" title=\"https%3A%2F%2Frepublishai.com%2Fcontent-optimization%2Fconte...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 34,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-18T06:35:41.259+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "对1.5万个URL的新研究表明...",
+    "topic_id": "55188415124128214",
+    "type": "talk"
+  }
+}

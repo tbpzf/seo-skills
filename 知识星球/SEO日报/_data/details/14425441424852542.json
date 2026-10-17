@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" />",
+    "content": "Content Engineering Tip: Help Centers are often a HUGE source of citations for LLMs\n\nChris Long（Nectiv）分享：B2B / 科技公司被 LLM 引用的页面里，帮助中心和产品文档往往占了很大一块。难点是这类文档不好写，他的办法是让 Claude 浏览器扩展直接去操作产品、写步骤、截图。\n\n要点：\n1. Nectiv 的客户多是 B2B / tech 公司，看引用数据时经常发现帮助中心 / 文档是很大的引用来源，见过一个站 40% 的 AI 引用来自帮助中心（作者自述）。\n2. 原因：这类内容信息密、全是事实、结构清楚，天生适合 LLM 拿去用。有大科技公司已经把这些页当成和落地页一样重要来做。\n3. 难点：写帮助文档要客服或产品团队的专业知识，经常卡在没人写。\n4. 做法：装上 Claude 浏览器扩展，让 Claude 能直接控制 Chrome / Safari；把它指到产品的某个模块，让它执行一个具体操作，它往往能完成操作、写出步骤、截好图，生成整篇帮助文档。\n5. 作者提醒：很多公司的法务 / IT 团队不会同意这么干，但技术上是可行的。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7513569419126632448%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 7,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-15T04:10:09.740+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Content Enginee...",
+    "topic_id": "14425441424852542",
+    "type": "talk"
+  }
+}

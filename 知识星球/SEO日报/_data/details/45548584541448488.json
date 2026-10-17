@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "SEO指标比大多数人想象的更容易伪造。\n\nDmytro Sokhach 做了个实验：给一个根本不存在的网站刷 DR，看看这个指标到底有多好操控。\n\n要点：\n1. 2023 年第一次测：域名都没注册，没流量、没内容、没排名、没真实外链，唯一目标就是把 DR 刷上去。\n2. 两年后重测：在 Fiverr 随手下了一单，不到 100 个引用域名、不到一周，DR 就被刷上去了。帖子附的 Ahrefs 截图里，这个站 DR 69，引用域名 61 个，有机关键词 0，在 AI 回答里被引用 0 次。\n3. 作者自己也说，这种外链没有任何 SEO 价值，带不来流量，也带不来排名。\n\n结论：DR 高不等于网站强。判断一个站的时候要看流量、排名这些实际表现，别只看 DR。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7509499743207849984%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 13,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-09-29T12:17:40.655+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "SEO指标比大多数人想象的更容...",
+    "topic_id": "45548584541448488",
+    "type": "talk"
+  }
+}

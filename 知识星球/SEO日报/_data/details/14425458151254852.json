@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Here's an awesome SEO tip that leverages the topical authority Google already gives your site:\n\nDarren Shaw 在 LinkedIn 分享了一个内链小技巧（来自 Edward Sturm，在 Whitespark Local Update Podcast 上讲的）：不要从零开始推一个新页面，而是找到 Google 已经把你网站和这个关键词关联起来的那一页，把站内相关页面的内链都指向它。\n\n要点：\n1. 第一步：在 Google 里搜“你的域名 + 目标关键词”，比如 yourwebsite.com water heater repair。\n2. 第二步：如果搜出来的是你自己的某个页面，而且和这个词很匹配，它就是你要重点加强的页面。\n3. 第三步：再搜 site:yourwebsite.com water heater repair，Google 会列出你站内所有提到这个话题的页面。\n4. 第四步：从这些页面各加一条内链，指向第二步找到的目标页。\n\n结论：这样做是直接把 Google 引向它已经认定和这个话题相关的页面，而不是从头开始。帖子里没有给效果数据。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7511079092247519232%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 8,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-03T00:14:21.118+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Here's an aweso...",
+    "topic_id": "14425458151254852",
+    "type": "talk"
+  }
+}

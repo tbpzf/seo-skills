@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "一键书签小工具，可以提取所有ChatGPT对话中的扇出查询\n1. 从GitHub仓库复制代码：<e type=\"web\" href=\"https%3A%2F%2Flnkd.in%2FeNpCgsMi\" title=\"LinkedIn\" />\n2. 将其保存为浏览器书签\n3. 通过网络搜索开启ChatGPT对话\n4. 点击书签→查看所有查询+复制",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 35,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-12T11:58:59.356+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "1522814422451112",
+        "large": {
+          "height": 616,
+          "url": "https://images.zsxq.com/Fpw0XVIYREkJp-6OYQpuRw3e0lqt?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:wdLOeQmjwRUVKlLK3ILoPtr7BBI=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 578,
+          "url": "https://images.zsxq.com/Fpw0XVIYREkJp-6OYQpuRw3e0lqt?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:o29bQ7kuOg5bgcrBPbHLnX8BQcs=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "一键书签小工具，可以提取所有C...",
+    "topic_id": "22255514448815251",
+    "type": "talk"
+  }
+}

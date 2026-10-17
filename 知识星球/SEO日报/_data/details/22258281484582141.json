@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "The half-life of an AI citation is 11 days\n\nProfound 统计了 88.3 万个页面在 7 个 AI 引擎（ChatGPT、Perplexity、Claude、Google AI Overviews、AI Mode、Gemini、Copilot）里一年的被引情况，结论是：AI 搜索里的“权威”会过期，不会像传统 SEO 那样慢慢累积。\n\n要点：\n1. 中位数页面在被引用最多的那天之后，11 天内引用份额就掉一半。78% 的页面两周内就减半，基本是“被引一次就没了”；剩下 22% 能持续被引的页面，半衰期也只有 27–29 天。\n2. 各引擎各管各的：同一个页面在不同引擎里能被引多久，相关性只有 0.03–0.09，几乎没关系（Google 自家三个产品之间稍高，0.12–0.17）。持续被引的页面里，Claude 的引用 8 周后还有效的概率是 ChatGPT 的 2.8 倍。\n3. 被越多引擎引用，活得越久：被 5 个以上引擎引用的页面，8 周后还保持一半以上份额的比例是 6.8%，只被 1 个引擎引用的是 1.2%，差 5.5 倍。\n4. 新闻、公告、研究报告这类跟日期挂钩的内容掉得最快（8 周后 7.0%），对比类、教程说明类、产品销售类页面是它的 1.4–1.6 倍。\n\n结论：AI 搜索的引用以“天”计而不是以“月”计，要靠持续、有针对性地发内容才能一直被选中。注意这是 Profound 自家平台的数据。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.tryprofound.com%2Fblog%2Fthe-half-life-of-an-ai-citation-is-11-days\" title=\"The%20half-life%20of%20an%20AI%20citation%20is%2011%20days\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 13,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-03T00:14:35.797+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "The half-life o...",
+    "topic_id": "22258281484582141",
+    "type": "talk"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "谷歌的约翰·穆勒表示，他不鼓励大型网站强制将其页面收录到谷歌搜索。他在LinkedIn上的一条评论中说：“我强烈建议不要依赖强制索引。”\n这不是新问题，我们至少已经讨论过两次了。2020年，谷歌表示需要请求手动索引的网站可能存在质量问题。最近我们也提到谷歌说你不需要用谷歌搜索控制台重新索引你的页面<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" /> 。",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 27,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-25T16:13:09.009+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "谷歌的约翰·穆勒表示，他不鼓励...",
+    "topic_id": "55188585155118154",
+    "type": "talk"
+  }
+}

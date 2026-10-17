@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "AI如何“看待”你的页面标题\n\n举个老式的标题例子：\n“ 修复爬虫预算问题 ”（26 个字符）\n它简短且技术上准确，但语义平淡。\n如何解决抓取预算问题，防止 Googlebot 索引您的网站 （77 个字符）\n它篇幅更长，但内容也更丰富：包括操作指南意图、抓取预算、Googlebot、索引问题等信息。这让 AI 更有理由相信你的页面直接解答了用户的查询。不仅仅是“这与 SEO 有关”，而是“这正是你提出的问题”。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 31,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-23T07:35:58.429+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "AI如何“看待”你的页面标题\n...",
+    "topic_id": "82811281141842142",
+    "type": "talk"
+  }
+}

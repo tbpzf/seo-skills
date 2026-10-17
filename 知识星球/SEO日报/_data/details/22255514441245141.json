@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "Claude尼日利亚区订阅攻略，Pro：88元、Max5：580元、Max20：1160元(风险偏高,用别怕,怕别用)\n1. 使用同一个 Claude 帐户，如果您之前在美国地区订阅过，则可以在尼日利亚地区再次订阅。\n2. 一个 Apple ID 可以订阅多个 Claude 帐户。\n3. 通过礼品卡订阅导致被封禁的，可以退款。<e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 32,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-12T15:04:27.604+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "2855142258254411",
+        "large": {
+          "height": 6789,
+          "url": "https://images.zsxq.com/FgP-wAzH7ju4u7Qyh3o7kGI-5CoY?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:eA_Y2G3I9pnzqySOq4cVWw418iY=",
+          "width": 742
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 6862,
+          "url": "https://images.zsxq.com/FgP-wAzH7ju4u7Qyh3o7kGI-5CoY?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:bBWxqnaXgis60IKlABMHVQsALtI=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Claude尼日利亚区订阅攻略...",
+    "topic_id": "22255514441245141",
+    "type": "talk"
+  }
+}

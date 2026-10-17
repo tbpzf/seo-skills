@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "在下一次订阅/升级前,提前查询claude 账号是否需要kyc审核\n\n输入网址\n<e type=\"web\" href=\"https%3A%2F%2Fclaude.ai%2Fapi%2Forganizations%2F\" title=\"App%20unavailable%20in%20region%20%7C%20Claude\" />{org_id}/kyc_status\n返回的 status字段就能告诉你：\n| not_required | 该账号升级不需要 KYC，可以直接升级 |\n| pending | 需要 KYC，正在审核中 |\n| approved | KYC 已通过，可以升级 |\n| denied | KYC 被拒，无法升级 |\n\n如何获取你的 org_id\n看图片<e type=\"hashtag\" hid=\"88281188225152\" title=\"%23claude%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 25,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-23T18:45:52.966+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "5121188112145514",
+        "large": {
+          "height": 613,
+          "url": "https://images.zsxq.com/FmhV_bYTUrTgydXNRCvIpolGxZmp?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:HLbqYoeHvbH5bT6GPB63Liije44=",
+          "width": 550
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 836,
+          "url": "https://images.zsxq.com/FmhV_bYTUrTgydXNRCvIpolGxZmp?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:aG5J3fj1qwpRFNF8ecZNzM5UAIA=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "在下一次订阅/升级前,提前查询...",
+    "topic_id": "45544888248488128",
+    "type": "talk"
+  }
+}

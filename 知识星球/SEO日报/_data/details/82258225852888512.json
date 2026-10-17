@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "Content Effort: The Google Ranking Feature Nobody Talks About\n\n作者 Cyrus Shepard 以前做过 Google 质量评分员，这篇讲 Google 评估页面时看的 “Effort（用心程度）”。核心结论：Effort 不是你花了多少时间、写了多少字，而是页面上能看到的“有用工作的证据”。\n\n要点：\n1. Google 质量评分员指南对 Effort 的定义是：一个人在多大程度上主动投入去做出让人满意的内容；把现成内容丢进翻译软件批量生成几千页、没人审核，就不算有 Effort。作者称指南里 Effort 出现了 100 多次。\n2. 2024 年泄露的 Google API 文档里有两个相关字段：contentEffort（“基于 LLM 的文章页 Effort 估算”）和 ugcDiscussionEffortScore（UGC 页面质量信号）。作者也承认不知道 Google 是否真的在用。\n3. Effort 不是：字数、制作耗时、“人写的一定比 AI 写的好”。作者把指南归成几类信号：有没有人认真挑选和编排；自动化有没有加东西进去（自有数据、真实评价、原创图片）；有没有原创事实和观点而不是复述网上常识；有用信息有没有放在前面而不是先堆 600 字背景；讨论有没有深度。\n4. 发布前 5 个自查问题：内容是不是围绕用户目标编排的？有没有别处没有的一手信息？有没有展示工作证据（方法、实拍、截图、访谈）？有没有超出网上随手能查到的常识？该给观点的地方有没有基于证据的判断？\n\n结论：低成本批量 AI 内容正在被算法打掉，与其拼字数，不如在页面上留下“真做过”的证据。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fsignal.zyppy.com%2Fp%2Fcontent-effort\" title=\"Content%20Effort%3A%20The%20Google%20Ranking%20Feature%20Nobody%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 11,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T16:40:52.622+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Content Effort:...",
+    "topic_id": "82258225852888512",
+    "type": "talk"
+  }
+}

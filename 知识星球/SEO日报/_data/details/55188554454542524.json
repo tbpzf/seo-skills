@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "谷歌会衡量“共识”，但这并不意味着你的页面必须符合共识才能获得排名。⤵️\n很多搜索词并没有客观意义上的“正确”答案，因此谷歌可能会寻求多种不同的观点。🚦\n但是，这或许可以解释为什么你的排名不高。如果你制作的是“符合共识”的内容，而你的客户说“为什么我们的排名不高？我们的内容无论从哪个角度来看都比排名第二和第四的内容好”，这或许没错，但谷歌恰恰希望排名靠前的内容是中立的或持不同意见的。☝️\n并不是说你的内容不好，只是不符合他们想要呈现的风格！👨‍🍳",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 30,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-03T07:14:12.494+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "谷歌会衡量“共识”，但这并不意...",
+    "topic_id": "55188554454542524",
+    "type": "talk"
+  }
+}

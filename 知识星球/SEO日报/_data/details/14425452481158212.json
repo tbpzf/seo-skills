@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /><e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "Introducing Nano SEO Lab - my AI-assisted SEO extension\n\nChris Green 做了一个开源的 Chrome 扩展 Nano SEO Lab，定位是\"浏览器里的技术 SEO 工作台\"：打开页面就先跑一遍规则检查，再用浏览器自带的本地模型 Gemini Nano（也可以填自己的 OpenAI / Gemini API key）帮你分诊和解读。核心思路是先看事实，AI 只在需要解读的时候上场。\n\n要点：\n1. 打开扩展就自动检查：title 和标题层级、canonical 和可索引信号、链接、图片、结构化数据、URL 和语言/地区声明、服务器返回的 HTML 和渲染后页面的差异。这些检查刻意和模型判断分开。\n2. 证据始终看得到：说 URL 渲染后变了，就给你看前后两个 URL；说链接 404，就给你看请求地址、状态码和最终落点。模型的判断叠在证据上面，不替代证据；模型拿不准时不瞎猜，把细节交给你拍板，确认要改的问题可以一键生成 Jira 工单草稿。\n3. DOM 对比适合查 JS 重的页面：它会自动过滤 hydration、缓存 ID 这类没意义的变化，剩下的差异分批交给模型看（Nano 的上下文窗口小）。作者说这块还要大量测试。\n4. 判断页面类型和搜索意图是否对得上时，可以切换喂给模型的页面格式（结构化摘要、干净 HTML、Markdown、可见文本、渲染后 HTML）；结果忽好忽坏时，先怀疑是格式问题。\n\n结论：还在早期测试，Chrome 商店在审核，可以先从 GitHub 装。作者说它替代不了爬虫、数据分析工具和有经验的顾问，是用来减少页面级排查时来回切工具的麻烦。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fchrisgreenseo.substack.com%2Fp%2Fintroducing-nano-seo-my-ai-assisted%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-09-28%26utm_medium%3Demail\" title=\"https%3A%2F%2Fchrisgreenseo.substack.com%2Fp%2Fintroducing-n...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 14,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-09-30T00:08:41.848+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Introducing Nan...",
+    "topic_id": "14425452481158212",
+    "type": "talk"
+  }
+}

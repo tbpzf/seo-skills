@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+    "content": "Google Explains The \"Couldn't Fetch\" Sitemap Errors\n\nGoogle 的 Martin Splitt 和 John Mueller 聊了一个常见困惑：sitemap 明明格式正确、能公开访问、也在 robots.txt 里写了，Search Console 却还是报 \"couldn't fetch\"。Mueller 的回答是：很多时候这不是技术问题，而是 Google 没空抓，或者觉得你的站不值得多抓。\n\n要点：\n1. Splitt 承认这种情况很常见：sitemap XML 校验通过、公开可访问、robots.txt 已链接，GSC 仍会显示 couldn't fetch。\n2. 原因一是 hostload：Google 能分给这个站的抓取量已经被别的页面占满了，\"didn't have time to actually fetch it\"，也会显示成 couldn't fetch。\n3. 原因二是 crawl demand：Mueller 说抓取需求 \"very often based on the perceived quality of a website\"，Google 觉得站整体质量一般，就不花时间抓 sitemap。\n4. 原因三：Google 可能就是不需要这份 sitemap，等站的质量明显提升后才会去用。文章作者另外提醒，深夜大量爬虫同时请求可能让服务器报 500，可以在 GSC 和服务器日志里确认。\n\n结论：sitemap 报 couldn't fetch 时，先确认 XML 和服务器没问题；如果都没问题，更该检查的是网站整体质量，而不是反复重新提交 sitemap。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.searchenginejournal.com%2Fgoogle-explains-couldnt-fetch-sitemap-errors%2F592040%2F\" title=\"Google%20Explains%20The%20%22Couldn%27t%20Fetch%22%20Sitemap%20Error...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 8,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-14T04:06:36.358+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Explains...",
+    "topic_id": "55521555845581214",
+    "type": "talk"
+  }
+}

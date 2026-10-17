@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Finding High-Value Converting Queries That Mainstream Tools Miss\n\nDejan 讲怎么找那些关键词工具里显示\"0 搜索量\"、但真能带来客户的 query。这类词不光有转化，竞品看第三方工具估算你的流量时也看不出来。\n\n要点：\n1. 作者案例（作者自述）：一篇论文的标题在关键词工具里查不到任何量，但 GSC 里这个词 6 月一波就有 1,020 次曝光、37 次点击，平均排名 4.3，点击率 3.6%，还出现在 AI Overviews 和聊天回答里。而且这只是其中一个写法，把各种长短变体加起来流量更大。\n2. 真人原话从哪来：站内搜索日志、客服和聊天机器人记录；客户询价单里\"问题 + 限定条件\"的说法（比如\"furnace shuts off after five minutes\"，而不是笼统的\"furnace repair\"），再和 CRM 里成交的单子对上；销售电话录音和表单；Reddit、Telegram 群、YouTube 评论区。\n3. 其他找法：自己扮演买家走一遍流程、打电话问供应商新手该问什么；从下单那一步倒推用户旅程；Google Ads 跑广泛匹配并配大量否定词，捞出工具里没记录但会转化的词。\n4. 用 embedding 批量生成的候选词只是概率上的猜测，还得证明真人确实这么搜。\n5. 作者建议的五步流程：收集原始 query → 用 LLM 分出商业意图 / 解决问题意图 → 把相近长尾合并成一个标准话题 → 建话题、用户问题、自家产品之间的关系图 → 按这张图写内容、做内链。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fdejan.ai%2Fblog%2Fstealthy-queries%2F%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-13%26utm_medium%3Demail\" title=\"Finding%20High-Value%20Converting%20Queries%20That%20Mainstr...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 10,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-15T04:10:17.059+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Finding High-Va...",
+    "topic_id": "45548552545184858",
+    "type": "talk"
+  }
+}

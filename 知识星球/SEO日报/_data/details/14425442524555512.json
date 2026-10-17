@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "Re-imagining AI Visibility KPIs in a Query Fan Out world\n\nSeer Interactive 的 Wil Reynolds 讨论 AI 搜索时代该看什么 KPI。核心观点：在 AI 答案里“出现”不等于“被推荐”，而且 AI 拆出来的子查询（query fan-out）经常直接点名它已经信任的网站和行业人物，所以长期该追的是“有没有被这些可信来源提到”。\n\n要点：\n1. “出现但被反推荐”：作者举例，ChatGPT 的回答里出现了 Airbnb 和 VRBO，但它建议用户“去这两家之外找找”。只统计“品牌有没有出现”，会给人一种虚假的成功感。\n2. AI 拆子查询时会直接点名：比如“Top GEO news august 2026”被改写成“site:searchegineland.com GEO news august 2026”，“GEO visibility research”被改写成“Lily Ray GEO research B2B”。再比如 Banana Republic 在 Google 搜“ethical jeans”能进前 10，但作者说查了上千次，AI 答案里从没出现过它——ChatGPT 在搜索之前心里就已经有一份品牌名单。\n3. 作者提出的 KPI（文中说 4 个，实际列了 5 个）：① 你的内容里有多少比例是靠“人转给人”带来流量的（用 GA4 按 URL 拆算法流量和人推荐流量）；② 可信行业媒体对你的提及 / 带来的流量趋势；③ 行业影响者有没有提到你；④ 把老板最关心的 10 个 prompt 每月各跑 10–30 次，看出现比例，用来判断方向对不对，不当最终 KPI 上报；⑤ 新产品和“你被大家认知的主题”之间的距离，用来解释“刚上的产品为什么 AI 还不提”。\n4. 作者反对的做法：看到 LinkedIn 被 AI 引用多，就用 AI 批量写低质量 LinkedIn 文章——这种打地鼠式的玩法撑不了长期可见性。\n\n结论：可见性要配上可信度才有商业价值；长期功夫在于让 AI 已经信任的媒体和人提到你。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.seerinteractive.com%2Finsights%2Fai-visibility-kpis\" title=\"https%3A%2F%2Fwww.seerinteractive.com%2Finsights%2Fai-visibi...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 13,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T16:41:11.918+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Re-imagining AI...",
+    "topic_id": "14425442524555512",
+    "type": "talk"
+  }
+}

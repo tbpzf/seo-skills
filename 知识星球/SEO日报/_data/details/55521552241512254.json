@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "Google Search Central Live Deep Dive, Barcelona - Day 1 Recap | We Are ROAST\n\nROAST 的 John Campbell 记录了 Google 巴塞罗那三天活动的第一天,主题是抓取。核心意思:不管是传统搜索还是 AI 搜索,能被正常抓取都是地基。\n\n要点:\n1. Gary Illyes 公布的 AI Mode 数据:查询量自上线以来每季度翻倍;平均长度约是传统搜索的 3 倍;每 6 次里有 1 次用语音或图片;美国的追问每月平均增长超过 40%。\n2. Google 搜索、AI Overviews、AI Mode 用的是同一个爬虫 Googlebot,Gemini 用的是另一个。Google 的说法是\"good SEO is good GEO\"。\n3. 抓取预算分两半。抓取速度上限由 Google 所有爬虫共用(搜索、广告、购物、图片吃同一份额度),连接时间、首字节时间变长,或者出现 429 / 5xx,Google 就会放慢。抓取需求看网站质量、URL 更新频率和受欢迎程度;Google 不知道某个 URL 质量如何时,会参考它所在目录的整体情况,再往上一层。\n4. 越来越常见的问题:DNS 和 CDN 出错,比如 CDN 拦截机器人时把 Googlebot 也拦了;验证码页面返回 200,Google 看到的是一个\"正常\"但没内容的页面,被当成软 404。另外,页面从别的域名加载的文件,要看那个域名自己的 robots.txt。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fweareroast.com%2Fnews%2Fgoogle-search-central-live-deep-dive-barcelona-day-1-recap%2F\" title=\"Google%20Search%20Central%20Live%20Deep%20Dive%2C%20Barcelona%20-%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 10,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T00:23:59.141+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Search C...",
+    "topic_id": "55521552241512254",
+    "type": "talk"
+  }
+}

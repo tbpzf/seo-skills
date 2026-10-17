@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "<e type=\"web\" href=\"https%3A%2F%2Fsubstack.com%2F%40charliehills%2Fnote%2Fc-219980326%3Fr%3D29asy1%26utm_source%3Dnotes-share-action%26utm_medium%3Dweb\" title=\"https%3A%2F%2Fsubstack.com%2F%40charliehills%2Fnote%2Fc-21998032...\" />\n<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 31,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-19T08:15:25.528+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "1522841442111222",
+        "large": {
+          "height": 1447,
+          "url": "https://images.zsxq.com/FgAGRmI0MWhUm2MEChsd_yw0S4tK?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:gJhFWDPfi0cBCrz7zUawPkTikx4=",
+          "width": 800
+        },
+        "original": {
+          "height": 1485,
+          "size": 311650,
+          "url": "https://images.zsxq.com/FgAGRmI0MWhUm2MEChsd_yw0S4tK?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:J-SG5DkdxSoplNeg_l0ILF6TlQA=",
+          "width": 821
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 1357,
+          "url": "https://images.zsxq.com/FgAGRmI0MWhUm2MEChsd_yw0S4tK?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:vNonuJnD05wIGrwWTDvGNh9_Eo4=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "https://substac...",
+    "topic_id": "14588142848858512",
+    "type": "talk"
+  }
+}

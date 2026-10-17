@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" />",
+    "content": "Google Search On PDFs - Deep Dive Podcast\n\nGoogle 的 Martin Splitt 和 John Mueller 在 Search Off the Record 播客里专门聊了一期 PDF：Google 怎么处理 PDF、能不能排名、有哪些坑。这篇是 Search Engine Roundtable 的 Barry Schwartz 听了两遍之后整理的要点。\n\n要点：\n1. PDF 是二进制文件，Google 在索引时会先把它转成 HTML，之后就用和普通网页同一套系统去收录和排名。PDF 也能出现在 AI Overviews 里，也能被 AI 用来训练和 grounding。\n2. PDF 里的文字链接会保留并正常抓取；但 PDF 里嵌的图片没有独立 URL，一般进不了 Google 图片搜索。PDF 的抓取上限比 HTML 大，播客里没给具体数字（SER 旧报道标题写的是 PDF 64MB、其他文件类型 2MB）。\n3. Google 把 PDF 当成相对静态的文件，重抓频率比 HTML 低得多。PDF 更新了想尽快被收录，就换一个新 URL 或文件名发布，别直接覆盖原文件。CMS 自动给网页生成\"打印版\" PDF 的，会和网页抢排名，而且 PDF 版本常常是过期的。\n4. 常见坑：扫描件或整页是图片的 PDF，没有 OCR 搜索引擎读不到字（可以选中文字复制粘贴到编辑器里自测）；设了密码 Google 就读不了；手机上要整份下载完才能看，放大也不会重新排版。同一份 PDF 放在多个网站上很难做 canonical，可以用 HTTP header 里的 rel=canonical、填好 PDF 的 metadata、在文档页首放回到自己网站的链接。\n\n结论：默认用 HTML，只有需要固定打印格式、可下载的表格或纸质文档时才用 PDF；llms.txt 这种给机器读的文件千万别存成 PDF。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.seroundtable.com%2Fgoogle-search-on-pdfs-42291.html\" title=\"Google%20Search%20On%20PDFs%20-%20Deep%20Dive%20Podcast\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 6,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-16T04:09:32.029+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Search O...",
+    "topic_id": "45548552154222858",
+    "type": "talk"
+  }
+}

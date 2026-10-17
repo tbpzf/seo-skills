@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+    "content": "2021-2025 年谷歌核心更新图表\n\n• 核心更新平均需要约 17 天才能推出\n• 2025 年新增更新次数最少 (4)\n• 通常每年收到 2 次spam更新",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 25,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-28T14:10:42.016+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "8855411214554482",
+        "large": {
+          "height": 520,
+          "url": "https://images.zsxq.com/Fi9rfWU2nIrHOrv792r8Ou5RKHhX?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:v5D2GFXxqdwr_UpJpMHBQQW8R_M=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 488,
+          "url": "https://images.zsxq.com/Fi9rfWU2nIrHOrv792r8Ou5RKHhX?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:4CuztkM13GmczT6IbAtc0oGsKo4=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "2021-2025 年谷歌核心...",
+    "topic_id": "82811228415844142",
+    "type": "talk"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "Googlebot只会获取初始html（或其他资源如CSS、JavaScript）的前2MB\n你可以通过打开开发工具>网络面板，按文档筛选并硬重载页面来快速检查，关键是尺寸栏里的尺寸较大，也就是未压缩的大小。\n\n注意，这是按资源计算的，所以你可以有一个1MB的HTML文档、一个1MB的CSS文件和1MB的JavaScript文件，这样也没问题 <e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" /> \n\n小工具测试网页页面大小\n<e type=\"web\" href=\"https%3A%2F%2Fwillitcrawl.com%2F\" title=\"2MB%20Page%20Crawl%20Analyzer\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 30,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-05T15:32:58.775+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "2855155151544121",
+        "large": {
+          "height": 311,
+          "url": "https://images.zsxq.com/FkRW8CZFdLGQIM1IEt41Dp70zZJ5?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:dUZ40qlcGNHW_KAjMDJC3-KuxkY=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 292,
+          "url": "https://images.zsxq.com/FkRW8CZFdLGQIM1IEt41Dp70zZJ5?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:mWgLNlLVBdfUEcytjZepoUirMV0=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "2026-02-07T14:20:06.912+0800",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Googlebot只会获取初始...",
+    "topic_id": "14588448414515452",
+    "type": "talk"
+  }
+}

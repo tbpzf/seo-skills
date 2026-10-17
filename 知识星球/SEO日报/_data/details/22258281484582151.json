@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "The 190-Day Indexing Rule [Study]\n\nIndexing Insight 用自家工具的数据做了个研究：一个页面如果超过 190 天没被 Google 抓过，大概率会被 Google “遗忘”，在 GSC 里的状态变成 URL is unknown to Google，就算以前收录过也一样。\n\n要点：\n1. 数据来源：18 个网站、140 万个页面，都是站长通过 XML sitemap 提交的重要页面（带流量、带收入的那种）。只看了“已提交已收录”“已抓取未收录”“已发现未收录”“URL is unknown to Google”这 4 种状态，技术错误和重复内容类的都排除了。\n2. 方法：用 URL Inspection API 拉每个页面的 Last Crawl Time，算出“距上次抓取多少天”，再和收录状态对着看。\n3. 结论：超过 190 天没被抓取的页面，有 90% 的概率开始被遗忘或者已经被遗忘。\n4. Google 的 Gary Illyes 在 LinkedIn 上说过，URL 会随着 Google 收集到的信号在不同状态之间移动，信号可以让系统“忘掉”这个 URL 存在。作者据此认为 GSC 里的收录状态能反映抓取优先级（这是作者自己的推论）。\n\n怎么用：用 URL Inspection API 批量拉 Last Crawl Time，和收录状态放一起看，按“距上次抓取天数”排序，就能找出快被遗忘或已经被遗忘的页面。注意这是工具厂商自己的研究，样本只有 18 个站。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Findexinginsight.com%2Fblog%2F190-day-indexing-rule\" title=\"The%20190-Day%20Indexing%20Rule%20%7C%20Indexing%20Insight\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 8,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-03T00:14:13.761+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "The 190-Day Ind...",
+    "topic_id": "22258281484582151",
+    "type": "talk"
+  }
+}

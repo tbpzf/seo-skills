@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "Google Search Central Live Deep Dive, Barcelona - Day 2 Recap | We Are ROAST\n\nGoogle 巴塞罗那活动第二天,主题是索引:页面被抓到之后,Google 怎么判断页面上有什么、要不要收进索引。\n\n要点:\n1. Googlebot 渲染页面时用的视口大约 10,000 像素高,而且不滚动、不点击。要等用户滚动或点击才加载的内容,Google 看不到。\n2. Google 工程师 Ryan Levering 说,结构化数据(schema)经过清洗过滤后,要么用在普通搜索结果里,要么作为 AI Overviews 和 AI Mode 的参考上下文——不是当代码用,而是把文字加进上下文。加 schema 从来不会有坏处,问题只是值不值得花这个工夫。\n3. Google 更看重页面主体内容,导航、页脚、侧边栏不算重要内容。John Mueller 建议想在 Google 里获得最大展示的站点用 max-image-preview:large 和 max-snippet:-1 这两个 robots 指令。\n4. 两个社区案例:有人用 AI 批量生成图片 alt 文本,上线后表现下降;另一个案例把两个品牌站合并成一个,页面从 2,000 减到 100,流量没掉,收入上升(演讲者自述)。\n\n原文:<e type=\"web\" href=\"https%3A%2F%2Fweareroast.com%2Fnews%2Fgoogle-search-central-live-deep-dive-barcelona-day-2-recap%2F\" title=\"Google%20Search%20Central%20Live%20Deep%20Dive%2C%20Barcelona%20-%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 10,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-06T00:24:06.528+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Google Search C...",
+    "topic_id": "55521552241512244",
+    "type": "talk"
+  }
+}

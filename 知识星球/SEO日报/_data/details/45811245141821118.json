@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "如今，人们对内容创作几乎达成共识。每个人都能围绕特定关键词创作内容。\n但谁有能力汇总关于某个关键词的专有、独特且个性化的数据呢？\n几乎没有人。\n为此，我已经说过，而且我会再说一遍：NotebookLM、Gemini、Claude，连接到 API，特别是 Google 的 API 等等。\n而且效果非常好。\n如今，关键不在于是否懂得如何撰写内容。\n关键在于懂得如何提供别人没有的、别人还没有掌握的，或者别人不敢透露的信息。<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 22,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-04T20:53:20.468+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "如今，人们对内容创作几乎达成共...",
+    "topic_id": "45811245141821118",
+    "type": "talk"
+  }
+}

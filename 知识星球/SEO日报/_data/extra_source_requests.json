@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://canniwizard.com",
+    "topic_ids": [
+      "45811588811421148"
+    ],
+    "reason": "帖子中提供的裸域名，按 HTTPS 访问",
+    "key": "a63276ce63d772168e117b89266a64b8bb0f925754424c56da2584fc4eb59b68"
+  },
+  {
+    "url": "https://fuckseo.io",
+    "topic_ids": [
+      "14588482842128842"
+    ],
+    "reason": "帖子中提供的裸域名，按 HTTPS 访问",
+    "key": "fe74c1930e2ac8a7a9e3cc0a77580e0320ae725f15d8e3e9ed2065e13a37e9b6"
+  }
+]

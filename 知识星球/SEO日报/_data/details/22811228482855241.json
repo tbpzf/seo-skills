@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "content": "众所周知，LLMs无法读取JavaScript.\n\n那么你知道你的网站是否依赖于大量的JavaScript,而导致内容无法被AI读取嘛?\n这也就意味着你的网站内容永远不会上GEO和AIO.\n\n你可以在浏览器上下载这个插件'JavaScript 禁用 Chrome'来测试一下. 当你把网站上的JavaScript 全部关闭后，你看一下你的网站内容呈现是怎么样的。\n<e type=\"web\" href=\"https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fjavascript-disable-chrome%2Fjbjdopljoflabmgndibnfmnmojbafaog%3Fhl%3Dzh-CN\" title=\"https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2Fjavascrip...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 25,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-28T08:27:42.229+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "众所周知，LLMs无法读取Ja...",
+    "topic_id": "22811228482855241",
+    "type": "talk"
+  }
+}

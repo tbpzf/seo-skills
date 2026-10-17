@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "一个巧妙的 SEO 技巧是更新你的对比页面，在标题标签中包含“替代”一词。\n\n理想情况下，你应该还有其他博客内容，但如果没有，有时也可以通过优化比较页面，使其在其他关键词的搜索结果中排名靠前。 \n\n虽然并非每次都有效，但如果你还没有相关内容，这不失为一个不错的补充策略。\n\n我通常会这样做：[你的公司] vs [你的竞争对手]",
+    "counts": {
+      "comments": 0,
+      "likes": 1,
+      "readers": 24,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-22T15:38:28.781+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "5122484544122814",
+        "large": {
+          "height": 800,
+          "url": "https://images.zsxq.com/FqPNt-p30iQ0zmqcraX3QxnG-EPV?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:UGQm8viwatXLycSc4BtjShGuhw4=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 750,
+          "url": "https://images.zsxq.com/FqPNt-p30iQ0zmqcraX3QxnG-EPV?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:msMboGN4WJ1klqC_Tn3ifFP4GyY=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "一个巧妙的 SEO 技巧是更新...",
+    "topic_id": "14588455424221112",
+    "type": "talk"
+  }
+}

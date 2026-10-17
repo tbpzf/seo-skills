@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "「图片」",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 22,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-08-19T09:33:40.825+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "5121428122421524",
+        "large": {
+          "height": 1042,
+          "url": "https://images.zsxq.com/FkohMqy9Auv1pmtXH55hJFiANt2N?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:m4_WzVn30tx3Or6r_qG0UwgaeE4=",
+          "width": 800
+        },
+        "original": {
+          "height": 1149,
+          "size": 152377,
+          "url": "https://images.zsxq.com/FkohMqy9Auv1pmtXH55hJFiANt2N?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:9NdFDMuKfnxwXn-SRqdoPPavgXg=",
+          "width": 882
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 977,
+          "url": "https://images.zsxq.com/FkohMqy9Auv1pmtXH55hJFiANt2N?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:AROIsKLY1IdC1hLnUZCH_8CPuSA=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "「图片」",
+    "topic_id": "14422821212855442",
+    "type": "talk"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Regular Expressions (RegEx) in Google Search Console - UPDATED 2024\n\nJean-Christophe Chouinard 整理的 GSC 正则速查。GSC 效果报告里按 Query 和 Page 过滤都能用正则，这篇把常用写法和坑一次列全，最新加了一条用来捞 AI Mode 对话式 query 的正则。\n\n要点：\n1. GSC 用的是 RE2 语法，不支持 lookahead 这类写法；一条正则最多 4096 个字符；想排除某类词，用过滤里的 \"Doesn't match regex\"。开头加 (?i) 就不区分大小写。\n2. 找长尾：^[\\w\\W\\s\\S]{70,}$ 筛出 70 个字符以上的 query，(\\w+\\s){7,}\\w+ 按词数筛；按意图分组：信息型 who|what|how，商业型 best|top|vs|review，交易型 buy|price|order。\n3. 排查问题页：URL 里有特殊字符用 [^\\/\\.\\-:0-9A-Za-z_]；查被注入的垃圾页用 viagra|cialis 这类词；查被收录的 WordPress 后台页用 wp-。\n4. 作者实测：\\p{Han}、\\p{Cyrillic} 这类按文字类型匹配的写法，在 Query 过滤里能用，在 URL 过滤里不生效。\n5. AI Mode 段：作者自己的实验里 AI Mode 的 query 在 GSC 全被匿名化了，但他根据大型 LLM 的真实 prompt（已去掉个人信息）总结了一条正则，专门匹配 please / write / summarize / act as、thanks、yes go on、show me more 这类聊天式句子，可以直接贴进 GSC 的 Query 过滤里用。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.jcchouinard.com%2Fregex-in-google-search-console%2F%23Chat_Like_Queries_That_may_come_from_AI_Mode\" title=\"Regular%20Expressions%20%28RegEx%29%20in%20Google%20Search%20Conso...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 7,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-15T04:10:02.417+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Regular Express...",
+    "topic_id": "22258224252185881",
+    "type": "talk"
+  }
+}

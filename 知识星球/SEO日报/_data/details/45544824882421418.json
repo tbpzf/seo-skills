@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "「文件」",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 41,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-05-09T18:04:18.989+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [
+      {
+        "create_time": "2026-05-09T07:53:27.884+0800",
+        "download_count": 25,
+        "duration": 0,
+        "file_id": "415248214455858",
+        "hash": "63ed0158b20bcda0e2e94e4d62fc1c24f737d603c56365da8d51b5121ef81570",
+        "name": "SEO_2.0_-How_Content-Marketing-Drives-Visibility-in-AI-Search.pdf",
+        "size": 9812246,
+        "source": "talk"
+      }
+    ],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "「文件」",
+    "topic_id": "45544824882421418",
+    "type": "talk"
+  }
+}

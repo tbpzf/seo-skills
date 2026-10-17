@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "claude code写作模板. 自用请勿分享\n仅适用于claude code + claude opus,也可以在vscode中直接使用. \n其他cli以及模型理论上可用,也许你需要调整一下文件内容格式,然后确保模型能力足够<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 4,
+      "readers": 42,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-10T13:23:52.039+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [
+      {
+        "create_time": "2026-04-10T13:22:05.641+0800",
+        "download_count": 35,
+        "duration": 0,
+        "file_id": "212241512548281",
+        "hash": "525c026b9f73c5156b8a6cad40c28e3b6286554fff9ef07f80e27a4ba037dc75",
+        "name": "写作-知识星球.zip",
+        "size": 2011712,
+        "source": "talk"
+      }
+    ],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "2026-04-10T13:25:28.562+0800",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "claude code写作模板...",
+    "topic_id": "45544412885541848",
+    "type": "talk"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "传统的 SEO 内容写作理念是涵盖更多子主题、增加更多版块、提高内容密度。但数据显示，传统方法会产生“良莠不齐”的页面，其中 17%的页面处于中间状态，有时被引用，有时却无人问津。\n混合型页面在数据集中拥有最高的字数、最多的标题和最高的域名权重，堪称“终极指南”。 但它们在 ChatGPT 测试中的表现却最不可靠。\n那些持续获得成功的页面都具有很强的针对性。它们：\n标题中直接匹配查询内容，\n往往篇幅较短（引用的最佳字数范围是500-2000字），而且\n结构足够清晰（7-20 个小标题），能够组织内容而不稀释其含义。\n打造一个能够完美解答某个问题的页面，而不是一个能够勉强解答二十个问题的页面。",
+    "counts": {
+      "comments": 0,
+      "likes": 2,
+      "readers": 28,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-15T19:19:46.975+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "传统的 SEO 内容写作理念是...",
+    "topic_id": "82255855855118482",
+    "type": "talk"
+  }
+}

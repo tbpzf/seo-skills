@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "If I did SEO for the UK's fastest growing business, this is what I would do\n\nFreddie Chatt 拿 Ahrefs 数据给英国增长最快的健康电商 Healf 做了一次外部 SEO 诊断:站的权重(DR 66)其实够,但几乎不排类目词,缺的是能排名的页面,不是外链。文中流量数字都是 Ahrefs 的第三方估算,作者自己也说 Healf 的 Search Console 会更准。\n\n要点：\n1. Healf 在英国每月约 51,000 自然访问,其中 58% 来自搜 Healf 品牌名,39% 来自搜它代理的品牌(如 Thorne、LMNT),只有 3% 来自 \"magnesium supplement\" 这类通用词。作者查了 72 个它卖的类目词,合计每月 185 万次搜索,Healf 只有 5 个进了前 100。\n2. 对手权重比它低反而排得上:\"magnesium glycinate\"(每月 161,000 次搜索)上 DR 53 和 DR 56 的站排第 5、第 6;\"hydroxyapatite toothpaste\" 上 DR 21 的站用一个 collection 页排第 2。而 Healf 的镁类目页导语只有 12 个词。\n3. 作者的做法:类目页做成\"帮人选产品\"的页(title 和 H1 对上搜索词、写清哪种形态适合谁、按形态和用途筛选、加 FAQ);有搜索量的产品类型单独做可索引页,不能只靠筛选项;按形态、饮食、人生阶段、设备去扩新类目,但只在有真实搜索需求、且至少约 6 个产品时才建,避免薄页。\n4. 已经排在第 4-20 位的有 83 个词,最快的办法是从流量稳定的品牌页加内链过去,再刷新文案;另外 \"healf discount code\" 每月 8,600 次搜索,大部分点击被优惠码网站拿走,自建一个优惠页就能抢回来。AI 搜索里,ChatGPT 引用 Healf 69 次,Holland & Barrett 是 1,276 次。\n\n结论：作者按 72 个类目词粗算,在容易的词上拿到约 10% 点击,每月可多约 108,000 次访问,按 2% 转化和 60-75 英镑客单(作者假设),首单每年约 150-190 万英镑,而且这还没算长尾、新类目和复购。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.inoreader.com%2Farticle%2F3a9c6e76696c480e-if-i-did-seo-for-the-uks-fastest-growing-business-this-is-what-i-would-do\" title=\"https%3A%2F%2Fwww.inoreader.com%2Farticle%2F3a9c6e76696c480e...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 15,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-09T00:13:52.995+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "If I did SEO fo...",
+    "topic_id": "55521552848515154",
+    "type": "talk"
+  }
+}

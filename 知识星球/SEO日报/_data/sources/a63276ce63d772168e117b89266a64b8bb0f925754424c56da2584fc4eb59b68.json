@@ -1,0 +1,23 @@
+{
+  "url": "https://canniwizard.com",
+  "key": "a63276ce63d772168e117b89266a64b8bb0f925754424c56da2584fc4eb59b68",
+  "status": "captured",
+  "reason": null,
+  "content_markdown": "URL: https://canniwizard.com/\nContent-Type: text/html\nMethod: native\n\n---\n\n---\nmeta-description: Identify and resolve SEO cannibalization issues with Enterprise SEO insights from Jan-Willem Bobbink\nmeta-og:description: Identify and resolve SEO cannibalization issues with Enterprise SEO insights from Jan-Willem Bobbink\nmeta-og:image: https://canniwizard.com/screenshot.png\nmeta-og:title: CanniWizard - Keyword Cannibalization Analyzer\nmeta-og:type: website\nmeta-og:url: https://canniwizard.com\nmeta-twitter:card: summary_large_image\nmeta-twitter:description: Identify and resolve SEO cannibalization issues with Enterprise SEO insights from Jan-Willem Bobbink\nmeta-twitter:image: https://canniwizard.com/screenshot.png\nmeta-twitter:title: CanniWizard - Keyword Cannibalization Analyzer\nmeta-viewport: width=device-width, initial-scale=1.0\ntitle: CanniWizard - Keyword Cannibalization Analyzer\n---",
+  "fetched_at": "2026-10-17T10:36:34.565078+08:00",
+  "details": {
+    "kind": "url",
+    "url": "https://canniwizard.com",
+    "finalUrl": "https://canniwizard.com/",
+    "contentType": "text/html",
+    "method": "native",
+    "truncated": false,
+    "notes": [],
+    "meta": {
+      "source": {
+        "type": "url",
+        "value": "https://canniwizard.com/"
+      }
+    }
+  }
+}

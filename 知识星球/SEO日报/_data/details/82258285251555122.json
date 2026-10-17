@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" /><e type=\"hashtag\" hid=\"15458188445852\" title=\"%23Claude%23\" /><e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+    "content": "How to Automate B2B Content Briefs Using Claude & MCP | Sitebulb\n\n现成的 AI 写 brief 工具用的是一套通用规则，放到细分 B2B 行业、长尾词上，写出来的 brief 太泛。作者的办法是把 SE Ranking 的数据通过 MCP 接进 Claude，自己搭一个只服务自己项目的 brief skill。\n\n要点：\n1. 先把 brief 拆成两块：固定不变的部分（语气、格式、meta 模板、关键词怎么放）写一次就行；每篇都不一样的部分（主题、关键词、目标客户、痛点、搜索意图）让 AI 每次去研究。商业页和博客文章分开做两个 skill。\n2. 研究流程：看美国 Google 前 10 名，把论坛、B2C、聚合站都筛掉，只留直接的 B2B 同行 → 算平均字数 → 用 MCP 扩关键词，每个词人工核一遍 → 找同行没写到的空档和切入点 → 写目标客户画像 → 排页面结构。\n3. 给 Claude 立规矩：不许自己编关键词和搜索量，不许凭空下判断，资料没给齐就不开工。\n4. 效果（作者自述）：一份 brief 以前要 3–4 小时，现在 15 分钟生成，再加 10 分钟人工检查。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fsitebulb.com%2Fresources%2Fguides%2Fhow-to-automate-content-brief-creation-for-b2b-with-claude%2F\" title=\"How%20to%20Automate%20B2B%20Content%20Briefs%20Using%20Claude%20%26%20...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 15,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-09-29T12:17:28.498+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "How to Automate...",
+    "topic_id": "82258285251555122",
+    "type": "talk"
+  }
+}

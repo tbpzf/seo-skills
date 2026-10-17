@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "内容更新还是内容重写：如何选择？ \n \n大多数团队的回应是把所有内容从头开始重写，或者更糟糕的是，更改日期并称之为“更新”。\n\n这招已经不管用了。（而且谷歌很擅长识别虚假更新。）\n\n你究竟如何做出决定？\n\n我采用的规则是这样的：\n\n刷新条件：\n • 核心意图仍然匹配\n • 该页面已获得提及或信任\n • 结构稳固但已过时\n • 你可以添加新的见解，而不仅仅是新的词汇。\n\n重写时间：\n 搜索意图已发生转变。\n 该页面是为了提升排名而构建的，而不是为了提取数据。\n • 内容缺乏明确的观点。\n\n新鲜度指的是你的内容是否仍然值得再次使用。\n\n以下是如何调整刷新策略的方法：\n- 高影响力/高意向页面（产品页面、关键决策内容）：大约每 30 天更新一次\n\n- “常青”内容（AEO 中心、核心指南、基石文章）：大约每 45-60 天更新一次\n\n- 研究/原始数据资产：大约每 90 天更新一次\n\n- 低优先级或历史旧帖：大约每 6 个月重新审阅一次",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 23,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-24T17:15:57.345+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "内容更新还是内容重写：如何选择...",
+    "topic_id": "45811554888184148",
+    "type": "talk"
+  }
+}

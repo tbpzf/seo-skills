@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "1\\. 找到你的主要关键词（例如，“汽车保险”）  \n2\\. 取第一个位置的定义域  \n3\\. 现在在谷歌上搜索：site: domain.com汽车保险  \n  \n您在这里看到的是该域名为了在该主题上占据主导地位而构建的内容地图。出现的每个 URL 都代表着该主题权威性的一部分。  \n  \n对前 3-4 位竞争对手重复此过程，您就会开始发现规律：  \n  \n他们涵盖的你没涉及的子主题  \n\\- 他们如何构建内容集群  \n您可以针对的主题空白进行研究  \n  \n如果想更进一步，可以提取这些 URL 并使用 Ahrefs 的批量分析功能进行分析。这样就能将真正带来流量的页面与填充页面区分开来。<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 33,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-26T20:47:18.664+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "4844151228811448",
+        "large": {
+          "height": 800,
+          "url": "https://images.zsxq.com/Fr_VXjXWczEmOXM3qqda00gUSpol?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:cq0kIfa0ZxnCBGF9Dk0vgbmsqzY=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 750,
+          "url": "https://images.zsxq.com/Fr_VXjXWczEmOXM3qqda00gUSpol?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:ObRd-GsxtwhsqRNxFVuz7H0JaUc=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "1\\. 找到你的主要关键词（例...",
+    "topic_id": "55188454581815154",
+    "type": "talk"
+  }
+}

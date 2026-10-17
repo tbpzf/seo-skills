@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "写作思维导图",
+    "counts": {
+      "comments": 0,
+      "likes": 3,
+      "readers": 39,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-10T13:49:53.660+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [
+      {
+        "create_time": "2026-04-10T13:49:45.253+0800",
+        "download_count": 38,
+        "duration": 0,
+        "file_id": "585548285155144",
+        "hash": "3e2a3f78762f37a8ab53185f0e97406282609872eac10aa0236bd9188bfef4ee",
+        "name": "高质量文章撰写步骤.pdf",
+        "size": 77347,
+        "source": "talk"
+      }
+    ],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "写作思维导图",
+    "topic_id": "82255514882111142",
+    "type": "talk"
+  }
+}

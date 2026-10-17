@@ -1,0 +1,23 @@
+{
+  "url": "https://claude.ai/install.ps1",
+  "key": "51dd1df2955550c974622bb3c6424cc4dea72773fd3616c735d9ea116fd2a05f",
+  "status": "unavailable",
+  "reason": "原始资源重定向到 Claude 地区不可用页面，未获取安装脚本。",
+  "content_markdown": "",
+  "fetched_at": "2026-10-17T10:40:38.678223+08:00",
+  "details": {
+    "kind": "url",
+    "url": "https://claude.ai/install.ps1",
+    "finalUrl": "https://claude.com/app-unavailable-in-region",
+    "contentType": "text/html",
+    "method": "native",
+    "truncated": false,
+    "notes": [],
+    "meta": {
+      "source": {
+        "type": "url",
+        "value": "https://claude.com/app-unavailable-in-region"
+      }
+    }
+  }
+}

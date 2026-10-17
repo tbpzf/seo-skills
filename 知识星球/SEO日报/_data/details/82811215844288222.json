@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "Bing Webmaster推出AI报告\n\n在控制面板中，您将能够看到： \n\n1. 平均被引用页数：网站在人工智能摘要中的页面总数。 \n\n2. 基础查询：实际显示人工智能生成答案时使用的关键短语。这类似于扇出查询。 \n\n3. 可见性趋势：您将能够看到您的引用活动随时间变化的实际时间线。 \n\n4. 页面级引用：您可以在控制台中查看各个页面的引用次数。<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" /> <e type=\"hashtag\" hid=\"51515451284454\" title=\"%23%E5%B7%A5%E5%85%B7%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 33,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-14T09:25:09.719+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "8855185254151852",
+        "large": {
+          "height": 572,
+          "url": "https://images.zsxq.com/Fo9HvzsvQatEAxTh27IonZZJmjFO?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:HluEfuBdvNNKn58OthND-q1wiuY=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 536,
+          "url": "https://images.zsxq.com/Fo9HvzsvQatEAxTh27IonZZJmjFO?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:QdpFXAWN3agjdVKfr0T6y45skWc=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "2026-02-14T09:26:52.780+0800",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Bing Webmaster推...",
+    "topic_id": "82811215844288222",
+    "type": "talk"
+  }
+}

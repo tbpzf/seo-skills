@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "使用 claude创建可互动图表\n\n适用于网站的内容/工具页<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" /> \n<e type=\"web\" href=\"https%3A%2F%2Fruben.substack.com%2Fp%2Fclaude-charts%3Futm_source%3Dpost-email-title%26publication_id%3D4937949%26post_id%3D190812144%26utm_campaign%3Demail-post-title%26isFreemail%3Dtrue%26r%3D29asy1%26triedRedirect%3Dtrue%26utm_medium%3Demail\" title=\"https%3A%2F%2Fruben.substack.com%2Fp%2Fclaude-charts%3Futm_sou...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 31,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-16T08:14:28.195+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "使用 claude创建可互动图...",
+    "topic_id": "14588155415252552",
+    "type": "talk"
+  }
+}

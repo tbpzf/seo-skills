@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "页面上显示两个日期让我们的点击率下降了20%，因为谷歌在搜索结果页中显示了多年的发布日期。HubSpot找到了一种方法，既能同时显示两个日期，又不影响性能👇\n\nHubSpot仅包含标准格式的“日期更新”（例如2026年3月23日），并附注：“本文最初发布于2020年8月。”\n\n因为原始日期不是标准格式，谷歌忽略它，而是在搜索结果页✅中显示较新的日期\n\n📌 动作场面：\n\n1️^ 仅以标准日期格式显示“日期更新”。\n\n2️# 添加原始发布月份+年份作为文本（非标准日期格式）<e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 33,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-03-27T14:14:34.645+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "2855145552221151",
+        "large": {
+          "height": 533,
+          "url": "https://images.zsxq.com/Fsz62aPoCUt09Q_HhZOQhKeZaYIA?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:kohGTudVwZXovHhbuq_WKFmSTDI=",
+          "width": 800
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 500,
+          "url": "https://images.zsxq.com/Fsz62aPoCUt09Q_HhZOQhKeZaYIA?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:Uy3QsbNuphahT0YlA1FhL5UM0oA=",
+          "width": 750
+        },
+        "type": "jpg"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "页面上显示两个日期让我们的点击...",
+    "topic_id": "22811424115185251",
+    "type": "talk"
+  }
+}

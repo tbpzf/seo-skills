@@ -1,0 +1,24 @@
+{
+  "url": "https://git-scm.com/",
+  "key": "94c5655da22a143da4d63cdd36b6efe1189c63708219dcce16b14cdf11a79265",
+  "status": "captured",
+  "reason": null,
+  "content_markdown": "URL: https://git-scm.com/\nContent-Type: text/html\nMethod: native\n\n---\n\n---\nmeta-generator: Hugo 0.161.1\nmeta-viewport: width=device-width, initial-scale=1\ntitle: Git\n---\n\n[![Git](https://git-scm.com/images/logo@2x.png)](https://git-scm.com/)\n\n![](https://git-scm.com/images/dark-mode.svg)\n\n![](https://git-scm.com/images/progit2.png)\n\n**[Pro Git](https://git-scm.com/book)** by Scott Chacon and Ben Straub is available to [read online for free](https://git-scm.com/book).\nDead tree versions are available on [Amazon.com](https://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772?ie=UTF8&camp=1789&creative=9325&creativeASIN=1430218339&linkCode=as2&tag=git-sfconservancy-20).\n\n#### Latest source release\n\n2.56.0 [Release Notes](https://gitlab.com/git-scm/git/-/blob/HEAD/Documentation/RelNotes/2.56.0.adoc) (2026-09-28)\n\n[Install](https://git-scm.com/install) [Source code](https://git-scm.com/install/source)",
+  "fetched_at": "2026-10-17T10:40:38.677645+08:00",
+  "details": {
+    "kind": "url",
+    "url": "https://git-scm.com/",
+    "finalUrl": "https://git-scm.com/",
+    "contentType": "text/html",
+    "method": "native",
+    "truncated": false,
+    "notes": [],
+    "meta": {
+      "source": {
+        "type": "url",
+        "value": "https://git-scm.com/"
+      }
+    },
+    "relative_markdown_links_resolved_against": "https://git-scm.com/"
+  }
+}

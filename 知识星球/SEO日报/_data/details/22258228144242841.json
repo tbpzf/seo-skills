@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "Publish stats, get cited: The tactic that put my data all over the web - Peec AI\n\nPeec AI 的作者做了一个很狠的实验：建一个全是假统计数据的新站，看 AI 会不会引用。结果 Google 很快把站打没了，ChatGPT 却 7 个月一直在抓、在引。核心结论：在 Google 排名和被 AI 检索到是两回事，统计数据页是赚 AI 引用和外链的强打法（前提是数据要真）。\n\n要点：\n1. 实验做法：2026 年 3 月注册新域名 stateglobe.com，用 GPT-4.1 一天生成 5 万个统计页，后来又加了 1.5 万篇清单文，总成本约 50 美元，所有数字都是编的、一个没核过。上线后赶上两次 Google 更新，可见度崩掉，页面只剩 5–20 次展示。\n2. AI 这边完全相反：Cloudflare 显示最近 30 天 bot 请求 60 万+，其中约 7.2 万次来自 ChatGPT-User（ChatGPT 回答用户时实时打开网页的爬虫，不是训练爬虫）；GA4 里自 3 月以来 ChatGPT 带来 1 万+ 次访问；Ahrefs / Semrush 显示 330+ 个引用域，包括 Shopify、DHL、Bluehost；假数字还被一篇学术论文和卡塔尔最大金融集团的研报引用（作者自述）。作者把这叫 citation laundering：假数据被引用越多，看起来越可信。\n3. 为什么统计页容易被 AI 引用：越来越多内容是 LLM 写的，LLM 写稿遇到缺口会去搜数字，拆出的子查询会自动加 statistics、data、年份这类词；系统只给\"相不相关\"打分，不核对真假；统计页标题和 URL 里常带年份，显得新。\n4. 正确做统计页的方法：一句话只放一个数字，能脱离上下文单独成立；每个数字旁边写来源和年份；小标题按 AI 会搜的方式写，比如\"[话题] statistics\"\"[话题] market size\"；显示更新日期并且真的更新；用服务端 HTML，别把数据藏在 JS、标签页或图片里，检查 robots.txt 和 CDN/WAF 有没有挡 AI 检索爬虫；页面做成简单列表就行；能加原创数据就加。跟踪效果看服务器日志里的 ChatGPT-User / OAI-SearchBot / PerplexityBot、GA4 里来自 chatgpt.com 的访问、新增引用域，再用引号搜自己的数字找没带链接的引用。\n\n结论：作者强调这是研究不是教程，千万别发假数据；这招现在有效，但 AI 平台以后可能会补上这个漏洞。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fpeec.ai%2Fblog%2Fpublish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web\" title=\"Publish%20stats%2C%20get%20cited%3A%20The%20tactic%20that%20put%20my%20d...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 14,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-12T04:13:11.425+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Publish stats, ...",
+    "topic_id": "22258228144242841",
+    "type": "talk"
+  }
+}

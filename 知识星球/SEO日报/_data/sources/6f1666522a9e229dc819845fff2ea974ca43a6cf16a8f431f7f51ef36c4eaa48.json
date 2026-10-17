@@ -1,0 +1,53 @@
+{
+  "url": "https://nodejs.org/en/download/",
+  "key": "6f1666522a9e229dc819845fff2ea974ca43a6cf16a8f431f7f51ef36c4eaa48",
+  "status": "captured",
+  "reason": null,
+  "content_markdown": "[Skip to content](https://nodejs.org/en/download/#main)\n\n# Download Node.js®\n\nGet Node.js® v24.22.0LTS![SVG Image]\n\nfor Unknown![SVG Image]\n\nusing ![SVG Image]\n\nwith ![SVG Image]npm![SVG Image]\n\nInfoWant new features sooner? Get the [latest Node.js version](https://nodejs.org/en/download/current) instead and try the latest improvements!\n\nBash![SVG Image]Copy to clipboard\n\nand their installation scripts are not maintained by the Node.js project. If you encounter any issues please visit [**'s website**![SVG Image]](<https://nodejs.org/en/download/>)\n\nOr get a prebuilt Node.js® for Unknown![SVG Image]\n\nrunning a Unknown![SVG Image]\n\narchitecture.\n\n[![SVG Image]N/A Installer (.gz)](https://nodejs.org/dist/v24.22.0/node-v24.22.0.tar.gz)[![SVG Image]Standalone Binary (.gz)](https://nodejs.org/dist/v24.22.0/node-v24.22.0.tar.gz)\n\nRead the [changelog![SVG Image]](https://github.com/nodejs/node/releases/tag/v24.22.0) or [blog post](https://nodejs.org/en/blog/release/v24.22.0) for this version.\n\nLearn more about [Node.js releases](https://nodejs.org/en/about/previous-releases), including the release schedule and LTS status.\n\nLearn how to [verify![SVG Image]](https://github.com/nodejs/node#verifying-binaries) signed SHASUMS.\n\nLooking for Node.js source? Download a signed [Node.js source![SVG Image]](https://nodejs.org/dist/v24.22.0/node-v24.22.0.tar.gz) tarball.\n\nCheck out our [nightly![SVG Image]](https://nodejs.org/download/nightly/) binaries or\nall [previous releases](https://nodejs.org/en/download/archive/current) or the [unofficial![SVG Image]](https://unofficial-builds.nodejs.org/download/) binaries for other platforms.\n\n---\n\n## Proudly supported by the partners below:\n\nWe are able to serve Node.js's downloads and maintain our infrastructure\nproudly due to the support of these partners, [and more](https://nodejs.org/en/about/partners).\n\n[![SVG Image]](https://www.digitalocean.com/?utm_source=nodejs-website&utm_medium=Link)[![SVG Image]](https://www.cloudflare.com/?utm_source=nodejs-website&utm_medium=Link)[![SVG Image]](https://vercel.com/?utm_source=nodejs-website&utm_medium=Link)\n\n[](https://social.lfx.dev/@nodejs)",
+  "fetched_at": "2026-10-17T02:41:24.933559+00:00",
+  "details": {
+    "reader": {
+      "kind": "url",
+      "url": "https://nodejs.org/en/download/](https://nodejs.org/en/download/",
+      "finalUrl": "https://nodejs.org/en/download/](https://nodejs.org/en/download/",
+      "contentType": "text/html",
+      "method": "failed",
+      "truncated": false,
+      "notes": [
+        "Failed to fetch URL (HTTP 404)"
+      ],
+      "meta": {
+        "source": {
+          "type": "url",
+          "value": "https://nodejs.org/en/download/](https://nodejs.org/en/download/"
+        }
+      }
+    },
+    "topic_ids": [
+      "22255882184588881"
+    ],
+    "method": "native",
+    "final_url": "https://nodejs.org/en/download/](https://nodejs.org/en/download/",
+    "title": "Node.js",
+    "reader_truncation_recovered": false,
+    "normalized_url": "https://nodejs.org/en/download/",
+    "normalization": "Removed malformed Markdown link label concatenation.",
+    "alternate_reader": {
+      "kind": "url",
+      "url": "https://nodejs.org/en/download/",
+      "finalUrl": "https://nodejs.org/en/download/",
+      "contentType": "text/html",
+      "method": "native",
+      "truncated": false,
+      "notes": [],
+      "meta": {
+        "source": {
+          "type": "url",
+          "value": "https://nodejs.org/en/download/"
+        }
+      }
+    },
+    "source_url_normalization": "Corrected duplicated Markdown link label and URL to their shared destination.",
+    "relative_markdown_links_resolved_against": "https://nodejs.org/en/download/"
+  }
+}

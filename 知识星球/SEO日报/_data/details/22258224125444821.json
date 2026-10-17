@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "SEO Tip: Here's a great search operator to mine Reddit for key questions. Perform a Reddit 'site:' search for a topic + 'intitle:?' to find questions\n\nChris Long 在 LinkedIn 分享了一个用 Google 搜索指令挖 Reddit 用户问题的小技巧，他说是从 Surfer SEO Expert 的 YouTube 频道看来的：只搜标题里带问号的 Reddit 帖子，就能快速看到用户到底在问什么。\n\n要点：\n1. 第一步，用 site:reddit.com 把搜索范围限定在 Reddit。\n2. 第二步，加上你要研究的话题，可以是你的核心话题领域、你的品牌名，或者别的你关心的东西。\n3. 第三步，加上 intitle:? ，只留下标题是提问的帖子。\n4. 搜出来的就是一串专门提问的 Reddit 帖子，能更具体地看到用户围绕你的产品或话题领域有哪些疑问，可以拿来找选题。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A7514287159013482496%2F\" title=\"https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Ashare%3A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 12,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-16T04:09:46.674+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "SEO Tip: Here's...",
+    "topic_id": "22258224125444821",
+    "type": "talk"
+  }
+}

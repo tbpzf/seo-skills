@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "How to Remove Bad Google Reviews: 4 Steps That Work\n\nGoogle 商家资料（Google Business Profile）上收到差评怎么删？本地 SEO 公司 Sterling Sky 讲得很直白：Google 只删违反它内容政策的评论，单纯\"差评\"\"不公平\"\"跟客户有纠纷\"都不会删。真要删，得按顺序走四步。\n\n要点：\n1. 能删的类型：假评论（没有真实消费经历）、拿钱或拿好处换来的评论、一个人用多个账号刷的、竞争对手刷的、有利益冲突的（比如在职或离职员工）、跟这家店无关的、含骚扰威胁或个人信息的、刻意刷分的异常评论。举报前先想清楚它违反的是哪一条。\n2. 四步流程：在商家资料里点评论旁边的三个点举报 → 用 Google 的 Reviews Management Tool 查处理状态（Decision pending 是还没判、Report reviewed – no policy violation 是判了没违规、Escalated 是申诉已升级）→ 判没违规的可以申诉，只有一次机会，一次最多选 10 条，写清楚违反了哪条政策并附证据，记下 case ID → 还不行就带着 case ID 去 Google Business Profile 社区找产品专家帮忙。\n3. Google 说评估一般要几天，但作者见过长期卡在 Decision pending 的；这时别反复举报同一条，去看能不能申诉，或者联系支持。\n4. 如果有人刷差评再找你要钱才肯删，别付钱，保存聊天记录、评论链接、对方信息和时间线，走 Google 专门的商家勒索举报通道。反过来，商家自己也不能给顾客好处让他改评或删评，这本身就违规。\n\n结论：没违反政策的真实差评，好好回复、解决顾客的问题，比反复举报更有用；也要小心那些保证能帮你删差评的公司。\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.sterlingsky.ca%2Fhow-to-remove-bad-reviews-google%2F%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-02%26utm_medium%3Demail\" title=\"https%3A%2F%2Fwww.sterlingsky.ca%2Fhow-to-remove-bad-revie...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 10,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-04T00:08:42.508+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "How to Remove B...",
+    "topic_id": "14425458118548122",
+    "type": "talk"
+  }
+}

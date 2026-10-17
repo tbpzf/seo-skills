@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "content": "只需点击 5 次即可在 GA4 中追踪 AI 聊天机器人流量\n\n1️⃣ Create a blank GA4 exploration\n1️⃣ 创建一个空白的 GA4 探索表\n2️⃣ Select the dimension 'Session source/medium'\n2️⃣ 选择维度“会话来源/媒介”\n3️⃣ Select the metric 'Sessions'\n3️⃣ 选择指标“会话数”\n4️⃣ Drag 'Session source/medium' into Rows and 'Sessions' into Values\n4️⃣ 将“会话来源/媒介”拖到“行”中，将“会话”拖到“值”中\n5️⃣ Filter 'Session source/medium' to match regex\n5️⃣ 筛选“会话来源/媒介”以匹配正则表达式\n.*meta.ai.*|.*perplexity.*|.*claude.*|.*mistral.*|.*gemini.*|.*chatgpt.*|.*copilot.*|.*manus.*|.*huggingface.co.*|.*grok.*|.*deepseek.*|.*you.com.*|.*poe.*|.*character.ai.*",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 24,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-30T16:38:47.753+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "只需点击 5 次即可在 GA4...",
+    "topic_id": "14588444115422882",
+    "type": "talk"
+  }
+}

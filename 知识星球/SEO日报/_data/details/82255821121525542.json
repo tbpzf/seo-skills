@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "「图片」",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 35,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-05-08T20:29:15.806+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [
+      {
+        "image_id": "2858258245412141",
+        "large": {
+          "height": 455,
+          "url": "https://images.zsxq.com/Fu7KqnShW4PAN08i82S6P0sPloMU?imageMogr2/auto-orient/quality/100!/ignore-error/1&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:8wWUrE-RgpK1QJPwW6x1fj8aEf0=",
+          "width": 601
+        },
+        "source": "talk",
+        "thumbnail": {
+          "height": 568,
+          "url": "https://images.zsxq.com/Fu7KqnShW4PAN08i82S6P0sPloMU?imageMogr2/auto-orient/thumbnail/750x/format/jpg/blur/1x0/quality/75&e=1796054399&s=mtmtmttyytjjvj&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:HmGye8uT1jUEpaqbF1iXwDH-qKg=",
+          "width": 750
+        },
+        "type": "png"
+      }
+    ],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "「图片」",
+    "topic_id": "82255821121525542",
+    "type": "talk"
+  }
+}

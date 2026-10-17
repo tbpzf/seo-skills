@@ -1,0 +1,23 @@
+{
+  "url": "https://claude.ai/install.sh",
+  "key": "128ceb81537736671e63bc2d1c028b5cd6cf1749c4a940fcc0646e41be7e0aec",
+  "status": "unavailable",
+  "reason": "原始资源重定向到 Claude 地区不可用页面，未获取安装脚本。",
+  "content_markdown": "",
+  "fetched_at": "2026-10-17T10:40:38.678691+08:00",
+  "details": {
+    "kind": "url",
+    "url": "https://claude.ai/install.sh",
+    "finalUrl": "https://claude.com/app-unavailable-in-region",
+    "contentType": "text/html",
+    "method": "native",
+    "truncated": false,
+    "notes": [],
+    "meta": {
+      "source": {
+        "type": "url",
+        "value": "https://claude.com/app-unavailable-in-region"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "检索排名是预测页面是否会在 ChatGPT 答案中被引用的最强指标。\n页面内容的最强信号是页面标题与原始查询的匹配程度。页面涵盖的子主题数量多少几乎无关紧要。\n传统的 SEO 权威指标（域名权威性、反向链接数量）与 AI 生成的答案的引用率之间没有正相关性。\n<e type=\"web\" href=\"https%3A%2F%2Fwww.airops.com%2Freport%2Fthe-fan-out-effect-what-happens-between-a-query-and-a-citation\" title=\"https%3A%2F%2Fwww.airops.com%2Freport%2Fthe-fan-out-effect-w...\" />\n<e type=\"hashtag\" hid=\"15454145281812\" title=\"%23Geo%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 32,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-15T07:01:27.859+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "检索排名是预测页面是否会在 C...",
+    "topic_id": "14422288825548482",
+    "type": "talk"
+  }
+}

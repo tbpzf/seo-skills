@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"51515451284484\" title=\"%23%E6%96%B0%E9%97%BB%23\" />",
+    "content": "大多数 SEO 审核只不过是美化过的清单而已。 \n对实际业务增长没有任何影响。 \n\n你会收到一份所谓的“详细”审计报告，其中会告诉你： \n- 缺少元标题\n- 图片未压缩\n等一百个“问题”。\n\n但他们不会告诉你：\n您的网站缺少哪些对业务增长至关重要的功能？ \n哪些问题应该优先解决，哪些问题可以完全忽略。\n\n你会得到一个超过 30 页的 Gdoc/PDF 文件或电子表格，你会感觉非常迷茫. \n这并不是你做seo审计的目的,你的目的是希望能突破当前的困境,而其他的一切都是垃圾.",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 23,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-01-24T18:06:49.964+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "大多数 SEO 审核只不过是美...",
+    "topic_id": "45811554582111828",
+    "type": "talk"
+  }
+}

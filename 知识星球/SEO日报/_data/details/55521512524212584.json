@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "AI替代文本可能很准确，但仍然会影响你的SEO。这是我用来解决这个问题👇的尖叫青蛙脚本\n<e type=\"web\" href=\"https%3A%2F%2Flnkd.in%2FeV6iwJmb\" title=\"https%3A%2F%2Flnkd.in%2FeV6iwJmb\" />\n它生成的替代文本与页面意图相符，而不仅仅是图片中的内容。\n\n我是怎么发现问题的：\n 🐸 2024年，我在还没真正测试之前，就用 Screaming Frog 的ChatGPT集成来扩展AI替代文本\n🤖 替代文本准确描述了这些图片。它完全忽略了页面的内容\n📉 图片搜索流量下降。\n\n剧本的作用：\n✅ 在 Screaming Frog 中以自定义 JavaScript 运行，运行于 HTML 页面上\n✅ 通过 og：image 找到英雄图片并发送给 Gemini\n✅ 使用页面标题作为意图信号，或以H1作为备份\n\n在克隆之前，已知的限制：\n⚠️ 仅限英雄图片（og：image）。页面上的其他图片没有处理\n⚠️ 它假设你的头衔反映了你的意图。很多时候不会，所以先检查一下\n⚠️ 即使是装饰性图像，也总是包含主题。在大规模使用之前要先做个检查\n⚠️ 免费层的双子座密钥很快达到速率限制。使用付费套餐或请求间设延迟\n⚠️ 在Screaming Frog中同时提高两个暂停时间（片段和全局AJAX暂停），否则会出现TimeoutExceptions。详情见 README\n\n该提示基于Jarrod Blundy的替代文本技巧（在仓库中署名）。\n\n完整报道 Google Search Central 2026年欧洲深度深度直播。\n\n总结：我们的SEO知识是筛选每一个闪亮新工具的标准。🧠\n\n有问题或改进建议吗？欢迎在评论区发布，或在GitHub上开启一个问题。",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 12,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-09-29T11:19:41.542+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "AI替代文本可能很准确，但仍然...",
+    "topic_id": "55521512524212584",
+    "type": "talk"
+  }
+}

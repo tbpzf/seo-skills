@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "受 Karpathy 启发的 Claude Code 指南\n<e type=\"web\" href=\"https%3A%2F%2Fgithub.com%2Fforrestchang%2Fandrej-karpathy-skills%2Fblob%2Fmain%2FREADME.zh.md\" title=\"andrej-karpathy-skills%2FREADME.zh.md%20at%20main%20%C2%B7%20forr...\" />\n<e type=\"hashtag\" hid=\"88281188225152\" title=\"%23claude%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 26,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-04-22T18:51:10.098+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "受 Karpathy 启发的 ...",
+    "topic_id": "55522111254824554",
+    "type": "talk"
+  }
+}

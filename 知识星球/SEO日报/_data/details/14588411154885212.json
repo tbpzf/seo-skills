@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "",
+    "content": "一个超棒的 SEO 秘诀（利用人工智能），无需任何费用，只需不到 30 分钟：\n\n- 前往您的 Google Search Console\n- 导出平均排名在 8-20 次展示量左右（过去 28-90 天）的页面\n- 将 CSV 文件导入 ChatGPT、Claude 或 Gemini（我推荐使用 Claude）。\n- 提示人工智能重写排名靠前但缺少相关搜索词的前 10 个最有希望的标题，这些标题对应的网页排名靠前。\n- 使用agent模式，让 AI 为网站上每个语义相关的页面规划内部链接。\n- 经验法则：每50个单词1个内部链接，每150个单词1个外部链接<e type=\"hashtag\" hid=\"48585258412148\" title=\"%23Tips%23\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 2,
+      "readers": 32,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-02-08T21:28:06.891+0800",
+    "creation_statement": "",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "2026-02-08T21:28:21.562+0800",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "一个超棒的 SEO 秘诀（利用...",
+    "topic_id": "14588411154885212",
+    "type": "talk"
+  }
+}

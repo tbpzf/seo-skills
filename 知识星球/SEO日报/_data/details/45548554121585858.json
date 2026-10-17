@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "topic": {
+    "annotation": "<e type=\"hashtag\" hid=\"88211145281822\" title=\"%23SEO%23\" /><e type=\"hashtag\" hid=\"28282428514151\" title=\"%23%E5%86%99%E4%BD%9C%23\" />",
+    "content": "Content Effort: One of Google’s Signals Your SEO Agency Doesn’t Want You to Know About\n\nAnn Smarty 认为,Google 在打击的不是 AI 写的内容本身,而是\"低投入(low-effort)\"的内容。能不能被检测出是 AI 写的、内容有没有用,都不是关键;关键是你有没有给这篇内容加进别处没有的东西。\n\n要点：\n1. Google 搜索质量评分员指南(QRG)里 \"Effort\" 这个词出现了 120 次,定义是:一个人为了做出让人满意的内容,实际投入了多少工作。指南里被判为最低投入的例子,就是那种只把别人的内容换个说法、不给出处、没有专家观点的文章,作者说这正是很多站在发的典型 AI 文章。\n2. Google 官方的有用内容文档里也写了 Effort:写原创分析、手工翻译一首诗、给游戏做一张自定义互动地图算高投入;从 feed 自动生成页面、用生成式 AI 大量产文却没有人工审核把关,算几乎零投入;标注出处不能代替原创投入。\n3. 作者的区分:\"非同质化内容\"是调研、自有数据、白皮书这类权威资产,一年做不了几篇;\"有投入的内容\"是全站所有内容(教程、测评、产品对比)的编辑标准。投入不等于字数、不等于内容深度(AI 也能做调研)、也不等于你花多久调 prompt。\n4. Shaun Anderson 在 Google 泄露的算法文档里找到一个 contentEffort 属性,作者说目前不知道它是不是直接排名信号、影响有多大,但它存在本身就说明问题;有人认为它支撑了 Helpful Content 更新。\n\n结论：真正要问的是,Google 或大模型凭什么要把这篇展示出来?你加了什么新东西,让它比同主题的一大堆内容更好?\n\n原文：<e type=\"web\" href=\"https%3A%2F%2Fwww.annsmarty.com%2Fp%2Fcontent-effort-one-of-googles-signals%3Futm_source%3Dsearch_engine_roundtable%26utm_campaign%3Dser_newsletter_2026-10-07%26utm_medium%3Demail\" title=\"Content%20Effort%3A%20One%20of%20Google%E2%80%99s%20Signals%20Your%20SEO%20A...\" />",
+    "counts": {
+      "comments": 0,
+      "likes": 0,
+      "readers": 15,
+      "reading": 1,
+      "rewards": 0
+    },
+    "create_time": "2026-10-09T00:13:46.634+0800",
+    "creation_statement": "aigc",
+    "digested": false,
+    "files": [],
+    "group": {
+      "group_id": "88882458825452",
+      "name": "SEO日报"
+    },
+    "images": [],
+    "modify_time": "",
+    "owner": {
+      "alias": "SEO日报",
+      "avatar_url": "https://images.zsxq.com/FkPkf8LZ4eEVKYMQQeMG-amQ8ryg?imageMogr2/auto-orient/thumbnail/150x/format/jpg/blur/1x0/quality/75/ignore-error/1&e=1796054399&token=q6iZ0sQtf9U7s1qz0r4yMawNq3-u2w6lbnai6y2J:SWmytfYhzTCKvaebIwvSXRXCJ6I=",
+      "name": "虾虾",
+      "user_id": "548818158288144"
+    },
+    "stick_time": "",
+    "sticky": false,
+    "text_type": "",
+    "title": "Content Effort:...",
+    "topic_id": "45548554121585858",
+    "type": "talk"
+  }
+}
