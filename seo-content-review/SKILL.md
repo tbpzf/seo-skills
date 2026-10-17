@@ -66,6 +66,16 @@ references and distinguish `supplied`, `checked`, `hypothesis`, and `unknown`.
 An inaccessible citation stays unverified; an old article is not automatically
 wrong. Missing search data cannot establish changed search intent or traffic loss.
 
+Consult [seo-knowledge](../seo-knowledge/SKILL.md) with route `review` for
+relevant existing-copy guidance or topical evidence under the shared
+[consultation contract](../seo-knowledge/references/consultation.md). Reuse a
+fitting consultation from the supplied plan/brief; refresh only affected scope
+or stale evidence. Keep this within the read-only review, with no new interview,
+rewrite stage, or default edits. A local wording correction preserves the
+existing contract rather than triggering a library survey. Record no relevant
+match or unavailable sources explicitly; neither is evidence of a copy defect
+or permission to invent support. Retain any central factual blocker.
+
 For feature updates, removed capabilities, changed plans, pricing, UI, or
 integrations, follow [freshness.md](references/freshness.md). Compare old claims
 with the actual new behavior, release status, and applicable scope. Track all
@@ -121,6 +131,9 @@ Use this compact report, adapting its size to the assignment:
 - Reader-task walkthrough: pass | repair needed | blocked
 - Main contribution and judgment limits:
 - Sources inspected (references, relevant dates/versions, and evidence status):
+- Knowledge consultation (reuse the shared block within these findings): applied
+  guidance and source limits, conflicts/gaps, or explicit no-match/unavailable
+  status; distinguish editorial guidance from factual support.
 
 | Priority | Passage or section | Issue and reader impact | Evidence or verification gap | Specific repair |
 | --- | --- | --- | --- | --- |

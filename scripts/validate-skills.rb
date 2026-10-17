@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require "digest"
+require "json"
 require "pathname"
 require "yaml"
 
@@ -399,8 +401,43 @@ skill_files.each do |skill_file|
   end
 end
 
+# Imported articles are data, not skill documentation. Validate their generated
+# bundle through its catalog rather than interpreting source prose as pointers.
+knowledge_directory = ROOT.join("seo-knowledge/references/library")
+catalog_path = knowledge_directory.join("catalog.json")
+begin
+  catalog = JSON.parse(catalog_path.read)
+  guidance = JSON.parse(ROOT.join("seo-knowledge/references/guidance.json").read)
+  errors << "seo-knowledge: unsupported catalog schema" unless catalog["schema_version"] == 1
+  posts = catalog.fetch("posts")
+  topic_ids = posts.map { |post| post.fetch("topic_id") }
+  errors << "seo-knowledge: duplicate topic IDs" unless topic_ids.uniq.length == topic_ids.length
+  managed = catalog.fetch("managed_files")
+  managed.each do |relative, digest|
+    path = knowledge_directory.join(relative).cleanpath
+    unless path.to_s.start_with?(knowledge_directory.to_s + "/") && path.file?
+      errors << "seo-knowledge: missing or unsafe bundled file #{relative}"
+      next
+    end
+    errors << "seo-knowledge: changed generated file #{relative}" unless Digest::SHA256.file(path).hexdigest == digest
+  end
+  posts.each do |post|
+    errors << "seo-knowledge: post is not a managed Markdown file" unless post.fetch("file").end_with?(".md") && managed.key?(post["file"])
+    post.fetch("sources").each do |source|
+      errors << "seo-knowledge: invalid capture status" unless %w[captured partial unavailable].include?(source.fetch("status"))
+    end
+  end
+  guidance_ids = guidance.fetch("entries").map { |entry| entry.fetch("topic_id") }
+  errors << "seo-knowledge: duplicate guidance entries" unless guidance_ids.uniq.length == guidance_ids.length
+  errors << "seo-knowledge: guidance points to missing posts" unless (guidance_ids - topic_ids).empty?
+rescue KeyError, JSON::ParserError, SystemCallError => error
+  errors << "seo-knowledge: invalid or missing bundle (run ruby scripts/build-seo-knowledge.rb): #{error.message}"
+end
+
 Dir.glob(ROOT.join("**/*.md")).sort.each do |path|
   file = Pathname.new(path)
+  relative = file.relative_path_from(ROOT).to_s
+  next if relative.start_with?("知识星球/", "seo-knowledge/references/library/")
   file.each_line.with_index(1) do |line, line_number|
     line.scan(MARKDOWN_LINK_PATTERN).flatten.each do |link|
       next if link.match?(%r{\A(?:https?://|mailto:|#|/)})

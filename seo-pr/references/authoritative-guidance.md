@@ -12,6 +12,12 @@ applicable scope, significance, and material limits; search visibility does
 not establish newsworthiness. A sourced explanation can add useful analysis
 when its facts, reasoning, and limits are explicit.
 
+Bundled SEO日报 leads from [`seo-knowledge`](../../seo-knowledge/SKILL.md)
+supplement these editorial checks; they do not override the actual news event,
+approved facts/quotes, or current first-party distributor requirements. Keep
+outreach experiments and citation-laundering examples attributed and bounded,
+not turned into distribution tactics or universal link/length quotas.
+
 ## Source index
 
 - [PR Newswire: How to Write an AP Style Press Release](https://www.prnewswire.com/resources/articles/ap-style-press-release/)

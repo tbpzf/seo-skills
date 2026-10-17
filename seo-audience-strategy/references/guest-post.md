@@ -11,6 +11,10 @@ the host reader's task.
   pages, relevant published work, reader comments, and contributor expertise
   as evidence when available. Label inferred reader situations and unchecked
   host fit as hypotheses or unknown.
+- Reuse the parent's knowledge consultation or consult route `audience` under
+  the [shared protocol](../../seo-knowledge/SKILL.md) when research is permitted.
+  Carry adopted guidance and missing-source limits in the returned brief;
+  current host rules govern editorial fit, not archived recommendations.
 - Identify the host reader's trigger, current knowledge, decision criteria,
   constraints, next question, expected answer/artifact, completion criterion,
   and proof needed. Return one situation that can support a useful editorial

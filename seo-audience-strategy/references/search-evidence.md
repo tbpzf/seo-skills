@@ -4,6 +4,12 @@ Use this branch when queries have competing meanings or the expected answer,
 format, or angle needs evidence. Apply the
 [helpful-content standard](../../distinctive-content/references/helpful-content.md).
 
+Keep library consultation separate from measured search/audience evidence:
+use route `audience` under [seo-knowledge](../../seo-knowledge/SKILL.md), within
+the caller's intake permissions. Return selected guidance, source limits, and
+no-match/unavailable outcomes in the brief's existing source fields. An archived
+method or interpretation does not establish current SERP behavior or demand.
+
 1. Start with supplied reader/query data and inspect relevant supplied URLs,
    artifacts, and SERP notes when accessible. Distinguish customer observations,
    query wording, published content, and measured search behavior; each supports

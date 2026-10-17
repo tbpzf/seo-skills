@@ -52,6 +52,14 @@ branch can still return supported edits with pre-existing blockers. Reuse the pa
 `draft-from-structure` and local revisions; refresh affected material when the
 promise, sources, or claims change. The parent folds it into the saved plan.
 
+The planning packet also retains the full [`seo-knowledge`](../seo-knowledge/SKILL.md)
+consultation. Reuse the reader brief's fitting result, or let `distinctive-content`
+complete it after author intake. Use `landing-page` or `blog` for the current
+route and distinguish editorial guidance from topic evidence. Carry adopted
+decisions into the section plan and final review; keep the lookup log out of
+publishable copy. Drafting and narrow revisions reuse it, refreshing only
+affected scope or evidence. A metadata-only inventory is not a completed read.
+
 **Clarity bar:** keep general prose near a grade 6–8 reading level so readers can grasp it on the first pass. Write for a capable adult. Simplify the *language*, not the reader, subject, or job. If a busy expert cannot skim it, rewrite; if the prose explains obvious ideas or talks down to the reader, remove it.
 
 When this skill runs inside [seo-landing-page](../seo-landing-page/SKILL.md) or
@@ -212,7 +220,8 @@ Return this plan:
 ## Distinctive contribution
 - Full distinctive-content packet (retain its item table, evidence status,
   source references, baseline answer, added value, reasoning, alternatives,
-  limits, author intake status and basis, pending question, and interview count):
+  limits, author intake status and basis, pending question, interview count,
+  and the full Knowledge consultation with its applied decisions and source limits):
 - Section mapping (item IDs, grounded answer, or reason no unique source is needed):
 
 ## Keyword map

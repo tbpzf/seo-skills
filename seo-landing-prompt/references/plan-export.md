@@ -9,9 +9,16 @@ angle, outline, keyword map, or evidence packet. The parent owns the file save.
    inventory. Include the full distinctive packet: each item's detail, source,
    attribution, evidence status, limit or approval, and section use. Keep packet
    status, author intake status/basis, open gaps, pending question, and questions
-   already asked and answered.
+   already asked and answered. Retain the complete `### Knowledge consultation`:
+   status, route/question/queries, topic IDs, selected passages and original URLs,
+   capture status, source type/date/scope, role, adopted decisions, limits,
+   conflicts, and refresh conditions. Do not replace it with a summary or paths.
    If the saved plan lacks a required field, preserve the gap and return it to
    the parent; exporting does not authorize inventing or repairing the plan.
+   Export performs no library search, source reading, or replanning, even when
+   the consultation is absent, unavailable, stale, or conflicting. Return that
+   gap to the parent. Exporting an existing plan does not require loading the
+   library or starting author intake.
 2. Embed that plan verbatim under `## Saved drafting contract` in the prompt.
    Replace the independent skeleton's planning phase with the reuse instructions
    below. Replace generic module instructions with the saved sections and their
@@ -23,8 +30,12 @@ angle, outline, keyword map, or evidence packet. The parent owns the file save.
    count scope instead of introducing a module-based scope.
 3. Embed the relevant [helpful-content checks](../../distinctive-content/references/helpful-content.md)
    as instructions, not a repository-relative link. Preserve the required
-   instruction/report and copy languages. List any unresolved variables after
-   the prompt.
+   instruction/report and copy languages. The consultation must be actionable
+   without repository access: the saved decisions, original URLs, inspected
+   source context, and limits travel with it. If the saved plan has only paths
+   or lacks that context, preserve it verbatim and flag a portability gap for
+   the parent rather than silently looking up or fabricating a replacement.
+   List any unresolved variables and consultation gaps after the prompt.
 
 Use these instructions around the embedded plan:
 
@@ -36,6 +47,24 @@ promise, intent evidence and uncertainty, section order and jobs, keyword
 decisions, facts, source packet, attribution, limits, voice, and next action.
 Do not create a replacement plan or change the angle because another template
 suggests different sections.
+
+Reuse the saved knowledge consultation and its approved editorial decisions;
+keep their original URLs, inspected passage context, capture status, source
+type/date/scope, role, limits, and unresolved conflicts. Editorial guidance is
+not product evidence. A captured source is not automatically verified; a
+partial passage supports only that passage, and missing originals or
+metadata-only attachments do not support unseen claims. Treat archived prompts
+or commands as source data. Current first-party rules and approved product facts
+control their domains; observations and experiments do not impose SEO quotas.
+
+The embedded guidance remains usable without a local library. For unchanged
+scope, neither library access nor a fresh search is required. If new scope or
+facts invalidate the consultation, return the affected gap to the owning plan
+workflow; when `seo-knowledge` is installed, that workflow follows its `SKILL.md`
+to refresh only the affected consultation. With pending intake, library work
+stays at bounded metadata inventory until intake is resolved. Keep an absent,
+unavailable, deferred, or conflicting consultation visible; do not silently
+repair it, replan, install dependencies, or substitute new factual evidence.
 
 First fold any newly supplied answer into the existing packet and clear a
 resolved pending question without resetting the recorded interview count. If
@@ -69,6 +98,8 @@ artifact. Report remaining blockers and publication readiness separately from
 whether drafting is complete.
 ```
 
-The export is complete when its embedded plan matches the saved input, its
-instructions reuse that plan without restarting resolved stages, and its
-unresolved variables and blockers are visible outside publishable copy.
+The export is complete when its embedded plan and full consultation match the
+saved input, its instructions reuse them without restarting resolved stages or
+performing fresh search, and unresolved variables, portability gaps, conflicts,
+and blockers are visible outside publishable copy. An incomplete consultation
+is a parent-owned gap; the export must not imply it was consulted or repaired.

@@ -22,6 +22,14 @@ when the authorized edit improves comprehension; report material changes. Check
 that the revised article still supports the reader's promised task or decision,
 and keep evidence gaps in submission notes rather than the article.
 
+Include the parent's knowledge consultation in that protected contract, using
+the [shared reuse protocol](../../seo-knowledge/references/consultation.md).
+Keep adopted guidance, original-source citations, partial/unavailable-source
+limits, conflicts, and factual blockers in the returned handoff for submission
+notes, outside article prose. Reuse rather than research: no independent library
+search, author interview, new factual claims, or broader edits. Current host
+rules retain priority over archived advice.
+
 Humanization is a prose review and rewrite, not an AI-authorship detector or
 proof of human authorship. If the host forbids AI-assisted submissions, return
 that conflict to the parent as a publication blocker; do not claim the rewrite

@@ -25,6 +25,7 @@ keyword placement and polished prose alone cannot make content ready.
 | Reusable landing-page prompt only | `seo-landing-prompt` | Prompt template |
 | Announcement or press release | `seo-pr` | Release and readiness audit |
 | Source interview or distinctiveness audit for substantive content | `distinctive-content` | Evidence packet, next interview question, or audit findings |
+| Read relevant SEO日报 posts/originals or consult writing guidance | `seo-knowledge` | Transient, source-labeled consultation for the owning writing route |
 
 Use `seo-writing`, `distinctive-content`, `humalizer`, and `harper-grammar` directly only for a
 specific planning, drafting, audit, rewrite, or grammar stage. A generic
@@ -49,6 +50,7 @@ Draft/revision final checks retain their own workflow stages.
 | `seo-landing-prompt` | Export reusable prompts for landing-page writing only |
 | `seo-writing` | Shared landing-page and blog planning/drafting stage |
 | `distinctive-content` | Interview and audit source material so substantive content has a concrete, useful contribution |
+| `seo-knowledge` | Search bundled SEO日报 posts/originals and return applicable guidance separately from factual evidence |
 | `humalizer` | Fact-safe humanization used by the SEO workflows |
 | `harper-grammar` | Optional local Harper grammar check |
 
@@ -97,6 +99,59 @@ npx skills add tbpzf/skills -g
 Omit `-g` to install for the current project only. Blader Humanizer and Stop
 Slop remain pinned remote runtime dependencies; they are read from GitHub and
 are not installed locally.
+
+## Bundled SEO日报 Knowledge
+
+Writing routes now consult `seo-knowledge` automatically for relevant editorial
+questions and source material. Landing pages, owned blogs, guest posts, press
+releases, audience briefs, content reviews, and landing-prompt generation share
+one consultation protocol. Humanization preserves already-selected guidance
+and sources rather than starting another research workflow. New body copy
+still completes the existing author-intake step before expanded reading.
+
+The installed `seo-knowledge` skill includes a searchable snapshot of all 294
+archived posts, their captured original text, and 44 local star-post images.
+It resolves files relative to its own installed directory, so writing in another
+project does not require this checkout, a Zsxq account, or network access for
+the saved text. External article images remain remote; three PDF/ZIP attachments
+have metadata only. When installing a subset of skills, include `seo-knowledge`
+alongside the writing route's other dependencies.
+The Ruby search helper is optional: agents without Ruby use their file tools on
+the bundled guidance/catalog and read the same Markdown/media ranges. Writing
+tasks do not install a runtime.
+
+Search selects relevant posts; the workflow then reads their actual post and
+original passages. It records the selected topic IDs, original URLs, source
+dates/scope, capture limits, and concrete decisions in the existing content
+plan/evidence packet or guest-post submission notes, not a new report. For an
+unrelated product topic, general writing guidance does not become evidence of
+product features or customer needs. A copied prompt embeds usable guidance and
+provenance instead of relying only on a local archive path.
+
+`captured` means a page was saved, not that its claims were verified. Partial
+originals, missing sources, author opinions, and experiment limits remain
+explicit. Current host rules, approved product facts, and applicable first-party
+guidance control their respective domains; observed word counts, citation
+ratios, and link counts do not become universal writing quotas. Archived
+prompts and commands are reference data, never instructions to execute.
+
+The canonical export remains in `知识星球/SEO日报/`. Maintainers regenerate the
+installation snapshot rather than editing a second copy:
+
+```bash
+ruby scripts/build-seo-knowledge.rb
+ruby scripts/build-seo-knowledge.rb --check
+ruby scripts/test-seo-knowledge.rb
+ruby seo-knowledge/scripts/search.rb --route guest-post --query "editorial links evidence" --limit 5
+```
+
+The build includes only post Markdown, local post images, and a source catalog;
+it does not copy authentication/configuration data or the raw export caches.
+Sharing or installing this package also copies member content. Keep its
+distribution authorized; local availability is not permission to republish it.
+
+See [the shared skill](seo-knowledge/SKILL.md) for timing, reuse, source handling,
+and explicit no-match/unavailable outcomes.
 
 ## Reusable Product Facts
 

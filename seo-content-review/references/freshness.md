@@ -20,6 +20,13 @@ unsupported replacements when sources disagree or release scope is unknown;
 identify the smallest fact needed to resolve the conflict. A checked product
 repository change may show implementation without proving production rollout.
 
+For archived guidance or evidence in the existing knowledge consultation, apply
+the [shared source-use protocol](../../seo-knowledge/references/consultation.md).
+Refresh only passages affected by the change, using route `review` when needed;
+capture date is neither verification nor the original publication date. Current
+first-party product facts and applicable rules govern. Carry unresolved source
+conflicts and limits into findings and the owner's update brief.
+
 ## Follow dependent passages
 
 For each confirmed change, inspect the supplied article for dependent claims

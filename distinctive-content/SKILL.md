@@ -72,6 +72,14 @@ Identify the baseline answer and the contribution's added value for this reader.
 The initial inventory is complete when the promised task, available sources,
 and author-intake basis or first useful question are explicit. After intake,
 complete research and evaluate support for the core promise and reader task.
+Consult [`seo-knowledge`](../seo-knowledge/SKILL.md) for relevant bundled SEO日报
+material, using the calling route and reader task. Reuse a fitting consultation
+from the reader brief; otherwise do the bounded inventory before intake and
+expanded reading afterward. Plan-only and audit work follow their existing
+intake exceptions. Carry the full consultation in this packet, separating
+editorial methods from evidence for the article's actual claims. The library
+does not supply this author's experience or establish product facts.
+
 One concrete detail or limitation cannot carry an otherwise unsupported how-to.
 Helpful synthesis and explanation count; claims of novelty need an actual
 comparison.
@@ -143,6 +151,9 @@ answers into this packet:
 - Intake basis: answer/source reference, explicit opt-out, or non-body route
 - Interview: questions asked / answered / remaining (0-10)
 - Pending question: one next question or none
+- Knowledge consultation: full seo-knowledge result, including status, selected
+  topic IDs, inspected original passages/URLs, dates/scope, capture limits,
+  guidance versus factual-evidence role, applied decisions, and gaps
 
 | ID | Material detail or claim | Type | Source | Evidence status | Limit or approval | Planned use |
 | --- | --- | --- | --- | --- | --- | --- |

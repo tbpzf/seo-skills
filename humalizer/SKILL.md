@@ -39,6 +39,16 @@ For the guest-post parent, use the [guest-post rewrite branch](references/guest-
 with its in-memory article and publisher contract. Return revised article copy
 and material changes to that parent without saving a file.
 
+Inherit any existing knowledge consultation from the plan, brief, evidence
+packet, or guest submission notes under
+[seo-knowledge](../seo-knowledge/SKILL.md) and its
+[reuse protocol](../seo-knowledge/references/consultation.md). Protect adopted
+guidance, factual source mappings, citation limits, and explicit gaps/statuses.
+This stage does not independently search the library, reopen author intake,
+add claims, or expand the authorized edit scope. If no consultation exists,
+preserve the supplied contract and return material source questions to the
+parent; do not manufacture a consulted status or a new report.
+
 ## Guardrails
 
 1. Preserve verified facts, legal language, technical meaning, citations,
@@ -86,6 +96,7 @@ Promised answer, method, decision criteria, and essential details:
 Primary keyword and required terms:
 Verified product claims and citations:
 Distinctive source-to-claim mapping, attribution, and limits:
+Inherited knowledge guidance, applied decisions, consultation status, and source/citation limits:
 Required links:
 Primary CTA or permitted next action:
 Voice reference:
@@ -189,6 +200,7 @@ Unless the user asks for only revised copy, return:
 - Preserved SEO contract:
 - Patterns corrected:
 - Claims or evidence requiring validation:
+- Inherited knowledge decisions and unresolved limits preserved:
 
 ## Revised copy
 [The revised text]

@@ -33,6 +33,22 @@ quotes, results, or an attributed opinion.
 Embed the applicable checks from [helpful-content.md](../distinctive-content/references/helpful-content.md)
 in the generated prompt so it can be used without this skill repository.
 
+For an independent prompt, load [`seo-knowledge`](../seo-knowledge/SKILL.md)
+and follow its consultation protocol with route `prompt`. This is prompt-only
+editorial research: use a bounded set of relevant writing-guidance passages,
+not audience strategy, product-fact research, a full content plan, or an author
+interview. Keyword-only mode still returns the initial template without asking
+questions. Reuse a fitting consultation; refresh only changed scope or sources.
+Embed the returned `### Knowledge consultation` in the copied prompt, including
+the actionable adopted decisions, original URLs, inspected passages, capture
+status, source type/date/scope, and limits. Local archive paths alone are not a
+portable brief. A topic match is not product evidence; captured is not verified.
+If no relevant guidance exists, embed `no relevant match`; a missing or damaged
+bundle is explicitly `unavailable`. Continue from supported supplied material
+without hiding central blockers. If the required `seo-knowledge` skill itself
+cannot be loaded, report the dependency blocker rather than claim consultation;
+do not install anything. Saved-plan exports follow the reuse-only branch below.
+
 Do not load `seo-audience-strategy` while building the prompt. A keyword is a
 clue to a reader's task, not sufficient evidence of the reader's circumstances.
 When the user supplies no audience evidence, the generated prompt must label the
@@ -45,8 +61,11 @@ to the parent. The parent may save `prompt.md` as an export; the plan, not the
 exported prompt, controls drafting. Read [plan-export.md](references/plan-export.md)
 for this branch. Embed the complete saved plan, including reader evidence and
 uncertainty, the full distinctive packet and section mapping, keyword decisions,
-and pending interview state. Do not run fresh planning or keyword selection;
-reuse the decisions in the saved `Keyword map` without recomputing them. Return
+pending interview state, and the complete existing knowledge consultation. Do
+not search the library or run fresh planning or keyword selection; reuse the
+decisions in the saved `Keyword map` without recomputing them. Missing or
+conflicting consultation content is a parent-owned gap, not permission to repair
+the plan during export. Return
 a concise status and unresolved variables to the parent. Do not claim a file was saved, because
 the parent owns every write. A standalone prompt-only request can use the
 keyword-only or brief mode below without an existing plan.
@@ -145,6 +164,12 @@ Every generated prompt must:
 17. Require a critical walkthrough of the reader's task, repair omitted steps
     and unsupported claims, and separate completed writing from publication
     readiness. A self-score or passed style check does not establish usefulness.
+18. Carry a portable knowledge consultation: actionable editorial guidance with
+    original URLs, source context and limits, or an explicit no-match/unavailable
+    outcome. Teach a future writer to reuse it and, when the installed library
+    is available, consult only changed or unresolved scope under its protocol.
+    The embedded approved guidance remains usable without the library; missing
+    factual support and author intake remain separate drafting gates.
 
 ## Building the prompt
 
@@ -245,7 +270,8 @@ For a standalone request, return:
 - Primary CTA:
 ```
 
-Do not add strategy commentary inside the copy-paste prompt unless the user asks for it.
+Keep strategy commentary out of the copy-paste prompt; the adopted knowledge
+guidance and its provenance are part of the executable brief, not commentary.
 Inside `seo-landing-page`, provide the same data to the parent without
 turning it into a user-facing approval checkpoint or an alternate drafting
 contract.
@@ -279,6 +305,14 @@ Before delivering the generated prompt, verify:
   interview count and author intake status/basis retained. An export reuses
   resolved intake and resumes pending intake; it starts intake when a plan-only
   packet has not required it yet. It never resets the existing count or plan.
+- Independent prompts contain the route `prompt` consultation with actionable
+  guidance, original URLs, inspected passage context and source limits; no-match
+  and unavailable outcomes are explicit. No product fact or audience research
+  is inferred from editorial route leads. Generation does not conduct intake.
+- Parent exports preserve the full existing consultation without fresh search;
+  missing provenance, absence, or conflict is returned to the parent. Copied
+  prompts work from embedded guidance without repository access, and optional
+  later library use respects intake and saved-plan ownership.
 - The original user-supplied primary and chosen focus occupy distinct fields.
 - Reports and planning notes use `[[INSTRUCTION_LANGUAGE]]`, not a hardcoded language.
 - Metadata guidance does not require Meta Keywords.

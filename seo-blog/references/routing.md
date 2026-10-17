@@ -30,6 +30,12 @@ save a second brief. A keyword addition alone does not require a new strategy
 brief when it fits the existing situation and intent. Preserve user edits when
 updating the plan and reset downstream stages only when it changes.
 
+Reuse the saved [`seo-knowledge`](../../seo-knowledge/SKILL.md) consultation;
+refresh only affected guidance/evidence when the task, claims, or freshness
+change. Review findings and update briefs carry their inspected references into
+this same plan. Humanization and local wording fixes preserve the protected
+consultation instead of starting another survey or author interview.
+
 For an audit-only request, pass the article, available metadata/plan, current
 product evidence, and requested scope to
 [seo-content-review](../../seo-content-review/SKILL.md). Its report and update

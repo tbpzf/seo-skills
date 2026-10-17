@@ -40,6 +40,16 @@ a reasoned hypothesis, and an unknown; a supplied claim is not automatically
 verified. Never invent customer quotes, volumes, search behavior, product
 capabilities, or performance results.
 
+Consult [seo-knowledge](../seo-knowledge/SKILL.md) with route `audience` for
+relevant audience/brief guidance and topical evidence, following its
+[consultation contract](../seo-knowledge/references/consultation.md). Reuse a
+fitting parent consultation; refresh only changed questions or evidence. For
+new body copy before the parent's author intake is resolved, limit this to a
+bounded metadata inventory and return `deferred for intake`; expanded source
+reading waits for intake. Standalone brief/strategy work needs no author
+interview merely to consult the library. Record no-match or unavailable results
+and retain material evidence gaps; route guidance is not customer research.
+
 If only keywords are supplied, produce a provisional brief or strategy. Infer
 plausible situations, label them as hypotheses, and identify the smallest
 customer or page evidence needed to check them. Ask for missing context only
@@ -120,13 +130,17 @@ For a **single-content brief**, include:
 - Useful internal links for owned pages, the next action or CTA when relevant,
   success measures, and unresolved evidence with its likely owner (for example
   sales, support, or the contributor).
+- Knowledge consultation in the existing brief/source fields: selected guidance
+  and its applied brief decisions, factual source mappings and limits, or the
+  explicit deferred/no-match/unavailable outcome. Preserve conflicts and gaps
+  for the writing owner; do not create a separate report.
 
 Keep the brief proportionate to the assignment. A narrow page may need only one
 well-supported situation. The brief is complete when the reader's task,
 expected answer/artifact, completion criterion and next question, intent evidence
 and uncertainty, evidence-labeled situation, decision criteria, needed proof,
 scope, added value, and validation gaps are explicit. When handing it to a
-writing workflow, preserve supplied facts and evidence labels. `seo-writing` defines the owned-site
+writing workflow, preserve supplied facts, evidence labels, and the existing knowledge consultation. `seo-writing` defines the owned-site
 content-plan schema; `seo-landing-page` and `seo-blog` own the saved
 `content-plan.md` and merges. `seo-guest-post` owns publisher fit, links,
 disclosures, pitch structure, copy, and submission notes in chat, and saves a

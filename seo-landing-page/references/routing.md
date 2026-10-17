@@ -46,6 +46,13 @@ requested fixes and retain unaffected sections. A change to intent, product
 constraints, CTA, or supplied keywords updates the plan first. Record evidence gaps as
 publication blockers.
 
+Carry the existing [`seo-knowledge`](../../seo-knowledge/SKILL.md) consultation
+through these branches. Planning/substantive changes refresh relevant material
+under the shared protocol; audit-only work uses the reviewer's read-only
+consultation, and humanization/local wording edits preserve the protected
+contract without a new library survey. Prompt exports preserve selected
+guidance, provenance, and limits rather than researching a replacement plan.
+
 ## Draft gate and editorial guardrails
 
 - Require product identity and category, at least one actual capability or

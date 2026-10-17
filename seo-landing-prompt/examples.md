@@ -48,6 +48,20 @@ The generated prompt must:
    and cap the interview at 10 total. Keep gaps in the report.
 9. Derive section detail from the reader's decision, with no invented heading
    word limits or item counts. Verify that the reader can complete the task.
+10. Consult `seo-knowledge` with route `prompt` for a bounded set of relevant
+    editorial passages before returning the initial template. This does not
+    start audience strategy, author intake, product research, or page writing.
+    A subject no-match for kitchen design can coexist with useful writing
+    guidance; neither establishes kitchen-product capabilities or audience facts.
+11. Fill `[[KNOWLEDGE_CONSULTATION]]` with the adopted decisions and their
+    original URLs, inspected source context, capture status/type/date/scope, and
+    limits. If no relevant guidance exists, embed that outcome rather than a
+    fabricated source. Keep the prompt usable without local archive access.
+
+Representative route: keyword → route `prompt` editorial consultation → copied
+template plus fill list. At execution time, a future writer reuses the embedded
+guidance and resolves intake before new body copy; installed-library refresh is
+only for changed or unresolved scope, with metadata-only work before intake.
 
 Its “Fill before use” list should ask for:
 
@@ -140,13 +154,17 @@ Plan state: reader situation and search intent supported by supplied customer
 questions; three retained sections with recorded jobs; D1 documents the review
 workflow and its approval limit; D2 is an attributed decision rule with its
 source and scope. Packet ready. Three source questions have already been answered.
+The plan already contains a Knowledge consultation with its original URLs,
+inspected passages, capture/source context, adopted editorial decisions, and
+limits; its selected guidance still fits the page scope.
 ```
 
 ### Expected behavior
 
 - Embed the complete saved plan unchanged, including D1/D2 details, source,
-  attribution, evidence status, limits, section mapping, keyword decisions, and the
-  existing interview count and author intake status/basis.
+  attribution, evidence status, limits, section mapping, keyword decisions,
+  the existing interview count and author intake status/basis, and the entire
+  Knowledge consultation rather than a summary or archive paths alone.
 - Reuse the three planned sections. Do not regenerate a six-module outline or
   ask the same source questions again. A necessary general explanation may use
   a grounded answer without duplicating D1 or D2.
@@ -154,3 +172,44 @@ source and scope. Packet ready. Three source questions have already been answere
   A blocked central promise remains blocked in the export.
 - Include a concrete reader-task walkthrough and source-integrity check in the
   prompt. Keep unresolved gaps and readiness notes outside page copy.
+- Perform no fresh search, source reading, keyword selection, or replanning.
+  The export remains portable through the embedded decisions, original URLs,
+  inspected source context and limits. Future changed-scope research returns
+  to the owning plan workflow rather than silently replacing this contract.
+
+Representative route: saved plan → verbatim saved contract and consultation →
+parent-owned export/save. Resolved stages stay resolved; pending stages and
+central blockers remain intact.
+
+## Missing or partial knowledge sources
+
+### Independent template
+
+- A selected source marked `partial` permits only its inspected accessible
+  passage. Embed that passage's useful decision, original URL, source context,
+  and explicit limit; do not claim the missing remainder or metadata-only
+  attachment was read. An unavailable original remains a named gap. A readable
+  star-post interpretation may be attributed as such, not as the unseen
+  original's claim.
+- A missing or damaged bundle produces an `unavailable` consultation in the
+  prompt. The initial template can still use supported supplied material and
+  its existing fact/intake gates; it does not claim archive-backed guidance or
+  install anything. If the required `seo-knowledge` skill itself cannot load,
+  report that dependency blocker instead of claiming a completed consultation.
+- A valid bundle with no fitting subject or editorial passage produces
+  `no relevant match`. Do not force an unrelated source or infer product facts
+  from a route recommendation.
+
+### Saved-plan export
+
+- If the consultation is absent, partial, deferred, unavailable, or conflicting,
+  copy the saved plan unchanged and return the exact consultation gap to the
+  parent. Do not search to repair it. Missing local library access does not
+  prevent packaging already embedded guidance.
+- If the consultation contains only local paths and no portable decisions,
+  original URLs or source context, retain those paths but report the portability
+  gap outside the prompt. The parent resolves it; do not label the export
+  copy-paste-ready while required source context remains unresolved.
+- A conflict with approved product facts or current first-party rules stays
+  visible. The archive does not override those authorities, and export does
+  not silently revise the saved decision.

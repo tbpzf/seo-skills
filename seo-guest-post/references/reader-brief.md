@@ -28,6 +28,10 @@ audience can overlap with that reader, but the host decides editorial fit.
 - State the permitted product role, disclosure and link constraints, and any
   unresolved host requirements. If the host is unknown, mark host fit and
   format provisional.
+- Preserve the shared Knowledge consultation and its concrete use in this
+  angle, evidence plan, or section sequence. Keep editorial guidance separate
+  from facts about the host's readers or the product, and carry original
+  source/capture limits into the submission notes without a separate artifact.
 
 The guest-post brief and submission notes own these editorial decisions.
 Owned-site coverage, internal-link architecture, and sales CTAs do not set a

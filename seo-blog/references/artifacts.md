@@ -37,6 +37,12 @@ alternatives, author intake status and basis, pending question, interview count,
 gap owners/actions, and section
 mapping.
 
+Retain the full Knowledge consultation in that packet, including queries/topic
+IDs, inspected original URLs/passages, source type/date/scope, capture limits,
+guidance-versus-evidence role, and applied decisions. Merge matching brief
+research without creating a separate report or duplicating the consultation.
+Keep this internal log outside the publishable article.
+
 ## `content.md`
 
 Save only the publishable Markdown article: exactly one `# H1`, followed by
@@ -130,6 +136,10 @@ leaves intake pending. Reevaluate the shared gate at Stage 2 before drafting.
 Fold new answers into the existing packet without resetting the count; reevaluate
 Stage 2. Reuse a valid packet for local supported revisions. Normalize any
 refreshed brief into this same plan, preserving user edits.
+Reuse a fitting Knowledge consultation and refresh only changed scope, evidence,
+or materially stale claims. Keep deferred/no-match/unavailable outcomes explicit;
+an older missing record is unknown rather than evidence of a completed lookup.
+A local correction does not trigger a new library survey.
 Rebuild stage states from documented work; leave unproven
 rewrites and checks pending. If status is absent, infer the
 earliest incomplete stage from available files and recreate status. If the

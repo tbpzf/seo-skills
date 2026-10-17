@@ -11,6 +11,13 @@ factual gaps here so follow-up questions focus on private knowledge.
 
 ## Fill accessible gaps
 
+Use or refresh the packet's [`seo-knowledge`](../../seo-knowledge/SKILL.md)
+consultation when relevant archived material can inform the current question.
+Follow its selection and source-use protocol, then apply the evidence checks
+below. A retrieved page is not automatically checked evidence, and writing
+advice is not a fact about the user's product. Retain no-match, deferred, or
+unavailable outcomes in the existing packet rather than creating a report.
+
 1. Read relevant supplied sources or artifacts. If needed and tools are
    available, research the smallest set of primary documentation, original
    research, or reputable original reporting that can resolve the gap. A search

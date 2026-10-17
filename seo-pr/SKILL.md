@@ -30,6 +30,14 @@ For a new full release, apply its default author intake after a brief inventory,
 before extended research and drafting. Follow its intake reuse and explicit
 user opt-out rules; ask one question at a time, up to 10 questions total.
 
+Consult [`seo-knowledge`](../seo-knowledge/SKILL.md) with route `press-release`
+for relevant evidence, attribution, publisher, or editorial questions during
+source research and scoped audits. For new body copy, inventory only before
+intake and read originals afterward. Reuse a fitting consultation and carry it
+in the existing packet/readiness notes; a local component or wording correction
+does not require a library survey. Archived SEO/outreach methods do not supply
+newsworthiness, company facts, quote approval, or current distribution rules.
+
 ## Operating modes
 
 | Mode | Input | Output |
@@ -256,6 +264,8 @@ Verify:
 - The distinctive-content packet names the reader change, source owner,
   completeness, evidence limits, pending question, asked/answered counts, and
   any approval still required.
+- Adopted archive guidance fits this reporting task; inspected factual sources,
+  source dates/scopes, and partial/unavailable-original limits remain traceable.
 - The headline and lead identify the news without hype or ambiguity.
 - The five Ws, availability, market, key limits, and CTA are clear.
 - Every claim, number, comparison, certification, customer, partner, and quote
@@ -302,6 +312,9 @@ For `draft` or `revise`, return:
 - Final checks required:
 - Distinctive contribution and evidence packet:
 - Author intake status/basis, packet completeness, pending question, and interview asked/answered counts:
+- Knowledge consultation: selected references, original passages/URLs, capture
+  and evidence limits, applied decisions, or an explicit no-match/unavailable/
+  deferred outcome; reuse the source packet rather than a new report
 ```
 
 Do not call a release wire-ready while placeholders, unapproved proposed quotes,

@@ -36,6 +36,12 @@ When keywords were supplied, include the primary term and every long-tail
 phrase with its intended reader question, planned section and wording, or
 reason for omission, using the [keyword plan](keywords.md).
 
+Carry the packet's full Knowledge consultation in this same brief: selected
+topic IDs, inspected original passages/URLs, capture status, source type/date/
+scope, guidance-versus-evidence role, adopted decisions, and unresolved limits.
+Reuse a fitting audience-stage consultation; keep any deferred/no-match or
+unavailable outcome explicit. It is not a separate saved report.
+
 ## Draft route
 
 Return the complete article under `## Guest post`, with its title, byline or
@@ -64,6 +70,9 @@ Follow with `## Submission notes` containing:
   status/basis and interview questions
   asked/answered, pending question, completeness, source owner, mapped
   sections, and open evidence gaps
+- Knowledge consultation retained from the brief/packet, including applied
+  guidance, original attribution and capture limits; note changed or rejected
+  recommendations and any refresh needed
 - Contributor relationship, disclosure text/status, and byline status
 - Evidence and source gaps, including AI-specific claims when applicable
 - Originality, exclusivity, and rights status
@@ -118,6 +127,11 @@ material changes, unresolved blockers, and any host guideline conflicts.
 Keep edits within the requested scope and report any unrelated substantive
 findings separately. Recheck supplied keywords against the revised body and
 account for each in submission notes.
+
+Reuse fitting knowledge research during revision; refresh only affected scope,
+claims, or stale facts. Read-only review passes its source-backed consultation
+through the existing update brief. Humanization and local corrections preserve
+that contract without creating a new library-research or interview stage.
 
 For audit, pass the existing article, reader angle, supplied keywords, sources,
 current product change notes, and known host rules to

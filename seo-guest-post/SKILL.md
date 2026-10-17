@@ -51,6 +51,15 @@ the writing or rewrite stages. A local correction retains
 the supplied article's task and sources, reuses any valid brief and packet,
 and reports unrelated source gaps in its audit without reopening the interview.
 
+Use [`seo-knowledge`](../seo-knowledge/SKILL.md) with route `guest-post` through
+the reader brief and distinctive packet. Reuse a fitting consultation, defer
+expanded source reading until author intake is resolved, and retain inspected
+passages, original URLs, source limits, and applied editorial decisions in the
+brief/submission notes. The host's current rules and contributor's actual
+evidence remain controlling; archive outreach opinions do not authorize hidden
+sponsorship, manufactured experience, or search-policy evasion. Local wording
+fixes preserve the existing consultation instead of starting another survey.
+
 ## Shared workflow
 
 ### 1. Establish the editorial contract

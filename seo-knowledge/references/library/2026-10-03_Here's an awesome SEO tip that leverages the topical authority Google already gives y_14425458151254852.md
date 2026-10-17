@@ -1,0 +1,732 @@
+---
+title: "Here's an awesome SEO tip that leverages the topical authority Google already gives your site:"
+topic_id: "14425458151254852"
+group: "SEO日报"
+group_id: "88882458825452"
+created_at: "2026-10-03T00:14:21.118+0800"
+author: "虾虾"
+type: "talk"
+tags: ["#SEO#", "#Tips#"]
+original_urls: ["https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/"]
+---
+
+# Here's an awesome SEO tip that leverages the topical authority Google already gives your site:
+
+- 发布时间：2026-10-03T00:14:21.118+0800
+- 作者：虾虾
+- 星球原帖：[查看帖子](https://wx.zsxq.com/group/88882458825452/topic/14425458151254852)
+- 标签：#SEO##Tips#
+
+## 星球正文
+
+Here's an awesome SEO tip that leverages the topical authority Google already gives your site:
+
+Darren Shaw 在 LinkedIn 分享了一个内链小技巧（来自 Edward Sturm，在 Whitespark Local Update Podcast 上讲的）：不要从零开始推一个新页面，而是找到 Google 已经把你网站和这个关键词关联起来的那一页，把站内相关页面的内链都指向它。
+
+要点：
+1. 第一步：在 Google 里搜“你的域名 + 目标关键词”，比如 yourwebsite.com water heater repair。
+2. 第二步：如果搜出来的是你自己的某个页面，而且和这个词很匹配，它就是你要重点加强的页面。
+3. 第三步：再搜 site:yourwebsite.com water heater repair，Google 会列出你站内所有提到这个话题的页面。
+4. 第四步：从这些页面各加一条内链，指向第二步找到的目标页。
+
+结论：这样做是直接把 Google 引向它已经认定和这个话题相关的页面，而不是从头开始。帖子里没有给效果数据。
+
+原文：[https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+## 外部原文
+
+### 原文 1
+
+- 来源：<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>
+- 抓取时间：2026-10-17T02:39:12.452888+00:00
+- 状态：已获取原文页面
+
+---
+canonical: https://www.linkedin.com/posts/darrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw
+meta-al:android:app_name: LinkedIn
+meta-al:android:package: com.linkedin.android
+meta-al:android:url: https://www.linkedin.com/posts/darrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw
+meta-al:ios:app_name: LinkedIn
+meta-al:ios:app_store_id: 288429040
+meta-al:ios:url: https://www.linkedin.com/posts/darrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw
+meta-bingbot: max-image-preview:large, archive
+meta-clientSideIngraphs: 1
+meta-description: Here's an awesome SEO tip that leverages the topical authority Google already gives your site:
+
+Step 1: Google your website plus the keyword you want to rank for, like this:
+yourwebsite.com water heater repair
+
+Step 2: If one of your existing pages shows up and it's a good match for that keyword, that's the page you’re going to boost in the next steps.
+
+Step 3: Now find any related pages on your website. Search "site:yourwebsite.com water heater repair", and Google will show you every page on your site that mentions that topic.
+
+Step 4: Add an internal link from each of those pages to the page you want to boost.
+This way, you're pointing Google straight at the page it already connects with that topic, instead of starting from scratch.
+
+This tip comes from the brilliant Edward Sturm, who is my guest co-host on this week’s Whitespark Local Update Podcast. We discuss this topic in detail, plus:
+
+- NotebookLM Parasite SEO (Gagan Ghotra)
+- King of AEO: The Exact Tactics Ranking Pages and Changing AI Overviews in Hours (Edward Sturm)
+- 5 reasons why I'm skeptical of the entire AI tracking industry (Rand Fishkin)
+- I Tracked 70K+ ChatGPT and AI Overview Responses to Measure Their Volatility (Glen Allsopp)
+- Hacking AI Overviews with LinkedIn hashtags (Steve Toth)
+- How to check if AI has your content in its index (Myriam Jessier)
+
+Find the full episode on YouTube, Apple Podcasts, and Spotify! | 21 comments on LinkedIn
+meta-lnkd:url: https://www.linkedin.com/feed/update/urn:li:activity:7511079095510790144
+meta-locale: en_US
+meta-og:description: Here's an awesome SEO tip that leverages the topical authority Google already gives your site:
+
+Step 1: Google your website plus the keyword you want to rank for, like this:
+yourwebsite.com water heater repair
+
+Step 2: If one of your existing pages shows up and it's a good match for that keyword, that's the page you’re going to boost in the next steps.
+
+Step 3: Now find any related pages on your website. Search "site:yourwebsite.com water heater repair", and Google will show you every page on your site that mentions that topic.
+
+Step 4: Add an internal link from each of those pages to the page you want to boost.
+This way, you're pointing Google straight at the page it already connects with that topic, instead of starting from scratch.
+
+This tip comes from the brilliant Edward Sturm, who is my guest co-host on this week’s Whitespark Local Update Podcast. We discuss this topic in detail, plus:
+
+- NotebookLM Parasite SEO (Gagan Ghotra)
+- King of AEO: The Exact Tactics Ranking Pages and Changing AI Overviews in Hours (Edward Sturm)
+- 5 reasons why I'm skeptical of the entire AI tracking industry (Rand Fishkin)
+- I Tracked 70K+ ChatGPT and AI Overview Responses to Measure Their Volatility (Glen Allsopp)
+- Hacking AI Overviews with LinkedIn hashtags (Steve Toth)
+- How to check if AI has your content in its index (Myriam Jessier)
+
+Find the full episode on YouTube, Apple Podcasts, and Spotify! | 21 comments on LinkedIn
+meta-og:image: https://media.licdn.com/dms/image/v2/D5622AQGbJpOIHdyefA/feedshare-shrink_1280/B56aDy2oV9HkAQ-/0/1790780802756?e=2147483647&v=beta&t=5Jkp6zTq4BJuBtcmgLBt_kFZkrlz7mOl-fUkbJquIEQ
+meta-og:locale: en_US
+meta-og:site_name: LinkedIn
+meta-og:title: Boost Google Rankings with Topical Authority | Darren Shaw posted on the topic | LinkedIn
+meta-og:type: article
+meta-og:url: https://www.linkedin.com/posts/darrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw
+meta-pageKey: d_public_post
+meta-robots: max-image-preview:large, noarchive
+meta-twitter:card: summary_large_image
+meta-twitter:description: Here's an awesome SEO tip that leverages the topical authority Google already gives your site:
+
+Step 1: Google your website plus the keyword you want to rank for, like this:
+yourwebsite.com water heater repair
+
+Step 2: If one of your existing pages shows up and it's a good match for that keyword, that's the page you’re going to boost in the next steps.
+
+Step 3: Now find any related pages on your website. Search "site:yourwebsite.com water heater repair", and Google will show you every page on your site that mentions that topic.
+
+Step 4: Add an internal link from each of those pages to the page you want to boost.
+This way, you're pointing Google straight at the page it already connects with that topic, instead of starting from scratch.
+
+This tip comes from the brilliant Edward Sturm, who is my guest co-host on this week’s Whitespark Local Update Podcast. We discuss this topic in detail, plus:
+
+- NotebookLM Parasite SEO (Gagan Ghotra)
+- King of AEO: The Exact Tactics Ranking Pages and Changing AI Overviews in Hours (Edward Sturm)
+- 5 reasons why I'm skeptical of the entire AI tracking industry (Rand Fishkin)
+- I Tracked 70K+ ChatGPT and AI Overview Responses to Measure Their Volatility (Glen Allsopp)
+- Hacking AI Overviews with LinkedIn hashtags (Steve Toth)
+- How to check if AI has your content in its index (Myriam Jessier)
+
+Find the full episode on YouTube, Apple Podcasts, and Spotify! | 21 comments on LinkedIn
+meta-twitter:image: https://media.licdn.com/dms/image/v2/D5622AQGbJpOIHdyefA/feedshare-shrink_1280/B56aDy2oV9HkAQ-/0/1790780802756?e=2147483647&v=beta&t=5Jkp6zTq4BJuBtcmgLBt_kFZkrlz7mOl-fUkbJquIEQ
+meta-twitter:site: @linkedin
+meta-twitter:title: Boost Google Rankings with Topical Authority | Darren Shaw posted on the topic | LinkedIn
+meta-twitter:url: https://www.linkedin.com/posts/darrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw
+title: Boost Google Rankings with Topical Authority | Darren Shaw posted on the topic | LinkedIn
+---
+
+# Darren Shaw’s Post
+
+[![View profile for Darren Shaw](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)](https://ca.linkedin.com/in/darrenshawwhitespark?trk=public_post_feed-actor-image)
+
+[Darren Shaw](https://ca.linkedin.com/in/darrenshawwhitespark?trk=public_post_feed-actor-name)
+
+2w
+
+- [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+Here's an awesome SEO tip that leverages the topical authority Google already gives your site:
+
+Step 1: Google your website plus the keyword you want to rank for, like this:
+[yourwebsite.com](http://yourwebsite.com?trk=public_post-text) water heater repair
+
+Step 2: If one of your existing pages shows up and it's a good match for that keyword, that's the page you’re going to boost in the next steps.
+
+Step 3: Now find any related pages on your website. Search "site:[yourwebsite.com](http://yourwebsite.com?trk=public_post-text) water heater repair", and Google will show you every page on your site that mentions that topic.
+
+Step 4: Add an internal link from each of those pages to the page you want to boost.
+This way, you're pointing Google straight at the page it already connects with that topic, instead of starting from scratch.
+
+This tip comes from the brilliant [Edward Sturm](https://www.linkedin.com/in/edward-sturm?trk=public_post-text), who is my guest co-host on this week’s Whitespark Local Update Podcast. We discuss this topic in detail, plus:
+
+- NotebookLM Parasite SEO ([Gagan Ghotra](https://au.linkedin.com/in/gagan-ghotra?trk=public_post-text))
+- King of AEO: The Exact Tactics Ranking Pages and Changing AI Overviews in Hours (Edward Sturm)
+- 5 reasons why I'm skeptical of the entire AI tracking industry ([Rand Fishkin](https://www.linkedin.com/in/randfishkin?trk=public_post-text))
+- I Tracked 70K+ ChatGPT and AI Overview Responses to Measure Their Volatility ([Glen Allsopp](https://uk.linkedin.com/in/glen-allsopp-63084025?trk=public_post-text))
+- Hacking AI Overviews with LinkedIn hashtags ([Steve Toth](https://ca.linkedin.com/in/stevetothjr?trk=public_post-text))
+- How to check if AI has your content in its index ([Myriam Jessier](https://ca.linkedin.com/in/myriamjessier?trk=public_post-text))
+
+Find the full episode on YouTube, Apple Podcasts, and Spotify!
+
+- ![graphical user interface, application, website](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+[![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 149](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_social-actions-reactions) [21 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_social-actions-comments)
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment-cta)
+
+[  
+
+](https://www.linkedin.com/in/cindymdodd?trk=public_post_comment_actor-image)
+
+[Cindy Dodd⚡️](https://www.linkedin.com/in/cindymdodd?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Does that internal linking strategy move the needle faster than waiting for fresh backlinks?
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) [3 Reactions](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reactions) 4 Reactions
+
+[  
+
+](https://www.linkedin.com/in/trentonerker?trk=public_post_comment_actor-image)
+
+[Trenton Erker](https://www.linkedin.com/in/trentonerker?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+You brought it way back to the 2010s! The basics work
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) [3 Reactions](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reactions) 4 Reactions
+
+[  
+
+](https://www.linkedin.com/in/petia-nikolova?trk=public_post_comment_actor-image)
+
+[Petia Nikolova](https://www.linkedin.com/in/petia-nikolova?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+What a neat trick!
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) [1 Reaction](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reactions) 2 Reactions
+
+[  
+
+](https://in.linkedin.com/in/naman-kaushal-creative?trk=public_post_comment_actor-image)
+
+[Naman Kaushal](https://in.linkedin.com/in/naman-kaushal-creative?trk=public_post_comment_actor-name) 3d
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Internal linkiing is underrate SEO lever you can improe it without waiting for backlink, would you priortize links from every related page or only those already attracting relevant traffic?
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) 1 Reaction
+
+[  
+
+](https://pk.linkedin.com/in/umar-link-building?trk=public_post_comment_actor-image)
+
+[Syed Umar Jan](https://pk.linkedin.com/in/umar-link-building?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Good low-effort tactic. One thing to keep in mind: internal links only redistribute authority a site already has, so this works best for pages with relevance but weak signals. A page that needs more authority overall still needs external editorial links, which internal ones cant replace. Do you see it working best on local service pages?
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) 1 Reaction
+
+[  
+
+](https://pk.linkedin.com/in/muhammad-saffiullah?trk=public_post_comment_actor-image)
+
+[Muhammad Saffiullah](https://pk.linkedin.com/in/muhammad-saffiullah?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Running this exact play on a Florida site this week. The page with the deepest expertise on the topic has zero internal links pointing at it. Zero. Google can't boost what the site never signals.
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) 1 Reaction
+
+[  
+
+](https://in.linkedin.com/in/kumar-satyam-seo?trk=public_post_comment_actor-image)
+
+[Kumar Satyam](https://in.linkedin.com/in/kumar-satyam-seo?trk=public_post_comment_actor-name) 1w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Old school trick 😄 But these days, you can’t just slap this on thin/low-quality pages and expect Google to roll out the red carpet. 😂
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) [1 Reaction](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reactions) 2 Reactions
+
+[  
+
+](https://in.linkedin.com/in/tejas-d-jaiprakash?trk=public_post_comment_actor-image)
+
+[Tejas D Jaiprakash](https://in.linkedin.com/in/tejas-d-jaiprakash?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Rand being skeptical of AI tracking and Glen tracking 70K+ responses in the same episode is great programming; love a bit of tension 😄
+
+Curious if Glen's data showed the same thing I saw on a much smaller scale. I ran one buying question 20 times, and the top 3 brands never moved; everything below them kept shuffling. If that holds at 70K, a lot of the volatility debate is really about which tier you're in
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) 1 Reaction
+
+[  
+
+](https://in.linkedin.com/in/yashneharkar?trk=public_post_comment_actor-image)
+
+[Yash Neharkar](https://in.linkedin.com/in/yashneharkar?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Internal linking is still such an underrated SEO lever.
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) [1 Reaction](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reactions) 2 Reactions
+
+[  
+
+](https://in.linkedin.com/in/technokiran?trk=public_post_comment_actor-image)
+
+[Kiran More](https://in.linkedin.com/in/technokiran?trk=public_post_comment_actor-name) 2w
+
+- [Report this comment](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=COMMENT&_f=guest-reporting)
+
+Instead go to google search console > performance then get the pages data by highest clicks and impressions
+
+[Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_like) [Reply](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_comment_reply) 1 Reaction
+
+[See more comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_see-more-comments)
+
+To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_feed-cta-banner-cta)
+
+## More Relevant Posts
+
+- [](https://www.linkedin.com/posts/ewrdigital_ai-search-might-be-sending-you-less-traffic-activity-7514082232710520832-OdHa)
+
+[  
+
+](https://www.linkedin.com/company/ewrdigital?trk=public_post_feed-actor-image)
+
+  [EWR Digital](https://www.linkedin.com/company/ewrdigital?trk=public_post_feed-actor-name)
+  1,212 followers
+
+1w
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fewrdigital_ai-search-might-be-sending-you-less-traffic-activity-7514082232710520832-OdHa&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    AI search might be sending you less traffic, but what if that traffic is worth more?
+
+    That's one of the more interesting shifts happening in search right now.
+
+    Someone who arrives through Google might still be exploring their options. But someone who has spent 10 minutes asking ChatGPT to compare providers, evaluate their expertise and recommend a solution could arrive at your website much closer to making a decision.
+
+    The AI has already helped them do some of the research.
+
+    And that's where traditional marketing reporting starts to get complicated.
+
+    If an AI recommendation influences a purchase but the buyer never clicks through directly from ChatGPT, how much of that influence will your analytics actually capture?
+
+    It's a question businesses need to start asking as AI becomes a bigger part of the buying journey.
+
+    In this clip from Best SEO Podcast, Matthew Bertram and Calum Kennard discuss the growth of commercial intent in AI search, the conversion potential of LLM referral traffic and why rankings and website visits no longer tell the whole story.
+
+    Watch the full episode for a deeper discussion of SEO, GEO and how businesses can adapt their visibility strategies:
+
+    [https://lnkd.in/edmJsDQA](https://lnkd.in/edmJsDQA?trk=public_post-text)
+
+…more
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 4](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fewrdigital_ai-search-might-be-sending-you-less-traffic-activity-7514082232710520832-OdHa&trk=public_post_social-actions-reactions)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fewrdigital_ai-search-might-be-sending-you-less-traffic-activity-7514082232710520832-OdHa&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fewrdigital_ai-search-might-be-sending-you-less-traffic-activity-7514082232710520832-OdHa&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fewrdigital_ai-search-might-be-sending-you-less-traffic-activity-7514082232710520832-OdHa&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/nicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C)
+
+[  
+
+](https://uk.linkedin.com/in/nicoleosborne1?trk=public_post_feed-actor-image)
+
+  [Nicole Osborne](https://uk.linkedin.com/in/nicoleosborne1?trk=public_post_feed-actor-name)
+  LinkedIn Strategist & Coach Helping Agency & Tech Founders Who’ve Almost Given Up on LinkedIn Attract Their Ideal Clients 🤩 | Powered by ☕️, MCode & Personal Brand Strategy
+
+1w
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    Your LinkedIn posts can sound impressive and your dream clients can still scroll straight past. 🙈
+
+    One agency founder showed me his über-polished LinkedIn posts.
+
+    They were packed with expertise. He was so proud of his content process. Yet he got content crickets.
+
+    But reading his posts, I was left with a question his dream clients might have too. Watch the video to find out.
+
+    If you want to avoid vanilla AI-sounding content, here’s a question to ask yourself before hitting post. 👇
+
+    'Could only I have said or written this?' If not, it's time to add a real experience to make your audience feel seen.
+
+    PS. When you use AI to help you write posts, do they sound like you or a little too polished?
+
+    Edited with AI. Idea and Blue Trabbant are 100% Mine.
+
+…more
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 21](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C&trk=public_post_social-actions-reactions) [13 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C&trk=public_post_social-actions-comments)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicoleosborne1_your-linkedin-posts-can-sound-impressive-activity-7513606251520434176-m30C&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/charlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat)
+
+[  
+
+](https://th.linkedin.com/in/charlesfloate?trk=public_post_feed-actor-image)
+
+  [Charles Floate](https://th.linkedin.com/in/charlesfloate?trk=public_post_feed-actor-name) 1w
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcharlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    YouTube videos are INCREDIBLY powerful SEO tools for getting cited in Google AI Overviews right now!!! 🔥🔥🔥
+
+    [James Dooley](https://uk.linkedin.com/in/jameszdooley?trk=public_post-text)taught me this technique where you load extractable passages into the transcript and even longer form videos are starting to get picked up quite frequently now too!!
+
+    Start treating your YouTube transcripts like indexable documents, not JUST subtitles, scripts are actually more important than ever now 👀
+
+    And YouTube now gives you a Google-owned (and massively higher weighted as a result) authority surface, video search AND AI search visibility, a transcript Google can retrieve passages from AND an entity association between your channel, guests and the topics you're discussing - Which can all feed into your KGMID..
+
+    You can also use AI to speed run video and podcast production too, so there's pretty much no excuse not to do this either!! 🙌
+
+  * ![No alternative text description for this image](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 52](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcharlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat&trk=public_post_social-actions-reactions) [5 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcharlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat&trk=public_post_social-actions-comments)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcharlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcharlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcharlesfloate_youtube-videos-are-incredibly-powerful-seo-activity-7513294515823296514-pLat&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/rovidx_im-getting-tired-of-ai-marketers-being-lazy-activity-7506744036750389250-tTDV)
+
+[  
+
+](https://ca.linkedin.com/in/rovidx?trk=public_post_feed-actor-image)
+
+  [Rob Davenport](https://ca.linkedin.com/in/rovidx?trk=public_post_feed-actor-name) 4w
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Frovidx_im-getting-tired-of-ai-marketers-being-lazy-activity-7506744036750389250-tTDV&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    I'm getting tired of AI marketers being lazy...
+
+    Every day I wake up to LinkedIn messages that read like they where written with AI, trying to sell me on something.
+
+    They all start the same... they detail what they do, then they ask a leading question like "What's taking up most of your attention at[Rovidx Media & Consulting Inc.](https://ca.linkedin.com/company/rovidx?trk=public_post-text)?"
+
+    My email is even worse. AI Agents filling out our contact form offering me service trials, guests to interview on our podcasts, and software to "accelerate your business".
+
+    The services usually are services we already offer to our clients.
+
+    Our podcasts are not "interview" style podcasts (though I may change that soon!).
+
+    I don't need to buy their software, I can easily get Claude or Codex to build the same thing for a fraction of the price.
+
+    It's lazy... it's annoying and I generally ignore them, block them or delete them. Sometimes all 3.
+
+    In the AI age, relationships with actual people are more important to me than some spammy automated marketing tactic.
+
+    I was recently at GNWT Industry Days in Yellowknife. Meeting with actual people that where more curious about what I was working on and what problems I need solved made me appreciate the "real life" networking.
+
+    AI is a great tool, not a marketing strategy.
+
+  * ![No alternative text description for this image](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) View C2PA information
+
+![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 1](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Frovidx_im-getting-tired-of-ai-marketers-being-lazy-activity-7506744036750389250-tTDV&trk=public_post_social-actions-reactions)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Frovidx_im-getting-tired-of-ai-marketers-being-lazy-activity-7506744036750389250-tTDV&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Frovidx_im-getting-tired-of-ai-marketers-being-lazy-activity-7506744036750389250-tTDV&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Frovidx_im-getting-tired-of-ai-marketers-being-lazy-activity-7506744036750389250-tTDV&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/trylyra_a-backlink-to-your-site-correlates-with-ai-activity-7515634259743637505--GE4)
+
+[  
+
+](https://sg.linkedin.com/company/trylyra?trk=public_post_feed-actor-image)
+
+  [Lyra AI](https://sg.linkedin.com/company/trylyra?trk=public_post_feed-actor-name)
+  52 followers
+
+3d
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Ftrylyra_a-backlink-to-your-site-correlates-with-ai-activity-7515634259743637505--GE4&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    A backlink to your site correlates with AI visibility at 0.218. A brand mention with zero links attached correlates at up to 0.709, roughly three times stronger. AI visibility means whether ChatGPT or Gemini recommend you at all. That runs against common SEO advice.
+
+    Conventional SEO advice says build links, and citations follow. A study looked at 75,000 brands with a Domain Rating of 40 or higher. Domain Rating is an authority score for how established a site is. Branded mentions with no link tracked far closer to AI visibility than backlinks did. YouTube mentions were the single strongest signal, at 0.737. ChatGPT mentioned a brand 3.2 times more often than it linked to one.
+
+    An engine built on links still favors the unlinked mention. A link only proves one site pointed at another. A mention proves the brand actually exists and gets talked about, on podcasts, on YouTube, in press. That is closer to what a recommendation engine wants to measure.
+
+    Links still matter. This is correlation, not proof mentions cause citations, but your link budget is chasing the weaker signal.
+
+    Where to look this week:
+
+    - Search your brand name on YouTube for mentions with no link back to you
+- Check podcast show notes that name you but don't tag you
+- Pull up press or review coverage that mentions the product with no hyperlink
+
+    None of that shows up in a backlink report, so most founders never notice it happening.
+
+    Full breakdown here
+
+    Where did your brand get mentioned without a link this month, and did you even notice?
+
+  * ![No alternative text description for this image](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Ftrylyra_a-backlink-to-your-site-correlates-with-ai-activity-7515634259743637505--GE4&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Ftrylyra_a-backlink-to-your-site-correlates-with-ai-activity-7515634259743637505--GE4&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Ftrylyra_a-backlink-to-your-site-correlates-with-ai-activity-7515634259743637505--GE4&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/kaushik-bose_%F0%9D%90%8F%F0%9D%90%9E%F0%9D%90%A8%F0%9D%90%A9%F0%9D%90%A5%F0%9D%90%9E-%F0%9D%90%83%F0%9D%90%A8%F0%9D%90%A7%F0%9D%90%AD-%F0%9D%90%93%F0%9D%90%AB%F0%9D%90%AE%F0%9D%90%AC%F0%9D%90%AD-%F0%9D%90%98%F0%9D%90%A8%F0%9D%90%AE-activity-7510171721212121089-bpcs)
+
+[  
+
+](https://in.linkedin.com/in/kaushik-bose?trk=public_post_feed-actor-image)
+
+  [Kaushik Bose 🎙️](https://in.linkedin.com/in/kaushik-bose?trk=public_post_feed-actor-name) 2w
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fkaushik-bose_%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25A8%25F0%259D%2590%25A9%25F0%259D%2590%25A5%25F0%259D%2590%259E-%25F0%259D%2590%2583%25F0%259D%2590%25A8%25F0%259D%2590%25A7%25F0%259D%2590%25AD-%25F0%259D%2590%2593%25F0%259D%2590%25AB%25F0%259D%2590%25AE%25F0%259D%2590%25AC%25F0%259D%2590%25AD-%25F0%259D%2590%2598%25F0%259D%2590%25A8%25F0%259D%2590%25AE-activity-7510171721212121089-bpcs&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    𝐏𝐞𝐨𝐩𝐥𝐞 𝐃𝐨𝐧'𝐭 𝐓𝐫𝐮𝐬𝐭 𝐘𝐨𝐮 𝐉𝐮𝐬𝐭 𝐁𝐞𝐜𝐚𝐮𝐬𝐞 𝐓𝐡𝐞𝐲'𝐯𝐞 𝐇𝐞𝐚𝐫𝐝 𝐨𝐟 𝐘𝐨𝐮.
+
+    People talk about E-E-A-T in AI and SEO. But strip away the jargon and there's a very simple principle behind it:
+If you want anyone to take your content seriously on Google - or for that matter, on any platform - the biggest question is: should they trust you?
+
+    When someone sees you speaking at an event, or on our podcast, or reads your LinkedIn post... They've now heard of you.
+
+    But that doesn't mean they trust you. Before they hire you, recommend you or do business with you, they will look you up online to see what you've done, what do you know, who you worked with etc. They look for evidence. And AI is increasingly doing the same thing. When someone asks an AI tool about you, your company or your expertise, it needs enough credible information to understand who you are and whether you're worth mentioning.
+
+    So perhaps E-E-A-T isn't really an SEO concept.
+It's a trust concept.
+And that's something we've been doing long before AI came along.
+
+    𝐓𝐫𝐮𝐬𝐭 𝐡𝐚𝐬 𝐚𝐥𝐰𝐚𝐲𝐬 𝐩𝐫𝐞𝐜𝐞𝐝𝐞𝐝 𝐚𝐜𝐭𝐢𝐨𝐧. 𝐀𝐈 𝐡𝐚𝐬𝐧'𝐭 𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐚 𝐧𝐞𝐰 𝐛𝐞𝐡𝐚𝐯𝐢𝐨𝐮𝐫. 𝐈𝐭 𝐡𝐚𝐬 𝐬𝐢𝐦𝐩𝐥𝐲 𝐚𝐦𝐩𝐥𝐢𝐟𝐢𝐞𝐝 𝐢𝐭.
+
+  * ![No alternative text description for this image](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 15](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fkaushik-bose_%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25A8%25F0%259D%2590%25A9%25F0%259D%2590%25A5%25F0%259D%2590%259E-%25F0%259D%2590%2583%25F0%259D%2590%25A8%25F0%259D%2590%25A7%25F0%259D%2590%25AD-%25F0%259D%2590%2593%25F0%259D%2590%25AB%25F0%259D%2590%25AE%25F0%259D%2590%25AC%25F0%259D%2590%25AD-%25F0%259D%2590%2598%25F0%259D%2590%25A8%25F0%259D%2590%25AE-activity-7510171721212121089-bpcs&trk=public_post_social-actions-reactions) [2 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fkaushik-bose_%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25A8%25F0%259D%2590%25A9%25F0%259D%2590%25A5%25F0%259D%2590%259E-%25F0%259D%2590%2583%25F0%259D%2590%25A8%25F0%259D%2590%25A7%25F0%259D%2590%25AD-%25F0%259D%2590%2593%25F0%259D%2590%25AB%25F0%259D%2590%25AE%25F0%259D%2590%25AC%25F0%259D%2590%25AD-%25F0%259D%2590%2598%25F0%259D%2590%25A8%25F0%259D%2590%25AE-activity-7510171721212121089-bpcs&trk=public_post_social-actions-comments)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fkaushik-bose_%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25A8%25F0%259D%2590%25A9%25F0%259D%2590%25A5%25F0%259D%2590%259E-%25F0%259D%2590%2583%25F0%259D%2590%25A8%25F0%259D%2590%25A7%25F0%259D%2590%25AD-%25F0%259D%2590%2593%25F0%259D%2590%25AB%25F0%259D%2590%25AE%25F0%259D%2590%25AC%25F0%259D%2590%25AD-%25F0%259D%2590%2598%25F0%259D%2590%25A8%25F0%259D%2590%25AE-activity-7510171721212121089-bpcs&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fkaushik-bose_%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25A8%25F0%259D%2590%25A9%25F0%259D%2590%25A5%25F0%259D%2590%259E-%25F0%259D%2590%2583%25F0%259D%2590%25A8%25F0%259D%2590%25A7%25F0%259D%2590%25AD-%25F0%259D%2590%2593%25F0%259D%2590%25AB%25F0%259D%2590%25AE%25F0%259D%2590%25AC%25F0%259D%2590%25AD-%25F0%259D%2590%2598%25F0%259D%2590%25A8%25F0%259D%2590%25AE-activity-7510171721212121089-bpcs&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fkaushik-bose_%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25A8%25F0%259D%2590%25A9%25F0%259D%2590%25A5%25F0%259D%2590%259E-%25F0%259D%2590%2583%25F0%259D%2590%25A8%25F0%259D%2590%25A7%25F0%259D%2590%25AD-%25F0%259D%2590%2593%25F0%259D%2590%25AB%25F0%259D%2590%25AE%25F0%259D%2590%25AC%25F0%259D%2590%25AD-%25F0%259D%2590%2598%25F0%259D%2590%25A8%25F0%259D%2590%25AE-activity-7510171721212121089-bpcs&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/brand-echo-digital_one-of-the-biggest-misconceptions-around-activity-7505846592126648320-DvDL)
+
+[  
+
+](https://www.linkedin.com/company/brand-echo-digital?trk=public_post_feed-actor-image)
+
+  [Brand Echo Digital](https://www.linkedin.com/company/brand-echo-digital?trk=public_post_feed-actor-name)
+  3 followers
+
+1mo
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fbrand-echo-digital_one-of-the-biggest-misconceptions-around-activity-7505846592126648320-DvDL&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    One of the biggest misconceptions around AI search is that everything comes down to the company website.
+It doesn’t.
+Information about a company exists in many places:
+Industry publications.
+Reviews.
+Podcasts.
+LinkedIn.
+Directories.
+Customer stories.
+News articles.
+Partner websites.
+Online communities.
+Those sources help create the broader picture of a brand.
+That matters because AI systems don't experience a company the way a marketing team does.
+They encounter information about it across the web.
+A homepage can claim that a company is an expert in something.
+Independent sources discussing that expertise provide a very different kind of evidence.
+This is why AI visibility is becoming less of a pure SEO problem.
+It sits somewhere between SEO, content, PR, reputation, and brand building.
+
+  * ![No alternative text description for this image](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fbrand-echo-digital_one-of-the-biggest-misconceptions-around-activity-7505846592126648320-DvDL&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fbrand-echo-digital_one-of-the-biggest-misconceptions-around-activity-7505846592126648320-DvDL&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fbrand-echo-digital_one-of-the-biggest-misconceptions-around-activity-7505846592126648320-DvDL&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/justinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO)
+
+[  
+
+](https://www.linkedin.com/in/justinnassiri?trk=public_post_feed-actor-image)
+
+  [Justin M. Nassiri](https://www.linkedin.com/in/justinnassiri?trk=public_post_feed-actor-name) 1mo
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjustinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    Fifteen years ago, blogs flooded the internet with slop.
+
+    When blogging became a thing, everyone started one. My quietest cousin turned out to have hundreds of pages of thoughts to share. I applaud the self-expression… but most of those pages were mediocre at best.
+
+    But blogs weren’t all garbage. The people who could write well, and who had valuable things to say, rose to the top. The cream rose to the crop, as I like to incorrectly say it.
+
+    Now, there’s AI. Anyone with half a kernel of a thought can have ChatGPT or Claude flesh it out and distribute it at scale.
+
+    So, the volume of content is exploding again. And just like with blogs, the quality of most of it is lacking.
+
+    Like with any “next big thing,” the advantage still goes to the person with meaningful knowledge. Decades in cybersecurity, manufacturing, healthcare, or private equity have given you pattern recognition and scars a language model can't replicate.
+
+    When everyone has access to the same tools, your unique experience becomes the differentiator.
+
+    Like my team always says: “Garbage in, garbage out.”
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 232](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjustinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO&trk=public_post_social-actions-reactions) [14 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjustinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO&trk=public_post_social-actions-comments)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjustinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjustinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fjustinnassiri_fifteen-years-ago-blogs-flooded-the-internet-activity-7506002714468941824-73XO&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/galluccinet_cbs-cut-shira-lazar-over-one-bad-tweet-before-activity-7511519914516602881-NAGo)
+
+[  
+
+](https://www.linkedin.com/in/galluccinet?trk=public_post_feed-actor-image)
+
+  [giovanni gallucci 🧋🌮](https://www.linkedin.com/in/galluccinet?trk=public_post_feed-actor-name) 2w Edited
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fgalluccinet_cbs-cut-shira-lazar-over-one-bad-tweet-before-activity-7511519914516602881-NAGo&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    [CBS](https://www.linkedin.com/company/cbs-com?trk=public_post-text) cut [Shira Lazar](https://www.linkedin.com/in/shiralazar?trk=public_post-text) over one bad tweet before [What's Trending](https://www.linkedin.com/company/what's-trending?trk=public_post-text)ever cleared seven figures. She didn't launch a new show. She put the same one on YouTube.
+
+    That's the line every content strategy deck skips. The setback didn't rewrite the format. It just moved the room.
+
+    If your organic social plan collapses every time a platform shifts, the platform isn't the problem.
+.
+.
+.
+| Strategy and creative are mine. AI helps produce it.
+
+…more
+
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fgalluccinet_cbs-cut-shira-lazar-over-one-bad-tweet-before-activity-7511519914516602881-NAGo&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fgalluccinet_cbs-cut-shira-lazar-over-one-bad-tweet-before-activity-7511519914516602881-NAGo&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fgalluccinet_cbs-cut-shira-lazar-over-one-bad-tweet-before-activity-7511519914516602881-NAGo&trk=public_post_feed-cta-banner-cta)
+
+- [](https://www.linkedin.com/posts/nicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6)
+
+[  
+
+](https://ke.linkedin.com/in/nicodemus-were?trk=public_post_feed-actor-image)
+
+  [Nicodemus Were](https://ke.linkedin.com/in/nicodemus-were?trk=public_post_feed-actor-name) 3d
+
+  * [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting)
+
+    In the era of AI LinkedIn has become easy, so they say.
+
+    If so, then why are people still not showing up the right way?
+
+    You can ask AI to write your posts.
+You can ask it for hooks.
+You can even get a month’s worth of content in minutes.
+
+    But here's the problem.
+
+    Having content isn't the same as building a personal brand.
+
+    Your posts might be grammatically perfect but sound nothing like you.
+
+    You might post every day but have nothing meaningful to say.
+
+    You might get the likes but still be invisible to the people who matter.
+
+    LinkedIn isn't just about showing up.
+
+    It's about how you show up, what you stand for and what people remember you for.
+
+    AI can make content creation easier.
+But it can't replace the clarity, personality and strategy behind a brand people trust.
+
+    And that's where many people are getting it wrong.
+
+    The question isn't whether you're using AI.
+It's whether your presence is making people pay attention for the right reasons.
+
+  * ![No alternative text description for this image](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>)
+
+  [![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) ![](<https://www.linkedin.com/feed/update/urn:li:share:7511079092247519232/>) 53](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6&trk=public_post_social-actions-reactions) [42 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6&trk=public_post_social-actions-comments)
+  [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6&trk=public_post_like-cta) [Comment](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6&trk=public_post_comment-cta)
+  To view or add a comment, [sign in](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnicodemus-were_in-the-era-of-ai-linkedin-has-become-easy-activity-7515622645426638848-1Qy6&trk=public_post_feed-cta-banner-cta)
+
+![](https://media.licdn.com/dms/image/v2/D5616AQFaJH1OrTefvg/profile-displaybackgroundimage-shrink_200_800/B56ZnAaaGVKAAY-/0/1759869772831?e=2147483647&v=beta&t=TuFs0iC-j0nlzPMs0ysZjBEjCsBoM6Rda0mD1ulrO0Y)
+
+40,148 followers
+
+- [2,009 Posts](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fin%2Fdarrenshawwhitespark%2Frecent-activity%2F&trk=public_post_follow-posts)
+
+[View Profile](https://ca.linkedin.com/in/darrenshawwhitespark?trk=public_post_follow-view-profile) [Connect](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7511079095510790144&trk=public_post_follow)
+
+## Explore related topics
+
+- [Tips for Growing AI Search Traffic](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/tips-for-growing-ai-search-traffic/)
+- [Tips for Adapting to AI-Driven Search Engines](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/tips-for-adapting-to-ai-driven-search-engines/)
+- [Tips for Capturing AI-Generated Website Traffic](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/tips-for-capturing-ai-generated-website-traffic/)
+- [Optimizing SEO With AI Insights](https://www.linkedin.com/top-content/artificial-intelligence/ai-strategies-for-marketing-automation/optimizing-seo-with-ai-insights/)
+- [How to Use AI in SEO](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/how-to-use-ai-in-seo/)
+- [Google AI Overviews in Search Results](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/google-ai-overviews-in-search-results/)
+- [How AI Influences Google's Operations](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/how-ai-influences-google-s-operations/)
+- [AI's Impact on SEO Content Creation](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/ai-s-impact-on-seo-content-creation/)
+- [Navigating AI-Driven SEO Updates for Marketers](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/navigating-ai-driven-seo-updates-for-marketers/)
+- [Impact of Google AI Overviews on Click-Through Rates](https://www.linkedin.com/top-content/artificial-intelligence/ai-in-seo/impact-of-google-ai-overviews-on-click-through-rates/)
+Show more
+
+Show less
+
+## Explore content categories
+
+- [Career](https://www.linkedin.com/top-content/career/)
+- [Productivity](https://www.linkedin.com/top-content/productivity/)
+- [Finance](https://www.linkedin.com/top-content/finance/)
+- [Soft Skills & Emotional Intelligence](https://www.linkedin.com/top-content/soft-skills-emotional-intelligence/)
+- [Project Management](https://www.linkedin.com/top-content/project-management/)
+- [Education](https://www.linkedin.com/top-content/education/)
+- [Technology](https://www.linkedin.com/top-content/technology/)
+- [Leadership](https://www.linkedin.com/top-content/leadership/)
+- [Ecommerce](https://www.linkedin.com/top-content/ecommerce/)
+- [User Experience](https://www.linkedin.com/top-content/user-experience/)
+- [Recruitment & HR](https://www.linkedin.com/top-content/recruitment-hr/)
+- [Customer Experience](https://www.linkedin.com/top-content/customer-experience/)
+- [Real Estate](https://www.linkedin.com/top-content/real-estate/)
+- [Marketing](https://www.linkedin.com/top-content/marketing/)
+- [Sales](https://www.linkedin.com/top-content/sales/)
+- [Retail & Merchandising](https://www.linkedin.com/top-content/retail-merchandising/)
+- [Science](https://www.linkedin.com/top-content/science/)
+- [Supply Chain Management](https://www.linkedin.com/top-content/supply-chain-management/)
+- [Future Of Work](https://www.linkedin.com/top-content/future-of-work/)
+- [Consulting](https://www.linkedin.com/top-content/consulting/)
+- [Writing](https://www.linkedin.com/top-content/writing/)
+- [Economics](https://www.linkedin.com/top-content/economics/)
+- [Artificial Intelligence](https://www.linkedin.com/top-content/artificial-intelligence/)
+- [Employee Experience](https://www.linkedin.com/top-content/employee-experience/)
+- [Workplace Trends](https://www.linkedin.com/top-content/workplace-trends/)
+- [Fundraising](https://www.linkedin.com/top-content/fundraising/)
+- [Networking](https://www.linkedin.com/top-content/networking/)
+- [Corporate Social Responsibility](https://www.linkedin.com/top-content/corporate-social-responsibility/)
+- [Negotiation](https://www.linkedin.com/top-content/negotiation/)
+- [Communication](https://www.linkedin.com/top-content/communication/)
+- [Engineering](https://www.linkedin.com/top-content/engineering/)
+- [Hospitality & Tourism](https://www.linkedin.com/top-content/hospitality-tourism/)
+- [Business Strategy](https://www.linkedin.com/top-content/business-strategy/)
+- [Change Management](https://www.linkedin.com/top-content/change-management/)
+- [Organizational Culture](https://www.linkedin.com/top-content/organizational-culture/)
+- [Design](https://www.linkedin.com/top-content/design/)
+- [Innovation](https://www.linkedin.com/top-content/innovation/)
+- [Event Planning](https://www.linkedin.com/top-content/event-planning/)
+- [Training & Development](https://www.linkedin.com/top-content/training-development/)
+Show more
+
+Show less
+
+## Sign in to view more content
+
+Create your free account or sign in to continue your search
+
+Sign in with Email
+
+or
+
+New to LinkedIn? [Join now](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fdarrenshawwhitespark_heres-an-awesome-seo-tip-that-leverages-activity-7511079095510790144-S-Zw&trk=public_post_contextual-sign-in-modal_join-link)
+
+By clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and [Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).

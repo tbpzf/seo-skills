@@ -36,6 +36,11 @@ scores prompt review and cannot establish helpfulness.
 - Does every major section provide a mapped packet item, grounded answer, or a reason no unique source is needed, with necessary evidence?
 - Are experience, results, quotes, and authority attributed to the recorded source without invented first-person detail?
 - Is every factual claim supplied, cited, or marked as needing validation? Is the product connection natural, proportionate, and useful?
+- Do adopted knowledge-library recommendations still fit the reader task and
+  source scope? Keep guidance separate from product/topic evidence; retain
+  original attribution, dates, caveats, and partial/unavailable-source limits.
+  Neither a citation count nor a retrieved page establishes a ranking rule or
+  verified claim.
 - Does each CTA lead to the stated next action?
 - Are internal links specific and useful rather than decorative?
 

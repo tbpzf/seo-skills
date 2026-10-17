@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Knowledge"
+  short_description: "Read relevant SEO日报 sources for grounded writing"
+  default_prompt: "Use $seo-knowledge to find and read relevant bundled SEO日报 posts and captured originals for this writing task. Return applicable editorial guidance separately from factual evidence, with source passages, capture limits, and concrete uses in the existing plan or submission notes; preserve author intake and publisher rules."

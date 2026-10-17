@@ -18,6 +18,11 @@ sources conflict, prefer the applicable current first-party rule and flag the
 conflict for review.
 Treat third-party summaries and patterns in published articles as clues, not
 binding contributor rules.
+The same precedence applies to bundled SEO日报 material consulted through
+[`seo-knowledge`](../../seo-knowledge/SKILL.md): it can inform an editorial
+question or lead to a source, but cannot verify this host's current rules or
+replace the first-party rule check. Record any conflict instead of treating a
+general link-building experiment as permission for the placement.
 
 Keep a rule check for each material requirement: the verified rule and its
 first-party URL and check date, or `unknown` with the pages/searches checked.

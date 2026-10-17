@@ -39,6 +39,12 @@ owners/actions, and section mapping. A
 generated `prompt.md` is an export derived from this plan and never overrides
 it.
 
+Keep the full Knowledge consultation inside the existing source packet: status,
+queries/topic IDs, inspected original URLs/passages, capture limits, source
+type/date/scope, guidance-versus-evidence role, and adopted decisions. Merge any
+matching audience-brief consultation rather than saving a second copy or report.
+Publishable copy contains only relevant factual citations, not this internal log.
+
 ## `content.md` and `seo-metadata.md`
 
 `content.md` contains the publishable landing-page body only. It starts with
@@ -156,6 +162,11 @@ into the export; the prompt does not reclassify the list.
    into the existing packet, retain the question count, and reevaluate Stage 2
    before drafting. Reuse a valid packet for local revisions; a small supported
    correction does not require a new interview.
+   Reuse the consultation while the task and sources still fit. Refresh affected
+   knowledge/evidence for a changed promise or stale material, and preserve
+   explicit deferred/no-match/unavailable results; a local correction does not
+   require a new library survey. Missing older provenance is unknown, not proof
+   that the library was consulted.
    Run the Stage 2 single-content brief again when the reader situation or intent has
    changed, or the plan lacks that strategy. Fold the refreshed brief into
    the plan before drafting or revising. Resolve a blocked draft gate from

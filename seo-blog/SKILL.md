@@ -53,6 +53,7 @@ editing skill, including Humalizer and grammar review.
 | Plan, draft, or revise | `../seo-writing/SKILL.md` returns stage output; this parent saves and merges |
 | Existing-copy audit or feature-refresh diagnosis | `../seo-content-review/SKILL.md` returns findings and a bounded update brief; this parent owns any requested save or revision |
 | Distinctive source gate and one-at-a-time interview | `../distinctive-content/SKILL.md`, called by `seo-writing` |
+| Bundled SEO日报 guidance and source passages | `../seo-knowledge/SKILL.md`, consulted through reader research and the distinctive packet; no separate artifact |
 | 4. Humanize | `../humalizer/SKILL.md` owns one rewrite and fetches `https://raw.githubusercontent.com/blader/humanizer/523374dee72d67c7b2b5f858ea0094ffda49c3ac/SKILL.md` |
 | 5. Directness review | This parent applies `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` and linked references as needed |
 | 6. Grammar | `../harper-grammar/SKILL.md` returns checked copy and findings when `harper-cli` is available |
@@ -99,6 +100,10 @@ Do not report `completed` until the action finished. Parent owns the merge and e
    and contributor knowledge, or reuses an adequate packet with resolved author
    intake. Save the full packet including author intake status and basis,
    pending question, count, evidence status, reasoning, and limits.
+   Include the full Knowledge consultation for route `blog`, reusing relevant
+   brief research and completing original reading only after intake is resolved.
+   Record how selected editorial advice affects this article; topical claims
+   still need their own inspected support, not a generic writing recommendation.
    Normalize any supplied outline into the
    `seo-writing` plan schema, preserving evidence labels, constraints, and the
    user's keyword wording. Save the full plan—including its `Keyword map` and

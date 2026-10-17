@@ -54,6 +54,7 @@ matching branch in [routing.md](references/routing.md).
 | Plan, draft, or revise | `../seo-writing/SKILL.md` |
 | Existing-copy audit or feature-refresh diagnosis | `../seo-content-review/SKILL.md`; returns findings and an update brief, this parent owns saving and revision |
 | Distinctive source gate and one-at-a-time interview | `../distinctive-content/SKILL.md`, called by `seo-writing` |
+| Bundled SEO日报 guidance and source passages | `../seo-knowledge/SKILL.md`, consulted through reader research and the distinctive packet; no separate artifact |
 | Requested reusable prompt | `../seo-landing-prompt/SKILL.md` |
 | Fact-safe rewrite, including one Blader fetch | `../humalizer/SKILL.md` |
 | Final prose review | `https://raw.githubusercontent.com/hardikpandya/stop-slop/8da1f030185bdfe8471220585162991eaeb970e9/SKILL.md` plus linked references as needed |
@@ -106,8 +107,12 @@ operations into concise stage updates; record operation details in
    user-set count—to `content-plan.md` with one supportable page promise,
    the full `distinctive-content` packet, author intake status and basis,
    pending question and count, section
-   mapping, and writing constraints; do not re-author map columns here. Choose
-   one coherent landing-page intent;
+   mapping, and writing constraints; do not re-author map columns here.
+   Retain the packet's full Knowledge consultation: relevant `landing-page`
+   guidance, inspected originals, application decisions, and source limits.
+   Reuse a fitting brief consultation; defer expanded reading until intake is
+   resolved. Editorial advice cannot establish product capabilities or proof.
+   Choose one coherent landing-page intent;
    recommend a separate page for another intent. A supplied primary that cannot
    support this truthful page promise blocks drafting until the mismatch is
    resolved. `content-plan.md` is the sole persisted drafting contract.

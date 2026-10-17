@@ -17,6 +17,7 @@ omitted answer, or trust unsupported advice.
 | Concrete detail | The reader has the actions, inputs/outputs, examples, artifacts, and difficult decisions needed to complete the promise; one isolated detail cannot carry a thin how-to |
 | Judgment | Facts, reasoning, recommendation, relevant alternative, and conditions are inspectable; caveats or counterexamples change advice where appropriate |
 | Coverage | The packet's material items appear in the planned sections or their omission is explained |
+| Knowledge use | Adopted archive guidance fits the task and source scope; factual claims trace to inspected passages, not retrieval status, and missing/partial originals retain their limits |
 | Reader respect | The draft reaches the useful answer quickly and avoids obvious setup, inflated lists, and empty promises |
 
 Rank findings by whether they weaken the central promise, then by reader

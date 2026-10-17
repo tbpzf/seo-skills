@@ -18,6 +18,12 @@ Return this with an update plan, or pass it to the writer for an authorized edit
 - Useful supported sections to retain; unrelated issues to report only.
 - Supplied keyword inventory and affected use/omission decisions, when known;
   missing history stays unknown rather than becoming invented requirements.
+- Existing knowledge consultation: adopted editorial decisions, factual
+  source-to-passage mappings, capture/verification limits, rejected advice,
+  unresolved gaps, and affected refresh conditions under
+  [seo-knowledge](../../seo-knowledge/SKILL.md). Preserve explicit no-match or
+  unavailable outcomes; the owner reuses this rather than starting a new survey
+  for a wording correction.
 - Missing essential facts and next action; optional omissions.
 - Owning writing route and requested artifact location, when known.
 
